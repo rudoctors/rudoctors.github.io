@@ -9,7 +9,7 @@
 | `https://rusdoctors.net/api/clinics` | клиники | seed (raw) | ✅ |
 | Google Sheets (public CSV) | 106 врачей: ФИО, спец., город, контакты, языки, документы | `scripts/fetch-sheet.mjs` | ✅ |
 | `https://citilab.rs/ru/doctors` | 19 врачей, **experienceYears**, фото, booking | `scripts/fetch-citilab.mjs` | ✅ |
-| `https://t.me/s/russmedicserbia` | 139 постов → 14 визиток, 2 review_candidate | `scripts/fetch-tg.mjs` | ✅ (карточки; отзывы — Phase 3+) |
+| `https://t.me/s/russmedicserbia` | 139 постов → 14 визиток, 2 review_candidate | `scripts/fetch-tg.mjs` | ✅ (карточки; отзывы N/A — без имени врача) |
 | `t.me/vrachivserbii` | таблица врачей (источник Sheets) | via Sheets | ✅ |
 
 **Итог seed:** ~140 уникальных врачей; дубли sheets/citilab/alfa слиты (`npm run detect:dups` → 0).  

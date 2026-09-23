@@ -2,10 +2,14 @@
 import Layout from "../../layouts/Layout.astro";
 import DoctorCard from "../../components/DoctorCard.astro";
 import { allCities, publicDoctors, specLabel } from "../../lib/doctors";
+import { citySlug } from "../../lib/site";
 import cityIntros from "../../data/city-intros.json";
 
 export function getStaticPaths() {
-  return allCities().map((city) => ({ params: { city }, props: { city } }));
+  return allCities().map((city) => ({
+    params: { city: citySlug(city) },
+    props: { city },
+  }));
 }
 
 interface Props {
@@ -22,6 +26,7 @@ const introsMap = cityIntros as Record<string, string>;
 const intro =
   introsMap[city] ||
   `Русскоязычные врачи в ${city}: рейтинги, отзывы пациентов, специализации и контакты. ${doctors.length} карточек в каталоге Rudoctors.`;
+const cityPath = `/cities/${citySlug(city)}/`;
 ---
 
 <Layout
@@ -30,7 +35,7 @@ const intro =
   breadcrumbs={[
     { name: "Главная", path: "/" },
     { name: "Города", path: "/cities/" },
-    { name: city, path: `/cities/${encodeURIComponent(city)}/` },
+    { name: city, path: cityPath },
   ]}
 >
   <div class="mx-auto max-w-6xl px-4 py-10">

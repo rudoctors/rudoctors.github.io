@@ -17,18 +17,18 @@
 
 ## HIGH (Phase 5 / частично Phase 2–3)
 
-- **done Phase 5:** og:image, noindex+sitemap, 404, privacy, contacts, FAQ, WebP 53 фото (~40MB→~1MB).
+- **done Phase 5:** og:image, noindex+sitemap, 404, privacy, contacts, FAQ, WebP 53 фото (~40MB→~1MB), city slug `novi-sad`, hreflang, aria-live, PR job, strict schema.
 - Freshness мёртв (отзывы без дат); стаж частично (citilab + alfa).
 - Popup-blocker на формах; a11y (focus, labels); «Belgrade» в русском UI.
 - **done Phase 2–4:** 140 карт, Sheets/citilab/TG fetch, merge-safe seed, cron Mon/Thu, commit-if-diff.
-- **done Phase 3:** EN→RU перевод агентом (44+6), UI original details.
-- Остаток MEDIUM: self-host fonts, city slug, haystack, PR job.
+- **done Phase 3:** EN→RU перевод агентом (44+6), UI original details; TG candidates — без имени врача, N/A.
+- Остаток MEDIUM: self-host fonts.
 
 ## MEDIUM / LOW
-SEO-мелочи, plural, city slug `novi-sad`, haystack, PR job в Actions.
+SEO-мелочи, plural; self-host fonts.
 
 ## Continuous update
-**done:** cron refresh + merge-safe seed + fuzzy name match. Schema validation — fail-fast в loadDoctors.
+**done:** cron refresh + merge-safe seed + fuzzy name match. Schema validation строгая в loadDoctors.
 
 ## Монетизация
 **done Phase 6 (без PAT):** `/packages/` цены, featured demo (2 карточки), click-track + analytics hooks.  

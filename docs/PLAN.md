@@ -1,6 +1,6 @@
 # План работ Rudoctors
 
-Статус: **Phase 0–6 done** (порядок 0→1→2→3→4→5→6, 24.09.2026); open: PAT E2E, analytics key, TG review candidates  
+Статус: **Phase 0–6 done** (порядок 0→1→2→3→4→5→6, 24.09.2026); open: PAT E2E, analytics key, self-host fonts  
 Цель монетизации: featured-профили + партнёрства за 30–90 дней; сигнал — первый featured/placement request до 15.12.2026.
 
 ## Фазы
@@ -49,20 +49,22 @@
 - [x] Перевод EN→RU **агентом** (не API): 44 текста + 6 already-RU → `text`/`textOriginal`/`langSource`
 - [x] UI-бейдж + details «Оригинал (`langSource`)»
 - [x] `scripts/translate-reviews.mjs` — no-op без ключа (запасной путь)
-- [ ] Реальные отзывы из t.me/s по имени (`source: telegram`) — 2 review_candidate
+- [x] TG review_candidate: 2 шт. — без имени врача (1 clinic-level, 1 false positive tax) → импорт N/A
 
 ## Phase 4 — Continuous update
 - [x] `schedule:` cron Mon/Thu 05:00 UTC в `deploy.yml`
 - [x] Pipeline: fetch sheet+citilab → seed merge → tag en → (translate if secret) → check → build → commit if diff → Pages
 - [x] Merge-safe против админки; raw intermediates в `.gitignore` (CI refetch)
-- [ ] Schema validation строгая (fail-fast уже в loadDoctors)
+- [x] Schema validation строгая в `loadDoctors` (slug/name/city/updatedAt/specs/formats/reviews)
 
 ## Phase 5 — HIGH polish
 - [x] `og:image` (`public/og.png`) + twitter cards
 - [x] `/admin`, forms — `noindex` + sitemap filter
 - [x] `404.astro`, `privacy.astro`, `contacts.astro`, `faq.astro`
-- [x] WebP: `npm run photos:webp` → 53 фото, ~40MB → ~1MB webp, photo → `.webp`
-- [ ] self-host fonts, aria-live, city slug `novi-sad`, haystack, PR job
+- [x] WebP: `npm run photos:webp` → 53 фото, ~40MB → ~1MB webp, photo → `.webp`; seed prefers `.webp`
+- [x] city slug `novi-sad` (`citySlug`); hreflang ru + x-default; aria-live (filters, form status)
+- [x] PR job: `pull_request` → check+build, без deploy
+- [ ] self-host fonts (Google Fonts CDN ещё)
 
 ## Phase 6 — Монетизация
 - [x] `/packages/` — featured / пакет клиники / баннер (цены-ориентиры)

@@ -33,3 +33,13 @@ export function safeUrl(raw?: string | null): string | undefined {
   if (/^(https?:|tel:|mailto:)/i.test(u)) return u;
   return undefined;
 }
+
+/** URL slug for city pages: "Novi Sad" → "novi-sad", "Niš" → "nis". */
+export function citySlug(city: string): string {
+  return String(city || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}

@@ -18,6 +18,9 @@
 | 2026-09-24 | Phase 5 done: og, 404/privacy/contacts/faq, WebP photos | High polish до монетизации |
 | 2026-09-24 | Phase 6: `/packages/` + featured demo 2 карточки + click-track | Продукт видим для первого request |
 | 2026-09-24 | Analytics: optional Plausible/Umami через PUBLIC_* env | Без секретов в репо; hooks готовы |
+| 2026-09-24 | City slug `novi-sad` + hreflang ru/x-default + PR CI без deploy | SEO + безопасный PR check |
+| 2026-09-24 | Strict schema в loadDoctors; seed prefers `.webp` | Fail-fast data; не откатывать photo на JPG |
+| 2026-09-24 | TG review_candidates (2) — без имени врача, не импортировать | Без фейковых привязок к карточкам |
 
 ## Технический стек (подтверждён)
 Astro 7 + TS strict + Tailwind 4; JSON в репо = GitHub CMS; Actions → Pages (`build_type=workflow`); Node ≥22.12.

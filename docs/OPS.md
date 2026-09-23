@@ -14,8 +14,10 @@ astro dev --background   # dev (см. AGENTS.md)
 ## Deploy
 
 - Push в `main` → `.github/workflows/deploy.yml` → check → build → GitHub Pages.
+- PR → `pull_request`: check + build, **без** upload/deploy.
 - `build_type=workflow`; site: `https://rudoctors.github.io`.
 - Проверка: 13 роутов 200, mojibake 0, sitemap без `/admin/`.
+- City URLs: `/cities/novi-sad/` (`citySlug`); hreflang `ru` + `x-default`.
 
 ## Continuous update (Phase 4)
 

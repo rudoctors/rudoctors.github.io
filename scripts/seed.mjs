@@ -89,6 +89,8 @@ function workplacesFrom(d) {
 }
 
 function photoFor(d) {
+  const webp = path.join(photosDir, `rd-${d.id}.webp`);
+  if (fs.existsSync(webp)) return `/photos/rd-${d.id}.webp`;
   const p = path.join(photosDir, `rd-${d.id}.jpg`);
   if (fs.existsSync(p)) return `/photos/rd-${d.id}.jpg`;
   return undefined;

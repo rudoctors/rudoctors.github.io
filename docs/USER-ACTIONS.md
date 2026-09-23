@@ -1,7 +1,7 @@
 # USER-ACTIONS — что сделать вам (PIVO: Verify)
 
 Работаю без домена (решение 1). Всё, что можно кодом, уже в ветке/локально.
-Ниже — шаги, где нужна **ваша авторизация**. Вкладки Search Console / Bing / Yandex открою в BrowserOS Neo после push.
+Ниже — шаги, где нужна **ваша авторизация**. После push открою вкладки Search Console / Bing Webmaster в BrowserOS Neo.
 
 ---
 
@@ -10,7 +10,7 @@
 Код нужно запушить в git-репозиторий с GitHub Pages (`rudoctors.github.io`), чтобы Actions пересобрал сайт.
 
 1. Репозиторий: `D:\Projects\rudoctors\site` → remote `https://github.com/rudoctors/rudoctors.github.io.git`, ветка `main`.
-2. Локально 2 коммита + правки docs ещё не отправлены — выполните `git push` (или попросите меня), затем Actions соберёт сайт.
+2. Локально 3 коммита ещё не отправлены — выполните `git push` (или попросите меня), затем Actions соберёт сайт.
 3. Откройте https://rudoctors.github.io/faq/ — страница должна отдаваться.
 
 ---
