@@ -1,0 +1,49 @@
+{
+  "slug": "andrei-gildeev",
+  "name": "Andrei Gildeev",
+  "specializations": [
+    "physiotherapist"
+  ],
+  "specializationText": "Физиотерапевт",
+  "photo": "/photos/rd-45.jpg",
+  "city": "Novi Sad",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Являюсь Физиотерапевтом (реабилитолог).Образование - Поволжская Государственная Академия Физической Культуры, Спорта и Туризма. Отделение Реабалитации. \nКазанский Федеральный Университет, Институт Фундаментальной медицины - Физиология человека и животных.\nFDM терапевт.\nКурсы PNF.\nКинезиотейпирование. \nСухие иглы.\nВосстановление при травмах.\nРаботаю в области ортопедии и неврологии - грыжи, травмы, артриты, артрозы, боли в спине, коленях.",
+  "education": [
+    {
+      "degree": "Реабилиатция",
+      "institution": "ПГАФКСиТ",
+      "years": "2013-2017"
+    },
+    {
+      "degree": "Физиология человека и животных",
+      "institution": "КФУ",
+      "years": "2017-2019"
+    }
+  ],
+  "workplaces": [
+    {
+      "clinic": "Takecare",
+      "address": "Пушкинова 1а",
+      "city": "Novi Sad",
+      "mapsUrl": "https://maps.app.goo.gl/yC2AnFpr9vXB3dbw5"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/rehabandrey",
+    "mapsUrl": "https://maps.app.goo.gl/yC2AnFpr9vXB3dbw5"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-04-08"
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "aleksej-pravov",
+  "name": "Алексей Прахов",
+  "nameEn": "Aleksej Pravov",
+  "specializations": [
+    "therapist"
+  ],
+  "specializationText": "Общая практика",
+  "photo": "/photos/rd-17.jpg",
+  "city": "Belgrade",
+  "district": "Vracar",
+  "languages": [
+    "en",
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "В России работал кардиологом и реаниматологом.\nПринимаю в Белграде в поликлинике Эквилибрум и в Нови Саде в поликлинике Джинич.\nВыезжаю на дом официально, с возможностью оплаты по карте и выдачей фискального чека. Возможна регистрация ЭКГ на дому, проведение внутримышечных, внутривенных инъекций и внутривенных инфузий(капельниц). Сотрудничаю с сербскими сомнологами и могу помочь по вопросам диагностики СОАС(sleep apnoe) и CPAP - терапии.\nСотрудничаю с сербской наркологической клиникой - могу оказать некоторую консультативную помощь в вопросах лечения алкогольной, наркологической и т.п. зависимостями.\nМой канал в телеграм : https://www.t.me/Ajbolit_v_Serbii\nЧат о медицине : https://t.me/vrachivserbii",
+  "education": [
+    {
+      "degree": "Кардиология"
+    },
+    {
+      "degree": "Анестезиология и Реанимация",
+      "years": "2002-2004"
+    }
+  ],
+  "workplaces": [
+    {
+      "clinic": "Эквилибрум",
+      "address": "Gospodara Vučića 1v",
+      "city": "Belgrade",
+      "district": "Vracar",
+      "url": "https://www.klinikaequilibrium.rs/",
+      "mapsUrl": "https://maps.app.goo.gl/miJ7uRsBtwipXrfZ9"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/ajbolit78",
+    "website": "https://www.t.me/Ajbolit_v_Serbii",
+    "mapsUrl": "https://maps.app.goo.gl/miJ7uRsBtwipXrfZ9"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-03-17"
+}

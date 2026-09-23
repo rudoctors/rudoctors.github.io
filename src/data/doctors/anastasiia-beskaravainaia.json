@@ -1,0 +1,33 @@
+{
+  "slug": "anastasiia-beskaravainaia",
+  "name": "Анастасия Бескаравайная",
+  "nameEn": "Anastasiia Beskaravainaia",
+  "specializations": [
+    "pediatrician"
+  ],
+  "specializationText": "Педиатрия",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline",
+    "online"
+  ],
+  "education": [
+    {
+      "degree": "Педиатрия",
+      "institution": "ПМГМУ им. И.М. Сеченова",
+      "years": "2013-2019"
+    }
+  ],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/dr_besk"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-04-09"
+}

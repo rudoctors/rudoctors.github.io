@@ -1,0 +1,70 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SITE } from "../lib/site";
+import { siteStats } from "../lib/doctors";
+
+const stats = siteStats();
+---
+
+<Layout title="О проекте" description="Rudoctors — независимый рейтинг русскоязычных врачей в Сербии.">
+  <div class="mx-auto max-w-3xl px-4 py-12">
+    <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900">О проекте</h1>
+
+    <div class="mt-6 space-y-5 text-slate-700 leading-relaxed">
+      <p>
+        <strong>Rudoctors</strong> — каталог и рейтинг русскоязычных врачей в Сербии.
+        Мы собираем специализации, опыт, места приёма и отзывы, чтобы сообществу было проще найти врача, которому доверяешь.
+      </p>
+      <p>
+        Источники карточек: публичные каталоги клиник и врачей, а также материалы сообщества.
+        Контакты берём только те, которые врачи и клиники публикуют открыто.
+      </p>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 not-prose my-8">
+        <div class="card p-4 text-center">
+          <div class="text-2xl font-extrabold text-brand-700">{stats.doctors}</div>
+          <div class="text-xs text-slate-500 mt-1">врачей</div>
+        </div>
+        <div class="card p-4 text-center">
+          <div class="text-2xl font-extrabold text-brand-700">{stats.reviews}</div>
+          <div class="text-xs text-slate-500 mt-1">отзывов</div>
+        </div>
+        <div class="card p-4 text-center">
+          <div class="text-2xl font-extrabold text-brand-700">{stats.specializations}</div>
+          <div class="text-xs text-slate-500 mt-1">специальностей</div>
+        </div>
+        <div class="card p-4 text-center">
+          <div class="text-2xl font-extrabold text-brand-700">{stats.cities}</div>
+          <div class="text-xs text-slate-500 mt-1">городов</div>
+        </div>
+      </div>
+
+      <h2 id="reviews-policy" class="text-xl font-extrabold text-navy-900 pt-4">Как работают отзывы</h2>
+      <ul class="list-disc pl-5 space-y-2">
+        <li>Отзывы проходят модерацию перед публикацией.</li>
+        <li>Рейтинг учитывает количество оценок, свежесть и детальность отзыва.</li>
+        <li>Мы не продаём «накрутку» рейтинга.</li>
+        <li>Врач может запросить проверку отзыва через <a class="text-brand-700 hover:underline" href="/about/#contacts">контакты проекта</a>.</li>
+      </ul>
+
+      <h2 id="partners" class="text-xl font-extrabold text-navy-900 pt-4">Врачам и клиникам</h2>
+      <p>
+        Можно бесплатно создать карточку и собирать отзывы. Платное продвижение (featured-профиль,
+        размещение на главной и в подборках) — по запросу. Баннерные места для клиник и партнёров тоже открыты.
+      </p>
+      <a href="/add-doctor/" class="btn-primary mt-2">Добавить врача</a>
+
+      <h2 class="text-xl font-extrabold text-navy-900 pt-4">Дисклеймер</h2>
+      <p class="text-sm text-slate-500">
+        Информация на сайте носит справочный характер и не заменяет очную консультацию врача.
+        Диагноз и лечение назначает только специалист.
+      </p>
+
+      <h2 id="contacts" class="text-xl font-extrabold text-navy-900 pt-4">Контакты</h2>
+      <p>
+        Сообщество: <a href={SITE.telegram} target="_blank" rel="noopener noreferrer" class="text-brand-700 hover:underline">{SITE.telegramLabel}</a>
+      </p>
+      <p class="text-sm text-slate-500">GitHub-репозиторий проекта: rudoctors/rudoctors.github.io</p>
+    </div>
+  </div>
+</Layout>

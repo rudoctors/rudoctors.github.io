@@ -1,0 +1,87 @@
+{
+  "slug": "pavel-borisov",
+  "name": "Павел Борисов",
+  "specializations": [
+    "urologist"
+  ],
+  "specializationText": "Уролог",
+  "photo": "/photos/rd-61.jpg",
+  "experienceYears": 20,
+  "city": "Belgrade",
+  "district": "Novi Beograd",
+  "languages": [
+    "en",
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "<p></p><ul><li>Врач-уролог, андролог и онколог с более чем 20-летним опытом клинической и научной работы.<br /><br /></li><li>Специализируюсь на мужском здоровье, превентивной медицине и онкоурологии.<br /><br /></li><li>Основное направление — раннее выявление гормональных и функциональных нарушений у мужчин как предикторов развития хронических заболеваний.<br /><br /></li></ul><p></p><p></p><ul><li>Автор концепции персонализированного чекапа для мужчин с профессиональными факторами риска, включая длительную сидячую работу.</li></ul><p></p><p><br /></p><p></p><ul><li>Участник международных клинических исследований. Результаты научной деятельности представлены на конгрессах ASCO и ESMO.</li></ul><p></p><p><br /></p><p></p><ul><li>В работе придерживаюсь принципа: выявление и коррекция факторов риска до развития клинических заболеваний.</li></ul><p></p>",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "AlfaMedStar",
+      "address": "Milentija Popovića 5v, Beograd 11000",
+      "city": "Belgrade",
+      "district": "Novi Beograd",
+      "url": "https://alfamedstar.rs/",
+      "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/alfamedstar_rs",
+    "website": "https://www.alfamedstar.rs/doctors/borisov",
+    "appointmentUrl": "https://n1425872.alteg.io",
+    "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+  },
+  "reviews": [
+    {
+      "id": "alfa-pavel-borisov-0",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "Pavel Borisov — I came to him at Vizim clinic with my first acute cystitis in my life, I was scared, but in the end the tests, the treatment he chose, and all his comments were very clear and helped quickly. Thank you very much! I recommend him.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-pavel-borisov-1",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "Thanks to the attentive, thoughtful and highly professional approach of Pavel Sergeevich, we quickly determined the diagnosis and treatment strategy. After the visit I felt confident in the timeliness and success of treatment. Enormous gratitude to Pavel Sergeevich!",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-pavel-borisov-2",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "Pavel Sergeevich Borisov is a doctor with extensive experience and high qualifications. Most importantly — his attitude toward patients. He always inspires hope, explains everything in detail, listens carefully, and finds the right words in any situation. I am simply happy to have found such a specialist.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-pavel-borisov-3",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "I am simply grateful to fate that I found this doctor by chance. Understanding nothing about this illness, we found both moral and highly professional support. How good that you are so devoted to your profession and bring knowledge and kindness to the world. How good that you are open to people and ready to help everyone in need — and there are so many.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-pavel-borisov-4",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "A competent, highly qualified specialist. When we consulted Pavel Sergeevich we received a very detailed and thorough consultation. A doctor who knows how to find an approach to every patient and gives hope for the best. We definitely recommend him.",
+      "source": "serbia.alfamedstar.com"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net",
+    "serbia.alfamedstar.com"
+  ],
+  "updatedAt": "2026-09-23"
+}

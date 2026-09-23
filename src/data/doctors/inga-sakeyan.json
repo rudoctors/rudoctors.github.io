@@ -1,0 +1,78 @@
+{
+  "slug": "inga-sakeyan",
+  "name": "Инга Сакеян",
+  "specializations": [
+    "endocrinologist"
+  ],
+  "specializationText": "Эндокринолог",
+  "photo": "/photos/rd-55.jpg",
+  "experienceYears": 5,
+  "city": "Belgrade",
+  "district": "Novi Beograd",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "<br /><p></p><ul><li>Работаю в доказательной медицине, но с душой и всегда с учетом ценностей пациента.<br /><br /></li><li>Активно занимаюсь не только эндокринологией, но и нутрициологией и даю пациентам развернутый рекомендации по коррекции образа жизни для достижения их целей.<br /><br /></li><li>Моя задача при работе с каждым пациентом - сделать так, чтобы рекомендации были полноценными, полностью понятными для пациента и эффективными.</li></ul><p></p>",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "AlfaMedStar",
+      "address": "Milentija Popovića 5v, Beograd 11000",
+      "city": "Belgrade",
+      "district": "Novi Beograd",
+      "url": "https://alfamedstar.rs/",
+      "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/alfamedstar_rs",
+    "website": "https://www.alfamedstar.rs/doctors/sakeian",
+    "appointmentUrl": "https://n1425872.alteg.io",
+    "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+  },
+  "reviews": [
+    {
+      "id": "alfa-inga-sakeyan-0",
+      "author": "Пациент",
+      "date": "2025-03-15",
+      "rating": 5,
+      "text": "I want to share my experience of communicating with endocrinologist Inga Sakeyan. She carefully and in detail asks about nutrition, health and activities, tries to understand the problem and select the right treatment. You can see that she cares. A very friendly and pleasant doctor to communicate with.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-inga-sakeyan-1",
+      "author": "Пациент",
+      "date": "2025-04-20",
+      "rating": 5,
+      "text": "Excellent specialist, answered all questions. Thank you very much!",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-inga-sakeyan-2",
+      "author": "Пациент",
+      "date": "2025-05-05",
+      "rating": 5,
+      "text": "Inga Surenovna made a good impression as an endocrinologist. The communication was warm and attentive, with a feeling of care for my well-being. Especially valuable - attention to details and clear, calm explanations. There was a feeling of respect and professionalism.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-inga-sakeyan-3",
+      "author": "Пациент",
+      "date": "2025-06-18",
+      "rating": 5,
+      "text": "Detailed and informative answer! I will definitely contact this specialist again! A very competent endocrinologist!",
+      "source": "serbia.alfamedstar.com"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net",
+    "serbia.alfamedstar.com"
+  ],
+  "updatedAt": "2026-09-23"
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "kirill-melihov",
+  "name": "Кирилл Мелихов",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Novi Sad",
+  "languages": [
+    "ru",
+    "en",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "27 лет опыта.\nИмплантация, хирургия, протетика.\nВсё на цифре. \nВысокое качество.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/molibdenyridium"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-03-12"
+}

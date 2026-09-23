@@ -1,0 +1,43 @@
+{
+  "slug": "aleksei-lebedev",
+  "name": "Алексей Лебедев",
+  "nameEn": "Aleksei Lebedev",
+  "specializations": [
+    "gastroenterologist"
+  ],
+  "specializationText": "Гастроэнтеролог",
+  "photo": "/photos/rd-15.jpg",
+  "city": "Belgrade",
+  "district": "Stari Grad, Podbara, Vracar, Zvezdara, Zemun, Novi Beograd",
+  "languages": [
+    "en",
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Принимаю в Белграде и в Нови Саде.\nПо вторникам на Дорчоле Цара Уроша 37, в среду и в субботу в Нови Саде Николе Пашића 17, в четверг в Белграде на Славии Алексе Ненадовића 7, в пятницу в Земуне Косовска 12.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Еуромедик",
+      "address": "Белград: Алексе Ненадовића 7, Цара Уроша 37, Земун Косовска 12, Париске Комуне 22. Нови Сад Николе Пашића 17",
+      "city": "Belgrade",
+      "district": "Stari Grad, Podbara, Vracar, Zvezdara, Zemun, Novi Beograd",
+      "url": "https://euromedic.rs/lekari/dr-aleksei-lebedev/",
+      "mapsUrl": "https://maps.app.goo.gl/sBKQFMT2T74342Q8A"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/hillsongaleksei",
+    "mapsUrl": "https://maps.app.goo.gl/sBKQFMT2T74342Q8A"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-04-08"
+}

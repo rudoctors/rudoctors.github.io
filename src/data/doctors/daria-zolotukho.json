@@ -1,0 +1,43 @@
+{
+  "slug": "daria-zolotukho",
+  "name": "Дарья Золотухо",
+  "nameEn": "Daria Zolotukho",
+  "specializations": [
+    "therapist"
+  ],
+  "specializationText": "Ревматолог, терапевт",
+  "photo": "/photos/rd-76.jpg",
+  "city": "Belgrade",
+  "district": "Novi Beograd",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline",
+    "online"
+  ],
+  "bio": "Врач-ревматолог, терапевт.<br />Сербская лицензия.<br /><br />🎓 Специализации: ревматология, кардиология, нефрология.<br />👩‍⚕️ Опыт работы врачом в амбулаторном и стационарном звене в Санкт-Петербурге и Москве, а также опыт в частной клинике в Тбилиси (Грузия).<br /><br />🩺 Стоит обратиться ко мне, если у вас:<br />• боли, отёк, покраснение или ощущение жара в суставах;<br />• боли в суставах в сочетании с выраженной усталостью;<br />• сухость глаз и/или в ротовой полости, изменение цвета пальцев;<br />• мышечные боли и слабость;<br />• повторяющиеся воспаления глаз в сочетании с болями в суставах и/или спине;<br />• для получения второго мнения;<br />• анемия, артериальная гипертензия, повышение уровня глюкозы и холестерина; при жалобах со стороны желудочно-кишечного тракта.<br />",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Ordinacija Dr Semenov",
+      "address": "Bulevar Zorana Đinđića 99",
+      "city": "Belgrade",
+      "district": "Novi Beograd",
+      "mapsUrl": "https://maps.app.goo.gl/AkrxVxv9MkY5wQyW9"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/ordinacijadrsemenov",
+    "website": "https://www.@OrdinacijaBeograd",
+    "appointmentUrl": "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3okwVzKR2F1EofITdp2InawcJ4iP2j8oXl_DCZMwm1OQPcFgjI6XfLGbJEnM8Y_ugWzt2LJ5-5",
+    "mapsUrl": "https://maps.app.goo.gl/AkrxVxv9MkY5wQyW9"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-08-30"
+}

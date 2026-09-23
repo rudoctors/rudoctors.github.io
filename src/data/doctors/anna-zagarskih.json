@@ -1,0 +1,42 @@
+{
+  "slug": "anna-zagarskih",
+  "name": "Анна Загарских",
+  "specializations": [
+    "gynecologist",
+    "obstetrician_gynecologist"
+  ],
+  "specializationText": "Акушерство и гинекология",
+  "photo": "/photos/rd-63.jpg",
+  "city": "Belgrade",
+  "district": "Stari Grad, Zvezdara, Vracar, Palilula",
+  "languages": [
+    "en",
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "—",
+      "address": "Beograd, Cara Dušana 58",
+      "city": "Belgrade",
+      "district": "Stari Grad, Zvezdara, Vracar, Palilula",
+      "url": "https://www.medigroup.rs/lekari/zagarskikh-anna/",
+      "mapsUrl": "https://maps.app.goo.gl/wcqHSDXmwpFxMr9E8?g_st=ac"
+    }
+  ],
+  "contacts": {
+    "appointmentUrl": "https://www.medigroup.rs/kontakt/",
+    "mapsUrl": "https://maps.app.goo.gl/wcqHSDXmwpFxMr9E8?g_st=ac"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-04-30"
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "artem-semenov",
+  "name": "Artem Semenov",
+  "specializations": [
+    "neurologist",
+    "manual_therapist"
+  ],
+  "specializationText": "Невролог, мануальный терапевт",
+  "photo": "/photos/rd-21.jpg",
+  "city": "Belgrade",
+  "languages": [
+    "en",
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Опыт работы больше 20 лет. Постоянная сербская лицензия. Медицинская помощь при: \n✅ болях в спине и шее, вызванных дегенеративными заболеваниями позвоночника (спондилоартроз, протрузии, грыжи межпозвонковых дисков);\n✅ онемении конечностей;\n✅ деформациях позвоночника (кифосколиоз); \n✅ головных болях;\n✅ сосудистых нарушениях;\n✅ головокружении;\n✅ нейропатии.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Lekarska ordinacija \"Doktor Semenov\"",
+      "address": "Bulevar Zorana Đinđića 99",
+      "city": "Belgrade",
+      "url": "https://doctor-semenov.com/index.html",
+      "mapsUrl": "https://maps.app.goo.gl/7PVs1u5utnid2QM49?g_st=aw"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/chiropracts",
+    "website": "https://www.doctor-semenov.com/index.html",
+    "mapsUrl": "https://maps.app.goo.gl/7PVs1u5utnid2QM49?g_st=aw"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-03-08"
+}

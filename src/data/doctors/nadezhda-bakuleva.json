@@ -1,0 +1,45 @@
+{
+  "slug": "nadezhda-bakuleva",
+  "name": "Надежда Бакулева",
+  "specializations": [
+    "psychiatrist"
+  ],
+  "specializationText": "Психиатр",
+  "photo": "/photos/rd-49.jpg",
+  "experienceYears": 7,
+  "city": "Belgrade",
+  "district": "Novi Beograd",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "<br /><p></p><ul><li>Как врач-психиатр и кандидат медицинских наук, помогаю пациентам справиться с тревогой, депрессией, неврозами и расстройствами психотического спектра. В лечении я использую комплексный подход, который включает в себя как современную фармакотерапию, так и психотерапевтическую работу.<br /><br /></li><li>Внедряю в свою практику научно обоснованные методы, включая принципы психоиммунологии. Это позволяет мне воздействовать на проблему глубже, учитывая влияние психологического состояния на физическое здоровье и иммунитет.<br /><br /></li><li>Я создаю на приеме комфортную и принимающую атмосферу, где не бывает «неудобных» тем. Ваше спокойствие и чувство безопасности — это важная часть лечебного процесса.<br /><br /></li><li>Верю, что каждый пациент заслуживает сострадания и вовремя протянутой руки помощи. Моя задача — не просто назначить лечение, а быть Вашим проводником на пути к психическому благополучию.<br /><br /></li><li>Непрерывно учусь и слежу за развитием медицинской науки, чтобы мои пациенты получали помощь, соответствующую самым высоким стандартам доказательной медицины.</li></ul><p></p>",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "AlfaMedStar",
+      "address": "Milentija Popovića 5v, Beograd 11000",
+      "city": "Belgrade",
+      "district": "Novi Beograd",
+      "url": "https://alfamedstar.rs/",
+      "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/alfamedstar_rs",
+    "website": "https://www.alfamedstar.rs/doctors/bakuleva",
+    "appointmentUrl": "https://n1425872.alteg.io",
+    "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net",
+    "serbia.alfamedstar.com"
+  ],
+  "updatedAt": "2026-09-23"
+}

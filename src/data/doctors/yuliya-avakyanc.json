@@ -1,0 +1,42 @@
+{
+  "slug": "yuliya-avakyanc",
+  "name": "Юлия Авакянц",
+  "specializations": [
+    "cardiologist"
+  ],
+  "specializationText": "Кардиолог",
+  "photo": "/photos/rd-58.jpg",
+  "city": "Belgrade",
+  "district": "Novi Beograd",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "<br /><p></p><ul><li>Занимаюсь профилактикой, диагностикой и лечением заболеваний сердечно-сосудистой системы, опираясь на современные рекомендации European Society of Cardiology и принципы доказательной медицины.<br /><br /></li><li>На консультации придерживаюсь пациент-ориентированного подхода: мы вместе выбираем оптимальную тактику обследования и лечения с учетом индивидуальных особенностей и клинической ситуации.<br /><br /></li><li>Я убеждена, что эффективная медицинская помощь невозможна без понимания пациентом своего состояния, поэтому подробно объясняю результаты анализов и обследований, а также принципы назначаемой терапии.<br /><br /></li><li>Я постоянно совершенствую свои профессиональные знания, регулярно участвуя в образовательных программах и вебинарах European Society of Cardiology и European Society for Medical Oncology, чтобы применять в практике современные международные рекомендации.</li></ul><p></p>",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "AlfaMedStar",
+      "address": "Milentija Popovića 5v, Beograd 11000",
+      "city": "Belgrade",
+      "district": "Novi Beograd",
+      "url": "https://alfamedstar.rs/",
+      "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/alfamedstar_rs",
+    "website": "https://www.alfamedstar.rs/doctors/avakyanc",
+    "appointmentUrl": "https://n1425872.alteg.io",
+    "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-04-27"
+}

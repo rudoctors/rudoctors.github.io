@@ -1,0 +1,70 @@
+{
+  "slug": "yuliya-ostanina",
+  "name": "Юлия Останина",
+  "specializations": [
+    "otorhinolaryngologist"
+  ],
+  "specializationText": "Оториноларинголог (ЛОР)",
+  "photo": "/photos/rd-54.jpg",
+  "experienceYears": 8,
+  "city": "Belgrade",
+  "district": "Novi Beograd",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "<br /><p></p><ul><li>Руководствуюсь в работе здравым смыслом и принципами доказательной медицины<br /><br /></li><li>Партнёрский и пациенториентированный подход: выслушаю, успокою, обьясню что случилось и что с этим делать. Расскажу обо всех вариантах диагностики и лечения<br /><br /></li><li>Обожаю детей и это, кажется, взаимно. Стараюсь превратить детский приём в игру<br /><br /></li><li>Работаю над маршрутизацией пациентов: куда идти, что делать, какой результат ожидать<br /><br /></li><li>Слежу за новостями докмеда, общаюсь с коллегами. Постоянно развиваюсь в своей и смежных специальностях</li></ul><p></p>",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "AlfaMedStar",
+      "address": "Milentija Popovića 5v, Beograd 11000",
+      "city": "Belgrade",
+      "district": "Novi Beograd",
+      "url": "https://alfamedstar.rs/",
+      "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/alfamedstar_rs",
+    "website": "https://www.alfamedstar.rs/doctors/ostanina",
+    "appointmentUrl": "https://n1425872.alteg.io",
+    "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+  },
+  "reviews": [
+    {
+      "id": "alfa-yuliya-ostanina-0",
+      "author": "Пациент",
+      "date": "2025-03-15",
+      "rating": 5,
+      "text": "Excellent, qualified doctor, explains everything during the appointment, answers all questions. Cured me and my daughter. All prescriptions (in my opinion) are justified, collects a fairly complete medical history to determine treatment tactics. There is a tympanometry device in the office. We recently moved and I am very glad that I found such a doctor.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-yuliya-ostanina-1",
+      "author": "Пациент",
+      "date": "2025-04-22",
+      "rating": 5,
+      "text": "We consulted with Yuliya Ostanina for a child. The child is terribly afraid of local doctors, because he doesn't understand what they are saying yet. They climb on him with various instruments, he reluctantly agrees to examinations. No one has been able to take a nasal swab yet. But with Yuliya I observed a completely different picture. The child agreed to everything, took tests, treated the nose, made a diagnosis, prescribed treatment. No whims, no fears. The doctor knows how to connect with children. I am very satisfied.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-yuliya-ostanina-2",
+      "author": "Пациент",
+      "date": "2025-05-10",
+      "rating": 5,
+      "text": "I want to leave a review about Yuliya Ostanina, otolaryngologist, ENT specialist, ear-nose-throat specialist. She checked everything according to my complaints in all possible ways, explained the mechanics of the nose, gave the necessary recommendations.",
+      "source": "serbia.alfamedstar.com"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net",
+    "serbia.alfamedstar.com"
+  ],
+  "updatedAt": "2026-09-23"
+}

@@ -1,0 +1,189 @@
+---
+import Layout from "../layouts/Layout.astro";
+import DoctorCard from "../components/DoctorCard.astro";
+import { publicDoctors, allSpecializationKeys, specLabel, siteStats, allCities } from "../lib/doctors";
+import { computeRating } from "../lib/rating";
+import { SITE, plural } from "../lib/site";
+
+const stats = siteStats();
+const top = publicDoctors()
+  .map((d) => ({ d, r: computeRating(d) }))
+  .filter((x) => x.r.count > 0)
+  .sort((a, b) => b.r.average - a.r.average || b.r.count - a.r.count)
+  .slice(0, 6)
+  .map((x) => x.d);
+
+const specs = allSpecializationKeys().slice(0, 16);
+const cities = allCities();
+const fresh = publicDoctors()
+  .slice()
+  .sort((a, b) => (b.updatedAt || "").localeCompare(a.updatedAt || ""))
+  .slice(0, 6);
+
+const featured = publicDoctors()
+  .filter((d) => d.featured)
+  .slice(0, 3);
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: SITE.name,
+  url: SITE.url,
+  inLanguage: "ru",
+  description: SITE.description,
+  potentialAction: {
+    "@type": "SearchAction",
+    target: `${SITE.url}/doctors/?q={search_term_string}`,
+    "query-input": "required name=search_term_string",
+  },
+};
+---
+
+<Layout jsonLd={jsonLd}>
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-brand-700 via-brand-800 to-navy-900 text-white">
+    <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_20%_20%,#2dd4bf_0,transparent_40%),radial-gradient(circle_at_80%_60%,#fb923c_0,transparent_35%)]"></div>
+    <div class="relative mx-auto max-w-6xl px-4 pt-14 pb-16 md:pt-20 md:pb-24">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/15 px-3 py-1 text-xs font-medium text-brand-100">
+          Русскоязычные врачи в Сербии
+        </div>
+        <h1 class="mt-4 text-3xl md:text-5xl font-extrabold tracking-tight leading-tight">
+          Найдите врача,<br class="hidden sm:block" />
+          которому доверяют
+        </h1>
+        <p class="mt-4 text-base md:text-lg text-brand-50/90 leading-relaxed">
+          Рейтинги, честные отзывы и подробные карточки: специальность, опыт, клиники и контакты — Белград, Нови-Сад и вся Сербия.
+        </p>
+
+        <form action="/doctors/" method="get" class="mt-8 flex flex-col sm:flex-row gap-3 max-w-2xl">
+          <input
+            type="search"
+            name="q"
+            class="input !bg-white !text-slate-900 !border-0 h-12 text-base flex-1"
+            placeholder="Имя, специальность или район…"
+            aria-label="Поиск врача"
+          />
+          <button type="submit" class="btn bg-accent-500 hover:bg-accent-400 text-white h-12 px-6 text-base">
+            Найти
+          </button>
+        </form>
+
+        <div class="mt-6 flex flex-wrap gap-4 text-sm text-brand-100/90">
+          <span><strong class="text-white">{stats.doctors}</strong> {plural(stats.doctors, "врач", "врача", "врачей")}</span>
+          <span><strong class="text-white">{stats.reviews}</strong> {plural(stats.reviews, "отзыв", "отзыва", "отзывов")}</span>
+          <span><strong class="text-white">{stats.specializations}</strong> {plural(stats.specializations, "специальность", "специальности", "специальностей")}</span>
+          <span><strong class="text-white">{stats.cities}</strong> {plural(stats.cities, "город", "города", "городов")}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialties -->
+  <section class="mx-auto max-w-6xl px-4 -mt-8 relative z-10">
+    <div class="card p-5 md:p-6">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="font-bold text-navy-900">Специальности</h2>
+        <a href="/specialties/" class="text-sm text-brand-700 font-semibold hover:underline">Все →</a>
+      </div>
+      <div class="flex flex-wrap gap-2">
+        {
+          specs.map((s) => (
+            <a href={`/specialties/${s}/`} class="chip hover:bg-brand-100 transition">
+              {specLabel(s)}
+            </a>
+          ))
+        }
+      </div>
+      {
+        cities.length > 0 && (
+          <div class="mt-5 pt-4 border-t border-slate-100 flex flex-wrap gap-2 items-center">
+            <span class="text-xs font-semibold text-slate-500 uppercase tracking-wide mr-1">Города:</span>
+            {cities.map((c) => (
+              <a href={`/cities/${encodeURIComponent(c)}/`} class="text-sm text-slate-600 hover:text-brand-700 underline-offset-2 hover:underline">
+                {c}
+              </a>
+            ))}
+          </div>
+        )
+      }
+    </div>
+  </section>
+
+  <!-- Featured -->
+  {
+    featured.length > 0 && (
+      <section class="mx-auto max-w-6xl px-4 mt-12">
+        <div class="flex items-center justify-between mb-5">
+          <h2 class="text-xl md:text-2xl font-extrabold text-navy-900">Рекомендуемые профили</h2>
+          <span class="text-xs text-slate-400">Продвижение</span>
+        </div>
+        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {featured.map((d) => (
+            <DoctorCard doctor={d} />
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  <!-- Top rated -->
+  <section class="mx-auto max-w-6xl px-4 mt-12">
+    <div class="flex items-center justify-between mb-5">
+      <h2 class="text-xl md:text-2xl font-extrabold text-navy-900">Высший рейтинг</h2>
+      <a href="/doctors/?sort=rating" class="text-sm text-brand-700 font-semibold hover:underline">Смотреть все →</a>
+    </div>
+    {
+      top.length > 0 ? (
+        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {top.map((d) => (
+            <DoctorCard doctor={d} />
+          ))}
+        </div>
+      ) : (
+        <div class="card p-8 text-center text-slate-500">
+          Отзывы ещё собираются. Будьте первым —{" "}
+          <a href="/leave-review/" class="text-brand-700 font-semibold hover:underline">оставьте отзыв</a>.
+        </div>
+      )
+    }
+  </section>
+
+  <!-- Recently updated -->
+  <section class="mx-auto max-w-6xl px-4 mt-12">
+    <div class="flex items-center justify-between mb-5">
+      <h2 class="text-xl md:text-2xl font-extrabold text-navy-900">Новые и обновлённые карточки</h2>
+    </div>
+    <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      {fresh.map((d) => <DoctorCard doctor={d} />)}
+    </div>
+  </section>
+
+  <!-- CTA Telegram + monetization slot -->
+  <section class="mx-auto max-w-6xl px-4 mt-14">
+    <div class="grid gap-4 md:grid-cols-2">
+      <div class="rounded-3xl bg-navy-900 text-white p-7 md:p-8 relative overflow-hidden">
+        <div class="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-brand-500/20 blur-2xl"></div>
+        <div class="relative">
+          <div class="text-xs font-bold uppercase tracking-widest text-brand-300">Сообщество</div>
+          <h3 class="mt-2 text-2xl font-extrabold">Чат «Медицина в Сербии»</h3>
+          <p class="mt-2 text-sm text-slate-300 leading-relaxed">
+            {SITE.telegramLabel} — живые рекомендации, записи к врачам и опыт сообщества в Сербии.
+          </p>
+          <a href={SITE.telegram} target="_blank" rel="noopener noreferrer" class="btn bg-white text-navy-900 hover:bg-slate-100 mt-5">
+            Присоединиться
+          </a>
+        </div>
+      </div>
+
+      <div class="rounded-3xl border-2 border-dashed border-brand-300 bg-brand-50 p-7 md:p-8">
+        <div class="text-xs font-bold uppercase tracking-widest text-brand-700">Врачам и клиникам</div>
+        <h3 class="mt-2 text-2xl font-extrabold text-navy-900">Продвижение профиля</h3>
+        <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+          Выделенный профиль вверху каталога и на главной. Расскажите о себе пациентам, которые ищут именно вас.
+        </p>
+        <a href="/about/#partners" class="btn-primary mt-5">Узнать об условиях</a>
+      </div>
+    </div>
+  </section>
+</Layout>

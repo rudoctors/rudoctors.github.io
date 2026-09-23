@@ -1,0 +1,35 @@
+{
+  "slug": "klara-volkova",
+  "name": "Клара Волкова",
+  "nameEn": "Klara Volkova",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "Стоматолог",
+  "photo": "/photos/rd-28.jpg",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline",
+    "online"
+  ],
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Smile in dental",
+      "address": "Юрия Гагарина 29 д",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-03-11"
+}

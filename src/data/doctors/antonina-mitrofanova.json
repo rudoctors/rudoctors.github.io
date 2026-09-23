@@ -1,0 +1,45 @@
+{
+  "slug": "antonina-mitrofanova",
+  "name": "Антонина Митрофанова",
+  "nameEn": "Antonina Mitrofanova",
+  "specializations": [
+    "dentist",
+    "therapist"
+  ],
+  "specializationText": "Стоматолог-терапевт и детский стоматолог",
+  "photo": "/photos/rd-80.jpg",
+  "city": "Belgrade",
+  "district": "Palilula",
+  "languages": [
+    "ru",
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Лечение кариеса у детей и взрослых, лечение пульпитов и периодонтитов у детей и взрослых, профессиональная гигиена полости рта",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MGClinic",
+      "address": "Stanoja Glavasa 14",
+      "city": "Belgrade",
+      "district": "Palilula",
+      "mapsUrl": "https://maps.app.goo.gl/hYjWtqGASZebZGaA7"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/dentist_antonina",
+    "website": "https://www.t.me/dentist_belgrade",
+    "appointmentUrl": "https://t.me/dentist_antonina",
+    "mapsUrl": "https://maps.app.goo.gl/hYjWtqGASZebZGaA7"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-09-01"
+}

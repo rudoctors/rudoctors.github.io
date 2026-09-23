@@ -1,0 +1,85 @@
+{
+  "slug": "kirill-kozyrev",
+  "name": "Кирилл Козырев",
+  "specializations": [
+    "psychiatrist"
+  ],
+  "specializationText": "Психиатр",
+  "photo": "/photos/rd-57.jpg",
+  "experienceYears": 7,
+  "city": "Belgrade",
+  "district": "Novi Beograd",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "<br /><p></p><ul><li>В своей практике я помогаю пациентам справляться с тревожными и аффективными расстройствами, ОКР, ПТСР, расстройствами личности, а также с сопутствующими эмоциональными трудностями при СДВГ и РАС. В работе сочетаю психиатрический подход, современную психофармакотерапию и психотерапию.<br /><br /></li><li>Я опираюсь на принципы доказательной медицины и использую научно обоснованные методы помощи. Для меня важно не только подобрать лечение, но и объяснить пациенту, что с ним происходит, почему это возникло и как именно мы будем с этим работать.<br /><br /></li><li>Я стараюсь создавать на приёме спокойную, безопасную и принимающую атмосферу, в которой человек может открыто говорить даже о самых сложных и уязвимых переживаниях без страха осуждения.<br /><br /></li><li>Считаю, что качественная помощь строится не только на профессиональных знаниях, но и на внимательном отношении, уважении, поддержке и ясном совместном плане лечения. Для меня важно, чтобы пациент чувствовал себя услышанным и понимал каждый этап нашей работы.</li></ul><p></p>",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "AlfaMedStar",
+      "address": "Milentija Popovića 5v, Beograd 11000",
+      "city": "Belgrade",
+      "district": "Novi Beograd",
+      "url": "https://alfamedstar.rs/",
+      "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/alfamedstar_rs",
+    "website": "https://www.alfamedstar.rs/doctors/kozyrev",
+    "appointmentUrl": "https://n1425872.alteg.io",
+    "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+  },
+  "reviews": [
+    {
+      "id": "alfa-kirill-kozyrev-0",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "I came with anxiety and constant inner tension. The visit was calm and clear: the doctor asked detailed questions, explained what was going on, and proposed a plan. I especially liked the plain language and no pressure or scare tactics.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-kirill-kozyrev-1",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "I needed a specialist who combines psychiatric and psychotherapeutic approaches. The consultation felt systematic: the doctor took a full history and helped me see how my symptoms linked to lifestyle, anxiety, and habitual thoughts.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-kirill-kozyrev-2",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "I came in great uncertainty after not understanding what was happening for a long time. After the consultation things became much clearer: we reviewed symptoms, possible causes, and next steps. I felt genuine attentive care.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-kirill-kozyrev-3",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "I liked that the doctor did not stick to a formal questionnaire but really engaged with my situation. I felt calm, could ask questions, and got clear answers. After the visit I had a sense of a real plan, not empty words.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-kirill-kozyrev-4",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "I came after a long period of unsuccessful attempts to stabilize my condition. Kirill Sergeyevich understood the situation from the first visit, carefully selected medication, and explained the rationale. Within weeks I felt real improvement. He was always available, answered questions, and monitored progress. I am very grateful for his dedication and professionalism.",
+      "source": "serbia.alfamedstar.com"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net",
+    "serbia.alfamedstar.com"
+  ],
+  "updatedAt": "2026-09-23"
+}

@@ -1,0 +1,62 @@
+{
+  "slug": "timur-mukaev",
+  "name": "Тимур Мукаев",
+  "specializations": [
+    "therapist"
+  ],
+  "specializationText": "Терапевт",
+  "photo": "/photos/rd-74.jpg",
+  "experienceYears": 9,
+  "city": "Belgrade",
+  "district": "Novi Beograd",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "<p><br /></p><p></p><ul><li>Врач-терапевт, принимаю взрослых пациентов<br /><br /></li><li>Доказательная медицина<br /><br /></li><li>Профилактика, диагностика и лечение<br /><br /></li><li>Забота о здоровье каждый день<br /><br /></li><li>Я говорю также на сербском языке. Мой опыт и знание особенностей сербского здравоохранения позволяет наиболее полно помогать пациентам</li></ul><p></p>",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "AlfaMedStar",
+      "address": "Milentija Popovića 5v, Beograd 11000",
+      "city": "Belgrade",
+      "district": "Novi Beograd",
+      "url": "https://alfamedstar.rs/",
+      "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/alfamedstar_rs",
+    "website": "https://www.alfamedstar.rs/doctors/mukaev",
+    "appointmentUrl": "https://n1425872.alteg.io",
+    "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+  },
+  "reviews": [
+    {
+      "id": "alfa-timur-mukaev-0",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "I consulted Timur Mukaev about a prolonged cough. The doctor listened carefully, ordered tests and explained the results in detail. The treatment helped, and I was satisfied with the appointment.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-timur-mukaev-1",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "I had an appointment with therapist Timur Ilyasovich after several weeks of constant fatigue and blood pressure fluctuations. I liked that the doctor wasn't in a hurry and asked many clarifying questions. He ordered tests and adjusted the treatment afterwards. Within a couple of weeks my condition noticeably improved. I would also like to note his calm manner of communication and clear explanations without complicated medical terms.",
+      "source": "serbia.alfamedstar.com"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net",
+    "serbia.alfamedstar.com"
+  ],
+  "updatedAt": "2026-09-23"
+}

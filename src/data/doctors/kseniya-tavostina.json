@@ -1,0 +1,40 @@
+{
+  "slug": "kseniya-tavostina",
+  "name": "Ксения Тавостина",
+  "specializations": [
+    "gynecologist",
+    "obstetrician_gynecologist"
+  ],
+  "specializationText": "Акушер-гинеколог",
+  "photo": "/photos/rd-44.jpg",
+  "city": "Novi Sad",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline",
+    "online"
+  ],
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Ginekološka ordinacija Taita",
+      "address": "Нови Сад, ул. Мичуринова 68б",
+      "city": "Novi Sad",
+      "mapsUrl": "https://maps.app.goo.gl/SLb3qCZ99wi3KQuTA?g_st=ac"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/ginekolog_tavostina_ksenija",
+    "website": "https://www.myobgyn.rs/",
+    "mapsUrl": "https://maps.app.goo.gl/SLb3qCZ99wi3KQuTA?g_st=ac"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-04-07"
+}

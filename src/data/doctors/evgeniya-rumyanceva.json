@@ -1,0 +1,43 @@
+{
+  "slug": "evgeniya-rumyanceva",
+  "name": "Евгения Румянцева",
+  "specializations": [
+    "pulmonologist",
+    "therapist"
+  ],
+  "specializationText": "Терапевт, пульмонолог",
+  "photo": "/photos/rd-34.jpg",
+  "city": "Belgrade",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline",
+    "online"
+  ],
+  "bio": "Здравствуйте! Меня зовут Румянцева Евгения, я врач-терапевт, пульмонолог. \nПринимаю очно в клинике Doctorus Expert, возможны онлайн консультации, а также вызовы на дом (Белград, Нови Сад). \nВыполняю спирометрию. \nЗаписаться на прием можно через сайт клиники или через личные сообщения (телеграм).",
+  "education": [
+    {
+      "degree": "Врач-терапевт",
+      "institution": "Смоленский государственный медицинский университет Министерства России",
+      "years": "2014-2020"
+    },
+    {
+      "degree": "Врач-пульмонолог",
+      "institution": "ФГБНУ ЦНИИТ",
+      "years": "2021-2023"
+    }
+  ],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/evgeniia_rumiantseva",
+    "mapsUrl": "https://maps.app.goo.gl/WDeosW9u5Yjmk8kV7?g_st=ic"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-09-13"
+}

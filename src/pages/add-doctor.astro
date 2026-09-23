@@ -1,0 +1,101 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SITE } from "../lib/site";
+---
+
+<Layout
+  title="Добавить врача"
+  description="Добавьте карточку русскоязычного врача в каталог Rudoctors."
+  noindex
+>
+  <div class="mx-auto max-w-2xl px-4 py-12">
+    <h1 class="text-3xl font-extrabold text-navy-900">Добавить врача</h1>
+    <p class="mt-2 text-slate-600">
+      Карточку можно предложить бесплатно. После проверки данных врач появится в каталоге.
+    </p>
+
+    <form id="add-form" class="card p-6 mt-8 space-y-4">
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-semibold mb-1" for="name">Имя и фамилия</label>
+          <input id="name" name="name" class="input" required maxlength="120" placeholder="Мария Иванова" />
+        </div>
+        <div>
+          <label class="block text-sm font-semibold mb-1" for="spec">Специальность</label>
+          <input id="spec" name="spec" class="input" required maxlength="120" placeholder="Кардиолог" />
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-semibold mb-1" for="city">Город</label>
+          <input id="city" name="city" class="input" required maxlength="60" placeholder="Belgrade" />
+        </div>
+        <div>
+          <label class="block text-sm font-semibold mb-1" for="exp">Стаж (лет)</label>
+          <input id="exp" name="exp" type="number" min="0" max="70" class="input" placeholder="10" />
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-sm font-semibold mb-1" for="clinic">Клиника / ординатура</label>
+        <input id="clinic" name="clinic" class="input" maxlength="160" placeholder="Название, адрес" />
+      </div>
+
+      <div>
+        <label class="block text-sm font-semibold mb-1" for="contact">Контакт для связи</label>
+        <input id="contact" name="contact" class="input" required maxlength="160" placeholder="Telegram / телефон / email" />
+      </div>
+
+      <div>
+        <label class="block text-sm font-semibold mb-1" for="about">О враче</label>
+        <textarea id="about" name="about" class="input min-h-28" maxlength="1500" placeholder="Образование, опыт, языки приёма…"></textarea>
+      </div>
+
+      <label class="flex items-start gap-2 text-sm text-slate-600">
+        <input type="checkbox" name="consent" required class="mt-1 rounded border-slate-300 text-brand-600 focus:ring-brand-500" />
+        Данные публичные, я имею право их передать.
+      </label>
+
+      <button type="submit" class="btn-primary w-full">Предложить карточку</button>
+      <p id="form-status" class="text-sm text-slate-500 hidden"></p>
+    </form>
+
+    <div class="mt-6 text-sm text-slate-500">
+      Вопросы:
+      <a href={SITE.telegram} target="_blank" rel="noopener noreferrer" class="text-brand-700 hover:underline">{SITE.telegramLabel}</a>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  const form = document.getElementById("add-form") as HTMLFormElement | null;
+  const status = document.getElementById("form-status");
+
+  form?.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const fd = new FormData(form);
+    const title = `Новый врач: ${fd.get("name")} (${fd.get("spec")})`;
+    const body = [
+      `**Имя:** ${fd.get("name")}`,
+      `**Специальность:** ${fd.get("spec")}`,
+      `**Город:** ${fd.get("city")}`,
+      `**Стаж:** ${fd.get("exp") || "—"}`,
+      `**Клиника:** ${fd.get("clinic") || "—"}`,
+      `**Контакт:** ${fd.get("contact")}`,
+      "",
+      `**О себе:**`,
+      String(fd.get("about") || "—"),
+      "",
+      "---",
+      "_Создано через форму rudoctors.github.io_",
+    ].join("\n");
+
+    const url = `https://github.com/rudoctors/rudoctors.github.io/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=doctor-request`;
+    if (status) {
+      status.classList.remove("hidden");
+      status.textContent = "Открываем форму GitHub…";
+    }
+    window.open(url, "_blank", "noopener,noreferrer");
+  });
+</script>

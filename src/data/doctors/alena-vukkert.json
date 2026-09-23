@@ -1,0 +1,40 @@
+{
+  "slug": "alena-vukkert",
+  "name": "Алена Вуккерт",
+  "nameEn": "Alena Vukkert",
+  "specializations": [
+    "oftalmolog"
+  ],
+  "specializationText": "Офтальмолог",
+  "photo": "/photos/rd-70.jpg",
+  "city": "Belgrade",
+  "district": "Stari Grad",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Офтальмолог для всей семьи, страбизмолог, офтальмохирург.<p>Прием детей с рождения, специалист по косоглазию, лечение косоглазия и амблиопии, контроль миопии, лечение и подбор очков любой степени сложности при миопии, астигматизме, гиперметропии.</p>",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Частная ординация в Белграде/поликлиника Džinić",
+      "city": "Belgrade",
+      "district": "Stari Grad"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/wukkert",
+    "website": "https://www.ТГ-канал «Др Вуккерт»:  https://t.me/+bFJamTL8ORg3ODk6",
+    "appointmentUrl": "https://n1358434.alteg.io"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-06-21"
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "tatiana-iarushina",
+  "name": "Tatiana Iarushina",
+  "specializations": [
+    "psychiatrist",
+    "child_psychiatrist"
+  ],
+  "specializationText": "психиатр детский/взрослый",
+  "photo": "/photos/rd-6.jpg",
+  "city": "Belgrade",
+  "district": "Savski Venac",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline",
+    "online"
+  ],
+  "bio": "В основе моего подхода — эмпатия, конфиденциальность и безопасное пространство без осуждения. Моя цель — помочь вам или вашему ребёнку достичь устойчивого улучшения состояния.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/dr_yarushina",
+    "website": "https://www.t.me/neuron_rx",
+    "mapsUrl": "https://maps.app.goo.gl/BTW2GF13r1aRt6yQ9"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-09-13"
+}

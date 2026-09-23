@@ -1,0 +1,98 @@
+---
+import type { Doctor } from "../lib/types";
+import { computeRating } from "../lib/rating";
+import { specLabel } from "../lib/doctors";
+import Stars from "./Stars.astro";
+
+interface Props {
+  doctor: Doctor;
+}
+const { doctor } = Astro.props;
+const rating = computeRating(doctor);
+const initials = doctor.name
+  .split(/\s+/)
+  .slice(0, 2)
+  .map((p) => p[0])
+  .join("")
+  .toUpperCase();
+const photo = doctor.photo;
+---
+
+<article class="card p-5 flex flex-col gap-4">
+  <div class="flex gap-4 items-start">
+    <div class="shrink-0">
+      {
+        photo ? (
+          <img
+            src={photo}
+            alt={doctor.name}
+            width={72}
+            height={72}
+            loading="lazy"
+            class="h-16 w-16 rounded-2xl object-cover bg-slate-100"
+          />
+        ) : (
+          <div class="h-16 w-16 rounded-2xl bg-brand-100 text-brand-800 flex items-center justify-center font-bold text-lg">
+            {initials}
+          </div>
+        )
+      }
+    </div>
+
+    <div class="min-w-0 flex-1">
+      <div class="flex flex-wrap items-center gap-2">
+        {doctor.featured && (
+          <span class="text-[11px] font-bold uppercase tracking-wide px-2 py-0.5 rounded-full bg-accent-400/15 text-accent-500">
+            Рекомендуем
+          </span>
+        )}
+        <a
+          href={`/doctors/${doctor.slug}/`}
+          class="font-bold text-lg text-navy-900 hover:text-brand-700 truncate"
+        >
+          {doctor.name}
+        </a>
+      </div>
+
+      <div class="mt-1 flex flex-wrap gap-1.5">
+        {doctor.specializations.slice(0, 3).map((s) => (
+          <span class="chip">{specLabel(s)}</span>
+        ))}
+      </div>
+
+      <div class="mt-2 text-sm text-slate-600">
+        {[doctor.city, doctor.district].filter(Boolean).join(" · ")}
+        {doctor.experienceYears ? ` · стаж ${doctor.experienceYears} лет` : ""}
+      </div>
+    </div>
+
+    <div class="hidden sm:block text-right">
+      <Stars rating={rating.average} count={rating.count} size="sm" />
+    </div>
+  </div>
+
+  {
+    doctor.bio && (
+      <p class="text-sm text-slate-600 line-clamp-2 leading-relaxed">{doctor.bio.replace(/<[^>]+>/g, "")}</p>
+    )
+  }
+
+  <div class="mt-auto flex items-center justify-between gap-3 pt-2 border-t border-slate-100">
+    <div class="flex flex-wrap gap-1.5 text-xs text-slate-500">
+      {doctor.languages.slice(0, 4).map((l) => (
+        <span class="px-2 py-0.5 rounded-md bg-slate-100">{l.toUpperCase()}</span>
+      ))}
+      {doctor.formats.includes("online") && <span class="chip">Онлайн</span>}
+      {doctor.formats.includes("offline") && (
+        <span class="px-2 py-0.5 rounded-md bg-slate-100">Очно</span>
+      )}
+    </div>
+    <a href={`/doctors/${doctor.slug}/`} class="btn-secondary !py-1.5 !px-3 text-xs">
+      Профиль →
+    </a>
+  </div>
+
+  <div class="sm:hidden">
+    <Stars rating={rating.average} count={rating.count} size="sm" />
+  </div>
+</article>

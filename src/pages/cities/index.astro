@@ -1,0 +1,29 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { allCities, publicDoctors } from "../../lib/doctors";
+
+const cities = allCities().map((c) => ({
+  city: c,
+  count: publicDoctors().filter((d) => d.city === c).length,
+}));
+---
+
+<Layout title="Города" description="Русскоязычные врачи по городам Сербии: Белград, Нови-Сад, Суботица.">
+  <div class="mx-auto max-w-6xl px-4 py-10">
+    <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900">Города</h1>
+    <p class="mt-2 text-slate-600">Где принимают врачи из каталога.</p>
+
+    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        cities.map((c) => (
+          <a href={`/cities/${encodeURIComponent(c.city)}/`} class="card p-5 hover:border-brand-300 transition group">
+            <div class="flex items-center justify-between">
+              <h2 class="font-bold text-navy-900 group-hover:text-brand-700">{c.city}</h2>
+              <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-2 py-1 rounded-lg">{c.count}</span>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</Layout>

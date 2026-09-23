@@ -1,0 +1,45 @@
+{
+  "slug": "andrei-sergeev",
+  "name": "Андрей Сергеев",
+  "nameEn": "Andrei Sergeev",
+  "specializations": [
+    "pediatrician",
+    "allergist_immunologist"
+  ],
+  "specializationText": "педиатрия, аллергология-иммунология",
+  "photo": "/photos/rd-14.jpg",
+  "city": "Novi Sad",
+  "district": "Telep",
+  "languages": [
+    "en",
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline",
+    "online"
+  ],
+  "bio": "В 2000 году закончил педиатрический факультет РНИМУ имени Пирогова, затем аспирантуру в НИИ вакцин и сывороток им. Мечникова РАМН.  Работал педиатром и аллергологом-иммунологом в различных клиниках города Москвы.  \nС 2022 веду прием пациентов в Сербии в городе Нови Сад.\n\nЗанимаюсь  диагностикой, лечением и профилактикой различных заболеваний у детей.\nПровожу вакцинацию.\nКак аллерглог-иммунолог консультирую взрослых и детей. \nДиагностирую и лечу аллергический ринит, бронхиальную астму, атопический дерматит, крапивницу, ангиоотёк, лекарственную и пищевую аллергия, анафилактические реакции, иммунодефициты.\nПровожу АСИТ.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Best Medica",
+      "address": "Ćirila i Metodija 16, Novi Sad",
+      "city": "Novi Sad",
+      "district": "Telep",
+      "url": "https://bestmedica.rs/",
+      "mapsUrl": "https://maps.app.goo.gl/zQqJQEumnk4hjTgN9"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/dr_allergist",
+    "mapsUrl": "https://maps.app.goo.gl/zQqJQEumnk4hjTgN9"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-03-07"
+}

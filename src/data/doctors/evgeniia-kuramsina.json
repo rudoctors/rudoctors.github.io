@@ -1,0 +1,43 @@
+{
+  "slug": "evgeniia-kuramsina",
+  "name": "Евгения Курамшина",
+  "nameEn": "Evgeniia Kuramsina",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "Стоматология",
+  "photo": "/photos/rd-59.jpg",
+  "city": "Belgrade",
+  "district": "Stari Grad",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dental centar drlesandat",
+      "address": "Страхињића Бана 74, Београд 11000",
+      "city": "Belgrade",
+      "district": "Stari Grad",
+      "url": "http://drlesandar.com/",
+      "mapsUrl": "https://maps.app.goo.gl/rmyGCPFxd8mMU4mY8?g_st=ac"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/evgenijastomatolog",
+    "website": "https://www.@evgeniya_stomatolog",
+    "appointmentUrl": "https://t.me/evgenijastomatolog",
+    "mapsUrl": "https://maps.app.goo.gl/rmyGCPFxd8mMU4mY8?g_st=ac"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-04-19"
+}

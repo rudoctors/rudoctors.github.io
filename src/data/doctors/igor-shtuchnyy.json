@@ -1,0 +1,43 @@
+{
+  "slug": "igor-shtuchnyy",
+  "name": "Игорь Штучный",
+  "specializations": [
+    "neurologist"
+  ],
+  "specializationText": "Невролог",
+  "photo": "/photos/rd-50.jpg",
+  "city": "Belgrade",
+  "district": "Novi Beograd",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "<ul><li>Я врач-невролог, работающий в рамках принципов доказательной медицины и современных европейских клинических рекомендаций. В своей практике уделяю особое внимание тщательной диагностике, подробному сбору анамнеза и индивидуальному подходу к каждому пациенту, с учетом не только клинических, но и психологических аспектов состояния.<br /><br /></li><li>Стремлюсь создать спокойную и безопасную атмосферу, где пациент может открыто говорить о своих симптомах и переживаниях без страха осуждения.<br /><br /></li><li>Использую только методы с доказанной эффективностью, избегая препаратов и подходов без научного обоснования. Регулярно слежу за обновлениями клинических рекомендаций и профессиональной литературы.<br /><br /></li><li>Моя задача — не просто назначить лечение, а помочь пациенту разобраться в своем состоянии, снизить уровень тревоги и улучшить качество жизни.</li></ul>",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "AlfaMedStar",
+      "address": "Milentija Popovića 5v, Beograd 11000",
+      "city": "Belgrade",
+      "district": "Novi Beograd",
+      "url": "https://alfamedstar.rs/",
+      "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/alfamedstar_rs",
+    "website": "https://www.alfamedstar.rs/doctors/shtuchniy",
+    "appointmentUrl": "https://n1425872.alteg.io",
+    "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-04-27"
+}

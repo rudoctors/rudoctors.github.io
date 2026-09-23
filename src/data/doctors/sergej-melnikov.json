@@ -1,0 +1,34 @@
+{
+  "slug": "sergej-melnikov",
+  "name": "Сергей Мельников",
+  "nameEn": "Sergej Melnikov",
+  "specializations": [
+    "psychotherapist"
+  ],
+  "specializationText": "врач-психотерапевт",
+  "photo": "/photos/rd-13.jpg",
+  "city": "Novi Sad",
+  "district": "Stari Grad",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline",
+    "online"
+  ],
+  "bio": "Решение широкого спектра проблем, нормализация состояния и работа над улучшением качества жизни в разных форматах. Конфиденциально. Бережно. Эффективно.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/docmelnikov",
+    "website": "https://www.docmelnikov.com",
+    "mapsUrl": "https://share.google/Kgprbe4SKWujt99Zj"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-03-07"
+}

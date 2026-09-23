@@ -1,0 +1,78 @@
+{
+  "slug": "vera-golysheva",
+  "name": "Вера Голышева",
+  "specializations": [
+    "endocrinologist"
+  ],
+  "specializationText": "Эндокринолог",
+  "photo": "/photos/rd-84.jpg",
+  "experienceYears": 25,
+  "city": "Belgrade",
+  "district": "Novi Beograd",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "● Занимаюсь профилактикой, диагностикой и лечением эндокринных заболеваний, руководствуясь современными российскими и зарубежными рекомендациями и принципами доказательной медицины.<p>● На приеме я помогаю пациенту понять особенности его заболевания и объясняю какие варианты лечения возможны и почему.</p><p>● Результат терапии - это совместный проект врача и пациента, в основе которого лежат взаимное уважение и доверие. Таким образом нам удается добиться индивидуализированного подхода и подобрать максимально эффективное и бережное лечение.</p>",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "AlfaMedStar",
+      "address": "Milentija Popovića 5v, Beograd 11000",
+      "city": "Belgrade",
+      "district": "Novi Beograd",
+      "url": "https://alfamedstar.rs/",
+      "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/alfamedstar_rs",
+    "website": "https://www.alfamedstar.rs/doctors/golisheva",
+    "appointmentUrl": "https://n1425872.alteg.io",
+    "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+  },
+  "reviews": [
+    {
+      "id": "alfa-vera-golysheva-0",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "Вера Александровна очень хороший, добрый и отзывчивый врач. Она меня выслушала, посмотрела результаты анализов и объяснила всё по заболеванию и приёму лекарств.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-vera-golysheva-1",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "Очень хороший врач, который внушает доверие. Я пришла к ней с сильными проблемами по тиреотоксикозу, и она мне всё объяснила и назначила обследования, и мне стало значительно легче после назначенного лечения.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-vera-golysheva-2",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "Довольно приветливый и компетентный врач. Она меня проконсультировала и по вопросам гинекологии.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-vera-golysheva-3",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "Вера Александровна всё объяснила мне про мою болезнь и предложила несколько вариантов, чем можно лечиться. Был у неё не один раз, наблюдаюсь регулярно.",
+      "source": "serbia.alfamedstar.com"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net",
+    "serbia.alfamedstar.com"
+  ],
+  "updatedAt": "2026-09-23"
+}

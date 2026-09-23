@@ -1,0 +1,115 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { publicDoctors } from "../lib/doctors";
+import { SITE } from "../lib/site";
+
+const doctors = publicDoctors()
+  .slice()
+  .sort((a, b) => a.name.localeCompare(b.name, "ru"))
+  .map((d) => ({ slug: d.slug, name: d.name }));
+---
+
+<Layout
+  title="Оставить отзыв"
+  description="Оставьте отзыв о враче из каталога Rudoctors — он поможет другим пациентам."
+  noindex
+>
+  <div class="mx-auto max-w-2xl px-4 py-12">
+    <h1 class="text-3xl font-extrabold text-navy-900">Оставить отзыв</h1>
+    <p class="mt-2 text-slate-600">
+      Заполните форму — мы создадим заявку в репозитории и опубликуем отзыв после модерации.
+    </p>
+
+    <form id="review-form" class="card p-6 mt-8 space-y-4">
+      <div>
+        <label class="block text-sm font-semibold mb-1" for="doctor">Врач</label>
+        <select id="doctor" name="doctor" class="input" required>
+          <option value="">Выберите врача…</option>
+          {doctors.map((d) => <option value={d.slug}>{d.name}</option>)}
+        </select>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-semibold mb-1" for="author">Ваше имя</label>
+          <input id="author" name="author" class="input" required maxlength="80" placeholder="Анна" />
+        </div>
+        <div>
+          <label class="block text-sm font-semibold mb-1" for="rating">Оценка</label>
+          <select id="rating" name="rating" class="input" required>
+            <option value="5">5 — отлично</option>
+            <option value="4">4 — хорошо</option>
+            <option value="3">3 — нормально</option>
+            <option value="2">2 — плохо</option>
+            <option value="1">1 — ужасно</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-sm font-semibold mb-1" for="text">Отзыв</label>
+        <textarea
+          id="text"
+          name="text"
+          class="input min-h-36"
+          required
+          minlength="30"
+          maxlength="2000"
+          placeholder="Расскажите о приёме: как прошло, что понравилось, что нет…"></textarea>
+        <div class="text-xs text-slate-400 mt-1">Минимум 30 символов. Без персональных данных третьих лиц.</div>
+      </div>
+
+      <label class="flex items-start gap-2 text-sm text-slate-600">
+        <input type="checkbox" name="consent" required class="mt-1 rounded border-slate-300 text-brand-600 focus:ring-brand-500" />
+        Подтверждаю, что отзыв — мой личный опыт, и согласен с <a href="/about/#reviews-policy" class="text-brand-700 underline">правилами публикации</a>.
+      </label>
+
+      <button type="submit" class="btn-primary w-full">Отправить на модерацию</button>
+      <p id="form-status" class="text-sm text-slate-500 hidden"></p>
+    </form>
+
+    <div class="mt-6 text-sm text-slate-500">
+      Или напишите напрямую в сообщество:
+      <a href={SITE.telegram} target="_blank" rel="noopener noreferrer" class="text-brand-700 hover:underline">{SITE.telegramLabel}</a>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  const form = document.getElementById("review-form") as HTMLFormElement | null;
+  const status = document.getElementById("form-status");
+
+  const params = new URLSearchParams(location.search);
+  const pre = params.get("doctor");
+  const sel = document.getElementById("doctor") as HTMLSelectElement | null;
+  if (pre && sel) sel.value = pre;
+
+  form?.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const fd = new FormData(form);
+    const doctor = String(fd.get("doctor") || "");
+    const author = String(fd.get("author") || "");
+    const rating = String(fd.get("rating") || "5");
+    const text = String(fd.get("text") || "");
+
+    const title = `Отзыв: ${doctor} (${rating}★)`;
+    const body = [
+      `**Врач:** ${doctor}`,
+      `**Автор:** ${author}`,
+      `**Оценка:** ${rating}/5`,
+      `**Дата:** ${new Date().toISOString().slice(0, 10)}`,
+      "",
+      text,
+      "",
+      "---",
+      "_Создано через форму rudoctors.github.io_",
+    ].join("\n");
+
+    const url = `https://github.com/rudoctors/rudoctors.github.io/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=review`;
+    if (status) {
+      status.classList.remove("hidden");
+      status.textContent = "Открываем форму GitHub для отправки отзыва…";
+    }
+    window.open(url, "_blank", "noopener,noreferrer");
+  });
+</script>

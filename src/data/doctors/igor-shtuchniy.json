@@ -1,0 +1,65 @@
+{
+  "slug": "igor-shtuchniy",
+  "name": "Igor Shtuchniy",
+  "nameEn": "Igor Shtuchniy",
+  "specializations": [
+    "neurologist"
+  ],
+  "specializationText": "Neurologist",
+  "experienceYears": 6,
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "en",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "AlfaMedStar",
+      "address": "Milentija Popovića 5v, Beograd 11000",
+      "city": "Belgrade",
+      "district": "Нови-Београд",
+      "url": "https://serbia.alfamedstar.com/"
+    }
+  ],
+  "contacts": {
+    "website": "https://serbia.alfamedstar.com/en/doctors/igor-shtuchniy",
+    "appointmentUrl": "https://serbia.alfamedstar.com/en/doctors"
+  },
+  "reviews": [
+    {
+      "id": "alfa-igor-shtuchniy-0",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "Good morning. I had a consultation with neurologist Igor Shtuchniy in Novi Sad. The consultation went very well and lasted a little over an hour. Igor is an attentive neurologist: he took a full history, performed all neurological tests, and confirmed the diagnosis. He gave detailed conclusions and recommended further examination. I know migraine with aura is not cured completely, but so far attacks have not recurred. I recommend this specialist — he is also very pleasant to talk to.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-igor-shtuchniy-1",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "Today I was seen by neurologist Igor Shtuchniy. I can confidently recommend him. He strictly follows evidence-based medicine, takes a detailed history, does not recommend anything unnecessary or extra procedures, is polite and attentive, and explains everything in detail. You can feel professionalism and medical ethics.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-igor-shtuchniy-2",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "Yesterday I was seen by neurologist Igor Shtuchniy. I was very pleased with his professionalism, attentiveness, and humanity. It is clear that the doctor loves his profession and approaches his work with genuine interest.",
+      "source": "serbia.alfamedstar.com"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "serbia.alfamedstar.com"
+  ],
+  "updatedAt": "2026-09-23"
+}

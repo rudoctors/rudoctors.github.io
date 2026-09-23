@@ -1,0 +1,50 @@
+---
+import { SITE } from "../lib/site";
+---
+
+<footer class="mt-16 border-t border-slate-200 bg-white">
+  <div class="mx-auto max-w-6xl px-4 py-10 grid gap-8 md:grid-cols-3">
+    <div>
+      <div class="flex items-center gap-2 font-extrabold text-lg">
+        <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600 text-white text-xs">R</span>
+        Rudoctors
+      </div>
+      <p class="mt-3 text-sm text-slate-500 leading-relaxed">
+        Рейтинг и отзывы на русскоязычных врачей в Сербии. Помогаем сообществу выбирать врача осознанно.
+      </p>
+      <p class="mt-3 text-xs text-slate-400">
+        Материалы сайта не заменяют очную консультацию врача.
+      </p>
+    </div>
+
+    <div>
+      <div class="text-sm font-semibold text-slate-900 mb-3">Разделы</div>
+      <ul class="space-y-2 text-sm text-slate-600">
+        <li><a class="hover:text-brand-700" href="/doctors/">Каталог врачей</a></li>
+        <li><a class="hover:text-brand-700" href="/specialties/">Специальности</a></li>
+        <li><a class="hover:text-brand-700" href="/cities/">Города</a></li>
+        <li><a class="hover:text-brand-700" href="/leave-review/">Оставить отзыв</a></li>
+        <li><a class="hover:text-brand-700" href="/add-doctor/">Добавить врача</a></li>
+        <li><a class="hover:text-brand-700" href="/about/">О проекте</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="text-sm font-semibold text-slate-900 mb-3">Сообщество</div>
+      <p class="text-sm text-slate-600 mb-3">
+        Чат «Медицина в Сербии» — {SITE.telegramLabel}
+      </p>
+      <a
+        href={SITE.telegram}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-primary"
+      >
+        Открыть Telegram
+      </a>
+      <p class="mt-6 text-xs text-slate-400">
+        © {new Date().getFullYear()} Rudoctors
+      </p>
+    </div>
+  </div>
+</footer>

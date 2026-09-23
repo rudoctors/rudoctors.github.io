@@ -1,0 +1,194 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import DoctorCard from "../../components/DoctorCard.astro";
+import { publicDoctors, allSpecializationKeys, allCities, specLabel } from "../../lib/doctors";
+import { computeRating } from "../../lib/rating";
+import { SITE } from "../../lib/site";
+
+const doctors = publicDoctors().map((d) => ({
+  doctor: d,
+  rating: computeRating(d),
+}));
+
+const specs = allSpecializationKeys();
+const cities = allCities();
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Каталог врачей Сербии",
+  url: `${SITE.url}/doctors/`,
+  description: SITE.description,
+};
+---
+
+<Layout
+  title="Каталог врачей"
+  description="Все русскоязычные врачи Сербии с рейтингом, отзывами и фильтрами по специальности, городу и языку."
+  jsonLd={jsonLd}
+>
+  <div class="mx-auto max-w-6xl px-4 py-10">
+    <div class="mb-8">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900">Врачи</h1>
+      <p class="mt-2 text-slate-600">
+        Фильтруйте по специальности, городу, языку и формату приёма.
+      </p>
+    </div>
+
+    <!-- Filters -->
+    <form id="filters" class="card p-4 md:p-5 mb-8 grid gap-3 md:grid-cols-12 items-end">
+      <div class="md:col-span-4">
+        <label class="block text-xs font-semibold text-slate-500 mb-1" for="q">Поиск</label>
+        <input id="q" name="q" type="search" class="input" placeholder="Имя или текст…" />
+      </div>
+      <div class="md:col-span-3">
+        <label class="block text-xs font-semibold text-slate-500 mb-1" for="spec">Специальность</label>
+        <select id="spec" name="spec" class="input">
+          <option value="">Все</option>
+          {specs.map((s) => <option value={s}>{specLabel(s)}</option>)}
+        </select>
+      </div>
+      <div class="md:col-span-2">
+        <label class="block text-xs font-semibold text-slate-500 mb-1" for="city">Город</label>
+        <select id="city" name="city" class="input">
+          <option value="">Все</option>
+          {cities.map((c) => <option value={c}>{c}</option>)}
+        </select>
+      </div>
+      <div class="md:col-span-2">
+        <label class="block text-xs font-semibold text-slate-500 mb-1" for="sort">Сортировка</label>
+        <select id="sort" name="sort" class="input">
+          <option value="rating">По рейтингу</option>
+          <option value="reviews">По числу отзывов</option>
+          <option value="name">По имени</option>
+          <option value="exp">По стажу</option>
+        </select>
+      </div>
+      <div class="md:col-span-1 flex gap-2">
+        <button type="submit" class="btn-primary w-full">OK</button>
+      </div>
+
+      <div class="md:col-span-12 flex flex-wrap gap-3 pt-1">
+        <label class="inline-flex items-center gap-2 text-sm text-slate-600">
+          <input type="checkbox" name="online" value="1" class="rounded border-slate-300 text-brand-600 focus:ring-brand-500" />
+          Онлайн-приём
+        </label>
+        <label class="inline-flex items-center gap-2 text-sm text-slate-600">
+          <input type="checkbox" name="withReviews" value="1" class="rounded border-slate-300 text-brand-600 focus:ring-brand-500" />
+          Есть отзывы
+        </label>
+        <button type="button" id="reset" class="text-sm text-slate-500 hover:text-slate-800 underline-offset-2 hover:underline ml-auto">
+          Сбросить
+        </button>
+      </div>
+    </form>
+
+    <div id="result-meta" class="text-sm text-slate-500 mb-4"></div>
+
+    <div id="doctor-grid" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      {
+        doctors.map(({ doctor }) => (
+          <div
+            class="doctor-item"
+            data-slug={doctor.slug}
+            data-name={doctor.name.toLowerCase()}
+            data-bio={(doctor.bio || "").toLowerCase()}
+            data-specs={doctor.specializations.join(",")}
+            data-city={doctor.city}
+            data-formats={doctor.formats.join(",")}
+            data-reviews={doctor.reviews?.length || 0}
+            data-rating={computeRating(doctor).average}
+            data-exp={doctor.experienceYears || 0}
+            data-langs={doctor.languages.join(",")}
+          >
+            <DoctorCard doctor={doctor} />
+          </div>
+        ))
+      }
+    </div>
+
+    <div id="empty" class="hidden card p-10 text-center text-slate-500">
+      Ничего не найдено. Попробуйте изменить фильтры.
+    </div>
+  </div>
+</Layout>
+
+<script define:vars={{ doctorCount: doctors.length }}>
+  const form = document.getElementById("filters");
+  const grid = document.getElementById("doctor-grid");
+  const empty = document.getElementById("empty");
+  const meta = document.getElementById("result-meta");
+  const items = [...document.querySelectorAll(".doctor-item")];
+
+  const params = new URLSearchParams(location.search);
+  const setFromParams = () => {
+    for (const [k, v] of params.entries()) {
+      const el = form.elements.namedItem(k);
+      if (!el) continue;
+      if (el.type === "checkbox") el.checked = v === "1" || v === "true";
+      else el.value = v;
+    }
+  };
+  setFromParams();
+
+  function apply() {
+    const fd = new FormData(form);
+    const q = String(fd.get("q") || "").trim().toLowerCase();
+    const spec = String(fd.get("spec") || "");
+    const city = String(fd.get("city") || "");
+    const sort = String(fd.get("sort") || "rating");
+    const online = fd.get("online") === "1" || fd.get("on") === "on";
+    const withReviews = fd.get("withReviews") === "1" || fd.get("wr") === "on";
+    const onlineChecked = form.querySelector('[name="online"]')?.checked;
+    const reviewsChecked = form.querySelector('[name="withReviews"]')?.checked;
+
+    let visible = 0;
+    for (const item of items) {
+      const d = item.dataset;
+      let ok = true;
+      if (q) {
+        const hay = `${d.name} ${d.bio} ${d.specs}`.toLowerCase();
+        if (!hay.includes(q)) ok = false;
+      }
+      if (spec && !(d.specs || "").split(",").includes(spec)) ok = false;
+      if (city && d.city !== city) ok = false;
+      if ((onlineChecked || online) && !(d.formats || "").includes("online")) ok = false;
+      if ((reviewsChecked || withReviews) && Number(d.reviews) < 1) ok = false;
+      item.classList.toggle("hidden", !ok);
+      if (ok) visible++;
+    }
+
+    // sort visible items
+    const arr = items.slice();
+    arr.sort((a, b) => {
+      const da = a.dataset, db = b.dataset;
+      if (sort === "name") return (da.name || "").localeCompare(db.name || "", "ru");
+      if (sort === "exp") return Number(db.exp) - Number(da.exp);
+      if (sort === "reviews") return Number(db.reviews) - Number(da.reviews);
+      const ra = Number(da.rating), rb = Number(db.rating);
+      if (rb !== ra) return rb - ra;
+      return Number(db.reviews) - Number(da.reviews);
+    });
+    for (const el of arr) grid.appendChild(el);
+
+    empty.classList.toggle("hidden", visible > 0);
+    meta.textContent = `Найдено: ${visible} из ${doctorCount}`;
+
+    const next = new URLSearchParams();
+    for (const [k, v] of fd.entries()) if (v) next.set(k, String(v));
+    if (form.querySelector('[name="online"]')?.checked) next.set("online", "1");
+    if (form.querySelector('[name="withReviews"]')?.checked) next.set("withReviews", "1");
+    history.replaceState(null, "", `${location.pathname}?${next.toString()}`);
+  }
+
+  form?.addEventListener("submit", (e) => {
+    e.preventDefault();
+    apply();
+  });
+  form?.addEventListener("change", apply);
+  document.getElementById("reset")?.addEventListener("click", () => {
+    form.reset();
+    apply();
+  });
+  apply();
+</script>

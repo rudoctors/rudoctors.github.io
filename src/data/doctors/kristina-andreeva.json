@@ -1,0 +1,39 @@
+{
+  "slug": "kristina-andreeva",
+  "name": "Кристина Андреева",
+  "nameEn": "Kristina Andreeva",
+  "specializations": [
+    "pediatrician"
+  ],
+  "specializationText": "Педиатрия",
+  "photo": "/photos/rd-33.jpg",
+  "city": "Belgrade",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "formats": [
+    "offline",
+    "online"
+  ],
+  "bio": "Здравствуйте! На данный момент я не веду официальный прием в клинике. Доступные форматы связи: онлайн-консультация или выезд на дом в Нови-Саде и Белграде.\n\nВ своей работе я строго придерживаюсь принципов доказательной медицины. Стараюсь проводить осмотр в спокойной игровой обстановке, чтобы ребенку и родителям было максимально комфортно\n\nПостоянно изучаю авторитетные медицинские источники и опираюсь на актуальные международные рекомендации, чтобы оказывать качественную и современную помощь.",
+  "education": [
+    {
+      "degree": "Педиатрия",
+      "institution": "Санкт-Петербургский Государственный Педиатрический Медицинский Университет",
+      "years": "2017-2023"
+    }
+  ],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/dr_krisandr",
+    "website": "https://www.instagram.com/dr.krisandr?igsh=OG83cGRoYXppYTVv&utm_source=qr"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-03-16"
+}

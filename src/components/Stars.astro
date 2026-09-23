@@ -1,0 +1,26 @@
+---
+interface Props {
+  rating: number;
+  count: number;
+  size?: "sm" | "md" | "lg";
+}
+const { rating, count, size = "md" } = Astro.props;
+const full = Math.round(rating);
+const textClass = size === "lg" ? "text-3xl" : size === "sm" ? "text-sm" : "text-lg";
+const starClass = size === "lg" ? "text-xl" : size === "sm" ? "text-xs" : "text-sm";
+---
+
+{
+  count === 0 || rating === 0 ? (
+    <span class="badge-new">Нет отзывов</span>
+  ) : (
+    <div class="flex items-center gap-2">
+      <span class={`font-extrabold text-navy-900 ${textClass}`}>{rating.toFixed(1)}</span>
+      <span class={`text-amber-400 tracking-tight ${starClass}`} aria-hidden>
+        {"★".repeat(Math.min(5, Math.max(1, full)))}
+        <span class="text-slate-300">{"★".repeat(Math.max(0, 5 - Math.min(5, Math.max(1, full))))}</span>
+      </span>
+      <span class="text-xs text-slate-500">{count} отз.</span>
+    </div>
+  )
+}

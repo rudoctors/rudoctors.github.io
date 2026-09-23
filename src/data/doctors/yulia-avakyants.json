@@ -1,0 +1,81 @@
+{
+  "slug": "yulia-avakyants",
+  "name": "Yulia Avakyants",
+  "nameEn": "Yulia Avakyants",
+  "specializations": [
+    "cardiologist"
+  ],
+  "specializationText": "Cardiologist",
+  "experienceYears": 10,
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "en",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "AlfaMedStar",
+      "address": "Milentija Popovića 5v, Beograd 11000",
+      "city": "Belgrade",
+      "district": "Нови-Београд",
+      "url": "https://serbia.alfamedstar.com/"
+    }
+  ],
+  "contacts": {
+    "website": "https://serbia.alfamedstar.com/en/doctors/yulia-avakyants",
+    "appointmentUrl": "https://serbia.alfamedstar.com/en/doctors"
+  },
+  "reviews": [
+    {
+      "id": "alfa-yulia-avakyants-0",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "The doctor quickly and substantively understood our situation and ordered all necessary tests. She did not rush off-topic and always checked if we had more questions. Her approach felt attentive and professional.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-yulia-avakyants-1",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "The doctor is attentive, tactful, and a true professional. We wish her career success and hope she stays as kind and caring. We need more doctors like her.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-yulia-avakyants-2",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "A true professional who gives patients a lot of attention. Every prescription is explained in detail — why this drug and what to expect. We felt sincere involvement and care, which made the visit much less stressful.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-yulia-avakyants-3",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "She was polite, sensitive, and attentive. She listened carefully to our questions and concerns and gave useful advice. We were satisfied with this specialist.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-yulia-avakyants-4",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "An attentive and professional doctor. Every action inspires trust. A true specialist — we are grateful for her care and attention.",
+      "source": "serbia.alfamedstar.com"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "serbia.alfamedstar.com"
+  ],
+  "updatedAt": "2026-09-23"
+}

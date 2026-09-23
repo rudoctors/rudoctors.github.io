@@ -1,0 +1,28 @@
+{
+  "slug": "natalya-andreeva",
+  "name": "Наталья Андреева",
+  "specializations": [
+    "therapist"
+  ],
+  "photo": "/photos/rd-67.jpg",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Веду прием более 3,5 лет в Сербии. <p>Занимаюсь комплексным лечением и протезированием зубов и имплантатов. В клинике есть современный сканер.</p><p><br /></p><p>Более подробно ознакомиться, как проходит первичный прием и что в него входит вы можете ознакомиться по ссылке в инстаграме. Так же есть подробное описание, как проходит профессиональная гигиена полости рта. </p>",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/stomatolog_beograd",
+    "website": "https://www.bit.ly/inst_Natalia",
+    "appointmentUrl": "https://t.me/m/MoSyrJdfZGIy"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-05-14"
+}

@@ -1,0 +1,87 @@
+{
+  "slug": "kristina-tokmakova",
+  "name": "Кристина Токмакова",
+  "specializations": [
+    "endocrinologist",
+    "child_endocrinologist",
+    "pediatrician"
+  ],
+  "specializationText": "Педиатр / Детский эндокринолог",
+  "photo": "/photos/rd-56.jpg",
+  "experienceYears": 8,
+  "city": "Belgrade",
+  "district": "Novi Beograd",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "<ul><li>Оказываю медицинскую помощь детям и подросткам с рождения до 18 лет.<br /><br /></li><li>В практике сочетаю современные клинические рекомендации, доказательную медицину и индивидуальный подход к каждому ребёнку и семье.<br /><br /></li><li>Непрерывно учусь и слежу за развитием медицины, чтобы мои пациенты получали помощь, соответствующую самым высоким стандартам доказательной медицины.</li></ul>",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "AlfaMedStar",
+      "address": "Milentija Popovića 5v, Beograd 11000",
+      "city": "Belgrade",
+      "district": "Novi Beograd",
+      "url": "https://alfamedstar.rs/",
+      "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/alfamedstar_rs",
+    "website": "https://www.alfamedstar.rs/doctors/tokmakova",
+    "appointmentUrl": "https://n1425872.alteg.io",
+    "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+  },
+  "reviews": [
+    {
+      "id": "alfa-kristina-tokmakova-0",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "Very attentive, responsive, competent doctor, takes her time, explains everything, appointments are held in a friendly and relaxed atmosphere. Easily finds contact with both the child and the parents.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-kristina-tokmakova-1",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "Attentive and thorough specialist. Listens very carefully to the child, encourages and supports. Explains prescriptions and does not rush.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-kristina-tokmakova-2",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "Very attentive and friendly doctor, so the children felt calm. Clear treatment recommendations and no unnecessary medications. Thank you very much.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-kristina-tokmakova-3",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "Very pleasant to communicate with and professional. I got answers to all my questions, without unnecessary intimidation. I recommend.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-kristina-tokmakova-4",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "Recommend. The tick was removed as correctly as possible with care and attention to the child's problem.",
+      "source": "serbia.alfamedstar.com"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net",
+    "serbia.alfamedstar.com"
+  ],
+  "updatedAt": "2026-09-23"
+}

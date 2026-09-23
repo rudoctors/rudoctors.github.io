@@ -1,0 +1,53 @@
+{
+  "slug": "irina-zapolskikh",
+  "name": "Ирина Запольских",
+  "nameEn": "Irina Zapolskikh",
+  "specializations": [
+    "cosmetologist"
+  ],
+  "specializationText": "Дерматология, косметология, трихология",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "education": [
+    {
+      "degree": "Лечебное дело",
+      "institution": "СГМУ",
+      "years": "2001 - 2008"
+    },
+    {
+      "degree": "Дерматовенероогия",
+      "institution": "СГМУ",
+      "years": "2011-2012"
+    },
+    {
+      "degree": "Косметология",
+      "institution": "РУДН",
+      "years": "2018"
+    },
+    {
+      "degree": "Медицинский факультет",
+      "institution": "Карлов Университет - UJOP, Чехия, Прага",
+      "years": "2026 -"
+    }
+  ],
+  "workplaces": [
+    {
+      "clinic": "Đinič",
+      "address": "Вршачка, 34",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/ira_zap_cosmetolog"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-09-15"
+}

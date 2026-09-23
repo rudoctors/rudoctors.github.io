@@ -1,0 +1,85 @@
+{
+  "slug": "polina-sokolova",
+  "name": "Полина Соколова",
+  "specializations": [
+    "gynecologist"
+  ],
+  "specializationText": "Гинеколог",
+  "photo": "/photos/rd-52.jpg",
+  "experienceYears": 6,
+  "city": "Belgrade",
+  "district": "Novi Beograd",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "<br /><p></p><ul><li>Для меня нет &quot;типичных случаев&quot; — есть вы и ваша уникальная ситуация. Я внимательно слушаю, объясняю сложные вещи простым языком и подбираю решение, которое подходит именно вам.<br /><br /></li><li>На приеме не бывает глупых вопросов. Я за то, чтобы вы понимали, что происходит с вашим телом, поэтому объясняю всё простыми словами и не оставляю места для домыслов и тревог.<br /><br /></li><li>Гинекологический визит не должен быть стрессом. Я делаю осмотр максимально комфортным и тактичным, потому что здоровье начинается с доверия. Никакой спешки и равнодушия — только спокойная атмосфера и уважение.<br /><br /></li><li>Я выстраиваю свою практику на принципах доказательной медицины и постоянно сверяюсь с актуальными мировыми протоколами. Мне важно, чтобы лечение было не быстрым, а правильным — безопасным и эффективным именно для вас.<br /><br /></li><li>Я не настаиваю и не заставляю. Я объясняю варианты, рассказываю о плюсах и минусах, а окончательное решение всегда остается за вами. Это ваше здоровье, и вы в нем главный.</li></ul><p></p>",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "AlfaMedStar",
+      "address": "Milentija Popovića 5v, Beograd 11000",
+      "city": "Belgrade",
+      "district": "Novi Beograd",
+      "url": "https://alfamedstar.rs/",
+      "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/alfamedstar_rs",
+    "website": "https://www.alfamedstar.rs/doctors/sokolova",
+    "appointmentUrl": "https://n1425872.alteg.io",
+    "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+  },
+  "reviews": [
+    {
+      "id": "alfa-polina-sokolova-0",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "I am very happy with the visit. Polina Igorevna is a careful, attentive, and charming doctor. I will definitely recommend her to my friends.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-polina-sokolova-1",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "A wonderful, competent, and very pleasant specialist. She conducts appointments very delicately, explains everything in detail, and performs all procedures as gently as possible. I definitely recommend Polina Igorevna.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-polina-sokolova-2",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "I recommend Dr. Polina Igorevna Sokolova. She is a very attentive and sensitive doctor; I was satisfied with the diagnostic plan and the visit overall.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-polina-sokolova-3",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "A wonderful, competent, ambitious young doctor. I really enjoyed talking with her. I received a lot of useful information about my condition.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-polina-sokolova-4",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "I saw gynecologist Polina Igorevna Sokolova — I am so glad I found such a tactful, sensible doctor. I will only go to her from now on. Everything was careful, she explained everything and prescribed treatment. I am especially glad to have a good doctor without mockery or smirks.",
+      "source": "serbia.alfamedstar.com"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net",
+    "serbia.alfamedstar.com"
+  ],
+  "updatedAt": "2026-09-23"
+}

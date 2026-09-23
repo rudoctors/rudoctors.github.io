@@ -1,0 +1,52 @@
+{
+  "slug": "polina-butenko",
+  "name": "Полина Бутенко",
+  "nameEn": "Polina Butenko",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "Стоматолог общей практики",
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "ru",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Меня зовут Бутенко Полина Сергеевна.\nЯ врач-стоматолог общей практики — работаю как со взрослыми, так и с детьми. Мое основное направление- терапия и ортопедия, я занимаюсь эстетической стоматологией. Моя цель — сохранить здоровье ваших зубов и зубов ваших детей.",
+  "education": [
+    {
+      "degree": "Врач-стоматолог",
+      "institution": "Пспбгму им.академика И.П.Павлова",
+      "years": "2018-2023"
+    },
+    {
+      "degree": "Врач-стоматолог общей практики",
+      "institution": "СПБМСИ",
+      "years": "2023-2025"
+    }
+  ],
+  "workplaces": [
+    {
+      "clinic": "Dental Studio Aleksandar",
+      "address": "Niš, Milentijeva 10A",
+      "city": "Belgrade",
+      "url": "https://www.dentalstudioaleksandar.rs/",
+      "mapsUrl": "https://maps.app.goo.gl/NgffeLMMVwz7dVp79?g_st=ic"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/pelageya1005",
+    "website": "https://www.butenkopolinasergeevna.tilda.ws",
+    "mapsUrl": "https://maps.app.goo.gl/NgffeLMMVwz7dVp79?g_st=ic"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-03-11"
+}

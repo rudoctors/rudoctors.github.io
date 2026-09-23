@@ -1,0 +1,35 @@
+{
+  "slug": "artem-shafikov",
+  "name": "Артём Шафиков",
+  "specializations": [
+    "neurologist"
+  ],
+  "specializationText": "Невролог",
+  "photo": "/photos/rd-82.jpg",
+  "city": "Belgrade",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "<p>Врач-невролог </p><p>✅ Если у вас возникают нижеперечисленные жалобы:</p>Головные боли ,боль в спине ,нарушение сна,концентрации внимания и памяти ,головокружения,последствия стресса ,тревоги,нарушение чувствительности…<p>По всем вопросам записываемся на прием ,решу все ваши проблемы✅✅✅ Запись на прием :https://citilab.rs/ru/</p>",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Ситилаб",
+      "city": "Belgrade",
+      "url": "https://Дубљанска 41, Београд 11000, Сербия"
+    }
+  ],
+  "contacts": {
+    "appointmentUrl": "https://citilab.rs/ru/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-09-07"
+}

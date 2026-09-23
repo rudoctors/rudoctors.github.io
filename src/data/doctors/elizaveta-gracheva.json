@@ -1,0 +1,72 @@
+{
+  "slug": "elizaveta-gracheva",
+  "name": "Елизавета Грачева",
+  "specializations": [
+    "neurologist",
+    "cosmetologist"
+  ],
+  "specializationText": "Врач невролог",
+  "photo": "/photos/rd-73.jpg",
+  "experienceYears": 10,
+  "city": "Belgrade",
+  "district": "Novi Beograd",
+  "languages": [
+    "en",
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "<p></p><ul><li>Для меня важно видеть не только диагноз, но и человека. Поэтому на приеме я уделяю время подробному разговору, неврологическому осмотру и объяснению того, что происходит и почему. Это помогает поставить точный диагноз и подобрать лечение, которое будет эффективным именно в вашей ситуации.</li></ul><p></p><p><br /></p><ul><li>Я считаю, что хороший результат лечения — это не только правильно подобранные препараты. Это понимание пациентом своего заболевания, доверие к врачу и совместная работа на пути к улучшению самочувствия.</li></ul><p></p><p><br /></p><ul><li>Мне важно, чтобы пациент понимал свое состояние. Я рассказываю о возможных вариантах лечения и вместе с пациентом выбираю наиболее подходящую тактику.</li></ul><p></p><p><br /></p><p></p><ul><li>В своей работе я придерживаюсь принципов доказательной медицины. Регулярно изучаю современные научные исследования и международные клинические рекомендации, чтобы использовать наиболее эффективные и безопасные методы диагностики и лечения.</li></ul><p></p>",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "AlfaMedStar",
+      "address": "Milentija Popovića 5v, Beograd 11000",
+      "city": "Belgrade",
+      "district": "Novi Beograd",
+      "url": "https://alfamedstar.rs/",
+      "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/alfamedstar_rs",
+    "website": "https://www.alfamedstar.rs/gracheva",
+    "appointmentUrl": "https://n1425872.alteg.io",
+    "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+  },
+  "reviews": [
+    {
+      "id": "alfa-elizaveta-gracheva-0",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "I've been treated by Elizaveta Viktorovna for the third year now. Before her I saw another doctor. My condition has stabilized. I feel better. A very competent specialist. She always listens carefully, and besides medical prescriptions gives advice on how to recover better.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-elizaveta-gracheva-1",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "A very attentive and tactful doctor. We're continuing treatment, but the start has been good, we were all satisfied with the appointment.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-elizaveta-gracheva-2",
+      "author": "Пациент",
+      "date": "",
+      "rating": 5,
+      "text": "I've been seeing Elizaveta Viktorovna for more than 5 years. I thank her for her high professionalism, human sensitivity and individual approach. The doctor always listens to the patient, treatment decisions are made together and very deliberately. E.V. is always reachable, which is also very convenient and creates psychological comfort. Special thanks for the positive attitude — that's extremely important in treatment.",
+      "source": "serbia.alfamedstar.com"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net",
+    "serbia.alfamedstar.com"
+  ],
+  "updatedAt": "2026-09-23"
+}

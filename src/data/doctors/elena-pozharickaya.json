@@ -1,0 +1,37 @@
+{
+  "slug": "elena-pozharickaya",
+  "name": "Елена Пожарицкая",
+  "nameEn": "Elena Pozharickaya",
+  "specializations": [
+    "gastroenterologist"
+  ],
+  "specializationText": "Гастроэнтерология",
+  "photo": "/photos/rd-43.jpg",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline",
+    "online"
+  ],
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "VIZIM",
+      "city": "Belgrade",
+      "url": "https://www.vizim.co.rs/opsta-bolnica/?gad_source=1&gad_campaignid=23031026614&gclid=Cj0KCQjw4a3OBhCHARIsAChaqJO8GJAz9yqYuIfu7RmnDlJzrqh4WIO8LQICpT0gv4mqmT0XWF0bNqwaArYcEALw_wcB"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/pozharickaya_gastroenterolog"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-04-01"
+}

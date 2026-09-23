@@ -1,0 +1,41 @@
+{
+  "slug": "meylis-movlamov",
+  "name": "Мейлис Мовламов",
+  "nameEn": "Meylis Movlamov",
+  "specializations": [
+    "traumatologist_orthopedist"
+  ],
+  "specializationText": "Травматолог-ортопед",
+  "photo": "/photos/rd-79.jpg",
+  "city": "Belgrade",
+  "district": "Novi Beograd",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "<p> Лицензированный врач в Сербии, лицензия Doktor Medicine.</p><p>Специализация Консультации, диагностика и лечение заболеваний и травм опорно-двигательной системы:</p><p>• боли в суставах, спине и позвоночнике</p><p>• дегенеративные заболевания суставов и позвоночника</p><p>• травмы, растяжения и ушибы</p><p>• последствия переломов и вывихов</p><p>• заболевания и деформации стоп</p><p>• спортивные травмы</p><p>• диагностика и лечение заболеваний мягких тканей</p><p>• подбор ортезов</p><p>• наложение, замена и снятие пластикового гипса</p><p>• составление индивидуальной программы реабилитации</p><p>• внутрисуставные и околосуставные инъекции</p><p>• выезд врача на дом</p><p>• получение второго мнения.</p><p>Стоимость приёма - 7000 динар.</p>",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Ординация Доктор Семенов",
+      "address": "Bulevar Zorana Đinđića 99",
+      "city": "Belgrade",
+      "district": "Novi Beograd",
+      "mapsUrl": "https://maps.app.goo.gl/pdiJ5kzBfz2yHnoZ6"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/ordinacijadrsemenov",
+    "appointmentUrl": "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3BCBowbWkqBLa3RGCCJRNhzjm0l9-jsSG_CYIKW-HsaCQv9eHfbZqU0taWXEzVQtv8okifMo9O",
+    "mapsUrl": "https://maps.app.goo.gl/pdiJ5kzBfz2yHnoZ6"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-08-30"
+}

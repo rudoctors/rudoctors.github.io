@@ -1,0 +1,40 @@
+{
+  "slug": "artem-matveev",
+  "name": "Артем Матвеев",
+  "nameEn": "Artem Matveev",
+  "specializations": [
+    "dentist",
+    "dental_surgeon",
+    "dental_implantologist"
+  ],
+  "specializationText": "Хирургическая стоматология, имплантология, пластика десны и костной ткани",
+  "photo": "/photos/rd-41.jpg",
+  "city": "Novi Sad",
+  "languages": [
+    "en",
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Popović, Novi Sad MP Dental Art, Belgrade",
+      "address": "Popović: Novi Sad, ul.Njegoševa 24 MP Dental Art: Belgrade, ul.Celopecka 10",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/matveev_stom",
+    "website": "https://www.matveev.stom.tilda.ws"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-03-22"
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "elena-ianik",
+  "name": "Елена Яник",
+  "nameEn": "Elena Ianik",
+  "specializations": [
+    "pediatrician"
+  ],
+  "specializationText": "Педиатрия",
+  "photo": "/photos/rd-9.jpg",
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "ru",
+    "en"
+  ],
+  "formats": [
+    "offline",
+    "online"
+  ],
+  "bio": "Врач педиатр доказательной медицины, специалист по детскому питанию. Прием очно в клинике и онлайн консультации. Проверить расписание и записаться на осмотр:\nhttps://t.me/doctor_pryanik/311\n\nИнстаграм: dr.pryanik",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "address": "Прием в Нови саде в двух локациях: DZ MedoGroup Sajam, Cara Dušana, в Белграде: DZ MediGroup Jedro.",
+      "city": "Belgrade",
+      "url": "https://www.medigroup.rs/"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/dr_pryanik",
+    "website": "https://www.t.me/doctor_pryanik"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-03-06"
+}

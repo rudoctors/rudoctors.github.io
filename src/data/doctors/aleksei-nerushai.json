@@ -1,0 +1,50 @@
+{
+  "slug": "aleksei-nerushai",
+  "name": "Алексей Нерушай",
+  "nameEn": "Aleksei Nerushai",
+  "specializations": [
+    "pediatrician"
+  ],
+  "specializationText": "Педиатрия",
+  "photo": "/photos/rd-47.jpg",
+  "city": "Belgrade",
+  "languages": [
+    "en",
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline",
+    "online"
+  ],
+  "bio": "Здравствуйте, я педиатр Алексей Нерушай\n\nПомогаю родителям быстро и спокойно разобраться в состоянии ребенка без лишних обследований и «перелечивания».\n\nС какими запросами ко мне чаще всего приходят:\n\nчастые болезни, температура, кашель, насморк, отиты\nсомнения в назначенном лечении\nкровь в анализах, дефициты, анемия\nпроблемы с питанием, запоры, прикорм\nповторяющиеся отиты, аденоиды, инфекции\n\nМоя задача - не просто лечить, а объяснить, что происходит с ребенком и что действительно нужно делать\n\nВы получите:\n\nчеткий план действий без лишних лекарств\nобъяснение простым языком\nспокойствие и понимание ситуации\n\nОпыт более 10 лет. Работаю по международным рекомендациям (AAP, ERC)\n\nОнлайн и очный прием в Белграде",
+  "education": [
+    {
+      "degree": "Педиатрия",
+      "institution": "РНИМУ им. Н.И. Пирогова",
+      "years": "2018"
+    }
+  ],
+  "workplaces": [
+    {
+      "clinic": "Miren Medical",
+      "address": "Војводе Степе 250, Београд 11000",
+      "city": "Belgrade",
+      "url": "https://mirenmedic.rs/ru/kontakt/",
+      "mapsUrl": "https://maps.app.goo.gl/rZTHcThFUH4fHpmNA"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/dr_neru",
+    "website": "https://www.nerushai.com",
+    "appointmentUrl": "https://n822443.alteg.io/",
+    "mapsUrl": "https://maps.app.goo.gl/rZTHcThFUH4fHpmNA"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-08-06"
+}

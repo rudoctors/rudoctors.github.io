@@ -1,0 +1,47 @@
+{
+  "slug": "sem-stepanov",
+  "name": "Семён Степанов",
+  "nameEn": "Sem Stepanov",
+  "specializations": [
+    "vascular_surgeon",
+    "phlebologist",
+    "surgeon"
+  ],
+  "specializationText": "Сосудистый хирург/флеболог",
+  "photo": "/photos/rd-11.jpg",
+  "city": "Belgrade",
+  "district": "Novi Beograd, Vracar, Zemun, Stari Grad",
+  "languages": [
+    "ru",
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline",
+    "online"
+  ],
+  "bio": "Больше информации в группе телеграмм https://t.me/fleboesculap",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Opšta Bolnica Medigroup",
+      "address": "Милутина Миланковича 3",
+      "city": "Belgrade",
+      "district": "Novi Beograd, Vracar, Zemun, Stari Grad",
+      "url": "https://www.medigroup.rs/lekari/stepanov-semen/",
+      "mapsUrl": "https://maps.app.goo.gl/WPqHvPoFfEj9gNmE8?g_st=com.google.maps.preview.copy"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/sem_stepanov",
+    "website": "https://www.t.me/fleboesculap",
+    "mapsUrl": "https://maps.app.goo.gl/WPqHvPoFfEj9gNmE8?g_st=com.google.maps.preview.copy"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-04-30"
+}

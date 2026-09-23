@@ -1,0 +1,333 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Админ" description="Панель управления каталогом" noindex>
+  <div class="mx-auto max-w-5xl px-4 py-10">
+    <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+      <div>
+        <h1 class="text-2xl md:text-3xl font-extrabold text-navy-900">Админ-панель</h1>
+        <p class="text-sm text-slate-500 mt-1">
+          Управление карточками через GitHub API. Изменения коммитятся в <code>src/data/doctors/</code> и публикуются автоматически.
+        </p>
+      </div>
+      <span id="auth-state" class="chip">Не авторизован</span>
+    </div>
+
+    <!-- Auth -->
+    <section id="auth-section" class="card p-5 mb-6">
+      <h2 class="font-bold mb-3">Вход (GitHub Personal Access Token)</h2>
+      <p class="text-sm text-slate-500 mb-3">
+        Создайте fine-grained PAT с доступом <strong>Contents: Read and write</strong> к репозиторию
+        <strong> rudoctors/rudoctors.github.io</strong>. Токен хранится только в вашем браузере (localStorage).
+      </p>
+      <div class="flex flex-col sm:flex-row gap-2">
+        <input id="pat" type="password" class="input flex-1" placeholder="github_pat_…" autocomplete="off" />
+        <button id="login" type="button" class="btn-primary">Подключить</button>
+        <button id="logout" type="button" class="btn-secondary hidden">Выйти</button>
+      </div>
+      <p id="auth-msg" class="text-sm mt-2 text-slate-500"></p>
+    </section>
+
+    <!-- Toolbar -->
+    <section class="card p-4 mb-4 flex flex-wrap gap-3 items-end">
+      <div class="flex-1 min-w-40">
+        <label class="block text-xs font-semibold text-slate-500 mb-1" for="filter">Фильтр</label>
+        <input id="filter" class="input" placeholder="Имя или slug…" />
+      </div>
+      <div>
+        <label class="block text-xs font-semibold text-slate-500 mb-1" for="branch">Ветка</label>
+        <input id="branch" class="input" value="main" />
+      </div>
+      <button id="reload" type="button" class="btn-secondary">Обновить</button>
+      <button id="create" type="button" class="btn-primary">+ Новая карточка</button>
+    </section>
+
+    <p id="status" class="text-sm mb-4 text-slate-600"></p>
+
+    <!-- List -->
+    <div id="list" class="grid gap-3"></div>
+  </div>
+</Layout>
+
+<script>
+  const REPO = "rudoctors/rudoctors.github.io";
+  const API = "https://api.github.com";
+  const LS_KEY = "rudoctors_admin_pat";
+  const DIR = "src/data/doctors";
+
+  const $ = (id: string) => document.getElementById(id)!;
+  const authState = $("auth-state");
+  const authMsg = $("auth-msg");
+  const statusEl = $("status");
+  const listEl = $("list");
+  const patInput = $("pat") as HTMLInputElement;
+
+  let token = localStorage.getItem(LS_KEY) || "";
+  let branch = "main";
+
+  function b64Encode(str: string): string {
+    const bytes = new TextEncoder().encode(str);
+    let bin = "";
+    for (const b of bytes) bin += String.fromCharCode(b);
+    return btoa(bin);
+  }
+
+  function b64Decode(b64: string): string {
+    const bin = atob(b64);
+    const bytes = Uint8Array.from(bin, (c) => c.charCodeAt(0));
+    return new TextDecoder().decode(bytes);
+  }
+
+  function setStatus(msg: string, isError = false) {
+    statusEl.textContent = msg;
+    statusEl.className = `text-sm mb-4 ${isError ? "text-red-600" : "text-slate-600"}`;
+  }
+
+  function setAuthUI() {
+    const on = Boolean(token);
+    authState.textContent = on ? "Авторизован" : "Не авторизован";
+    authState.className = on ? "chip" : "badge-new";
+    ($("logout") as HTMLButtonElement).classList.toggle("hidden", !on);
+    ($("login") as HTMLButtonElement).classList.toggle("hidden", on);
+  }
+
+  async function gh(path: string, init: RequestInit = {}) {
+    const res = await fetch(`${API}${path}`, {
+      ...init,
+      headers: {
+        Accept: "application/vnd.github+json",
+        Authorization: `Bearer ${token}`,
+        "X-GitHub-Api-Version": "2022-11-28",
+        ...(init.body ? { "Content-Type": "application/json" } : {}),
+        ...(init.headers as Record<string, string> || {}),
+      },
+    });
+    if (!res.ok) {
+      const t = await res.text();
+      throw new Error(`${res.status}: ${t.slice(0, 300)}`);
+    }
+    return res.json();
+  }
+
+  interface FileItem {
+    name: string;
+    path: string;
+    sha: string;
+    type: string;
+  }
+
+  async function listFiles(): Promise<FileItem[]> {
+    const data = await gh(`/repos/${REPO}/contents/${DIR}?ref=${branch}`);
+    return Array.isArray(data) ? data.filter((f) => f.name.endsWith(".json")) : [];
+  }
+
+  async function readFile(path: string): Promise<{ content: string; sha: string }> {
+    const data = await gh(`/repos/${REPO}/contents/${path}?ref=${branch}`);
+    return {
+      content: b64Decode(data.content.replace(/\n/g, "")),
+      sha: data.sha,
+    };
+  }
+
+  async function writeFile(path: string, content: string, message: string, sha?: string) {
+    const body = {
+      message,
+      content: b64Encode(content),
+      branch,
+      ...(sha ? { sha } : {}),
+    };
+    return gh(`/repos/${REPO}/contents/${path}`, {
+      method: "PUT",
+      body: JSON.stringify(body),
+    });
+  }
+
+  async function verifyToken() {
+    if (!token) return false;
+    try {
+      await gh("/user");
+      return true;
+    } catch {
+      return false;
+    }
+  }
+
+  async function renderList() {
+    if (!token) {
+      listEl.innerHTML = "";
+      return;
+    }
+    setStatus("Загрузка списка…");
+    try {
+      branch = ($("branch") as HTMLInputElement).value || "main";
+      const files = await listFiles();
+      const q = (($("filter") as HTMLInputElement).value || "").toLowerCase();
+      const cards: Array<{ name: string; file: FileItem; hidden: boolean; featured: boolean }> = [];
+
+      for (const f of files) {
+        try {
+          const { content } = await readFile(f.path);
+          const doc = JSON.parse(content);
+          if (q && !`${doc.name} ${f.name}`.toLowerCase().includes(q)) continue;
+          cards.push({
+            name: doc.name || f.name,
+            file: f,
+            hidden: Boolean(doc.hidden),
+            featured: Boolean(doc.featured),
+          });
+        } catch {
+          /* skip bad file */
+        }
+      }
+
+      setStatus(`Карточек: ${cards.length}`);
+      listEl.innerHTML = cards
+        .map(
+          (c) => `
+        <article class="card p-4 flex flex-wrap items-center gap-3 justify-between" data-path="${c.file.path}">
+          <div class="min-w-0">
+            <div class="font-semibold text-navy-900 truncate">${escapeHtml(c.name)}</div>
+            <div class="text-xs text-slate-500">${c.file.path}</div>
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            ${c.hidden ? '<span class="badge-new">скрыт</span>' : '<span class="chip">виден</span>'}
+            ${c.featured ? '<span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-accent-400/15 text-accent-500">featured</span>' : ""}
+            <button class="btn-secondary !py-1.5 !px-3 text-xs" data-act="edit">Правка</button>
+            <button class="${c.hidden ? "btn-primary" : "btn-secondary"} !py-1.5 !px-3 text-xs" data-act="toggle">
+              ${c.hidden ? "Показать" : "Скрыть"}
+            </button>
+          </div>
+        </article>`
+        )
+        .join("");
+    } catch (e) {
+      setStatus(String(e), true);
+    }
+  }
+
+  function escapeHtml(s: string) {
+    return s.replace(/[&<>"']/g, (m) => `&#${m.charCodeAt(0)};`);
+  }
+
+  async function toggleHidden(path: string, nextHidden: boolean) {
+    setStatus(`Сохранение ${path}…`);
+    try {
+      const { content, sha } = await readFile(path);
+      const doc = JSON.parse(content);
+      doc.hidden = nextHidden;
+      doc.updatedAt = new Date().toISOString().slice(0, 10);
+      await writeFile(
+        path,
+        JSON.stringify(doc, null, 2) + "\n",
+        `${nextHidden ? "Hide" : "Show"} ${doc.name || path}`,
+        sha
+      );
+      setStatus(`OK: ${path} → ${nextHidden ? "скрыт" : "виден"}. Deploy запустится автоматически.`);
+      await renderList();
+    } catch (e) {
+      setStatus(String(e), true);
+    }
+  }
+
+  async function editDoctor(path: string) {
+    try {
+      const { content, sha } = await readFile(path);
+      const doc = JSON.parse(content);
+      const next = window.prompt(
+        "JSON карточки (редактируйте аккуратно):",
+        JSON.stringify(doc, null, 2)
+      );
+      if (next === null) return;
+      const parsed = JSON.parse(next);
+      await writeFile(path, JSON.stringify(parsed, null, 2) + "\n", `Update ${parsed.name || path}`, sha);
+      setStatus(`OK: ${path} обновлён.`);
+      await renderList();
+    } catch (e) {
+      setStatus(String(e), true);
+    }
+  }
+
+  async function createDoctor() {
+    const name = window.prompt("Имя врача:");
+    if (!name) return;
+    const slug =
+      name
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-|-$/g, "") || `doctor-${Date.now()}`;
+    const doc = {
+      slug,
+      name,
+      specializations: ["therapist"],
+      city: "Belgrade",
+      languages: ["ru"],
+      formats: ["offline"],
+      education: [],
+      workplaces: [],
+      contacts: {},
+      reviews: [],
+      hidden: false,
+      featured: false,
+      sources: ["admin"],
+      updatedAt: new Date().toISOString().slice(0, 10),
+    };
+    try {
+      await writeFile(
+        `${DIR}/${slug}.json`,
+        JSON.stringify(doc, null, 2) + "\n",
+        `Add ${name}`
+      );
+      setStatus(`Создана карточка ${slug}.`);
+      await renderList();
+    } catch (e) {
+      setStatus(String(e), true);
+    }
+  }
+
+  listEl.addEventListener("click", (e) => {
+    const btn = (e.target as HTMLElement).closest("button") as HTMLButtonElement | null;
+    if (!btn) return;
+    const card = btn.closest("[data-path]") as HTMLElement | null;
+    if (!card) return;
+    const path = card.dataset.path!;
+    const act = btn.dataset.act;
+    if (act === "toggle") {
+      const hiddenNow = Boolean(card.querySelector(".badge-new"));
+      void toggleHidden(path, !hiddenNow);
+    }
+    if (act === "edit") void editDoctor(path);
+  });
+
+  $("login").addEventListener("click", async () => {
+    token = patInput.value.trim();
+    authMsg.textContent = "Проверка токена…";
+    if (await verifyToken()) {
+      localStorage.setItem(LS_KEY, token);
+      authMsg.textContent = "OK";
+      setAuthUI();
+      await renderList();
+    } else {
+      token = "";
+      localStorage.removeItem(LS_KEY);
+      authMsg.textContent = "Токен не подошёл (нужен repo Contents: read/write)";
+      setAuthUI();
+    }
+  });
+
+  $("logout").addEventListener("click", () => {
+    token = "";
+    localStorage.removeItem(LS_KEY);
+    patInput.value = "";
+    setAuthUI();
+    listEl.innerHTML = "";
+    setStatus("");
+  });
+
+  $("reload").addEventListener("click", () => void renderList());
+  $("create").addEventListener("click", () => void createDoctor());
+  ($("filter") as HTMLInputElement).addEventListener("input", () => void renderList());
+
+  setAuthUI();
+  if (token) void renderList();
+</script>

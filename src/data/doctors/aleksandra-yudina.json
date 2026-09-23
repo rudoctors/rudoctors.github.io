@@ -1,0 +1,77 @@
+{
+  "slug": "aleksandra-yudina",
+  "name": "Александра Юдина",
+  "specializations": [
+    "gynecologist"
+  ],
+  "specializationText": "Гинеколог",
+  "photo": "/photos/rd-53.jpg",
+  "experienceYears": 8,
+  "city": "Belgrade",
+  "district": "Novi Beograd",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "<br /><p></p><ul><li>Занимаюсь вопросами женского здоровья и помогаю своим пациенткам решить их проблемы максимально быстро и легко<br /><br /></li><li>Я за научный подход и в своей работе придерживаюсь принципов доказательной медицины<br /><br /></li><li>Считаю важным, чтобы каждая пациентка на моем приеме чувствовала себя спокойно и комфортно. Оказываю помощь не только профессиональными знаниями, но и внимательным отношением, поддержкой и созданием атмосферы доверия<br /><br /></li><li>Я убеждена, что помимо применения профессиональных навыков, человеку можно помочь в первую очередь словом – выслушать его, поддержать и дать ощущение комфорта и принятия<br /><br /></li><li>Стремлюсь к непрерывному самообразованию и профессиональному развитию</li></ul><p></p>",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "AlfaMedStar",
+      "address": "Milentija Popovića 5v, Beograd 11000",
+      "city": "Belgrade",
+      "district": "Novi Beograd",
+      "url": "https://alfamedstar.rs/",
+      "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/alfamedstar_rs",
+    "website": "https://www.alfamedstar.rs/doctors/udina",
+    "appointmentUrl": "https://n1425872.alteg.io",
+    "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+  },
+  "reviews": [
+    {
+      "id": "alfa-aleksandra-yudina-0",
+      "author": "Пациент",
+      "date": "2025-01-17",
+      "rating": 5,
+      "text": "I visit gynecologist Aleksandra Igorevna Yudina. She doesn't prescribe anything unnecessary, doesn't intimidate, very careful and attentive. Always answers all questions and explains the situation in detail. The best gynecologist I've ever met.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-aleksandra-yudina-1",
+      "author": "Пациент",
+      "date": "2025-02-19",
+      "rating": 5,
+      "text": "I want to express my gratitude to gynecologist Aleksandra Igorevna Yudina, thank you very much! A doctor with a capital letter, responsive, kind, understanding! I've been looking for a good specialist for a long time and finally found one!",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-aleksandra-yudina-2",
+      "author": "Пациент",
+      "date": "2025-04-11",
+      "rating": 5,
+      "text": "Wonderful doctor, modern approach to treatment, attentive, responsive, explains everything clearly, was observed by her during pregnancy. I recommend, only positive impressions!",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-aleksandra-yudina-3",
+      "author": "Пациент",
+      "date": "2025-06-02",
+      "rating": 5,
+      "text": "Good day! I want to leave the most positive review after the first visit and meeting with gynecologist Aleksandra Igorevna Yudina. Very attentive, tactful, knowledgeable and well-versed doctor, able not only to conduct a competent consultation, but also the examination itself, and also just a very pleasant and open person! Thank you!",
+      "source": "serbia.alfamedstar.com"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net",
+    "serbia.alfamedstar.com"
+  ],
+  "updatedAt": "2026-09-23"
+}

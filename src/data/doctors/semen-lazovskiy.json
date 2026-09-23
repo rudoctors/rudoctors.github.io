@@ -1,0 +1,43 @@
+{
+  "slug": "semen-lazovskiy",
+  "name": "Семён Лазовский",
+  "specializations": [
+    "psychiatrist"
+  ],
+  "specializationText": "Психиатр",
+  "photo": "/photos/rd-42.jpg",
+  "city": "Belgrade",
+  "district": "Savski Venac",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "formats": [
+    "offline",
+    "online"
+  ],
+  "bio": "Врач-психиатр в Белграде. Работаю с тревожными расстройствами, фобиями, ОКР, депрессивными состояниями, БАР, расстройствами личности, ПТСР и КПТСР, а также занимаюсь диагностикой нейроотличий. Не выписываю метилфенидат. \nНе работаю с РПП и химическими зависимостями.\nLGBTK+ friendly, trauma-informed, sex work–informed, non-judgmental about substance use.",
+  "education": [
+    {
+      "degree": "Ординатура \"Психиатрия\"",
+      "institution": "РНИМУ им. Н.И Пирогова"
+    },
+    {
+      "degree": "Переподготовка \"Психотерапия\"",
+      "institution": "РНИМУ им. Н.И Пирогова"
+    }
+  ],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/dr_lazovskiy",
+    "website": "https://www.t.me/psychiatrist_rs",
+    "mapsUrl": "https://maps.app.goo.gl/BTW2GF13r1aRt6yQ9"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-09-13"
+}

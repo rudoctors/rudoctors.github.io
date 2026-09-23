@@ -1,0 +1,45 @@
+{
+  "slug": "aleksandr-artemev",
+  "name": "Александр Артемьев",
+  "specializations": [
+    "traumatologist_orthopedist"
+  ],
+  "specializationText": "травматолог-ортопед",
+  "photo": "/photos/rd-46.jpg",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline",
+    "online"
+  ],
+  "bio": "Основное направление  - реконструктивная хирургия конечностей по Илизарову: удлинение ног (в т.ч. с целью увеличения роста), коррекция деформаций (в т.ч. эстетическая эстетическая), лечение посттравматических деформаций, ложных суставов, остеомиелита, тяжелых переоомов.",
+  "education": [
+    {
+      "degree": "доктор медиицинских наук",
+      "institution": "Военно-медицинская академия (Ленинград)"
+    }
+  ],
+  "workplaces": [
+    {
+      "clinic": "Medical Time hospital",
+      "address": "Krunska 9",
+      "city": "Belgrade",
+      "url": "https://www.medicaltime.rs/"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/alex_artemiev",
+    "website": "https://www.varus-valgus.net"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-04-08"
+}
