@@ -1,0 +1,143 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SITE } from "../lib/site";
+
+const packages = [
+  {
+    id: "featured",
+    name: "Featured-профиль",
+    price: "от 150 €",
+    period: "/ месяц",
+    highlight: true,
+    features: [
+      "Бейдж «Рекомендуем» на карточке",
+      "Место на главной (до 3 профилей)",
+      "Приоритет в каталоге и подборках",
+      "Выделение в результатах поиска",
+      "Отчёт по просмотрам и кликам (по запросу)",
+    ],
+    cta: "Запросить размещение",
+  },
+  {
+    id: "package",
+    name: "Пакет клиники",
+    price: "от 400 €",
+    period: "/ квартал",
+    highlight: false,
+    features: [
+      "Featured для 3–5 врачей клиники",
+      "Баннер в подборках по специальности",
+      "Упоминание в обзорах города",
+      "Совместный пост в Telegram-чате",
+      "Приоритетная поддержка редакции",
+    ],
+    cta: "Обсудить пакет",
+  },
+  {
+    id: "banner",
+    name: "Баннер / спецразмещение",
+    price: "от 80 €",
+    period: "/ неделя",
+    highlight: false,
+    features: [
+      "Слот на главной или в категории",
+      "Таргетинг по городу / специальности",
+      "Статистика показов и переходов",
+      "Готовые баннеры — поможем собрать",
+    ],
+    cta: "Забронировать слот",
+  },
+];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "OfferCatalog",
+  name: "Размещение на Rudoctors",
+  url: `${SITE.url}/packages/`,
+  itemListElement: packages.map((p, i) => ({
+    "@type": "Offer",
+    position: i + 1,
+    priceCurrency: "EUR",
+    price: p.price.replace(/[^\d.]/g, ""),
+    itemOffered: {
+      "@type": "Service",
+      name: p.name,
+      description: p.features.join(". "),
+    },
+  })),
+};
+---
+
+<Layout
+  title="Пакеты размещения"
+  description="Featured-профили, пакеты клиник и баннеры на Rudoctors — продвижение русскоязычных врачей в Сербии."
+  jsonLd={jsonLd}
+  breadcrumbs={[
+    { name: "Главная", path: "/" },
+    { name: "Пакеты", path: "/packages/" },
+  ]}
+>
+  <div class="mx-auto max-w-5xl px-4 py-12">
+    <div class="max-w-2xl">
+      <div class="text-xs font-bold uppercase tracking-widest text-brand-700">Врачам и клиникам</div>
+      <h1 class="mt-2 text-3xl md:text-4xl font-extrabold text-navy-900">Пакеты размещения</h1>
+      <p class="mt-3 text-slate-600 leading-relaxed">
+        Каталог и отзывы бесплатны для пациентов. Платные пакеты помогают врачам и клиникам
+        получить больше видимости у русскоязычной аудитории Сербии.
+      </p>
+    </div>
+
+    <div class="mt-10 grid gap-5 md:grid-cols-3">
+      {
+        packages.map((p) => (
+          <article class:list={["card p-6 flex flex-col", p.highlight && "border-2 border-brand-500 relative"]}>
+            {p.highlight && (
+              <span class="absolute -top-3 left-6 text-[11px] font-bold uppercase tracking-wide px-2.5 py-1 rounded-full bg-brand-600 text-white">
+                Хит
+              </span>
+            )}
+            <h2 class="font-extrabold text-lg text-navy-900">{p.name}</h2>
+            <div class="mt-3 flex items-baseline gap-1">
+              <span class="text-3xl font-extrabold text-navy-900">{p.price}</span>
+              <span class="text-sm text-slate-500">{p.period}</span>
+            </div>
+            <ul class="mt-5 space-y-2.5 text-sm text-slate-600 flex-1">
+              {p.features.map((f) => (
+                <li class="flex gap-2">
+                  <span class="text-brand-600 font-bold shrink-0">✓</span>
+                  <span>{f}</span>
+                </li>
+              ))}
+            </ul>
+            <a
+              href={`/contacts/?topic=${p.id}`}
+              class:list={[p.highlight ? "btn-primary" : "btn-secondary", "mt-6 w-full"]}
+            >
+              {p.cta}
+            </a>
+          </article>
+        ))
+      }
+    </div>
+
+    <div class="card p-6 mt-8 md:flex md:items-center md:justify-between md:gap-6">
+      <div>
+        <h2 class="font-extrabold text-navy-900">Индивидуальные условия</h2>
+        <p class="mt-1 text-sm text-slate-600">
+          Долгосрочные контракты, эксперименты и совместные проекты — обсуждаем отдельно.
+          Цены выше — ориентир; финальная стоимость зависит от срока и формата.
+        </p>
+      </div>
+      <div class="mt-4 md:mt-0 flex flex-wrap gap-3 shrink-0">
+        <a href="/contacts/" class="btn-primary">Связаться</a>
+        <a href={SITE.telegram} target="_blank" rel="noopener noreferrer" class="btn-ghost">Telegram</a>
+      </div>
+    </div>
+
+    <p class="mt-6 text-sm text-slate-500">
+      Размещение не влияет на оценки и отзывы. Рейтинг формируется только по данным пациентов.
+      Условия: <a href="/about/#partners" class="text-brand-700 hover:underline">о проекте</a>
+      · <a href="/privacy/" class="text-brand-700 hover:underline">конфиденциальность</a>
+    </p>
+  </div>
+</Layout>

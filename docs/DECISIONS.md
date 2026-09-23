@@ -14,6 +14,10 @@
 | 2026-09-23 | Phase 2 done: 143 карты (sheets 106 + citilab 19 + TG cards) | Цель 120–150 достигнута; fuzzy-merge дублей |
 | 2026-09-23 | Cron Mon/Thu 05:00 UTC, commit только по schedule | Нет пуш-циклов; raw intermediates не в git |
 | 2026-09-23 | Перевод: TRANSLATE_API_KEY в GH Secrets, no-op без ключа | Без секретов в репо |
+| 2026-09-24 | Перевод EN→RU делает суб-агент (ИИ), не translate API | Директива пользователя; без ключей |
+| 2026-09-24 | Phase 5 done: og, 404/privacy/contacts/faq, WebP photos | High polish до монетизации |
+| 2026-09-24 | Phase 6: `/packages/` + featured demo 2 карточки + click-track | Продукт видим для первого request |
+| 2026-09-24 | Analytics: optional Plausible/Umami через PUBLIC_* env | Без секретов в репо; hooks готовы |
 
 ## Технический стек (подтверждён)
 Astro 7 + TS strict + Tailwind 4; JSON в репо = GitHub CMS; Actions → Pages (`build_type=workflow`); Node ≥22.12.

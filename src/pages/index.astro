@@ -24,19 +24,36 @@ const featured = publicDoctors()
   .filter((d) => d.featured)
   .slice(0, 3);
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: SITE.name,
-  url: SITE.url,
-  inLanguage: "ru",
-  description: SITE.description,
-  potentialAction: {
-    "@type": "SearchAction",
-    target: `${SITE.url}/doctors/?q={search_term_string}`,
-    "query-input": "required name=search_term_string",
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE.name,
+    url: SITE.url,
+    inLanguage: "ru",
+    description: SITE.description,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: `${SITE.url}/doctors/?q={search_term_string}`,
+      "query-input": "required name=search_term_string",
+    },
   },
-};
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: SITE.name,
+    url: SITE.url,
+    logo: `${SITE.url}/og.png`,
+    description: SITE.description,
+    areaServed: { "@type": "Country", name: "Serbia" },
+    sameAs: [SITE.telegram, "https://github.com/rudoctors/rudoctors.github.io"],
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "customer support",
+      url: `${SITE.url}/contacts/`,
+    },
+  },
+];
 ---
 
 <Layout jsonLd={jsonLd}>
@@ -182,7 +199,7 @@ const jsonLd = {
         <p class="mt-2 text-sm text-slate-600 leading-relaxed">
           Выделенный профиль вверху каталога и на главной. Расскажите о себе пациентам, которые ищут именно вас.
         </p>
-        <a href="/about/#partners" class="btn-primary mt-5">Узнать об условиях</a>
+        <a href="/packages/" class="btn-primary mt-5">Смотреть пакеты</a>
       </div>
     </div>
   </section>

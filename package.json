@@ -24,7 +24,9 @@
     "tag:en": "node scripts/tag-en-reviews.mjs",
     "translate": "node scripts/translate-reviews.mjs",
     "detect:dups": "node scripts/detect-dups.mjs",
-    "refresh": "node scripts/fetch-sheet.mjs && node scripts/fetch-citilab.mjs && node scripts/seed.mjs && node scripts/tag-en-reviews.mjs && npm run check"
+    "photos:webp": "node scripts/convert-photos-webp.mjs",
+    "refresh": "node scripts/fetch-sheet.mjs && node scripts/fetch-citilab.mjs && node scripts/seed.mjs && node scripts/tag-en-reviews.mjs && npm run check",
+    "indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
@@ -38,6 +40,7 @@
     "@astrojs/check": "^0.9.10",
     "@types/node": "^26.6.2",
     "astro": "^7.3.4",
+    "sharp": "^0.35.4",
     "typescript": "^6.0.3"
   }
 }

@@ -1,7 +1,8 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import DoctorCard from "../../components/DoctorCard.astro";
-import { allCities, publicDoctors } from "../../lib/doctors";
+import { allCities, publicDoctors, specLabel } from "../../lib/doctors";
+import cityIntros from "../../data/city-intros.json";
 
 export function getStaticPaths() {
   return allCities().map((city) => ({ params: { city }, props: { city } }));
@@ -13,11 +14,24 @@ interface Props {
 
 const { city } = Astro.props;
 const doctors = publicDoctors().filter((d) => d.city === city);
+const specCounts = [...new Set(doctors.flatMap((d) => d.specializations))]
+  .map((k) => ({ k, label: specLabel(k), n: doctors.filter((d) => d.specializations.includes(k)).length }))
+  .sort((a, b) => b.n - a.n)
+  .slice(0, 8);
+const introsMap = cityIntros as Record<string, string>;
+const intro =
+  introsMap[city] ||
+  `Русскоязычные врачи в ${city}: рейтинги, отзывы пациентов, специализации и контакты. ${doctors.length} карточек в каталоге Rudoctors.`;
 ---
 
 <Layout
   title={`Врачи в ${city}`}
-  description={`Русскоязычные врачи в ${city}: рейтинги, отзывы, специальности и контакты.`}
+  description={`Русскоязычные врачи в ${city}, Сербия: рейтинги, отзывы, специальности и контакты. ${doctors.length} карточек — запись к врачу.`}
+  breadcrumbs={[
+    { name: "Главная", path: "/" },
+    { name: "Города", path: "/cities/" },
+    { name: city, path: `/cities/${encodeURIComponent(city)}/` },
+  ]}
 >
   <div class="mx-auto max-w-6xl px-4 py-10">
     <nav class="text-sm text-slate-500 mb-6">
@@ -28,6 +42,22 @@ const doctors = publicDoctors().filter((d) => d.city === city);
 
     <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900">Врачи в {city}</h1>
     <p class="mt-2 text-slate-600">{doctors.length} карточек в каталоге</p>
+    <div class="mt-4 max-w-3xl text-slate-700 leading-relaxed">
+      <p>{intro}</p>
+    </div>
+
+    {
+      specCounts.length > 0 && (
+        <div class="mt-5 flex flex-wrap gap-2 items-center">
+          <span class="text-xs font-semibold text-slate-500 uppercase tracking-wide mr-1">Популярное:</span>
+          {specCounts.map((s) => (
+            <a href={`/specialties/${s.k}/`} class="chip hover:bg-brand-100">
+              {s.label} · {s.n}
+            </a>
+          ))}
+        </div>
+      )
+    }
 
     <div class="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
       {doctors.map((d) => <DoctorCard doctor={d} />)}

@@ -55,6 +55,24 @@ if (breadcrumbs && breadcrumbs.length > 0) {
     <link rel="canonical" href={canonical} />
     {noindex && <meta name="robots" content="noindex, nofollow" />}
     {!noindex && <meta name="robots" content="index, follow, max-image-preview:large" />}
+    {
+      import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN && (
+        <script
+          defer
+          data-domain={import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN}
+          src="https://plausible.io/js/script.js"
+        />
+      )
+    }
+    {
+      import.meta.env.PUBLIC_UMAMI_WEBSITE_ID && (
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id={import.meta.env.PUBLIC_UMAMI_WEBSITE_ID}
+        />
+      )
+    }
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={SITE.name} />
     <meta property="og:title" content={fullTitle} />
@@ -97,4 +115,8 @@ if (breadcrumbs && breadcrumbs.length > 0) {
     </main>
     <Footer />
   </body>
+  <script>
+    import { initAnalytics } from "../lib/analytics";
+    initAnalytics();
+  </script>
 </html>

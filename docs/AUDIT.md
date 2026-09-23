@@ -17,11 +17,12 @@
 
 ## HIGH (Phase 5 / частично Phase 2–3)
 
-- Нет `og:image`; `noindex` может попадать в sitemap. **fixed:** дубль `neurologist`, cron, raw не в git, EN→`lang=en` (перевод ждёт ключ).
-- Freshness мёртв (отзывы без дат); 50/50 отзывов только EN (UI: бейдж EN; `npm run translate` после ключа); стаж частично (citilab + alfa).
-- Popup-blocker на формах; privacy-форм; a11y (focus, labels); «Belgrade» в русском UI.
-- Фото ~40MB без WebP; нет 404/privacy; `featured=0`; нет analytics; нет E2E hide-flow (PAT).
+- **done Phase 5:** og:image, noindex+sitemap, 404, privacy, contacts, FAQ, WebP 53 фото (~40MB→~1MB).
+- Freshness мёртв (отзывы без дат); стаж частично (citilab + alfa).
+- Popup-blocker на формах; a11y (focus, labels); «Belgrade» в русском UI.
 - **done Phase 2–4:** 140 карт, Sheets/citilab/TG fetch, merge-safe seed, cron Mon/Thu, commit-if-diff.
+- **done Phase 3:** EN→RU перевод агентом (44+6), UI original details.
+- Остаток MEDIUM: self-host fonts, city slug, haystack, PR job.
 
 ## MEDIUM / LOW
 SEO-мелочи, plural, city slug `novi-sad`, haystack, PR job в Actions.
@@ -30,4 +31,5 @@ SEO-мелочи, plural, city slug `novi-sad`, haystack, PR job в Actions.
 **done:** cron refresh + merge-safe seed + fuzzy name match. Schema validation — fail-fast в loadDoctors.
 
 ## Монетизация
-featured=0 (продукт невидим), нет аналитики, нет страницы пакетов, нет E2E hide-flow (нужен PAT).
+**done Phase 6 (без PAT):** `/packages/` цены, featured demo (2 карточки), click-track + analytics hooks.  
+Open: PAT E2E hide-flow; ключ `PUBLIC_PLAUSIBLE_DOMAIN`/`PUBLIC_UMAMI_WEBSITE_ID`; первый featured request до 15.12.2026.

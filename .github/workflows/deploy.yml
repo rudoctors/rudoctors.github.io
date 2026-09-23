@@ -50,6 +50,10 @@ jobs:
       - run: npm run check
       - run: npm run build
 
+      - name: IndexNow ping
+        run: node scripts/indexnow.mjs dist
+        continue-on-error: true
+
       # Commit data diffs on schedule only (skip push trigger to avoid loops)
       - name: Commit refreshed data
         if: github.event_name == 'schedule'

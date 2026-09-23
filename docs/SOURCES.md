@@ -12,7 +12,8 @@
 | `https://t.me/s/russmedicserbia` | 139 постов → 14 визиток, 2 review_candidate | `scripts/fetch-tg.mjs` | ✅ (карточки; отзывы — Phase 3+) |
 | `t.me/vrachivserbii` | таблица врачей (источник Sheets) | via Sheets | ✅ |
 
-**Итог seed:** ~140 уникальных врачей; дубли sheets/citilab/alfa слиты (`npm run detect:dups` → 0).
+**Итог seed:** ~140 уникальных врачей; дубли sheets/citilab/alfa слиты (`npm run detect:dups` → 0).  
+Фото: `npm run photos:webp` → 53 WebP (~40MB JPG → ~1MB webp в репо ссылок).
 
 ## Google Sheets
 

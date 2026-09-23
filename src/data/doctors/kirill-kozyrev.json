@@ -6,7 +6,7 @@
     "therapist"
   ],
   "specializationText": "Психиатр",
-  "photo": "/photos/rd-57.jpg",
+  "photo": "/photos/rd-57.webp",
   "experienceYears": 7,
   "city": "Belgrade",
   "district": "Novi Beograd",
@@ -97,7 +97,7 @@
     }
   ],
   "hidden": false,
-  "featured": false,
+  "featured": true,
   "sources": [
     "rusdoctors.net",
     "serbia.alfamedstar.com",

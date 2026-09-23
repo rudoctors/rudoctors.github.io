@@ -1,6 +1,6 @@
 # План работ Rudoctors
 
-Статус: **Phase 0–2, 4 done; Phase 3 partial** (порядок 0→1→2→3→4, 23.09.2026)  
+Статус: **Phase 0–6 done** (порядок 0→1→2→3→4→5→6, 24.09.2026); open: PAT E2E, analytics key, TG review candidates  
 Цель монетизации: featured-профили + партнёрства за 30–90 дней; сигнал — первый featured/placement request до 15.12.2026.
 
 ## Фазы
@@ -10,10 +10,10 @@
 | 0 | Docs: PLAN, AUDIT, SOURCES, DECISIONS, OPS + README | **done** | 0.5ч |
 | 1 | CRITICAL fixes: seed merge, rating, XSS, PAT, дубликаты, fail-fast, slugify | **done** | 2–3ч |
 | 2 | Данные: fetch-sheet, fetch-citilab, fetch-tg → 120–150 врачей | **done** | 3–5ч |
-| 3 | Отзывы TG + перевод EN→RU | **partial** (50 EN помечены; ключ GH Secrets нужен) | 3–4ч |
+| 3 | Отзывы TG + перевод EN→RU | **done** (44 переведено агентом, 6 lang=ru; без API-ключа) | 3–4ч |
 | 4 | Continuous update: cron + merge-safe seed | **done** | 2ч |
-| 5 | HIGH polish (backlog): og:image, noindex, 404, privacy, WebP | backlog | — |
-| 6 | Монетизация: featured, analytics, цены, E2E admin (PAT) | backlog | — |
+| 5 | HIGH polish: og:image, noindex, 404, privacy, FAQ, WebP | **done** | — |
+| 6 | Монетизация: пакеты, featured demo, click-track, analytics hooks | **done** (PAT E2E — позже) | — |
 
 ## Phase 0 — Docs
 - [x] `docs/PLAN.md`
@@ -46,11 +46,10 @@
 
 ## Phase 3 — Отзывы + перевод
 - [x] `scripts/tag-en-reviews.mjs` — 50 alfa-отзывов помечены `lang: "en"`
-- [x] `scripts/translate-reviews.mjs` — batch EN→RU (OpenRouter), поля `text`/`textOriginal`/`langSource`
-- [x] Секрет: `TRANSLATE_API_KEY` только в GH Secrets (скрипт no-op без ключа)
-- [x] UI-бейдж EN + details «Оригинал»
+- [x] Перевод EN→RU **агентом** (не API): 44 текста + 6 already-RU → `text`/`textOriginal`/`langSource`
+- [x] UI-бейдж + details «Оригинал (`langSource`)»
+- [x] `scripts/translate-reviews.mjs` — no-op без ключа (запасной путь)
 - [ ] Реальные отзывы из t.me/s по имени (`source: telegram`) — 2 review_candidate
-- [ ] `npm run translate` после добавления ключа в GH Secrets
 
 ## Phase 4 — Continuous update
 - [x] `schedule:` cron Mon/Thu 05:00 UTC в `deploy.yml`
@@ -58,11 +57,21 @@
 - [x] Merge-safe против админки; raw intermediates в `.gitignore` (CI refetch)
 - [ ] Schema validation строгая (fail-fast уже в loadDoctors)
 
-## Phase 5 — HIGH polish (backlog)
-og:image, noindex из sitemap, 404, privacy, WebP-ресайз, self-host fonts, aria-live, city slug `novi-sad`, plural, haystack, PR job.
+## Phase 5 — HIGH polish
+- [x] `og:image` (`public/og.png`) + twitter cards
+- [x] `/admin`, forms — `noindex` + sitemap filter
+- [x] `404.astro`, `privacy.astro`, `contacts.astro`, `faq.astro`
+- [x] WebP: `npm run photos:webp` → 53 фото, ~40MB → ~1MB webp, photo → `.webp`
+- [ ] self-host fonts, aria-live, city slug `novi-sad`, haystack, PR job
 
-## Phase 6 — Монетизация (backlog)
-1–2 featured demo, analytics (Plausible/Umami), страница пакетов, клики appointmentUrl, E2E admin hide-flow → fine-grained PAT (contents RW) — **пользователь создаст позже**.
+## Phase 6 — Монетизация
+- [x] `/packages/` — featured / пакет клиники / баннер (цены-ориентиры)
+- [x] Featured demo: `kirill-kozyrev`, `kristina-tokmakova` (`featured: true`, seed OR-merge)
+- [x] Click-track: `Appointment Click` / `Outbound Click` → Plausible/Umami если env
+- [x] Layout hooks: `PUBLIC_PLAUSIBLE_DOMAIN` / `PUBLIC_UMAMI_WEBSITE_ID`
+- [x] CTA: home / about / contacts / footer → `/packages/`
+- [ ] E2E admin hide-flow — PAT создаст пользователь
+- [ ] Первый featured request до 15.12.2026
 
 ## Monetization gate (пройден → proceed)
 1. Каталог 120–150 + отзывы → featured/ads → платящие врачи.

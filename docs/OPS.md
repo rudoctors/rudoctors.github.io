@@ -33,9 +33,17 @@ astro dev --background   # dev (см. AGENTS.md)
 
 ## Секреты / GitHub Actions
 
-- Перевод EN→RU: `TRANSLATE_API_KEY` только в GH Secrets (скрипт no-op без ключа).
-- Local: `TRANSLATE_API_KEY=... npm run translate`.
-- `.env` локально; не коммитить, не печатать, не в память.
+- Перевод EN→RU: основной путь — ИИ-агент (сессия); `TRANSLATE_API_KEY` — запасной no-op без ключа.
+- Analytics (опционально): build-time `PUBLIC_PLAUSIBLE_DOMAIN` и/или `PUBLIC_UMAMI_WEBSITE_ID`.
+- Local: `.env` локально; не коммитить, не печатать, не в память.
+- Photos: `npm run photos:webp` (sharp) → `photo: /photos/*.webp`.
+
+## Монетизация
+
+- `/packages/` — featured / клиника / баннер (ориентиры EUR).
+- Featured demo: 2 карточки `featured: true`; seed сохраняет OR-merge.
+- Clicks: `Appointment Click`, `Outbound Click` → Plausible/Umami hooks (`src/lib/analytics.ts`).
+- Сигнал: первый featured request до 15.12.2026; PAT E2E — после создания PAT.
 
 ## Мониторинг
 

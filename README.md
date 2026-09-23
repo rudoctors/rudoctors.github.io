@@ -14,7 +14,8 @@
 | `npm run check` | `astro check` (типы) |
 | `npm run build` | Сборка в `dist/` |
 | `npm run preview` | Локальный просмотр сборки |
-| `npm run translate` | EN→RU (нужен `TRANSLATE_API_KEY`, иначе no-op) |
+| `npm run translate` | Запасной API-перевод (no-op без `TRANSLATE_API_KEY`); основной путь — ИИ-агент |
+| `npm run photos:webp` | JPG → WebP 512px + rewrite `photo` в JSON |
 | `npm run detect:dups` | Поиск дублей имён |
 | `astro dev --background` | Dev-сервер в фоне (см. AGENTS.md) |
 
