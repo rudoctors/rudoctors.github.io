@@ -3,7 +3,7 @@
   "name": "Алена Вуккерт",
   "nameEn": "Alena Vukkert",
   "specializations": [
-    "oftalmolog"
+    "ophthalmologist"
   ],
   "specializationText": "Офтальмолог",
   "photo": "/photos/rd-70.jpg",
@@ -27,7 +27,6 @@
   ],
   "contacts": {
     "telegram": "https://t.me/wukkert",
-    "website": "https://www.ТГ-канал «Др Вуккерт»:  https://t.me/+bFJamTL8ORg3ODk6",
     "appointmentUrl": "https://n1358434.alteg.io"
   },
   "reviews": [],

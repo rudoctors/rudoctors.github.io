@@ -1,0 +1,38 @@
+{
+  "slug": "yanik-elena",
+  "name": "Яник Елена",
+  "specializations": [
+    "pediatrician"
+  ],
+  "specializationText": "Педиатр",
+  "city": "Novi Sad",
+  "languages": [
+    "ru",
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "online"
+  ],
+  "bio": "Документы: Диплом РФ \n\nЛицензия в Сербии",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Клиника MediGroup запись через колл-центр",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 11 40 40 100",
+    "email": null,
+    "telegram": "https://t.me/dr_pryanik"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

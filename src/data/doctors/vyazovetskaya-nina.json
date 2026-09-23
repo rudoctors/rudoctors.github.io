@@ -1,0 +1,39 @@
+{
+  "slug": "vyazovetskaya-nina",
+  "name": "Вязоветская Нина",
+  "specializations": [
+    "therapist",
+    "endocrinologist"
+  ],
+  "specializationText": "Терапевт \nЭндокринолог",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr",
+    "en",
+    "it"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом врача РФ \n\nЛицензия в Сербии",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Клиника MediGroup",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 11 40 40 100",
+    "email": null
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

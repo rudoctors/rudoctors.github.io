@@ -11,7 +11,8 @@
   "district": "Novi Beograd",
   "languages": [
     "ru",
-    "sr"
+    "sr",
+    "en"
   ],
   "formats": [
     "offline"
@@ -39,40 +40,58 @@
       "id": "alfa-inga-sakeyan-0",
       "author": "Пациент",
       "date": "2025-03-15",
-      "rating": 5,
-      "text": "I want to share my experience of communicating with endocrinologist Inga Sakeyan. She carefully and in detail asks about nutrition, health and activities, tries to understand the problem and select the right treatment. You can see that she cares. A very friendly and pleasant doctor to communicate with.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Хочу поделиться впечатлениями от общения с эндокринологом Ингой Сакеян. Она внимательно и подробно расспрашивает о питании, самочувствии и образе жизни, старается понять проблему и подобрать правильное лечение. Видно, что ей не всё равно. Очень дружелюбный и приятный в общении врач.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "I want to share my experience of communicating with endocrinologist Inga Sakeyan. She carefully and in detail asks about nutrition, health and activities, tries to understand the problem and select the right treatment. You can see that she cares. A very friendly and pleasant doctor to communicate with.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     },
     {
       "id": "alfa-inga-sakeyan-1",
       "author": "Пациент",
       "date": "2025-04-20",
-      "rating": 5,
-      "text": "Excellent specialist, answered all questions. Thank you very much!",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Отличный специалист, ответила на все вопросы. Большое спасибо!",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "Excellent specialist, answered all questions. Thank you very much!",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     },
     {
       "id": "alfa-inga-sakeyan-2",
       "author": "Пациент",
       "date": "2025-05-05",
-      "rating": 5,
-      "text": "Inga Surenovna made a good impression as an endocrinologist. The communication was warm and attentive, with a feeling of care for my well-being. Especially valuable - attention to details and clear, calm explanations. There was a feeling of respect and professionalism.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Инга Суреновна произвела хорошее впечатление как эндокринолог. Общение было тёплым и внимательным, с ощущением заботы о моём самочувствии. Особенно ценно — внимание к деталям и понятные, спокойные объяснения. Было чувство уважения и профессионализма.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "Inga Surenovna made a good impression as an endocrinologist. The communication was warm and attentive, with a feeling of care for my well-being. Especially valuable - attention to details and clear, calm explanations. There was a feeling of respect and professionalism.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     },
     {
       "id": "alfa-inga-sakeyan-3",
       "author": "Пациент",
       "date": "2025-06-18",
-      "rating": 5,
-      "text": "Detailed and informative answer! I will definitely contact this specialist again! A very competent endocrinologist!",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Подробный и содержательный ответ! Обязательно ещё обращусь к этому специалисту! Очень компетентный эндокринолог!",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "Detailed and informative answer! I will definitely contact this specialist again! A very competent endocrinologist!",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     }
   ],
   "hidden": false,
   "featured": false,
   "sources": [
     "rusdoctors.net",
-    "serbia.alfamedstar.com"
+    "serbia.alfamedstar.com",
+    "google-sheets",
+    "t.me/vrachivserbii"
   ],
   "updatedAt": "2026-09-23"
 }

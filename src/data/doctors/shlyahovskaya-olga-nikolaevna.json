@@ -1,0 +1,37 @@
+{
+  "slug": "shlyahovskaya-olga-nikolaevna",
+  "name": "Шляховская Ольга Николаевна",
+  "specializations": [
+    "therapist"
+  ],
+  "experienceYears": 28,
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "CITILAB",
+      "address": "Dubljanska 41, Belgrade",
+      "city": "Belgrade",
+      "url": "https://citilab.rs/ru/"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 655 737 777",
+    "appointmentUrl": "https://n1224063.alteg.io/company/1167832/personal/menu/master-info/1167832/2640030?o=m2640030",
+    "website": "https://citilab.rs/ru/doctors/shilahovskaya/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "citilab.rs"
+  ],
+  "updatedAt": "2026-09-23"
+}

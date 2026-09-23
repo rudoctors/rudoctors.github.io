@@ -1,0 +1,37 @@
+{
+  "slug": "melnikova-irina",
+  "name": "Мельникова Ирина",
+  "specializations": [
+    "dermatologist"
+  ],
+  "specializationText": "Дерматолог\nтрихолог\nкосметолог",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом РБ\n\nЛицензия дерматолога в Сербии",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Клиника Equilibrium",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "email": null,
+    "telegram": "https://t.me/DrImiller",
+    "website": "https://dr-imiller.com"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

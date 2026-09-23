@@ -1,0 +1,33 @@
+{
+  "slug": "voloshina-olga",
+  "name": "Волошина Ольга",
+  "specializations": [
+    "dermatologist"
+  ],
+  "specializationText": "косметолог \nтрихолог",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом РФ",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "038540",
+    "email": null,
+    "telegram": "https://t.me/cosm_derm"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

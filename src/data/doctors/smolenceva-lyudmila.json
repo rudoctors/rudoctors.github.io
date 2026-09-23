@@ -1,0 +1,36 @@
+{
+  "slug": "smolenceva-lyudmila",
+  "name": "Смоленцева Людмила",
+  "specializations": [
+    "therapist"
+  ],
+  "specializationText": "Терапевт\nРевматолог",
+  "city": "Novi Sad",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом врача РФ \nЛицензия в Сербии",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Клиника MediGroup",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 11 40 40 100",
+    "email": null
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

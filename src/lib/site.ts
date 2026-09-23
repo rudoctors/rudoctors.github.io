@@ -23,3 +23,13 @@ export function plural(n: number, one: string, few: string, many: string): strin
   if (m10 >= 2 && m10 <= 4 && (m100 < 10 || m100 >= 20)) return few;
   return many;
 }
+
+/** Allow only http(s), tel, mailto, and site-relative paths. Blocks javascript: etc. */
+export function safeUrl(raw?: string | null): string | undefined {
+  if (!raw) return undefined;
+  const u = String(raw).trim();
+  if (!u) return undefined;
+  if (u.startsWith("/") && !u.startsWith("//")) return u;
+  if (/^(https?:|tel:|mailto:)/i.test(u)) return u;
+  return undefined;
+}

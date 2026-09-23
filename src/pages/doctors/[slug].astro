@@ -3,7 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import Stars from "../../components/Stars.astro";
 import { publicDoctors, specLabel } from "../../lib/doctors";
 import { computeRating } from "../../lib/rating";
-import { SITE, formatDate, plural } from "../../lib/site";
+import { SITE, formatDate, plural, safeUrl } from "../../lib/site";
 import type { Doctor } from "../../lib/types";
 
 export function getStaticPaths() {
@@ -29,6 +29,11 @@ const initials = doctor.name
 const related = publicDoctors()
   .filter((d) => d.slug !== doctor.slug && d.specializations.some((s) => doctor.specializations.includes(s)))
   .slice(0, 3);
+
+const apptUrl = safeUrl(doctor.contacts.appointmentUrl);
+const tgUrl = safeUrl(doctor.contacts.telegram);
+const webUrl = safeUrl(doctor.contacts.website);
+const mapsUrl = safeUrl(doctor.contacts.mapsUrl);
 
 const jsonLd: Record<string, unknown>[] = [
   {
@@ -132,8 +137,8 @@ const jsonLd: Record<string, unknown>[] = [
 
           <div class="mt-6 flex flex-wrap gap-2 justify-center sm:justify-start">
             {
-              doctor.contacts.appointmentUrl && (
-                <a href={doctor.contacts.appointmentUrl} target="_blank" rel="noopener noreferrer" class="btn-primary">
+              apptUrl && (
+                <a href={apptUrl} target="_blank" rel="noopener noreferrer" class="btn-primary">
                   Записаться
                 </a>
               )
@@ -146,15 +151,15 @@ const jsonLd: Record<string, unknown>[] = [
               )
             }
             {
-              doctor.contacts.telegram && (
-                <a href={doctor.contacts.telegram} target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              tgUrl && (
+                <a href={tgUrl} target="_blank" rel="noopener noreferrer" class="btn-secondary">
                   Telegram
                 </a>
               )
             }
             {
-              doctor.contacts.website && (
-                <a href={doctor.contacts.website} target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              webUrl && (
+                <a href={webUrl} target="_blank" rel="noopener noreferrer" class="btn-secondary">
                   Сайт
                 </a>
               )
@@ -213,11 +218,26 @@ const jsonLd: Record<string, unknown>[] = [
                         <div class="font-semibold text-slate-900">{r.author || "Пациент"}</div>
                         <div class="text-xs text-slate-500">{r.date ? formatDate(r.date) : ""}</div>
                       </div>
-                      <div class="mt-1 text-amber-400 text-sm" aria-label={`${r.rating} из 5`}>
-                        {"★".repeat(Math.round(r.rating || 5))}
-                        <span class="text-slate-300">{"★".repeat(5 - Math.round(r.rating || 5))}</span>
+                      <div class="mt-1 flex flex-wrap items-center gap-2">
+                        {Number(r.rating) > 0 ? (
+                          <div class="text-amber-400 text-sm" aria-label={`${r.rating} из 5`}>
+                            {"★".repeat(Math.round(Number(r.rating)))}
+                            <span class="text-slate-300">{"★".repeat(5 - Math.round(Number(r.rating)))}</span>
+                          </div>
+                        ) : (
+                          <span class="text-xs text-slate-400">Текстовый отзыв (без оценки)</span>
+                        )}
+                        {r.lang === "en" && !r.textOriginal && (
+                          <span class="rounded bg-slate-100 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-500">EN</span>
+                        )}
                       </div>
                       <p class="mt-2 text-sm text-slate-700 leading-relaxed whitespace-pre-line">{r.text}</p>
+                      {r.langSource && r.textOriginal && (
+                        <details class="mt-2">
+                          <summary class="text-xs text-slate-500 cursor-pointer">Оригинал ({r.langSource.toUpperCase()})</summary>
+                          <p class="mt-1 text-sm text-slate-600 whitespace-pre-line">{r.textOriginal}</p>
+                        </details>
+                      )}
                       {r.source && <div class="mt-2 text-[11px] text-slate-400">Источник: {r.source}</div>}
                     </li>
                   ))}
@@ -261,14 +281,14 @@ const jsonLd: Record<string, unknown>[] = [
                     {w.address && <div class="text-slate-600 mt-0.5">{w.address}</div>}
                     {w.city && <div class="text-slate-500">{[w.city, w.district].filter(Boolean).join(", ")}</div>}
                     <div class="mt-2 flex flex-wrap gap-2">
-                      {w.url && (
-                        <a href={w.url} target="_blank" rel="noopener noreferrer" class="text-brand-700 hover:underline text-xs font-semibold">
+                      {safeUrl(w.url) && (
+                        <a href={safeUrl(w.url)!} target="_blank" rel="noopener noreferrer" class="text-brand-700 hover:underline text-xs font-semibold">
                           Сайт клиники
                         </a>
                       )}
-                      {(w.mapsUrl || doctor.contacts.mapsUrl) && (
+                      {(safeUrl(w.mapsUrl) || mapsUrl) && (
                         <a
-                          href={w.mapsUrl || doctor.contacts.mapsUrl}
+                          href={(safeUrl(w.mapsUrl) || mapsUrl)!}
                           target="_blank"
                           rel="noopener noreferrer"
                           class="text-brand-700 hover:underline text-xs font-semibold"
@@ -303,10 +323,10 @@ const jsonLd: Record<string, unknown>[] = [
                 </a>
               </li>
             )}
-            {doctor.contacts.telegram && (
+            {tgUrl && (
               <li>
                 <span class="text-slate-500">Telegram: </span>
-                <a class="text-brand-700 font-medium hover:underline" href={doctor.contacts.telegram} target="_blank" rel="noopener noreferrer">
+                <a class="text-brand-700 font-medium hover:underline" href={tgUrl} target="_blank" rel="noopener noreferrer">
                   открыть
                 </a>
               </li>

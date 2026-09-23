@@ -4,13 +4,15 @@
   "specializations": [
     "neurologist"
   ],
-  "specializationText": "Невролог",
+  "specializationText": "Невролог, паркинсонолог",
   "photo": "/photos/rd-50.jpg",
   "city": "Belgrade",
   "district": "Novi Beograd",
   "languages": [
     "en",
-    "ru"
+    "ru",
+    "sr",
+    "de"
   ],
   "formats": [
     "offline"
@@ -25,19 +27,66 @@
       "district": "Novi Beograd",
       "url": "https://alfamedstar.rs/",
       "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
+    },
+    {
+      "clinic": "AlfaMedStar",
+      "city": "Novi Sad"
     }
   ],
   "contacts": {
+    "phone": "+381 63 497 447",
     "telegram": "https://t.me/alfamedstar_rs",
     "website": "https://www.alfamedstar.rs/doctors/shtuchniy",
     "appointmentUrl": "https://n1425872.alteg.io",
     "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "alfa-igor-shtuchniy-0",
+      "author": "Пациент",
+      "date": "",
+      "rating": 0,
+      "text": "Доброе утро. Был на консультации у невролога Игоря Штучного в Нови-Саде. Консультация прошла очень хорошо и продлилась немного больше часа. Игорь внимательный невролог: собрал полный анамнез, провёл все неврологические пробы и подтвердил диагноз. Дал подробные заключения и рекомендовал дальнейшее обследование. Я знаю, что мигрень с аурой полностью не излечивается, но пока приступы не повторялись. Рекомендую этого специалиста — общаться с ним также очень приятно.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "Good morning. I had a consultation with neurologist Igor Shtuchniy in Novi Sad. The consultation went very well and lasted a little over an hour. Igor is an attentive neurologist: he took a full history, performed all neurological tests, and confirmed the diagnosis. He gave detailed conclusions and recommended further examination. I know migraine with aura is not cured completely, but so far attacks have not recurred. I recommend this specialist — he is also very pleasant to talk to.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
+    },
+    {
+      "id": "alfa-igor-shtuchniy-1",
+      "author": "Пациент",
+      "date": "",
+      "rating": 0,
+      "text": "Сегодня меня принимал невролог Игорь Штучный. Могу уверенно его рекомендовать. Он строго следует доказательной медицине, подробно собирает анамнез, не рекомендует ничего лишнего или ненужных процедур, вежливый и внимательный, всё подробно объясняет. Чувствуется профессионализм и медицинская этика.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "Today I was seen by neurologist Igor Shtuchniy. I can confidently recommend him. He strictly follows evidence-based medicine, takes a detailed history, does not recommend anything unnecessary or extra procedures, is polite and attentive, and explains everything in detail. You can feel professionalism and medical ethics.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
+    },
+    {
+      "id": "alfa-igor-shtuchniy-2",
+      "author": "Пациент",
+      "date": "",
+      "rating": 0,
+      "text": "Вчера меня принимал невролог Игорь Штучный. Я был очень доволен его профессионализмом, внимательностью и человечностью. Видно, что врач любит своё дело и подходит к работе с искренним интересом.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "Yesterday I was seen by neurologist Igor Shtuchniy. I was very pleased with his professionalism, attentiveness, and humanity. It is clear that the doctor loves his profession and approaches his work with genuine interest.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
-    "rusdoctors.net"
+    "rusdoctors.net",
+    "serbia.alfamedstar.com",
+    "google-sheets",
+    "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-04-27"
+  "updatedAt": "2026-09-23",
+  "nameEn": "Igor Shtuchniy",
+  "experienceYears": 6
 }

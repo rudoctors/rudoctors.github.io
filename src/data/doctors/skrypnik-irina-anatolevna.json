@@ -1,0 +1,40 @@
+{
+  "slug": "skrypnik-irina-anatolevna",
+  "name": "Скрыпник Ирина Анатольевна",
+  "specializations": [
+    "therapist"
+  ],
+  "specializationText": "Пульмонолог\nаллерголог\n терапевт",
+  "experienceYears": 9,
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "en",
+    "es"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Поликлиника CITILAB",
+      "city": "Belgrade",
+      "address": "Dubljanska 41, Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 65 573 77 77 (",
+    "appointmentUrl": "https://n1329288.alteg.io/company/1167832/personal/select-master/master-info/1167832/2993519?o=m2993519",
+    "email": null
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii",
+    "citilab.rs"
+  ],
+  "updatedAt": "2026-09-23"
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "zhiznevskaya-aleksandra-vyacheslavovna",
+  "name": "Жизневская Александра Вячеславовна",
+  "specializations": [
+    "therapist"
+  ],
+  "specializationText": "врач общей практики, \nинфекционист",
+  "experienceYears": 5,
+  "city": "Novi Sad",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом врача РФ\n\nЛицензия в Сербии(постоянная)",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Best Medica",
+      "city": "Novi Sad",
+      "address": "Dubljanska 41, Belgrade"
+    }
+  ],
+  "contacts": {
+    "appointmentUrl": "https://n1222091.alteg.io/company/1167832/personal/select-master/master-info/1167832/2802680?o=m2802680",
+    "email": null,
+    "telegram": "https://t.me/sashazhiznevskaya"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii",
+    "citilab.rs"
+  ],
+  "updatedAt": "2026-09-23"
+}

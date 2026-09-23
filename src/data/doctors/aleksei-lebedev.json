@@ -30,6 +30,7 @@
     }
   ],
   "contacts": {
+    "email": null,
     "telegram": "https://t.me/hillsongaleksei",
     "mapsUrl": "https://maps.app.goo.gl/sBKQFMT2T74342Q8A"
   },
@@ -37,7 +38,9 @@
   "hidden": false,
   "featured": false,
   "sources": [
-    "rusdoctors.net"
+    "rusdoctors.net",
+    "google-sheets",
+    "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-04-08"
+  "updatedAt": "2026-09-23"
 }

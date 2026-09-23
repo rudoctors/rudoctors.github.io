@@ -1,0 +1,32 @@
+{
+  "slug": "radygina-ekaterina",
+  "name": "Радыгина Екатерина",
+  "specializations": [
+    "dermatologist"
+  ],
+  "specializationText": "Дерматолог,Дерматовенеролог (детский и взрослый)",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом РФ\nЛицензия в Сербии",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "011 40 40 100",
+    "email": null,
+    "telegram": "https://t.me/Ekaterina_dermatovenerologist"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

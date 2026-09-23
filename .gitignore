@@ -23,9 +23,13 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 
-# seed raw
+# seed raw / intermediate fetch (CI refetches)
 scripts/*-raw.json
 scripts/*.html
 scripts/alfa*.html
+scripts/sheet-doctors.json
+scripts/citilab-doctors.json
+scripts/tg-posts.json
 .DS_Store
+
 

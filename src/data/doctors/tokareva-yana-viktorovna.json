@@ -1,0 +1,37 @@
+{
+  "slug": "tokareva-yana-viktorovna",
+  "name": "Токарева Яна Викторовна",
+  "specializations": [
+    "therapist"
+  ],
+  "specializationText": "Врач общей практики\n\n*Ординатура по дерматологии (сертификат медицинская косметология)\n\nОрдинатура по реабилитационной медицине",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом врача в РФ\nЛицензия врача општа праксы в Сербии",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "клиника Cosmo Clinic",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381677345536",
+    "email": null
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

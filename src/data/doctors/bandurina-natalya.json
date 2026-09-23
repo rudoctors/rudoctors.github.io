@@ -1,0 +1,35 @@
+{
+  "slug": "bandurina-natalya",
+  "name": "Бандурина Наталья",
+  "specializations": [
+    "psychiatrist"
+  ],
+  "specializationText": "Психиатр",
+  "city": "Novi Sad",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом РФ\n\nЛицензия в Сербии",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Клиника Best Medica",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "email": null,
+    "telegram": "https://t.me/doc_bandurinatalia"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "shapi-vladan",
+  "name": "Шљапић Владан",
+  "specializations": [
+    "cardiologist"
+  ],
+  "specializationText": "Кардиолог",
+  "city": "Novi Sad",
+  "languages": [
+    "ru",
+    "sr",
+    "en",
+    "fr",
+    "es",
+    "it"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Лицензия",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "00-70-89",
+    "email": null
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

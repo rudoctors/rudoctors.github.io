@@ -1,0 +1,42 @@
+{
+  "slug": "andreeva-tatyana",
+  "name": "Андреева Татьяна",
+  "specializations": [
+    "hematologist"
+  ],
+  "specializationText": "Гематолог",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом и сертификат РФ \nЛицензия врача гематолога в Сербии",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Клиника MediGroup (DZ Voždovac",
+      "city": "Belgrade",
+      "url": "https://www.medigroup.rs/lekari/andreeva-tatiana/"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 11 40 40 100",
+    "email": null,
+    "telegram": "https://t.me/md_blood",
+    "website": "https://www.instagram.com/drtatiana_andreeva?igsh=dHVtbmkwbmFtNDF2"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii",
+    "rusdoctors.net"
+  ],
+  "updatedAt": "2026-09-23",
+  "nameEn": "Tatiana Andreeva"
+}

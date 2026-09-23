@@ -1,0 +1,37 @@
+{
+  "slug": "goncharuk-anastasiya",
+  "name": "Гончарук Анастасия",
+  "specializations": [
+    "pediatrician"
+  ],
+  "specializationText": "Педиатр",
+  "city": "Novi Sad",
+  "languages": [
+    "ru",
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "online"
+  ],
+  "bio": "Документы: Диплом врача РФ\nЛицензия в Сербии",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Поликлиника CITILAB",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 65 573 77 77 (",
+    "email": null
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

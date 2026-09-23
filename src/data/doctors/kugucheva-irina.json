@@ -1,0 +1,38 @@
+{
+  "slug": "kugucheva-irina",
+  "name": "Кугучева Ирина",
+  "specializations": [
+    "pediatrician"
+  ],
+  "specializationText": "Педиатр",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "online"
+  ],
+  "bio": "Документы: диплом врача РФ, лицензия в Сербии",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "клиника VIZIM (Здравка Челара 14а или Омладинских бригада 88b)",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381-11-785-7777",
+    "email": null,
+    "telegram": "https://t.me/dr_irking"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

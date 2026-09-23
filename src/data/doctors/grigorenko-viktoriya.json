@@ -1,0 +1,36 @@
+{
+  "slug": "grigorenko-viktoriya",
+  "name": "Григоренко Виктория",
+  "specializations": [
+    "neurologist"
+  ],
+  "specializationText": "Невролог\nКлинический психолог",
+  "city": "Belgrade",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Доктор медицины-сербская лицензия, \n\nневролог- лицензия РФ.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Doctorus",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 69 101 92 69",
+    "email": null,
+    "website": "https://app.medesk.net/patient/?e=6787b57ddb0b220cf5517b6d&a=anonymous"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

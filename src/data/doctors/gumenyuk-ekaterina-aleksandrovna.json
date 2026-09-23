@@ -1,0 +1,33 @@
+{
+  "slug": "gumenyuk-ekaterina-aleksandrovna",
+  "name": "Гуменюк Екатерина Александровна",
+  "specializations": [
+    "endocrinologist"
+  ],
+  "specializationText": "Специализация: общая эндокринология, диабетология, диетология.",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом РФ, лицензия в Сербии",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "+381621429627",
+    "email": null,
+    "telegram": "https://t.me/gummy_doc"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "ovcharov-stanislav",
+  "name": "Овчаров Станислав",
+  "specializations": [
+    "therapist"
+  ],
+  "specializationText": "Пульмонолог\nтерапевт\nмануальная терапия",
+  "city": "Novi Sad",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Лицензия",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "email": null,
+    "telegram": "https://t.me/drsovcharo"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

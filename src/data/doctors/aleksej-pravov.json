@@ -3,7 +3,8 @@
   "name": "Алексей Прахов",
   "nameEn": "Aleksej Pravov",
   "specializations": [
-    "therapist"
+    "therapist",
+    "cardiologist"
   ],
   "specializationText": "Общая практика",
   "photo": "/photos/rd-17.jpg",
@@ -46,7 +47,9 @@
   "hidden": false,
   "featured": false,
   "sources": [
-    "rusdoctors.net"
+    "rusdoctors.net",
+    "google-sheets",
+    "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-03-17"
+  "updatedAt": "2026-09-23"
 }

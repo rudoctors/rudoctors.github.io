@@ -19,7 +19,7 @@ import Layout from "../../layouts/Layout.astro";
       <h2 class="font-bold mb-3">Вход (GitHub Personal Access Token)</h2>
       <p class="text-sm text-slate-500 mb-3">
         Создайте fine-grained PAT с доступом <strong>Contents: Read and write</strong> к репозиторию
-        <strong> rudoctors/rudoctors.github.io</strong>. Токен хранится только в вашем браузере (localStorage).
+        <strong> rudoctors/rudoctors.github.io</strong>. Токен хранится только в sessionStorage браузера (TTL ~8 часов).
       </p>
       <div class="flex flex-col sm:flex-row gap-2">
         <input id="pat" type="password" class="input flex-1" placeholder="github_pat_…" autocomplete="off" />
@@ -53,7 +53,9 @@ import Layout from "../../layouts/Layout.astro";
 <script>
   const REPO = "rudoctors/rudoctors.github.io";
   const API = "https://api.github.com";
-  const LS_KEY = "rudoctors_admin_pat";
+  const SS_KEY = "rudoctors_admin_pat";
+  const SS_EXP_KEY = "rudoctors_admin_pat_exp";
+  const PAT_TTL_MS = 8 * 60 * 60 * 1000; // 8h
   const DIR = "src/data/doctors";
 
   const $ = (id: string) => document.getElementById(id)!;
@@ -63,7 +65,47 @@ import Layout from "../../layouts/Layout.astro";
   const listEl = $("list");
   const patInput = $("pat") as HTMLInputElement;
 
-  let token = localStorage.getItem(LS_KEY) || "";
+  const CYR: Record<string, string> = {
+    а: "a", б: "b", в: "v", г: "g", д: "d", е: "e", ё: "e", ж: "zh", з: "z",
+    и: "i", й: "y", к: "k", л: "l", м: "m", н: "n", о: "o", п: "p", р: "r",
+    с: "s", т: "t", у: "u", ф: "f", х: "h", ц: "c", ч: "ch", ш: "sh",
+    щ: "sch", ъ: "", ы: "y", ь: "", э: "e", ю: "yu", я: "ya",
+  };
+
+  function slugifyName(input: string): string {
+    const s = String(input || "").toLowerCase().trim();
+    let out = "";
+    for (const ch of s) {
+      if (CYR[ch] !== undefined) out += CYR[ch];
+      else if (/[a-z0-9]/.test(ch)) out += ch;
+      else if (/[\s\-_/]/.test(ch)) out += "-";
+    }
+    return out.replace(/-+/g, "-").replace(/^-|-$/g, "");
+  }
+
+  function loadPat(): string {
+    const exp = Number(sessionStorage.getItem(SS_EXP_KEY) || 0);
+    const tok = sessionStorage.getItem(SS_KEY) || "";
+    if (!tok || !exp || Date.now() > exp) {
+      sessionStorage.removeItem(SS_KEY);
+      sessionStorage.removeItem(SS_EXP_KEY);
+      return "";
+    }
+    return tok;
+  }
+
+  function savePat(tok: string) {
+    sessionStorage.setItem(SS_KEY, tok);
+    sessionStorage.setItem(SS_EXP_KEY, String(Date.now() + PAT_TTL_MS));
+  }
+
+  function clearPat() {
+    sessionStorage.removeItem(SS_KEY);
+    sessionStorage.removeItem(SS_EXP_KEY);
+    localStorage.removeItem("rudoctors_admin_pat");
+  }
+
+  let token = loadPat();
   let branch = "main";
 
   function b64Encode(str: string): string {
@@ -251,11 +293,7 @@ import Layout from "../../layouts/Layout.astro";
   async function createDoctor() {
     const name = window.prompt("Имя врача:");
     if (!name) return;
-    const slug =
-      name
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/^-|-$/g, "") || `doctor-${Date.now()}`;
+    const slug = slugifyName(name) || `doctor-${Date.now()}`;
     const doc = {
       slug,
       name,
@@ -303,21 +341,21 @@ import Layout from "../../layouts/Layout.astro";
     token = patInput.value.trim();
     authMsg.textContent = "Проверка токена…";
     if (await verifyToken()) {
-      localStorage.setItem(LS_KEY, token);
-      authMsg.textContent = "OK";
+      savePat(token);
+      authMsg.textContent = "OK (сессия ~8ч)";
       setAuthUI();
       await renderList();
     } else {
       token = "";
-      localStorage.removeItem(LS_KEY);
-      authMsg.textContent = "Токен не подошёл (нужен repo Contents: read/write)";
+      clearPat();
+      authMsg.textContent = "Токен не подошёл (нужен Contents: read/write)";
       setAuthUI();
     }
   });
 
   $("logout").addEventListener("click", () => {
     token = "";
-    localStorage.removeItem(LS_KEY);
+    clearPat();
     patInput.value = "";
     setAuthUI();
     listEl.innerHTML = "";

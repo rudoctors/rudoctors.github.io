@@ -1,0 +1,39 @@
+{
+  "slug": "gudovannaya-lyudmila-nikolaevna",
+  "name": "Гудованная Людмила Николаевна",
+  "specializations": [
+    "endocrinologist"
+  ],
+  "specializationText": "Эндокринолог",
+  "experienceYears": 23,
+  "city": "Belgrade",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом и сертификаты РФ, Лицензия эндокринолога в Сербии",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Поликлиника CITILAB",
+      "city": "Belgrade",
+      "address": "Dubljanska 41, Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 65 573 77 77 (",
+    "appointmentUrl": "https://n1317608.alteg.io/company/1167832/personal/select-master/master-info/1167832/2758221?o=m2758221",
+    "email": null
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii",
+    "citilab.rs"
+  ],
+  "updatedAt": "2026-09-23"
+}

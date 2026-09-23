@@ -1,0 +1,39 @@
+{
+  "slug": "pereshivko-anastasiya-igorevna",
+  "name": "Перешивко Анастасия Игоревна",
+  "specializations": [
+    "dermatologist"
+  ],
+  "specializationText": "Дерматолог,косметолог",
+  "experienceYears": 13,
+  "city": "Belgrade",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом РФ.Временная лицензия в Сербии",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Поликлиника CITILAB",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 65 573 77 77 (",
+    "appointmentUrl": "https://n1427311.alteg.io/company/1357508/personal/select-master/master-info/1357508/3080256?o=m3080256",
+    "website": "https://n1427311.alteg.io/company/1357508/personal/select-master?o=m3080256",
+    "email": null
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii",
+    "citilab.rs"
+  ],
+  "updatedAt": "2026-09-23"
+}

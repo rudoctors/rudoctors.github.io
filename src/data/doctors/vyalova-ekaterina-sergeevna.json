@@ -1,0 +1,40 @@
+{
+  "slug": "vyalova-ekaterina-sergeevna",
+  "name": "Вялова Екатерина Сергеевна",
+  "specializations": [
+    "endocrinologist"
+  ],
+  "specializationText": "Взрослый эндокринолог",
+  "city": "Novi Sad",
+  "languages": [
+    "ru",
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Дипломы РФ\nЛицензия в Сербии",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "medigroup",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "phone": "011 40 40 100",
+    "email": [
+      "zakazivanje@medigroup.rs"
+    ],
+    "telegram": "https://t.me/medigroup"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

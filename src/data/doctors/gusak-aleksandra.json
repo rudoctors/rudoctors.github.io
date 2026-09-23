@@ -1,0 +1,42 @@
+{
+  "slug": "gusak-aleksandra",
+  "name": "Гусак Александра",
+  "specializations": [
+    "therapist"
+  ],
+  "specializationText": "Врач терапевт и УЗИ ультразвуковой диагностики (молочные железы, брюшная полость и щитовидная железа)",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr",
+    "en",
+    "de"
+  ],
+  "formats": [
+    "online"
+  ],
+  "bio": "Документы: Диплом врача РФ \n\nЛицензия в Сербии \n\nСертификат Сербии по УЗИ",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "клиника Тесла Медикал (онлайн или очно)",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "0117777400 0668007770",
+    "email": [
+      "office@teslamedical.rs"
+    ],
+    "telegram": "https://t.me/teslamedical",
+    "website": "http://rigaland.chaika.com"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

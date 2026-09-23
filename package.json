@@ -12,7 +12,19 @@
     "astro": "astro",
     "check": "astro check",
     "lint": "astro check",
-    "seed": "node scripts/seed.mjs"
+    "seed": "node scripts/seed.mjs",
+    "fetch:sheet": "node scripts/fetch-sheet.mjs",
+    "fetch:citilab": "node scripts/fetch-citilab.mjs",
+    "fetch:tg": "node scripts/fetch-tg.mjs",
+    "fetch:raw": "node scripts/fetch-raw.mjs",
+    "fetch:alfa": "node scripts/scrape-alfa.mjs",
+    "fetch:all": "node scripts/fetch-sheet.mjs && node scripts/fetch-citilab.mjs && node scripts/fetch-tg.mjs && node scripts/seed.mjs",
+    "merge:duplicates": "node scripts/merge-duplicates.mjs",
+    "merge:dups2": "node scripts/merge-dups-phase2.mjs",
+    "tag:en": "node scripts/tag-en-reviews.mjs",
+    "translate": "node scripts/translate-reviews.mjs",
+    "detect:dups": "node scripts/detect-dups.mjs",
+    "refresh": "node scripts/fetch-sheet.mjs && node scripts/fetch-citilab.mjs && node scripts/seed.mjs && node scripts/tag-en-reviews.mjs && npm run check"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",

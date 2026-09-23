@@ -1,0 +1,31 @@
+{
+  "slug": "misyuk-olga-nikolaevna",
+  "name": "Мисюк Ольга Николаевна",
+  "specializations": [
+    "neurologist"
+  ],
+  "specializationText": "Невролог",
+  "city": "Belgrade",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом РФ",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "09615 (",
+    "email": null,
+    "website": "https://taplink.cc/helga_mon"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

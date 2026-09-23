@@ -40,41 +40,61 @@
       "id": "alfa-pavel-borisov-0",
       "author": "Пациент",
       "date": "",
-      "rating": 5,
-      "text": "Pavel Borisov — I came to him at Vizim clinic with my first acute cystitis in my life, I was scared, but in the end the tests, the treatment he chose, and all his comments were very clear and helped quickly. Thank you very much! I recommend him.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Павел Борисов — я пришла к нему в клинику Визиум с первым в жизни острым циститом, было страшно, но в итоге анализы, назначенное им лечение и все его пояснения оказались очень понятными и помогли быстро. Большое спасибо! Рекомендую.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "Pavel Borisov — I came to him at Vizim clinic with my first acute cystitis in my life, I was scared, but in the end the tests, the treatment he chose, and all his comments were very clear and helped quickly. Thank you very much! I recommend him.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     },
     {
       "id": "alfa-pavel-borisov-1",
       "author": "Пациент",
       "date": "",
-      "rating": 5,
-      "text": "Thanks to the attentive, thoughtful and highly professional approach of Pavel Sergeevich, we quickly determined the diagnosis and treatment strategy. After the visit I felt confident in the timeliness and success of treatment. Enormous gratitude to Pavel Sergeevich!",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Благодаря внимательному, вдумчивому и высокопрофессиональному подходу Павла Сергеевича мы быстро определили диагноз и тактику лечения. После приёма я уверена в своевременности и успешности лечения. Огромная благодарность Павлу Сергеевичу!",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "Thanks to the attentive, thoughtful and highly professional approach of Pavel Sergeevich, we quickly determined the diagnosis and treatment strategy. After the visit I felt confident in the timeliness and success of treatment. Enormous gratitude to Pavel Sergeevich!",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     },
     {
       "id": "alfa-pavel-borisov-2",
       "author": "Пациент",
       "date": "",
-      "rating": 5,
-      "text": "Pavel Sergeevich Borisov is a doctor with extensive experience and high qualifications. Most importantly — his attitude toward patients. He always inspires hope, explains everything in detail, listens carefully, and finds the right words in any situation. I am simply happy to have found such a specialist.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Павел Сергеевич Борисов — врач с большим опытом и высокой квалификацией. Главное — его отношение к пациентам. Он всегда вселяет надежду, подробно всё объясняет, внимательно слушает и находит нужные слова в любой ситуации. Я просто счастлива, что нашла такого специалиста.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "Pavel Sergeevich Borisov is a doctor with extensive experience and high qualifications. Most importantly — his attitude toward patients. He always inspires hope, explains everything in detail, listens carefully, and finds the right words in any situation. I am simply happy to have found such a specialist.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     },
     {
       "id": "alfa-pavel-borisov-3",
       "author": "Пациент",
       "date": "",
-      "rating": 5,
-      "text": "I am simply grateful to fate that I found this doctor by chance. Understanding nothing about this illness, we found both moral and highly professional support. How good that you are so devoted to your profession and bring knowledge and kindness to the world. How good that you are open to people and ready to help everyone in need — and there are so many.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Просто благодарю судьбу, что случайно нашла этого врача. Ничего не понимая в этой болезни, мы обрели и моральную, и высокопрофессиональную поддержку. Как хорошо, что вы так преданы своему делу и несёте в мир знания и доброту. Как хорошо, что вы открыты людям и готовы помочь каждому нуждающемуся — а таких так много.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "I am simply grateful to fate that I found this doctor by chance. Understanding nothing about this illness, we found both moral and highly professional support. How good that you are so devoted to your profession and bring knowledge and kindness to the world. How good that you are open to people and ready to help everyone in need — and there are so many.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     },
     {
       "id": "alfa-pavel-borisov-4",
       "author": "Пациент",
       "date": "",
-      "rating": 5,
-      "text": "A competent, highly qualified specialist. When we consulted Pavel Sergeevich we received a very detailed and thorough consultation. A doctor who knows how to find an approach to every patient and gives hope for the best. We definitely recommend him.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Компетентный, высококвалифицированный специалист. Когда мы консультировались у Павла Сергеевича, получили очень подробную и основательную консультацию. Врач, который умеет найти подход к каждому пациенту и вселяет надежду на лучшее. Однозначно рекомендуем.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "A competent, highly qualified specialist. When we consulted Pavel Sergeevich we received a very detailed and thorough consultation. A doctor who knows how to find an approach to every patient and gives hope for the best. We definitely recommend him.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     }
   ],
   "hidden": false,

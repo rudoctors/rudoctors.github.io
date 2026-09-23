@@ -1,0 +1,32 @@
+{
+  "slug": "jelic-jasmina",
+  "name": "Jelic Jasmina",
+  "specializations": [
+    "therapist"
+  ],
+  "specializationText": "Терапевт",
+  "city": "Novi Sad",
+  "languages": [
+    "ru",
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Лицензия",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "0649979305",
+    "email": null
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

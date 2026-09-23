@@ -2,15 +2,18 @@ import type { Doctor, RatingSummary, Review } from "./types";
 
 const CRITERIA = ["effectiveness", "communication", "wait", "price", "overall"] as const;
 
-function daysAgo(iso: string): number {
+function daysAgo(iso: string): number | null {
+  if (!iso || !String(iso).trim()) return null;
   const t = Date.parse(iso);
-  if (Number.isNaN(t)) return 3650;
+  if (Number.isNaN(t)) return null;
   return Math.max(0, (Date.now() - t) / 86_400_000);
 }
 
-/** Freshness weight: newer reviews count more (half-life ~180 days, floor 0.5). */
+/** Freshness weight: newer reviews count more (half-life ~180 days, floor 0.5).
+ *  Missing/unknown dates get a neutral weight (180-day midpoint ≈ 0.71). */
 function freshness(iso: string): number {
   const d = daysAgo(iso);
+  if (d === null) return 0.71;
   return Math.max(0.5, Math.pow(0.5, d / 180));
 }
 
@@ -23,18 +26,24 @@ function detail(review: Review): number {
   return 0.85;
 }
 
-export function reviewScore(review: Review): number {
+export function reviewScore(review: Review): number | null {
   if (review.criteria) {
     const vals = CRITERIA.map((c) => review.criteria?.[c]).filter((v): v is number => typeof v === "number");
     if (vals.length > 0) return vals.reduce((a, b) => a + b, 0) / vals.length;
   }
-  return Math.min(5, Math.max(1, review.rating || 0));
+  const r = Number(review.rating);
+  if (!Number.isFinite(r) || r <= 0) return null;
+  return Math.min(5, Math.max(1, r));
 }
 
 export function computeRating(doctor: Doctor): RatingSummary {
-  const reviews = (doctor.reviews || []).filter((r) => r.text || r.rating);
-  if (reviews.length === 0) {
-    return { average: 0, count: 0, weighted: 0, breakdown: {} };
+  const all = (doctor.reviews || []).filter((r) => r.text || r.rating);
+  const scored = all
+    .map((r) => ({ r, score: reviewScore(r) }))
+    .filter((x): x is { r: Review; score: number } => x.score !== null);
+
+  if (scored.length === 0) {
+    return { average: 0, count: all.length, weighted: 0, breakdown: {} };
   }
 
   let wSum = 0;
@@ -42,8 +51,7 @@ export function computeRating(doctor: Doctor): RatingSummary {
   let sum = 0;
   const breakdown: Record<string, number> = {};
 
-  for (const r of reviews) {
-    const score = reviewScore(r);
+  for (const { r, score } of scored) {
     sum += score;
     const w = freshness(r.date) * detail(r);
     wSum += score * w;
@@ -56,15 +64,13 @@ export function computeRating(doctor: Doctor): RatingSummary {
     }
   }
 
-  const count = reviews.length;
-  // Bayesian-ish shrink toward neutral when few reviews
+  const count = scored.length;
   const prior = 3.5;
   const priorWeight = 2;
   const rawAvg = sum / count;
   const shrunk = (rawAvg * count + prior * priorWeight) / (count + priorWeight);
   const weighted = wTotal > 0 ? wSum / wTotal : shrunk;
-
-  const finalAvg = count >= 2 ? (shrunk * 0.45 + weighted * 0.55) : rawAvg;
+  const finalAvg = count >= 2 ? shrunk * 0.45 + weighted * 0.55 : rawAvg;
 
   return {
     average: Math.round(finalAvg * 100) / 100,

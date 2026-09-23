@@ -9,7 +9,9 @@
   "city": "Belgrade",
   "district": "Novi Beograd",
   "languages": [
-    "ru"
+    "ru",
+    "en",
+    "sr"
   ],
   "formats": [
     "offline"
@@ -32,11 +34,77 @@
     "appointmentUrl": "https://n1425872.alteg.io",
     "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "alfa-yulia-avakyants-0",
+      "author": "Пациент",
+      "date": "",
+      "rating": 0,
+      "text": "Врач быстро и по существу разобралась в нашей ситуации и назначила все необходимые анализы. Не уходила от темы и всегда спрашивала, остались ли у нас ещё вопросы. Её подход производил впечатление внимательного и профессионального.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "The doctor quickly and substantively understood our situation and ordered all necessary tests. She did not rush off-topic and always checked if we had more questions. Her approach felt attentive and professional.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
+    },
+    {
+      "id": "alfa-yulia-avakyants-1",
+      "author": "Пациент",
+      "date": "",
+      "rating": 0,
+      "text": "Врач внимательный, тактичный и настоящий профессионал. Желаем ей карьерного роста и надеемся, что она останется такой же доброй и заботливой. Таких врачей, как она, должно быть больше.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "The doctor is attentive, tactful, and a true professional. We wish her career success and hope she stays as kind and caring. We need more doctors like her.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
+    },
+    {
+      "id": "alfa-yulia-avakyants-2",
+      "author": "Пациент",
+      "date": "",
+      "rating": 0,
+      "text": "Настоящий профессионал, который уделяет пациентам много внимания. Каждое назначение подробно объясняет — зачем именно этот препарат и чего ожидать. Мы чувствовали искреннюю вовлечённость и заботу, из-за чего визит прошёл куда спокойнее.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "A true professional who gives patients a lot of attention. Every prescription is explained in detail — why this drug and what to expect. We felt sincere involvement and care, which made the visit much less stressful.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
+    },
+    {
+      "id": "alfa-yulia-avakyants-3",
+      "author": "Пациент",
+      "date": "",
+      "rating": 0,
+      "text": "Она была вежливая, чуткая и внимательная. Внимательно выслушала наши вопросы и опасения и дала полезные советы. Мы остались довольны этим специалистом.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "She was polite, sensitive, and attentive. She listened carefully to our questions and concerns and gave useful advice. We were satisfied with this specialist.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
+    },
+    {
+      "id": "alfa-yulia-avakyants-4",
+      "author": "Пациент",
+      "date": "",
+      "rating": 0,
+      "text": "Внимательный и профессиональный врач. Каждое её действие внушает доверие. Настоящий специалист — благодарим за её заботу и внимание.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "An attentive and professional doctor. Every action inspires trust. A true specialist — we are grateful for her care and attention.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
-    "rusdoctors.net"
+    "rusdoctors.net",
+    "serbia.alfamedstar.com",
+    "google-sheets",
+    "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-04-27"
+  "updatedAt": "2026-09-23",
+  "nameEn": "Yulia Avakyants",
+  "experienceYears": 10
 }

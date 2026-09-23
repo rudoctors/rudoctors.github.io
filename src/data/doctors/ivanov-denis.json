@@ -1,0 +1,37 @@
+{
+  "slug": "ivanov-denis",
+  "name": "Иванов Денис",
+  "specializations": [
+    "therapist"
+  ],
+  "specializationText": "Невролог\nрефлексотерапевт\nмануальный терапевт",
+  "city": "Novi Sad",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом РФ\nНострификация\nЛицензия",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Equilibrium",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 62 979 8224",
+    "email": null,
+    "telegram": "https://t.me/neuroDen1978"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

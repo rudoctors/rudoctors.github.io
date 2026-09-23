@@ -1,0 +1,30 @@
+{
+  "slug": "shvedkina-nelli-olegovna",
+  "name": "Шведкина Нелли Олеговна",
+  "specializations": [
+    "pediatrician"
+  ],
+  "specializationText": "Педиатр",
+  "city": "Belgrade",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом РФ",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "email": null,
+    "website": "https://doc.docma.ru/shvedkina"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

@@ -3,7 +3,8 @@
   "name": "Даниил Нестеренко",
   "nameEn": "Daniil Nesterenko",
   "specializations": [
-    "psychotherapist"
+    "psychotherapist",
+    "therapist"
   ],
   "specializationText": "Психотерапия",
   "photo": "/photos/rd-69.jpg",
@@ -29,6 +30,7 @@
   ],
   "workplaces": [],
   "contacts": {
+    "email": null,
     "telegram": "https://t.me/dr_nesterenko",
     "website": "https://www.drnesterenko.pro/"
   },
@@ -36,7 +38,9 @@
   "hidden": false,
   "featured": false,
   "sources": [
-    "rusdoctors.net"
+    "rusdoctors.net",
+    "google-sheets",
+    "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-05-29"
+  "updatedAt": "2026-09-23"
 }

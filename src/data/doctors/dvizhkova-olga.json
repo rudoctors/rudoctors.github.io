@@ -1,0 +1,33 @@
+{
+  "slug": "dvizhkova-olga",
+  "name": "Движкова Ольга",
+  "specializations": [
+    "therapist"
+  ],
+  "specializationText": "Терапевт\nРевматолог",
+  "city": "Belgrade",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом врача и сертификат Ревматолга РФ, Лицензия врача ревматолога - Сербия",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "+381 69 4457777",
+    "email": [
+      "info@nimcare.rs"
+    ],
+    "telegram": "https://t.me/nimcare"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

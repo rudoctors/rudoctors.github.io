@@ -1,0 +1,32 @@
+{
+  "slug": "bukatkina-ekaterina",
+  "name": "Букаткина Екатерина",
+  "specializations": [
+    "dermatologist"
+  ],
+  "specializationText": "Врач-косметолог \nИнъекционная косметология",
+  "city": "Novi Sad",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом и сертификаты РФ, нострификация в Сербии",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "+3810621258086",
+    "email": null,
+    "telegram": "https://t.me/drkatryn"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

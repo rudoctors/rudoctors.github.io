@@ -1,0 +1,30 @@
+{
+  "slug": "zueva-mariya",
+  "name": "Зуева Мария",
+  "specializations": [
+    "therapist"
+  ],
+  "specializationText": "психотерапевт\nпсихиатр нарколог",
+  "city": "Belgrade",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "online"
+  ],
+  "bio": "Документы: Диплом РФ",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "email": null,
+    "telegram": "https://t.me/PsyZueva"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

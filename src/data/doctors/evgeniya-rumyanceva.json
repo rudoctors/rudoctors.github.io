@@ -28,16 +28,26 @@
       "years": "2021-2023"
     }
   ],
-  "workplaces": [],
+  "workplaces": [
+    {
+      "clinic": "Doctorus",
+      "city": "Belgrade"
+    }
+  ],
   "contacts": {
+    "phone": "01 9269",
+    "email": null,
     "telegram": "https://t.me/evgeniia_rumiantseva",
+    "website": "https://doctorus.rs/",
     "mapsUrl": "https://maps.app.goo.gl/WDeosW9u5Yjmk8kV7?g_st=ic"
   },
   "reviews": [],
   "hidden": false,
   "featured": false,
   "sources": [
-    "rusdoctors.net"
+    "rusdoctors.net",
+    "google-sheets",
+    "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-09-13"
+  "updatedAt": "2026-09-23"
 }

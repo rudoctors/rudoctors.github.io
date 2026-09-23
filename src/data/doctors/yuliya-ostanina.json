@@ -2,7 +2,8 @@
   "slug": "yuliya-ostanina",
   "name": "Юлия Останина",
   "specializations": [
-    "otorhinolaryngologist"
+    "otorhinolaryngologist",
+    "therapist"
   ],
   "specializationText": "Оториноларинголог (ЛОР)",
   "photo": "/photos/rd-54.jpg",
@@ -29,9 +30,10 @@
     }
   ],
   "contacts": {
-    "telegram": "https://t.me/alfamedstar_rs",
-    "website": "https://www.alfamedstar.rs/doctors/ostanina",
+    "phone": "+381 65 6737 777",
     "appointmentUrl": "https://n1425872.alteg.io",
+    "website": "https://www.alfamedstar.rs/doctors/ostanina",
+    "telegram": "https://t.me/alfamedstar_rs",
     "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
   },
   "reviews": [
@@ -39,32 +41,45 @@
       "id": "alfa-yuliya-ostanina-0",
       "author": "Пациент",
       "date": "2025-03-15",
-      "rating": 5,
-      "text": "Excellent, qualified doctor, explains everything during the appointment, answers all questions. Cured me and my daughter. All prescriptions (in my opinion) are justified, collects a fairly complete medical history to determine treatment tactics. There is a tympanometry device in the office. We recently moved and I am very glad that I found such a doctor.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Отличный, квалифицированный врач, всё объясняет во время приёма, отвечает на все вопросы. Вылечила меня и мою дочь. Все назначения (на мой взгляд) обоснованы, собирает довольно полный анамнез, чтобы определить тактику лечения. В кабинете есть прибор для тимпанометрии. Мы недавно переехали и я очень рада, что нашла такого врача.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "Excellent, qualified doctor, explains everything during the appointment, answers all questions. Cured me and my daughter. All prescriptions (in my opinion) are justified, collects a fairly complete medical history to determine treatment tactics. There is a tympanometry device in the office. We recently moved and I am very glad that I found such a doctor.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     },
     {
       "id": "alfa-yuliya-ostanina-1",
       "author": "Пациент",
       "date": "2025-04-22",
-      "rating": 5,
-      "text": "We consulted with Yuliya Ostanina for a child. The child is terribly afraid of local doctors, because he doesn't understand what they are saying yet. They climb on him with various instruments, he reluctantly agrees to examinations. No one has been able to take a nasal swab yet. But with Yuliya I observed a completely different picture. The child agreed to everything, took tests, treated the nose, made a diagnosis, prescribed treatment. No whims, no fears. The doctor knows how to connect with children. I am very satisfied.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Консультировались у Юлии Останиной с ребёнком. Ребёнок ужасно боится местных врачей, потому что ещё не понимает, что они говорят. Лезут к нему разными приборами, он неохотно соглашается на обследования. До сих пор никому не удавалось взять мазок из носа. Но с Юлией я увидела совсем другую картину. Ребёнок соглашался на всё, сдал анализы, полечил нос, поставили диагноз, назначили лечение. Ни капризов, ни страхов. Умеет врач находить общий язык с детьми. Я очень довольна.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "We consulted with Yuliya Ostanina for a child. The child is terribly afraid of local doctors, because he doesn't understand what they are saying yet. They climb on him with various instruments, he reluctantly agrees to examinations. No one has been able to take a nasal swab yet. But with Yuliya I observed a completely different picture. The child agreed to everything, took tests, treated the nose, made a diagnosis, prescribed treatment. No whims, no fears. The doctor knows how to connect with children. I am very satisfied.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     },
     {
       "id": "alfa-yuliya-ostanina-2",
       "author": "Пациент",
       "date": "2025-05-10",
-      "rating": 5,
-      "text": "I want to leave a review about Yuliya Ostanina, otolaryngologist, ENT specialist, ear-nose-throat specialist. She checked everything according to my complaints in all possible ways, explained the mechanics of the nose, gave the necessary recommendations.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Хочу оставить отзыв о Юлии Останиной, отоларингологе, ЛОР-враче, враче по ушам, горлу и носу. Она проверила всё по моим жалобам всеми возможными способами, объяснила, как устроен нос, дала необходимые рекомендации.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "I want to leave a review about Yuliya Ostanina, otolaryngologist, ENT specialist, ear-nose-throat specialist. She checked everything according to my complaints in all possible ways, explained the mechanics of the nose, gave the necessary recommendations.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     }
   ],
   "hidden": false,
   "featured": false,
   "sources": [
     "rusdoctors.net",
-    "serbia.alfamedstar.com"
+    "serbia.alfamedstar.com",
+    "citilab.rs"
   ],
   "updatedAt": "2026-09-23"
 }

@@ -17,9 +17,13 @@ export interface Review {
   id: string;
   author: string;
   date: string;
-  rating: number;
+  /** 0 or missing = text-only review without star rating */
+  rating?: number;
   text: string;
   source?: string;
+  lang?: string;
+  langSource?: string;
+  textOriginal?: string;
   criteria?: Partial<Record<"effectiveness" | "communication" | "wait" | "price" | "overall", number>>;
 }
 

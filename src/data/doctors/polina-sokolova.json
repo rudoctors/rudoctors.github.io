@@ -38,41 +38,61 @@
       "id": "alfa-polina-sokolova-0",
       "author": "Пациент",
       "date": "",
-      "rating": 5,
-      "text": "I am very happy with the visit. Polina Igorevna is a careful, attentive, and charming doctor. I will definitely recommend her to my friends.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Я очень довольна визитом. Полина Игоревна — аккуратный, внимательный и обаятельный врач. Обязательно порекомендую её друзьям.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "I am very happy with the visit. Polina Igorevna is a careful, attentive, and charming doctor. I will definitely recommend her to my friends.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     },
     {
       "id": "alfa-polina-sokolova-1",
       "author": "Пациент",
       "date": "",
-      "rating": 5,
-      "text": "A wonderful, competent, and very pleasant specialist. She conducts appointments very delicately, explains everything in detail, and performs all procedures as gently as possible. I definitely recommend Polina Igorevna.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Замечательный, компетентный и очень приятный специалист. Проводит приёмы очень деликатно, всё подробно объясняет и выполняет все процедуры максимально бережно. Однозначно рекомендую Полину Игоревну.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "A wonderful, competent, and very pleasant specialist. She conducts appointments very delicately, explains everything in detail, and performs all procedures as gently as possible. I definitely recommend Polina Igorevna.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     },
     {
       "id": "alfa-polina-sokolova-2",
       "author": "Пациент",
       "date": "",
-      "rating": 5,
-      "text": "I recommend Dr. Polina Igorevna Sokolova. She is a very attentive and sensitive doctor; I was satisfied with the diagnostic plan and the visit overall.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Рекомендую врача Полину Игоревну Соколову. Она очень внимательный и чуткий врач; я осталась довольна и планом обследования, и приёмом в целом.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "I recommend Dr. Polina Igorevna Sokolova. She is a very attentive and sensitive doctor; I was satisfied with the diagnostic plan and the visit overall.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     },
     {
       "id": "alfa-polina-sokolova-3",
       "author": "Пациент",
       "date": "",
-      "rating": 5,
-      "text": "A wonderful, competent, ambitious young doctor. I really enjoyed talking with her. I received a lot of useful information about my condition.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Замечательный, компетентный, целеустремлённый молодой врач. Мне очень понравилось общение с ней. Я получила много полезной информации о своём состоянии.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "A wonderful, competent, ambitious young doctor. I really enjoyed talking with her. I received a lot of useful information about my condition.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     },
     {
       "id": "alfa-polina-sokolova-4",
       "author": "Пациент",
       "date": "",
-      "rating": 5,
-      "text": "I saw gynecologist Polina Igorevna Sokolova — I am so glad I found such a tactful, sensible doctor. I will only go to her from now on. Everything was careful, she explained everything and prescribed treatment. I am especially glad to have a good doctor without mockery or smirks.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Была у гинеколога Полины Игоревны Соколовой — я так рада, что нашла такого тактичного, толкового врача. Теперь буду ходить только к ней. Всё было аккуратно, она всё объяснила и назначила лечение. Особенно рада, что есть хороший врач без насмешек и ухмылок.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "I saw gynecologist Polina Igorevna Sokolova — I am so glad I found such a tactful, sensible doctor. I will only go to her from now on. Everything was careful, she explained everything and prescribed treatment. I am especially glad to have a good doctor without mockery or smirks.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     }
   ],
   "hidden": false,

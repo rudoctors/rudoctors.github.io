@@ -1,0 +1,39 @@
+{
+  "slug": "almikeeva-alisa",
+  "name": "Альмикеева Алиса",
+  "specializations": [
+    "therapist",
+    "gastroenterologist"
+  ],
+  "specializationText": "Терапевт",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом РФ\n\nЛицензия ВОП в Сербии",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Doctorus",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "01 9269",
+    "email": null,
+    "telegram": "https://t.me/almikeeva_aa",
+    "website": "https://doctorus.rs/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

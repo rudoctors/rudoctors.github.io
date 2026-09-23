@@ -9,7 +9,10 @@ export default defineConfig({
   trailingSlash: "always",
   integrations: [
     sitemap({
-      filter: (page) => !page.includes("/admin/"),
+      filter: (page) =>
+        !page.includes("/admin/") &&
+        !page.includes("/leave-review") &&
+        !page.includes("/add-doctor"),
     }),
   ],
   vite: {

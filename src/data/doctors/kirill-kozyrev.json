@@ -2,7 +2,8 @@
   "slug": "kirill-kozyrev",
   "name": "Кирилл Козырев",
   "specializations": [
-    "psychiatrist"
+    "psychiatrist",
+    "therapist"
   ],
   "specializationText": "Психиатр",
   "photo": "/photos/rd-57.jpg",
@@ -38,48 +39,70 @@
       "id": "alfa-kirill-kozyrev-0",
       "author": "Пациент",
       "date": "",
-      "rating": 5,
-      "text": "I came with anxiety and constant inner tension. The visit was calm and clear: the doctor asked detailed questions, explained what was going on, and proposed a plan. I especially liked the plain language and no pressure or scare tactics.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Пришёл с тревогой и постоянным внутренним напряжением. Приём прошёл спокойно и понятно: врач задавал подробные вопросы, объяснял, что происходит, и предложил план. Особенно понравилось, что говорил простым языком и без давления или запугивания.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "I came with anxiety and constant inner tension. The visit was calm and clear: the doctor asked detailed questions, explained what was going on, and proposed a plan. I especially liked the plain language and no pressure or scare tactics.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     },
     {
       "id": "alfa-kirill-kozyrev-1",
       "author": "Пациент",
       "date": "",
-      "rating": 5,
-      "text": "I needed a specialist who combines psychiatric and psychotherapeutic approaches. The consultation felt systematic: the doctor took a full history and helped me see how my symptoms linked to lifestyle, anxiety, and habitual thoughts.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Мне был нужен специалист, сочетающий психиатрический и психотерапевтический подходы. Консультация прошла системно: врач собрал полный анамнез и помог увидеть, как мои симптомы связаны с образом жизни, тревогой и привычными мыслями.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "I needed a specialist who combines psychiatric and psychotherapeutic approaches. The consultation felt systematic: the doctor took a full history and helped me see how my symptoms linked to lifestyle, anxiety, and habitual thoughts.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     },
     {
       "id": "alfa-kirill-kozyrev-2",
       "author": "Пациент",
       "date": "",
-      "rating": 5,
-      "text": "I came in great uncertainty after not understanding what was happening for a long time. After the consultation things became much clearer: we reviewed symptoms, possible causes, and next steps. I felt genuine attentive care.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Пришёл в большой неопределённости после долгого времени, когда не понимал, что со мной происходит. После консультации стало гораздо понятнее: разобрали симптомы, возможные причины и дальнейшие шаги. Я почувствовал искреннюю внимательную заботу.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "I came in great uncertainty after not understanding what was happening for a long time. After the consultation things became much clearer: we reviewed symptoms, possible causes, and next steps. I felt genuine attentive care.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     },
     {
       "id": "alfa-kirill-kozyrev-3",
       "author": "Пациент",
       "date": "",
-      "rating": 5,
-      "text": "I liked that the doctor did not stick to a formal questionnaire but really engaged with my situation. I felt calm, could ask questions, and got clear answers. After the visit I had a sense of a real plan, not empty words.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Понравилось, что врач не придерживался формального опросника, а действительно вникал в мою ситуацию. Я чувствовал себя спокойно, мог задавать вопросы и получал понятные ответы. После приёма появилось ощущение реального плана, а не пустых слов.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "I liked that the doctor did not stick to a formal questionnaire but really engaged with my situation. I felt calm, could ask questions, and got clear answers. After the visit I had a sense of a real plan, not empty words.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     },
     {
       "id": "alfa-kirill-kozyrev-4",
       "author": "Пациент",
       "date": "",
-      "rating": 5,
-      "text": "I came after a long period of unsuccessful attempts to stabilize my condition. Kirill Sergeyevich understood the situation from the first visit, carefully selected medication, and explained the rationale. Within weeks I felt real improvement. He was always available, answered questions, and monitored progress. I am very grateful for his dedication and professionalism.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Обратился после долгого периода безуспешных попыток стабилизировать состояние. Кирилл Сергеевич с первого визита разобрался в ситуации, аккуратно подобрал препараты и объяснил, почему назначает именно их. Через несколько недель я почувствовал реальное улучшение. Он всегда был на связи, отвечал на вопросы и отслеживал динамику. Очень благодарен за его вовлечённость и профессионализм.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "I came after a long period of unsuccessful attempts to stabilize my condition. Kirill Sergeyevich understood the situation from the first visit, carefully selected medication, and explained the rationale. Within weeks I felt real improvement. He was always available, answered questions, and monitored progress. I am very grateful for his dedication and professionalism.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     }
   ],
   "hidden": false,
   "featured": false,
   "sources": [
     "rusdoctors.net",
-    "serbia.alfamedstar.com"
+    "serbia.alfamedstar.com",
+    "google-sheets",
+    "t.me/vrachivserbii"
   ],
   "updatedAt": "2026-09-23"
 }

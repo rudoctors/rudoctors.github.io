@@ -1,0 +1,30 @@
+{
+  "slug": "pletyuhin-ilya-yurevich",
+  "name": "Плетюхин Илья Юрьевич",
+  "specializations": [
+    "psychiatrist"
+  ],
+  "specializationText": "Психиатр \nНарколог",
+  "city": "Belgrade",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом РФ",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "+381628532074",
+    "email": null
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

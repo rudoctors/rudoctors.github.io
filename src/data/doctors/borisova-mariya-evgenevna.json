@@ -1,0 +1,44 @@
+{
+  "slug": "borisova-mariya-evgenevna",
+  "name": "Борисова Мария Евгеньевна",
+  "specializations": [
+    "therapist",
+    "psychiatrist"
+  ],
+  "experienceYears": 10,
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "CITILAB",
+      "address": "Dubljanska 41, Belgrade",
+      "city": "Belgrade",
+      "url": "https://citilab.rs/ru/"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 655 737 777",
+    "appointmentUrl": "https://n1366389.alteg.io/company/1167832/personal/select-master/master-info/1167832/2845581",
+    "website": "https://citilab.rs/ru/doctors/borisova/",
+    "email": null,
+    "telegram": "https://t.me/citilabrs"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "citilab.rs",
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23",
+  "bio": "Документы: Диплом РФ, временная лицензия психиатра Сербия.",
+  "specializationText": "Психиатр"
+}

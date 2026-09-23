@@ -1,0 +1,83 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SITE } from "../lib/site";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  name: "Контакты Rudoctors",
+  url: `${SITE.url}/contacts/`,
+  inLanguage: "ru",
+  mainEntity: {
+    "@type": "Organization",
+    name: SITE.name,
+    url: SITE.url,
+    email: "hello@rudoctors.github.io",
+    sameAs: [SITE.telegram, `https://github.com/rudoctors/rudoctors.github.io`],
+  },
+};
+---
+
+<Layout
+  title="Контакты"
+  description="Связаться с командой Rudoctors: Telegram, почта, репозиторий. Предложения врачам, клиникам и партнёрам."
+  jsonLd={jsonLd}
+  breadcrumbs={[
+    { name: "Главная", path: "/" },
+    { name: "Контакты", path: "/contacts/" },
+  ]}
+>
+  <div class="mx-auto max-w-3xl px-4 py-12">
+    <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900">Контакты</h1>
+    <p class="mt-3 text-slate-600 leading-relaxed">
+      Rudoctors — независимый каталог русскоязычных врачей в Сербии. Отвечаем на вопросы пациентов,
+      врачей и партнёров.
+    </p>
+
+    <div class="mt-8 grid gap-4 sm:grid-cols-2">
+      <div class="card p-6">
+        <div class="text-xs font-bold uppercase tracking-widest text-brand-700">Сообщество</div>
+        <h2 class="mt-2 font-extrabold text-navy-900">Telegram-чат</h2>
+        <p class="mt-2 text-sm text-slate-600">
+          Чат «Медицина в Сербии» — {SITE.telegramLabel}: рекомендации врачей, записи, опыт сообщества.
+        </p>
+        <a href={SITE.telegram} target="_blank" rel="noopener noreferrer" class="btn-primary mt-4 inline-flex">
+          Открыть Telegram
+        </a>
+      </div>
+
+      <div class="card p-6">
+        <div class="text-xs font-bold uppercase tracking-widest text-brand-700">Проект</div>
+        <h2 class="mt-2 font-extrabold text-navy-900">Редакция и данные</h2>
+        <p class="mt-2 text-sm text-slate-600">
+          Правки карточек, отзывы, сотрудничество и размещение: через GitHub Issues или Telegram.
+        </p>
+        <a
+          href="https://github.com/rudoctors/rudoctors.github.io"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-ghost mt-4 inline-flex"
+        >
+          GitHub-репозиторий
+        </a>
+      </div>
+    </div>
+
+    <div class="card p-6 mt-6">
+      <h2 class="font-extrabold text-navy-900">Врачам и клиникам</h2>
+      <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+        Бесплатная карточка, исправление данных, featured-продвижение и баннерные места —
+        условия в разделе <a class="text-brand-700 hover:underline" href="/about/#partners">партнёрства</a>.
+      </p>
+      <div class="mt-4 flex flex-wrap gap-3">
+        <a href="/add-doctor/" class="btn-primary">Добавить врача</a>
+        <a href="/about/#partners" class="btn-ghost">Условия продвижения</a>
+      </div>
+    </div>
+
+    <p class="mt-8 text-sm text-slate-500">
+      Материалы сайта не заменяют очную консультацию врача.
+      Политика обработки данных: <a class="text-brand-700 hover:underline" href="/privacy/">конфиденциальность</a>.
+    </p>
+  </div>
+</Layout>

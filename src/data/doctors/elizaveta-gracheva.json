@@ -41,32 +41,46 @@
       "id": "alfa-elizaveta-gracheva-0",
       "author": "Пациент",
       "date": "",
-      "rating": 5,
-      "text": "I've been treated by Elizaveta Viktorovna for the third year now. Before her I saw another doctor. My condition has stabilized. I feel better. A very competent specialist. She always listens carefully, and besides medical prescriptions gives advice on how to recover better.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Лечусь у Елизаветы Викторовны уже третий год. До неё наблюдалась у другого врача. Моё состояние стабилизировалось. Стало лучше. Очень компетентный специалист. Всегда внимательно выслушивает, а помимо медицинских назначений даёт советы, как быстрее поправиться.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "I've been treated by Elizaveta Viktorovna for the third year now. Before her I saw another doctor. My condition has stabilized. I feel better. A very competent specialist. She always listens carefully, and besides medical prescriptions gives advice on how to recover better.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     },
     {
       "id": "alfa-elizaveta-gracheva-1",
       "author": "Пациент",
       "date": "",
-      "rating": 5,
-      "text": "A very attentive and tactful doctor. We're continuing treatment, but the start has been good, we were all satisfied with the appointment.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Очень внимательный и тактичный врач. Продолжаем лечение, но начало получилось хорошим, приёмом остались довольны все.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "A very attentive and tactful doctor. We're continuing treatment, but the start has been good, we were all satisfied with the appointment.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     },
     {
       "id": "alfa-elizaveta-gracheva-2",
       "author": "Пациент",
       "date": "",
-      "rating": 5,
-      "text": "I've been seeing Elizaveta Viktorovna for more than 5 years. I thank her for her high professionalism, human sensitivity and individual approach. The doctor always listens to the patient, treatment decisions are made together and very deliberately. E.V. is always reachable, which is also very convenient and creates psychological comfort. Special thanks for the positive attitude — that's extremely important in treatment.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Хожу к Елизавете Викторовне больше пяти лет. Благодарю её за высокий профессионализм, человеческую чуткость и индивидуальный подход. Врач всегда выслушивает пациента, решения о лечении принимаются вместе и очень обдуманно. Е.В. всегда на связи, что тоже очень удобно и создаёт психологический комфорт. Отдельное спасибо за позитивный настрой — это крайне важно в лечении.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "I've been seeing Elizaveta Viktorovna for more than 5 years. I thank her for her high professionalism, human sensitivity and individual approach. The doctor always listens to the patient, treatment decisions are made together and very deliberately. E.V. is always reachable, which is also very convenient and creates psychological comfort. Special thanks for the positive attitude — that's extremely important in treatment.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     }
   ],
   "hidden": false,
   "featured": false,
   "sources": [
     "rusdoctors.net",
-    "serbia.alfamedstar.com"
+    "serbia.alfamedstar.com",
+    "google-sheets",
+    "t.me/vrachivserbii"
   ],
   "updatedAt": "2026-09-23"
 }

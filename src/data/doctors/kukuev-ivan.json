@@ -1,0 +1,29 @@
+{
+  "slug": "kukuev-ivan",
+  "name": "Кукуев Иван",
+  "specializations": [
+    "pediatrician"
+  ],
+  "specializationText": "Педиатр",
+  "city": "Niš",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом РФ",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "email": null
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

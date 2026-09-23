@@ -1,0 +1,31 @@
+{
+  "slug": "doktor-arac",
+  "name": "доктор Šarac",
+  "specializations": [
+    "pediatrician"
+  ],
+  "specializationText": "Педиатр",
+  "city": "Novi Sad",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Лицензия",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "063-815-2192",
+    "email": null
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "rumyanceva-nadezhda-vremenno-ne-konsultiruet-k-sozhaleniyu",
+  "name": "Румянцева Надежда\n\nвременно не консультирует, к сожалению",
+  "specializations": [
+    "neurologist"
+  ],
+  "specializationText": "Невролог\n\nТолько взрослые!",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "formats": [
+    "online"
+  ],
+  "bio": "Документы: Диплом РФ",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "email": null
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

@@ -9,6 +9,7 @@ interface Props {
   description?: string;
   noindex?: boolean;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  breadcrumbs?: Array<{ name: string; path: string }>;
 }
 
 const {
@@ -16,16 +17,31 @@ const {
   description = SITE.description,
   noindex = false,
   jsonLd,
+  breadcrumbs,
 } = Astro.props;
 
 const fullTitle = title ? `${title} · ${SITE.name}` : SITE.title;
 const canonical = new URL(Astro.url.pathname, SITE.url).href;
+const ogImage = new URL("/og.png", SITE.url).href;
 
 const ld = jsonLd
   ? Array.isArray(jsonLd)
     ? jsonLd
     : [jsonLd]
   : [];
+
+if (breadcrumbs && breadcrumbs.length > 0) {
+  ld.push({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: breadcrumbs.map((b, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: b.name,
+      item: new URL(b.path, SITE.url).href,
+    })),
+  });
+}
 ---
 
 <!doctype html>
@@ -44,10 +60,20 @@ const ld = jsonLd
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={SITE.name} />
     <meta property="og:locale" content="ru_RU" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
     <meta name="theme-color" content="#0f766e" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -57,7 +83,10 @@ const ld = jsonLd
     <link rel="sitemap" href="/sitemap-index.xml" />
     {
       ld.map((obj) => (
-        <script type="application/ld+json" set:html={JSON.stringify(obj)} />
+        <script
+          type="application/ld+json"
+          set:html={JSON.stringify(obj).replace(/</g, "\\u003c")}
+        />
       ))
     }
   </head>

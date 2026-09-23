@@ -1,0 +1,31 @@
+{
+  "slug": "avetisyan-karina",
+  "name": "Аветисян Карина",
+  "specializations": [
+    "pediatrician"
+  ],
+  "specializationText": "Педиатр\nНеонатолог",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом врача РФ",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "+381637734134",
+    "email": null
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

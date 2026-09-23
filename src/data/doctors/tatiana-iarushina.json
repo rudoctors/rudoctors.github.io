@@ -10,7 +10,8 @@
   "city": "Belgrade",
   "district": "Savski Venac",
   "languages": [
-    "ru"
+    "ru",
+    "en"
   ],
   "formats": [
     "offline",
@@ -18,8 +19,15 @@
   ],
   "bio": "В основе моего подхода — эмпатия, конфиденциальность и безопасное пространство без осуждения. Моя цель — помочь вам или вашему ребёнку достичь устойчивого улучшения состояния.",
   "education": [],
-  "workplaces": [],
+  "workplaces": [
+    {
+      "clinic": "Doctorus",
+      "city": "Belgrade"
+    }
+  ],
   "contacts": {
+    "phone": "+381691019269 (",
+    "email": null,
     "telegram": "https://t.me/dr_yarushina",
     "website": "https://www.t.me/neuron_rx",
     "mapsUrl": "https://maps.app.goo.gl/BTW2GF13r1aRt6yQ9"
@@ -28,7 +36,9 @@
   "hidden": false,
   "featured": false,
   "sources": [
-    "rusdoctors.net"
+    "rusdoctors.net",
+    "google-sheets",
+    "t.me/vrachivserbii"
   ],
   "updatedAt": "2026-09-13"
 }

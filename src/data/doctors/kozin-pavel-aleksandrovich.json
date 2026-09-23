@@ -1,0 +1,31 @@
+{
+  "slug": "kozin-pavel-aleksandrovich",
+  "name": "Козин Павел Александрович",
+  "specializations": [
+    "dermatologist"
+  ],
+  "specializationText": "Дерматолог, косметолог\nМассаж лица, тела, кинезиология",
+  "city": "Novi Sad",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом РФ",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "email": null,
+    "telegram": "https://t.me/parthurnax"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

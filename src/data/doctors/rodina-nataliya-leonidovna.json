@@ -1,0 +1,32 @@
+{
+  "slug": "rodina-nataliya-leonidovna",
+  "name": "Родина Наталия Леонидовна",
+  "specializations": [
+    "dermatologist"
+  ],
+  "specializationText": "Врач-Косметолог инъекционная и аппаратная косметология",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом Черногории, диплом РФ , наличие временной лицензии Сербии\nСертификаты РФ и Сербии",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "+381 69 696282",
+    "email": null,
+    "telegram": "https://t.me/doktornataliia"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

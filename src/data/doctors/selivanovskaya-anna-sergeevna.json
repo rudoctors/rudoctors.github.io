@@ -1,0 +1,31 @@
+{
+  "slug": "selivanovskaya-anna-sergeevna",
+  "name": "Селивановская Анна Сергеевна",
+  "specializations": [
+    "neurologist"
+  ],
+  "specializationText": "Детский невролог (0-18 лет)\nпсихолог\nнейропсихолог",
+  "city": "Novi Sad",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом РФ(Нострифицирован)",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "062 854 0161",
+    "email": null,
+    "telegram": "https://t.me/AnnaSalvey"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

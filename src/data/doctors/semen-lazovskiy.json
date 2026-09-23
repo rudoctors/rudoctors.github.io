@@ -2,7 +2,8 @@
   "slug": "semen-lazovskiy",
   "name": "Семён Лазовский",
   "specializations": [
-    "psychiatrist"
+    "psychiatrist",
+    "therapist"
   ],
   "specializationText": "Психиатр",
   "photo": "/photos/rd-42.jpg",
@@ -10,7 +11,8 @@
   "district": "Savski Venac",
   "languages": [
     "ru",
-    "en"
+    "en",
+    "es"
   ],
   "formats": [
     "offline",
@@ -27,8 +29,15 @@
       "institution": "РНИМУ им. Н.И Пирогова"
     }
   ],
-  "workplaces": [],
+  "workplaces": [
+    {
+      "clinic": "doctorus",
+      "city": "Belgrade"
+    }
+  ],
   "contacts": {
+    "phone": "+381691019269",
+    "email": null,
     "telegram": "https://t.me/dr_lazovskiy",
     "website": "https://www.t.me/psychiatrist_rs",
     "mapsUrl": "https://maps.app.goo.gl/BTW2GF13r1aRt6yQ9"
@@ -37,7 +46,9 @@
   "hidden": false,
   "featured": false,
   "sources": [
-    "rusdoctors.net"
+    "rusdoctors.net",
+    "google-sheets",
+    "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-09-13"
+  "updatedAt": "2026-09-23"
 }

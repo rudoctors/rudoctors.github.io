@@ -1,0 +1,36 @@
+{
+  "slug": "igricova-nadezhda",
+  "name": "Игрицова Надежда",
+  "specializations": [
+    "pediatrician"
+  ],
+  "specializationText": "Педиатр и Неонатолог",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом РФ\n\nЛицензия педиатра в Сербии",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Клиника NeoKIDS",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "email": null,
+    "telegram": "https://t.me/igritsova"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

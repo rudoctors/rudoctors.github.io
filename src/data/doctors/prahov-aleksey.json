@@ -1,0 +1,39 @@
+{
+  "slug": "prahov-aleksey",
+  "name": "Прахов Алексей",
+  "specializations": [
+    "therapist",
+    "cardiologist"
+  ],
+  "specializationText": "Терапевт\nКардиолог\nанестезиолог-реаниматолог в РФ. Помогаю при обструктивном апное сна.\n\nВрач общей практики - в Сербии.",
+  "city": "Novi Sad",
+  "languages": [
+    "ru",
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом и сертификаты РФ\n\nпостоянная лицензия в Сербии",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "equilibrium",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "email": null,
+    "telegram": "https://t.me/Ajbolit78",
+    "website": "https://www.klinikaequilibrium.rs/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

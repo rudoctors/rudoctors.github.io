@@ -1,0 +1,37 @@
+{
+  "slug": "callagova-elena-vladimirovna",
+  "name": "Цаллагова Елена Владимировна",
+  "specializations": [
+    "therapist"
+  ],
+  "experienceYears": 25,
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "CITILAB",
+      "address": "Dubljanska 41, Belgrade",
+      "city": "Belgrade",
+      "url": "https://citilab.rs/ru/"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 655 737 777",
+    "appointmentUrl": "https://n1342042.alteg.io/company/1167832/personal/select-master/master-info/1167832/2902276?o=m2902276",
+    "website": "https://citilab.rs/ru/doctors/tsallagova-elena/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "citilab.rs"
+  ],
+  "updatedAt": "2026-09-23"
+}

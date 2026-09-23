@@ -1,0 +1,36 @@
+{
+  "slug": "mayya-andreevna-sklyar",
+  "name": "Майя Андреевна Скляр",
+  "specializations": [
+    "therapist"
+  ],
+  "specializationText": "врач-психиатр\nпсихотерапевт",
+  "city": "Belgrade",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом РФ нострифицирован, временная лицензия психиатра в Сербии.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "поликлиника Эквилибрум",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "email": null,
+    "telegram": "https://t.me/Floramapola",
+    "website": "https://www.klinikaequilibrium.rs/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

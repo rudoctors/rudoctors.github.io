@@ -1,0 +1,37 @@
+{
+  "slug": "gaydadym-vera-viktorovna",
+  "name": "Гайдадым Вера Викторовна",
+  "specializations": [
+    "therapist"
+  ],
+  "experienceYears": 18,
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "CITILAB",
+      "address": "Dubljanska 41, Belgrade",
+      "city": "Belgrade",
+      "url": "https://citilab.rs/ru/"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 655 737 777",
+    "appointmentUrl": "https://n1329288.alteg.io/company/1167832/personal/select-master/master-info/1167832/2999520?o=m2999520",
+    "website": "https://citilab.rs/ru/doctors/gaydadym-vera-viktorovna/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "citilab.rs"
+  ],
+  "updatedAt": "2026-09-23"
+}

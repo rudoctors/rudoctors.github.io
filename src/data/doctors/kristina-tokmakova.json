@@ -4,7 +4,8 @@
   "specializations": [
     "endocrinologist",
     "child_endocrinologist",
-    "pediatrician"
+    "pediatrician",
+    "therapist"
   ],
   "specializationText": "Педиатр / Детский эндокринолог",
   "photo": "/photos/rd-56.jpg",
@@ -12,7 +13,8 @@
   "city": "Belgrade",
   "district": "Novi Beograd",
   "languages": [
-    "ru"
+    "ru",
+    "sr"
   ],
   "formats": [
     "offline"
@@ -30,9 +32,11 @@
     }
   ],
   "contacts": {
-    "telegram": "https://t.me/alfamedstar_rs",
-    "website": "https://www.alfamedstar.rs/doctors/tokmakova",
+    "phone": "+381 65 6737 777",
     "appointmentUrl": "https://n1425872.alteg.io",
+    "website": "https://www.alfamedstar.rs/doctors/tokmakova",
+    "email": null,
+    "telegram": "https://t.me/alfamedstar_rs",
     "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
   },
   "reviews": [
@@ -40,48 +44,71 @@
       "id": "alfa-kristina-tokmakova-0",
       "author": "Пациент",
       "date": "",
-      "rating": 5,
-      "text": "Very attentive, responsive, competent doctor, takes her time, explains everything, appointments are held in a friendly and relaxed atmosphere. Easily finds contact with both the child and the parents.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Очень внимательный, отзывчивый, компетентный врач, не торопится, всё объясняет, приёмы проходят в дружеской и непринуждённой атмосфере. Легко находит контакт и с ребёнком, и с родителями.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "Very attentive, responsive, competent doctor, takes her time, explains everything, appointments are held in a friendly and relaxed atmosphere. Easily finds contact with both the child and the parents.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     },
     {
       "id": "alfa-kristina-tokmakova-1",
       "author": "Пациент",
       "date": "",
-      "rating": 5,
-      "text": "Attentive and thorough specialist. Listens very carefully to the child, encourages and supports. Explains prescriptions and does not rush.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Внимательный и дотошный специалист. Очень внимательно слушает ребёнка, хвалит и поддерживает. Объясняет назначения и не торопит.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "Attentive and thorough specialist. Listens very carefully to the child, encourages and supports. Explains prescriptions and does not rush.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     },
     {
       "id": "alfa-kristina-tokmakova-2",
       "author": "Пациент",
       "date": "",
-      "rating": 5,
-      "text": "Very attentive and friendly doctor, so the children felt calm. Clear treatment recommendations and no unnecessary medications. Thank you very much.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Очень внимательный и доброжелательный врач, поэтому дети чувствовали себя спокойно. Понятные рекомендации по лечению и без лишних лекарств. Большое спасибо.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "Very attentive and friendly doctor, so the children felt calm. Clear treatment recommendations and no unnecessary medications. Thank you very much.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     },
     {
       "id": "alfa-kristina-tokmakova-3",
       "author": "Пациент",
       "date": "",
-      "rating": 5,
-      "text": "Very pleasant to communicate with and professional. I got answers to all my questions, without unnecessary intimidation. I recommend.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Очень приятный в общении и профессиональный. Получил ответы на все вопросы, без лишнего запугивания. Рекомендую.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "Very pleasant to communicate with and professional. I got answers to all my questions, without unnecessary intimidation. I recommend.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     },
     {
       "id": "alfa-kristina-tokmakova-4",
       "author": "Пациент",
       "date": "",
-      "rating": 5,
-      "text": "Recommend. The tick was removed as correctly as possible with care and attention to the child's problem.",
-      "source": "serbia.alfamedstar.com"
+      "rating": 0,
+      "text": "Рекомендую. Клеща сняли максимально правильно, с заботой и вниманием к проблеме ребёнка.",
+      "source": "serbia.alfamedstar.com",
+      "lang": "ru",
+      "textOriginal": "Recommend. The tick was removed as correctly as possible with care and attention to the child's problem.",
+      "langSource": "en",
+      "translatedAt": "2026-09-23"
     }
   ],
   "hidden": false,
   "featured": false,
   "sources": [
     "rusdoctors.net",
-    "serbia.alfamedstar.com"
+    "serbia.alfamedstar.com",
+    "citilab.rs",
+    "google-sheets",
+    "t.me/vrachivserbii"
   ],
   "updatedAt": "2026-09-23"
 }

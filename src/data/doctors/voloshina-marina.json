@@ -1,0 +1,38 @@
+{
+  "slug": "voloshina-marina",
+  "name": "Волошина Марина",
+  "specializations": [
+    "therapist"
+  ],
+  "specializationText": "Врач общей практики постоянная сербская лицензия \nВрач ультразвуковой диагностики (включая доплер)\nВрач гастроэнтеролог (российский сертификат)",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: Диплом врача РФ\r\nПостоянная лицензия врач Сербия",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Family Medica",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381606814386",
+    "email": null,
+    "telegram": "https://t.me/DrMarinaVoloshina_Serbia",
+    "website": "https://www.doktorbeograd.com"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-09-23"
+}

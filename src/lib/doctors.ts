@@ -21,8 +21,9 @@ export function loadDoctors(): Doctor[] {
       const raw = fs.readFileSync(path.join(DATA_DIR, f), "utf8");
       const doc = JSON.parse(raw) as Doctor;
       if (doc && doc.slug && doc.name) doctors.push(doc);
+      else throw new Error("missing required fields slug/name");
     } catch (e) {
-      console.error(`Bad doctor file ${f}:`, e);
+      throw new Error(`Bad doctor file ${f}: ${e instanceof Error ? e.message : e}`);
     }
   }
   doctors.sort((a, b) => {

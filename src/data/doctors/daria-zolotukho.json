@@ -10,7 +10,9 @@
   "city": "Belgrade",
   "district": "Novi Beograd",
   "languages": [
-    "ru"
+    "ru",
+    "sr",
+    "en"
   ],
   "formats": [
     "offline",
@@ -37,7 +39,9 @@
   "hidden": false,
   "featured": false,
   "sources": [
-    "rusdoctors.net"
+    "rusdoctors.net",
+    "google-sheets",
+    "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-08-30"
+  "updatedAt": "2026-09-23"
 }

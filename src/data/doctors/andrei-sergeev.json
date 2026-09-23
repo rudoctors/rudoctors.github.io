@@ -32,14 +32,19 @@
     }
   ],
   "contacts": {
+    "phone": "+381666300700",
+    "email": null,
     "telegram": "https://t.me/dr_allergist",
+    "website": "https://bestmedica.rs",
     "mapsUrl": "https://maps.app.goo.gl/zQqJQEumnk4hjTgN9"
   },
   "reviews": [],
   "hidden": false,
   "featured": false,
   "sources": [
-    "rusdoctors.net"
+    "rusdoctors.net",
+    "google-sheets",
+    "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-03-07"
+  "updatedAt": "2026-09-23"
 }
