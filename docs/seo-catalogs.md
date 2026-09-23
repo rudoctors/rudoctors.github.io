@@ -18,7 +18,7 @@
 | NađiDoktora | nadjidoktora.rs | Регистрация / «dodajte doktora» — профиль организации или ссылка |
 | Ordinacije.rs | ordinacije.rs | Бесплатный профиль клиники/каталога, ссылка на сайт |
 | TvojDoktor | tvojdoktor.rs | Добавить карточку / связаться |
-| biram doktora | biramdoktora.rs | Форма «nedostaje mesto/lekар» |
+| biram doktora | biramdoktora.rs | Форма «nedostaje mesto/lekar» |
 | Lekarium | lekarium.rs | Форма «Nedostaje mesto» / профиль |
 | eDoctor / helpMedix | new.edoctor.rs | Регистрация площадки-каталога |
 | ocenilekara | ocenilekara.com | Отзывы/профили — уточнить форму |
@@ -32,7 +32,7 @@
 
 | Площадка | Действие |
 |---|---|
-| Telegram @vrachivserbii | Пост-пин介绍 каталога, закреп ссылки |
+| Telegram @vrachivserbii | Пост о каталоге, закреп ссылки |
 | Другие TG-чаты «русские в Сербии» | Отвечать на вопросы «какого врача» с нативной ссылкой (не спам) |
 | Форумы expat (форумы русских в Сербии, Facebook-группы) | Экспертный ответ + ссылка на релевантную страницу |
 | GitHub-проект | Уже есть ссылка на репозиторий |
@@ -48,7 +48,7 @@
 ```
 Привет! Сделали каталог русскоязычных врачей в Сербии — рейтинги и отзывы:
 https://rudoctors.github.io/
-Белград, Нови-Сад, Суботица. Если знаете врача, которого нет — добавьте:
+Белград, Нови-Сад, Суботица, Ниш. Если знаете врача, которого нет — добавьте:
 https://rudoctors.github.io/add-doctor/
 ```
 

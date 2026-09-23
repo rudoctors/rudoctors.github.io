@@ -1,7 +1,7 @@
 # USER-ACTIONS — что сделать вам (PIVO: Verify)
 
 Работаю без домена (решение 1). Всё, что можно кодом, уже в ветке/локально.
-Ниже — шаги, где нужна **ваша авторизация**. BrowserOS Neo открыт с вкладками.
+Ниже — шаги, где нужна **ваша авторизация**. Вкладки Search Console / Bing / Yandex открою в BrowserOS Neo после push.
 
 ---
 
@@ -9,18 +9,17 @@
 
 Код нужно запушить в git-репозиторий с GitHub Pages (`rudoctors.github.io`), чтобы Actions пересобрал сайт.
 
-1. Проверьте, что Actions → Deploy to GitHub Pages зелёный.
-2. Откройте https://rudoctors.github.io/faq/ — страница должна отдаваться.
-
-> Сейчас `D:\Projects\rudoctors` / `site` — **не git-репозиторий**. Push выполняете вы (или скажите мне remote/токен — тогда инициализирую и запушу).
+1. Репозиторий: `D:\Projects\rudoctors\site` → remote `https://github.com/rudoctors/rudoctors.github.io.git`, ветка `main`.
+2. Локально 2 коммита + правки docs ещё не отправлены — выполните `git push` (или попросите меня), затем Actions соберёт сайт.
+3. Откройте https://rudoctors.github.io/faq/ — страница должна отдаваться.
 
 ---
 
 ## B. Google Search Console (~10 минут)
 
-**Вкладка:** Search Console (открыта в Neo)
+**Вкладка:** Search Console (открою в Neo)
 
-0. Если вкладки нет — откройте https://search.google.com/search-console
+0. Откройте https://search.google.com/search-console (или вкладка из BrowserOS)
 1. **Добавить свойство** → тип **URL-префикс** → `https://rudoctors.github.io/`
 2. Способ верификации: **HTML-метатег** → скопируйте строку  
    `<meta name="google-site-verification" content="XXXXXXXX">`
@@ -33,9 +32,9 @@
 
 ## C. Bing Webmaster Tools (~10 минут)
 
-**Вкладка:** Bing Webmaster
+**Вкладка:** Bing Webmaster (открою в Neo)
 
-0. Если вкладки нет — откройте https://www.bing.com/webmasters
+0. Откройте https://www.bing.com/webmasters
 1. **Добавить сайт** → URL `https://rudoctors.github.io/`
 2. Проще: **Import from Google Search Console** (если B уже готово) — подтянет sitemap.
 3. Либо вручную: HTML-метатег аналогично Google → я вставлю в Layout.
@@ -52,7 +51,7 @@
 3. Я.Вебмастер → добавить домен → meta `yandex-verification` (я вставлю) → Sitemap → **регион: Белград** (со ссылкой на `/contacts/`).
 4. Яндекс.Метрика → привязка к Вебмастеру → «Обход по счётчику».
 
-Вкладка `https://webmaster.yandex.ru/status/` открыта в Neo — сейчас без собственного домена добавить сайт нельзя; заходите сюда после покупки домена.
+Вкладка `https://webmaster.yandex.ru/status/` — откройте сами после покупки домена; сейчас без собственного домена добавить сайт нельзя.
 
 ## E. Размещения (спринт 4)
 
