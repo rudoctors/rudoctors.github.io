@@ -42,10 +42,11 @@ astro dev --background   # dev (см. AGENTS.md)
 
 ## Монетизация
 
-- `/packages/` — featured / клиника / баннер (ориентиры EUR).
-- Featured demo: 2 карточки `featured: true`; seed сохраняет OR-merge.
+- Основная цель: **баннерная реклама / продажа сайта** (директива 24.09.2026).
+- `/packages/` — тех. страница, `noindex`, вне sitemap и без публичных ссылок (контент по запросу).
+- CTA: home / about / contacts → `/contacts/?topic=banner`.
 - Clicks: `Appointment Click`, `Outbound Click` → Plausible/Umami hooks (`src/lib/analytics.ts`).
-- Сигнал: первый featured request до 15.12.2026; PAT E2E — после создания PAT.
+- Сигнал: первый banner/placement request до 15.12.2026; PAT E2E — после создания PAT.
 
 ## Мониторинг
 

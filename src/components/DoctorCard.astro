@@ -41,11 +41,6 @@ const photo = doctor.photo;
 
     <div class="min-w-0 flex-1">
       <div class="flex flex-wrap items-center gap-2">
-        {doctor.featured && (
-          <span class="text-[11px] font-bold uppercase tracking-wide px-2 py-0.5 rounded-full bg-accent-400/15 text-accent-500">
-            Рекомендуем
-          </span>
-        )}
         <a
           href={`/doctors/${doctor.slug}/`}
           class="font-bold text-lg text-navy-900 hover:text-brand-700 truncate"

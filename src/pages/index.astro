@@ -20,10 +20,6 @@ const fresh = publicDoctors()
   .sort((a, b) => (b.updatedAt || "").localeCompare(a.updatedAt || ""))
   .slice(0, 6);
 
-const featured = publicDoctors()
-  .filter((d) => d.featured)
-  .slice(0, 3);
-
 const jsonLd = [
   {
     "@context": "https://schema.org",
@@ -127,23 +123,6 @@ const jsonLd = [
     </div>
   </section>
 
-  <!-- Featured -->
-  {
-    featured.length > 0 && (
-      <section class="mx-auto max-w-6xl px-4 mt-12">
-        <div class="flex items-center justify-between mb-5">
-          <h2 class="text-xl md:text-2xl font-extrabold text-navy-900">Рекомендуемые профили</h2>
-          <span class="text-xs text-slate-400">Продвижение</span>
-        </div>
-        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {featured.map((d) => (
-            <DoctorCard doctor={d} />
-          ))}
-        </div>
-      </section>
-    )
-  }
-
   <!-- Top rated -->
   <section class="mx-auto max-w-6xl px-4 mt-12">
     <div class="flex items-center justify-between mb-5">
@@ -195,11 +174,11 @@ const jsonLd = [
 
       <div class="rounded-3xl border-2 border-dashed border-brand-300 bg-brand-50 p-7 md:p-8">
         <div class="text-xs font-bold uppercase tracking-widest text-brand-700">Врачам и клиникам</div>
-        <h3 class="mt-2 text-2xl font-extrabold text-navy-900">Продвижение профиля</h3>
+        <h3 class="mt-2 text-2xl font-extrabold text-navy-900">Баннерная реклама</h3>
         <p class="mt-2 text-sm text-slate-600 leading-relaxed">
-          Выделенный профиль вверху каталога и на главной. Расскажите о себе пациентам, которые ищут именно вас.
+          Слоты на главной и в категориях: город, специальность, статистика показов и переходов.
         </p>
-        <a href="/packages/" class="btn-primary mt-5">Смотреть пакеты</a>
+        <a href="/contacts/?topic=banner" class="btn-primary mt-5">Запросить размещение</a>
       </div>
     </div>
   </section>

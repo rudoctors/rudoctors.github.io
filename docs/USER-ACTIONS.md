@@ -70,7 +70,7 @@
 - [ ] FAQ-страница: валидатор https://search.google.com/test/rich-results — FAQPage OK
 - [ ] Вручную: ChatGPT/Perplexity «русский врач Белград» → упоминание rudoctors (не гарантировано, проба)
 - [ ] Главная показывает 139 врачей / 32 специальности / 4 города
-- [ ] sitemap: 183 URL, без leave-review/add-doctor
+- [ ] sitemap: без leave-review/add-doctor/admin/**packages**
 - [ ] og.png и llms.txt отдаются (HTTP 200)
 
 ---
@@ -90,6 +90,8 @@
 - BreadcrumbList на специальностях/городах/карточках врачей; Physician JSON-LD
 - Интросы specialty-intros.json / city-intros.json + фолбэк для новых городов (Niš)
 - Self-host Manrope (woff2 локально); удалены legacy JPG (53, ~40MB)
+- UI без «Рекомендуем»/«Рекомендуемые профили»; `/packages/` noindex + вне sitemap; CTA → баннерная реклама
+- Аватарка Е. Курамшиной перевёрнута (`rd-59-r.webp`)
 
 ## Документы
 

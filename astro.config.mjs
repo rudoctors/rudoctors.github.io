@@ -12,7 +12,8 @@ export default defineConfig({
       filter: (page) =>
         !page.includes("/admin/") &&
         !page.includes("/leave-review") &&
-        !page.includes("/add-doctor"),
+        !page.includes("/add-doctor") &&
+        !page.includes("/packages"),
     }),
   ],
   vite: {

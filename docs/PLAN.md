@@ -1,7 +1,7 @@
 # План работ Rudoctors
 
 Статус: **Phase 0–6 done** (порядок 0→1→2→3→4→5→6, 24.09.2026); open: PAT E2E, analytics key  
-Цель монетизации: featured-профили + партнёрства за 30–90 дней; сигнал — первый featured/placement request до 15.12.2026.
+Цель монетизации: **баннерная реклама / продажа сайта** (приоритет над featured-пакетами); сигнал — первый banner/placement request до 15.12.2026.
 
 ## Фазы
 
@@ -67,18 +67,18 @@
 - [x] self-host fonts: Manrope woff2 в `public/fonts/` (6 subset, variable 400–800), `@font-face` в `global.css`, CDN-link убран, preload cyrillic+latin
 
 ## Phase 6 — Монетизация
-- [x] `/packages/` — featured / пакет клиники / баннер (цены-ориентиры)
-- [x] Featured demo: `kirill-kozyrev`, `kristina-tokmakova` (`featured: true`, seed OR-merge)
 - [x] Click-track: `Appointment Click` / `Outbound Click` → Plausible/Umami если env
 - [x] Layout hooks: `PUBLIC_PLAUSIBLE_DOMAIN` / `PUBLIC_UMAMI_WEBSITE_ID`
-- [x] CTA: home / about / contacts / footer → `/packages/`
+- [x] Убраны UI «Рекомендуем» / «Рекомендуемые профили»; CTA → баннерная реклама
+- [x] `/packages/` скрыт: `noindex`, вне sitemap, без публичных ссылок
+- [x] Fix: аватарка Евгении Курамшиной → `/photos/rd-59-r.webp` (180°)
 - [ ] E2E admin hide-flow — PAT создаст пользователь
-- [ ] Первый featured request до 15.12.2026
+- [ ] Первый banner/placement request до 15.12.2026
 
 ## Monetization gate (пройден → proceed)
-1. Каталог 120–150 + отзывы → featured/ads → платящие врачи.
-2. Денежный сигнал: первый featured/placement request до 15.12.2026.
-3. Отложено: UI-фичи без данных (не влияют на деньги).
+1. Каталог 120–150 + отзывы → баннеры/ads → платящие размещения (или продажа сайта).
+2. Денежный сигнал: первый banner/placement request до 15.12.2026.
+3. Отложено: UI-фичи без данных (не влияют на деньги); featured-пакеты — вторичны.
 
 ## Согласованные ответы
 - Порядок: 0→1→2→3→4.
