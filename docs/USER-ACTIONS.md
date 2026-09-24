@@ -15,30 +15,20 @@
 
 ---
 
-## B. Google Search Console (~10 минут)
+## B. Google Search Console — **done** (24.09.2026)
 
-**Вкладка:** Search Console (открою в Neo)
+- [x] HTML-метатег `google-site-verification` вставлен (токен ротирован: `od8PTNpX…`)
+- [x] Право собственности подтверждено («Тег HTML» → ПОДТВЕРДИТЬ)
+- [x] Sitemaps → `https://rudoctors.github.io/sitemap-index.xml` → отправлен
+- [ ] URL Inspection → индексация главной и 5–10 карточек (7–14 дней)
 
-0. Откройте https://search.google.com/search-console (или вкладка из BrowserOS)
-1. **Добавить свойство** → тип **URL-префикс** → `https://rudoctors.github.io/`
-2. Способ верификации: **HTML-метатег** → скопируйте строку  
-   `<meta name="google-site-verification" content="XXXXXXXX">`
-3. Скиньте мне метатег в чат (или вставьте сами) — я добавлю его в `Layout.astro` и вы запушите.  
-   *Альтернатива без правки кода:* «Проверка через файл» → скачанный HTML-файл кладите в `site/public/`, скажите путь — я скопирую и добавлю в билд.
-4. После Verify → **Sitemaps** → `https://rudoctors.github.io/sitemap-index.xml` → Отправить.
-5. **URL Inspection** → запросить индексацию главной и 5-10 карточек (kirill-kozyrev, polina-sokolova, pavel-borisov и др.).
+## C. Bing Webmaster Tools — **done** (24.09.2026)
 
-**Что я сделаю после вашего «метатег получен»:** вставлю в `Layout.astro` → `googleSiteVerification`, пересоберу, вы запушите, затем GSC → Verify.
+- [x] `msvalidate.01` вставлен; сайт `rudoctors.github.io` в аккаунте
+- [x] Sitemap → `https://rudoctors.github.io/sitemap-index.xml` → Submitted / Processing
+- [x] IndexNow: ключ в CI (`74fc6157…`) + key file на проде
 
-## C. Bing Webmaster Tools (~10 минут)
-
-**Вкладка:** Bing Webmaster (открою в Neo)
-
-0. Откройте https://www.bing.com/webmasters
-1. **Добавить сайт** → URL `https://rudoctors.github.io/`
-2. Проще: **Import from Google Search Console** (если B уже готово) — подтянет sitemap.
-3. Либо вручную: HTML-метатег аналогично Google → я вставлю в Layout.
-4. **IndexNow:** в CI уже пинг после сборки. Ключ: `74fc615772e99cbc3659e76f7f6bb7c0` (файл `https://rudoctors.github.io/74fc615772e99cbc3659e76f7f6bb7c0.txt`) — в Bing Webmaster → IndexNow указать этот host+key (или оставить авто-ping из Actions).
+## C2. Yandex — мета `yandex-verification` уже в `Layout.astro` (нужен свой домен для Вебмастера)
 
 ## D. Яндекс — заблокировано без домена
 
@@ -91,7 +81,11 @@
 - Интросы specialty-intros.json / city-intros.json + фолбэк для новых городов (Niš)
 - Self-host Manrope (woff2 локально); удалены legacy JPG (53, ~40MB)
 - UI без «Рекомендуем»/«Рекомендуемые профили»; `/packages/` noindex + вне sitemap; CTA → баннерная реклама
-- Аватарка Е. Курамшиной перевёрнута (`rd-59-r.webp`)
+- Аватарка Е. Курамшиной: используется исходный `rd-59.webp` (180°-вариант удалён)
+- Verify-меты: GSC + Bing + Yandex в `Layout.astro`
+- GSC: verify + sitemap **done** (24.09.2026)
+- Bing: сайт + sitemap **done** (24.09.2026)
+- PAT / analytics keys — пользователь (done)
 
 ## Документы
 

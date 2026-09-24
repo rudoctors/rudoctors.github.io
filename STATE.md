@@ -42,22 +42,30 @@ Live: `https://rudoctors.github.io`
 | **`5768c16`** | UI без «Рекомендуем»; `/packages/` noindex; fix avatar Курамшина; CTA → баннеры |
 | **`335d5f4`** | STATE.md после правок UI/монетизации |
 | **`95c7444`** | STATE.md хронология |
+| **`50afc6d`** | STATE.md final chronology |
 
 ---
 
-## Текущее состояние (после `95c7444`)
+## Текущее состояние (после `50afc6d` + test banners)
 
 ### Верификация
 - `npm run check` — 0 errors / 0 warnings.
 - `npm run build` — **188 pages**, sitemap-index.
-- dist: packages noindex, sitemap без `/packages`, 0 «Рекомендуем» в HTML, `rd-59-r.webp` ok.
+- dist: packages noindex, sitemap без `/packages`, 0 «Рекомендуем» в HTML.
 - Live smoke: `/`, `/cities/novi-sad/`, `/faq/`, `/doctors/...` — 200 (`/packages/` — noindex).
-- CI: build + deploy Pages — **success** (после предыдущего push).
+- CI: build + deploy Pages — **success**.
 - IndexNow CI ping — 202 OK (~184 URLs).
+
+### Verify (пользователь, 24.09.2026)
+- GSC: `google-site-verification` в `Layout.astro` — **done**.
+- Bing: `msvalidate.01` — **done**.
+- Yandex meta: `yandex-verification` в Layout (без своего домена Вебмастер недоступен).
+- PAT — **done** (пользователь).
+- Analytics keys — **done** (пользователь, GH Secrets).
 
 ### Данные
 - **140** карточек врачей (`src/data/doctors/*.json`).
-- **54** фото WebP (`public/photos/`); **0 JPG**; `rd-59-r.webp` = перевёрнутая аватарка Курамшиной.
+- **53** фото WebP (`public/photos/`); **0 JPG**; аватарка Курамшиной — исходный `rd-59.webp` (180°-копия удалена).
 - Поле `featured` в schema сохранено (seed OR-merge), но **без UI-бейджей** и без секции на главной.
 - Специальности / города: slugified; города belgrade, nis, novi-sad, subotica.
 
@@ -65,6 +73,7 @@ Live: `https://rudoctors.github.io`
 - Убраны: бейдж «Рекомендуем» (DoctorCard, [slug]), секция «Рекомендуемые профили» (index).
 - `/packages/`: `noindex`, вне sitemap, без публичных ссылок (footer/index/about/contacts/faq).
 - CTA: «Баннерная реклама» → `/contacts/?topic=banner`.
+- **Test banners**: `src/data/banners.json` + `Banner.astro` — home-top (страховка), home-bottom (клиника), catalog-top (страховка); метка «Реклама»; клики → `Banner Click` в analytics hooks.
 
 ### Шрифты (self-host)
 - Manrope variable woff2, 6 subset: cyrillic-ext, cyrillic, greek, vietnamese, latin-ext, latin (~190KB total).
@@ -90,12 +99,13 @@ Live: `https://rudoctors.github.io`
 
 | Задача | Кто | Примечание |
 |--------|-----|------------|
-| GSC verify + sitemap | **пользователь** | HTML-meta или файл → я вставлю в Layout |
-| Bing Webmaster + IndexNow host | **пользователь** | Import from GSC или meta |
+| GSC verify + sitemap | **done** 24.09.2026 | verify «Тег HTML»; sitemap-index.xml отправлен; токен `od8PTNpX…` |
+| Bing Webmaster sitemap | **done** 24.09.2026 | сайт в аккаунте; sitemap Processing; IndexNow в CI |
 | PAT (fine-grained contents RW) | **пользователь** | E2E admin hide-flow после создания |
 | Analytics keys (Plausible/Umami) | **пользователь** | env в GH Secrets / Actions |
 | Первый banner request | до 15.12.2026 | сигнал монетизации (баннеры / продажа сайта) |
 | Домен (.rs / .com) | опционально | нужен для Яндекс.Вебмастера |
+| Каталоги Сербии (спринт 4) | **пользователь** | см. `docs/seo-catalogs.md` — нужна почта |
 
 ---
 

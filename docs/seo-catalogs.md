@@ -6,8 +6,8 @@
 
 | Площадка | Действие | Статус |
 |---|---|---|
-| Google Search Console | URL-prefix `https://rudoctors.github.io/` → HTML-файл или meta → Sitemap | ждёт вас (см. USER-ACTIONS) |
-| Bing Webmaster | импорт из GSC или HTML-файл → Sitemap → IndexNow уже в CI | ждёт вас |
+| Google Search Console | URL-prefix `https://rudoctors.github.io/` → meta → Sitemap | **done** 24.09.2026: verify + sitemap-index.xml |
+| Bing Webmaster | сайт в аккаунте → Sitemap → IndexNow в CI | **done** 24.09.2026: sitemap Processing |
 | Яндекс Вебмастер | **недоступен без собственного домена** (поддомены github.io не принимаются) | blocked → купить домен |
 | Яндекс Метрика | только при домене (для обхода по счётчику) | blocked |
 
