@@ -87,6 +87,8 @@ Live: `https://rudoctors.github.io`
 - Analytics hooks: `PUBLIC_PLAUSIBLE_DOMAIN`, `PUBLIC_UMAMI_WEBSITE_ID` (env **не заданы**).
 - FAQPage JSON-LD, Organization, BreadcrumbList, Physician.
 - `llms.txt`, `robots.txt` с AI-кроулерами.
+- **GSC verify + sitemap: done** 24.09.2026 (токен `od8PTNpX…`, sitemap-index.xml отправлен).
+- **Bing сайт + sitemap: done** 24.09.2026 (Processing; IndexNow CI).
 
 ### Docs
 - `docs/PLAN.md` — трекер (Phase 0–6 done; open: PAT E2E, analytics key).
@@ -100,7 +102,9 @@ Live: `https://rudoctors.github.io`
 
 | Задача | Кто | Примечание |
 |--------|-----|------------|
-| GSC/Bing/Yandex meta + PAT + analytics | **пользователь** | **done** 24.09.2026 |
+| GSC verify + sitemap | **done** 24.09.2026 | «Тег HTML»; sitemap-index.xml |
+| Bing sitemap | **done** 24.09.2026 | Processing; IndexNow в CI |
+| PAT / analytics | **пользователь** | done ранее |
 | Первый banner request | до 15.12.2026 | сигнал монетизации (баннеры / продажа сайта) |
 | Домен (.rs / .com) | опционально | нужен для Яндекс.Вебмастера |
 | Каталоги Сербии (спринт 4) | **пользователь** | см. `docs/seo-catalogs.md` — нужна почта |
