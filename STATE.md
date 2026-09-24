@@ -114,6 +114,13 @@ Live: `https://rudoctors.github.io`
 - `docs/TIKTOK.md` — 5 сценариев.
 - `docs/AUDIT.md`, `DECISIONS.md`, `OPS.md`, `SOURCES.md`, `GROWTH.md`, `seo-catalogs.md`, `seo-keywords.md`.
 
+### Telegram-модерация заявок (24.09.2026, код готов — ждёт токенов пользователя)
+- Форма `/add-doctor/` → GitHub Issue (label `doctor-request`) — как раньше, с явным консентом на публичную Issue.
+- `scripts/telegram-bot.mjs` (`npm run tg:bot`): long polling, синхронизация новых issues каждые 2 мин → сообщение в чат владельца с кнопками **✅ Опубликовать / ❌ Отклонить**.
+- «✅» → бот собирает JSON карточки (схема как в `/admin/`, `verificationStatus: "self"`), коммитит в `src/data/doctors/`, закрывает issue с комментарием; деплой CI ~2–3 мин.
+- Спец-текст маппится на ключи `specialties.json`; контакт раскладывается по `contacts.*`; дубли slug получают суффикс `-i<issue>`; повторная отправка помечается меткой `tg-sent`.
+- Конфиг: `site/.env` (TELEGRAM_BOT_TOKEN, TELEGRAM_ADMIN_CHAT_ID, GITHUB_TOKEN) по `.env.example`; инструкция `docs/TELEGRAM-BOT.md`; selftest: `npm run tg:bot -- --selftest`.
+
 ---
 
 ## Открытые задачи (open)
@@ -131,6 +138,7 @@ Live: `https://rudoctors.github.io`
 | ToS legal requisites | до платного контракта | добавить данные владельца/контакт для договора с рекламодателем |
 | DHD audit `thewayofdhd.github.io` | отдельный трекер | `D:\Projects\DHD-Project\...` — не rudoctors |
 | E2E admin hide-flow | пользователь | PAT memory-only после спринта F |
+| Telegram-бот модерации заявок | **пользователь** | код готов (`scripts/telegram-bot.mjs`); создать бота в @BotFather, PAT (Contents+Issues), заполнить `site/.env` по `.env.example`, запустить `npm run tg:bot` — `docs/TELEGRAM-BOT.md` |
 
 ---
 
@@ -157,6 +165,10 @@ astro dev --background
 # проверка
 npm run check
 npm run build
+
+# telegram-модерация заявок «Добавить врача»
+npm run tg:bot -- --check   # проверка конфига (site/.env)
+npm run tg:bot              # long polling: issue → чат с кнопками ✅/❌
 
 # данные
 npm run fetch:all

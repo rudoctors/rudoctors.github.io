@@ -148,7 +148,8 @@ import { SITE } from "../lib/site";
     markSubmitted(KEY);
     if (status) {
       status.className = "text-sm mt-2 text-slate-500";
-      status.textContent = "Открываем форму GitHub…";
+      status.textContent =
+        "Открываем GitHub — подтвердите отправку (кнопка «Submit new issue»). Заявка придёт владельцу в Telegram на модерацию.";
     }
     window.open(url, "_blank", "noopener,noreferrer");
   });
