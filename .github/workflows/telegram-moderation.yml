@@ -1,0 +1,42 @@
+name: Telegram moderation
+
+# Модерация заявок «Добавить врача» (@rudoctors_moderation_bot).
+# - issues: мгновенная отправка новой заявки в Telegram
+# - schedule: обработка нажатых кнопок ✅/❌ (long poll невозможен в CI)
+# - workflow_dispatch: ручной запуск
+# ВАЖНО: пока активен этот режим, НЕ запускать `npm run tg:bot` локально —
+# два потребителя getUpdates конфликтуют (409 / разделение апдейтов).
+
+on:
+  issues:
+    types: [opened, labeled, reopened]
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: telegram-moderation
+  cancel-in-progress: false
+
+jobs:
+  moderate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Sync requests and process moderation buttons
+        run: node scripts/telegram-bot.mjs --ci
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID }}
+          GITHUB_TOKEN: ${{ secrets.BOT_GITHUB_TOKEN }}
+          GITHUB_REPO: ${{ github.repository }}

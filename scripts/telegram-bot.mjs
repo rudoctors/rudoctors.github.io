@@ -360,12 +360,12 @@ class Telegram {
     });
   }
 
-  getUpdates(offset, signal) {
+  getUpdates(offset, signal, timeoutSec = 25) {
     return this.req(
       "getUpdates",
       {
         offset,
-        timeout: 25,
+        timeout: timeoutSec,
         allowed_updates: ["message", "callback_query"],
       },
       { signal }
@@ -589,12 +589,55 @@ async function check(cfg) {
 
 // ---------- main loop ----------
 
+async function ciOnce() {
+  // One-shot режим для GitHub Actions: синк новых заявок + обработка нажатых
+  // кнопок (getUpdates timeout=0, идемпотентно — закрытые issues не трогаем), затем выход.
+  const cfg = loadConfig();
+  const problems = [];
+  if (!cfg.telegramToken) problems.push("TELEGRAM_BOT_TOKEN");
+  if (!cfg.adminChatId) problems.push("TELEGRAM_ADMIN_CHAT_ID");
+  if (!cfg.githubToken) problems.push("GITHUB_TOKEN");
+  if (problems.length) {
+    console.error(`CI-режим: не заданы ${problems.join(", ")}`);
+    process.exit(1);
+  }
+  const tg = new Telegram(cfg.telegramToken);
+  const gh = new GitHub(cfg);
+  const me = await tg.getMe();
+  log(`CI one-shot: @${me.username}, repo ${cfg.repo}`);
+  const specialties = readSpecialties();
+
+  await syncIssues(gh, tg, cfg);
+
+  const updates = await tg.getUpdates(undefined, AbortSignal.timeout(20_000), 0).catch((e) => {
+    log(`getUpdates: ${e.message}`);
+    return [];
+  });
+  let lastId = 0;
+  for (const u of updates || []) {
+    lastId = Math.max(lastId, u.update_id);
+    if (u.message?.text?.startsWith("/start")) continue;
+    if (u.callback_query) {
+      await handleCallback(gh, tg, cfg, u.callback_query, specialties);
+    }
+  }
+  if (lastId) {
+    // подтвердить consumption, чтобы старые апдейты не переобрабатывались до истечения 24ч
+    await tg.getUpdates(lastId + 1, AbortSignal.timeout(20_000), 0).catch(() => {});
+  }
+  log("CI one-shot: готово");
+}
+
 async function main() {
   const args = process.argv.slice(2);
   const cfg = loadConfig();
   if (args.includes("--selftest")) return selftest();
   if (args.includes("--check")) {
     process.exitCode = await check(cfg);
+    return;
+  }
+  if (args.includes("--ci")) {
+    await ciOnce();
     return;
   }
 
