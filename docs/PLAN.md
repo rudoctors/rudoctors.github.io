@@ -1,6 +1,6 @@
 # План работ Rudoctors
 
-Статус: **Phase 0–6 done** (порядок 0→1→2→3→4→5→6, 24.09.2026); open: PAT E2E, analytics key, self-host fonts  
+Статус: **Phase 0–6 done** (порядок 0→1→2→3→4→5→6, 24.09.2026); open: PAT E2E, analytics key  
 Цель монетизации: featured-профили + партнёрства за 30–90 дней; сигнал — первый featured/placement request до 15.12.2026.
 
 ## Фазы
@@ -64,7 +64,7 @@
 - [x] WebP: `npm run photos:webp` → 53 фото, ~40MB → ~1MB webp, photo → `.webp`; seed prefers `.webp`
 - [x] city slug `novi-sad` (`citySlug`); hreflang ru + x-default; aria-live (filters, form status)
 - [x] PR job: `pull_request` → check+build, без deploy
-- [ ] self-host fonts (Google Fonts CDN ещё)
+- [x] self-host fonts: Manrope woff2 в `public/fonts/` (6 subset, variable 400–800), `@font-face` в `global.css`, CDN-link убран, preload cyrillic+latin
 
 ## Phase 6 — Монетизация
 - [x] `/packages/` — featured / пакет клиники / баннер (цены-ориентиры)

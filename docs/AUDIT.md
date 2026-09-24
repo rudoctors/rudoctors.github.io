@@ -22,10 +22,10 @@
 - Popup-blocker на формах; a11y (focus, labels); «Belgrade» в русском UI.
 - **done Phase 2–4:** 140 карт, Sheets/citilab/TG fetch, merge-safe seed, cron Mon/Thu, commit-if-diff.
 - **done Phase 3:** EN→RU перевод агентом (44+6), UI original details; TG candidates — без имени врача, N/A.
-- Остаток MEDIUM: self-host fonts.
+- **done:** self-host Manrope (woff2 local, без Google Fonts CDN); удалены legacy JPG (53).
 
 ## MEDIUM / LOW
-SEO-мелочи, plural; self-host fonts.
+SEO-мелочи, plural.
 
 ## Continuous update
 **done:** cron refresh + merge-safe seed + fuzzy name match. Schema validation строгая в loadDoctors.

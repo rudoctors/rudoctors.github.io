@@ -89,6 +89,7 @@
 - Страницы: 404 (noindex), /privacy/, /contacts/, /faq/ (12 Q + FAQPage)
 - BreadcrumbList на специальностях/городах/карточках врачей; Physician JSON-LD
 - Интросы specialty-intros.json / city-intros.json + фолбэк для новых городов (Niš)
+- Self-host Manrope (woff2 локально); удалены legacy JPG (53, ~40MB)
 
 ## Документы
 

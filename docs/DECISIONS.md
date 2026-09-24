@@ -21,6 +21,7 @@
 | 2026-09-24 | City slug `novi-sad` + hreflang ru/x-default + PR CI без deploy | SEO + безопасный PR check |
 | 2026-09-24 | Strict schema в loadDoctors; seed prefers `.webp` | Fail-fast data; не откатывать photo на JPG |
 | 2026-09-24 | TG review_candidates (2) — без имени врача, не импортировать | Без фейковых привязок к карточкам |
+| 2026-09-24 | Self-host Manrope (6 subset woff2 в public/fonts); удалены 53 legacy JPG | Без Google Fonts CDN/трекинга; репо ~40MB легче |
 
 ## Технический стек (подтверждён)
 Astro 7 + TS strict + Tailwind 4; JSON в репо = GitHub CMS; Actions → Pages (`build_type=workflow`); Node ≥22.12.
