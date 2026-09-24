@@ -48,7 +48,7 @@ Live: `https://rudoctors.github.io`
 | **`553f0bd`** | Search matches RU specialization labels + specializationText |
 | **`3050da7`** | **Спринты A→E** (69 файлов): schema/urls, a11y+formGuard, thin content, D2 pagination, llms/404/OPS — **CI success** `36020752013` |
 | **`64dc5bd`** | STATE.md после A→E — CI success `36021269539` |
-| **Sprint F (uncommitted→then)** | PAT memory-only, Issues disclosure, license schema, ToS, meta CSP, breadcrumbs list, LCP priority, CTA banners, robots BOM |
+| **`8defc09`** | **Спринт F:** PAT memory-only + legacy cleanup/no analytics, Issues disclosure, license schema/UI, ToS, meta CSP/referrer, breadcrumbs, LCP priority, CTA banners, robots BOM |
 
 ---
 
@@ -56,10 +56,12 @@ Live: `https://rudoctors.github.io`
 
 ### Верификация
 - `npm run check` — 0 errors / 0 warnings / 1 pre-existing hint (`chunkId` в `preprocess-tg-export.mjs`).
-- `npm run build` — **188 pages**, sitemap-index.
+- `npm run build` — **189 pages**, sitemap-index.
 - dist: packages noindex, sitemap без `/packages`, 0 «Рекомендуем» в HTML.
 - Live smoke: `/`, `/doctors/` (+`?page=2` client), `/cities/nis/`, `/llms.txt`, `/404`, forms, doctor profile — **200**; data-bio=0; www.t.me=0; pager present; honeypot present.
 - CI `3050da7` → run `36020752013` — **success** (build 21s + deploy 2m13s); IndexNow ping OK.
+- CI `8defc09` → run **`36027316904`** — **success** (build 25s + deploy 11s).
+- Sprint F live smoke: `/terms/`, CSP/referrer, skip-link, 3× eager/high, breadcrumbs, CTA banners, robots; `/admin/` без analytics и legacy PAT очищает 4/4 storage-ключа; обе формы блокируют whitespace и открывают только предзаполненную GitHub-форму с корректным label.
 - Sitemap: no `/packages`, no `/admin`, no forms; sub-sitemaps include `/cities/nis`.
 
 ### Verify (пользователь, 24.09.2026)
