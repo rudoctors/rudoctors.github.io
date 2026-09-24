@@ -49,6 +49,8 @@ Live: `https://rudoctors.github.io`
 | **`3050da7`** | **Спринты A→E** (69 файлов): schema/urls, a11y+formGuard, thin content, D2 pagination, llms/404/OPS — **CI success** `36020752013` |
 | **`64dc5bd`** | STATE.md после A→E — CI success `36021269539` |
 | **`8defc09`** | **Спринт F:** PAT memory-only + legacy cleanup/no analytics, Issues disclosure, license schema/UI, ToS, meta CSP/referrer, breadcrumbs, LCP priority, CTA banners, robots BOM |
+| **`328e6c4`** | **feat(moderation): Telegram-бот модерации заявок (`@rudoctors_moderation_bot`)** — кнопки ✅/❌, публикация JSON, E2E verified; `site/.env` готов |
+| **`70dda92`** | E2E-тестовая карточка удалена (бот опубликовал и снял) |
 
 ---
 
@@ -114,12 +116,14 @@ Live: `https://rudoctors.github.io`
 - `docs/TIKTOK.md` — 5 сценариев.
 - `docs/AUDIT.md`, `DECISIONS.md`, `OPS.md`, `SOURCES.md`, `GROWTH.md`, `seo-catalogs.md`, `seo-keywords.md`.
 
-### Telegram-модерация заявок (24.09.2026, код готов — ждёт токенов пользователя)
+### Telegram-модерация заявок (24.09.2026, настроено и проверено E2E)
 - Форма `/add-doctor/` → GitHub Issue (label `doctor-request`) — как раньше, с явным консентом на публичную Issue.
 - `scripts/telegram-bot.mjs` (`npm run tg:bot`): long polling, синхронизация новых issues каждые 2 мин → сообщение в чат владельца с кнопками **✅ Опубликовать / ❌ Отклонить**.
+- Бот **@rudoctors_moderation_bot**, admin-чат = Telegram-аккаунт `new` (balkandunav, id 8953219173); конфиг в `site/.env` (токены не в git).
 - «✅» → бот собирает JSON карточки (схема как в `/admin/`, `verificationStatus: "self"`), коммитит в `src/data/doctors/`, закрывает issue с комментарием; деплой CI ~2–3 мин.
 - Спец-текст маппится на ключи `specialties.json`; контакт раскладывается по `contacts.*`; дубли slug получают суффикс `-i<issue>`; повторная отправка помечается меткой `tg-sent`.
-- Конфиг: `site/.env` (TELEGRAM_BOT_TOKEN, TELEGRAM_ADMIN_CHAT_ID, GITHUB_TOKEN) по `.env.example`; инструкция `docs/TELEGRAM-BOT.md`; selftest: `npm run tg:bot -- --selftest`.
+- **E2E 24.09.2026:** issue #1 → «✅» → JSON опубликован, build 190 pages OK, CI success, тестовая карточка удалена `70dda92`; issue #2 → «❌» → закрыт. Скрипты создания/нажатия: `D:\PAIOS-Data\tmp\tgbot\` (Telethon, сессия PAIOS `session-new`).
+- Инструкция: `docs/TELEGRAM-BOT.md`; selftest: `npm run tg:bot -- --selftest`; проверка конфига: `--check`.
 
 ---
 
@@ -138,7 +142,7 @@ Live: `https://rudoctors.github.io`
 | ToS legal requisites | до платного контракта | добавить данные владельца/контакт для договора с рекламодателем |
 | DHD audit `thewayofdhd.github.io` | отдельный трекер | `D:\Projects\DHD-Project\...` — не rudoctors |
 | E2E admin hide-flow | пользователь | PAT memory-only после спринта F |
-| Telegram-бот модерации заявок | **пользователь** | код готов (`scripts/telegram-bot.mjs`); создать бота в @BotFather, PAT (Contents+Issues), заполнить `site/.env` по `.env.example`, запустить `npm run tg:bot` — `docs/TELEGRAM-BOT.md` |
+| Telegram-бот модерации заявок | **готово** 24.09.2026 | `@rudoctors_moderation_bot`, admin = new-аккаунт (balkandunav); `site/.env` готов; E2E ✅/❌ пройдено; бот должен быть запущен: `npm run tg:bot` |
 
 ---
 

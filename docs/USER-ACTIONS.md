@@ -48,18 +48,17 @@
 См. `docs/seo-catalogs.md` — таблица площадок. Часть можно делать параллельно:
 регистрации в nadjidoktora.rs / ordinacije.rs и т.п. требуют вашей почты.
 
-## F. Telegram-модерация «Добавить врача» — нужно от вас
+## F. Telegram-модерация «Добавить врача» — **готово** (24.09.2026)
 
 Заявки из формы приходят как GitHub Issues (label `doctor-request`). Бот
 `npm run tg:bot` пересылает их в личку с кнопками ✅ Опубликовать / ❌ Отклонить;
 «✅» коммитит JSON врача и сайт пересобирается сам.
 
-1. @BotFather → `/newbot` → токен.
-2. Написать своему боту `/start` (при запущенном боте — он покажет ваш chat_id).
-3. Fine-grained PAT: Contents + Issues «Read and write» на
-   `rudoctors/rudoctors.github.io`.
-4. Заполнить `site/.env` по `site/.env.example` → `npm run tg:bot -- --check`
-   → `npm run tg:bot`.
+- [x] Бот создан: **@rudoctors_moderation_bot** (через @BotFather от аккаунта `new` / balkandunav)
+- [x] `site/.env` заполнен (токен бота + GITHUB_TOKEN от gh CLI + chat_id 8953219173)
+- [x] E2E проверено: «✅» публикует карточку (build OK, CI success), «❌» закрывает заявку
+- [ ] **Осталось:** держать `npm run tg:bot` запущенным, когда нужна модерация
+      (сейчас процесс запущен; при перезагрузке ПК — запустить заново)
 
 Подробно: `docs/TELEGRAM-BOT.md`. Токены не публиковать, `.env` не коммитить.
 

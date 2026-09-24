@@ -2,6 +2,17 @@
 
 Обновлено: 2026-09-24
 
+## Статус: НАСТРОЕНО И ПРОВЕРЕНО E2E (24.09.2026)
+
+- Бот: **@rudoctors_moderation_bot** (создан через @BotFather от Telegram-аккаунта
+  `new` = balkandunav, реестр `D:\PAIOS\config\telegram-accounts.json`).
+- Конфиг: `site/.env` заполнен (TELEGRAM_BOT_TOKEN, TELEGRAM_ADMIN_CHAT_ID=8953219173,
+  GITHUB_TOKEN — активный токен gh CLI TheWayofDHD). `.env` не коммитится.
+- E2E 24.09.2026: issue #1 «✅ Опубликовать» → JSON закоммичен ботом, схема прошла
+  валидацию сборки (190 pages), CI success; тестовая карточка удалена (`70dda92`).
+  Issue #2 «❌ Отклонить» → issue закрыт с комментарием.
+- Запуск: `npm run tg:bot` (бот работает, пока запущен процесс).
+
 ## Как это работает
 
 ```text
