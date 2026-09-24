@@ -126,14 +126,15 @@ Live: `https://rudoctors.github.io`
 - `docs/TIKTOK.md` — 5 сценариев.
 - `docs/AUDIT.md`, `DECISIONS.md`, `OPS.md`, `SOURCES.md`, `GROWTH.md`, `seo-catalogs.md`, `seo-keywords.md`.
 
-### Telegram-модерация заявок (24.09.2026, настроено и проверено E2E)
+### Telegram-модерация заявок (24.09.2026, работает, хостинг GitHub Actions)
 - Форма `/add-doctor/` → GitHub Issue (label `doctor-request`) — как раньше, с явным консентом на публичную Issue.
-- `scripts/telegram-bot.mjs` (`npm run tg:bot`): long polling, синхронизация новых issues каждые 2 мин → сообщение в чат владельца с кнопками **✅ Опубликовать / ❌ Отклонить**.
-- Бот **@rudoctors_moderation_bot**, admin-чат = Telegram-аккаунт `new` (balkandunav, id 8953219173); конфиг в `site/.env` (токены не в git).
-- «✅» → бот собирает JSON карточки (схема как в `/admin/`, `verificationStatus: "self"`), коммитит в `src/data/doctors/`, закрывает issue с комментарием; деплой CI ~2–3 мин.
-- Спец-текст маппится на ключи `specialties.json`; контакт раскладывается по `contacts.*`; дубли slug получают суффикс `-i<issue>`; повторная отправка помечается меткой `tg-sent`.
-- **E2E 24.09.2026:** issue #1 → «✅» → JSON опубликован, build 190 pages OK, CI success, тестовая карточка удалена `70dda92`; issue #2 → «❌» → закрыт. Скрипты создания/нажатия: `D:\PAIOS-Data\tmp\tgbot\` (Telethon, сессия PAIOS `session-new`).
-- Инструкция: `docs/TELEGRAM-BOT.md`; selftest: `npm run tg:bot -- --selftest`; проверка конфига: `--check`.
+- Бот **@rudoctors_moderation_bot**, админ-чат = Telegram-аккаунт `new` (balkandunav, id 8953219173). Секреты Actions: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_ADMIN_CHAT_ID`, `BOT_GITHUB_TOKEN` (+ локальный `site/.env` для отладки).
+- **Хостинг: GitHub Actions** `telegram-moderation.yml`: `issues.opened` — мгновенное уведомление; `schedule */5` — обработка команд; `workflow_dispatch`. Бесплатно для публичного репо.
+- **Кнопки URL** («жми кнопку → жми Отправить», команда `/ok N`/`/no N`): callback-кнопки не годятся — Telegram теряет нажатия, когда бот офлайн (проверено).
+- «✅» → JSON карточки (схема как в `/admin/`, `verificationStatus: "self"`) коммитится OAuth-токеном → деплой Pages поднимается автоматически; issue закрывается с комментарием.
+- **E2E:** #1 локальный бот ✅ (build 190 pages, CI ok); #2 ❌; #4 Actions: мгновенное уведомление → `ok 4` → закрыта → деплой ok; тестовые карточки удалены (`70dda92`, cleanup после #4).
+- Ограничение: обработка команды — до ~5 мин (cron GitHub); НЕ запускать локальный `npm run tg:bot` параллельно с Actions (конфликт getUpdates).
+- Инструкция: `docs/TELEGRAM-BOT.md`; selftest `--selftest`, проверка конфига `--check`, ручной ран `--ci`.
 
 ---
 
