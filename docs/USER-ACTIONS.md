@@ -82,6 +82,7 @@
 - Self-host Manrope (woff2 локально); удалены legacy JPG (53, ~40MB)
 - UI без «Рекомендуем»/«Рекомендуемые профили»; `/packages/` noindex + вне sitemap; CTA → баннерная реклама
 - Аватарка Е. Курамшиной: используется исходный `rd-59.webp` (180°-вариант удалён)
+- Test banners: страховка (home-top, catalog-top) + клиника (home-bottom), метка «Реклама»
 - Verify-меты: GSC + Bing + Yandex в `Layout.astro`
 - GSC: verify + sitemap **done** (24.09.2026)
 - Bing: сайт + sitemap **done** (24.09.2026)

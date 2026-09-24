@@ -1,0 +1,35 @@
+[
+  {
+    "id": "test-insurance",
+    "slot": "home-top",
+    "active": true,
+    "label": "Реклама",
+    "title": "Страхование в Сербии",
+    "text": "ДМС и страхование для русскоязычных экспатов: полисы, покрытие, помощь с оформлением.",
+    "cta": "Узнать условия",
+    "href": "/contacts/?topic=banner",
+    "tone": "slate"
+  },
+  {
+    "id": "test-clinic",
+    "slot": "home-bottom",
+    "active": true,
+    "label": "Реклама",
+    "title": "Клиника в Белграде",
+    "text": "Приём на русском: терапевт, педиатр, диагностика. Запись онлайн и по телефону.",
+    "cta": "Записаться",
+    "href": "/contacts/?topic=banner",
+    "tone": "brand"
+  },
+  {
+    "id": "test-catalog-insurance",
+    "slot": "catalog-top",
+    "active": true,
+    "label": "Реклама",
+    "title": "Страхование для экспатов",
+    "text": "Полис ДМС в Сербии: сравнение покрытий и помощь на русском.",
+    "cta": "Подробнее",
+    "href": "/contacts/?topic=banner",
+    "tone": "slate"
+  }
+]

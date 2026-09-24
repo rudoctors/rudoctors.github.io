@@ -1,6 +1,6 @@
 # План работ Rudoctors
 
-Статус: **Phase 0–6 done** (порядок 0→1→2→3→4→5→6, 24.09.2026); open: PAT E2E, analytics key  
+Статус: **Phase 0–6 done** (порядок 0→1→2→3→4→5→6, 24.09.2026); open: PAT E2E, первый banner request
 Цель монетизации: **баннерная реклама / продажа сайта** (приоритет над featured-пакетами); сигнал — первый banner/placement request до 15.12.2026.
 
 ## Фазы
@@ -71,8 +71,9 @@
 - [x] Layout hooks: `PUBLIC_PLAUSIBLE_DOMAIN` / `PUBLIC_UMAMI_WEBSITE_ID`
 - [x] Убраны UI «Рекомендуем» / «Рекомендуемые профили»; CTA → баннерная реклама
 - [x] `/packages/` скрыт: `noindex`, вне sitemap, без публичных ссылок
-- [x] Fix: аватарка Евгении Курамшиной → `/photos/rd-59-r.webp` (180°)
-- [ ] E2E admin hide-flow — PAT создаст пользователь
+- [x] Fix: аватарка Евгении Курамшиной → исходный `/photos/rd-59.webp` (180°-копия удалена)
+- [x] Test banners: `banners.json` + `Banner.astro` (home-top страховка, home-bottom клиника, catalog-top страховка; prop `placement`)
+- [ ] E2E admin hide-flow — PAT создаст пользователь (PAT done)
 - [ ] Первый banner/placement request до 15.12.2026
 
 ## Monetization gate (пройден → proceed)

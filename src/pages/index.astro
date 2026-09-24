@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import DoctorCard from "../components/DoctorCard.astro";
+import Banner from "../components/Banner.astro";
 import { publicDoctors, allSpecializationKeys, specLabel, siteStats, allCities } from "../lib/doctors";
 import { computeRating } from "../lib/rating";
 import { SITE, plural, citySlug } from "../lib/site";
@@ -123,6 +124,8 @@ const jsonLd = [
     </div>
   </section>
 
+  <Banner placement="home-top" class="mx-auto max-w-6xl px-4 mt-10" />
+
   <!-- Top rated -->
   <section class="mx-auto max-w-6xl px-4 mt-12">
     <div class="flex items-center justify-between mb-5">
@@ -154,6 +157,8 @@ const jsonLd = [
       {fresh.map((d) => <DoctorCard doctor={d} />)}
     </div>
   </section>
+
+  <Banner placement="home-bottom" class="mx-auto max-w-6xl px-4 mt-12" />
 
   <!-- CTA Telegram + monetization slot -->
   <section class="mx-auto max-w-6xl px-4 mt-14">

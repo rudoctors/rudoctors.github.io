@@ -31,5 +31,6 @@ SEO-мелочи, plural.
 **done:** cron refresh + merge-safe seed + fuzzy name match. Schema validation строгая в loadDoctors.
 
 ## Монетизация
-**done Phase 6 (без PAT):** click-track + analytics hooks; `/packages/` скрыт (noindex, без public-ссылок); UI без «Рекомендуем».  
-Open: PAT E2E hide-flow; ключ `PUBLIC_PLAUSIBLE_DOMAIN`/`PUBLIC_UMAMI_WEBSITE_ID`; первый banner/placement request до 15.12.2026.
+**done Phase 6:** click-track + analytics hooks; `/packages/` скрыт (noindex, без public-ссылок); UI без «Рекомендуем»; test banners (страховка/клиника).  
+
+Open: PAT E2E hide-flow (PAT создан); первый banner/placement request до 15.12.2026.

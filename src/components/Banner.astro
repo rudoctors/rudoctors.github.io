@@ -1,0 +1,48 @@
+---
+import banners from "../data/banners.json";
+
+interface Props {
+  placement: string;
+  class?: string;
+}
+
+const { placement, class: className = "" } = Astro.props;
+type BannerItem = {
+  id: string;
+  slot: string;
+  active: boolean;
+  label: string;
+  title: string;
+  text: string;
+  cta: string;
+  href: string;
+  tone: string;
+};
+const list = (banners as BannerItem[]).filter((b) => b.slot === placement && b.active);
+---
+
+{
+  list.length > 0 && (
+    <aside class:list={["not-prose", className]} aria-label="Реклама">
+      {list.map((b) => (
+        <article
+          class:list={[
+            "relative rounded-2xl border p-5 md:p-6 flex flex-col sm:flex-row sm:items-center gap-4",
+            b.tone === "brand" ? "border-brand-300 bg-brand-50" : "border-slate-200 bg-slate-50",
+          ]}
+        >
+          <span class="absolute top-2 right-3 text-[10px] font-semibold uppercase tracking-wide text-slate-400">
+            {b.label}
+          </span>
+          <div class="flex-1 min-w-0">
+            <h3 class="font-extrabold text-navy-900 text-lg">{b.title}</h3>
+            <p class="mt-1 text-sm text-slate-600 leading-relaxed">{b.text}</p>
+          </div>
+          <a href={b.href} class="btn-secondary shrink-0 self-start sm:self-center" data-banner-id={b.id}>
+            {b.cta} →
+          </a>
+        </article>
+      ))}
+    </aside>
+  )
+}

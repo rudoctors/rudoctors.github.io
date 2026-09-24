@@ -1,6 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import DoctorCard from "../../components/DoctorCard.astro";
+import Banner from "../../components/Banner.astro";
 import { publicDoctors, allSpecializationKeys, allCities, specLabel } from "../../lib/doctors";
 import { computeRating } from "../../lib/rating";
 import { SITE } from "../../lib/site";
@@ -84,6 +85,8 @@ const jsonLd = {
     </form>
 
     <div id="result-meta" class="text-sm text-slate-500 mb-4" role="status" aria-live="polite"></div>
+
+    <Banner placement="catalog-top" class="mb-6" />
 
     <div id="doctor-grid" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
       {
