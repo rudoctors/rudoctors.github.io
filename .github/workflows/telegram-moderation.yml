@@ -2,14 +2,20 @@ name: Telegram moderation
 
 # Модерация заявок «Добавить врача» (@rudoctors_moderation_bot).
 # - issues: мгновенная отправка новой заявки в Telegram
-# - schedule: обработка нажатых кнопок ✅/❌ (long poll невозможен в CI)
-# - workflow_dispatch: ручной запуск
-# ВАЖНО: пока активен этот режим, НЕ запускать `npm run tg:bot` локально —
-# два потребителя getUpdates конфликтуют (409 / разделение апдейтов).
+# - schedule: обработка команд ✅/❌ (GitHub задерживает cron — от минут до часов)
+# - push: попутная обработка команд при любом пуше (кроме карточек от самого бота)
+# - workflow_dispatch: ручной запуск «проверить сейчас»
+# Кнопки в Telegram — URL с предзаполненной командой: callback-нажатия Telegram
+# ТЕРЯЕТ, если бот не слушает в момент нажатия (проверено E2E).
+# Локальный `npm run tg:bot` можно запускать параллельно для мгновенной обработки:
+# getUpdates разделяется, обработчики идемпотентны (409 в логе Actions — норма).
 
 on:
   issues:
     types: [opened, labeled, reopened]
+  push:
+    paths-ignore:
+      - "src/data/doctors/**"
   schedule:
     - cron: "*/5 * * * *"
   workflow_dispatch:
