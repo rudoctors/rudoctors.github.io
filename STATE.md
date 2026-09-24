@@ -21,7 +21,7 @@ Live: `https://rudoctors.github.io`
 | # | Фаза | Статус | Что сделано |
 |---|------|--------|-------------|
 | 0 | Docs | **done** | PLAN, AUDIT, SOURCES, DECISIONS, OPS, README |
-| 1 | CRITICAL fixes | **done** | seed merge-in-place; rating 0 (без фейковых 5); XSS JSON-LD; safeUrl allowlist; PAT sessionStorage+TTL 8h; дубликаты (59 карт); fail-fast JSON; slugify CYR |
+| 1 | CRITICAL fixes | **done** | seed merge-in-place; rating 0 (без фейковых 5); XSS JSON-LD; safeUrl allowlist; PAT sessionStorage+TTL 8h → спринт F memory-only; дубликаты (59 карт); fail-fast JSON; slugify CYR |
 | 2 | Данные | **done** | fetch-sheet/citilab/tg → ~140 карт; merge; detect:dups 0 |
 | 3 | Отзывы + перевод | **done** | 50 alfa EN; **44 переведены суб-агентом (ИИ)** + 6 already-RU; без API-ключа; UI «оригинал» |
 | 4 | Continuous update | **done** | cron Mon/Thu 05:00 UTC; merge-safe seed; strict schema; commit-if-diff |
@@ -47,10 +47,12 @@ Live: `https://rudoctors.github.io`
 | **`bdf5931`** | Rename home section Высший рейтинг → Врачи Сербии |
 | **`553f0bd`** | Search matches RU specialization labels + specializationText |
 | **`3050da7`** | **Спринты A→E** (69 файлов): schema/urls, a11y+formGuard, thin content, D2 pagination, llms/404/OPS — **CI success** `36020752013` |
+| **`64dc5bd`** | STATE.md после A→E — CI success `36021269539` |
+| **Sprint F (uncommitted→then)** | PAT memory-only, Issues disclosure, license schema, ToS, meta CSP, breadcrumbs list, LCP priority, CTA banners, robots BOM |
 
 ---
 
-## Текущее состояние (спринты A→E, 24.09.2026)
+## Текущее состояние (спринты A→F, 24.09.2026)
 
 ### Верификация
 - `npm run check` — 0 errors / 0 warnings / 1 pre-existing hint (`chunkId` в `preprocess-tg-export.mjs`).
@@ -67,8 +69,19 @@ Live: `https://rudoctors.github.io`
 - PAT — **done** (пользователь).
 - Analytics keys — **проверено 24.09.2026: `gh secret list` пуст** — GH Secrets **не созданы**; скриптов аналитики в проде нет. Создать `PUBLIC_PLAUSIBLE_DOMAIN` / `PUBLIC_UMAMI_WEBSITE_ID` после выбора провайдера.
 
+### Спринт F (новый аудит rudoctors 24.09.2026)
+- Источники: `D:\Projects\rudoctors\AUDIT-REPORT-rudoctors-2026-09-24.md` (+ seomator/ai-native/standards).
+- **P0:** PAT memory-only + безусловная очистка legacy storage + analytics отключены на `/admin/`; точный disclosure публичных GitHub Issues + consent/privacy; `LicenseInfo`+`verificationStatus` types + profile UI; meta CSP/referrer; ToS `/terms/` (footer).
+- **P1:** skip-link `#main`; nav aria-label; Banner H2; breadcrumbs на doctors/specialties/cities/about; LCP `priority`+`fetchpriority` первые 3 карточки главной/каталога; CTA test banners → «Разместить рекламу»; robots.txt BOM убран; trim-валидация форм; list thin-content; privacy §4 analytics status.
+- **check** 0 err / 0 warn / 1 pre-existing hint; **build 189 pages** (вкл. `/terms/`).
+- **Частично / open:** license/verification schema+UI готовы, но официальных данных **0/140**; AggregateRating сейчас не публикуется (0 числовых оценок), provenance note появится при их появлении.
+- **Платформенный лимит:** XFO/XCTO/CSP `frame-ancestors` не работают через meta; нужны response headers на CDN/другом хостинге.
+- **Не делано (осознанно):** underscore-слаги (нет 301 на GH Pages); серверный auth `/admin/`; DHD-аудит — другой сайт `thewayofdhd.github.io`.
+
 ### Данные
 - **140** карточек врачей (`src/data/doctors/*.json`).
+- **50** текстовых отзывов; числовых оценок **0**, поэтому `AggregateRating` сейчас не публикуется.
+- License/verification data: **0/140**; UI поддерживает поля, но официальные значения не выдумывались.
 - **53** фото WebP (`public/photos/`); **0 JPG**; аватарка Курамшиной — исходный `rd-59.webp` (180°-копия удалена).
 - Поле `featured` в schema сохранено (seed OR-merge), но **без UI-бейджей** и без секции на главной.
 - Специальности / города: slugified; города belgrade, nis, novi-sad, subotica.
@@ -111,6 +124,11 @@ Live: `https://rudoctors.github.io`
 | Первый banner request | до 15.12.2026 | сигнал монетизации (баннеры / продажа сайта) |
 | Домен (.rs / .com) | опционально | нужен для Яндекс.Вебмастера |
 | Каталоги Сербии (спринт 4) | **пользователь** | см. `docs/seo-catalogs.md` — нужна почта |
+| underscore-слаги (5 спец.) | backlog | не ренеймить без редиректов (GH Pages) |
+| License/verification YMYL | backlog | schema/UI готовы; нужны официальные данные, сейчас 0/140 |
+| ToS legal requisites | до платного контракта | добавить данные владельца/контакт для договора с рекламодателем |
+| DHD audit `thewayofdhd.github.io` | отдельный трекер | `D:\Projects\DHD-Project\...` — не rudoctors |
+| E2E admin hide-flow | пользователь | PAT memory-only после спринта F |
 
 ---
 

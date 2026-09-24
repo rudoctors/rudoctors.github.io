@@ -12,11 +12,22 @@ const cities = allCities().map((c) => ({
 <Layout
   title="Города"
   description="Русскоязычные врачи по городам Сербии: Белград, Нови-Сад, Ниш, Суботица. Рейтинги, отзывы и контакты для записи."
+  breadcrumbs={[
+    { name: "Главная", path: "/" },
+    { name: "Города", path: "/cities/" },
+  ]}
 >
   <div class="mx-auto max-w-6xl px-4 py-10">
     <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900">Города</h1>
     <p class="mt-2 text-slate-600">
       Где принимают врачи из каталога. Откройте город, чтобы сравнить специальности, рейтинги и отзывы — или начните с главного хаба в Белграде.
+    </p>
+    <p class="mt-2 text-slate-600">
+      В каждом городе собраны карточки с местами приёма, языками и форматом (очно/онлайн). Белград, Нови-Сад, Ниш и Суботица
+      покрывают основные регионы; для точного района откройте профиль. Нужен врач в городе, которого нет в списке —
+      <a href="/contacts/" class="text-brand-700 hover:underline">напишите нам</a> или
+      <a href="/add-doctor/" class="text-brand-700 hover:underline">добавьте врача</a>.
+      Страницы городов обновляются вместе с каталогом.
     </p>
 
     <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

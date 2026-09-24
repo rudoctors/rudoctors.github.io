@@ -13,6 +13,12 @@ import { SITE } from "../lib/site";
     <p class="mt-2 text-slate-600">
       Карточку можно предложить бесплатно. После проверки данных врач появится в каталоге.
     </p>
+    <p class="mt-3 rounded-xl border border-amber-200 bg-amber-50 p-3 text-sm text-amber-900">
+      <strong>Важно:</strong> откроется предзаполненная <strong>публичная форма GitHub</strong>. Только после
+      отдельного подтверждения на GitHub предложение станет Issue, доступной всем. Указанный контакт
+      (телефон, Telegram, email) и описание будут публичными. Добавляйте только данные, которые можно
+      публиковать. Подробнее — <a href="/privacy/" class="underline">политика конфиденциальности</a>.
+    </p>
 
     <form id="add-form" class="card p-6 mt-8 space-y-4">
       <div class="grid sm:grid-cols-2 gap-4">
@@ -60,7 +66,8 @@ import { SITE } from "../lib/site";
 
       <label class="flex items-start gap-2 text-sm text-slate-600">
         <input type="checkbox" name="consent" required class="mt-1 rounded border-slate-300 text-brand-600 focus:ring-brand-500" />
-        Данные публичные, я имею право их передать.
+        Понимаю, что после подтверждения данные станут публичной GitHub Issue; я имею право их передать;
+        согласен с <a href="/privacy/" class="text-brand-700 underline">политикой конфиденциальности</a>.
       </label>
 
       <button type="submit" class="btn-primary w-full">Предложить карточку</button>
@@ -87,7 +94,7 @@ import { SITE } from "../lib/site";
 
     if (isHoneypotFilled(form)) {
       if (status) {
-        status.classList.remove("hidden");
+        status.className = "text-sm mt-2 text-slate-500";
         status.textContent = "Форма отправлена.";
       }
       return;
@@ -96,24 +103,42 @@ import { SITE } from "../lib/site";
     const wait = cooldownRemainingMs(KEY, 90_000);
     if (wait > 0) {
       if (status) {
-        status.classList.remove("hidden");
+        status.className = "text-sm mt-2 text-slate-500";
         status.textContent = formatCooldown(wait);
       }
       return;
     }
 
     const fd = new FormData(form);
-    const title = `Новый врач: ${fd.get("name")} (${fd.get("spec")})`;
+    const name = String(fd.get("name") || "").trim();
+    const spec = String(fd.get("spec") || "").trim();
+    const city = String(fd.get("city") || "").trim();
+    const exp = String(fd.get("exp") || "").trim();
+    const clinic = String(fd.get("clinic") || "").trim();
+    const contact = String(fd.get("contact") || "").trim();
+    const about = String(fd.get("about") || "").trim();
+
+    if (!name || !spec || !city || !contact) {
+      if (status) {
+        status.className = "text-sm mt-2 text-red-600";
+        status.textContent = "Заполните обязательные поля без пустых пробелов.";
+      }
+      const missingField = !name ? "name" : !spec ? "spec" : !city ? "city" : "contact";
+      document.getElementById(missingField)?.focus();
+      return;
+    }
+
+    const title = `Новый врач: ${name} (${spec})`;
     const body = [
-      `**Имя:** ${fd.get("name")}`,
-      `**Специальность:** ${fd.get("spec")}`,
-      `**Город:** ${fd.get("city")}`,
-      `**Стаж:** ${fd.get("exp") || "—"}`,
-      `**Клиника:** ${fd.get("clinic") || "—"}`,
-      `**Контакт:** ${fd.get("contact")}`,
+      `**Имя:** ${name}`,
+      `**Специальность:** ${spec}`,
+      `**Город:** ${city}`,
+      `**Стаж:** ${exp || "—"}`,
+      `**Клиника:** ${clinic || "—"}`,
+      `**Контакт:** ${contact}`,
       "",
       `**О себе:**`,
-      String(fd.get("about") || "—"),
+      about || "—",
       "",
       "---",
       "_Создано через форму rudoctors.github.io_",
@@ -122,7 +147,7 @@ import { SITE } from "../lib/site";
     const url = `https://github.com/rudoctors/rudoctors.github.io/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=doctor-request`;
     markSubmitted(KEY);
     if (status) {
-      status.classList.remove("hidden");
+      status.className = "text-sm mt-2 text-slate-500";
       status.textContent = "Открываем форму GitHub…";
     }
     window.open(url, "_blank", "noopener,noreferrer");

@@ -78,9 +78,13 @@
 - [x] Sprint C: city-intros (Niš + расширение), specialty-intros (allergist, убран мёртвый lor), about/contacts/cities/specialties/faq расширены
 - [x] Sprint D: doctors pagination D2 (пустые фильтры → 24/page, активный → полный список), убран data-bio, unique title page N
 - [x] Sprint E: llms.txt markdown + Niš, 404 поиск+города, OPS security headers + контент-модель, analytics GH Secrets **пусты** (отметить)
+- [x] Sprint F (новый аудит 24.09.2026): PAT memory-only + legacy cleanup + no analytics на `/admin/`; точный disclosure публичных GitHub Issues; license/verification schema+UI; meta CSP/referrer; skip-link, nav aria, ToS, breadcrumbs list, LCP priority, banners CTA, robots BOM, thin content list, privacy Issues+analytics, trim-валидация форм
+- [ ] P0 follow-up: внести официальные license/verification данные (сейчас 0/140) и реквизиты владельца в ToS перед платным контрактом
 - [ ] E2E admin hide-flow — PAT создаст пользователь (PAT done)
 - [ ] Первый banner/placement request до 15.12.2026
 - [ ] Analytics: создать GH Secrets `PUBLIC_PLAUSIBLE_DOMAIN` / `PUBLIC_UMAMI_WEBSITE_ID` (проверка: `gh secret list` пуст)
+- [ ] Open: underscore-слаги specialties (5 шт.) — не ренеймить без редиректов (GH Pages)
+- [ ] Open: DHD-аудит `thewayofdhd.github.io` — другой сайт, отдельный трекер (не rudoctors)
 
 ## Monetization gate (пройден → proceed)
 1. Каталог 120–150 + отзывы → баннеры/ads → платящие размещения (или продажа сайта).

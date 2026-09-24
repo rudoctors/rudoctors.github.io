@@ -138,8 +138,8 @@ const jsonLd = [
     {
       top.length > 0 ? (
         <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {top.map((d) => (
-            <DoctorCard doctor={d} />
+          {top.map((d, index) => (
+            <DoctorCard doctor={d} priority={index < 3} />
           ))}
         </div>
       ) : (
@@ -157,7 +157,7 @@ const jsonLd = [
       <h2 class="text-xl md:text-2xl font-extrabold text-navy-900">Новые и обновлённые карточки</h2>
     </div>
     <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-      {fresh.map((d) => <DoctorCard doctor={d} />)}
+      {fresh.map((d, index) => <DoctorCard doctor={d} priority={index < 3} />)}
     </div>
   </section>
 

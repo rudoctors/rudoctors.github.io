@@ -27,6 +27,10 @@ const jsonLd = {
   title="Каталог врачей"
   description="Все русскоязычные врачи Сербии с рейтингом, отзывами и фильтрами по специальности, городу и языку."
   jsonLd={jsonLd}
+  breadcrumbs={[
+    { name: "Главная", path: "/" },
+    { name: "Врачи", path: "/doctors/" },
+  ]}
 >
   <div class="mx-auto max-w-6xl px-4 py-10">
     <div class="mb-8">
@@ -90,7 +94,7 @@ const jsonLd = {
 
     <div id="doctor-grid" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
       {
-        doctors.map(({ doctor }) => {
+        doctors.map(({ doctor }, index) => {
           const specLabels = doctor.specializations.map(specLabel).join(" ");
           const hay = [
             doctor.name,
@@ -117,7 +121,7 @@ const jsonLd = {
               data-exp={doctor.experienceYears || 0}
               data-langs={doctor.languages.join(",")}
             >
-              <DoctorCard doctor={doctor} />
+              <DoctorCard doctor={doctor} priority={index < 3} />
             </div>
           );
         })

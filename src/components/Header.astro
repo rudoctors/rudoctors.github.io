@@ -17,11 +17,12 @@ const path = Astro.url.pathname;
       <span>Rudoctors</span>
     </a>
 
-    <nav class="hidden md:flex items-center gap-1">
+    <nav class="hidden md:flex items-center gap-1" aria-label="Основная навигация">
       {
         nav.map((item) => (
           <a
             href={item.href}
+            aria-current={path.startsWith(item.href) ? "page" : undefined}
             class:list={[
               "px-3 py-2 rounded-lg text-sm font-medium",
               path.startsWith(item.href)
@@ -29,7 +30,7 @@ const path = Astro.url.pathname;
                 : "text-slate-600 hover:text-slate-900 hover:bg-slate-100",
             ]}
           >
-            {item.href === "/about/" ? item.label : item.label}
+            {item.label}
           </a>
         ))
       }
@@ -60,7 +61,7 @@ const path = Astro.url.pathname;
   </div>
 
   <div id="mobile-menu" class="md:hidden hidden border-t border-slate-200 bg-white">
-    <div class="px-4 py-3 flex flex-col gap-1">
+    <nav class="px-4 py-3 flex flex-col gap-1" aria-label="Мобильная навигация">
       {
         nav.map((item) => (
           <a href={item.href} class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50">
@@ -69,7 +70,7 @@ const path = Astro.url.pathname;
         ))
       }
       <a href="/doctors/" class="btn-primary mt-1">Найти врача</a>
-    </div>
+    </nav>
   </div>
 </header>
 

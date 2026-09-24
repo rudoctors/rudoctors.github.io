@@ -29,29 +29,31 @@ astro dev --background   # dev (см. AGENTS.md)
 
 ## Админка
 
-- `/admin` + GitHub Contents API; PAT (fine-grained, contents RW) — в браузере.
-- Phase 1: sessionStorage + TTL + logout (не localStorage).
-- PAT создаёт пользователь перед Phase 6 (E2E hide-flow).
+- `/admin` + GitHub Contents API; PAT (fine-grained, contents RW).
+- **Sprint F:** PAT только в памяти вкладки; legacy session/localStorage-ключи очищаются при загрузке, analytics на `/admin/` не загружаются; reload → заново. UI warning + label. `/admin/` noindex+robots, нет серверной auth (GH Pages limit) — см. `/terms/`.
+- E2E hide-flow: PAT у пользователя.
 
 ## Секреты / GitHub Actions
 
 - Перевод EN→RU: основной путь — ИИ-агент (сессия); `TRANSLATE_API_KEY` — запасной no-op без ключа.
 - Analytics (опционально): build-time `PUBLIC_PLAUSIBLE_DOMAIN` и/или `PUBLIC_UMAMI_WEBSITE_ID`.
-  - **Проверка 24.09.2026:** `gh secret list` пуст — секреты **не созданы**; скриптов аналитики в проде нет. Создать GH Secrets после выбора Plausible/Umami.
-- Local: `.env` локально; не коммитить, не печатать, не в память.
+  - **Проверка 24.09.2026:** `gh secret list` пуст — секреты **не созданы**; скриптов аналитики в проде нет. Создать GH Secrets после выбора Plausible/Umami. Privacy: аналитика «не подключена».
+- Local: `.env` локально; не коммитить, не печатать, не память.
 - Photos: `npm run photos:webp` (sharp) → `photo: /photos/*.webp`.
 
 ## Security headers
 
-- GitHub Pages **не поддерживает** custom response headers (CSP, HSTS, X-Frame-Options и т.п.).
-- При переезоде на свой домен: Cloudflare (или Netlify/Vercel) — добавить headers в дашборде/`_headers`.
-- Сейчас: rely on GitHub Pages defaults; forms — honeypot + cooldown (без captcha); PAT — sessionStorage + TTL.
+- GitHub Pages **не поддерживает** custom **response** headers (HSTS, real CSP, X-Frame-Options, X-Content-Type-Options, …).
+- **Sprint F (meta, partial):** поддерживаемый `Content-Security-Policy` meta (script/style/img/connect/base/form-action) + `referrer=strict-origin-when-cross-origin`.
+- `X-Frame-Options`, `X-Content-Type-Options` и CSP `frame-ancestors` **не работают через meta**; не считать clickjacking/MIME-sniffing закрытыми.
+- При переезоде на свой домен: Cloudflare (или Netlify/Vercel) — **response** headers в дашборде/`_headers`.
+- Forms: honeypot + cooldown + **явное disclosure** public GitHub Issues; PAT — memory-only.
 
 ## Контент-менеджмента (модель)
 
 - **Источник истины:** JSON в `src/data/doctors/*.json` (GitHub CMS).
 - **Добавление/правки:** PR в репозиторий → CI check+build → merge → auto-deploy Pages.
-- **Формы сайта** (`/add-doctor/`, `/leave-review/`): honeypot + cooldown 90с → открывают GitHub Issues (`doctor-request` / `review`) → модератор ревьюит → commit JSON.
+- **Формы сайта** (`/add-doctor/`, `/leave-review/`): honeypot + cooldown 90с → открывают предзаполненную публичную форму GitHub; Issue (`doctor-request` / `review`) создаётся после подтверждения пользователем → модератор → commit JSON.
 - **Модерация отзывов:** label `review` в Issues = очередь; approve → правка JSON в PR.
 - **Cron refresh:** Mon/Thu 05:00 UTC seed merge (не затирает hidden/ручные правки).
 - Рекомендуемые labels: `doctor-request`, `review`, `banner`, `bug`.

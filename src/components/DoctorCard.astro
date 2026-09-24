@@ -6,8 +6,9 @@ import Stars from "./Stars.astro";
 
 interface Props {
   doctor: Doctor;
+  priority?: boolean;
 }
-const { doctor } = Astro.props;
+const { doctor, priority = false } = Astro.props;
 const rating = computeRating(doctor);
 const initials = doctor.name
   .split(/\s+/)
@@ -28,7 +29,8 @@ const photo = doctor.photo;
             alt={doctor.name}
             width={72}
             height={72}
-            loading="lazy"
+            loading={priority ? "eager" : "lazy"}
+            fetchpriority={priority ? "high" : "auto"}
             class="h-16 w-16 rounded-2xl object-cover bg-slate-100"
           />
         ) : (

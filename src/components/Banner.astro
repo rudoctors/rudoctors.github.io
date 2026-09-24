@@ -24,6 +24,7 @@ const list = (banners as BannerItem[]).filter((b) => b.slot === placement && b.a
 {
   list.length > 0 && (
     <aside class:list={["not-prose", className]} aria-label="Реклама">
+      <h2 class="sr-only">Рекламные блоки</h2>
       {list.map((b) => (
         <article
           class:list={[

@@ -266,6 +266,73 @@ const jsonLd: Record<string, unknown>[] = [
             </section>
           )
         }
+
+        {
+          doctor.license && (doctor.license.number || doctor.license.registry) && (
+            <section class="card p-6">
+              <h2 class="text-lg font-extrabold text-navy-900 mb-3">Лицензия и допуск</h2>
+              <dl class="space-y-2 text-sm">
+                {doctor.license.number && (
+                  <div class="flex gap-2">
+                    <dt class="text-slate-500 shrink-0">Номер:</dt>
+                    <dd class="font-medium text-slate-800">{doctor.license.number}</dd>
+                  </div>
+                )}
+                {doctor.license.country && (
+                  <div class="flex gap-2">
+                    <dt class="text-slate-500 shrink-0">Страна:</dt>
+                    <dd class="font-medium text-slate-800">{doctor.license.country}</dd>
+                  </div>
+                )}
+                {doctor.license.registry && (
+                  <div class="flex gap-2">
+                    <dt class="text-slate-500 shrink-0">Реестр:</dt>
+                    <dd class="font-medium text-slate-800">{doctor.license.registry}</dd>
+                  </div>
+                )}
+                {safeUrl(doctor.license.url) && (
+                  <div>
+                    <a
+                      href={safeUrl(doctor.license.url)!}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-brand-700 hover:underline text-xs font-semibold"
+                    >
+                      Проверить в реестре →
+                    </a>
+                  </div>
+                )}
+              </dl>
+              <p class="mt-3 text-xs text-slate-400">
+                Данные указаны в карточке и не заменяют официальную проверку в реестре лицензий.
+              </p>
+            </section>
+          )
+        }
+
+        {
+          doctor.verificationStatus && (
+            <div class="text-xs text-slate-500 px-3 py-2 rounded-lg bg-slate-100">
+              Источник данных карточки: {doctor.verificationStatus === "verified"
+                ? "проверено редакцией"
+                : doctor.verificationStatus === "clinic"
+                  ? "по данным клиники"
+                  : doctor.verificationStatus === "public-source"
+                    ? "публичные источники"
+                    : "самостоятельное размещение"}.
+            </div>
+          )
+        }
+
+        {
+          rating.count > 0 && rating.average > 0 && (
+            <div class="text-xs text-slate-500 px-3 py-2 rounded-lg bg-slate-100">
+              Рейтинг — агрегированный (AggregateRating): среднее по опубликованным оценкам. Это
+              <strong> не официальная оценка</strong> регулятора. Источник каждого отзыва указан в карточке; агрегат
+              может включать импортированные из открытых каталогов данные.
+            </div>
+          )
+        }
       </div>
 
       <!-- Sidebar -->

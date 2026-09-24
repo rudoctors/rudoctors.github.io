@@ -8,6 +8,7 @@ interface Props {
   title?: string;
   description?: string;
   noindex?: boolean;
+  noAnalytics?: boolean;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
   breadcrumbs?: Array<{ name: string; path: string }>;
 }
@@ -16,6 +17,7 @@ const {
   title,
   description = SITE.description,
   noindex = false,
+  noAnalytics = false,
   jsonLd,
   breadcrumbs,
 } = Astro.props;
@@ -58,10 +60,12 @@ if (breadcrumbs && breadcrumbs.length > 0) {
     <link rel="canonical" href={canonical} />
     <link rel="alternate" hreflang="ru" href={canonical} />
     <link rel="alternate" hreflang="x-default" href={canonical} />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://plausible.io https://cloud.umami.is; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://plausible.io https://cloud.umami.is https://api.github.com; base-uri 'self'; form-action 'self' https://github.com" />
     {noindex && <meta name="robots" content="noindex, nofollow" />}
     {!noindex && <meta name="robots" content="index, follow, max-image-preview:large" />}
     {
-      import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN && (
+      !noAnalytics && import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN && (
         <script
           defer
           data-domain={import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN}
@@ -70,7 +74,7 @@ if (breadcrumbs && breadcrumbs.length > 0) {
       )
     }
     {
-      import.meta.env.PUBLIC_UMAMI_WEBSITE_ID && (
+      !noAnalytics && import.meta.env.PUBLIC_UMAMI_WEBSITE_ID && (
         <script
           defer
           src="https://cloud.umami.is/script.js"
@@ -121,15 +125,19 @@ if (breadcrumbs && breadcrumbs.length > 0) {
       ))
     }
   </head>
-  <body class="min-h-screen flex flex-col bg-slate-50 text-slate-900 antialiased">
+  <body
+    class="min-h-screen flex flex-col bg-slate-50 text-slate-900 antialiased"
+    data-no-analytics={noAnalytics ? "true" : undefined}
+  >
+    <a href="#main" class="skip-link">Перейти к содержимому</a>
     <Header />
-    <main class="flex-1">
+    <main id="main" class="flex-1" tabindex="-1">
       <slot />
     </main>
     <Footer />
   </body>
   <script>
     import { initAnalytics } from "../lib/analytics";
-    initAnalytics();
+    if (document.body.dataset.noAnalytics !== "true") initAnalytics();
   </script>
 </html>

@@ -17,7 +17,15 @@ const doctors = publicDoctors()
   <div class="mx-auto max-w-2xl px-4 py-12">
     <h1 class="text-3xl font-extrabold text-navy-900">Оставить отзыв</h1>
     <p class="mt-2 text-slate-600">
-      Заполните форму — мы создадим заявку в репозитории и опубликуем отзыв после модерации.
+      Заполните форму — мы откроем предзаполненную страницу GitHub. После подтверждения заявка станет
+      публичной Issue, а отзыв будет опубликован после модерации.
+    </p>
+    <p class="mt-3 rounded-xl border border-amber-200 bg-amber-50 p-3 text-sm text-amber-900">
+      <strong>Важно:</strong> откроется предзаполненная публичная форма GitHub. Только после отдельного
+      подтверждения текст отзыва, имя автора и дата станут публичной Issue, доступной всем без исключения.
+      Отзыв может содержать сведения о здоровье — не включайте конфиденциальные сведения и персональные
+      данные третьих лиц. Как обрабатываются данные — в
+      <a href="/privacy/" class="underline">политике конфиденциальности</a>.
     </p>
 
     <form id="review-form" class="card p-6 mt-8 space-y-4">
@@ -67,7 +75,9 @@ const doctors = publicDoctors()
 
       <label class="flex items-start gap-2 text-sm text-slate-600">
         <input type="checkbox" name="consent" required class="mt-1 rounded border-slate-300 text-brand-600 focus:ring-brand-500" />
-        Подтверждаю, что отзыв — мой личный опыт, и согласен с <a href="/about/#reviews-policy" class="text-brand-700 underline">правилами публикации</a>.
+        Понимаю, что после подтверждения данные станут публичной GitHub Issue; отзыв — мой личный опыт;
+        согласен с <a href="/about/#reviews-policy" class="text-brand-700 underline">правилами публикации</a> и
+        <a href="/privacy/" class="text-brand-700 underline">политикой конфиденциальности</a>.
       </label>
 
       <button type="submit" class="btn-primary w-full">Отправить на модерацию</button>
@@ -99,7 +109,7 @@ const doctors = publicDoctors()
 
     if (isHoneypotFilled(form)) {
       if (status) {
-        status.classList.remove("hidden");
+        status.className = "text-sm mt-2 text-slate-500";
         status.textContent = "Форма отправлена.";
       }
       return;
@@ -108,17 +118,30 @@ const doctors = publicDoctors()
     const wait = cooldownRemainingMs(KEY, 90_000);
     if (wait > 0) {
       if (status) {
-        status.classList.remove("hidden");
+        status.className = "text-sm mt-2 text-slate-500";
         status.textContent = formatCooldown(wait);
       }
       return;
     }
 
     const fd = new FormData(form);
-    const doctor = String(fd.get("doctor") || "");
-    const author = String(fd.get("author") || "");
-    const rating = String(fd.get("rating") || "5");
-    const text = String(fd.get("text") || "");
+    const doctor = String(fd.get("doctor") || "").trim();
+    const author = String(fd.get("author") || "").trim();
+    const rating = String(fd.get("rating") || "5").trim();
+    const text = String(fd.get("text") || "").trim();
+
+    if (!doctor || !author || text.length < 30) {
+      if (status) {
+        status.className = "text-sm mt-2 text-red-600";
+        status.textContent = doctor || !author
+          ? "Выберите врача и укажите имя без пустых пробелов."
+          : "Отзыв должен содержать не менее 30 символов.";
+      }
+      if (!doctor) sel?.focus();
+      else if (!author) document.getElementById("author")?.focus();
+      else document.getElementById("text")?.focus();
+      return;
+    }
 
     const title = `Отзыв: ${doctor} (${rating}★)`;
     const body = [
@@ -136,7 +159,7 @@ const doctors = publicDoctors()
     const url = `https://github.com/rudoctors/rudoctors.github.io/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=review`;
     markSubmitted(KEY);
     if (status) {
-      status.classList.remove("hidden");
+      status.className = "text-sm mt-2 text-slate-500";
       status.textContent = "Открываем форму GitHub для отправки отзыва…";
     }
     window.open(url, "_blank", "noopener,noreferrer");

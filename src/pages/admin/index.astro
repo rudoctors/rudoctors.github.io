@@ -2,7 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 ---
 
-<Layout title="Админ" description="Панель управления каталогом" noindex>
+<Layout title="Админ" description="Панель управления каталогом" noindex noAnalytics>
   <div class="mx-auto max-w-5xl px-4 py-10">
     <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
       <div>
@@ -19,14 +19,21 @@ import Layout from "../../layouts/Layout.astro";
       <h2 class="font-bold mb-3">Вход (GitHub Personal Access Token)</h2>
       <p class="text-sm text-slate-500 mb-3">
         Создайте fine-grained PAT с доступом <strong>Contents: Read and write</strong> к репозиторию
-        <strong> rudoctors/rudoctors.github.io</strong>. Токен хранится только в sessionStorage браузера (TTL ~8 часов).
+        <strong> rudoctors/rudoctors.github.io</strong>. Токен хранится только в памяти вкладки (не в
+        sessionStorage/localStorage) и очищается при перезагрузке — введите его заново. /admin/ недоступен
+        поисковикам (noindex + robots), но на GitHub Pages нет серверной авторизации: закрывайте вкладку
+        после работы и не используйте общий компьютер.
       </p>
       <div class="flex flex-col sm:flex-row gap-2">
-        <input id="pat" type="password" class="input flex-1" placeholder="github_pat_…" autocomplete="off" />
+        <input id="pat" type="password" class="input flex-1" placeholder="github_pat_…" autocomplete="off" aria-label="GitHub Personal Access Token" />
         <button id="login" type="button" class="btn-primary">Подключить</button>
         <button id="logout" type="button" class="btn-secondary hidden">Выйти</button>
       </div>
       <p id="auth-msg" class="text-sm mt-2 text-slate-500"></p>
+      <p class="text-xs text-slate-400 mt-2">
+        Без серверной авторизации: страница статическая. Не вводите PAT на публичном/общем устройстве.
+        Подробнее: <a href="/terms/" class="text-brand-700 underline">условия использования</a>.
+      </p>
     </section>
 
     <!-- Toolbar -->
@@ -53,9 +60,6 @@ import Layout from "../../layouts/Layout.astro";
 <script>
   const REPO = "rudoctors/rudoctors.github.io";
   const API = "https://api.github.com";
-  const SS_KEY = "rudoctors_admin_pat";
-  const SS_EXP_KEY = "rudoctors_admin_pat_exp";
-  const PAT_TTL_MS = 8 * 60 * 60 * 1000; // 8h
   const DIR = "src/data/doctors";
 
   const $ = (id: string) => document.getElementById(id)!;
@@ -83,30 +87,18 @@ import Layout from "../../layouts/Layout.astro";
     return out.replace(/-+/g, "-").replace(/^-|-$/g, "");
   }
 
-  function loadPat(): string {
-    const exp = Number(sessionStorage.getItem(SS_EXP_KEY) || 0);
-    const tok = sessionStorage.getItem(SS_KEY) || "";
-    if (!tok || !exp || Date.now() > exp) {
-      sessionStorage.removeItem(SS_KEY);
-      sessionStorage.removeItem(SS_EXP_KEY);
-      return "";
-    }
-    return tok;
-  }
-
-  function savePat(tok: string) {
-    sessionStorage.setItem(SS_KEY, tok);
-    sessionStorage.setItem(SS_EXP_KEY, String(Date.now() + PAT_TTL_MS));
-  }
+  let token = "";
+  let branch = "main";
 
   function clearPat() {
-    sessionStorage.removeItem(SS_KEY);
-    sessionStorage.removeItem(SS_EXP_KEY);
-    localStorage.removeItem("rudoctors_admin_pat");
+    token = "";
+    try {
+      sessionStorage.removeItem("rudoctors_admin_pat");
+      sessionStorage.removeItem("rudoctors_admin_pat_exp");
+      localStorage.removeItem("rudoctors_admin_pat");
+      localStorage.removeItem("rudoctors_admin_pat_exp");
+    } catch {}
   }
-
-  let token = loadPat();
-  let branch = "main";
 
   function b64Encode(str: string): string {
     const bytes = new TextEncoder().encode(str);
@@ -341,13 +333,13 @@ import Layout from "../../layouts/Layout.astro";
     token = patInput.value.trim();
     authMsg.textContent = "Проверка токена…";
     if (await verifyToken()) {
-      savePat(token);
-      authMsg.textContent = "OK (сессия ~8ч)";
+      patInput.value = "";
+      authMsg.textContent = "OK (только в памяти вкладки — до перезагрузки)";
       setAuthUI();
       await renderList();
     } else {
-      token = "";
       clearPat();
+      patInput.value = "";
       authMsg.textContent = "Токен не подошёл (нужен Contents: read/write)";
       setAuthUI();
     }
@@ -366,6 +358,6 @@ import Layout from "../../layouts/Layout.astro";
   $("create").addEventListener("click", () => void createDoctor());
   ($("filter") as HTMLInputElement).addEventListener("input", () => void renderList());
 
+  clearPat();
   setAuthUI();
-  if (token) void renderList();
 </script>

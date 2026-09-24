@@ -27,6 +27,13 @@ export interface Review {
   criteria?: Partial<Record<"effectiveness" | "communication" | "wait" | "price" | "overall", number>>;
 }
 
+export interface LicenseInfo {
+  number?: string;
+  country?: string;
+  registry?: string;
+  url?: string;
+}
+
 export interface Doctor {
   slug: string;
   name: string;
@@ -51,6 +58,8 @@ export interface Doctor {
     mapsUrl?: string;
   };
   reviews: Review[];
+  license?: LicenseInfo;
+  verificationStatus?: "self" | "clinic" | "public-source" | "verified";
   hidden: boolean;
   featured: boolean;
   sources: string[];
