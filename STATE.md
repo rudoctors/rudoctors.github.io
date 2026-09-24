@@ -46,6 +46,7 @@ Live: `https://rudoctors.github.io`
 | **`47ab5ac`** | Test banners (insurance/clinic); avatar Курамшина → original `rd-59.webp`; удалён `rd-59-r.webp` |
 | **`bdf5931`** | Rename home section Высший рейтинг → Врачи Сербии |
 | **`553f0bd`** | Search matches RU specialization labels + specializationText |
+| **`3050da7`** | **Спринты A→E** (69 файлов): schema/urls, a11y+formGuard, thin content, D2 pagination, llms/404/OPS — **CI success** `36020752013` |
 
 ---
 
@@ -55,9 +56,9 @@ Live: `https://rudoctors.github.io`
 - `npm run check` — 0 errors / 0 warnings / 1 pre-existing hint (`chunkId` в `preprocess-tg-export.mjs`).
 - `npm run build` — **188 pages**, sitemap-index.
 - dist: packages noindex, sitemap без `/packages`, 0 «Рекомендуем» в HTML.
-- Live smoke: `/`, `/cities/novi-sad/`, `/faq/`, `/doctors/...` — 200 (`/packages/` — noindex).
-- CI: build + deploy Pages — **success**.
-- IndexNow CI ping — 202 OK (~184 URLs).
+- Live smoke: `/`, `/doctors/` (+`?page=2` client), `/cities/nis/`, `/llms.txt`, `/404`, forms, doctor profile — **200**; data-bio=0; www.t.me=0; pager present; honeypot present.
+- CI `3050da7` → run `36020752013` — **success** (build 21s + deploy 2m13s); IndexNow ping OK.
+- Sitemap: no `/packages`, no `/admin`, no forms; sub-sitemaps include `/cities/nis`.
 
 ### Verify (пользователь, 24.09.2026)
 - GSC: `google-site-verification` в `Layout.astro` — **done**.
