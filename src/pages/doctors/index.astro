@@ -90,23 +90,38 @@ const jsonLd = {
 
     <div id="doctor-grid" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
       {
-        doctors.map(({ doctor }) => (
-          <div
-            class="doctor-item"
-            data-slug={doctor.slug}
-            data-name={doctor.name.toLowerCase()}
-            data-bio={(doctor.bio || "").toLowerCase()}
-            data-specs={doctor.specializations.join(",")}
-            data-city={doctor.city}
-            data-formats={doctor.formats.join(",")}
-            data-reviews={doctor.reviews?.length || 0}
-            data-rating={computeRating(doctor).average}
-            data-exp={doctor.experienceYears || 0}
-            data-langs={doctor.languages.join(",")}
-          >
-            <DoctorCard doctor={doctor} />
-          </div>
-        ))
+        doctors.map(({ doctor }) => {
+          const searchHay = [
+            doctor.name,
+            doctor.nameEn || "",
+            doctor.bio || "",
+            doctor.specializationText || "",
+            doctor.city,
+            doctor.district || "",
+            doctor.specializations.join(" "),
+            doctor.specializations.map(specLabel).join(" "),
+          ]
+            .join(" ")
+            .toLowerCase();
+          return (
+            <div
+              class="doctor-item"
+              data-slug={doctor.slug}
+              data-name={doctor.name.toLowerCase()}
+              data-bio={(doctor.bio || "").toLowerCase()}
+              data-specs={doctor.specializations.join(",")}
+              data-search={searchHay}
+              data-city={doctor.city}
+              data-formats={doctor.formats.join(",")}
+              data-reviews={doctor.reviews?.length || 0}
+              data-rating={computeRating(doctor).average}
+              data-exp={doctor.experienceYears || 0}
+              data-langs={doctor.languages.join(",")}
+            >
+              <DoctorCard doctor={doctor} />
+            </div>
+          );
+        })
       }
     </div>
 
@@ -150,7 +165,7 @@ const jsonLd = {
       const d = item.dataset;
       let ok = true;
       if (q) {
-        const hay = `${d.name} ${d.bio} ${d.specs}`.toLowerCase();
+        const hay = d.search || `${d.name} ${d.bio} ${d.specs}`.toLowerCase();
         if (!hay.includes(q)) ok = false;
       }
       if (spec && !(d.specs || "").split(",").includes(spec)) ok = false;
