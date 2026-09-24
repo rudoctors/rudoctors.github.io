@@ -51,6 +51,7 @@ Live: `https://rudoctors.github.io`
 | **`8defc09`** | **Спринт F:** PAT memory-only + legacy cleanup/no analytics, Issues disclosure, license schema/UI, ToS, meta CSP/referrer, breadcrumbs, LCP priority, CTA banners, robots BOM |
 | **`328e6c4`** | **feat(moderation): Telegram-бот модерации заявок (`@rudoctors_moderation_bot`)** — кнопки ✅/❌, публикация JSON, E2E verified; `site/.env` готов |
 | **`70dda92`** | E2E-тестовая карточка удалена (бот опубликовал и снял) |
+| **`e3683d7`** | **Telegram ChatExport:** 279 новых карточек, 220 курированных отзывов, 415 публичных профилей, 477 страниц; CI `36052115202` — **success** |
 
 ---
 
@@ -64,6 +65,8 @@ Live: `https://rudoctors.github.io`
 - CI `3050da7` → run `36020752013` — **success** (build 21s + deploy 2m13s); IndexNow ping OK.
 - CI `8defc09` → run **`36027316904`** — **success** (build 25s + deploy 11s).
 - Sprint F live smoke: `/terms/`, CSP/referrer, skip-link, 3× eager/high, breadcrumbs, CTA banners, robots; `/admin/` без analytics и legacy PAT очищает 4/4 storage-ключа; обе формы блокируют whitespace и открывают только предзаполненную GitHub-форму с корректным label.
+- CI `e3683d7` → run **`36052115202`** — **success** (build 22s + deploy 10s).
+- Live import smoke: каталог содержит **415** карточек; `/doctors/akopyan-dzhon/` открыт; `/doctors/prahov-aleksey/` редиректит на `/doctors/aleksej-pravov/`; sitemap содержит новый URL и не содержит архивный slug.
 - Sitemap: no `/packages`, no `/admin`, no forms; sub-sitemaps include `/cities/nis`.
 
 ### Verify (пользователь, 24.09.2026)
