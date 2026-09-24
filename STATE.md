@@ -39,11 +39,11 @@ Live: `https://rudoctors.github.io`
 | `44fcbc6` | IndexNow 32-hex key `74fc615772e99cbc3659e76f7f6bb7c0` + USER-ACTIONS |
 | `b480b7a` | `docs/TIKTOK.md` (batch 5 сценариев) |
 | **`d4c5b91`** | **Удалены 53 JPG (~40MB), self-host Manrope woff2 (6 subset)** — CI success |
-| *(next)* | UI без «Рекомендуем»; `/packages/` noindex; fix avatar Курамшина; CTA → баннеры |
+| **`5768c16`** | UI без «Рекомендуем»; `/packages/` noindex; fix avatar Курамшина; CTA → баннеры |
 
 ---
 
-## Текущее состояние (после UI/monetization-правок 24.09.2026)
+## Текущее состояние (после `5768c16`)
 
 ### Верификация
 - `npm run check` — 0 errors / 0 warnings.
@@ -104,7 +104,7 @@ Live: `https://rudoctors.github.io`
 3. Выполнять стадии по порядку.
 4. Удалить JPG; self-host Manrope — **сделано** (`d4c5b91`).
 5. PAT / ключи / GSC-Bing — пользователь сам, позже.
-6. Убрать «Рекомендуем»/«Рекомендуемые»; fix аватарка Курамшина; скрыть `/packages/` — **в работе/сделано**.
+6. Убрать «Рекомендуем»/«Рекомендуемые»; fix аватарка Курамшина; скрыть `/packages/` — **сделано** (`5768c16`).
 7. Цель: **баннерная реклама или продажа сайта** (не featured-пакеты).
 
 ---
