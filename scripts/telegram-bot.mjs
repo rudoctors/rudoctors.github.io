@@ -331,13 +331,13 @@ class Telegram {
     return this.req("getMe");
   }
 
-  sendMessage(chatId, html, replyMarkup) {
+  sendMessage(chatId, html, extra = {}) {
     return this.req("sendMessage", {
       chat_id: chatId,
       text: html,
       parse_mode: "HTML",
       link_preview_options: { is_disabled: true },
-      ...(replyMarkup ? { reply_markup: replyMarkup } : {}),
+      ...extra,
     });
   }
 
@@ -393,18 +393,22 @@ function requestMessage(issue, fields) {
     .join("\n");
 }
 
-const moderationKeyboard = (n) => ({
+// URL-кнопки вместо callback: нажатие callback-кнопки теряется, если бот не слушает
+// в момент нажатия (Telegram не ставит их в очередь). URL открывает чат с ботом
+// с предзаполненной командой — владелец жмёт «отправить», сообщение Telegram хранит
+// до 24ч и отдаёт при следующем запуске (локально или в CI cron).
+const moderationKeyboard = (n, botUsername) => ({
   inline_keyboard: [
     [
-      { text: "✅ Опубликовать", callback_data: `ok:${n}` },
-      { text: "❌ Отклонить", callback_data: `no:${n}` },
+      { text: "✅ Опубликовать", url: `https://t.me/${botUsername}?text=${encodeURIComponent(`/ok ${n}`)}` },
+      { text: "❌ Отклонить", url: `https://t.me/${botUsername}?text=${encodeURIComponent(`/no ${n}`)}` },
     ],
   ],
 });
 
 // ---------- модерация ----------
 
-async function syncIssues(gh, tg, cfg) {
+async function syncIssues(gh, tg, cfg, botUsername) {
   const issues = await gh.listOpenRequests();
   const pending = (issues || []).filter((i) => !i.pull_request);
   for (const issue of pending) {
@@ -416,7 +420,9 @@ async function syncIssues(gh, tg, cfg) {
       continue;
     }
     try {
-      await tg.sendMessage(cfg.adminChatId, requestMessage(issue, fields), moderationKeyboard(issue.number));
+      await tg.sendMessage(cfg.adminChatId, requestMessage(issue, fields), {
+        reply_markup: moderationKeyboard(issue.number, botUsername),
+      });
       await gh.ensureLabel(LABEL_SENT);
       await gh.addLabel(issue.number, LABEL_SENT);
       log(`issue #${issue.number} → Telegram (заявка: ${fields.name})`);
@@ -607,7 +613,7 @@ async function ciOnce() {
   log(`CI one-shot: @${me.username}, repo ${cfg.repo}`);
   const specialties = readSpecialties();
 
-  await syncIssues(gh, tg, cfg);
+  await syncIssues(gh, tg, cfg, me.username);
 
   const updates = await tg.getUpdates(undefined, AbortSignal.timeout(20_000), 0).catch((e) => {
     log(`getUpdates: ${e.message}`);
@@ -616,7 +622,13 @@ async function ciOnce() {
   let lastId = 0;
   for (const u of updates || []) {
     lastId = Math.max(lastId, u.update_id);
-    if (u.message?.text?.startsWith("/start")) continue;
+    const msg = u.message;
+    if (!msg?.text) continue;
+    // команды модерации: "/ok 3" / "/no 3" (приходят из URL-кнопок или руками)
+    const m = msg.text.match(/^\/?(ok|no|да|нет)\s+#?(\d+)\s*$/i);
+    if (m) {
+      await handleCommand(gh, tg, cfg, m[1], Number(m[2]), msg.message_id, specialties);
+    }
     if (u.callback_query) {
       await handleCallback(gh, tg, cfg, u.callback_query, specialties);
     }
@@ -626,6 +638,30 @@ async function ciOnce() {
     await tg.getUpdates(lastId + 1, AbortSignal.timeout(20_000), 0).catch(() => {});
   }
   log("CI one-shot: готово");
+}
+
+async function handleCommand(gh, tg, cfg, actionRaw, issueNumber, replyToId, specialties) {
+  const action = ["ok", "да"].includes(actionRaw.toLowerCase()) ? "ok" : "no";
+  const chatId = cfg.adminChatId;
+  const reply = (text) =>
+    tg.sendMessage(chatId, text, {
+      reply_parameters: replyToId ? { message_id: replyToId, allow_sending_without_reply: true } : undefined,
+    }).catch((e) => log(`reply: ${e.message}`));
+  try {
+    if (action === "ok") {
+      const result = await publishDoctor(gh, issueNumber, specialties);
+      if (result.why === "already-done") return reply(`⏭ Заявка #${issueNumber} уже обработана.`);
+      if (result.why === "parse") return reply(`⚠️ Не удалось разобрать заявку #${issueNumber} — разберите вручную на GitHub.`);
+      await reply(`✅ <b>Опубликовано:</b> <code>${esc(result.path)}</code>\nДеплой ~2–3 мин → врач появится в каталоге.`);
+    } else {
+      const result = await rejectDoctor(gh, issueNumber);
+      if (result.why === "already-done") return reply(`⏭ Заявка #${issueNumber} уже обработана.`);
+      await reply(`❌ <b>Отклонено</b> · заявка #${issueNumber}`);
+    }
+  } catch (e) {
+    log(`команда ${action} ${issueNumber}: ${e.message}`);
+    await reply(`⚠️ Ошибка: ${esc(e.message.slice(0, 180))}`);
+  }
 }
 
 async function main() {
@@ -668,7 +704,7 @@ async function main() {
     try {
       if (cfg.adminChatId && Date.now() - lastSync >= SYNC_INTERVAL_MS) {
         lastSync = Date.now();
-        await syncIssues(gh, tg, cfg);
+        await syncIssues(gh, tg, cfg, me.username);
       }
       const updates = await tg.getUpdates(offset || undefined, AbortSignal.timeout(35_000));
       for (const u of updates || []) {
