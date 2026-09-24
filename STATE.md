@@ -41,10 +41,11 @@ Live: `https://rudoctors.github.io`
 | **`d4c5b91`** | **Удалены 53 JPG (~40MB), self-host Manrope woff2 (6 subset)** — CI success |
 | **`5768c16`** | UI без «Рекомендуем»; `/packages/` noindex; fix avatar Курамшина; CTA → баннеры |
 | **`335d5f4`** | STATE.md после правок UI/монетизации |
+| **`95c7444`** | STATE.md хронология |
 
 ---
 
-## Текущее состояние (после `335d5f4`)
+## Текущее состояние (после `95c7444`)
 
 ### Верификация
 - `npm run check` — 0 errors / 0 warnings.
