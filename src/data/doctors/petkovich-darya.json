@@ -1,0 +1,31 @@
+{
+  "slug": "petkovich-darya",
+  "name": "Петкович Дарья",
+  "specializations": [
+    "obstetrician_gynecologist"
+  ],
+  "specializationText": "акушер-гинеколог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Акушер-гинеколог; принимает в клинике Vizim в Белграде.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Vizim",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/144500",
+    "https://t.me/vrachivserbii/191555"
+  ],
+  "updatedAt": "2026-09-24"
+}

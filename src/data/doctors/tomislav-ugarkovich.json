@@ -1,0 +1,34 @@
+{
+  "slug": "tomislav-ugarkovich",
+  "name": "Томислав Угаркович",
+  "specializations": [
+    "gynecologist"
+  ],
+  "specializationText": "гинеколог",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гинеколог в Ординации Јасмина в Нови-Саде; есть русскоговорящий переводчик и запись по сербскому номеру.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Ординација Јасмина",
+      "address": "Змај Огњена Вука 20",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 63 737 7618"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/132366",
+    "https://t.me/vrachivserbii/144366"
+  ],
+  "updatedAt": "2026-09-24"
+}

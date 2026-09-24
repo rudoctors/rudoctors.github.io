@@ -1,0 +1,32 @@
+{
+  "slug": "mile-bjelobrk",
+  "name": "Mile Bjelobrk",
+  "specializations": [
+    "traumatologist_orthopedist"
+  ],
+  "specializationText": "хирург-ортопед",
+  "city": "Novi Sad",
+  "languages": [
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Хирург-ортопед в New Hospital в Нови-Саде; специализируется на травмах и переломах, общается по-английски.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "New Hospital",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/146808"
+  ],
+  "updatedAt": "2026-09-24"
+}

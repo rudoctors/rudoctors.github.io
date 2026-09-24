@@ -1,0 +1,35 @@
+{
+  "slug": "elizaveta-eduardovna-roschupkina",
+  "name": "Елизавета Эдуардовна Рощупкина",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог-терапевт",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог-терапевт с постоянной лицензией на работу в Сербии; принимает в клинике OralB в Нови-Саде.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "OralB",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 63 124 5545",
+    "telegram": "https://t.me/Eluzavr"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/124376",
+    "https://t.me/vrachivserbii/146679",
+    "https://t.me/vrachivserbii/186513"
+  ],
+  "updatedAt": "2026-09-24"
+}

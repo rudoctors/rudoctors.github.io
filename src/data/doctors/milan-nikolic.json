@@ -1,0 +1,39 @@
+{
+  "slug": "milan-nikolic",
+  "name": "Milan Nikolić",
+  "specializations": [
+    "neurologist"
+  ],
+  "specializationText": "невролог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Невролог; MediGroup",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-71328",
+      "author": "Polina Lesnikova",
+      "date": "2023-07-17",
+      "text": "Ходила к двум неврологам в Медигруп — Milan Nikolić (немного говорит по русски) и Dragana Matković (только английский). Доктор Милан поверхностный, не могу сказать, что плохой врач.",
+      "source": "Telegram: https://t.me/vrachivserbii/71328",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/71328"
+  ],
+  "updatedAt": "2026-09-24"
+}

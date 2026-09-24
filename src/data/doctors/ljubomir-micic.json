@@ -1,0 +1,40 @@
+{
+  "slug": "ljubomir-micic",
+  "name": "Ljubomir Mičić",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог; WeSmile, Novi Beograd",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "WeSmile",
+      "address": "Novi Beograd",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-90252",
+      "author": "Nikitina",
+      "date": "2024-01-15",
+      "text": "Отзыв о стоматологе Любомир Мичич, клиника WeSmile в Новом Белграде. Результат: за два посещения поставлена коронка, все сделано без анестезии, практически никаких неприятных ощущений во время процедур не было, врач был предельно внимателен и позитивен, очень заботился о моем комфорте, в том числе психологическом. После установки коронки прошел месяц - пока никаких нареканий. Очень рекомендую!",
+      "source": "Telegram: https://t.me/vrachivserbii/90252",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/90252"
+  ],
+  "updatedAt": "2026-09-24"
+}

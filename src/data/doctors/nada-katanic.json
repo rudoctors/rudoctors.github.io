@@ -1,0 +1,35 @@
+{
+  "slug": "nada-katanic",
+  "name": "Nada Katanić",
+  "specializations": [
+    "gynecologist"
+  ],
+  "specializationText": "гинеколог",
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en",
+    "es"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гинеколог в MediGroup Jedro в Белграде; принимает по адресу Юрий Гагарина, 14, говорит на сербском, английском и испанском.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup Jedro",
+      "address": "Юрий Гагарина, 14",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/146471"
+  ],
+  "updatedAt": "2026-09-24"
+}

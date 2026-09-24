@@ -1,0 +1,40 @@
+{
+  "slug": "miodrag-ilic",
+  "name": "Miodrag Ilić",
+  "specializations": [
+    "vascular_surgeon"
+  ],
+  "specializationText": "сосудистый хирург",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Сосудистый хирург; Prva Poliklinika, Krunska 38",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Prva Poliklinika",
+      "address": "Krunska 38",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-76975",
+      "author": "Tanya",
+      "date": "2023-09-07",
+      "text": "Была у сосудистого хирурга в Prva poliklinika. Принимал доктор Miodrag Ilić. Доктор отличный! Осмотрел, сделал УЗИ, дал рекомендации. Говорит по-английски, хотя терминология для меня порой по-сербски была понятнее, поэтому общение было смешанным. Рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/76975",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/76975"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "aleksandra-pikula",
+  "name": "Aleksandra Pikula",
+  "specializations": [
+    "gynecologist"
+  ],
+  "specializationText": "гинеколог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гинеколог; MediGroup, Gospodar Jovanova 51",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "address": "Gospodar Jovanova 51",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/117289"
+  ],
+  "updatedAt": "2026-09-24"
+}

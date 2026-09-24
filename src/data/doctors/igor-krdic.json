@@ -1,0 +1,40 @@
+{
+  "slug": "igor-krdic",
+  "name": "Igor Krđić",
+  "specializations": [
+    "surgeon",
+    "proctologist"
+  ],
+  "specializationText": "хирург, проктолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Хирург, Проктолог; Prva Poliklinika",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Prva Poliklinika",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-87423",
+      "author": "Polina Lesnikova",
+      "date": "2023-12-12",
+      "text": "Хирург — доктор Игор Крджич. С первого приёма почувствовала, что попала в надёжные руки. Очень быстро назначили операцию, анализы сдала в тот же день. Общалась на английском. Операция прошла успешно, до вечера оставалась в клинике для наблюдения. Потом звонили несколько раз, спрашивали о состоянии.",
+      "source": "Telegram: https://t.me/vrachivserbii/87423",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/87423"
+  ],
+  "updatedAt": "2026-09-24"
+}

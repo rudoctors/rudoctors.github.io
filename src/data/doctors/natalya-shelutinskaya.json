@@ -1,0 +1,36 @@
+{
+  "slug": "natalya-shelutinskaya",
+  "name": "Наталья Шелутинская",
+  "nameEn": "Shelutinskaia Natalia",
+  "specializations": [
+    "otorhinolaryngologist"
+  ],
+  "specializationText": "врач оториноларинголог (взрослый и детский)",
+  "city": "Pančevo",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач-оториноларинголог для взрослых и детей; имеет лицензию в Сербии и принимает в MediGroup Pančevo.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Medigroup Pančevo Dom zdravlja",
+      "address": "Zmaj Jove Jovanovića 7",
+      "city": "Pančevo"
+    }
+  ],
+  "contacts": {
+    "phone": "011 40 40 100",
+    "telegram": "https://t.me/Natality33",
+    "website": "https://www.medigroup.rs/lokacije/domovi-zdravlja/dom-zdravlja-medigroup-pancevo/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/157850"
+  ],
+  "updatedAt": "2026-09-24"
+}

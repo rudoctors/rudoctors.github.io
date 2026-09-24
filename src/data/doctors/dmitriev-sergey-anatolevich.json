@@ -1,0 +1,34 @@
+{
+  "slug": "dmitriev-sergey-anatolevich",
+  "name": "Дмитриев Сергей Анатольевич",
+  "specializations": [
+    "ultrasound_diagnostics"
+  ],
+  "specializationText": "Врач ультразвуковой диагностики",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач ультразвуковой диагностики; принимает в CITILAB в Белграде; имеет временную лицензию в Сербии.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "CITILAB",
+      "address": "Dubljanska 41",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381655737777"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/157826",
+    "https://t.me/vrachivserbii/185875"
+  ],
+  "updatedAt": "2026-09-24"
+}

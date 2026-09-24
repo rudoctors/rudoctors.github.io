@@ -1,0 +1,33 @@
+{
+  "slug": "anastasiya-chub",
+  "name": "Анастасия Чуб",
+  "specializations": [
+    "psychologist"
+  ],
+  "specializationText": "Психолог, ведущая терапевтическую группу",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Психолог; ведёт терапевтическую группу в Нови Саде, метод — группанализ.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "—",
+      "address": "Фрушкогорска 15 (Лиман 1)",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/chub_anastasia"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/184103"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -34,7 +34,16 @@
     "telegram": "https://t.me/dr_nesterenko",
     "website": "https://www.drnesterenko.pro/"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-157423",
+      "author": "Aleksandr Martseniuk",
+      "date": "2025-09-24",
+      "text": "Спасибо большое психотерапевту Даниилу Нестеренко. Я получил поддержку и помощь в лучшем понимании своих эмоций. Консультация была полезной; благодарю и рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/157423",
+      "lang": "ru"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [

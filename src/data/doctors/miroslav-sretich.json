@@ -1,0 +1,30 @@
+{
+  "slug": "miroslav-sretich",
+  "name": "Мирослав Сретич",
+  "specializations": [
+    "cardiologist"
+  ],
+  "specializationText": "кардиолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Кардиолог в клинике Medigroup Kalenić в Белграде; отмечен как дотошный специалист.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Medigroup Kalenić",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/142572"
+  ],
+  "updatedAt": "2026-09-24"
+}

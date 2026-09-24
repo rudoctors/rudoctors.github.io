@@ -1,0 +1,34 @@
+{
+  "slug": "nezdyurova-mariya-maksimovna",
+  "name": "Нездюрова Мария Максимовна",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог-терапевт",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог-терапевт высшей категории в Ilić dent; принимает детей и взрослых.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Ilić dent",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+7 967 571 6678",
+    "telegram": "https://t.me/Marija_dent"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/145445",
+    "https://t.me/vrachivserbii/145465"
+  ],
+  "updatedAt": "2026-09-24"
+}

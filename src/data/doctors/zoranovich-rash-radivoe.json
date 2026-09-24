@@ -1,0 +1,35 @@
+{
+  "slug": "zoranovich-rash-radivoe",
+  "name": "Зоранович-Раш Радивое",
+  "specializations": [
+    "vascular_surgeon",
+    "phlebologist"
+  ],
+  "specializationText": "Сосудистый хирург, флеболог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Сосудистый хирург и флеболог; работает в ВМА и Prva poliklinika в Белграде.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Военно-медицинская академия (ВМА)",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Prva poliklinika",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/144769"
+  ],
+  "updatedAt": "2026-09-24"
+}

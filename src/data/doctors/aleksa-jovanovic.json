@@ -1,0 +1,30 @@
+{
+  "slug": "aleksa-jovanovic",
+  "name": "Aleksa Jovanović",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "ортодонт, ортопед",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог; Aldente",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Aldente",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/179746"
+  ],
+  "updatedAt": "2026-09-24"
+}

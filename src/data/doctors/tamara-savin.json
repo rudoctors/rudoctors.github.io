@@ -1,0 +1,39 @@
+{
+  "slug": "tamara-savin",
+  "name": "Tamara Savin",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог; White Clinic",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "White Clinic",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-148366",
+      "author": "Елена Стрекаловская",
+      "date": "2025-07-16",
+      "text": "Хочу оставить отзыв на доктора Тамара Савин из White Clinic в Белграде. Работали с ней в течение 5–6 приёмов, заодно вылечили кариес и сделали чистку. Всё очень понравилось, доктор был очень приятной в общении. В моём с ней опыте всё было отлично.",
+      "source": "Telegram: https://t.me/vrachivserbii/148366",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/148366"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "aleksandra-eydina",
+  "name": "Aleksandra Eydina",
+  "specializations": [
+    "ophthalmologist"
+  ],
+  "specializationText": "офтальмолог",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Офтальмолог; Elixir",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Elixir",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-139633",
+      "author": "sidav",
+      "date": "2025-05-09",
+      "text": "Был на диагонстическом осмотре в Elixir в Нови Саде, доктор Александра Эйдина. Мне провели полноценный профосмотр и диагностику, сделали осмотр глазного дна, замеры глаза, даже внутриглазное давление измерили. Доктор мне объяснила всё, что показали приборы, спросила даже про то, о чём я сам не догадался в жалобах рассказать, ответила на все вопросы. В итоге я получил не только инструкции, что делать дальше, но и понимание проблемы. Исключительно положительные впечатления, рекомендую всем. #офтальмолог #окулист #НовиСад",
+      "source": "Telegram: https://t.me/vrachivserbii/139633",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/139633"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -23,6 +23,11 @@
       "clinic": "VIZIM",
       "city": "Belgrade",
       "url": "https://www.vizim.co.rs/opsta-bolnica/?gad_source=1&gad_campaignid=23031026614&gclid=Cj0KCQjw4a3OBhCHARIsAChaqJO8GJAz9yqYuIfu7RmnDlJzrqh4WIO8LQICpT0gv4mqmT0XWF0bNqwaArYcEALw_wcB"
+    },
+    {
+      "clinic": "VIZIM centar",
+      "address": "Zdravka Čelara 14a",
+      "city": "Novi Sad"
     }
   ],
   "contacts": {
@@ -30,7 +35,32 @@
     "email": null,
     "telegram": "https://t.me/pozharickaya_gastroenterolog"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-67558",
+      "author": "Mila",
+      "date": "2023-06-14",
+      "text": "Обратилась к гастроэнтерологу Елене Игоревне Пожарицкой по рекомендации в острой ситуации. Врач спокойно выслушала, уточнила детали и быстро дала понятные рекомендации. Мне стало спокойнее, и я благодарна за помощь.",
+      "source": "Telegram: https://t.me/vrachivserbii/67558",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-83711",
+      "author": "Katerina",
+      "date": "2023-11-06",
+      "text": "Была на приёме у доктора Елены Пожарицкой. Врач внимательно разобралась в моей ситуации и подробно объяснила, что нужно делать и зачем. Мне было важно понимать рекомендации; обязательно обращусь повторно.",
+      "source": "Telegram: https://t.me/vrachivserbii/83711",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-127113",
+      "author": "Алена Южбабенко",
+      "date": "2025-02-05",
+      "text": "Была у гастроэнтеролога Елены Пожарицкой в клинике Vizim. Мой опыт остался положительным: врач понравилась внимательным и ответственным подходом. Благодарю за визит.",
+      "source": "Telegram: https://t.me/vrachivserbii/127113",
+      "lang": "ru"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [

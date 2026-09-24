@@ -1,0 +1,30 @@
+{
+  "slug": "dzhordzh-aleksich",
+  "name": "Джордж Алексич",
+  "specializations": [
+    "urologist"
+  ],
+  "specializationText": "Уролог, хирургическая урология",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Уролог по хирургической урологии; рекомендован сотрудником MediGroup в Белграде.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Медигруп больница",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/26205"
+  ],
+  "updatedAt": "2026-09-24"
+}

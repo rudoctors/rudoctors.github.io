@@ -1,0 +1,39 @@
+{
+  "slug": "artem-prudnikov",
+  "name": "Artem Prudnikov",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог; SmileOn",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "SmileOn",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-206130",
+      "author": "Kirill",
+      "date": "2026-08-27",
+      "text": "Хочу оставить отзыв о клинике SmileOn, а в частности об Артеме Прудникове. Очень чуткий специалист, подробно рассказывает этапы лечения и слушает вас. Лечение прошло легко и безболезненно. Рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/206130",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/206130"
+  ],
+  "updatedAt": "2026-09-24"
+}

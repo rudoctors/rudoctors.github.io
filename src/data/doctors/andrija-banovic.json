@@ -1,0 +1,39 @@
+{
+  "slug": "andrija-banovic",
+  "name": "Andrija Banović",
+  "specializations": [
+    "dental_surgeon"
+  ],
+  "specializationText": "стоматолог-хирург",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Хирург-стоматолог; SIA Dental Clinic",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "SIA Dental Clinic",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-187895",
+      "author": "Полина Кохан",
+      "date": "2026-04-10",
+      "text": "Andrija Banović из SIA DENTAL CLINIC буквально спас меня. Я была вынуждена позвонить в одну из клиник, которые вроде как числились в списке принимающих острую боль круглосуточно. Так и попала к доктору Андрию, он взял трубку и тут же согласился мне помочь. Сложный зуб он мне в итоге спас и обошлось без удаления.",
+      "source": "Telegram: https://t.me/vrachivserbii/187895",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/187895"
+  ],
+  "updatedAt": "2026-09-24"
+}

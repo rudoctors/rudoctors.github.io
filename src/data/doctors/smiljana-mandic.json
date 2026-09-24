@@ -1,0 +1,30 @@
+{
+  "slug": "smiljana-mandic",
+  "name": "Smiljana Mandić",
+  "specializations": [
+    "therapist"
+  ],
+  "specializationText": "терапевт",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Терапевт; MediGroup Dorćol",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup Dorćol",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/55950"
+  ],
+  "updatedAt": "2026-09-24"
+}

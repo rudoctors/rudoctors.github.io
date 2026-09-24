@@ -1,0 +1,39 @@
+{
+  "slug": "vesna-perisic",
+  "name": "Vesna Perišić",
+  "specializations": [
+    "ultrasound_diagnostics"
+  ],
+  "specializationText": "врач УЗИ",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач УЗИ; Cardios",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Cardios",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-129802",
+      "author": "Арина Шилова",
+      "date": "2025-02-27",
+      "text": "Была в клинике Cardios в Новом Саде у врача УЗИ Весны Перишич. Врач была очень вежливой и понятливо отнеслась к проблемам с языком.",
+      "source": "Telegram: https://t.me/vrachivserbii/129802",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/129802"
+  ],
+  "updatedAt": "2026-09-24"
+}

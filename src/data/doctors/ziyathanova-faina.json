@@ -1,0 +1,39 @@
+{
+  "slug": "ziyathanova-faina",
+  "name": "Зиятханова Фаина",
+  "specializations": [
+    "ophthalmologist"
+  ],
+  "specializationText": "Врач-офтальмолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач-офтальмолог; принимает в клинике Eliksir в Белграде и Нови Саде.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Eliksir Med",
+      "address": "Kralja Milutina 51",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Eliksir",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "phone": "+381693316061",
+    "telegram": "https://t.me/oftalmolog_faina"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/143332",
+    "https://t.me/vrachivserbii/185408"
+  ],
+  "updatedAt": "2026-09-24"
+}

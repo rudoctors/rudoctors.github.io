@@ -1,0 +1,38 @@
+{
+  "slug": "alaferdov-maksim",
+  "name": "Алафердов Максим",
+  "specializations": [
+    "traumatologist_orthopedist"
+  ],
+  "specializationText": "Травматолог-ортопед",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Травматолог-ортопед; консультационные кабинеты в Нови Саде и Белграде, Poliklinika Equilibrium; возможен выезд на дом.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika Equilibrium",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Poliklinika Equilibrium",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/alaferdov_doc"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/138562",
+    "https://t.me/vrachivserbii/143020",
+    "https://t.me/vrachivserbii/193133"
+  ],
+  "updatedAt": "2026-09-24"
+}

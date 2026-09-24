@@ -1,0 +1,31 @@
+{
+  "slug": "nikola-milekic",
+  "name": "Nikola Milekić",
+  "specializations": [
+    "surgeon"
+  ],
+  "specializationText": "хирург",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Хирург; MediGroup, Kralja Aleksandra",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "address": "Kralja Aleksandra",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/157746"
+  ],
+  "updatedAt": "2026-09-24"
+}

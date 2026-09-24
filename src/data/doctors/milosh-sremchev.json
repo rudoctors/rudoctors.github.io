@@ -1,0 +1,30 @@
+{
+  "slug": "milosh-sremchev",
+  "name": "Милош Сремчев",
+  "specializations": [
+    "pediatrician"
+  ],
+  "specializationText": "педиатр",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Педиатр в Euromedic; недавно переведён из Белграда в Нови-Сад.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Euromedic",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/87451"
+  ],
+  "updatedAt": "2026-09-24"
+}

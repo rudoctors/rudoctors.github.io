@@ -1,0 +1,50 @@
+{
+  "slug": "milica-kostic-andelic",
+  "name": "Milica Kostić Anđelić",
+  "specializations": [
+    "gynecologist"
+  ],
+  "specializationText": "гинеколог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гинеколог; MediGroup, Milutina Milankovića 3",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "address": "Milutina Milankovića 3",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-57737",
+      "author": "Юлия Тивелькова",
+      "date": "2023-03-16",
+      "text": "Была сегодня платно (страховки пока нет) в MediGroup в Новом Белграде. Мне было важно, чтобы женщина, говорящая по-русски. В чате у них на сайте по такому запросу записали к Dr. Kostić Andelić Milica. Она оказалась очень приятной и понятно объясняющей.",
+      "source": "Telegram: https://t.me/vrachivserbii/57737",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-62693",
+      "author": "Elizaveta",
+      "date": "2023-04-27",
+      "text": "По отзыву в этом чате сходила к докторке Milice Kostić Anđelić. Записывалась через чат меди групп. Врач оказалась доброжелательной и позитивной. В начале договорились, что попытаемся говорить на сербском, но если какие-то слова мне были не понятны, она переходила на русский.",
+      "source": "Telegram: https://t.me/vrachivserbii/62693",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/57737",
+    "https://t.me/vrachivserbii/62693",
+    "https://t.me/vrachivserbii/67693"
+  ],
+  "updatedAt": "2026-09-24"
+}

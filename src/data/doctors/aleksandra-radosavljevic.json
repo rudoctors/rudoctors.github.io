@@ -1,0 +1,36 @@
+{
+  "slug": "aleksandra-radosavljevic",
+  "name": "Aleksandra Radosavljević",
+  "specializations": [
+    "dermatologist"
+  ],
+  "specializationText": "дерматолог; атопический дерматит; удаление папиллом",
+  "city": "Belgrade",
+  "languages": [
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Дерматолог; принимает в Dom zdravlja Vizim и MediGroup у Ada Mall в Белграде, проводит дерматологические процедуры и говорит по-английски.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dom zdravlja Vizim",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "MediGroup Ada Mall (Dermacare)",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/142680"
+  ],
+  "updatedAt": "2026-09-24"
+}

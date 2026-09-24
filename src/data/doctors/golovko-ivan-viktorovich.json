@@ -1,0 +1,37 @@
+{
+  "slug": "golovko-ivan-viktorovich",
+  "name": "Головко Иван Викторович",
+  "specializations": [
+    "dentist",
+    "dental_surgeon"
+  ],
+  "specializationText": "Врач-стоматолог, хирург, ортодонт-гнатолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач-стоматолог, хирург и ортодонт-гнатолог; ведёт приём в Stomatološka ordinacija Veroslav Dr Dabić в Белграде.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka ordinacija Veroslav Dr Dabić",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381631701788",
+    "email": "ivan@smiledc.ru",
+    "telegram": "https://t.me/ivcansmile",
+    "website": "https://g.co/kgs/8EwyGe"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/145445",
+    "https://t.me/vrachivserbii/209587"
+  ],
+  "updatedAt": "2026-09-24"
+}

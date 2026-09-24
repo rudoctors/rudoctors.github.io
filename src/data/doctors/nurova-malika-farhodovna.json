@@ -1,0 +1,31 @@
+{
+  "slug": "nurova-malika-farhodovna",
+  "name": "Нурова Малика Фарходовна",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "детский стоматолог; стоматолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Детский стоматолог в Palkin Dental Center; принимает детей и подростков, диплом нострифицирован в Сербии.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Palkin Dental Center",
+      "address": "Deligradska 6",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/207629"
+  ],
+  "updatedAt": "2026-09-24"
+}

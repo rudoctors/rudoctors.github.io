@@ -1,0 +1,30 @@
+{
+  "slug": "dragan-gunjic",
+  "name": "Dragan Gunjic",
+  "specializations": [
+    "surgeon"
+  ],
+  "specializationText": "хирург",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Хирург; Euromedic",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Euromedic",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/80295"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "mayya-temirgalieva",
+  "name": "Майя Темиргалиева",
+  "nameEn": "Maya Temirgalieva",
+  "specializations": [
+    "psychologist"
+  ],
+  "specializationText": "психолог-консультант; клинический психолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "online"
+  ],
+  "bio": "Клинический психолог и психолог-консультант; работает очно в Белграде и онлайн.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/temirgalieva_psy"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/171259"
+  ],
+  "updatedAt": "2026-09-24"
+}

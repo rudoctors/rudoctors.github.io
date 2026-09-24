@@ -1,0 +1,34 @@
+{
+  "slug": "irina-radosavlevich",
+  "name": "Ирина Радосавлевич",
+  "specializations": [
+    "psychologist"
+  ],
+  "specializationText": "практикующий психолог; ЭОТ, схема-терапия, МАК-терапия, гипнотерапия",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline",
+    "online"
+  ],
+  "bio": "Практикующий психолог; работает в Medigroup в Нови-Саде, проводит очные и онлайн-сессии для взрослых и подростков с 15 лет.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Medigroup",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 61 661 2513"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/161995",
+    "https://t.me/vrachivserbii/189436"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "efremova-svetlana",
+  "name": "Ефремова Светлана",
+  "specializations": [
+    "osteopath",
+    "ultrasound_diagnostics"
+  ],
+  "specializationText": "Врач-остеопат; врач ультразвуковой диагностики",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач-остеопат с 5-летним опытом; принимает в Белграде, в Стари Граде. Также указана как врач ультразвуковой диагностики по адресу Вишеградска 1А.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "—",
+      "address": "Стари Град",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "—",
+      "address": "Вишеградска 1А",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381691019269",
+    "telegram": "https://t.me/Efremova_osteodoc"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/157803",
+    "https://t.me/vrachivserbii/185875"
+  ],
+  "updatedAt": "2026-09-24"
+}

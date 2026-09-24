@@ -1,0 +1,34 @@
+{
+  "slug": "baygerov-aleksandr-georgievich",
+  "name": "Байгеров Александр Георгиевич",
+  "specializations": [
+    "surgeon",
+    "gastroenterologist"
+  ],
+  "specializationText": "Хирург, эндоскопист",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Хирург и эндоскопист в New Hospital, Нови-Сад; проводит гастроскопию, колоноскопию и другие эндоскопические исследования и операции.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "New Hospital",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/baygeroff"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/142735",
+    "https://t.me/vrachivserbii/146808"
+  ],
+  "updatedAt": "2026-09-24"
+}

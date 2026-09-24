@@ -1,0 +1,37 @@
+{
+  "slug": "belous-mihail-konstantinovich",
+  "name": "Белоус Михаил Константинович",
+  "specializations": [
+    "surgeon",
+    "proctologist"
+  ],
+  "specializationText": "Врач-хирург и проктолог; консультации по травматологическим, ортопедическим и урологическим проблемам",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач-хирург и проктолог; ведёт приём в Medi Group в Нови Саде, выезжает на дом в Белграде; консультирует по травматологическим, ортопедическим и урологическим проблемам.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Medi Group",
+      "address": "Đorđa Magaraševića 1",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "phone": "+381629384491",
+    "telegram": "https://t.me/DrMKB",
+    "website": "https://maps.app.goo.gl/V3Mn65dWM6Pv5Sfe8"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/157833",
+    "https://t.me/vrachivserbii/191188"
+  ],
+  "updatedAt": "2026-09-24"
+}

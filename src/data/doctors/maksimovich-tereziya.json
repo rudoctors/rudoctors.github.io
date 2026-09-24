@@ -1,0 +1,34 @@
+{
+  "slug": "maksimovich-tereziya",
+  "name": "Максимович Терезия",
+  "specializations": [
+    "pediatrician",
+    "allergist"
+  ],
+  "specializationText": "педиатр-аллерголог",
+  "city": "Belgrade",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Педиатр-аллерголог в Bel Medic; входит в список русскоговорящих аллергологов в Белграде.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Bel Medic",
+      "address": "Kneginje Zorke",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/144339"
+  ],
+  "updatedAt": "2026-09-24"
+}

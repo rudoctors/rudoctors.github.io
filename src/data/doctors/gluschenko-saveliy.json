@@ -1,0 +1,33 @@
+{
+  "slug": "gluschenko-saveliy",
+  "name": "Глущенко Савелий",
+  "specializations": [
+    "neurologist"
+  ],
+  "specializationText": "Врач-невролог",
+  "city": "Novi Sad",
+  "languages": [
+    "ru",
+    "uk",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач-невролог; принимает в Нови Саде и выезжает на дом; дипломы нострифицированы в Сербии, есть действующая лицензия врача общей практики.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "+381638053385",
+    "telegram": "https://t.me/Savelii_G"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/134426",
+    "https://t.me/vrachivserbii/205882"
+  ],
+  "updatedAt": "2026-09-24"
+}

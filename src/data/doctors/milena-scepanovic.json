@@ -1,0 +1,41 @@
+{
+  "slug": "milena-scepanovic",
+  "name": "Milena Ščepanović",
+  "specializations": [
+    "proctologist"
+  ],
+  "specializationText": "проктолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Проктолог; Proktomed",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Proktomed",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "website": "https://www.proktomed.rs/"
+  },
+  "reviews": [
+    {
+      "id": "tg-96161",
+      "author": "Анастасия Гончарук",
+      "date": "2024-03-20",
+      "text": "20.03.24 была на приеме у проктолога (женщины) Милены Шчепанович в Белграде (Врачар). Осмотр был качественный: визуальный, ручной, эндоскопический. Врач говорит хорошо по-английски. Она была готова для меня на компе переводить вообще на любой язык термины. Даже заключение перевела для меня на английский и распечатала. Ничего не навязывала. Дала четкие рекомендации. В общем, точно буду всем рекомендовать…",
+      "source": "Telegram: https://t.me/vrachivserbii/96161",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/96161"
+  ],
+  "updatedAt": "2026-09-24"
+}

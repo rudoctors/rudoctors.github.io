@@ -1,0 +1,51 @@
+{
+  "slug": "ekaterina-paravina",
+  "name": "Ekaterina Paravina",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог-терапевт",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог; ProSmile",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "ProSmile",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/stomatologparavina"
+  },
+  "reviews": [
+    {
+      "id": "tg-142325",
+      "author": "Sergey Dmitriev",
+      "date": "2025-05-29",
+      "text": "Стоматолог Екатерина Паравина @stomatologparavina (ProSmile). Доволен, так как обычно для меня это болезненная процедура. Екатерина подобрала размер чистящей струи, так что ощущений неприятных не было. Уверенно рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/142325",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-144333",
+      "author": "Доктор Ajbolit78 Aleksej Prahov",
+      "date": "2025-06-13",
+      "text": "Недавно проходил лечение у стоматолога Екатерины Паравиной (@stomatologparavina) в Нови-Саде и остался под впечатлением. Обслуживание очень приятное - спокойная атмосфера, заботливое отношение и доброжелательность. Настолько комфортно, что я даже заснул во время процедуры! Рекомендую!",
+      "source": "Telegram: https://t.me/vrachivserbii/144333",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/142325",
+    "https://t.me/vrachivserbii/144333",
+    "https://t.me/vrachivserbii/148722"
+  ],
+  "updatedAt": "2026-09-24"
+}

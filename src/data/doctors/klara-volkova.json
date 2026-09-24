@@ -25,7 +25,16 @@
     }
   ],
   "contacts": {},
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-127113",
+      "author": "Алена Южбабенко",
+      "date": "2025-02-05",
+      "text": "Была у стоматолога Клары Волковой в Smile in Dental. Мне понравилось лечение и отношение персонала; всё прошло хорошо. Благодарю за приятный опыт.",
+      "source": "Telegram: https://t.me/vrachivserbii/127113",
+      "lang": "ru"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [

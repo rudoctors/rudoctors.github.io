@@ -1,0 +1,29 @@
+{
+  "slug": "antonievich-georgiy",
+  "name": "Антониевич Георгий",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "Стоматолог",
+  "city": "Belgrade",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог; делает пломбы и чистку, говорит по-русски; указан в Белграде.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/scidentbelgrad"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/144720"
+  ],
+  "updatedAt": "2026-09-24"
+}

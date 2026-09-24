@@ -38,7 +38,16 @@
     "website": "https://bestmedica.rs/",
     "mapsUrl": "https://maps.app.goo.gl/zQqJQEumnk4hjTgN9"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-196840",
+      "author": "Elizaveta Ross",
+      "date": "2026-06-24",
+      "text": "Была на приёме у доктора Андрея Сергеева. Врач подробно выслушал мои вопросы, внимательно отнёсся ко мне и дал понятные рекомендации. Консультация заняла достаточно времени, чтобы всё обсудить. Благодарю и рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/196840",
+      "lang": "ru"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [

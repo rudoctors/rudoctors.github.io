@@ -1,0 +1,34 @@
+{
+  "slug": "kravchenko-elena-arkadevna",
+  "name": "Кравченко Елена Аркадьевна",
+  "specializations": [
+    "dermatologist",
+    "cosmetologist"
+  ],
+  "specializationText": "дерматовенеролог; косметолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Дерматовенеролог и косметолог; лицензия doctor medicine в Сербии, стаж 18 лет.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Doctorus Expert",
+      "address": "Višegradska 1A",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 69 101 9269"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/161566"
+  ],
+  "updatedAt": "2026-09-24"
+}

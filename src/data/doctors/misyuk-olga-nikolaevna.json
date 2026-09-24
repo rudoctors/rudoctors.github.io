@@ -20,7 +20,16 @@
     "email": null,
     "website": "https://taplink.cc/helga_mon"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-189106",
+      "author": "Ksenia",
+      "date": "2026-04-18",
+      "text": "Обращалась к неврологу Ольге Мисюк. Врач подобрала для меня рекомендации, и около полугода меня не беспокоит та проблема, с которой я раньше обращалась. Благодарю и рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/189106",
+      "lang": "ru"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [

@@ -1,0 +1,34 @@
+{
+  "slug": "bagaev-ilya-georgievich",
+  "name": "Багаев Илья Георгиевич",
+  "specializations": [
+    "dentist",
+    "dental_surgeon",
+    "dental_implantologist"
+  ],
+  "specializationText": "Стоматолог-хирург, имплантолог, ортопед",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог-хирург, имплантолог и ортопед в Zepter Dental.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Zepter Dental",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/Doctor_Bagaev"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/147420"
+  ],
+  "updatedAt": "2026-09-24"
+}

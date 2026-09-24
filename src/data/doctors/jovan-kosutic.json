@@ -1,0 +1,30 @@
+{
+  "slug": "jovan-kosutic",
+  "name": "Jovan Košutić",
+  "specializations": [
+    "cardiologist"
+  ],
+  "specializationText": "детский кардиолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Кардиолог; Pulse",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Pulse",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/55700"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -35,7 +35,16 @@
     "appointmentUrl": "https://t.me/dentist_antonina",
     "mapsUrl": "https://maps.app.goo.gl/hYjWtqGASZebZGaA7"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-120554",
+      "author": "Maria V",
+      "date": "2024-12-06",
+      "text": "Хотела бы оставить отзыв о стоматологе Митрофановой Антонине. Врач внимательно выслушала меня, понятно объяснила ситуацию и старалась помочь. Процедура прошла аккуратно. Рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/120554",
+      "lang": "ru"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [

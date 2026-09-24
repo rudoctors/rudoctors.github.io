@@ -28,7 +28,7 @@
     "telegram": "https://t.me/dr_pryanik"
   },
   "reviews": [],
-  "hidden": false,
+  "hidden": true,
   "featured": false,
   "sources": [
     "google-sheets",

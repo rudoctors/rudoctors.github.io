@@ -1,0 +1,35 @@
+{
+  "slug": "anton-trapeznikov",
+  "name": "Антон Трапезников",
+  "specializations": [
+    "dentist",
+    "dental_implantologist"
+  ],
+  "specializationText": "стоматолог-имплантолог; хирургическая стоматология",
+  "city": "Novi Sad",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог-имплантолог; ведёт приём в ProSmile Нови-Сад, специализируется на хирургической стоматологии и имплантации, говорит по-русски.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "ProSmile Нови-Сад",
+      "address": "Краљевића Марка 10",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/203654",
+    "https://t.me/vrachivserbii/148386"
+  ],
+  "updatedAt": "2026-09-24"
+}

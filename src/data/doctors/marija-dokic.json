@@ -1,0 +1,41 @@
+{
+  "slug": "marija-dokic",
+  "name": "Marija Đokić",
+  "specializations": [
+    "radiologist",
+    "ultrasound_diagnostics"
+  ],
+  "specializationText": "радиолог, УЗИ",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Радиолог, Врач УЗИ; Euromedic, Cara Dušana",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Euromedic",
+      "address": "Cara Dušana",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-128962",
+      "author": "Aделина",
+      "date": "2025-02-23",
+      "text": "Ходила к доктору Marija Đokić делать УЗИ брюшной полости в отделении Euromedic на улице Цара Уроша. Она не говорит по-русски, но знает названия всех органов на русском языке. Очень чуткая и приятная. Мне было с ней комфортно, рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/128962",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/128962"
+  ],
+  "updatedAt": "2026-09-24"
+}

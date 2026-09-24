@@ -1,0 +1,29 @@
+{
+  "slug": "taymuraz-sokurov",
+  "name": "Таймураз Сокуров",
+  "specializations": [
+    "dentist",
+    "dental_implantologist"
+  ],
+  "specializationText": "стоматолог-ортопед; протезирование, имплантация и эстетическая стоматология",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог-ортопед в Белграде; занимается протезированием, имплантацией и эстетической стоматологией.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "+381 62 868 2169",
+    "email": "tamonia15@gmail.com"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/180437"
+  ],
+  "updatedAt": "2026-09-24"
+}

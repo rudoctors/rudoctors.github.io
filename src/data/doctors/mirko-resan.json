@@ -1,0 +1,39 @@
+{
+  "slug": "mirko-resan",
+  "name": "Mirko Resan",
+  "specializations": [
+    "ophthalmologist"
+  ],
+  "specializationText": "офтальмохирург",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Офтальмолог; Vidar Orassis Swiss",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Vidar Orassis Swiss",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-67874",
+      "author": "Maria Vorobyeva @",
+      "date": "2023-06-16",
+      "text": "Понравилась клиника Vidar Orassis Swiss в Нови Саде. Записалась к Prof. dr Mirko Resan. Врач очень доброжелательный, говорит по-английски, у них богатый арсенал оборудования.",
+      "source": "Telegram: https://t.me/vrachivserbii/67874",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/67874"
+  ],
+  "updatedAt": "2026-09-24"
+}

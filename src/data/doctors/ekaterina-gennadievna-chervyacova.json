@@ -1,0 +1,34 @@
+{
+  "slug": "ekaterina-gennadievna-chervyacova",
+  "name": "Екатерина Геннадиевна Червяцова",
+  "specializations": [
+    "pediatrician"
+  ],
+  "specializationText": "педиатр; консультант по грудному вскармливанию",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Педиатр и консультант по грудному вскармливанию с лицензией педиатра в Сербии; принимает в Vizim в Нови-Саде.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Vizim",
+      "address": "Futoški put, 87",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 11 785 7777",
+    "website": "https://www.instagram.com/dr.katarina_gennadivna"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/182636"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "biljana-veljkovic",
+  "name": "Biljana Veljković",
+  "specializations": [
+    "gastroenterologist"
+  ],
+  "specializationText": "гастроэнтеролог, гастроскопист",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гастроэнтеролог; Euromedic, Pariske komune 22",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Euromedic",
+      "address": "Pariske komune 22",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-126636",
+      "author": "Alexey",
+      "date": "2025-01-31",
+      "text": "…ный опыт гастроскопии в Евромедик на Париске комуне 22. Врач Biljana Veljkovic. Приятная женщина, по анг. не говорит. Общались через анестезиолога. Сама процедура происходит незаметно. Абсолютно никаких неприятных ощущений не во время процедуры, ни после.",
+      "source": "Telegram: https://t.me/vrachivserbii/126636",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/126636"
+  ],
+  "updatedAt": "2026-09-24"
+}

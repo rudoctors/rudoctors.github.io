@@ -1,0 +1,35 @@
+{
+  "slug": "vukov-aleksandra",
+  "name": "Вуков Александра",
+  "specializations": [
+    "pediatrician"
+  ],
+  "specializationText": "Педиатр",
+  "city": "Belgrade",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Педиатр в клинике О2 в Земуне; понимает русский.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Клиника О2",
+      "address": "Svetotrojčna 33",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+38166355855"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/18120"
+  ],
+  "updatedAt": "2026-09-24"
+}

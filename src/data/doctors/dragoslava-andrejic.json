@@ -1,0 +1,40 @@
+{
+  "slug": "dragoslava-andrejic",
+  "name": "Dragoslava Andrejić",
+  "specializations": [
+    "otorhinolaryngologist"
+  ],
+  "specializationText": "ЛОР",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "ЛОР; Euromedic, Voždovac, Stefana Prvovenčanog 32",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Euromedic",
+      "address": "Voždovac, Stefana Prvovenčanog 32",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-200265",
+      "author": "Alex Vax",
+      "date": "2026-07-21",
+      "text": "Ходил в клинику Euromedic на осмотр ушей у врача Dragoslava Andrejić. Сделали всё быстро и качественно, врач понравился. Рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/200265",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/200265"
+  ],
+  "updatedAt": "2026-09-24"
+}

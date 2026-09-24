@@ -1,0 +1,45 @@
+{
+  "slug": "zoranovich-natalya-aleksandrovna",
+  "name": "Зоранович Наталья Александровна",
+  "specializations": [
+    "radiologist",
+    "oncologist",
+    "ultrasound_diagnostics"
+  ],
+  "specializationText": "радиолог; онко-радиолог; врач УЗД",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Радиолог, онко-радиолог и врач УЗД; постоянный сотрудник НИИ Онкологии в Белграде, постоянная сербская лицензия.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "НИИ Онкологии",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Ординация профессора Зорановича",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 60 5045 535",
+    "telegram": "https://t.me/natalia_zoranovic",
+    "website": "https://maps.app.goo.gl/a97yRXoa93p4mxjf9?g_st=com.google.maps.preview.copy"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/182389",
+    "https://t.me/vrachivserbii/201724"
+  ],
+  "updatedAt": "2026-09-24"
+}

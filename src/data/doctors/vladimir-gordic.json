@@ -1,0 +1,48 @@
+{
+  "slug": "vladimir-gordic",
+  "name": "Vladimir Gordić",
+  "specializations": [
+    "traumatologist_orthopedist"
+  ],
+  "specializationText": "травматолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Травматолог-ортопед; MediGroup Kalenič",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup Kalenič",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-74217",
+      "author": "Katya Pushkina",
+      "date": "2023-08-10",
+      "text": "Ходила на приём в МедиГрупп Каленич, была у Владимира Гордича. Врач понравился, аккуратно всё обработал и перевязал, уточнил про прививки. По-английски говорит не очень грамотно, но всё понятно. Понравился мне. Полностью оправдал мои ожидания.",
+      "source": "Telegram: https://t.me/vrachivserbii/74217",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-181416",
+      "author": "Nadya Andrievskaya",
+      "date": "2026-02-28",
+      "text": "Если случилась травма, рекомендую Владимира Гордича из МедиГрупп Каленич. Оперативно диагностировал травму во время осмотра. Доктор не говорит по-русски, немного по-английски, но пользуется автопереводчиком, старается всё объяснить и убеждается, что его поняли.",
+      "source": "Telegram: https://t.me/vrachivserbii/181416",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/74217",
+    "https://t.me/vrachivserbii/181416"
+  ],
+  "updatedAt": "2026-09-24"
+}

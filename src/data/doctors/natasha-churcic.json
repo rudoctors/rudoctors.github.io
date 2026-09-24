@@ -1,0 +1,39 @@
+{
+  "slug": "natasha-churcic",
+  "name": "Natasha Churčić",
+  "specializations": [
+    "gynecologist"
+  ],
+  "specializationText": "гинеколог",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гинеколог; Consilium",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Consilium",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-83110",
+      "author": "Anna G",
+      "date": "2023-10-31",
+      "text": "Хочу оставить отзыв о клинике консилиум. Я очень долго искала врача и перечитала кучу разных отзывов. В итоге выбор пал на доктора Наташу Чурчич и я не ошиблась. Она была очень приятная, пока производила манипуляции разговаривала на отвлеченные темы, таким образом все прошло безболезненно и очень аккуратно, все объясняла и показывала. Ей можно задать любой вопрос, она не торопиться, не спешит закончить прием. Буду к ней ходить при необходимости.",
+      "source": "Telegram: https://t.me/vrachivserbii/83110",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/83110"
+  ],
+  "updatedAt": "2026-09-24"
+}

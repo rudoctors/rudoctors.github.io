@@ -1,0 +1,32 @@
+{
+  "slug": "jelena-urosevic",
+  "name": "Jelena Urošević",
+  "specializations": [
+    "pediatrician"
+  ],
+  "specializationText": "педиатр",
+  "city": "Belgrade",
+  "languages": [
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Педиатр в клинике Acibadem в Белграде; по сайту указано знание английского, для части пациентов может потребоваться переводчик.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Acibadem",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/142392"
+  ],
+  "updatedAt": "2026-09-24"
+}

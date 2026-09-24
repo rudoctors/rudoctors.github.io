@@ -1,0 +1,39 @@
+{
+  "slug": "anja-zmbov",
+  "name": "Anja Zmbov",
+  "specializations": [
+    "cosmetologist"
+  ],
+  "specializationText": "косметолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Косметолог; Diva",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Diva",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-133649",
+      "author": "Marigold",
+      "date": "2025-03-25",
+      "text": "#косметолог #Белград рекомендую косметолога Anja Zmbov из клиники Diva. Делала у нее филлеры и ботокс, очень понравилось внимательное отношение, все рассказала, сделала аккуратно. Говорили на сербском и английском.",
+      "source": "Telegram: https://t.me/vrachivserbii/133649",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/133649"
+  ],
+  "updatedAt": "2026-09-24"
+}

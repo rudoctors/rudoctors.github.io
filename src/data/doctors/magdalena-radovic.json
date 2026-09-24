@@ -1,0 +1,40 @@
+{
+  "slug": "magdalena-radovic",
+  "name": "Magdalena Radović",
+  "specializations": [
+    "mammologist",
+    "radiologist"
+  ],
+  "specializationText": "маммолог, радиолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Маммолог, Радиолог; Acibadem Bel Medic Dom Zdravlja Slavija",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Acibadem Bel Medic Dom Zdravlja Slavija",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-69071",
+      "author": "Евгения",
+      "date": "2023-06-28",
+      "text": "Была на приёме у врача Магдалены Радович в Acibadem Bel Medic Dom Zdravlja Slavija Ogranak. Всё очень подробно, разговаривает на английском, я делала УЗИ молочных желез.",
+      "source": "Telegram: https://t.me/vrachivserbii/69071",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/69071"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "marko-zivic",
+  "name": "Marko Živić",
+  "specializations": [
+    "dermatologist"
+  ],
+  "specializationText": "дерматолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Дерматолог; Dermatologika, Gospodar Evremova",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dermatologika",
+      "address": "Gospodar Evremova",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-161176",
+      "author": "Darina",
+      "date": "2025-10-15",
+      "text": "Сходила к дерматологу Marko Živić в Dermatologika. Врач очень тщательно осмотрел меня, ответил на все вопросы. Общался на английском. Мне всё понравилось, рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/161176",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/161176"
+  ],
+  "updatedAt": "2026-09-24"
+}

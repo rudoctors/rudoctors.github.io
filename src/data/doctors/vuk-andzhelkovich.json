@@ -1,0 +1,29 @@
+{
+  "slug": "vuk-andzhelkovich",
+  "name": "Вук Анджелкович",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "Общий стоматолог; протезирование, эндодонтия, хирургия и ортодонтия",
+  "city": "Novi Sad",
+  "languages": [
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Общий стоматолог в Нови Саде; занимается протезированием, эндодонтией, хирургией и ортодонтией, хорошо говорит по-английски.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "+381616064326"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/146679"
+  ],
+  "updatedAt": "2026-09-24"
+}

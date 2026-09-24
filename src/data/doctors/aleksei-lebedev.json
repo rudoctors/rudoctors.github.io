@@ -34,7 +34,32 @@
     "telegram": "https://t.me/hillsongaleksei",
     "mapsUrl": "https://maps.app.goo.gl/sBKQFMT2T74342Q8A"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-74251",
+      "author": "Kirill Kozlov",
+      "date": "2023-08-11",
+      "text": "Обращался к гастроэнтерологу Алексею Лебедеву. Лечение подошло и помогло; при необходимости обязательно обращусь к нему снова. Рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/74251",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-97112",
+      "author": "Анастасия Гончарук",
+      "date": "2024-04-02",
+      "text": "Несколько раз обращалась к гастроэнтерологу Алексею Лебедеву. Врач оперативно отвечал на вопросы, понятно выстраивал общение и дал рекомендации без лишних обследований. Мой опыт был положительным, рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/97112",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-189633",
+      "author": "Marina Lorry",
+      "date": "2026-04-21",
+      "text": "Была на приёме у гастроэнтеролога Алексея Лебедева. Мой опыт остался положительным, поэтому рекомендую его.",
+      "source": "Telegram: https://t.me/vrachivserbii/189633",
+      "lang": "ru"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [

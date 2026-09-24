@@ -1,0 +1,39 @@
+{
+  "slug": "sandra-nedovic",
+  "name": "Sandra Nedović",
+  "specializations": [
+    "radiologist"
+  ],
+  "specializationText": "врач радиологических исследований, МРТ и КТ",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Радиолог; MediGroup",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-71261",
+      "author": "Екатерина К",
+      "date": "2023-07-17",
+      "text": "Врач радиологических исследований МедиГрупп, Nedović Sandra. Доктор говорит по-английски. Я шла к ней прицельно с непростым случаем по рекомендации сербского невролога. Очереди к ней пришлось ждать 14 дней. Наш сербский невролог доверяет только ей. Рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/71261",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/71261"
+  ],
+  "updatedAt": "2026-09-24"
+}

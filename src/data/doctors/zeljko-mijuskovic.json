@@ -1,0 +1,33 @@
+{
+  "slug": "zeljko-mijuskovic",
+  "name": "Željko Mijušković",
+  "specializations": [
+    "dermatologist",
+    "oncologist"
+  ],
+  "specializationText": "дерматолог; онкология; дерматоскопия",
+  "city": "Belgrade",
+  "languages": [
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Дерматолог в клинике dermatology в центре Белграда; специализируется на онкологии, проводит дерматоскопию, говорит по-английски.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Дерматология в центре города",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/142680"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -26,7 +26,16 @@
     "phone": "+381 11 40 40 100",
     "email": null
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-93544",
+      "author": "Emiliia Nikitina",
+      "date": "2024-02-19",
+      "text": "Обращалась к Aleksandar Filipović. Врач спокойно выслушал мои жалобы, внимательно осмотрел и объяснил своё заключение. Был вежлив. Рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/93544",
+      "lang": "ru"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [

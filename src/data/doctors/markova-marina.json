@@ -1,0 +1,40 @@
+{
+  "slug": "markova-marina",
+  "name": "Маркова Марина",
+  "specializations": [
+    "traumatologist_orthopedist",
+    "manual_therapist"
+  ],
+  "specializationText": "хирург-ортопед; хиропрактик; мануальный терапевт",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Хирург-ортопед, хиропрактик и мануальный терапевт; принимает в Sempre Viva Centre, свободно говорит по-русски, сербски и английски.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Sempre Viva Centre",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 63 892 3508",
+    "telegram": "https://t.me/Marina_Sempre",
+    "website": "https://www.semprevivacentre.com/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/151872",
+    "https://t.me/vrachivserbii/201741"
+  ],
+  "updatedAt": "2026-09-24"
+}

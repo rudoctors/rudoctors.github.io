@@ -1,0 +1,37 @@
+{
+  "slug": "tisa-kojadinovic",
+  "name": "Tisa Kojadinović",
+  "specializations": [
+    "cardiologist"
+  ],
+  "specializationText": "кардиолог",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Кардиолог; Novi Sad",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "063 7160228",
+    "website": "https://maps.app.goo.gl/2EjHKgKBRQpAr2Vf8"
+  },
+  "reviews": [
+    {
+      "id": "tg-36714",
+      "author": "Егор",
+      "date": "2022-12-02",
+      "text": "Если кто ищет кардиолога (УЗИ, кардиограмма) в Нови Саде, рекомендую Dr Tisa Kojadinović. Говорит на русском и английском.",
+      "source": "Telegram: https://t.me/vrachivserbii/36714",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/36714"
+  ],
+  "updatedAt": "2026-09-24"
+}

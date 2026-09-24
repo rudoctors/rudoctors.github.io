@@ -1,0 +1,31 @@
+{
+  "slug": "dragana-dzelosevic",
+  "name": "Dragana Dželošević",
+  "specializations": [
+    "ophthalmologist"
+  ],
+  "specializationText": "офтальмолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Офтальмолог; Miloš Clinic",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Miloš Clinic",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/1872",
+    "https://t.me/vrachivserbii/181416"
+  ],
+  "updatedAt": "2026-09-24"
+}

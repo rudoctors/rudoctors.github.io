@@ -1,0 +1,39 @@
+{
+  "slug": "vislobokova-elena",
+  "name": "Вислобокова Елена",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "Семейный врач-стоматолог, стоматолог-терапевт",
+  "city": "Belgrade",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач-стоматолог и семейный врач; лечит взрослых и детей в Zepter Dental в Белграде; дипломы нострифицированы в Сербии.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Zepter Dental",
+      "address": "Краља Петра 32",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381611315476",
+    "email": "viel2111@outlook.com",
+    "website": "https://zepterdental.com/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/186319",
+    "https://t.me/vrachivserbii/194609"
+  ],
+  "updatedAt": "2026-09-24"
+}

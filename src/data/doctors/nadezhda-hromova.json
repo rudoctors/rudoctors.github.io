@@ -1,0 +1,40 @@
+{
+  "slug": "nadezhda-hromova",
+  "name": "Nadezhda Hromova",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог-терапевт",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог; Palkin Dental Center",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Palkin Dental Center",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-196349",
+      "author": "Ekaterina",
+      "date": "2026-06-19",
+      "text": "Могу поделиться своим скромным опытом. Я у Надежды Хромовой вылечила весь свой рот, простите. Более чуткого и профессионального доктора в одном лице здесь не встречала. Было несколько визитов, всё получилось и недавно я была на контроле, сделали рентген - с зубом все отлично спустя время. Все делали под увеличением, для меня это было важно при выборе клиники и врача. Моя благодарность клинике и горячая рекомендация.",
+      "source": "Telegram: https://t.me/vrachivserbii/196349",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/196216",
+    "https://t.me/vrachivserbii/196349"
+  ],
+  "updatedAt": "2026-09-24"
+}

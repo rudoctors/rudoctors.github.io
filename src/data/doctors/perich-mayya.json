@@ -1,0 +1,31 @@
+{
+  "slug": "perich-mayya",
+  "name": "Перич Майя",
+  "specializations": [
+    "psychiatrist",
+    "psychotherapist"
+  ],
+  "specializationText": "психиатр; психотерапевт",
+  "city": "Belgrade",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Русскоговорящий психиатр и психотерапевт; принимает в Белграде, лицензия 102198.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "+381 63 818 2728"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/18795",
+    "https://t.me/vrachivserbii/19060"
+  ],
+  "updatedAt": "2026-09-24"
+}

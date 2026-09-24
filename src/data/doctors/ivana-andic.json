@@ -1,0 +1,34 @@
+{
+  "slug": "ivana-andic",
+  "name": "Ivana Anđić",
+  "specializations": [
+    "gynecologist"
+  ],
+  "specializationText": "гинеколог",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гинеколог; DR ILIĆ-FEMMA HEALTH",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "DR ILIĆ-FEMMA HEALTH",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "phone": "021 420120",
+    "website": "https://drilic.rs/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/54332",
+    "https://t.me/vrachivserbii/54341"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "dragan-cirovic",
+  "name": "Dragan Cirović",
+  "specializations": [
+    "gynecologist"
+  ],
+  "specializationText": "гинеколог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гинеколог; Vizim",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Vizim",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/110076"
+  ],
+  "updatedAt": "2026-09-24"
+}

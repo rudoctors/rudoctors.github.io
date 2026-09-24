@@ -1,0 +1,30 @@
+{
+  "slug": "zorana-rosic",
+  "name": "Zorana Rosić",
+  "specializations": [
+    "traumatologist_orthopedist"
+  ],
+  "specializationText": "ортопед-травматолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Травматолог-ортопед; Vizim",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Vizim",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/174861"
+  ],
+  "updatedAt": "2026-09-24"
+}

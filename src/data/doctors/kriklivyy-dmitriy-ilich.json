@@ -1,0 +1,30 @@
+{
+  "slug": "kriklivyy-dmitriy-ilich",
+  "name": "Крикливый Дмитрий Ильич",
+  "specializations": [
+    "psychiatrist",
+    "psychotherapist",
+    "therapist"
+  ],
+  "specializationText": "врач-психиатр; психотерапевт; терапевт",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "online"
+  ],
+  "bio": "Психиатр, психотерапевт и терапевт; онлайн, в Нови-Саде возможен офлайн-приём.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "+7 978 052 2707",
+    "telegram": "https://t.me/mousenidis"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/199511"
+  ],
+  "updatedAt": "2026-09-24"
+}

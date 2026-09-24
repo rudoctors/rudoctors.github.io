@@ -1,0 +1,41 @@
+{
+  "slug": "sandra-radovic",
+  "name": "Sandra Radović",
+  "specializations": [
+    "radiologist",
+    "ultrasound_diagnostics"
+  ],
+  "specializationText": "радиолог, УЗИ",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Радиолог, Врач УЗИ; Euromedic, Jurija Gagarina",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Euromedic",
+      "address": "Jurija Gagarina",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-101062",
+      "author": "Olesya Lubinets",
+      "date": "2024-05-13",
+      "text": "Я бы хотела оставить супер положительный отзыв на врача-радиолога Sandra Radovic из Euromedic на Юрия Гагарина. Я пришла на ежегодный чекап. Однако, врач супер внимательно и дотошно проводила УЗИ, просматривала все на 2-3 раза, показывала на экране и рассказывала на что обратить внимание. УЗИ 3 зон заняло практически полчаса. В общем, точно можно обратиться не только для чекапа, но и с какой-то проблемой.",
+      "source": "Telegram: https://t.me/vrachivserbii/101062",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/101062"
+  ],
+  "updatedAt": "2026-09-24"
+}

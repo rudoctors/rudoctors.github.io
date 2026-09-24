@@ -1,0 +1,40 @@
+{
+  "slug": "boban-dordevic",
+  "name": "Boban Đorđević",
+  "specializations": [
+    "surgeon",
+    "plastic_surgeon"
+  ],
+  "specializationText": "пластический хирург",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Хирург, Пластический хирург; BelMedic",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "BelMedic",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-122721",
+      "author": "Ekaterina Popova",
+      "date": "2024-12-23",
+      "text": "Хочу порекомендовать пластического хирурга Professor Boban Đorđević в клинике BelMedic. Все прошло отлично после первого укола, хотя я очень переживала. Врач меня заверил, что все будет в порядке. Сегодня был второй укол, пока рано говорить, но тоже надеюсь на улучшение. Врач говорит по-английски.",
+      "source": "Telegram: https://t.me/vrachivserbii/122721",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/122721"
+  ],
+  "updatedAt": "2026-09-24"
+}

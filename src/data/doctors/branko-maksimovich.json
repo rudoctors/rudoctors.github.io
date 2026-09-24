@@ -1,0 +1,33 @@
+{
+  "slug": "branko-maksimovich",
+  "name": "Бранко Максимович",
+  "specializations": [
+    "gastroenterologist"
+  ],
+  "specializationText": "эндоскопист; гастроскопия; тест на Helicobacter pylori",
+  "city": "Belgrade",
+  "languages": [
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач в Poliklinika VUK Prima в Белграде; делает гастроскопию и тест на Helicobacter pylori, говорит по-английски.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika VUK Prima",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/174942",
+    "https://t.me/vrachivserbii/142735"
+  ],
+  "updatedAt": "2026-09-24"
+}

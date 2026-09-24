@@ -1,0 +1,29 @@
+{
+  "slug": "kuzmina-elena-sergeevna",
+  "name": "Кузьмина Елена Сергеевна",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог-терапевт",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог-терапевт высшей категории, более 20 лет опыта; принимает взрослых в клинике в центре Белграда.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "+381 65 818 0147",
+    "telegram": "https://t.me/Elenakuzmina18"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/138261",
+    "https://t.me/vrachivserbii/144720"
+  ],
+  "updatedAt": "2026-09-24"
+}

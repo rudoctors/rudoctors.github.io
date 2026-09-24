@@ -1,0 +1,40 @@
+{
+  "slug": "katarina-sedlecki",
+  "name": "Katarina Sedlecki",
+  "specializations": [
+    "gynecologist"
+  ],
+  "specializationText": "детский гинеколог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гинеколог; Dr Žutić",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dr Žutić",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-117537",
+      "author": "Marigold",
+      "date": "2024-11-09",
+      "text": "Хочу порекомендовать детского гинеколога Катарину Седлецки (Katarina Sedlecki), которая принимает в клинике Dr Žutić в Новом Белграде. Чуткий и очень деликатный специалист, вызывает доверие и у малышей, и у подростков. Прекрасно говорит на английском.",
+      "source": "Telegram: https://t.me/vrachivserbii/117537",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/56753",
+    "https://t.me/vrachivserbii/117537"
+  ],
+  "updatedAt": "2026-09-24"
+}

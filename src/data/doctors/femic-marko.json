@@ -1,0 +1,30 @@
+{
+  "slug": "femic-marko",
+  "name": "Femić Marko",
+  "specializations": [
+    "cardiologist"
+  ],
+  "specializationText": "кардиолог",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Кардиолог; Vizim",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Vizim",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/136730"
+  ],
+  "updatedAt": "2026-09-24"
+}

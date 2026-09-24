@@ -1,0 +1,32 @@
+{
+  "slug": "anton-saliev",
+  "name": "Антон Салиев",
+  "specializations": [
+    "psychologist",
+    "psychotherapist"
+  ],
+  "specializationText": "детский и семейный клинический психолог; КПТ-психотерапевт",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "online"
+  ],
+  "bio": "Детский и семейный клинический психолог, КПТ-психотерапевт; консультирует в Белграде, Нови-Саде и онлайн, работает на русском и сербском языках.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "website": "https://taplink.cc/salievanton"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/207756",
+    "https://t.me/vrachivserbii/143529"
+  ],
+  "updatedAt": "2026-09-24"
+}

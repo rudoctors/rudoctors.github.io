@@ -37,7 +37,24 @@
     "website": "https://t.me/fleboesculap",
     "mapsUrl": "https://maps.app.goo.gl/WPqHvPoFfEj9gNmE8?g_st=com.google.maps.preview.copy"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-118658",
+      "author": "Регина",
+      "date": "2024-11-20",
+      "text": "Обратилась к флебологу Семёну Степанову. Врач внимательно выслушал мои жалобы, провёл обследование и понятно объяснил результаты. После консультации я успокоилась и получила ответы на вопросы. Рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/118658",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-203677",
+      "author": "Tatiana Iasinskaia",
+      "date": "2026-08-12",
+      "text": "Была на консультации у флеболога Семёна Степанова. Он подробно объяснил варианты лечения, и я решилась на операцию. Всё прошло хорошо; после вмешательства врач продолжал быть на связи. Искренне рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/203677",
+      "lang": "ru"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [

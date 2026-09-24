@@ -1,0 +1,40 @@
+{
+  "slug": "sava-markovic",
+  "name": "Sava Markovic",
+  "specializations": [
+    "dental_surgeon"
+  ],
+  "specializationText": "стоматолог-хирург",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Хирург-стоматолог; Palkin Dental Center, Deligradska",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Palkin Dental Center",
+      "address": "Deligradska",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-200659",
+      "author": "Olgica Jovanovic",
+      "date": "2026-07-23",
+      "text": "Želim da ostanim pozitivan utisak o stomatološkoj ordinaciji Palkin Dental Center u Deligradskoj ulici u Beogradu. Sve pohvale za dr Savu Markovića. Anesteziju nisam ni osetila, ima ljaku ruku, uradio je perfektno nadogradnju dva polomljena zuba, tako da sam rešila veliki problem. Toplo preporučujem dr Savu Markovića i usluge Palkin Dental Centra.",
+      "source": "Telegram: https://t.me/vrachivserbii/200659",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/200659"
+  ],
+  "updatedAt": "2026-09-24"
+}

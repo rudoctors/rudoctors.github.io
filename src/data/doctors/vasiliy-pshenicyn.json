@@ -1,0 +1,27 @@
+{
+  "slug": "vasiliy-pshenicyn",
+  "name": "Василий Пшеницын",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "Стоматолог-ортопед",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог-ортопед; принимает в Белграде и Нови Саде, диплом нострифицирован в Сербии.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/Basil_Verus"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/201247"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "sanja-dragasevic",
+  "name": "Sanja Dragašević",
+  "specializations": [
+    "gastroenterologist"
+  ],
+  "specializationText": "гастроэнтеролог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гастроэнтеролог; Prva Poliklinika",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Prva Poliklinika",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-95084",
+      "author": "Aleksandr",
+      "date": "2024-03-09",
+      "text": "Прошел обследование под седацией в клинике Prva Poliklinika у гастроэнтеролога Sanja Dragašević. Врачи и персонал вежливые и все объясняют. Общался на сербско-английском, трудностей с пониманием не возникло.",
+      "source": "Telegram: https://t.me/vrachivserbii/95084",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-95320",
+      "author": "Daria",
+      "date": "2024-03-12",
+      "text": "Также делала колоноскопию под седацией в Prva Poliklinika, доктор Sanja Dragašević. Всё прошло очень гладко, буквально час от начала и до момента выхода из седации. Никаких побочных эффектов не испытала. Всё очень прозрачно и понятно.",
+      "source": "Telegram: https://t.me/vrachivserbii/95320",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/95084",
+    "https://t.me/vrachivserbii/95320"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "artem-timakov",
+  "name": "Артём Тимаков",
+  "specializations": [
+    "psychologist"
+  ],
+  "specializationText": "Психолог, схема-терапия",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Психолог в схема-терапии; живёт в Нови Саде и принимает сессии.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/timakov_psy"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/183360"
+  ],
+  "updatedAt": "2026-09-24"
+}

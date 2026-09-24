@@ -1,46 +1,59 @@
-/**
- * Scan src/data/doctors for potential duplicate people (same last+first name).
- */
 import fs from "node:fs";
 import path from "node:path";
 
 const dir = path.join(process.cwd(), "src", "data", "doctors");
+const ignoredTokens = new Set(["dr", "dr.", "доктор", "профессор", "prof", "professor"]);
+
+function canonicalName(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/ё/g, "е")
+    .split(/[\s,.;:()[\]{}\-]+/)
+    .map((token) => token.replace(/[^\p{L}\p{N}]+/gu, ""))
+    .filter((token) => token && !ignoredTokens.has(token))
+    .sort()
+    .join("|");
+}
+
 const rows = [];
-for (const f of fs.readdirSync(dir).filter((x) => x.endsWith(".json"))) {
-  const d = JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"));
-  const parts = String(d.name || "")
-    .trim()
-    .split(/\s+/)
-    .map((p) => p.toLowerCase().replace(/ё/g, "е"));
-  if (parts.length < 2) continue;
-  // Russian order usually: LastName FirstName [Patronymic]
-  const key =
-    parts.length >= 2 && /[а-я]/.test(parts[0])
-      ? `${parts[0]}|${parts[1]}`
-      : `${parts[1] || ""}|${parts[0]}`;
+for (const file of fs.readdirSync(dir).filter((name) => name.endsWith(".json"))) {
+  const doctor = JSON.parse(fs.readFileSync(path.join(dir, file), "utf8"));
+  const keys = [...new Set([doctor.name, doctor.nameEn].map(canonicalName).filter((key) => key.split("|").length >= 2))];
   rows.push({
-    slug: d.slug,
-    name: d.name,
-    city: d.city,
-    spec: d.specializations?.[0],
-    sources: d.sources,
-    exp: d.experienceYears,
-    reviews: (d.reviews || []).length,
-    key,
+    slug: doctor.slug,
+    name: doctor.name,
+    city: doctor.city,
+    spec: doctor.specializations?.[0],
+    sources: doctor.sources || [],
+    exp: doctor.experienceYears,
+    reviews: doctor.reviews?.length || 0,
+    hidden: Boolean(doctor.hidden),
+    keys,
   });
 }
-const byKey = new Map();
-for (const r of rows) {
-  if (!byKey.has(r.key)) byKey.set(r.key, []);
-  byKey.get(r.key).push(r);
+
+const groups = new Map();
+for (const row of rows) {
+  for (const key of row.keys) {
+    if (!groups.has(key)) groups.set(key, new Map());
+    groups.get(key).set(row.slug, row);
+  }
 }
-const dups = [...byKey.entries()].filter(([, v]) => v.length > 1);
-console.log("total", rows.length, "dup groups", dups.length);
-for (const [k, v] of dups) {
+
+const duplicates = [];
+const archived = [];
+for (const [key, group] of groups) {
+  if (group.size < 2) continue;
+  const entry = { key, doctors: [...group.values()] };
+  if (entry.doctors.filter((doctor) => !doctor.hidden).length > 1) duplicates.push(entry);
+  else archived.push(entry);
+}
+
+console.log("total", rows.length, "visible dup groups", duplicates.length, "archived dup groups", archived.length);
+for (const { key, doctors } of duplicates) {
   console.log(
     "\nKEY",
-    k,
-    v.map((x) => `${x.slug} [${x.city}|${x.spec}|exp=${x.exp ?? "-"}|rev=${x.reviews}|${x.sources.join(",")}]`)
+    key,
+    doctors.map((doctor) => `${doctor.slug} [${doctor.city}|${doctor.spec}|exp=${doctor.exp ?? "-"}|rev=${doctor.reviews}|${doctor.sources.join(",")}]`)
   );
 }
-// also print short-name collisions (first 2 tokens of EN order)

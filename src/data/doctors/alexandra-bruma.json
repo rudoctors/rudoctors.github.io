@@ -1,0 +1,39 @@
+{
+  "slug": "alexandra-bruma",
+  "name": "Alexandra Bruma",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог-ортодонт",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог; Palkin Dental Center",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Palkin Dental Center",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-209131",
+      "author": "Elizaveta",
+      "date": "2026-09-15",
+      "text": "Начала исправление прикуса у врача Александрины Брума в Palkin Dental. Подход к диагностике и плану лечения был системным и внимательным. Всё чётко, профессионально и по делу. Началом процесса довольна.",
+      "source": "Telegram: https://t.me/vrachivserbii/209131",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/209131"
+  ],
+  "updatedAt": "2026-09-24"
+}

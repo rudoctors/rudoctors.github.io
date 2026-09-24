@@ -1,0 +1,27 @@
+{
+  "slug": "anna-repash",
+  "name": "Анна Репаш",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "Стоматолог-терапевт",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог-терапевт; указан как специалист, к которому можно обратиться в Белграде.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/dr_Anna_Repas"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/186513"
+  ],
+  "updatedAt": "2026-09-24"
+}

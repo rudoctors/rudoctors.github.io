@@ -1,0 +1,33 @@
+{
+  "slug": "sava-rackov",
+  "name": "Сава Рацков",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог; специализируется на хирургии",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог в Нови-Саде; специализируется на хирургии, клиника находится в центре города на улице Илије Огњановића 3.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "—",
+      "address": "Илије Огњановића 3",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 64 40 50 219"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/42292"
+  ],
+  "updatedAt": "2026-09-24"
+}

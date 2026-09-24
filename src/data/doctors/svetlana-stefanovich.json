@@ -1,0 +1,30 @@
+{
+  "slug": "svetlana-stefanovich",
+  "name": "Светлана Стефанович",
+  "specializations": [
+    "ophthalmologist"
+  ],
+  "specializationText": "офтальмолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Офтальмолог, принимает в Euromedic в Белграде; по источнику не занимается подбором контактных линз.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Euromedic",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/143332"
+  ],
+  "updatedAt": "2026-09-24"
+}

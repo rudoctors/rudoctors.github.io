@@ -1,0 +1,36 @@
+{
+  "slug": "perisa-simonovic",
+  "name": "Perisa Simonović",
+  "specializations": [
+    "psychiatrist"
+  ],
+  "specializationText": "психиатр",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Психиатр; Belgrade",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "+381652458010"
+  },
+  "reviews": [
+    {
+      "id": "tg-73495",
+      "author": "Liza",
+      "date": "2023-08-04",
+      "text": "Врач Периша Симонович. Очень добродетальный и дружелюбный врач. Выписал рецепт, можно прийти каждый четверг и продлить рецепт бесплатно. Хороший кабинет.",
+      "source": "Telegram: https://t.me/vrachivserbii/73495",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/73495"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "bosko-stokin",
+  "name": "Boško Stokin",
+  "specializations": [
+    "psychiatrist",
+    "child_psychiatrist"
+  ],
+  "specializationText": "детский психиатр",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Психиатр, Детский психиатр; Lege Artis",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Lege Artis",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "website": "https://psihijatrijalegeartis.rs/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/144242"
+  ],
+  "updatedAt": "2026-09-24"
+}

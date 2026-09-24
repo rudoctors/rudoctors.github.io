@@ -1,0 +1,41 @@
+{
+  "slug": "ilija-smiljanic",
+  "name": "Ilija Smiljanić",
+  "specializations": [
+    "surgeon",
+    "gynecologist"
+  ],
+  "specializationText": "гинекологический хирург",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Хирург, Гинеколог; Clinical Center of Vojvodina, Betanija",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Clinical Center of Vojvodina",
+      "address": "Betanija",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-188319",
+      "author": "Marina",
+      "date": "2026-04-13",
+      "text": "Операцию проводил доктор Ilija Smiljanic. Всё прошло замечательно.",
+      "source": "Telegram: https://t.me/vrachivserbii/188319",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/188319"
+  ],
+  "updatedAt": "2026-09-24"
+}

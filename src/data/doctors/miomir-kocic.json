@@ -1,0 +1,33 @@
+{
+  "slug": "miomir-kocic",
+  "name": "Miomir Kocić",
+  "specializations": [
+    "surgeon",
+    "oncologist"
+  ],
+  "specializationText": "хирург-онколог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Хирург, Онколог; MediGroup, Pariske komune 26",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "address": "Pariske komune 26",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/135998",
+    "https://t.me/vrachivserbii/165588"
+  ],
+  "updatedAt": "2026-09-24"
+}

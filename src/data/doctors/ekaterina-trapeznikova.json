@@ -1,0 +1,36 @@
+{
+  "slug": "ekaterina-trapeznikova",
+  "name": "Екатерина Трапезникова",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "врач-стоматолог общей практики; терапевтическое, ортопедическое и хирургическое лечение",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач-стоматолог общей практики с постоянной лицензией в Сербии; принимает в Brkic Dent в Нови-Саде.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Brkic Dent",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 62 874 6298",
+    "telegram": "https://t.me/dentistekaterina",
+    "website": "https://www.brkicdent.rs/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/125215",
+    "https://t.me/vrachivserbii/146679",
+    "https://t.me/vrachivserbii/186513"
+  ],
+  "updatedAt": "2026-09-24"
+}

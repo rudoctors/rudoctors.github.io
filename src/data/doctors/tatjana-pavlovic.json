@@ -1,0 +1,40 @@
+{
+  "slug": "tatjana-pavlovic",
+  "name": "Tatjana Pavlović",
+  "specializations": [
+    "mammologist",
+    "oncologist"
+  ],
+  "specializationText": "онколог-маммолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Маммолог, Онколог; Ginekološka Ordinacija Palmotićeva",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Ginekološka Ordinacija Palmotićeva",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-98142",
+      "author": "Antonina",
+      "date": "2024-04-13",
+      "text": "#онколог-маммолог #белград Была на приеме у dr. Tatjana Pavlović в Ginekološka Ordinacija Palmotićeva. Приятная, вежливая, говорили на сербском. Сделала узи грудных желёз. Дала рекомендации. Рекомендую",
+      "source": "Telegram: https://t.me/vrachivserbii/98142",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/98142"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "ratko-dzolev",
+  "name": "Ratko Džolev",
+  "specializations": [
+    "dentist",
+    "dental_surgeon"
+  ],
+  "specializationText": "стоматолог-хирург",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог, Хирург-стоматолог; Stomatološka poliklinika prof. Džolev",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka poliklinika prof. Džolev",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "phone": "021 525924",
+    "website": "https://maps.app.goo.gl/T6P9EnYmr98SvRobA"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/55161"
+  ],
+  "updatedAt": "2026-09-24"
+}

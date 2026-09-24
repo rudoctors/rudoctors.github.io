@@ -1,0 +1,40 @@
+{
+  "slug": "jelena-stevovski-radovic",
+  "name": "Jelena Stevovski Radović",
+  "specializations": [
+    "psychiatrist"
+  ],
+  "specializationText": "психиатр",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Психиатр; Vizim, Zdravka Čelara 14a",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Vizim",
+      "address": "Zdravka Čelara 14a",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-98009",
+      "author": "Ekaterina Kolodezeva",
+      "date": "2024-04-11",
+      "text": "Здравствуйте! Хочу оставить отзыв на психиатра Jelena Stevovski Radović. Прием проходила в клинике Vizim по адресу Zdravka Čelara 14a. Врач задавала вопросы… Впечатления от приема исключительно положительные. Ушла с ощущением, что меня внимательно выслушали.",
+      "source": "Telegram: https://t.me/vrachivserbii/98009",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/98009"
+  ],
+  "updatedAt": "2026-09-24"
+}

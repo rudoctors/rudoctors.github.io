@@ -1,0 +1,38 @@
+{
+  "slug": "skipenko-timofey-olegovich",
+  "name": "Скипенко Тимофей Олегович",
+  "specializations": [
+    "traumatologist_orthopedist",
+    "surgeon"
+  ],
+  "specializationText": "хирург-травматолог-ортопед",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "formats": [
+    "offline",
+    "online"
+  ],
+  "bio": "Хирург-травматолог-ортопед; проводит операции в Специальной хирургической больнице Трифунович в Белграде, доступны онлайн-консультации.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Специальная Хирургическая Больница Трифунович",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "website": "https://taplink.cc/doctor__skipenko"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/151872",
+    "https://t.me/vrachivserbii/193133"
+  ],
+  "updatedAt": "2026-09-24"
+}

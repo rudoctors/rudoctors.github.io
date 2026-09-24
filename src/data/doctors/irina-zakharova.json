@@ -1,0 +1,50 @@
+{
+  "slug": "irina-zakharova",
+  "name": "Irina Zakharova",
+  "specializations": [
+    "osteopath",
+    "manual_therapist"
+  ],
+  "specializationText": "остеопат, мануальный терапевт",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Остеопат, Мануальный терапевт; Belgrade",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/osteoland"
+  },
+  "reviews": [
+    {
+      "id": "tg-90961",
+      "author": "Наталья Лаврищева",
+      "date": "2024-01-21",
+      "text": "Рекомендую остеопата Ирину Захарову @osteoland. Принимает в Белграде. Внимательная, приятная, пунктуальная. Не буду описывать свои болячки подробно, одно ясно, что все они обострились и наслоились от стресса переезда и адаптации и хвала Ирине - все позади. Огромная благодарность от всей семьи.",
+      "source": "Telegram: https://t.me/vrachivserbii/90961",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-91343",
+      "author": "Anna Koroleva",
+      "date": "2024-01-25",
+      "text": "Хочу поделиться рекомендацией на врача остеопата и мануального терапевта - Захарова Ирина. @osteoland (принимает в Белграде, кабинет в центре). Обращалась к ней, она провела глубокую диагностику и коррекцию. Сразу почувствовала разницу и легкость. Через месяц сделала еще один визит для более глубокой проработки и закрепления. У меня заметно улучшилось общее самочувствие, много энергии, отличный сон.",
+      "source": "Telegram: https://t.me/vrachivserbii/91343",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/90961",
+    "https://t.me/vrachivserbii/91343",
+    "https://t.me/vrachivserbii/92132",
+    "https://t.me/vrachivserbii/117802",
+    "https://t.me/vrachivserbii/118934",
+    "https://t.me/vrachivserbii/118996"
+  ],
+  "updatedAt": "2026-09-24"
+}

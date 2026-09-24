@@ -1,0 +1,29 @@
+{
+  "slug": "potehin-dmitriy-vladimirovich",
+  "name": "Потехин Дмитрий Владимирович",
+  "specializations": [
+    "dentist",
+    "dental_surgeon"
+  ],
+  "specializationText": "стоматолог-хирург; стоматолог-терапевт; стоматолог-ортопед",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог-хирург, терапевт и ортопед; принимает в Белграде, диплом нострифицирован в Сербии.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "email": "doktordi999@gmail.com",
+    "telegram": "https://t.me/doktorpotekhin"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/191890"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -27,7 +27,24 @@
     "appointmentUrl": "https://n1342042.alteg.io/company/1167832/personal/select-master/master-info/1167832/2902276?o=m2902276",
     "website": "https://citilab.rs/ru/doctors/tsallagova-elena"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-179143",
+      "author": "Юля ШинШилкина",
+      "date": "2026-02-12",
+      "text": "Была на приёме у гинеколога Елены Владимировны Цаллаговой в Citilab. Врач внимательно выслушала меня, провела обследование и понятно объяснила результат, а также куда обратиться дальше. Рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/179143",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-195558",
+      "author": "Tatyana Radchuk",
+      "date": "2026-06-12",
+      "text": "Неоднократно была на приёме у гинеколога Елены Владимировны Цаллаговой в Citilab. Подход был внимательным и деликатным, врач подробно консультировала и отвечала на вопросы. Мне всё понравилось.",
+      "source": "Telegram: https://t.me/vrachivserbii/195558",
+      "lang": "ru"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [

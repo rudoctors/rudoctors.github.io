@@ -1,0 +1,40 @@
+{
+  "slug": "aleksandra-sekulic",
+  "name": "Aleksandra Sekulić",
+  "specializations": [
+    "physiotherapist"
+  ],
+  "specializationText": "физиотерапевт",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Физиотерапевт; Dr. Žutić / Medikom, Braničevska 12a",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dr. Žutić / Medikom",
+      "address": "Braničevska 12a",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-71262",
+      "author": "Екатерина К",
+      "date": "2023-07-17",
+      "text": "Физиотерапевт детский Sekulić Aleksandra. Говорит по английски. Лечение помогло. Принимает в dr. ŽUTIČ и в клинике Medikom по адресу Браничевска 12а. Там же в медиком можно потом пройти физиопроцедуры - электрофарез, лазер, микротоки, магнит. Лечение помогло. Рекомендую. Уже два раза лечились у нее.",
+      "source": "Telegram: https://t.me/vrachivserbii/71262",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/71262"
+  ],
+  "updatedAt": "2026-09-24"
+}

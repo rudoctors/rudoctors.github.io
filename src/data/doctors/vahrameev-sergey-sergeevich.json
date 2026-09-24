@@ -27,7 +27,16 @@
     "appointmentUrl": "https://n1342042.alteg.io/company/1167832/personal/select-services?o=m2900986",
     "website": "https://citilab.rs/ru/doctors/vakhrameev-sergey"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-178403",
+      "author": "Misha Khlestunov",
+      "date": "2026-02-07",
+      "text": "Благодарю хирургу Сергею Сергеевичу Вахрамееву в Citilab. Врач проявил внимание и желание помочь. Процедура прошла хорошо. Искренне рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/178403",
+      "lang": "ru"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [

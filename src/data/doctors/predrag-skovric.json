@@ -1,0 +1,30 @@
+{
+  "slug": "predrag-skovric",
+  "name": "Predrag Skovric",
+  "specializations": [
+    "physiotherapist"
+  ],
+  "specializationText": "ортопед, физиотерапевт",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Физиотерапевт; MediGroup Kalenič",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup Kalenič",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/55951"
+  ],
+  "updatedAt": "2026-09-24"
+}

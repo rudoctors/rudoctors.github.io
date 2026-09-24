@@ -1,0 +1,40 @@
+{
+  "slug": "branislav-rovcanin",
+  "name": "Branislav Rovčanin",
+  "specializations": [
+    "surgeon",
+    "endocrinologist"
+  ],
+  "specializationText": "общий хирург, эндокринный хирург",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Хирург, Эндокринолог; Trifunović",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Trifunović",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-191260",
+      "author": "Иван Полотнянщиков",
+      "date": "2026-05-05",
+      "text": "Был на приёме у Branislav Rovčanin в клинике Trifunović. Врач оказался приятным и лёгким в общении. Посмотрел, всё объяснил и успокоил. У него русский примерно В2, поэтому весь приём реально можно было провести на русском.",
+      "source": "Telegram: https://t.me/vrachivserbii/191260",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/191260"
+  ],
+  "updatedAt": "2026-09-24"
+}

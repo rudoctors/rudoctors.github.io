@@ -1,0 +1,36 @@
+{
+  "slug": "marat-guseynov",
+  "name": "Marat Guseynov",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог; Belgrade",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/Marat_Guseinov"
+  },
+  "reviews": [
+    {
+      "id": "tg-113309",
+      "author": "Olga",
+      "date": "2024-09-26",
+      "text": "Хочу оставить отзыв о стоматологе Марате Гусейнове (@Marat_Guseinov). Ходила к нему удалять зуб мудрости. Откладывала процедуру годами, т.к. было страшно удалять, накладывать швы и пить антибиотики. В итоге — зря боялась. Вся процедура заняла, наверное, минут 20. Абсолютно безболезненно сделал уколы анестезии, удалил зуб легко и аккуратно, без боли и крови, дал рекомендации по дальнейшим действиям. После этого все зажило легко и беспроблемно, через неделю уже о зубе и не вспоминаю, как будто и не было никакой процедуры. Планирую обращаться к нему и за дальнейшими процедурами с зубами.",
+      "source": "Telegram: https://t.me/vrachivserbii/113309",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/113309"
+  ],
+  "updatedAt": "2026-09-24"
+}

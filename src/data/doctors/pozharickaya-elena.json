@@ -27,7 +27,7 @@
     "email": null
   },
   "reviews": [],
-  "hidden": false,
+  "hidden": true,
   "featured": false,
   "sources": [
     "google-sheets",

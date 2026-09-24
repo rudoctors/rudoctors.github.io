@@ -1,0 +1,31 @@
+{
+  "slug": "bogosavlevich-svetlana",
+  "name": "Богосавльевич Светлана",
+  "specializations": [
+    "ophthalmologist"
+  ],
+  "specializationText": "Офтальмолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Офтальмолог в MediGroup в Белграде.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "address": "бульвар Александра",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/146629"
+  ],
+  "updatedAt": "2026-09-24"
+}

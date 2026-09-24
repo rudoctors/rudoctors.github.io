@@ -1,0 +1,34 @@
+{
+  "slug": "nosova-anastasiya-yurevna",
+  "name": "Носова Анастасия Юрьевна",
+  "specializations": [
+    "dentist",
+    "dental_surgeon"
+  ],
+  "specializationText": "стоматолог-хирург",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог-хирург; принимает в клинике на Makedonska 24 в Белграде.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "частная клиника",
+      "address": "Makedonska 24",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/AU_dentist"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/147420"
+  ],
+  "updatedAt": "2026-09-24"
+}

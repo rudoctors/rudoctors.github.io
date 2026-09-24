@@ -1,0 +1,33 @@
+{
+  "slug": "medich-mirko",
+  "name": "Медич Мирко",
+  "specializations": [
+    "dentist",
+    "dental_surgeon"
+  ],
+  "specializationText": "стоматолог-хирург; имплантолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Главный врач и стоматолог-хирург Dental Simina; субспециализация по имплантологии.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dental Simina",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 62 200 082"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/209228"
+  ],
+  "updatedAt": "2026-09-24"
+}

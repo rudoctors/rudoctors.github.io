@@ -1,0 +1,34 @@
+{
+  "slug": "papinen-darya-andreevna",
+  "name": "Папинен Дарья Андреевна",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "врач-стоматолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач-стоматолог с пятилетним стажем; после переезда в Сербию начала принимать в клинике в Dorčol.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "—",
+      "address": "Simina 9a",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/LesJardinsDeNuit",
+    "website": "https://www.instagram.com/p/ClTUqRKs75k/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/35720"
+  ],
+  "updatedAt": "2026-09-24"
+}

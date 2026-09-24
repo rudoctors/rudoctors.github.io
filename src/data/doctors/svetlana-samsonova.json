@@ -1,0 +1,52 @@
+{
+  "slug": "svetlana-samsonova",
+  "name": "Svetlana Samsonova",
+  "specializations": [
+    "ultrasound_diagnostics"
+  ],
+  "specializationText": "врач УЗИ",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач УЗИ; Džinić, Vršacka 34",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Džinić",
+      "address": "Vršacka 34",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "phone": "+38163590448",
+    "telegram": "https://t.me/in_samsonova"
+  },
+  "reviews": [
+    {
+      "id": "tg-119640",
+      "author": "Tati",
+      "date": "2024-11-30",
+      "text": "Всем привет 😊 я ходила на УЗИ брюшной полости в сербскую клинику Džinić к русскому доктору Светлане Самсоновой. Город Нови Сад ❤️ Очень грамотная, вдумчивая, внимательная!!! Прекрасный специалист и профессионал своего дела! Рекомендую от всей души.",
+      "source": "Telegram: https://t.me/vrachivserbii/119640",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-134020",
+      "author": "Elena",
+      "date": "2025-03-28",
+      "text": "Добрый день! Хочу оставить отзыв и выразить огромную благодарность врачу Светлане Самсоновой. Я делала у нее УЗИ брюшной полости в клинике Džinić (Vršacka 34 Novi Sad). Врач очень внимательная, очень тщательно и подробно всё посмотрела и описала. На все вопросы ответила. Чувствуется профессионализм и увлечённость своим делом. Ещё один специалист в мою копилочку👏",
+      "source": "Telegram: https://t.me/vrachivserbii/134020",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/119640",
+    "https://t.me/vrachivserbii/134020"
+  ],
+  "updatedAt": "2026-09-24"
+}

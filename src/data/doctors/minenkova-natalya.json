@@ -1,0 +1,40 @@
+{
+  "slug": "minenkova-natalya",
+  "name": "Миненкова Наталья",
+  "nameEn": "Natalia Minenkova",
+  "specializations": [
+    "psychologist",
+    "psychotherapist"
+  ],
+  "specializationText": "психолог; психотерапевт",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline",
+    "online"
+  ],
+  "bio": "Психолог и психотерапевт; личный кабинет в центре Белграда на Resovska и онлайн; работает на русском и сербском.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "—",
+      "address": "Resovska",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/nmmpsy",
+    "website": "https://nmpsy.com/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/62420"
+  ],
+  "updatedAt": "2026-09-24"
+}

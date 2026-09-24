@@ -1,0 +1,32 @@
+{
+  "slug": "ilich-radomir",
+  "name": "Ильич Радомир",
+  "specializations": [
+    "surgeon"
+  ],
+  "specializationText": "Хирург",
+  "city": "Novi Sad",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Хирург; принимает в UROMEDIKA в Нови Саде, ранее проводил аппендэктомию в Ургентном центре Нови Сада; немного говорит по-русски.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "UROMEDIKA",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/146808"
+  ],
+  "updatedAt": "2026-09-24"
+}

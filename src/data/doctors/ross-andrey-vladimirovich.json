@@ -1,0 +1,27 @@
+{
+  "slug": "ross-andrey-vladimirovich",
+  "name": "Росс Андрей Владимирович",
+  "specializations": [
+    "plastic_surgeon"
+  ],
+  "specializationText": "пластический хирург",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Пластический хирург; практикует в Белграде более 5 лет, выполняет эстетические и реконструктивные операции. Телефон в объявлении относится к помощнице Зухре, а не к врачу.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "website": "http://stmedica.com/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/157855"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "marko-vuckovic",
+  "name": "Marko Vuckovic",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог; Dental Vuckovic",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dental Vuckovic",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "website": "https://www.dental-vuckovic.rs/"
+  },
+  "reviews": [
+    {
+      "id": "tg-115948",
+      "author": "Olga",
+      "date": "2024-10-24",
+      "text": "Была у доктора Марко Вучковича, он говорит по-русски. Всё прошло аккуратно и быстро. Кажется, впервые в жизни я не успела испугаться в стоматологическом кресле. Рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/115948",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/115948"
+  ],
+  "updatedAt": "2026-09-24"
+}

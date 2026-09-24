@@ -1,0 +1,39 @@
+{
+  "slug": "anastasiya-hromova",
+  "name": "Анастасия Хромова",
+  "specializations": [
+    "therapist",
+    "pulmonologist"
+  ],
+  "specializationText": "терапевт; пульмонолог",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Терапевт и пульмонолог; принимает в Doctorus Expert в Белграде, проводит полный анамнез, говорит по-русски и сербски.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Doctorus Expert",
+      "address": "Вишеградска 1А",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 69 101 9269",
+    "telegram": "https://t.me/pulmoexpert"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/147026",
+    "https://t.me/vrachivserbii/136686"
+  ],
+  "updatedAt": "2026-09-24"
+}

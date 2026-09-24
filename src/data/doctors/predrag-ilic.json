@@ -1,0 +1,30 @@
+{
+  "slug": "predrag-ilic",
+  "name": "Predrag Ilić",
+  "specializations": [
+    "gynecologist"
+  ],
+  "specializationText": "детский гинеколог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гинеколог; MediGroup",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/56262"
+  ],
+  "updatedAt": "2026-09-24"
+}

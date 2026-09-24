@@ -31,7 +31,24 @@
     "appointmentUrl": "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3BCBowbWkqBLa3RGCCJRNhzjm0l9-jsSG_CYIKW-HsaCQv9eHfbZqU0taWXEzVQtv8okifMo9O",
     "mapsUrl": "https://maps.app.goo.gl/pdiJ5kzBfz2yHnoZ6"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-206952",
+      "author": "Яша Яша",
+      "date": "2026-09-01",
+      "text": "Посетил травматолога Мейлиса Мовламова. Врач внимательно осмотрел меня, подобрал лечение и подробно объяснил дальнейшие действия. Он вежлив и тактичен. Рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/206952",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-208928",
+      "author": "Olga S",
+      "date": "2026-09-13",
+      "text": "После нескольких недель безуспешного лечения в государственных больницах я обратилась к травматологу Мейлису Мовламову. Врач быстро принял меня, провёл необходимую манипуляцию, и состояние быстро улучшилось. Он вежлив, внимателен и тактичен. Рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/208928",
+      "lang": "ru"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [

@@ -1,0 +1,30 @@
+{
+  "slug": "anna-mirzoeva",
+  "name": "Anna Mirzoeva",
+  "specializations": [
+    "psychiatrist"
+  ],
+  "specializationText": "психиатр",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Психиатр; Vizim",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Vizim",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/127113"
+  ],
+  "updatedAt": "2026-09-24"
+}

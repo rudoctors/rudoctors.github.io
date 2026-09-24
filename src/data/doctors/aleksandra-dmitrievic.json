@@ -1,0 +1,30 @@
+{
+  "slug": "aleksandra-dmitrievic",
+  "name": "Aleksandra Dmitriević",
+  "specializations": [
+    "neurologist"
+  ],
+  "specializationText": "детский невролог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Невролог; MediGroup Kalenič",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup Kalenič",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/72160"
+  ],
+  "updatedAt": "2026-09-24"
+}

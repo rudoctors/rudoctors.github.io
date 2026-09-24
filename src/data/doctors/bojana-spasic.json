@@ -1,0 +1,39 @@
+{
+  "slug": "bojana-spasic",
+  "name": "Bojana Spasić",
+  "specializations": [
+    "dermatologist"
+  ],
+  "specializationText": "дерматолог",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Дерматолог; K2 Derma",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "K2 Derma",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-179862",
+      "author": "Irina Ostanina",
+      "date": "2026-02-18",
+      "text": "Хочу поделиться своим положительным опытом от осмотра у дерматолога пр. Бойана Спасич (prim. dr Bojana Spasić) в клинике K2 Derma в Новом Саде. Врач очень внимательно осмотрела кожные образования, всё прошло доброжелательно и комфортно. После осмотра приняли решение о том, что и как нужно удалять. Сейчас нахожусь в процессе удаления.",
+      "source": "Telegram: https://t.me/vrachivserbii/179862",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/179862"
+  ],
+  "updatedAt": "2026-09-24"
+}

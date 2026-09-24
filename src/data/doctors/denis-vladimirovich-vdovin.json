@@ -1,0 +1,36 @@
+{
+  "slug": "denis-vladimirovich-vdovin",
+  "name": "Денис Владимирович Вдовин",
+  "specializations": [
+    "urologist"
+  ],
+  "specializationText": "Врач-уролог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач-уролог с 25-летним стажем; ведёт приём в Vizim в Белграде и Нови Саде.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Vizim",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Vizim",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/doktordenur"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/185455"
+  ],
+  "updatedAt": "2026-09-24"
+}

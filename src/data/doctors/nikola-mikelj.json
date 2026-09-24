@@ -1,0 +1,40 @@
+{
+  "slug": "nikola-mikelj",
+  "name": "Nikola Mikelj",
+  "specializations": [
+    "surgeon",
+    "proctologist"
+  ],
+  "specializationText": "хирург, проктолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Хирург, Проктолог; MediGroup",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-95324",
+      "author": "Мария Кокорина Ψ Психолог",
+      "date": "2024-03-12",
+      "text": "#хирург #проктолог Рекомендую врача из медигруп - Никола Микелич. Хорошо говорит по-русски. Очень приятный и располагающий к себе доктор. Всё чётко объяснил, пояснил, рассказал.",
+      "source": "Telegram: https://t.me/vrachivserbii/95324",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/95324"
+  ],
+  "updatedAt": "2026-09-24"
+}

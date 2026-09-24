@@ -1,0 +1,37 @@
+{
+  "slug": "meandzhiya-elena",
+  "name": "Меанджия Елена",
+  "nameEn": "Jelena Meandžija",
+  "specializations": [
+    "gynecologist",
+    "ultrasound_diagnostics"
+  ],
+  "specializationText": "гинеколог",
+  "city": "Novi Sad",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гинеколог в Dr. Veber; принимает и проводит УЗИ, говорит по-русски.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dr. Veber",
+      "address": "Svetozara Miletića 8",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 62 528 922"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/144366"
+  ],
+  "updatedAt": "2026-09-24"
+}

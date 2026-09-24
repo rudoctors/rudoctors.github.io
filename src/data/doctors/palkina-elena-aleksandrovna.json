@@ -1,0 +1,33 @@
+{
+  "slug": "palkina-elena-aleksandrovna",
+  "name": "Палкина Елена Александровна",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог-терапевт",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог-терапевт, 25 лет опыта; главный врач сети Санкт-Петербург—Белград, принимает в Первой русско-сербской клинике.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Первая русско-сербская клиника / Palkin",
+      "address": "Deligradska 6",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "website": "https://taplink.cc/elenapalkina"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/127589"
+  ],
+  "updatedAt": "2026-09-24"
+}

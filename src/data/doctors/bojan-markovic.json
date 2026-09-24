@@ -1,0 +1,40 @@
+{
+  "slug": "bojan-markovic",
+  "name": "Bojan Marković",
+  "specializations": [
+    "otorhinolaryngologist",
+    "surgeon"
+  ],
+  "specializationText": "ЛОР, хирург",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "ЛОР, Хирург; BelMedic",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "BelMedic",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-77387",
+      "author": "Mira",
+      "date": "2023-09-12",
+      "text": "Операцию делала в клинике BelMedic у доктора Bojan Markovic. Всё прошло отлично, сама операция и наркоз — всё на высшем уровне.",
+      "source": "Telegram: https://t.me/vrachivserbii/77387",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/77387"
+  ],
+  "updatedAt": "2026-09-24"
+}

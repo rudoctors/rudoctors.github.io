@@ -1,0 +1,30 @@
+{
+  "slug": "zayceva-irina",
+  "name": "Зайцева Ирина",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "Врач-стоматолог-терапевт",
+  "city": "Belgrade",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач-стоматолог-терапевт с 25-летним стажем; ведёт приём в центре Белграда, имеет лицензию и подтверждённый диплом.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "+381601578528",
+    "telegram": "https://t.me/stombelgrad"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/124494"
+  ],
+  "updatedAt": "2026-09-24"
+}

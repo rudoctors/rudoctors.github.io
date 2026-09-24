@@ -1,0 +1,29 @@
+{
+  "slug": "oksana-istomina",
+  "name": "Оксана Истомина",
+  "specializations": [
+    "psychologist"
+  ],
+  "specializationText": "психолог; релокация и адаптация",
+  "city": "Belgrade",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "online"
+  ],
+  "bio": "Русскоговорящий психолог в Белграде; на момент поста работает только онлайн, специализируется на релокации и адаптации.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "website": "http://oksana-istomina.ru/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/10466"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "ivana-drazic",
+  "name": "Ivana Drazić",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог; Palkin Dental Center",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Palkin Dental Center",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/196216",
+    "https://t.me/vrachivserbii/196304"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "ravlik-andrey-andreevich",
+  "name": "Равлик Андрей Андреевич",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог-ортопед",
+  "city": "Belgrade",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог-ортопед; принимает в Белграде на русском языке, диплом нострифицирован в Сербии.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "+7 999 792 9780",
+    "email": "ravel.andrej@gmail.com",
+    "telegram": "https://t.me/dr_Ravlik"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/125217",
+    "https://t.me/vrachivserbii/205386",
+    "https://t.me/vrachivserbii/146007"
+  ],
+  "updatedAt": "2026-09-24"
+}

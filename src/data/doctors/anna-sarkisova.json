@@ -1,0 +1,35 @@
+{
+  "slug": "anna-sarkisova",
+  "name": "Анна Саркисова",
+  "specializations": [
+    "gynecologist",
+    "obstetrician_gynecologist",
+    "ultrasound_diagnostics"
+  ],
+  "specializationText": "акушерство, гинекология, УЗИ; консультирование детей и подростков",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач в клинике Vizim в Белграде; специализируется на акушерстве, гинекологии, УЗИ и консультировании детей и подростков.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Vizim",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/AnnaSarkisova"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/144504",
+    "https://t.me/vrachivserbii/183725"
+  ],
+  "updatedAt": "2026-09-24"
+}

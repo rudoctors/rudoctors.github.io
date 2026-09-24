@@ -1,0 +1,35 @@
+{
+  "slug": "nikolovska-sinicki-nina",
+  "name": "Николовска-Синицки Нина",
+  "specializations": [
+    "otorhinolaryngologist"
+  ],
+  "specializationText": "ЛОР",
+  "city": "Belgrade",
+  "languages": [
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "ЛОР в Белграде на Sazonova 71; понимает по-русски, но отвечает только по-сербски.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "—",
+      "address": "Sazonova 71",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "011 2836 836"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/7864"
+  ],
+  "updatedAt": "2026-09-24"
+}

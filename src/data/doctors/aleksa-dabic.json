@@ -1,0 +1,41 @@
+{
+  "slug": "aleksa-dabic",
+  "name": "Aleksa Dabić",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог; Veroslav Dabić",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Veroslav Dabić",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "website": "https://maps.app.goo.gl/MuKHBm2dFpsBpyVs9"
+  },
+  "reviews": [
+    {
+      "id": "tg-71802",
+      "author": "Елена",
+      "date": "2023-07-20",
+      "text": "Ходила к Алексе Дабич. Алекса говорит по-английски. По общению крайне дружелюбный, приятный и отзывчивый человек. Я стоматологов боюсь до трясучки, но в данном случае я смогла довериться врачу. Максимально не травматичный опыт лечения зубов в моей жизни. Цены адекватные, хорошее оснащение клиники, приятные врачи.",
+      "source": "Telegram: https://t.me/vrachivserbii/71802",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/71802"
+  ],
+  "updatedAt": "2026-09-24"
+}

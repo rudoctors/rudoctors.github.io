@@ -1,0 +1,48 @@
+{
+  "slug": "strahinja-ilic",
+  "name": "Strahinja Ilić",
+  "specializations": [
+    "dental_surgeon"
+  ],
+  "specializationText": "хирург-стоматолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Хирург-стоматолог; Palkin Dental Center",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Palkin Dental Center",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-191889",
+      "author": "Елена Гречко",
+      "date": "2026-05-11",
+      "text": "#хирург-стоматолог #Palkin В клинике работает замечательный хирург Илич Страхиня (имя, конечно, для стоматолога -🔥). Виртуозно удаляет 8-ки и не только (есть чем сравнивать, с другой стороны 8-ки удаляла у другого врача). Работает аккуратно, быстро и успевает моральную поддержку оказать. Рекомендую от всей души!",
+      "source": "Telegram: https://t.me/vrachivserbii/191889",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-201193",
+      "author": "Natalia S.",
+      "date": "2026-07-27",
+      "text": "Хочу оставить отзыв о хирурге-стоматологе Ilić Strahinja / Страхинья Ильч в Palkin Dental center. Пришла на удаление зуба мудрости, доктор внимательно изучил снимки до манипуляции. Удалил за 10 мин 2 верхних зуба мудрости, профессионал , аккуратный, спокойный. Лучшие рекомендации",
+      "source": "Telegram: https://t.me/vrachivserbii/201193",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/191889",
+    "https://t.me/vrachivserbii/201193"
+  ],
+  "updatedAt": "2026-09-24"
+}

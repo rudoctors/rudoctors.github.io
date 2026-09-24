@@ -1,0 +1,42 @@
+{
+  "slug": "viktor-feniksov",
+  "name": "Виктор Фениксов",
+  "specializations": [
+    "surgeon"
+  ],
+  "specializationText": "нейрохирург; спинальный хирург",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Нейрохирург и спинальный хирург; ведёт консультативный приём в Нови-Саде и Белграде, имеет официальный сайт и Telegram для записи.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dom zdravlja MEDIGROUP",
+      "address": "Cara Dušana, 26",
+      "city": "Novi Sad"
+    },
+    {
+      "clinic": "Obšta Bolnica Medigroup",
+      "address": "Milutina Milankovića 3",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 11 40 40 100",
+    "telegram": "https://t.me/victor_neurosurg",
+    "website": "https://brainspine.info/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/191252",
+    "https://t.me/vrachivserbii/108723",
+    "https://t.me/vrachivserbii/148064"
+  ],
+  "updatedAt": "2026-09-24"
+}

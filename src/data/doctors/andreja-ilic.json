@@ -1,0 +1,40 @@
+{
+  "slug": "andreja-ilic",
+  "name": "Andreja Ilić",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог; Idental, Gavrila Principa 21",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Idental",
+      "address": "Gavrila Principa 21",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-91801",
+      "author": "Sergej Miroslav",
+      "date": "2024-01-29",
+      "text": "Поделюсь положительными впечатлениями о стоматологе Andreja Ilić из ординации Idental. Сделал у него 5 зубов. Очень понравилось общение, отношение, подходы и цены. Общались на сербском языке, хотя у меня низкий уровень. Иногда переходили на английский. Рекомендую!",
+      "source": "Telegram: https://t.me/vrachivserbii/91801",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/91801"
+  ],
+  "updatedAt": "2026-09-24"
+}

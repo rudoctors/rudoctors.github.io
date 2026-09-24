@@ -1,0 +1,29 @@
+{
+  "slug": "bogdan-zmyslya",
+  "name": "Богдан Змысля",
+  "specializations": [
+    "psychologist",
+    "psychotherapist"
+  ],
+  "specializationText": "Психолог, транзактный анализ и психодинамическая психотерапия",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "online"
+  ],
+  "bio": "Психолог; работает в транзактном анализе и психодинамической психотерапии, принимает онлайн и очно в Белграде.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/zmyslya",
+    "website": "https://zmyslya.taplink.ws/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/199818"
+  ],
+  "updatedAt": "2026-09-24"
+}

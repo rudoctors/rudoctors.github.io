@@ -1,0 +1,42 @@
+{
+  "slug": "roman-tabakov",
+  "name": "Роман Табаков",
+  "specializations": [
+    "rehabilitologist"
+  ],
+  "specializationText": "врач-реабилитолог; физическая и неврологическая реабилитация",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач-реабилитолог и основатель BRAINHELP; ведёт приём в Нови-Саде и частный приём в Белграде, помогает детям и взрослым с реабилитацией и неврологическими состояниями.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "BRAINHELP",
+      "address": "Dr. Vase Pelagića 4",
+      "city": "Novi Sad"
+    },
+    {
+      "clinic": "BRAINHELP",
+      "address": "Hadži Milentijeva 34",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 677 75 94 20",
+    "telegram": "https://t.me/DocTabakov",
+    "website": "https://www.instagram.com/doctabakov"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/204579",
+    "https://t.me/vrachivserbii/64795",
+    "https://t.me/vrachivserbii/138562"
+  ],
+  "updatedAt": "2026-09-24"
+}

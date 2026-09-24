@@ -1,0 +1,40 @@
+{
+  "slug": "tamara-bogavac",
+  "name": "Tamara Bogavac",
+  "specializations": [
+    "endocrinologist"
+  ],
+  "specializationText": "эндокринолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Эндокринолог; Euromedic, Cvijićeva 42",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Euromedic",
+      "address": "Cvijićeva 42",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-69885",
+      "author": "Annie",
+      "date": "2023-07-06",
+      "text": "Вчера была у сербского эндокринолога Dr Tamara Bogavac (Клиника Евромедик на цвиичева 42). Очень приятная женщина, внимательно изучила все предыдущие анализы, назначила два доп.анализа, расписала примерно дальнейшие действия. Если хорошо понимаете язык, то очень рекомендую доктора.",
+      "source": "Telegram: https://t.me/vrachivserbii/69885",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/69885"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "jankovic-snezana",
+  "name": "Janković Snežana",
+  "specializations": [
+    "gynecologist"
+  ],
+  "specializationText": "гинеколог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гинеколог; MediGroup Dorćol, Cara Dušana 58",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup Dorćol",
+      "address": "Cara Dušana 58",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-164697",
+      "author": "Наталья",
+      "date": "2025-11-06",
+      "text": "Рекомендую гинеколога dr Janković Snežane в МедиГруп Дорчол (Cara Dušana 58). Очень ответственный и чуткий приём. Общались на английском языке.",
+      "source": "Telegram: https://t.me/vrachivserbii/164697",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/164697"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "vika-hlistunova",
+  "name": "Вика Хлистунова",
+  "nameEn": "Vika Khlistunova",
+  "specializations": [
+    "psychologist"
+  ],
+  "specializationText": "психолог; когнитивно-поведенческий специалист; схема-терапевт",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "online"
+  ],
+  "bio": "Психолог и схема-терапевт; принимает очно в Белграде и онлайн по всему миру.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/viktoriavittoria"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/194005"
+  ],
+  "updatedAt": "2026-09-24"
+}

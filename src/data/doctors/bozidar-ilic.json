@@ -1,0 +1,38 @@
+{
+  "slug": "bozidar-ilic",
+  "name": "Božidar Ilić",
+  "specializations": [
+    "dental_implantologist",
+    "dental_surgeon"
+  ],
+  "specializationText": "имплантолог, хирург-стоматолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Имплантолог, Хирург-стоматолог; Belgrade",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/ilicdent",
+    "website": "https://maps.app.goo.gl/GzvKY9AgoEm11fYq6"
+  },
+  "reviews": [
+    {
+      "id": "tg-209304",
+      "author": "Victor Rogulenko @flesspro",
+      "date": "2026-09-16",
+      "text": "Ставил имплант у доктора Божидара Илича (@ilicdent) в Белграде и рекомендую его. Я писал нескольким врачам с набором вопросов, его ответ показался мне самым подробным и логичным. Доктор и ассистент установили имплант быстро и безболезненно. Доктор выдал паспорт с подробным описанием модели импланта и особенностей установки. Как человек доктор мне понравился. Мы говорили на сербском, но ещё доктор владеет английским и немного русским.",
+      "source": "Telegram: https://t.me/vrachivserbii/209304",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/209304"
+  ],
+  "updatedAt": "2026-09-24"
+}

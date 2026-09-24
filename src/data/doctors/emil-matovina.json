@@ -1,0 +1,39 @@
+{
+  "slug": "emil-matovina",
+  "name": "Emil Matovina",
+  "specializations": [
+    "ultrasound_diagnostics"
+  ],
+  "specializationText": "врач УЗИ, пункция щитовидной железы",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач УЗИ; Cardios",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Cardios",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-129802",
+      "author": "Арина Шилова",
+      "date": "2025-02-27",
+      "text": "Была в клинике Cardios в Новом Саде у врача Эмиля Матовина. Врач оказался очень вежливым и понятливым, понятливо отнёсся к проблемам с языком. Он успокоил меня, долго и подробно объяснил, что будет происходить, и провёл процедуру быстро и аккуратно. Затем за мной понаблюдали и отпустили.",
+      "source": "Telegram: https://t.me/vrachivserbii/129802",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/129802"
+  ],
+  "updatedAt": "2026-09-24"
+}

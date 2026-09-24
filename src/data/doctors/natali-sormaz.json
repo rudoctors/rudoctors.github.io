@@ -1,0 +1,37 @@
+{
+  "slug": "natali-sormaz",
+  "name": "Natali Šormaz",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "ортодонт",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог; Belgrade",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/Dr_Natali_29"
+  },
+  "reviews": [
+    {
+      "id": "tg-120093",
+      "author": "Юля",
+      "date": "2024-12-03",
+      "text": "#стоматолог #ортодонт #Белград Положительный отзыв о Натали Шормаз @Dr_Natali_29 Врач внимательно меня выслушала, провела осмотр, объяснила все тонкости и моменты моего случая. Приклеила отвалившийся на одном зубе ретейнер и дала рекомендации. Было комфортно и легко. Рекомендую!",
+      "source": "Telegram: https://t.me/vrachivserbii/120093",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/97076",
+    "https://t.me/vrachivserbii/120093"
+  ],
+  "updatedAt": "2026-09-24"
+}

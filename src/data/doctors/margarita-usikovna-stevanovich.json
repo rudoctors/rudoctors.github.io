@@ -1,0 +1,33 @@
+{
+  "slug": "margarita-usikovna-stevanovich",
+  "name": "Маргарита Усиковна Стеванович",
+  "specializations": [
+    "obstetrician_gynecologist"
+  ],
+  "specializationText": "акушер-гинеколог; хирургическое лечение дисплазии шейки матки и радиоволновое удаление кондилом",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Акушер-гинеколог в Доме здравља ВИЗИМ в Белграде; проводит хирургическое лечение дисплазии шейки матки и радиоволновое удаление кондилом.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Дом здравља ВИЗИМ",
+      "address": "Здравка Челара 14а",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 11 785 7777"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/144500"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "aleksandra-aleksic",
+  "name": "Aleksandra Aleksić",
+  "specializations": [
+    "dermatologist"
+  ],
+  "specializationText": "дерматолог",
+  "city": "Belgrade",
+  "languages": [
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Дерматолог в MediGroup в Белграде; проводит осмотр родинок с дерматоскопией и общается по-английски.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/142680"
+  ],
+  "updatedAt": "2026-09-24"
+}

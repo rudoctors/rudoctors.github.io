@@ -1,0 +1,37 @@
+{
+  "slug": "semenova-anastasiya-aleksandrovna",
+  "name": "Семенова Анастасия Александровна",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "врач-стоматолог; ортодонт; гнатолог",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "en",
+    "es"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач-стоматолог, ортодонт и гнатолог; с 2025 года работает в Palkin Dental Center в Белграде, занимается исправлением прикуса и лечением ВНЧС.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Palkin Dental Center",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/semastoma",
+    "website": "https://palkin.rs/sr/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/191355"
+  ],
+  "updatedAt": "2026-09-24"
+}

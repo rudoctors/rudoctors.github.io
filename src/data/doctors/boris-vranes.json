@@ -1,0 +1,33 @@
+{
+  "slug": "boris-vranes",
+  "name": "Boris Vranes",
+  "specializations": [
+    "gynecologist"
+  ],
+  "specializationText": "гинеколог",
+  "city": "Belgrade",
+  "languages": [
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гинеколог в Euromedik на Bulevar Umetnosti в Белграде; хорошо говорит по-английски и помогает разобраться в гормональных вопросах.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Euromedik",
+      "address": "Bulevar Umetnosti",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/146471"
+  ],
+  "updatedAt": "2026-09-24"
+}

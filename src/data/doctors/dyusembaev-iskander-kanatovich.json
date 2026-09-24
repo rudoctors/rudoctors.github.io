@@ -1,0 +1,33 @@
+{
+  "slug": "dyusembaev-iskander-kanatovich",
+  "name": "Дюсембаев Искандер Канатович",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "Стоматолог-терапевт",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог-терапевт; принимает на Лимане 1 по адресу Drage Spasić 10.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "—",
+      "address": "Drage Spasić 10, Лиман 1",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "phone": "+381621025766"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/146679"
+  ],
+  "updatedAt": "2026-09-24"
+}

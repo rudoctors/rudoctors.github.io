@@ -1,0 +1,34 @@
+{
+  "slug": "belova-veronika-yurevna",
+  "name": "Белова Вероника Юрьевна",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "Врач-стоматолог, терапевтическая и ортопедическая стоматология",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач-стоматолог с терапевтической и ортопедической специализацией; принимает по улице Кичевска 12 в Белграде.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "—",
+      "address": "улица Кичевска 12",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381621112142",
+    "telegram": "https://t.me/dr_belovaa"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/147959"
+  ],
+  "updatedAt": "2026-09-24"
+}

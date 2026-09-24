@@ -1,4 +1,4 @@
-﻿{
+{
   "psychiatrist": "Психиатр",
   "child_psychiatrist": "Детский психиатр",
   "psychiatrist_child": "Детский психиатр",
@@ -32,8 +32,19 @@
   "allergist": "Аллерголог",
   "narcologist": "Нарколог",
   "ophthalmologist": "Офтальмолог",
-"dermatologist": "Дерматолог",
+  "dermatologist": "Дерматолог",
   "psychologist": "Психолог",
   "family_doctor": "Врач общей практики",
-  "gp": "Врач общей практики"
+  "gp": "Врач общей практики",
+  "radiologist": "Радиолог",
+  "mammologist": "Маммолог",
+  "ultrasound_diagnostics": "Врач УЗИ",
+  "osteopath": "Остеопат",
+  "proctologist": "Проктолог",
+  "plastic_surgeon": "Пластический хирург",
+  "physiatrist": "Физиатр",
+  "speech_therapist": "Логопед",
+  "dietitian": "Диетолог",
+  "nutritionist": "Нутрициолог",
+  "oncologist": "Онколог"
 }

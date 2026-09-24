@@ -1,0 +1,41 @@
+{
+  "slug": "vladan-jovicevic",
+  "name": "Vladan Jovičević",
+  "specializations": [
+    "rehabilitologist"
+  ],
+  "specializationText": "реабилитолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Реабилитолог; West Medic",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "West Medic",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "website": "https://www.westmedic.rs/"
+  },
+  "reviews": [
+    {
+      "id": "tg-92391",
+      "author": "Ekaterina Milicevic",
+      "date": "2024-02-05",
+      "text": "Поделюсь опытом с докторами в Белграде. Владан Йовичевич из West Medic. В Белграде продолжила восстановление в клинике. Супер доктор и персонал тоже.",
+      "source": "Telegram: https://t.me/vrachivserbii/92391",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/92391"
+  ],
+  "updatedAt": "2026-09-24"
+}

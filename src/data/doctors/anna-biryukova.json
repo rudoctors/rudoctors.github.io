@@ -1,0 +1,30 @@
+{
+  "slug": "anna-biryukova",
+  "name": "Анна Бирюкова",
+  "specializations": [
+    "psychologist"
+  ],
+  "specializationText": "Психолог",
+  "city": "Novi Sad",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "online"
+  ],
+  "bio": "Психолог; очные и онлайн-консультации в Нови Саде на русском языке.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "+381621252296",
+    "telegram": "https://t.me/njyska"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/207756"
+  ],
+  "updatedAt": "2026-09-24"
+}

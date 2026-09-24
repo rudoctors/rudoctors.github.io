@@ -1,0 +1,38 @@
+{
+  "slug": "karpov-sergey-yurevich",
+  "name": "Карпов Сергей Юрьевич",
+  "specializations": [
+    "surgeon",
+    "proctologist"
+  ],
+  "specializationText": "хирург; проктолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Хирург и проктолог; принимает по вторникам и четвергам в Prva poliklinika.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Prva poliklinika",
+      "address": "Krunska 38",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 65 448 4920",
+    "telegram": "https://t.me/HirurgProktologBeograd",
+    "website": "https://prvapoliklinika.rs/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/58847",
+    "https://t.me/vrachivserbii/115955",
+    "https://t.me/vrachivserbii/191188"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "jadranka-dragas",
+  "name": "Jadranka Dragaš",
+  "specializations": [
+    "ultrasound_diagnostics"
+  ],
+  "specializationText": "врач УЗИ",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач УЗИ; New Hospital",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "New Hospital",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/109674"
+  ],
+  "updatedAt": "2026-09-24"
+}

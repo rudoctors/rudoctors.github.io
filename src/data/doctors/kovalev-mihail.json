@@ -1,0 +1,40 @@
+{
+  "slug": "kovalev-mihail",
+  "name": "Ковалев Михаил",
+  "specializations": [
+    "otorhinolaryngologist",
+    "surgeon"
+  ],
+  "specializationText": "оториноларинголог, детский ЛОР, хирург",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Детский ЛОР и хирург, 16 лет практики, кандидат медицинских наук; действующая сербская лицензия.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Vizim",
+      "address": "Zdravka Čelara 14a",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Tesla Medical",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "011 785 7777",
+    "telegram": "https://t.me/mikl_lor"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/143485",
+    "https://t.me/vrachivserbii/203358"
+  ],
+  "updatedAt": "2026-09-24"
+}

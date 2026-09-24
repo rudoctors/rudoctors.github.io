@@ -1,0 +1,33 @@
+{
+  "slug": "kurchich-natalya",
+  "name": "Курчич Наталья",
+  "nameEn": "Natalia Curcic",
+  "specializations": [
+    "gynecologist"
+  ],
+  "specializationText": "гинеколог",
+  "city": "Novi Sad",
+  "languages": [
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гинеколог в клинике GOG в Нови-Саде; говорит по-английски.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "GOG",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/144366"
+  ],
+  "updatedAt": "2026-09-24"
+}

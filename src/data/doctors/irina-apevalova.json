@@ -1,0 +1,39 @@
+{
+  "slug": "irina-apevalova",
+  "name": "Irina Apevalova",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог; ProSmile",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "ProSmile",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-154120",
+      "author": "Nataliya Fedorova 🍀",
+      "date": "2025-08-29",
+      "text": "Хочу оставить положительный отзыв о стоматологе Ирине Апеваловой из ProSmile в Нови Саде. Отличный специалист и хороший человек. Анастезию она делает так, что этого не чувствуешь. Езжу к ней из Белграда. Мне это далековато, но лечить зубы хочу только у нее. 🌹",
+      "source": "Telegram: https://t.me/vrachivserbii/154120",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/154120"
+  ],
+  "updatedAt": "2026-09-24"
+}

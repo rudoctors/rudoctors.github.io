@@ -1,0 +1,40 @@
+{
+  "slug": "svetlana-petrovic",
+  "name": "Svetlana Petrović",
+  "specializations": [
+    "endocrinologist"
+  ],
+  "specializationText": "эндокринолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Эндокринолог; MediGroup Kalenič",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup Kalenič",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-114568",
+      "author": "Olesya",
+      "date": "2024-10-10",
+      "text": "Где-то в ветке увидела хороший отзыв на эндокринолога Svetlana Petrovic. Сегодня попала к ней на прием: все детально изучила, проверила, скорректировала план лечение с учетом времени приема лекарств. действительно внимательный доктор. Язык был сербский, но моих основ вполне хватило.",
+      "source": "Telegram: https://t.me/vrachivserbii/114568",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/114568",
+    "https://t.me/vrachivserbii/114569"
+  ],
+  "updatedAt": "2026-09-24"
+}

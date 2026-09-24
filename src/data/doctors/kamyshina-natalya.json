@@ -1,0 +1,38 @@
+{
+  "slug": "kamyshina-natalya",
+  "name": "Камышина Наталья",
+  "specializations": [
+    "cardiologist"
+  ],
+  "specializationText": "врач-кардиолог",
+  "city": "Novi Sad",
+  "languages": [
+    "ru",
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач-кардиолог, кандидат медицинских наук; принимает в Medigroup Sajam в Нови-Саде, лицензия кардиолога в Сербии.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dom zdravlja Medigroup Sajam",
+      "address": "Bulevar Kralja Petra I, 52",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "phone": "011 40 40 100",
+    "telegram": "https://t.me/KamishinaMD"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/186142"
+  ],
+  "updatedAt": "2026-09-24"
+}

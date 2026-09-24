@@ -1,0 +1,29 @@
+{
+  "slug": "portnyaga-olga",
+  "name": "Портняга Ольга",
+  "specializations": [
+    "psychologist",
+    "psychotherapist"
+  ],
+  "specializationText": "психоаналитически ориентированный психотерапевт; семейный психолог",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "online"
+  ],
+  "bio": "Психоаналитически ориентированный психотерапевт и семейный психолог; более 15 лет опыта, очно в Нови-Саде и онлайн.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/OlaphychOla",
+    "website": "https://www.b17.ru/portnyaga/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/183628"
+  ],
+  "updatedAt": "2026-09-24"
+}

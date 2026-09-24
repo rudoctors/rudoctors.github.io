@@ -1,0 +1,39 @@
+{
+  "slug": "aleksandar-p-simic",
+  "name": "Aleksandar P. Simić",
+  "specializations": [
+    "gastroenterologist"
+  ],
+  "specializationText": "гастроэнтеролог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гастроэнтеролог; Vesalius / Reflux Centar",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Vesalius / Reflux Centar",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-94922",
+      "author": "Olga Milovidova",
+      "date": "2024-03-07",
+      "text": "Сходила на консультацию и гастроскопию к профессору Aleksandar P. Simić в клинику \"Vesalius\" в Reflux Centar. Прекрасный, очень грамотный врач, рассказал подробно что и как работает. Выслушал, ответил на все вопросы. Гастроскопию сделал очень внимательно, сделал снимки, которые отдал на руки. Проконсультировал и дал рекомендации по итогам обследования. Рекомендую доктора, знаю, что точно говорит по-английски.",
+      "source": "Telegram: https://t.me/vrachivserbii/94922",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/94922"
+  ],
+  "updatedAt": "2026-09-24"
+}

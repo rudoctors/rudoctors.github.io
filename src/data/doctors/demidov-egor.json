@@ -1,0 +1,28 @@
+{
+  "slug": "demidov-egor",
+  "name": "Демидов Егор",
+  "specializations": [
+    "gp"
+  ],
+  "specializationText": "Врач общей практики",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач общей практики; консультирует, направляет на обследования и ведёт план лечения; принимает в Нови Саде и выезжает на дом.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "+381653149470",
+    "telegram": "https://t.me/egor0a"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/161843"
+  ],
+  "updatedAt": "2026-09-24"
+}

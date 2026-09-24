@@ -1,0 +1,35 @@
+{
+  "slug": "yuliya-sekretova",
+  "name": "Юлия Секретова",
+  "specializations": [
+    "dermatologist"
+  ],
+  "specializationText": "дерматовенеролог; трихолог",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline",
+    "online"
+  ],
+  "bio": "Дерматовенеролог и трихолог; принимает в MediGroup в Нови-Саде, возможны онлайн-консультации и выезд на дом.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 67 736 2275",
+    "telegram": "https://t.me/Sekretova_Julija"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/144769",
+    "https://t.me/vrachivserbii/186192"
+  ],
+  "updatedAt": "2026-09-24"
+}

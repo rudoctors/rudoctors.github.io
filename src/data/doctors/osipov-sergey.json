@@ -1,0 +1,33 @@
+{
+  "slug": "osipov-sergey",
+  "name": "Осипов Сергей",
+  "specializations": [
+    "osteopath"
+  ],
+  "specializationText": "врач; массажист; остеопат",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач, массажист и остеопат; принимает в Banovo Brdo, Белград.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "—",
+      "address": "Banovo Brdo",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 64 163 1107"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/11883"
+  ],
+  "updatedAt": "2026-09-24"
+}

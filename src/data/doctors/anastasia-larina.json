@@ -1,0 +1,49 @@
+{
+  "slug": "anastasia-larina",
+  "name": "Anastasia Larina",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог; Zepter Dental, Kralja Petra",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Zepter Dental",
+      "address": "Kralja Petra",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-120260",
+      "author": "Дилара Мамедова",
+      "date": "2024-12-04",
+      "text": "Хочу оставить отзыв о стоматологе Анастасии Лариной (Zepter Dental на Краља Петра в Белграде). Потрясающая врач, которая спасла мне зуб. Очень внимательно и тщательно собрала анамнез, четко определила проблему. Я пришла к ней на депульпирование, но она убедила меня, что стоит дать зубу еще один шанс. И вот уже две недели я радуюсь, что и боль прошла, и зуб удалось сохранить. Впервые чувствовала себя настолько в хороших руках! Спасибо огромное 🤍",
+      "source": "Telegram: https://t.me/vrachivserbii/120260",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-137502",
+      "author": "Tatyana Radchuk",
+      "date": "2025-04-22",
+      "text": "#стоматолог@vrachivserbii Была сегодня в клинике Zeptet Dental у замечательной врача стоматолога Лариной Анастасии! Очень внимательная, всё подробно говорит, объясняет, дала много полезных рекомендаций по уходу за полостью рта. Очень всем рекомендую!",
+      "source": "Telegram: https://t.me/vrachivserbii/137502",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/120260",
+    "https://t.me/vrachivserbii/137502"
+  ],
+  "updatedAt": "2026-09-24"
+}

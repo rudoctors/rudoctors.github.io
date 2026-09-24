@@ -1,0 +1,52 @@
+{
+  "slug": "ekaterina-serdyukova",
+  "name": "Ekaterina Serdyukova",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог-ортопед",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог; Palkin Dental Center, Deligradska 6",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Palkin Dental Center",
+      "address": "Deligradska 6",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/Ekaterina_Serdiukova"
+  },
+  "reviews": [
+    {
+      "id": "tg-135813",
+      "author": "Даниил Михайлович",
+      "date": "2025-04-10",
+      "text": "#стоматолог Доброго Дня! Переодически хожу к стоматологам, но вот тут решил поделиться впечатлением.. В поликлинике Palkin Dental Center по улице Делиградска 6, работает замечательный специалист, которую зовут Екатерина Сердюкова. Сделали проф. осмотр, дали очень грамотную консультацию, а также проф. чистку полости рта. Вообщем рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/135813",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-138896",
+      "author": "Arte",
+      "date": "2025-05-04",
+      "text": "#стоматолог-ортопед Был у Екатерины Сердюковой в Palkin Dental Center (Делиградска 6) — она сделала чистку, заменила пломбы на восьмёрках и провела ревизию зуба под будущую коронку. Всё спокойно, чётко и с вниманием к деталям. Я долго искал хорошего врача в Белграде, обошёл немало — и наконец нашёл в этом враче идеальное сочетание профессионализма и человеческого отношения. В её руках чувствуешь уверенность и заботу. Рекомендую! @Ekaterina_Serdiukova",
+      "source": "Telegram: https://t.me/vrachivserbii/138896",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/135813",
+    "https://t.me/vrachivserbii/138896",
+    "https://t.me/vrachivserbii/176675"
+  ],
+  "updatedAt": "2026-09-24"
+}

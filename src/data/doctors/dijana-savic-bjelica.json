@@ -1,0 +1,31 @@
+{
+  "slug": "dijana-savic-bjelica",
+  "name": "Dijana Savić Bjelica",
+  "specializations": [
+    "gastroenterologist"
+  ],
+  "specializationText": "детский гастроэнтеролог",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гастроэнтеролог; MediGroup, Cara Dušana",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "address": "Cara Dušana",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/115477"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -67,10 +67,6 @@ function clean(s) {
     .trim();
 }
 
-function chunkId(id) {
-  return Math.floor(id / 5000);
-}
-
 async function main() {
   if (!fs.existsSync(SRC)) {
     console.error(`Export not found: ${SRC}`);

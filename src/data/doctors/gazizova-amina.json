@@ -1,0 +1,30 @@
+{
+  "slug": "gazizova-amina",
+  "name": "Газизова Амина",
+  "specializations": [
+    "psychologist",
+    "psychotherapist"
+  ],
+  "specializationText": "Клинический и аналитический психолог, немедицинский психотерапевт",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "online"
+  ],
+  "bio": "Клинический и аналитический психолог, немедицинский психотерапевт; работает очно в Белграде и онлайн.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/aminagazizovapsy",
+    "website": "https://aminapsy.com/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/173438",
+    "https://t.me/vrachivserbii/195137"
+  ],
+  "updatedAt": "2026-09-24"
+}

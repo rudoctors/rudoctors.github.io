@@ -1,0 +1,34 @@
+{
+  "slug": "svraka-milosh",
+  "name": "Сврака Милош",
+  "nameEn": "Milos Svraka",
+  "specializations": [
+    "otorhinolaryngologist",
+    "gastroenterologist"
+  ],
+  "specializationText": "ЛОР",
+  "city": "Belgrade",
+  "languages": [
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "ЛОР в ORL Medic; проводит эндоскопический осмотр, принимает детей и говорит по-английски.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "ORL Medic",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/143485"
+  ],
+  "updatedAt": "2026-09-24"
+}

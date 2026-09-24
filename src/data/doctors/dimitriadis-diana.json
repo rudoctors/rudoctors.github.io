@@ -1,0 +1,33 @@
+{
+  "slug": "dimitriadis-diana",
+  "name": "Димитриадис Диана",
+  "specializations": [
+    "ophthalmologist"
+  ],
+  "specializationText": "Офтальмолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Офтальмолог в Vizim в Белграде; принимает взрослых и детей с 14 лет. В сообщении от 2026 года указано, что с 10.10.2025 находится в декретном отпуске.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Vizim",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/oft_diana"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/146629",
+    "https://t.me/vrachivserbii/188515"
+  ],
+  "updatedAt": "2026-09-24"
+}

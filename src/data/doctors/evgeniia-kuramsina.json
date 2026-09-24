@@ -33,7 +33,24 @@
     "appointmentUrl": "https://t.me/evgenijastomatolog",
     "mapsUrl": "https://maps.app.goo.gl/rmyGCPFxd8mMU4mY8?g_st=ac"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-122482",
+      "author": "Katrin",
+      "date": "2024-12-22",
+      "text": "Хочу оставить отзыв о стоматологе Евгении Курамшиной. Врач понятно объяснила, как пройдёт лечение, и всё сделала аккуратно. Мне понравился подход; при необходимости обращусь именно к ней.",
+      "source": "Telegram: https://t.me/vrachivserbii/122482",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-190251",
+      "author": "steysiii",
+      "date": "2026-04-26",
+      "text": "Хочу оставить положительный отзыв о стоматологе Евгении Курамшиной. Врач подходит к ситуации пациента, даёт полезные рекомендации и не навязывает ненужных процедур. Лечусь у неё уже больше месяца и полностью довольна. Искренне рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/190251",
+      "lang": "ru"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [

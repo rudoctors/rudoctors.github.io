@@ -1,0 +1,34 @@
+{
+  "slug": "oleg-igorevich-seleznev",
+  "name": "Олег Игоревич Селезнёв",
+  "specializations": [
+    "dentist",
+    "dental_surgeon"
+  ],
+  "specializationText": "стоматолог-хирург, ортопед, терапевт",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог-хирург, ортопед и терапевт; принимает в клинике Dentaž по адресу Добрачина 56a в Белграде.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dentaž",
+      "address": "Добрачина 56a",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/septonest"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/147420"
+  ],
+  "updatedAt": "2026-09-24"
+}

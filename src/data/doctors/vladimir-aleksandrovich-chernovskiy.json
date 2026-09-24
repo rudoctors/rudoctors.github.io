@@ -1,0 +1,39 @@
+{
+  "slug": "vladimir-aleksandrovich-chernovskiy",
+  "name": "Владимир Александрович Черновский",
+  "specializations": [
+    "vascular_surgeon",
+    "ultrasound_diagnostics"
+  ],
+  "specializationText": "сосудистый хирург; врач ультразвуковой диагностики",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Сосудистый хирург и врач УЗИ; имеет временную лицензию в Сербии, принимает в Prva Poliklinika в Белграде.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Prva Poliklinika",
+      "address": "Krunska 38",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 11 624 5673",
+    "telegram": "https://t.me/drVladimirChernovskii"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/157859"
+  ],
+  "updatedAt": "2026-09-24"
+}

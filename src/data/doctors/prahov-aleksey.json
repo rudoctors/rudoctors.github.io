@@ -29,7 +29,7 @@
     "website": "https://www.klinikaequilibrium.rs/"
   },
   "reviews": [],
-  "hidden": false,
+  "hidden": true,
   "featured": false,
   "sources": [
     "google-sheets",

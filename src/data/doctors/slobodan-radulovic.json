@@ -1,0 +1,30 @@
+{
+  "slug": "slobodan-radulovic",
+  "name": "Slobodan Radulović",
+  "specializations": [
+    "urologist"
+  ],
+  "specializationText": "уролог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Уролог; Euromedic",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Euromedic",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/105649"
+  ],
+  "updatedAt": "2026-09-24"
+}

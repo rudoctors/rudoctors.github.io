@@ -1,0 +1,41 @@
+{
+  "slug": "sandra-kljajic",
+  "name": "Sandra Kljajić",
+  "specializations": [
+    "gynecologist"
+  ],
+  "specializationText": "гинеколог",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гинеколог; MediGroup, Cara Dušana",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "address": "Cara Dušana",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-206006",
+      "author": "Наталья",
+      "date": "2026-08-26",
+      "text": "Хочу оставить отзыв о гинекологе Сандре Кляич в Medigroup на Царя Душена в Нови саде.Прекрасный доктор ,во время сбора анамнеза максимально заинтересована . Во время манипуляций аккуратна и с пониманием. Очень рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/206006",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/200407",
+    "https://t.me/vrachivserbii/206006"
+  ],
+  "updatedAt": "2026-09-24"
+}

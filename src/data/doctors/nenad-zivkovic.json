@@ -1,0 +1,40 @@
+{
+  "slug": "nenad-zivkovic",
+  "name": "Nenad Živković",
+  "specializations": [
+    "surgeon"
+  ],
+  "specializationText": "нейрохирург",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Хирург; BelMedic, Koste Jovanovića 87",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "BelMedic",
+      "address": "Koste Jovanovića 87",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-110847",
+      "author": "Анастасия Психолог",
+      "date": "2024-08-31",
+      "text": "Хочу выразить благодарность и порекомендовать доктора Nenad Zivkovic. Операция длилась 30 минут, всё прошло отлично!!! #нейрохирург",
+      "source": "Telegram: https://t.me/vrachivserbii/110847",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/110847"
+  ],
+  "updatedAt": "2026-09-24"
+}

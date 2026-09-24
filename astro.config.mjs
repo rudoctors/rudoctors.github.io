@@ -7,6 +7,12 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://rudoctors.github.io",
   trailingSlash: "always",
+  redirects: {
+    "/doctors/prahov-aleksey": "/doctors/aleksej-pravov",
+    "/doctors/yanik-elena": "/doctors/elena-ianik",
+    "/doctors/pozharickaya-elena": "/doctors/elena-pozharickaya",
+    "/doctors/shtuchnyy-igor": "/doctors/igor-shtuchnyy",
+  },
   integrations: [
     sitemap({
       filter: (page) =>

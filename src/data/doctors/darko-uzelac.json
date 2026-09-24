@@ -1,0 +1,40 @@
+{
+  "slug": "darko-uzelac",
+  "name": "Darko Uzelac",
+  "specializations": [
+    "surgeon"
+  ],
+  "specializationText": "хирург",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Хирург; MediGroup, Balzakova 44",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "address": "Balzakova 44",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-55229",
+      "author": "АLena",
+      "date": "2023-02-28",
+      "text": "Сегодня была в медиагрупп на балзакова, 44 в нови сад у доктора Darko Uzelac. Приятный возрастной мужчина, что важно - говорит по-русски. Сразу резать не стал, осмотрел, назначил лекарства, отправил домой. Врач понравился.",
+      "source": "Telegram: https://t.me/vrachivserbii/55229",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/55229"
+  ],
+  "updatedAt": "2026-09-24"
+}

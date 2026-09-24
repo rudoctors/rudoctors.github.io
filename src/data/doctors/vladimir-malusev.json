@@ -1,0 +1,50 @@
+{
+  "slug": "vladimir-malusev",
+  "name": "Vladimir Malušev",
+  "specializations": [
+    "dental_surgeon"
+  ],
+  "specializationText": "хирург-стоматолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Хирург-стоматолог; White Clinic",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "White Clinic",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-78350",
+      "author": "Val",
+      "date": "2023-09-20",
+      "text": "На прошлой неделе удалила 4 зуба мудрости под внутривенной седацией в клинике White Clinic. Имя хирурга Vladimir Malusev. Все прошло отлично, замечательный хирург, очень добрый и понимающий.",
+      "source": "Telegram: https://t.me/vrachivserbii/78350",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-92635",
+      "author": "Jul",
+      "date": "2024-02-07",
+      "text": "Рекомендую стоматолога-хирурга. Было хирургическое удаление нижнего зуба мудрости в White Clinic Belgrade у Dr. Vladimir Malušev. Абсолютно без боли, без волнения, доктор хороший, посмотрел мое КТ, рассказал как и что будет происходить. Удалили зуб минут за 10, восстановление прошло очень легко. Доктор говорит на англ и сербском. Планирую пойти к нему удалять верхние зубы мудрости. Нашла рекомендацию на доктора в этом чате, спасибо!",
+      "source": "Telegram: https://t.me/vrachivserbii/92635",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/78350",
+    "https://t.me/vrachivserbii/92635",
+    "https://t.me/vrachivserbii/101491",
+    "https://t.me/vrachivserbii/115555"
+  ],
+  "updatedAt": "2026-09-24"
+}

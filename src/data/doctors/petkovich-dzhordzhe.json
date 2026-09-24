@@ -1,0 +1,41 @@
+{
+  "slug": "petkovich-dzhordzhe",
+  "name": "Петкович Джордже",
+  "nameEn": "Đorđe Petković",
+  "specializations": [
+    "gynecologist",
+    "surgeon"
+  ],
+  "specializationText": "гинеколог; хирург",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гинеколог, который также проводит операции; принимает в Palmotićeva 33, говорит по-русски и английски.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Ginekološka Ordinacija Palmotićeva",
+      "address": "Palmotićeva 33",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 11 322 6040",
+    "telegram": "https://t.me/drDjordje"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/144500",
+    "https://t.me/vrachivserbii/31433",
+    "https://t.me/vrachivserbii/183725"
+  ],
+  "updatedAt": "2026-09-24"
+}

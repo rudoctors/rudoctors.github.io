@@ -1,0 +1,39 @@
+{
+  "slug": "miljanka-vuksanovic",
+  "name": "Miljanka Vuksanović",
+  "specializations": [
+    "endocrinologist"
+  ],
+  "specializationText": "эндокринолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Эндокринолог; Prva Poliklinika",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Prva Poliklinika",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-112173",
+      "author": "Daria",
+      "date": "2024-09-14",
+      "text": "#эндокринолог #белград dr. Miljanka Vuksanović, Prva Poliklinika. Прием на английском. Доброжелательна, внимательна, подробно проконсультировала. Назначила лечение, которое подснизило интенсивность симптомов и значительно повысило качество жизни (проблем со сном стало меньше, энергии стало больше). Рекомендую",
+      "source": "Telegram: https://t.me/vrachivserbii/112173",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/112173"
+  ],
+  "updatedAt": "2026-09-24"
+}

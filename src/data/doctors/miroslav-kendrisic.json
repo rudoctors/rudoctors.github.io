@@ -1,0 +1,30 @@
+{
+  "slug": "miroslav-kendrisic",
+  "name": "Miroslav Kendrišić",
+  "specializations": [
+    "otorhinolaryngologist"
+  ],
+  "specializationText": "оториноларинголог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач-оториноларинголог; принимает в MediGroup Opšta Bolnica в Белграде.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup Opšta Bolnica",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/150058"
+  ],
+  "updatedAt": "2026-09-24"
+}

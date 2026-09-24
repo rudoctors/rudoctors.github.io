@@ -1,0 +1,32 @@
+{
+  "slug": "andrey-mihaylovich-skvorcov",
+  "name": "Андрей Михайлович Скворцов",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "Стоматолог-терапевт, эндодонтист",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог-терапевт и эндодонтист в Stomatoloska ordinacija ASTRA в Белграде.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatoloska ordinacija ASTRA",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/AndreySkvortsov93"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/186513"
+  ],
+  "updatedAt": "2026-09-24"
+}

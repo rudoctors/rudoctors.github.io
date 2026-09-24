@@ -1,0 +1,33 @@
+{
+  "slug": "dusan-banovic",
+  "name": "Dušan Banović",
+  "specializations": [
+    "cardiologist",
+    "ultrasound_diagnostics"
+  ],
+  "specializationText": "кардиолог",
+  "city": "Novi Sad",
+  "languages": [
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Кардиолог в клинике Cardios в Нови-Саде; проводит УЗИ сердца и ЭКГ, говорит по-английски.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Cardios",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/146642"
+  ],
+  "updatedAt": "2026-09-24"
+}

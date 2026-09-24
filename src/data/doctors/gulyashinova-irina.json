@@ -1,0 +1,35 @@
+{
+  "slug": "gulyashinova-irina",
+  "name": "Гуляшинова Ирина",
+  "specializations": [
+    "dermatologist",
+    "cosmetologist"
+  ],
+  "specializationText": "Дерматовенеролог, косметолог, трихолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Дерматовенеролог, косметолог и трихолог; имеет лицензию на работу в Сербии и принимает в Jolie Klinika в Белграде.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Jolie Klinika",
+      "address": "Јурия Гагарина 20nj",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381621475106",
+    "website": "https://instagram.com/doctor_guliashinova"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/47436"
+  ],
+  "updatedAt": "2026-09-24"
+}

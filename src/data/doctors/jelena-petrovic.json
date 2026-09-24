@@ -1,0 +1,42 @@
+{
+  "slug": "jelena-petrovic",
+  "name": "Jelena Petrović",
+  "specializations": [
+    "surgeon",
+    "proctologist"
+  ],
+  "specializationText": "колопроктолог, хирург",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Хирург, Проктолог; Prva Poliklinika",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Prva Poliklinika",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381668301850"
+  },
+  "reviews": [
+    {
+      "id": "tg-74137",
+      "author": "Karin Deliya",
+      "date": "2023-08-09",
+      "text": "Рекомендую колопроктолога dr Jelena Petrovic в Prva poliklinika. Спокойный, внимательный доктор, всё объяснила, даны рекомендации по лечению.",
+      "source": "Telegram: https://t.me/vrachivserbii/74137",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/74137"
+  ],
+  "updatedAt": "2026-09-24"
+}

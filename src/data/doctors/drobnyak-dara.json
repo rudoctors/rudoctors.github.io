@@ -1,0 +1,33 @@
+{
+  "slug": "drobnyak-dara",
+  "name": "Дробняк Дара",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "Стоматолог",
+  "city": "Belgrade",
+  "languages": [
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог; лечит взрослых и детей в Stomatološka ordinacija Drobnjak в Новом Белграде; говорит только по-сербски.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka ordinacija Drobnjak",
+      "address": "Новый Белград",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/172011"
+  ],
+  "updatedAt": "2026-09-24"
+}

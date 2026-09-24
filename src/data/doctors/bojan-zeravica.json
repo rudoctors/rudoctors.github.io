@@ -1,0 +1,39 @@
+{
+  "slug": "bojan-zeravica",
+  "name": "Bojan Žeravica",
+  "specializations": [
+    "hematologist"
+  ],
+  "specializationText": "гематолог",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гематолог; Consilium",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Consilium",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-95254",
+      "author": "Nina",
+      "date": "2024-03-12",
+      "text": "Вижу, что совсем мало информации по гематологам в чате. Вчера была в поликлинике Consilium(Нови сад) у гематолога по имени Боjан Жеравица. Доктор хорошо говорит на английском, мне сказал, что я могу говорить хоть на сербском, хоть на английском, хоть на русском, он все равно поймет:) Оставил очень приятное впечатление.",
+      "source": "Telegram: https://t.me/vrachivserbii/95254",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/95254"
+  ],
+  "updatedAt": "2026-09-24"
+}

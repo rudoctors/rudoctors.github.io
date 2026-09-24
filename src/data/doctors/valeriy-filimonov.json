@@ -1,0 +1,35 @@
+{
+  "slug": "valeriy-filimonov",
+  "name": "Валерий Филимонов",
+  "specializations": [
+    "psychologist",
+    "psychotherapist"
+  ],
+  "specializationText": "Психоаналитически ориентированный психолог и групповой аналитик",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline",
+    "online"
+  ],
+  "bio": "Психоаналитически ориентированный психолог и групповой аналитик; работает очно в Белграде и онлайн.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "—",
+      "address": "район Ташмайдана",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/valeriy_filimonov"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/208997"
+  ],
+  "updatedAt": "2026-09-24"
+}

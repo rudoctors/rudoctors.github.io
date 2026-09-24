@@ -27,7 +27,24 @@
     "appointmentUrl": "https://n1329288.alteg.io/company/1167832/personal/select-master/master-info/1167832/2999520?o=m2999520",
     "website": "https://citilab.rs/ru/doctors/gaydadym-vera-viktorovna"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-184395",
+      "author": "Maria Subotich",
+      "date": "2026-03-20",
+      "text": "Была на приёме у гинеколога Веры Викторовны Гайдадым. Врач была вежливой и внимательной, подробно выслушала меня, объяснила информацию и дала понятные рекомендации. Благодарю за хороший приём.",
+      "source": "Telegram: https://t.me/vrachivserbii/184395",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-198849",
+      "author": "Shch Lily",
+      "date": "2026-07-10",
+      "text": "Наблюдаюсь у гинеколога Веры Викторовны Гайдадым в Citilab. Врач внимательная и вежливая; всё было организовано аккуратно и по делу. Мой опыт пока положительный.",
+      "source": "Telegram: https://t.me/vrachivserbii/198849",
+      "lang": "ru"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [

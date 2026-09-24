@@ -1,0 +1,39 @@
+{
+  "slug": "mina-jovanovic",
+  "name": "Mina Jovanović",
+  "specializations": [
+    "surgeon"
+  ],
+  "specializationText": "общий хирург",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Хирург; Acibadem Belmedic",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Acibadem Belmedic",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-209524",
+      "author": "Anastasia",
+      "date": "2026-09-17",
+      "text": "От всей души рекомендую общего хирурга Mina Jovanović, которая работает в общей больнице Acibadem Belmedic. До операции лично у меня не дошло, но я очень довольна приёмом, осмотром и диагностикой. Врач очень внимательна и доброжелательна, хорошо говорит по-английски и смогла мне помочь. Была рядом все 3–4 часа, пока шли обследования и терапия. Произвела профессиональное и человечное впечатление.",
+      "source": "Telegram: https://t.me/vrachivserbii/209524",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/209524"
+  ],
+  "updatedAt": "2026-09-24"
+}

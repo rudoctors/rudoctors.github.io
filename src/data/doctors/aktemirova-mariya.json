@@ -1,0 +1,31 @@
+{
+  "slug": "aktemirova-mariya",
+  "name": "Актемирова Мария",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "Стоматолог-терапевт, детский стоматолог",
+  "city": "Novi Sad",
+  "languages": [
+    "ru",
+    "uk"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог-терапевт и детский стоматолог; лечит кариес и его осложнения, проводит профилактику молочных зубов; приём на русском и украинском.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/mariateeth"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/156216",
+    "https://t.me/vrachivserbii/186513"
+  ],
+  "updatedAt": "2026-09-24"
+}

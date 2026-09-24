@@ -1,0 +1,30 @@
+{
+  "slug": "dmitrije-nikolic",
+  "name": "Dmitrije Nikolić",
+  "specializations": [
+    "neurologist"
+  ],
+  "specializationText": "детский невролог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Невролог; MediGroup",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/55646"
+  ],
+  "updatedAt": "2026-09-24"
+}

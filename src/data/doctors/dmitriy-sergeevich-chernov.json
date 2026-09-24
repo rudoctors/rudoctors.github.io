@@ -1,0 +1,33 @@
+{
+  "slug": "dmitriy-sergeevich-chernov",
+  "name": "Дмитрий Сергеевич Чернов",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог-терапевт; детский стоматолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог-терапевт, в том числе детский; принимает в Palkin Dental Center в Белграде.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Palkin Dental Center",
+      "address": "Делиградска 6",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/chernovsmile"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/146007"
+  ],
+  "updatedAt": "2026-09-24"
+}

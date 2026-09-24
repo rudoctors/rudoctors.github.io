@@ -1,0 +1,31 @@
+{
+  "slug": "milton-pesut",
+  "name": "Milton Pešut",
+  "specializations": [
+    "hematologist"
+  ],
+  "specializationText": "гематолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гематолог; Euromedic, Višegradska",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Euromedic",
+      "address": "Višegradska",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/194653"
+  ],
+  "updatedAt": "2026-09-24"
+}

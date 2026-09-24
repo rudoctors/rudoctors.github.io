@@ -1,0 +1,45 @@
+{
+  "slug": "ekaterina-selina",
+  "name": "Екатерина Селина",
+  "specializations": [
+    "otorhinolaryngologist"
+  ],
+  "specializationText": "ЛОР-врач; диагностика и лечение заболеваний уха, горла и носа",
+  "city": "Novi Sad",
+  "languages": [
+    "ru",
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач-оториноларинголог; ведёт приём взрослых и детей с 3 лет в MediGroup в Нови-Саде и Белграде, работает на русском, сербском и английском языках.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "address": "Cara Dusana 26",
+      "city": "Novi Sad"
+    },
+    {
+      "clinic": "MediGroup",
+      "address": "Bulevar oslobođenja 321",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 11 40 40 100",
+    "website": "https://www.medigroup.rs/lekari/selina-ekaterina/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/194420",
+    "https://t.me/vrachivserbii/165755",
+    "https://t.me/vrachivserbii/203358"
+  ],
+  "updatedAt": "2026-09-24"
+}

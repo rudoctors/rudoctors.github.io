@@ -1,0 +1,33 @@
+{
+  "slug": "kivikangas-regina",
+  "name": "Кивикангас Регина",
+  "specializations": [
+    "otorhinolaryngologist"
+  ],
+  "specializationText": "ЛОР-врач",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "ЛОР-врач в MediGroup; принимает детей с 0 лет и взрослых.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 11 40 40 100"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/165755",
+    "https://t.me/vrachivserbii/194420"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "vesna-muhic",
+  "name": "Vesna Muhić",
+  "specializations": [
+    "ophthalmologist"
+  ],
+  "specializationText": "офтальмолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Офтальмолог; MediGroup, Jurija Gagarina 14",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "address": "Jurija Gagarina 14",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/71258"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -28,7 +28,24 @@
     "appointmentUrl": "https://n1329288.alteg.io/company/1167832/personal/select-master/master-info/1167832/2993519?o=m2993519",
     "email": null
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-194880",
+      "author": "Anna",
+      "date": "2026-06-06",
+      "text": "Была на приёме у терапевта Ирины Скрыпник. Врач внимательно осмотрела меня, дала рекомендации и выписала лечение, которое помогло. Могу рекомендовать специалиста.",
+      "source": "Telegram: https://t.me/vrachivserbii/194880",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-195696",
+      "author": "Anna",
+      "date": "2026-06-14",
+      "text": "Была на приёме у терапевта Ирины Скрыпник. Врач подробно разобрала мою ситуацию, успокоила, назначила необходимые обследования и лечение. Рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/195696",
+      "lang": "ru"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [

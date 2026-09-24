@@ -1,0 +1,36 @@
+{
+  "slug": "olga-yurevna-ukolova",
+  "name": "Ольга Юрьевна Уколова",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог-терапевт",
+  "city": "Novi Sad",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог-терапевт; принимает в OralB в Нови-Саде, проводит лечение кариеса и профессиональную гигиену, владеет русским языком.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "OralB",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 63 193 6812",
+    "telegram": "https://t.me/Ukolova_stom"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/202479",
+    "https://t.me/vrachivserbii/147841"
+  ],
+  "updatedAt": "2026-09-24"
+}

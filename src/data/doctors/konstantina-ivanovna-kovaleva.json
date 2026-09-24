@@ -1,0 +1,49 @@
+{
+  "slug": "konstantina-ivanovna-kovaleva",
+  "name": "Konstantina Ivanovna Kovalёva",
+  "specializations": [
+    "psychiatrist"
+  ],
+  "specializationText": "психиатр",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Психиатр; AlfaMedStar",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "AlfaMedStar",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-200475",
+      "author": "Marguerite",
+      "date": "2026-07-22",
+      "text": "#белград #психотерапевт Хочу оставить отзыв о враче Ковалёве Константине Ивановиче. Спокойный уважительный специалист с очень внимательным отношением к подбору медикаментов. Пока полёт нормальный 🌸",
+      "source": "Telegram: https://t.me/vrachivserbii/200475",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-202781",
+      "author": "Lisa",
+      "date": "2026-08-06",
+      "text": "Отзыв альфамед: Ходила к психиатру. Константин Ковалев. Внимательный, профессиональный. Выписал лечение.",
+      "source": "Telegram: https://t.me/vrachivserbii/202781",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/200475",
+    "https://t.me/vrachivserbii/202781",
+    "https://t.me/vrachivserbii/203386"
+  ],
+  "updatedAt": "2026-09-24"
+}

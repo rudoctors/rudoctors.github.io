@@ -1,0 +1,49 @@
+{
+  "slug": "jasna-vejnovic",
+  "name": "Jasna Vejnović",
+  "specializations": [
+    "gynecologist"
+  ],
+  "specializationText": "гинеколог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гинеколог; Euromedic, Nenadovića 7",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Euromedic",
+      "address": "Nenadovića 7",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-57734",
+      "author": "Anna Kopylova",
+      "date": "2023-03-16",
+      "text": "Доктор Јасна Вејновић в Euromedik на Ненадовића 7. Очень приятная доктор, хорошо говорит по-английски. Осмотр очень аккуратный и безболезненный. Сделала pap-test и УЗИ. Доктора рекомендую!",
+      "source": "Telegram: https://t.me/vrachivserbii/57734",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-66310",
+      "author": "Daria",
+      "date": "2023-05-29",
+      "text": "Прочитала в чате отзыв об этой докторке и решила тоже сходить. Все прошло отлично. Была просто на плановом осмотре. Делали пап тест, кольпоскопию и узи. Говорили на английском.",
+      "source": "Telegram: https://t.me/vrachivserbii/66310",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/57734",
+    "https://t.me/vrachivserbii/66310"
+  ],
+  "updatedAt": "2026-09-24"
+}

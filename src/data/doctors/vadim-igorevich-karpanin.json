@@ -27,7 +27,32 @@
     "appointmentUrl": "https://n1313185.alteg.io/company/1167832/personal/select-master/master-info/1167832/2751562?o=m2751562",
     "website": "https://citilab.rs/ru/doctors/karpanin"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-124362",
+      "author": "Елена Абрамова",
+      "date": "2025-01-10",
+      "text": "Была на приёме у уролога Вадима Карпанина в Citilab. Врач внимательно выслушал меня, подробно провёл обследование и понятно объяснил результаты. Осталась очень довольна и рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/124362",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-139426",
+      "author": "Nikolay Belov",
+      "date": "2025-05-07",
+      "text": "Был на приёме у Вадима Карпанина. Мой опыт остался положительным, рекомендую его.",
+      "source": "Telegram: https://t.me/vrachivserbii/139426",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-185409",
+      "author": "Наталья Лаврищева",
+      "date": "2026-03-27",
+      "text": "Хочу дать отзыв о враче урологе Вадиме Игоревиче Карпанине. Была на приёме в Citilab. Врач внимательно выслушал меня, провёл обследование и дал понятные пояснения. Осталась довольна и рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/185409",
+      "lang": "ru"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [

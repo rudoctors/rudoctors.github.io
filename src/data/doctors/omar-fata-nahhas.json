@@ -1,0 +1,49 @@
+{
+  "slug": "omar-fata-nahhas",
+  "name": "Omar Fata Nahhas",
+  "specializations": [
+    "traumatologist_orthopedist",
+    "surgeon"
+  ],
+  "specializationText": "ортопед-травматолог, хирург кисти",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Травматолог-ортопед, Хирург; New Hospital",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "New Hospital",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-175139",
+      "author": "G A",
+      "date": "2026-01-17",
+      "text": "Хочу оставить отзыв об ортопеде-травматологе в клинике New Hospital в Нови-Саде Omar Fata Nahhas. Говорит по-английски. Была проблема с коленом, подсказал грамотное лечение. До этого была у других врачей такой пользы не было.",
+      "source": "Telegram: https://t.me/vrachivserbii/175139",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-186598",
+      "author": "Boris",
+      "date": "2026-04-03",
+      "text": "Присоединяюсь к отзыву. Доктор Omar Fata оставил очень приятное впечатление своим профессионализмом и помог быстро решить проблему кисти руки через малоинвазивную операцию.",
+      "source": "Telegram: https://t.me/vrachivserbii/186598",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/175139",
+    "https://t.me/vrachivserbii/186598"
+  ],
+  "updatedAt": "2026-09-24"
+}

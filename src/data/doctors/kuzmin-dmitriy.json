@@ -1,0 +1,36 @@
+{
+  "slug": "kuzmin-dmitriy",
+  "name": "Кузьмин Дмитрий",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "врач-стоматолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач-стоматолог в Belgrade City Dental; опыт более 8 лет, работает со взрослыми и детьми.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "BCD — Belgrade City Dental",
+      "address": "Kralja Milutina 34, 1 sprat, stan 4",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 65 360 7603",
+    "email": "doctorkuzmindmitrii@gmail.com",
+    "telegram": "https://t.me/DoctorKuzminDmitrii",
+    "website": "https://bcd.rs/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/198464"
+  ],
+  "updatedAt": "2026-09-24"
+}

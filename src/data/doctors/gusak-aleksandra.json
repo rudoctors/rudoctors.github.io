@@ -31,7 +31,32 @@
     "telegram": "https://t.me/teslamedical",
     "website": "https://rigaland.chaika.com/"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-39606",
+      "author": "Sergei Maksimov",
+      "date": "2022-12-15",
+      "text": "Был на приёме у терапевта Александры Гусак. Врач действовала быстро и чётко, подробно объяснила дальнейшие шаги. Опыт оказался положительным, рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/39606",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-108365",
+      "author": "Mary",
+      "date": "2024-08-04",
+      "text": "Обращалась к терапевту Александре Гусак. Врач внимательно выслушала меня, спокойно расспросила о ситуации и подробно объяснила необходимые шаги. Благодарю за внимательный подход.",
+      "source": "Telegram: https://t.me/vrachivserbii/108365",
+      "lang": "ru"
+    },
+    {
+      "id": "tg-165775",
+      "author": "Mary Zhuravlyova 📸 FAMILY PHOTO",
+      "date": "2025-11-13",
+      "text": "Александра Гусак дважды помогала мне. Врач внимательно изучала мою ситуацию, подбирала необходимые обследования и дала понятные рекомендации для дальнейших действий. Очень благодарна!",
+      "source": "Telegram: https://t.me/vrachivserbii/165775",
+      "lang": "ru"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [

@@ -1,0 +1,30 @@
+{
+  "slug": "andrej-bajec",
+  "name": "Andrej Bajec",
+  "specializations": [
+    "surgeon"
+  ],
+  "specializationText": "хирург общей практики",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Хирург; BelMedic",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "BelMedic",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/109602"
+  ],
+  "updatedAt": "2026-09-24"
+}

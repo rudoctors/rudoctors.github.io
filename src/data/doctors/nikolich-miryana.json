@@ -1,0 +1,30 @@
+{
+  "slug": "nikolich-miryana",
+  "name": "Николич Мирьяна",
+  "specializations": [
+    "gynecologist"
+  ],
+  "specializationText": "гинеколог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гинеколог в BelMedic; принимает в Белграде.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "BelMedic",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/144504"
+  ],
+  "updatedAt": "2026-09-24"
+}

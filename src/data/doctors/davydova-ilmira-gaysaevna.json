@@ -1,0 +1,35 @@
+{
+  "slug": "davydova-ilmira-gaysaevna",
+  "name": "Давыдова Ильмира Гайсаевна",
+  "specializations": [
+    "dentist",
+    "dental_surgeon",
+    "dental_implantologist"
+  ],
+  "specializationText": "Врач-стоматолог-хирург, имплантолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач-стоматолог-хирург и имплантолог; ведёт приём в Palkin dental centre в центре Белграда.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Palkin dental centre",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/Ilmira_Davydova",
+    "website": "https://g.co/kgs/P3u2hcE"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/165665"
+  ],
+  "updatedAt": "2026-09-24"
+}

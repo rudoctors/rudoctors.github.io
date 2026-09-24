@@ -1,0 +1,40 @@
+{
+  "slug": "milena-pavlovic",
+  "name": "Milena Pavlovic",
+  "specializations": [
+    "otorhinolaryngologist"
+  ],
+  "specializationText": "ЛОР",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "ЛОР; Euromedic, Pariske komune 22, Novi Beograd",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Euromedic",
+      "address": "Pariske komune 22, Novi Beograd",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-153597",
+      "author": "iuliia ehehey",
+      "date": "2025-08-25",
+      "text": "Сразу приняли ЛОР-врача Милену Павлович в Euromedic в Нови-Београде. Врач приняла меня на английском, всё понятно, быстро, выслушала, провела осмотр, проверила кровь и выписала лекарство. Всё понравилось.",
+      "source": "Telegram: https://t.me/vrachivserbii/153597",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/153597"
+  ],
+  "updatedAt": "2026-09-24"
+}

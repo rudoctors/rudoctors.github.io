@@ -1,0 +1,30 @@
+{
+  "slug": "igor-seslija",
+  "name": "Igor Šešlija",
+  "specializations": [
+    "traumatologist_orthopedist"
+  ],
+  "specializationText": "детский ортопед",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Травматолог-ортопед; Banjica Institute of Orthopedics",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Banjica Institute of Orthopedics",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/194188"
+  ],
+  "updatedAt": "2026-09-24"
+}

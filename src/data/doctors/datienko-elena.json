@@ -1,0 +1,27 @@
+{
+  "slug": "datienko-elena",
+  "name": "Датиенко Елена",
+  "specializations": [
+    "mammologist"
+  ],
+  "specializationText": "Маммолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "online"
+  ],
+  "bio": "Маммолог; предлагает онлайн и офлайн-консультации с выездом на дом в Белграде.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/doc_mamolog"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/151670"
+  ],
+  "updatedAt": "2026-09-24"
+}

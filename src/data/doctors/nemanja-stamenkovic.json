@@ -1,0 +1,33 @@
+{
+  "slug": "nemanja-stamenkovic",
+  "name": "Nemanja Stamenković",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог; Dental Mint, Jelene Ćetković 1",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dental Mint",
+      "address": "Jelene Ćetković 1",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "website": "https://dentalmint.rs/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/58195"
+  ],
+  "updatedAt": "2026-09-24"
+}

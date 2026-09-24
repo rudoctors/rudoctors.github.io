@@ -1,0 +1,37 @@
+{
+  "slug": "kubashov-sergey-sergeevich",
+  "name": "Кубашов Сергей Сергеевич",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог-терапевт; стоматолог-ортопед",
+  "city": "Belgrade",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог-терапевт и ортопед, более 10 лет опыта; принимает в Belgrade City Dental.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Belgrade City Dental",
+      "address": "Kralja Milutina 34",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 62 944 3220",
+    "telegram": "https://t.me/drkuba"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/146007",
+    "https://t.me/vrachivserbii/186513"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "snezana-blazic",
+  "name": "Snežana Blazić",
+  "specializations": [
+    "pediatrician"
+  ],
+  "specializationText": "педиатр",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Педиатр; New Hospital",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "New Hospital",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/68566"
+  ],
+  "updatedAt": "2026-09-24"
+}

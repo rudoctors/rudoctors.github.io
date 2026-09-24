@@ -1,0 +1,40 @@
+{
+  "slug": "ratko-madzar",
+  "name": "Ratko Madžar",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог; Pavlović, Niška 13/5, Vračar",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Pavlović",
+      "address": "Niška 13/5, Vračar",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-155607",
+      "author": "Svetlana",
+      "date": "2025-09-11",
+      "text": "Ходила несколько раз на профессиональную чистку и ставила две пломбы к доктору Ратко Маджару (Ratko Madžar) в стоматологической ординации Pavlović. Врач работает профессионально, быстро и безболезненно. Очень позитивный и доброжелательный человек. Очень рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/155607",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/155607"
+  ],
+  "updatedAt": "2026-09-24"
+}

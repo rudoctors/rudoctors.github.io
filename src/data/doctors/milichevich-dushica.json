@@ -1,0 +1,35 @@
+{
+  "slug": "milichevich-dushica",
+  "name": "Миличевич Душица",
+  "nameEn": "Dušica Milićević",
+  "specializations": [
+    "otorhinolaryngologist"
+  ],
+  "specializationText": "ЛОР",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "ЛОР в ordinacija Milićević на Banovo Brdo; понимает по-русски, хорошо объясняет по-английски; приём 3000 динар.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "ORL ordinacija Milićević",
+      "address": "Banovo Brdo",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/143676"
+  ],
+  "updatedAt": "2026-09-24"
+}

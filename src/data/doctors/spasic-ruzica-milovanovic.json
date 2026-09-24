@@ -1,0 +1,30 @@
+{
+  "slug": "spasic-ruzica-milovanovic",
+  "name": "Spasić-Ružica Milovanović",
+  "specializations": [
+    "pediatrician"
+  ],
+  "specializationText": "педиатр",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Педиатр; Vizim-center",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Vizim-center",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/69725"
+  ],
+  "updatedAt": "2026-09-24"
+}

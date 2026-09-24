@@ -1,0 +1,31 @@
+{
+  "slug": "lukich-tatyana",
+  "name": "Лукич Татьяна",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог; ортодонт",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог-ортодонт; принимает в Белграде, говорит по-русски и сербски.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "+381 65 240 4448"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/152064",
+    "https://t.me/vrachivserbii/195669"
+  ],
+  "updatedAt": "2026-09-24"
+}

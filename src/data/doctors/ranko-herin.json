@@ -1,0 +1,30 @@
+{
+  "slug": "ranko-herin",
+  "name": "Ранко Херин",
+  "specializations": [
+    "urologist"
+  ],
+  "specializationText": "уролог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач-уролог; принимает в MediGroup в Белграде, назначает терапию по результатам анализов и симптоматике.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/142666"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -27,7 +27,16 @@
     "appointmentUrl": "https://n1224063.alteg.io/company/1167832/personal/menu/master-info/1167832/2640030?o=m2640030",
     "website": "https://citilab.rs/ru/doctors/shilahovskaya"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-109479",
+      "author": "Effi Kvitkova",
+      "date": "2024-08-15",
+      "text": "Была на первом приёме у гинеколога Ольги Николаевны Шляховской. Врач проявила деликатность и подобрала комфортный формат осмотра. Она внимательно расспросила о моём здоровье и ответила на вопросы. Мой опыт был положительным, рекомендую её.",
+      "source": "Telegram: https://t.me/vrachivserbii/109479",
+      "lang": "ru"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [

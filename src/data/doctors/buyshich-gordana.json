@@ -1,0 +1,37 @@
+{
+  "slug": "buyshich-gordana",
+  "name": "Буйшич Гордана",
+  "specializations": [
+    "psychiatrist"
+  ],
+  "specializationText": "Психиатр",
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en",
+    "it"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Психиатр; работает в клинике доктора Воробьева, говорит на сербском, английском и итальянском.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Клиника доктора Воробьева",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "062 256 288"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/3815",
+    "https://t.me/vrachivserbii/4067"
+  ],
+  "updatedAt": "2026-09-24"
+}

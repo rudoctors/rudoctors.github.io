@@ -29,7 +29,16 @@
     "email": null,
     "telegram": "https://t.me/katapril"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-198123",
+      "author": "Mr. Nobody",
+      "date": "2026-07-05",
+      "text": "Обращался к терапевту Екатерине Мешковой для подбора обследований. Врач составила понятный план с учётом моих целей, объяснила назначение исследований и разобрала результаты. Остался доволен вниманием и качеством приёма.",
+      "source": "Telegram: https://t.me/vrachivserbii/198123",
+      "lang": "ru"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [

@@ -1,0 +1,40 @@
+{
+  "slug": "bojana-zivadinovic",
+  "name": "Bojana Živadinović",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог-пародонтолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог; West Dental, Airport City",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "West Dental",
+      "address": "Airport City",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-178822",
+      "author": "Виктория Логопед-дефектолог",
+      "date": "2026-02-10",
+      "text": "Была у доктора Bojana Živadinović в West Dental. Врач оказалась очень внимательной: тщательно проверила каждый зуб, дёсны и карманы. Была приятной и ненавязчивой, ничего лишнего не назначила. Всё рассказала и показала, дала рекомендации по уходу за дёснами и зубами. Мне понравился подход.",
+      "source": "Telegram: https://t.me/vrachivserbii/178822",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/178822"
+  ],
+  "updatedAt": "2026-09-24"
+}

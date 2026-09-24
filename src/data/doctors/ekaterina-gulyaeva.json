@@ -1,0 +1,28 @@
+{
+  "slug": "ekaterina-gulyaeva",
+  "name": "Екатерина Гуляева",
+  "specializations": [
+    "psychiatrist",
+    "psychotherapist"
+  ],
+  "specializationText": "Психиатр-диагност, психотерапевт",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "online"
+  ],
+  "bio": "Психиатр-диагност и психотерапевт; проводит диагностику и психотерапию онлайн и очно в Нови Саде, не выписывает препараты.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/psy_gulyaeva"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/182803"
+  ],
+  "updatedAt": "2026-09-24"
+}

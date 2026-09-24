@@ -1,0 +1,41 @@
+{
+  "slug": "dragan-dimitrijevic",
+  "name": "Dragan Dimitrijević",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог; Smile Dent",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Smile Dent",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "website": "https://smiledent.rs/"
+  },
+  "reviews": [
+    {
+      "id": "tg-196903",
+      "author": "Kseniia Zubova",
+      "date": "2026-06-25",
+      "text": "Хочу оставить отзыв о посещении стоматологической клиники Smile Dent в Белграде. Доктор Драган Димитриевич мне понравился. Мы решили мою проблему без лишних затрат и за один приём. Коммуникация была лёгкой; когда я что-то не понимала в общении с доктором Драганом, Ирина переводила. Обязательно продолжу лечение именно у них.",
+      "source": "Telegram: https://t.me/vrachivserbii/196903",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/196903"
+  ],
+  "updatedAt": "2026-09-24"
+}

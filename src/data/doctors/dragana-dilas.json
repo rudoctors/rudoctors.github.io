@@ -1,0 +1,43 @@
+{
+  "slug": "dragana-dilas",
+  "name": "Dragana Đilas",
+  "specializations": [
+    "mammologist",
+    "radiologist"
+  ],
+  "specializationText": "маммолог, радиолог",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Маммолог, Радиолог; Poliklinik Consilium",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinik Consilium",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "website": "https://poliklinikaconsilium.com/dragana-djilas/"
+  },
+  "reviews": [
+    {
+      "id": "tg-60625",
+      "author": "Юлия Тихомирова Массаж, Остеопат Нови сад Тихомирова",
+      "date": "2023-04-09",
+      "text": "Я была у Dragana Dilas на УЗИ и маммографии.",
+      "source": "Telegram: https://t.me/vrachivserbii/60625",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/54328",
+    "https://t.me/vrachivserbii/60625"
+  ],
+  "updatedAt": "2026-09-24"
+}

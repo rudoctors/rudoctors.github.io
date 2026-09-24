@@ -25,7 +25,16 @@
     "telegram": "https://t.me/Floramapola",
     "website": "https://www.klinikaequilibrium.rs/"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-146658",
+      "author": "Елена Абрамова",
+      "date": "2025-07-03",
+      "text": "Хочу порекомендовать психиатра и психотерапевта Майю Скляр. Она внимательно выслушала меня и помогла справиться с моей проблемой. После консультации мне стало заметно лучше. Благодарю.",
+      "source": "Telegram: https://t.me/vrachivserbii/146658",
+      "lang": "ru"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [

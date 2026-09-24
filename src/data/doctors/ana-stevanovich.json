@@ -1,0 +1,30 @@
+{
+  "slug": "ana-stevanovich",
+  "name": "Ана Стеванович",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог",
+  "city": "Belgrade",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Русскоговорящий стоматолог в Белграде; источник даёт её сербский телефон и Facebook.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "phone": "+381 64 352 4982",
+    "website": "https://www.facebook.com/ana.stevanovic.1276"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/1211"
+  ],
+  "updatedAt": "2026-09-24"
+}

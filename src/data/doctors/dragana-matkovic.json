@@ -1,0 +1,39 @@
+{
+  "slug": "dragana-matkovic",
+  "name": "Dragana Matković",
+  "specializations": [
+    "neurologist"
+  ],
+  "specializationText": "невролог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Невролог; MediGroup",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-71328",
+      "author": "Polina Lesnikova",
+      "date": "2023-07-17",
+      "text": "Ходила к двум неврологам в Медигруп — Milan Nikolić (немного говорит по русски) и Dragana Matković (только английский). Докторка Драгана понравилась гораздо больше. Более внимательно смотрит, выспрашивает анамнез. Диагноз сразу определила, лечение помогло.",
+      "source": "Telegram: https://t.me/vrachivserbii/71328",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/71328"
+  ],
+  "updatedAt": "2026-09-24"
+}

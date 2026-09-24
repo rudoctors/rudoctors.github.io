@@ -22,8 +22,8 @@ Live: `https://rudoctors.github.io`
 |---|------|--------|-------------|
 | 0 | Docs | **done** | PLAN, AUDIT, SOURCES, DECISIONS, OPS, README |
 | 1 | CRITICAL fixes | **done** | seed merge-in-place; rating 0 (без фейковых 5); XSS JSON-LD; safeUrl allowlist; PAT sessionStorage+TTL 8h → спринт F memory-only; дубликаты (59 карт); fail-fast JSON; slugify CYR |
-| 2 | Данные | **done** | fetch-sheet/citilab/tg → ~140 карт; merge; detect:dups 0 |
-| 3 | Отзывы + перевод | **done** | 50 alfa EN; **44 переведены суб-агентом (ИИ)** + 6 already-RU; без API-ключа; UI «оригинал» |
+| 2 | Данные | **done** | fetch-sheet/citilab/tg + ChatExport → 419 JSON / 415 публичных карт; detect:dups 0 |
+| 3 | Отзывы + перевод | **done** | 50 alfa EN; **44 переведены суб-агентом (ИИ)** + 6 already-RU; 220 курированных Telegram-отзыва без rating |
 | 4 | Continuous update | **done** | cron Mon/Thu 05:00 UTC; merge-safe seed; strict schema; commit-if-diff |
 | 5 | HIGH polish | **done** | og:image; noindex; 404; privacy; FAQ; WebP 53 фото; city slug `novi-sad`; hreflang; aria-live; PR CI; **self-host Manrope**; **JPG удалены** |
 | 6 | Монетизация | **done** (кроме PAT) | click-track; analytics hooks; UI без «Рекомендуем»; `/packages/` noindex; CTA → баннеры |
@@ -57,8 +57,8 @@ Live: `https://rudoctors.github.io`
 ## Текущее состояние (спринты A→F, 24.09.2026)
 
 ### Верификация
-- `npm run check` — 0 errors / 0 warnings / 1 pre-existing hint (`chunkId` в `preprocess-tg-export.mjs`).
-- `npm run build` — **189 pages**, sitemap-index.
+- `npm run check` — 0 errors / 0 warnings / 0 hints.
+- `npm run build` — **477 pages**, sitemap-index; 415 публичных профилей врачей + 4 архивных redirect.
 - dist: packages noindex, sitemap без `/packages`, 0 «Рекомендуем» в HTML.
 - Live smoke: `/`, `/doctors/` (+`?page=2` client), `/cities/nis/`, `/llms.txt`, `/404`, forms, doctor profile — **200**; data-bio=0; www.t.me=0; pager present; honeypot present.
 - CI `3050da7` → run `36020752013` — **success** (build 21s + deploy 2m13s); IndexNow ping OK.
@@ -78,17 +78,24 @@ Live: `https://rudoctors.github.io`
 - **P0:** PAT memory-only + безусловная очистка legacy storage + analytics отключены на `/admin/`; точный disclosure публичных GitHub Issues + consent/privacy; `LicenseInfo`+`verificationStatus` types + profile UI; meta CSP/referrer; ToS `/terms/` (footer).
 - **P1:** skip-link `#main`; nav aria-label; Banner H2; breadcrumbs на doctors/specialties/cities/about; LCP `priority`+`fetchpriority` первые 3 карточки главной/каталога; CTA test banners → «Разместить рекламу»; robots.txt BOM убран; trim-валидация форм; list thin-content; privacy §4 analytics status.
 - **check** 0 err / 0 warn / 1 pre-existing hint; **build 189 pages** (вкл. `/terms/`).
-- **Частично / open:** license/verification schema+UI готовы, но официальных данных **0/140**; AggregateRating сейчас не публикуется (0 числовых оценок), provenance note появится при их появлении.
+- **Частично / open:** license/verification schema+UI готовы, но официальных данных **0/415**; AggregateRating сейчас не публикуется (0 числовых оценок), provenance note появится при их появлении.
 - **Платформенный лимит:** XFO/XCTO/CSP `frame-ancestors` не работают через meta; нужны response headers на CDN/другом хостинге.
 - **Не делано (осознанно):** underscore-слаги (нет 301 на GH Pages); серверный auth `/admin/`; DHD-аудит — другой сайт `thewayofdhd.github.io`.
 
 ### Данные
-- **140** карточек врачей (`src/data/doctors/*.json`).
-- **50** текстовых отзывов; числовых оценок **0**, поэтому `AggregateRating` сейчас не публикуется.
-- License/verification data: **0/140**; UI поддерживает поля, но официальные значения не выдумывались.
+- **419** JSON-карточек, **415 публичных**; 4 подтверждённых архивных дубля скрыты и получили redirects.
+- **270** текстовых отзывов, из них **220 из Telegram**; числовых оценок **0**, поэтому `AggregateRating` сейчас не публикуется.
+- License/verification data: **0/415**; UI поддерживает поля, но официальные значения не выдумывались.
 - **53** фото WebP (`public/photos/`); **0 JPG**; аватарка Курамшиной — исходный `rd-59.webp` (180°-копия удалена).
 - Поле `featured` в schema сохранено (seed OR-merge), но **без UI-бейджей** и без секции на главной.
-- Специальности / города: slugified; города belgrade, nis, novi-sad, subotica.
+- Специальности / города: slugified; города belgrade, nis, novi-sad, pancevo, subotica.
+
+### Telegram ChatExport import (24.09.2026)
+- Источник: `D:\Data\Downloads\Telegram Desktop\ChatExport_2026-09-24\result.json` — 151 898 сообщений, 2022-03…2026-09.
+- Preprocess: 6 451 doctor-oriented сообщений; subagents → 298 финальных кандидатов → **279 новых карточек**, 1 existing match, 18 намеренно skipped.
+- Reviews: 97 новых + 123 существующим = **220**, автор/дата/source URL; ни одного выдуманного rating.
+- Добавлены 11 taxonomy-ключей (радиолог, маммолог, УЗИ, остеопат, проктолог, пластический хирург, физиатр, логопед, диетолог, нутрициолог, онколог).
+- Import идемпотентен: повторный dry-run → `newCards=0`, `changedExisting=0`; сырой экспорт и `scripts/tg-parsed/` игнорируются git.
 
 ### Монетизация (UI)
 - Убраны: бейдж «Рекомендуем» (DoctorCard, [slug]), секция «Рекомендуемые профили» (index).
@@ -138,7 +145,7 @@ Live: `https://rudoctors.github.io`
 | Домен (.rs / .com) | опционально | нужен для Яндекс.Вебмастера |
 | Каталоги Сербии (спринт 4) | **пользователь** | см. `docs/seo-catalogs.md` — нужна почта |
 | underscore-слаги (5 спец.) | backlog | не ренеймить без редиректов (GH Pages) |
-| License/verification YMYL | backlog | schema/UI готовы; нужны официальные данные, сейчас 0/140 |
+| License/verification YMYL | backlog | schema/UI готовы; нужны официальные данные, сейчас 0/415 |
 | ToS legal requisites | до платного контракта | добавить данные владельца/контакт для договора с рекламодателем |
 | DHD audit `thewayofdhd.github.io` | отдельный трекер | `D:\Projects\DHD-Project\...` — не rudoctors |
 | E2E admin hide-flow | пользователь | PAT memory-only после спринта F |

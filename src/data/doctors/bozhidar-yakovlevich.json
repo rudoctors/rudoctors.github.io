@@ -1,0 +1,36 @@
+{
+  "slug": "bozhidar-yakovlevich",
+  "name": "Божидар Яковлевич",
+  "specializations": [
+    "otorhinolaryngologist"
+  ],
+  "specializationText": "оториноларинголог",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач-оториноларинголог; ведёт приём в MediGroup в Белграде, владеет русским, сербским и английским языками.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 11 40 40 100"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/203358"
+  ],
+  "updatedAt": "2026-09-24"
+}

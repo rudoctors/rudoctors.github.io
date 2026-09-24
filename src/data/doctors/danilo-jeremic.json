@@ -1,0 +1,39 @@
+{
+  "slug": "danilo-jeremic",
+  "name": "Danilo Jeremić",
+  "specializations": [
+    "traumatologist_orthopedist"
+  ],
+  "specializationText": "оперирующий ортопед",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Травматолог-ортопед; MediGroup / Medical Center",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup / Medical Center",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-141324",
+      "author": "Sergei",
+      "date": "2025-05-20",
+      "text": "Оперирующего доктора зовут Danilo Jeremic. Операция прошла быстро, прошел месяц, вроде бы все хорошо. Доктор дал свой телефон и был на связи. На снятие швов принял меня в первый день после командировки, который он даже не работал, просто приехал в клинику в оговоренное время и снял, денег не взял :) В общем, могу рекомендовать — после глубокого поиска по чату и сбора отзывов было тревожно — но все прошло хорошо и компетентно.",
+      "source": "Telegram: https://t.me/vrachivserbii/141324",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/141324"
+  ],
+  "updatedAt": "2026-09-24"
+}

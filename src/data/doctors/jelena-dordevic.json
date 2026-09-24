@@ -1,0 +1,30 @@
+{
+  "slug": "jelena-dordevic",
+  "name": "Jelena Đorđević",
+  "specializations": [
+    "gynecologist"
+  ],
+  "specializationText": "гинеколог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гинеколог; BelMedic",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "BelMedic",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/95619"
+  ],
+  "updatedAt": "2026-09-24"
+}

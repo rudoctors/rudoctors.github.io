@@ -1,0 +1,40 @@
+{
+  "slug": "dragan-lazarevic",
+  "name": "Dragan Lazarević",
+  "specializations": [
+    "proctologist"
+  ],
+  "specializationText": "проктолог",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Проктолог; MediGroup 6, Đorđa Magaraševića 1",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup 6",
+      "address": "Đorđa Magaraševića 1",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-205239",
+      "author": "Alexandr Kruchkov",
+      "date": "2026-08-22",
+      "text": "В Нови Саде я обратился к русскоговорящему Dragan Lazarević в Medigroup 6. Проблема была решена минимальными усилиями. Всем доволен. Рекомендую тем, кто не может поехать из Нового Сада в Белград к русскоговорящему врачу и боится идти без знания сербского.",
+      "source": "Telegram: https://t.me/vrachivserbii/205239",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/205239"
+  ],
+  "updatedAt": "2026-09-24"
+}

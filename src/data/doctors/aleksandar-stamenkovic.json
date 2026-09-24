@@ -1,0 +1,39 @@
+{
+  "slug": "aleksandar-stamenkovic",
+  "name": "Aleksandar Stamenković",
+  "specializations": [
+    "traumatologist_orthopedist"
+  ],
+  "specializationText": "ортопед",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Травматолог-ортопед; MediGroup",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-151812",
+      "author": "IG",
+      "date": "2025-08-11",
+      "text": "Была в MediGroup у ортопеда Александра Стаменковича. Врач предположил диагноз и отправил на МРТ для точности; диагноз подтвердился. На втором приёме он изложил ситуацию и предложил два варианта лечения. Сегодня сделали PRP быстро, спокойно и почти не больно.",
+      "source": "Telegram: https://t.me/vrachivserbii/151812",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/151812"
+  ],
+  "updatedAt": "2026-09-24"
+}

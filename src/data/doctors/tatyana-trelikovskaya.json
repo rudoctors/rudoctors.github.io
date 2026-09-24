@@ -1,0 +1,36 @@
+{
+  "slug": "tatyana-trelikovskaya",
+  "name": "Татьяна Треликовская",
+  "nameEn": "Tatiana Trelikovskaia",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог-терапевт, стоматолог-ортопед, пародонтолог; детский приём",
+  "city": "Novi Sad",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог-терапевт, ортопед и пародонтолог; принимает в Нови-Саде на Косовской 2, ведёт детский приём.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "—",
+      "address": "Косовска, 2",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 61 233 0163",
+    "telegram": "https://t.me/TatianaTrelikovskaia"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/124593",
+    "https://t.me/vrachivserbii/186513"
+  ],
+  "updatedAt": "2026-09-24"
+}

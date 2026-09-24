@@ -1,0 +1,30 @@
+{
+  "slug": "zorka-popovic",
+  "name": "Zorka Popovic",
+  "specializations": [
+    "therapist"
+  ],
+  "specializationText": "терапевт",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Терапевт; MediGroup Kalenič",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup Kalenič",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/55949"
+  ],
+  "updatedAt": "2026-09-24"
+}

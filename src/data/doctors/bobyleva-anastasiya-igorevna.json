@@ -1,0 +1,31 @@
+{
+  "slug": "bobyleva-anastasiya-igorevna",
+  "name": "Бобылёва Анастасия Игоревна",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "Ортодонт, гнатолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Ортодонт и гнатолог в Palkin Dental Center; работает с прикусом и ВНЧС.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Palkin Dental Center",
+      "address": "Делиградска, 6",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/206430"
+  ],
+  "updatedAt": "2026-09-24"
+}

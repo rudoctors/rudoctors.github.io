@@ -1,0 +1,34 @@
+{
+  "slug": "nosova-olga-olegovna",
+  "name": "Носова Ольга Олеговна",
+  "specializations": [
+    "otorhinolaryngologist",
+    "plastic_surgeon"
+  ],
+  "specializationText": "пластический хирург; оториноларинголог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Сертифицированный пластический хирург и оториноларинголог; практикует в Белграде более пяти лет.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "ST Medica",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 64 000 0520",
+    "website": "http://stmedica.com/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/157855"
+  ],
+  "updatedAt": "2026-09-24"
+}

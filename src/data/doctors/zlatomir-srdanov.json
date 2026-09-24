@@ -1,0 +1,39 @@
+{
+  "slug": "zlatomir-srdanov",
+  "name": "Zlatomir Srdanov",
+  "specializations": [
+    "gynecologist"
+  ],
+  "specializationText": "гинеколог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Гинеколог; Euromedic",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Euromedic",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-136363",
+      "author": "Anna Divinsky",
+      "date": "2025-04-14",
+      "text": "#гинеколог #белград Была на приеме у гинеколога Златомир Срданов в Евромедике. Очень приятный и участливый доктор, задает вопросы, внимательный, хорошо ведет диалог. Мы разговаривали на английском. Мне нужен был профилактический осмотр.",
+      "source": "Telegram: https://t.me/vrachivserbii/136363",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/136363"
+  ],
+  "updatedAt": "2026-09-24"
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "bakay-vladislav-andreevich",
+  "name": "Бакай Владислав Андреевич",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "Стоматолог-ортопед",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог-ортопед в Palkin Dental Center; занимается протезированием, коронками, винирами и имплантами.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Palkin Dental Center",
+      "address": "Делиградска, 6",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/206032"
+  ],
+  "updatedAt": "2026-09-24"
+}

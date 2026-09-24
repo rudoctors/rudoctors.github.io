@@ -1,0 +1,47 @@
+{
+  "slug": "evseev-aleksey",
+  "name": "Евсеев Алексей",
+  "specializations": [
+    "obstetrician_gynecologist",
+    "gynecologist",
+    "surgeon"
+  ],
+  "specializationText": "Акушер-гинеколог; гинекологическая хирургия и урогинекология",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "en",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Акушер-гинеколог; проводит амбулаторные приёмы и гинекологические операции, включая урогинекологические проблемы, в MediGroup и Vizim в Белграде.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "address": "бульвар Милутина Миланковича, 3",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Vizim",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381629750187",
+    "telegram": "https://t.me/Alex_Beograd"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/31433",
+    "https://t.me/vrachivserbii/60910",
+    "https://t.me/vrachivserbii/183725",
+    "https://t.me/vrachivserbii/144500"
+  ],
+  "updatedAt": "2026-09-24"
+}

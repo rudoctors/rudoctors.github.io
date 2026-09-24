@@ -36,6 +36,10 @@
       "district": "Vracar",
       "url": "https://www.klinikaequilibrium.rs/",
       "mapsUrl": "https://maps.app.goo.gl/miJ7uRsBtwipXrfZ9"
+    },
+    {
+      "clinic": "Эквилибрум",
+      "city": "Novi Sad"
     }
   ],
   "contacts": {
@@ -44,7 +48,16 @@
     "website": "https://t.me/Ajbolit_v_Serbii",
     "mapsUrl": "https://maps.app.goo.gl/miJ7uRsBtwipXrfZ9"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-202005",
+      "author": "Evgeniy Romanov",
+      "date": "2026-08-02",
+      "text": "Обратился к терапевту Алексею Прахову. Врач быстро разобрался в моей ситуации, понятно объяснил план и назначил только необходимые препараты. Также помог сориентироваться, к какому специалисту обратиться. Остался доволен, рекомендую.",
+      "source": "Telegram: https://t.me/vrachivserbii/202005",
+      "lang": "ru"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [

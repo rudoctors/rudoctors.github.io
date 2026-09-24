@@ -1,0 +1,35 @@
+{
+  "slug": "meduneckiy-aleksandr",
+  "name": "Медунецкий Александр",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "стоматолог",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Стоматолог в Dental Simina Clinic; выполняет профессиональную чистку зубов.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dental Simina Clinic",
+      "address": "Simina 9a",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 61 135 5100",
+    "telegram": "https://t.me/Pal_Secam"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/145445",
+    "https://t.me/vrachivserbii/145465"
+  ],
+  "updatedAt": "2026-09-24"
+}

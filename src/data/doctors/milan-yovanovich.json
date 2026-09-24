@@ -1,0 +1,35 @@
+{
+  "slug": "milan-yovanovich",
+  "name": "Милан Йованович",
+  "nameEn": "Milan Jovanovic",
+  "specializations": [
+    "otorhinolaryngologist"
+  ],
+  "specializationText": "ЛОР",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Профессор Milan Jovanovic, ЛОР в BelMedic; осмотр стоит 11 000 динар.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "BelMedic",
+      "address": "Kneginje Zorka 7",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "011 309 1000",
+    "website": "https://www.belmedic.rs/tim/milan-jovanovic-prof-dr-sc-med"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/97431"
+  ],
+  "updatedAt": "2026-09-24"
+}

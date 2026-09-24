@@ -1,0 +1,40 @@
+{
+  "slug": "srboluba-stosic",
+  "name": "Srboluba Stosic",
+  "specializations": [
+    "surgeon"
+  ],
+  "specializationText": "челюстно-лицевой хирург",
+  "city": "Belgrade",
+  "languages": [],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Хирург; Medical Center, Mile Kovačevića 10",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Medical Center",
+      "address": "Mile Kovačevića 10",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-116337",
+      "author": "Olga",
+      "date": "2024-10-29",
+      "text": "Пишу о приёме у ЧЛХ Срболюба Стошича. Доктор мне очень понравился: приятный в общении и бережный. Я была у него в Medical Center. Мне пока решили консервативно полечить, и это тоже понравилось.",
+      "source": "Telegram: https://t.me/vrachivserbii/116337",
+      "lang": "ru"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii",
+    "https://t.me/vrachivserbii/116337"
+  ],
+  "updatedAt": "2026-09-24"
+}
