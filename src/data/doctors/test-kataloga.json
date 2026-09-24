@@ -1,0 +1,36 @@
+{
+  "slug": "test-kataloga",
+  "name": "Тест Каталога",
+  "specializations": [
+    "therapist"
+  ],
+  "specializationText": "Терапевт",
+  "experienceYears": 5,
+  "city": "Belgrade",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Это тестовая заявка для проверки Telegram-модерации (кнопка Опубликовать). Карточка будет удалена после проверки.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Тестовая клиника",
+      "address": "Тестовая улица 1",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/rudoctors_test"
+  },
+  "reviews": [],
+  "verificationStatus": "self",
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "rudoctors-form#issue-1"
+  ],
+  "updatedAt": "2026-09-24"
+}
