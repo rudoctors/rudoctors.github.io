@@ -99,10 +99,7 @@ Live: `https://rudoctors.github.io`
 
 | Задача | Кто | Примечание |
 |--------|-----|------------|
-| GSC verify + sitemap | **done** 24.09.2026 | verify «Тег HTML»; sitemap-index.xml отправлен; токен `od8PTNpX…` |
-| Bing Webmaster sitemap | **done** 24.09.2026 | сайт в аккаунте; sitemap Processing; IndexNow в CI |
-| PAT (fine-grained contents RW) | **пользователь** | E2E admin hide-flow после создания |
-| Analytics keys (Plausible/Umami) | **пользователь** | env в GH Secrets / Actions |
+| GSC/Bing/Yandex meta + PAT + analytics | **пользователь** | **done** 24.09.2026 |
 | Первый banner request | до 15.12.2026 | сигнал монетизации (баннеры / продажа сайта) |
 | Домен (.rs / .com) | опционально | нужен для Яндекс.Вебмастера |
 | Каталоги Сербии (спринт 4) | **пользователь** | см. `docs/seo-catalogs.md` — нужна почта |
