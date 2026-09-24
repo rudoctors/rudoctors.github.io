@@ -448,7 +448,12 @@ function extractSheetContacts(contacts) {
     phone,
     email: emailM,
     telegram,
-    website: siteM && !/t\.me|maps\.app|instagram|facebook/i.test(siteM[0]) ? siteM[0] : undefined,
+    website:
+      siteM &&
+      !/t\.me|www\.t\.me|www\.@|maps\.app|instagram|facebook/i.test(siteM[0]) &&
+      !/[а-яА-ЯёЁ\s]/.test(siteM[0])
+        ? siteM[0].replace(/^http:\/\//i, "https://")
+        : undefined,
   };
 }
 

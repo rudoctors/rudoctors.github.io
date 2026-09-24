@@ -19,13 +19,12 @@
     {
       "clinic": "Ситилаб",
       "city": "Belgrade",
-      "address": "Dubljanska 41, Belgrade",
-      "url": "https://Дубљанска 41, Београд 11000, Сербия"
+      "address": "Dubljanska 41, Belgrade"
     }
   ],
   "contacts": {
     "appointmentUrl": "https://n1363426.alteg.io/company/1167832/personal/select-master/master-info/1167832/3091252?o=m3091252",
-    "website": "https://citilab.rs",
+    "website": "https://citilab.rs/",
     "email": null
   },
   "reviews": [],

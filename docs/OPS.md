@@ -37,8 +37,24 @@ astro dev --background   # dev (см. AGENTS.md)
 
 - Перевод EN→RU: основной путь — ИИ-агент (сессия); `TRANSLATE_API_KEY` — запасной no-op без ключа.
 - Analytics (опционально): build-time `PUBLIC_PLAUSIBLE_DOMAIN` и/или `PUBLIC_UMAMI_WEBSITE_ID`.
+  - **Проверка 24.09.2026:** `gh secret list` пуст — секреты **не созданы**; скриптов аналитики в проде нет. Создать GH Secrets после выбора Plausible/Umami.
 - Local: `.env` локально; не коммитить, не печатать, не в память.
 - Photos: `npm run photos:webp` (sharp) → `photo: /photos/*.webp`.
+
+## Security headers
+
+- GitHub Pages **не поддерживает** custom response headers (CSP, HSTS, X-Frame-Options и т.п.).
+- При переезоде на свой домен: Cloudflare (или Netlify/Vercel) — добавить headers в дашборде/`_headers`.
+- Сейчас: rely on GitHub Pages defaults; forms — honeypot + cooldown (без captcha); PAT — sessionStorage + TTL.
+
+## Контент-менеджмента (модель)
+
+- **Источник истины:** JSON в `src/data/doctors/*.json` (GitHub CMS).
+- **Добавление/правки:** PR в репозиторий → CI check+build → merge → auto-deploy Pages.
+- **Формы сайта** (`/add-doctor/`, `/leave-review/`): honeypot + cooldown 90с → открывают GitHub Issues (`doctor-request` / `review`) → модератор ревьюит → commit JSON.
+- **Модерация отзывов:** label `review` в Issues = очередь; approve → правка JSON в PR.
+- **Cron refresh:** Mon/Thu 05:00 UTC seed merge (не затирает hidden/ручные правки).
+- Рекомендуемые labels: `doctor-request`, `review`, `banner`, `bug`.
 
 ## Монетизация
 

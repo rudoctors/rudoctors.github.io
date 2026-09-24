@@ -30,14 +30,14 @@
       "clinic": "Miren Medical",
       "address": "Војводе Степе 250, Београд 11000",
       "city": "Belgrade",
-      "url": "https://mirenmedic.rs/ru/kontakt/",
+      "url": "https://mirenmedic.rs/ru/kontakt",
       "mapsUrl": "https://maps.app.goo.gl/rZTHcThFUH4fHpmNA"
     }
   ],
   "contacts": {
     "email": null,
     "telegram": "https://t.me/dr_neru",
-    "website": "https://www.nerushai.com",
+    "website": "https://www.nerushai.com/",
     "appointmentUrl": "https://n822443.alteg.io/",
     "mapsUrl": "https://maps.app.goo.gl/rZTHcThFUH4fHpmNA"
   },

@@ -44,13 +44,15 @@ Live: `https://rudoctors.github.io`
 | **`95c7444`** | STATE.md хронология |
 | **`50afc6d`** | STATE.md final chronology |
 | **`47ab5ac`** | Test banners (insurance/clinic); avatar Курамшина → original `rd-59.webp`; удалён `rd-59-r.webp` |
+| **`bdf5931`** | Rename home section Высший рейтинг → Врачи Сербии |
+| **`553f0bd`** | Search matches RU specialization labels + specializationText |
 
 ---
 
-## Текущее состояние (после `47ab5ac` — test banners)
+## Текущее состояние (спринты A→E, 24.09.2026)
 
 ### Верификация
-- `npm run check` — 0 errors / 0 warnings.
+- `npm run check` — 0 errors / 0 warnings / 1 pre-existing hint (`chunkId` в `preprocess-tg-export.mjs`).
 - `npm run build` — **188 pages**, sitemap-index.
 - dist: packages noindex, sitemap без `/packages`, 0 «Рекомендуем» в HTML.
 - Live smoke: `/`, `/cities/novi-sad/`, `/faq/`, `/doctors/...` — 200 (`/packages/` — noindex).
@@ -62,7 +64,7 @@ Live: `https://rudoctors.github.io`
 - Bing: `msvalidate.01` — **done**.
 - Yandex meta: `yandex-verification` в Layout (без своего домена Вебмастер недоступен).
 - PAT — **done** (пользователь).
-- Analytics keys — **done** (пользователь, GH Secrets).
+- Analytics keys — **проверено 24.09.2026: `gh secret list` пуст** — GH Secrets **не созданы**; скриптов аналитики в проде нет. Создать `PUBLIC_PLAUSIBLE_DOMAIN` / `PUBLIC_UMAMI_WEBSITE_ID` после выбора провайдера.
 
 ### Данные
 - **140** карточек врачей (`src/data/doctors/*.json`).
@@ -121,6 +123,7 @@ Live: `https://rudoctors.github.io`
 6. Убрать «Рекомендуем»/«Рекомендуемые»; fix аватарка Курамшина; скрыть `/packages/` — **сделано** (`5768c16`).
 7. Цель: **баннерная реклама или продажа сайта** (не featured-пакеты).
 8. Test banners (страховка + клиника) — **сделано**.
+9. Спринты A→E по аудиту (honeypot+cooldown, a11y, thin content, perf D2, P2) — **сделано** (см. PLAN/AUDIT).
 
 ---
 

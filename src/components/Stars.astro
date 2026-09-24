@@ -11,8 +11,10 @@ const starClass = size === "lg" ? "text-xl" : size === "sm" ? "text-xs" : "text-
 ---
 
 {
-  count === 0 || rating === 0 ? (
+  count === 0 ? (
     <span class="badge-new">Нет отзывов</span>
+  ) : rating === 0 ? (
+    <span class="text-xs text-slate-500">{count} отз. без оценки</span>
   ) : (
     <div class="flex items-center gap-2">
       <span class={`font-extrabold text-navy-900 ${textClass}`}>{rating.toFixed(1)}</span>

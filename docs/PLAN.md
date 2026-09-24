@@ -73,8 +73,14 @@
 - [x] `/packages/` скрыт: `noindex`, вне sitemap, без публичных ссылок
 - [x] Fix: аватарка Евгении Курамшиной → исходный `/photos/rd-59.webp` (180°-копия удалена)
 - [x] Test banners: `banners.json` + `Banner.astro` (home-top страховка, home-bottom клиника, catalog-top страховка; prop `placement`)
+- [x] Sprint A: JSON-LD @id organization/website, AggregateRating gate, safeUrl (t.me/www/@/http→https), robots Disallow forms/packages, fix-bad-urls (38 файлов)
+- [x] Sprint B: Header aria-expanded/controls, DoctorCard aria-label, autocomplete + honeypot + cooldown formGuard (add-doctor, leave-review)
+- [x] Sprint C: city-intros (Niš + расширение), specialty-intros (allergist, убран мёртвый lor), about/contacts/cities/specialties/faq расширены
+- [x] Sprint D: doctors pagination D2 (пустые фильтры → 24/page, активный → полный список), убран data-bio, unique title page N
+- [x] Sprint E: llms.txt markdown + Niš, 404 поиск+города, OPS security headers + контент-модель, analytics GH Secrets **пусты** (отметить)
 - [ ] E2E admin hide-flow — PAT создаст пользователь (PAT done)
 - [ ] Первый banner/placement request до 15.12.2026
+- [ ] Analytics: создать GH Secrets `PUBLIC_PLAUSIBLE_DOMAIN` / `PUBLIC_UMAMI_WEBSITE_ID` (проверка: `gh secret list` пуст)
 
 ## Monetization gate (пройден → proceed)
 1. Каталог 120–150 + отзывы → баннеры/ads → платящие размещения (или продажа сайта).

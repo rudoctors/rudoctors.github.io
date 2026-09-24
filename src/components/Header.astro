@@ -50,7 +50,9 @@ const path = Astro.url.pathname;
         type="button"
         id="mobile-menu-btn"
         class="md:hidden btn-ghost px-2"
-        aria-label="Меню"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
       >
         ☰
       </button>
@@ -74,5 +76,9 @@ const path = Astro.url.pathname;
 <script>
   const btn = document.getElementById("mobile-menu-btn");
   const menu = document.getElementById("mobile-menu");
-  btn?.addEventListener("click", () => menu?.classList.toggle("hidden"));
+  btn?.addEventListener("click", () => {
+    const open = menu?.classList.toggle("hidden") === false;
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+    btn.setAttribute("aria-label", open ? "Закрыть меню" : "Открыть меню");
+  });
 </script>

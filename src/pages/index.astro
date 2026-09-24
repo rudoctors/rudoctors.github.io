@@ -4,12 +4,12 @@ import DoctorCard from "../components/DoctorCard.astro";
 import Banner from "../components/Banner.astro";
 import { publicDoctors, allSpecializationKeys, specLabel, siteStats, allCities } from "../lib/doctors";
 import { computeRating } from "../lib/rating";
-import { SITE, plural, citySlug } from "../lib/site";
+import { SITE, SCHEMA_IDS, plural, citySlug } from "../lib/site";
 
 const stats = siteStats();
 const top = publicDoctors()
   .map((d) => ({ d, r: computeRating(d) }))
-  .filter((x) => x.r.count > 0)
+  .filter((x) => x.r.count > 0 && x.r.average > 0)
   .sort((a, b) => b.r.average - a.r.average || b.r.count - a.r.count)
   .slice(0, 6)
   .map((x) => x.d);
@@ -25,10 +25,12 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": SCHEMA_IDS.website,
     name: SITE.name,
     url: SITE.url,
     inLanguage: "ru",
     description: SITE.description,
+    publisher: { "@id": SCHEMA_IDS.organization },
     potentialAction: {
       "@type": "SearchAction",
       target: `${SITE.url}/doctors/?q={search_term_string}`,
@@ -38,6 +40,7 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": SCHEMA_IDS.organization,
     name: SITE.name,
     url: SITE.url,
     logo: `${SITE.url}/og.png`,

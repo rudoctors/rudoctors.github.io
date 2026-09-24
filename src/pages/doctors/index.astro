@@ -32,7 +32,7 @@ const jsonLd = {
     <div class="mb-8">
       <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900">Врачи</h1>
       <p class="mt-2 text-slate-600">
-        Фильтруйте по специальности, городу, языку и формату приёма.
+        Фильтруйте по специальности, городу, языку и формату приёма. Без фильтров — страницы по 24 карточки.
       </p>
     </div>
 
@@ -91,15 +91,15 @@ const jsonLd = {
     <div id="doctor-grid" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
       {
         doctors.map(({ doctor }) => {
-          const searchHay = [
+          const specLabels = doctor.specializations.map(specLabel).join(" ");
+          const hay = [
             doctor.name,
             doctor.nameEn || "",
-            doctor.bio || "",
             doctor.specializationText || "",
             doctor.city,
             doctor.district || "",
             doctor.specializations.join(" "),
-            doctor.specializations.map(specLabel).join(" "),
+            specLabels,
           ]
             .join(" ")
             .toLowerCase();
@@ -108,9 +108,8 @@ const jsonLd = {
               class="doctor-item"
               data-slug={doctor.slug}
               data-name={doctor.name.toLowerCase()}
-              data-bio={(doctor.bio || "").toLowerCase()}
               data-specs={doctor.specializations.join(",")}
-              data-search={searchHay}
+              data-search={hay}
               data-city={doctor.city}
               data-formats={doctor.formats.join(",")}
               data-reviews={doctor.reviews?.length || 0}
@@ -125,6 +124,16 @@ const jsonLd = {
       }
     </div>
 
+    <nav id="pager" class="mt-8 hidden items-center justify-center gap-3" aria-label="Страницы каталога">
+      <button type="button" id="page-prev" class="btn-ghost" disabled>
+        ← Назад
+      </button>
+      <span id="page-label" class="text-sm text-slate-600"></span>
+      <button type="button" id="page-next" class="btn-ghost" disabled>
+        Вперёд →
+      </button>
+    </nav>
+
     <div id="empty" class="hidden card p-10 text-center text-slate-500">
       Ничего не найдено. Попробуйте изменить фильтры.
     </div>
@@ -132,11 +141,19 @@ const jsonLd = {
 </Layout>
 
 <script define:vars={{ doctorCount: doctors.length }}>
+  const PAGE_SIZE = 24;
   const form = document.getElementById("filters");
   const grid = document.getElementById("doctor-grid");
   const empty = document.getElementById("empty");
   const meta = document.getElementById("result-meta");
+  const pager = document.getElementById("pager");
+  const pageLabel = document.getElementById("page-label");
+  const pagePrev = document.getElementById("page-prev");
+  const pageNext = document.getElementById("page-next");
   const items = [...document.querySelectorAll(".doctor-item")];
+  const baseDocTitle = "Каталог врачей · Rudoctors";
+
+  let page = 1;
 
   const params = new URLSearchParams(location.search);
   const setFromParams = () => {
@@ -149,7 +166,25 @@ const jsonLd = {
   };
   setFromParams();
 
-  function apply() {
+  function hasActiveFilter(fd) {
+    return Boolean(
+      String(fd.get("q") || "").trim() ||
+        String(fd.get("spec") || "") ||
+        String(fd.get("city") || "") ||
+        fd.get("online") === "1" ||
+        fd.get("withReviews") === "1"
+    );
+  }
+
+  function setPageTitle(p, total, filteredNow) {
+    if (total <= 0 || p <= 1 || filteredNow) {
+      document.title = baseDocTitle;
+      return;
+    }
+    document.title = `Каталог врачей — страница ${p} · Rudoctors`;
+  }
+
+  function apply({ keepPage = false } = {}) {
     const fd = new FormData(form);
     const q = String(fd.get("q") || "").trim().toLowerCase();
     const spec = String(fd.get("spec") || "");
@@ -159,54 +194,118 @@ const jsonLd = {
     const withReviews = fd.get("withReviews") === "1" || fd.get("wr") === "on";
     const onlineChecked = form.querySelector('[name="online"]')?.checked;
     const reviewsChecked = form.querySelector('[name="withReviews"]')?.checked;
+    const filtered = hasActiveFilter(fd);
 
-    let visible = 0;
+    let matchCount = 0;
+    const matchedSet = new Set();
     for (const item of items) {
       const d = item.dataset;
       let ok = true;
       if (q) {
-        const hay = d.search || `${d.name} ${d.bio} ${d.specs}`.toLowerCase();
+        const hay = d.search || `${d.name} ${d.specs}`.toLowerCase();
         if (!hay.includes(q)) ok = false;
       }
       if (spec && !(d.specs || "").split(",").includes(spec)) ok = false;
       if (city && d.city !== city) ok = false;
       if ((onlineChecked || online) && !(d.formats || "").includes("online")) ok = false;
       if ((reviewsChecked || withReviews) && Number(d.reviews) < 1) ok = false;
-      item.classList.toggle("hidden", !ok);
-      if (ok) visible++;
+      if (ok) {
+        matchedSet.add(item);
+        matchCount++;
+      }
     }
 
-    // sort visible items
+    // sort all items (stable DOM order for matched set)
     const arr = items.slice();
     arr.sort((a, b) => {
-      const da = a.dataset, db = b.dataset;
+      const da = a.dataset,
+        db = b.dataset;
       if (sort === "name") return (da.name || "").localeCompare(db.name || "", "ru");
       if (sort === "exp") return Number(db.exp) - Number(da.exp);
       if (sort === "reviews") return Number(db.reviews) - Number(da.reviews);
-      const ra = Number(da.rating), rb = Number(db.rating);
+      const ra = Number(da.rating),
+        rb = Number(db.rating);
       if (rb !== ra) return rb - ra;
       return Number(db.reviews) - Number(da.reviews);
     });
     for (const el of arr) grid.appendChild(el);
 
-    empty.classList.toggle("hidden", visible > 0);
-    meta.textContent = `Найдено: ${visible} из ${doctorCount}`;
+    // matched list in sorted DOM order (after sort)
+    const matched = arr.filter((el) => matchedSet.has(el));
+
+    // D2: empty filters → paginate 24; active filter → full list
+    if (!filtered) {
+      const totalPages = Math.max(1, Math.ceil(matchCount / PAGE_SIZE));
+      if (!keepPage) page = 1;
+      if (page > totalPages) page = totalPages;
+      const start = (page - 1) * PAGE_SIZE;
+      const end = start + PAGE_SIZE;
+      let visible = 0;
+      for (const item of items) {
+        const idx = matched.indexOf(item);
+        const ok = idx >= start && idx < end;
+        item.classList.toggle("hidden", !ok);
+        if (ok) visible++;
+      }
+      empty.classList.toggle("hidden", visible > 0);
+      meta.textContent =
+        totalPages > 1
+          ? `Всего: ${matchCount} · страница ${page} из ${totalPages} (по ${PAGE_SIZE})`
+          : `Найдено: ${matchCount} из ${doctorCount}`;
+      pager.classList.toggle("hidden", totalPages <= 1);
+      pager.classList.toggle("flex", totalPages > 1);
+      if (totalPages > 1) {
+        pageLabel.textContent = `Страница ${page} / ${totalPages}`;
+        pagePrev.disabled = page <= 1;
+        pageNext.disabled = page >= totalPages;
+      }
+      setPageTitle(page, matchCount, false);
+    } else {
+      for (const item of items) {
+        item.classList.toggle("hidden", !matchedSet.has(item));
+      }
+      empty.classList.toggle("hidden", matchCount > 0);
+      meta.textContent = `Найдено: ${matchCount} из ${doctorCount} (полный список)`;
+      pager.classList.add("hidden");
+      pager.classList.remove("flex");
+      page = 1;
+      setPageTitle(1, matchCount, true);
+    }
 
     const next = new URLSearchParams();
     for (const [k, v] of fd.entries()) if (v) next.set(k, String(v));
     if (form.querySelector('[name="online"]')?.checked) next.set("online", "1");
     if (form.querySelector('[name="withReviews"]')?.checked) next.set("withReviews", "1");
-    history.replaceState(null, "", `${location.pathname}?${next.toString()}`);
+    if (!filtered && page > 1) next.set("page", String(page));
+    const qs = next.toString();
+    history.replaceState(null, "", qs ? `${location.pathname}?${qs}` : location.pathname);
   }
+
+  // restore page from URL when no filters
+  const pageParam = Number(params.get("page") || "1");
+  if (Number.isFinite(pageParam) && pageParam >= 1) page = pageParam;
 
   form?.addEventListener("submit", (e) => {
     e.preventDefault();
     apply();
   });
-  form?.addEventListener("change", apply);
+  form?.addEventListener("change", () => apply({ keepPage: false }));
   document.getElementById("reset")?.addEventListener("click", () => {
     form.reset();
+    page = 1;
     apply();
   });
-  apply();
+  pagePrev?.addEventListener("click", () => {
+    if (page > 1) {
+      page--;
+      apply({ keepPage: true });
+      document.getElementById("result-meta")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  });
+  pageNext?.addEventListener("click", () => {
+    page++;
+    apply({ keepPage: true });
+    document.getElementById("result-meta")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  apply({ keepPage: true });
 </script>

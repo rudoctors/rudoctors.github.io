@@ -32,7 +32,7 @@ const doctors = publicDoctors()
       <div class="grid sm:grid-cols-2 gap-4">
         <div>
           <label class="block text-sm font-semibold mb-1" for="author">Ваше имя</label>
-          <input id="author" name="author" class="input" required maxlength="80" placeholder="Анна" />
+          <input id="author" name="author" class="input" required maxlength="80" placeholder="Анна" autocomplete="name" />
         </div>
         <div>
           <label class="block text-sm font-semibold mb-1" for="rating">Оценка</label>
@@ -59,6 +59,12 @@ const doctors = publicDoctors()
         <div class="text-xs text-slate-400 mt-1">Минимум 30 символов. Без персональных данных третьих лиц.</div>
       </div>
 
+      <!-- honeypot -->
+      <div class="absolute -left-[9999px] top-auto h-px w-px overflow-hidden" aria-hidden="true">
+        <label for="website_trap">Website</label>
+        <input id="website_trap" name="website_trap" type="text" tabindex="-1" autocomplete="off" />
+      </div>
+
       <label class="flex items-start gap-2 text-sm text-slate-600">
         <input type="checkbox" name="consent" required class="mt-1 rounded border-slate-300 text-brand-600 focus:ring-brand-500" />
         Подтверждаю, что отзыв — мой личный опыт, и согласен с <a href="/about/#reviews-policy" class="text-brand-700 underline">правилами публикации</a>.
@@ -76,8 +82,11 @@ const doctors = publicDoctors()
 </Layout>
 
 <script>
+  import { isHoneypotFilled, cooldownRemainingMs, markSubmitted, formatCooldown } from "../lib/formGuard";
+
   const form = document.getElementById("review-form") as HTMLFormElement | null;
   const status = document.getElementById("form-status");
+  const KEY = "leave-review";
 
   const params = new URLSearchParams(location.search);
   const pre = params.get("doctor");
@@ -86,6 +95,25 @@ const doctors = publicDoctors()
 
   form?.addEventListener("submit", async (e) => {
     e.preventDefault();
+    if (!form) return;
+
+    if (isHoneypotFilled(form)) {
+      if (status) {
+        status.classList.remove("hidden");
+        status.textContent = "Форма отправлена.";
+      }
+      return;
+    }
+
+    const wait = cooldownRemainingMs(KEY, 90_000);
+    if (wait > 0) {
+      if (status) {
+        status.classList.remove("hidden");
+        status.textContent = formatCooldown(wait);
+      }
+      return;
+    }
+
     const fd = new FormData(form);
     const doctor = String(fd.get("doctor") || "");
     const author = String(fd.get("author") || "");
@@ -106,6 +134,7 @@ const doctors = publicDoctors()
     ].join("\n");
 
     const url = `https://github.com/rudoctors/rudoctors.github.io/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=review`;
+    markSubmitted(KEY);
     if (status) {
       status.classList.remove("hidden");
       status.textContent = "Открываем форму GitHub для отправки отзыва…";

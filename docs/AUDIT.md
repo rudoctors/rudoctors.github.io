@@ -25,12 +25,18 @@
 - **done:** self-host Manrope (woff2 local, без Google Fonts CDN); удалены legacy JPG (53).
 
 ## MEDIUM / LOW
-SEO-мелочи, plural.
+
+- SEO-мелочи, plural — частично закрыто (Niš, allergist intro, robots, llms, 404, about/contacts FAQ).
+- a11y: aria-expanded/controls, aria-label профиля, autocomplete, honeypot+cooldown — **done** (спринт B).
+- Thin content: city-intros/specialty-intros/about/contacts/faq — **done** (спринт C).
+- Perf `/doctors/`: data-bio убран, пагинация 24/page D2 — **done** (спринт D).
+- Security headers GH Pages: задокументировано в OPS.md (переезд на Cloudflare).
 
 ## Continuous update
 **done:** cron refresh + merge-safe seed + fuzzy name match. Schema validation строгая в loadDoctors.
 
 ## Монетизация
-**done Phase 6:** click-track + analytics hooks; `/packages/` скрыт (noindex, без public-ссылок); UI без «Рекомендуем»; test banners (страховка/клиника).  
+**done Phase 6:** click-track + analytics hooks; `/packages/` скрыт (noindex, без public-ссылок); UI без «Рекомендуем»; test banners (страховка/клиника).
 
 Open: PAT E2E hide-flow (PAT создан); первый banner/placement request до 15.12.2026.
+Open: analytics GH Secrets не созданы (`gh secret list` пуст) — Plausible/Umami ключи.

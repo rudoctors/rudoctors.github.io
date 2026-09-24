@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { SITE } from "../lib/site";
+import { SITE, SCHEMA_IDS } from "../lib/site";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -10,6 +10,7 @@ const jsonLd = {
   inLanguage: "ru",
   mainEntity: {
     "@type": "Organization",
+    "@id": SCHEMA_IDS.organization,
     name: SITE.name,
     url: SITE.url,
     email: "hello@rudoctors.github.io",
@@ -20,7 +21,7 @@ const jsonLd = {
 
 <Layout
   title="Контакты"
-  description="Связаться с командой Rudoctors: Telegram, почта, репозиторий. Предложения врачам, клиникам и партнёрам."
+  description="Связаться с Rudoctors: Telegram-чат, почта, GitHub. Предложения врачам, клиникам, модерация отзывов и баннерная реклама."
   jsonLd={jsonLd}
   breadcrumbs={[
     { name: "Главная", path: "/" },
@@ -31,7 +32,8 @@ const jsonLd = {
     <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900">Контакты</h1>
     <p class="mt-3 text-slate-600 leading-relaxed">
       Rudoctors — независимый каталог русскоязычных врачей в Сербии. Отвечаем на вопросы пациентов,
-      врачей и партнёров.
+      врачей и партнёров: запись, правки карточек, отзывы, баннерное размещение и сотрудничество.
+      Выберите удобный канал ниже — Telegram для сообщества, GitHub для данных и модерации.
     </p>
 
     <div class="mt-8 grid gap-4 sm:grid-cols-2">

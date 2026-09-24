@@ -16,6 +16,7 @@
     "fetch:sheet": "node scripts/fetch-sheet.mjs",
     "fetch:citilab": "node scripts/fetch-citilab.mjs",
     "fetch:tg": "node scripts/fetch-tg.mjs",
+    "fetch:tg-export": "node --max-old-space-size=4096 scripts/preprocess-tg-export.mjs",
     "fetch:raw": "node scripts/fetch-raw.mjs",
     "fetch:alfa": "node scripts/scrape-alfa.mjs",
     "fetch:all": "node scripts/fetch-sheet.mjs && node scripts/fetch-citilab.mjs && node scripts/fetch-tg.mjs && node scripts/seed.mjs",

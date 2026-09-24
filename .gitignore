@@ -30,6 +30,8 @@ scripts/alfa*.html
 scripts/sheet-doctors.json
 scripts/citilab-doctors.json
 scripts/tg-posts.json
+scripts/tg-export-*.json
+scripts/tg-parsed/
 .DS_Store
 
 

@@ -82,7 +82,7 @@ const photo = doctor.photo;
         <span class="px-2 py-0.5 rounded-md bg-slate-100">Очно</span>
       )}
     </div>
-    <a href={`/doctors/${doctor.slug}/`} class="btn-secondary !py-1.5 !px-3 text-xs">
+    <a href={`/doctors/${doctor.slug}/`} class="btn-secondary !py-1.5 !px-3 text-xs" aria-label={`Профиль: ${doctor.name}`}>
       Профиль →
     </a>
   </div>

@@ -18,7 +18,7 @@ import { SITE } from "../lib/site";
       <div class="grid sm:grid-cols-2 gap-4">
         <div>
           <label class="block text-sm font-semibold mb-1" for="name">Имя и фамилия</label>
-          <input id="name" name="name" class="input" required maxlength="120" placeholder="Мария Иванова" />
+          <input id="name" name="name" class="input" required maxlength="120" placeholder="Мария Иванова" autocomplete="name" />
         </div>
         <div>
           <label class="block text-sm font-semibold mb-1" for="spec">Специальность</label>
@@ -29,27 +29,33 @@ import { SITE } from "../lib/site";
       <div class="grid sm:grid-cols-2 gap-4">
         <div>
           <label class="block text-sm font-semibold mb-1" for="city">Город</label>
-          <input id="city" name="city" class="input" required maxlength="60" placeholder="Belgrade" />
+          <input id="city" name="city" class="input" required maxlength="60" placeholder="Belgrade" autocomplete="address-level2" />
         </div>
         <div>
           <label class="block text-sm font-semibold mb-1" for="exp">Стаж (лет)</label>
-          <input id="exp" name="exp" type="number" min="0" max="70" class="input" placeholder="10" />
+          <input id="exp" name="exp" type="number" min="0" max="70" class="input" placeholder="10" inputmode="numeric" />
         </div>
       </div>
 
       <div>
         <label class="block text-sm font-semibold mb-1" for="clinic">Клиника / ординатура</label>
-        <input id="clinic" name="clinic" class="input" maxlength="160" placeholder="Название, адрес" />
+        <input id="clinic" name="clinic" class="input" maxlength="160" placeholder="Название, адрес" autocomplete="organization" />
       </div>
 
       <div>
         <label class="block text-sm font-semibold mb-1" for="contact">Контакт для связи</label>
-        <input id="contact" name="contact" class="input" required maxlength="160" placeholder="Telegram / телефон / email" />
+        <input id="contact" name="contact" class="input" required maxlength="160" placeholder="Telegram / телефон / email" autocomplete="email" enterkeyhint="send" />
       </div>
 
       <div>
         <label class="block text-sm font-semibold mb-1" for="about">О враче</label>
         <textarea id="about" name="about" class="input min-h-28" maxlength="1500" placeholder="Образование, опыт, языки приёма…"></textarea>
+      </div>
+
+      <!-- honeypot -->
+      <div class="absolute -left-[9999px] top-auto h-px w-px overflow-hidden" aria-hidden="true">
+        <label for="website_trap">Website</label>
+        <input id="website_trap" name="website_trap" type="text" tabindex="-1" autocomplete="off" />
       </div>
 
       <label class="flex items-start gap-2 text-sm text-slate-600">
@@ -58,7 +64,7 @@ import { SITE } from "../lib/site";
       </label>
 
       <button type="submit" class="btn-primary w-full">Предложить карточку</button>
-      <p id="form-status" class="text-sm text-slate-500 hidden"></p>
+      <p id="form-status" class="text-sm text-slate-500 hidden" role="status" aria-live="polite"></p>
     </form>
 
     <div class="mt-6 text-sm text-slate-500">
@@ -69,11 +75,33 @@ import { SITE } from "../lib/site";
 </Layout>
 
 <script>
+  import { isHoneypotFilled, cooldownRemainingMs, markSubmitted, formatCooldown } from "../lib/formGuard";
+
   const form = document.getElementById("add-form") as HTMLFormElement | null;
   const status = document.getElementById("form-status");
+  const KEY = "add-doctor";
 
   form?.addEventListener("submit", (e) => {
     e.preventDefault();
+    if (!form) return;
+
+    if (isHoneypotFilled(form)) {
+      if (status) {
+        status.classList.remove("hidden");
+        status.textContent = "Форма отправлена.";
+      }
+      return;
+    }
+
+    const wait = cooldownRemainingMs(KEY, 90_000);
+    if (wait > 0) {
+      if (status) {
+        status.classList.remove("hidden");
+        status.textContent = formatCooldown(wait);
+      }
+      return;
+    }
+
     const fd = new FormData(form);
     const title = `Новый врач: ${fd.get("name")} (${fd.get("spec")})`;
     const body = [
@@ -92,6 +120,7 @@ import { SITE } from "../lib/site";
     ].join("\n");
 
     const url = `https://github.com/rudoctors/rudoctors.github.io/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=doctor-request`;
+    markSubmitted(KEY);
     if (status) {
       status.classList.remove("hidden");
       status.textContent = "Открываем форму GitHub…";

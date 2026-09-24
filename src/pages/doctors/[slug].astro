@@ -3,7 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import Stars from "../../components/Stars.astro";
 import { publicDoctors, specLabel } from "../../lib/doctors";
 import { computeRating } from "../../lib/rating";
-import { SITE, formatDate, plural, safeUrl } from "../../lib/site";
+import { SITE, SCHEMA_IDS, formatDate, plural, safeUrl } from "../../lib/site";
 import type { Doctor } from "../../lib/types";
 
 export function getStaticPaths() {
@@ -39,9 +39,11 @@ const jsonLd: Record<string, unknown>[] = [
   {
     "@context": "https://schema.org",
     "@type": "Physician",
+    "@id": `${SITE.url}/doctors/${doctor.slug}/#physician`,
     name: doctor.name,
     url: `${SITE.url}/doctors/${doctor.slug}/`,
     medicalSpecialty: doctor.specializations.map((s) => specLabel(s)),
+    publisher: { "@id": SCHEMA_IDS.organization },
     address: doctor.workplaces[0]?.address
       ? {
           "@type": "PostalAddress",
@@ -53,7 +55,7 @@ const jsonLd: Record<string, unknown>[] = [
     telephone: doctor.contacts.phone || undefined,
     image: doctor.photo || undefined,
     aggregateRating:
-      rating.count > 0
+      rating.count > 0 && rating.average > 0
         ? {
             "@type": "AggregateRating",
             ratingValue: rating.average,

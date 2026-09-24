@@ -4,26 +4,26 @@
 
 ## Основное
 
-- Главная: https://rudoctors.github.io/
-- Каталог врачей: https://rudoctors.github.io/doctors/
-- Специальности: https://rudoctors.github.io/specialties/
-- Города: https://rudoctors.github.io/cities/
-- FAQ: https://rudoctors.github.io/faq/
-- О проекте: https://rudoctors.github.io/about/
-- Контакты: https://rudoctors.github.io/contacts/
-- Сообщество Telegram: https://t.me/vrachivserbii
+- [Главная](https://rudoctors.github.io/)
+- [Каталог врачей](https://rudoctors.github.io/doctors/)
+- [Специальности](https://rudoctors.github.io/specialties/)
+- [Города](https://rudoctors.github.io/cities/)
+- [FAQ](https://rudoctors.github.io/faq/)
+- [О проекте](https://rudoctors.github.io/about/)
+- [Контакты](https://rudoctors.github.io/contacts/)
+- [Сообщество Telegram](https://t.me/vrachivserbii)
 
 ## География
 
-- Основной город: Belgrade (Белград), Сербия
-- Также: Novi Sad (Нови-Сад), Subotica (Суботица)
+- Основной город: [Belgrade (Белград)](https://rudoctors.github.io/cities/belgrade/), Сербия
+- Также: [Novi Sad (Нови-Сад)](https://rudoctors.github.io/cities/novi-sad/), [Niš (Ниш)](https://rudoctors.github.io/cities/nis/), [Subotica (Суботица)](https://rudoctors.github.io/cities/subotica/)
 - Страна: Serbia (RS)
 
 ## Что есть в каталоге
 
 - Карточки врачей: специализация, опыт, языки приёма, клиники, отзывы, рейтинг
-- Страницы специальностей: кардиологи, гинекологи, педиатры, неврологи, психиатры, стоматологи, терапевты, ЛОР, офтальмологи, урологи, эндокринологи и другие
-- Страницы городов: врачи по городам Сербии
+- Страницы специальностей: кардиологи, гинекологи, педиатры, неврологи, психиатры, стоматологи, терапевты, ЛОР, офтальмологи, урологи, эндокринологи, аллергологи и другие — индекс: [Специальности](https://rudoctors.github.io/specialties/)
+- Страницы городов: врачи по городам Сербии — индекс: [Города](https://rudoctors.github.io/cities/)
 - Отзывы пациентов с рейтингом
 
 ## Языки интерфейса
