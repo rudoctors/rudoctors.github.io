@@ -10,7 +10,7 @@
 Код нужно запушить в git-репозиторий с GitHub Pages (`rudoctors.github.io`), чтобы Actions пересобрал сайт.
 
 1. Репозиторий: `D:\Projects\rudoctors\site` → remote `https://github.com/rudoctors/rudoctors.github.io.git`, ветка `main`.
-2. Push выполнен (коммит `6d274e1`), Actions Deploy — success. Локально `git status` чистый.
+2. Push выполнен (коммиты до `44fcbc6`), Actions Deploy — success. Локально `git status` чистый (кроме TIKTOK.md, если ещё не закоммичен).
 3. Откройте https://rudoctors.github.io/faq/ — страница должна отдаваться.
 
 ---
@@ -38,7 +38,7 @@
 1. **Добавить сайт** → URL `https://rudoctors.github.io/`
 2. Проще: **Import from Google Search Console** (если B уже готово) — подтянет sitemap.
 3. Либо вручную: HTML-метатег аналогично Google → я вставлю в Layout.
-4. **IndexNow:** в CI уже пинг после сборки. Ключ в `public/{32hex}.txt` (файл на сайте `https://rudoctors.github.io/{key}.txt`) — в Bing Webmaster → IndexNow указать этот host+key (или оставить авто-ping из Actions).
+4. **IndexNow:** в CI уже пинг после сборки. Ключ: `74fc615772e99cbc3659e76f7f6bb7c0` (файл `https://rudoctors.github.io/74fc615772e99cbc3659e76f7f6bb7c0.txt`) — в Bing Webmaster → IndexNow указать этот host+key (или оставить авто-ping из Actions).
 
 ## D. Яндекс — заблокировано без домена
 
