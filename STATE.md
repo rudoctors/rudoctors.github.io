@@ -43,10 +43,11 @@ Live: `https://rudoctors.github.io`
 | **`335d5f4`** | STATE.md после правок UI/монетизации |
 | **`95c7444`** | STATE.md хронология |
 | **`50afc6d`** | STATE.md final chronology |
+| **`47ab5ac`** | Test banners (insurance/clinic); avatar Курамшина → original `rd-59.webp`; удалён `rd-59-r.webp` |
 
 ---
 
-## Текущее состояние (после `50afc6d` + test banners)
+## Текущее состояние (после `47ab5ac` — test banners)
 
 ### Верификация
 - `npm run check` — 0 errors / 0 warnings.
