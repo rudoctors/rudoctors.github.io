@@ -171,6 +171,13 @@ class GitHub {
       }),
     });
   }
+
+  createIssue(title, body, labels) {
+    return this.req(`/repos/${this.cfg.repo}/issues`, {
+      method: "POST",
+      body: JSON.stringify({ title, body, labels }),
+    });
+  }
 }
 
 // ---------- парсинг заявки из issue body ----------
@@ -595,6 +602,55 @@ async function check(cfg) {
 
 // ---------- main loop ----------
 
+// ---------- заявки прямо в Telegram (интейк от посетителей) ----------
+
+/** Маркер из формы /add-doctor/ (t.me/bot?text=…). */
+const INTAKE_MARKER = "🩺 Заявка для каталога Rudoctors";
+
+async function handleIntakeMessage(gh, tg, cfg, msg, botUsername, specialties) {
+  const fields = parseIssueBody(msg.text || "");
+  const sender = msg.from?.username ? `@${msg.from.username}` : `id ${msg.from?.id ?? "?"}`;
+  const replyTo = { reply_parameters: { message_id: msg.message_id, allow_sending_without_reply: true } };
+  if (!fields.name || !fields.spec || !fields.city) {
+    await tg.sendMessage(
+      msg.chat.id,
+      "Не удалось разобрать заявку. Заполните её через форму на сайте rudoctors.github.io — раздел «Добавить врача».",
+      replyTo
+    ).catch(() => {});
+    return;
+  }
+  const issueBody = [
+    `**Имя:** ${fields.name}`,
+    `**Специальность:** ${fields.spec}`,
+    `**Город:** ${fields.city}`,
+    `**Стаж:** ${fields.exp || "—"}`,
+    `**Клиника:** ${fields.clinic || "—"}`,
+    `**Контакт:** ${fields.contact}`,
+    "",
+    `**О себе:**`,
+    fields.about || "—",
+    "",
+    "---",
+    `_Отправлено боту @${botUsername} из Telegram (${sender})_`,
+  ].join("\n");
+  const issue = await gh.createIssue(
+    `Новый врач: ${fields.name} (${fields.spec})`,
+    issueBody,
+    [LABEL_REQUEST]
+  );
+  await tg.sendMessage(
+    cfg.adminChatId,
+    requestMessage(issue, fields),
+    { reply_markup: moderationKeyboard(issue.number, botUsername) }
+  );
+  await tg.sendMessage(
+    msg.chat.id,
+    "✅ Заявка принята! Владелец каталога рассмотрит её и свяжется с вами по указанному контакту.",
+    replyTo
+  ).catch(() => {});
+  log(`intake: ${sender} → issue #${issue.number} (${fields.name})`);
+}
+
 async function ciOnce() {
   // One-shot режим для GitHub Actions: синк новых заявок + обработка нажатых
   // кнопок (getUpdates timeout=0, идемпотентно — закрытые issues не трогаем), затем выход.
@@ -624,10 +680,16 @@ async function ciOnce() {
     lastId = Math.max(lastId, u.update_id);
     const msg = u.message;
     if (!msg?.text) continue;
-    // команды модерации: "/ok 3" / "/no 3" (приходят из URL-кнопок или руками)
-    const m = msg.text.match(/^\/?(ok|no|да|нет)\s+#?(\d+)\s*$/i);
-    if (m) {
-      await handleCommand(gh, tg, cfg, m[1], Number(m[2]), msg.message_id, specialties);
+    const fromAdmin = String(msg.from?.id) === String(cfg.adminChatId);
+    if (fromAdmin) {
+      // команды модерации: "/ok 3" / "/no 3" (приходят из URL-кнопок или руками)
+      const m = msg.text.match(/^\/?(ok|no|да|нет)\s+#?(\d+)\s*$/i);
+      if (m) {
+        await handleCommand(gh, tg, cfg, m[1], Number(m[2]), msg.message_id, specialties);
+      }
+    } else if (msg.text.includes(INTAKE_MARKER)) {
+      // заявка от посетителя прямо в Telegram
+      await handleIntakeMessage(gh, tg, cfg, msg, me.username, specialties);
     }
     if (u.callback_query) {
       await handleCallback(gh, tg, cfg, u.callback_query, specialties);
@@ -711,11 +773,24 @@ async function main() {
         offset = u.update_id + 1;
         if (u.message?.text?.startsWith("/start")) {
           const chatId = u.message.chat.id;
-          cfg._detectedChatId = chatId;
-          await tg.sendMessage(chatId, startHelpMessage({ ...cfg, adminChatId: cfg.adminChatId }, me)).catch((e) =>
-            log(`/start: ${e.message}`)
-          );
-          if (!cfg.adminChatId) log(`Предложение: добавьте TELEGRAM_ADMIN_CHAT_ID=${chatId} в site/.env`);
+          const isOwner = String(chatId) === String(cfg.adminChatId);
+          if (isOwner || !cfg.adminChatId) {
+            cfg._detectedChatId = chatId;
+            await tg.sendMessage(chatId, startHelpMessage({ ...cfg, adminChatId: cfg.adminChatId }, me)).catch((e) =>
+              log(`/start: ${e.message}`)
+            );
+            if (!cfg.adminChatId) log(`Предложение: добавьте TELEGRAM_ADMIN_CHAT_ID=${chatId} в site/.env`);
+          } else {
+            await tg.sendMessage(
+              chatId,
+              "Это бот модерации каталога Rudoctors. Чтобы добавить врача — заполните форму на rudoctors.github.io (раздел «Добавить врача»)."
+            ).catch((e) => log(`/start: ${e.message}`));
+          }
+        } else if (
+          u.message?.text?.includes(INTAKE_MARKER) &&
+          String(u.message.from?.id) !== String(cfg.adminChatId)
+        ) {
+          await handleIntakeMessage(gh, tg, cfg, u.message, me.username, specialties);
         }
         if (u.callback_query) {
           await handleCallback(gh, tg, cfg, u.callback_query, specialties);

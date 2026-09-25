@@ -14,10 +14,9 @@ import { SITE } from "../lib/site";
       Карточку можно предложить бесплатно. После проверки данных врач появится в каталоге.
     </p>
     <p class="mt-3 rounded-xl border border-amber-200 bg-amber-50 p-3 text-sm text-amber-900">
-      <strong>Важно:</strong> откроется предзаполненная <strong>публичная форма GitHub</strong>. Только после
-      отдельного подтверждения на GitHub предложение станет Issue, доступной всем. Указанный контакт
-      (телефон, Telegram, email) и описание будут публичными. Добавляйте только данные, которые можно
-      публиковать. Подробнее — <a href="/privacy/" class="underline">политика конфиденциальности</a>.
+      <strong>Важно:</strong> заявка уходит в Telegram владельцу каталога и сохраняется в открытом трекере
+      GitHub. Указанный контакт (телефон, Telegram, email) и описание будут публичными. Добавляйте только
+      данные, которые можно публиковать. Подробнее — <a href="/privacy/" class="underline">политика конфиденциальности</a>.
     </p>
 
     <form id="add-form" class="card p-6 mt-8 space-y-4">
@@ -66,12 +65,16 @@ import { SITE } from "../lib/site";
 
       <label class="flex items-start gap-2 text-sm text-slate-600">
         <input type="checkbox" name="consent" required class="mt-1 rounded border-slate-300 text-brand-600 focus:ring-brand-500" />
-        Понимаю, что после подтверждения данные станут публичной GitHub Issue; я имею право их передать;
-        согласен с <a href="/privacy/" class="text-brand-700 underline">политикой конфиденциальности</a>.
+        Понимаю, что заявка уйдёт боту в Telegram и будет сохранена публично в трекере GitHub; данные публичные,
+        я имею право их передать; согласен с <a href="/privacy/" class="text-brand-700 underline">политикой конфиденциальности</a>.
       </label>
 
-      <button type="submit" class="btn-primary w-full">Предложить карточку</button>
+      <button type="submit" class="btn-primary w-full">Отправить заявку в Telegram</button>
       <p id="form-status" class="text-sm text-slate-500 hidden" role="status" aria-live="polite"></p>
+      <p class="text-xs text-slate-400 text-center">
+        Нет Telegram?
+        <a id="github-fallback" href="https://github.com/rudoctors/rudoctors.github.io/issues/new?labels=doctor-request" target="_blank" rel="noopener noreferrer" class="underline">создайте заявку на GitHub</a>.
+      </p>
     </form>
 
     <div class="mt-6 text-sm text-slate-500">
@@ -83,6 +86,7 @@ import { SITE } from "../lib/site";
 
 <script>
   import { isHoneypotFilled, cooldownRemainingMs, markSubmitted, formatCooldown } from "../lib/formGuard";
+  import { SITE } from "../lib/site";
 
   const form = document.getElementById("add-form") as HTMLFormElement | null;
   const status = document.getElementById("form-status");
@@ -128,29 +132,58 @@ import { SITE } from "../lib/site";
       return;
     }
 
-    const title = `Новый врач: ${name} (${spec})`;
+    // Текст заявки: тот же формат полей, что разбирает бот (scripts/telegram-bot.mjs).
+    const fields = [
+      `Имя: ${name}`,
+      `Специальность: ${spec}`,
+      `Город: ${city}`,
+      `Стаж: ${exp || "—"}`,
+      `Клиника: ${clinic || "—"}`,
+      `Контакт: ${contact}`,
+    ];
+    if (about) fields.push("", "О себе:", about);
+    const tgText = `🩺 Заявка для каталога Rudoctors\n\n${fields.join("\n")}`;
+
+    markSubmitted(KEY);
+    if (status) {
+      status.classList.remove("hidden");
+      status.className = "text-sm mt-2 text-slate-500";
+      status.textContent =
+        "Открываем Telegram — нажмите «Отправить» в открывшемся чате, заявка сразу уйдёт владельцу.";
+    }
+    window.open(
+      `https://t.me/${SITE.moderationBot}?text=${encodeURIComponent(tgText)}`,
+      "_blank",
+      "noopener,noreferrer"
+    );
+  });
+
+  // Запасной путь без Telegram: предзаполненная GitHub Issue (нужно подтвердить Submit).
+  document.getElementById("github-fallback")?.addEventListener("click", (e) => {
+    const form = document.getElementById("add-form") as HTMLFormElement | null;
+    if (!form) return;
+    const get = (id: string) => String((form.elements.namedItem(id) as HTMLInputElement | null)?.value || "").trim();
+    const name = get("name");
+    const spec = get("spec");
+    if (!name || !spec) return; // обычная ссылка, если поля пусты
     const body = [
       `**Имя:** ${name}`,
       `**Специальность:** ${spec}`,
-      `**Город:** ${city}`,
-      `**Стаж:** ${exp || "—"}`,
-      `**Клиника:** ${clinic || "—"}`,
-      `**Контакт:** ${contact}`,
+      `**Город:** ${get("city")}`,
+      `**Стаж:** ${get("exp") || "—"}`,
+      `**Клиника:** ${get("clinic") || "—"}`,
+      `**Контакт:** ${get("contact")}`,
       "",
       `**О себе:**`,
-      about || "—",
+      get("about") || "—",
       "",
       "---",
       "_Создано через форму rudoctors.github.io_",
     ].join("\n");
-
-    const url = `https://github.com/rudoctors/rudoctors.github.io/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=doctor-request`;
-    markSubmitted(KEY);
-    if (status) {
-      status.className = "text-sm mt-2 text-slate-500";
-      status.textContent =
-        "Открываем GitHub — подтвердите отправку (кнопка «Submit new issue»). Заявка придёт владельцу в Telegram на модерацию.";
-    }
+    const url = `https://github.com/rudoctors/rudoctors.github.io/issues/new?title=${encodeURIComponent(
+      `Новый врач: ${name} (${spec})`
+    )}&body=${encodeURIComponent(body)}&labels=doctor-request`;
+    e.preventDefault();
     window.open(url, "_blank", "noopener,noreferrer");
   });
 </script>

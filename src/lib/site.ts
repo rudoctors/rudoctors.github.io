@@ -6,6 +6,8 @@ export const SITE = {
   url: "https://rudoctors.github.io",
   telegram: "https://t.me/vrachivserbii",
   telegramLabel: "@vrachivserbii",
+  /** Бот модерации заявок «Добавить врача» (см. docs/TELEGRAM-BOT.md). */
+  moderationBot: "rudoctors_moderation_bot",
   lang: "ru",
 } as const;
 
