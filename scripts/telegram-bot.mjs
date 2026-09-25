@@ -607,7 +607,7 @@ async function check(cfg) {
 /** Маркер из формы /add-doctor/ (t.me/bot?text=…). */
 const INTAKE_MARKER = "🩺 Заявка для каталога Rudoctors";
 
-async function handleIntakeMessage(gh, tg, cfg, msg, botUsername, specialties) {
+async function handleIntakeMessage(gh, tg, cfg, msg, botUsername) {
   const fields = parseIssueBody(msg.text || "");
   const sender = msg.from?.username ? `@${msg.from.username}` : `id ${msg.from?.id ?? "?"}`;
   const replyTo = { reply_parameters: { message_id: msg.message_id, allow_sending_without_reply: true } };
@@ -689,7 +689,7 @@ async function ciOnce() {
       }
     } else if (msg.text.includes(INTAKE_MARKER)) {
       // заявка от посетителя прямо в Telegram
-      await handleIntakeMessage(gh, tg, cfg, msg, me.username, specialties);
+      await handleIntakeMessage(gh, tg, cfg, msg, me.username);
     }
     if (u.callback_query) {
       await handleCallback(gh, tg, cfg, u.callback_query, specialties);
@@ -790,7 +790,7 @@ async function main() {
           u.message?.text?.includes(INTAKE_MARKER) &&
           String(u.message.from?.id) !== String(cfg.adminChatId)
         ) {
-          await handleIntakeMessage(gh, tg, cfg, u.message, me.username, specialties);
+          await handleIntakeMessage(gh, tg, cfg, u.message, me.username);
         }
         if (u.callback_query) {
           await handleCallback(gh, tg, cfg, u.callback_query, specialties);

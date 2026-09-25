@@ -277,7 +277,12 @@ async function publishDoctor(issueNumber: number): Promise<string> {
     method: "PUT",
     body: JSON.stringify({
       message: `Add doctor ${fields.name} (from form issue #${issueNumber})`,
-      content: btoa(unescape(encodeURIComponent(JSON.stringify(doc, null, 2) + "\n"))),
+      content: (() => {
+        const bytes = new TextEncoder().encode(JSON.stringify(doc, null, 2) + "\n");
+        let bin = "";
+        for (const b of bytes) bin += String.fromCharCode(b);
+        return btoa(bin);
+      })(),
       branch: "main",
     }),
   });
