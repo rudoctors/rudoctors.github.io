@@ -23,9 +23,9 @@
     }
   ],
   "contacts": {
-    "appointmentUrl": "https://n1363426.alteg.io/company/1167832/personal/select-master/master-info/1167832/3091252?o=m3091252",
+    "email": null,
     "website": "https://citilab.rs/",
-    "email": null
+    "appointmentUrl": "https://n1363426.alteg.io/company/1167832/personal/select-master/master-info/1167832/3091252?o=m3091252"
   },
   "reviews": [],
   "hidden": false,
@@ -36,6 +36,6 @@
     "citilab.rs",
     "rusdoctors.net"
   ],
-  "updatedAt": "2026-09-24",
+  "updatedAt": "2026-09-28",
   "photo": "/photos/rd-82.webp"
 }

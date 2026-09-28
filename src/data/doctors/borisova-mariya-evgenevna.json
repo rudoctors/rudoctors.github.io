@@ -25,10 +25,10 @@
   ],
   "contacts": {
     "phone": "+381 655 737 777",
-    "appointmentUrl": "https://n1366389.alteg.io/company/1167832/personal/select-master/master-info/1167832/2845581",
-    "website": "https://citilab.rs/ru/doctors/borisova",
     "email": null,
-    "telegram": "https://t.me/citilabrs"
+    "telegram": "https://t.me/citilabrs",
+    "website": "https://citilab.rs/ru/doctors/borisova",
+    "appointmentUrl": "https://n1366389.alteg.io/company/1167832/personal/select-master/master-info/1167832/2845581"
   },
   "reviews": [
     {
@@ -63,7 +63,7 @@
     "google-sheets",
     "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-09-24",
+  "updatedAt": "2026-09-28",
   "bio": "Документы: Диплом РФ, временная лицензия психиатра Сербия.",
   "specializationText": "Психиатр"
 }
