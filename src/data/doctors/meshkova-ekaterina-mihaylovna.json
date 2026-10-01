@@ -24,10 +24,10 @@
   ],
   "contacts": {
     "phone": "+381 65 6737 777",
-    "email": null,
-    "telegram": "https://t.me/katapril",
+    "appointmentUrl": "https://n1363426.alteg.io/company/1167832/personal/select-master/master-info/1167832/3029913?o=m3029913",
     "website": "https://citilab.rs/ru/doctors/meshkova-ekaterina-mikhaylovna",
-    "appointmentUrl": "https://n1363426.alteg.io/company/1167832/personal/select-master/master-info/1167832/3029913?o=m3029913"
+    "email": null,
+    "telegram": "https://t.me/katapril"
   },
   "reviews": [
     {
@@ -47,7 +47,7 @@
     "t.me/vrachivserbii",
     "rusdoctors.net"
   ],
-  "updatedAt": "2026-09-28",
+  "updatedAt": "2026-10-01",
   "bio": "Документы: Диплом РФ, сертификат рентгенолог РФ, постоянная лицензия ВОП Сербия",
   "specializationText": "Терапевт, Рентгенолог"
 }
