@@ -2,7 +2,8 @@
   "slug": "gusakov-andrey-andreevich",
   "name": "Гусаков Андрей Андреевич",
   "specializations": [
-    "therapist"
+    "therapist",
+    "pulmonologist"
   ],
   "specializationText": "Терапевт \nПульмонолог",
   "city": "Novi Sad",
@@ -53,5 +54,5 @@
     "google-sheets",
     "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-10-01"
+  "updatedAt": "2026-10-05"
 }
