@@ -1,0 +1,36 @@
+{
+  "slug": "elena-bakovich",
+  "name": "Елена Бакович",
+  "specializations": [
+    "pediatrician"
+  ],
+  "specializationText": "Педиатр / детский аллерголог - иммунолог",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Документы: диплом врача РФ, лицензия в Сербии",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "AlfaMedStar",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 63 497 447",
+    "email": null
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "google-sheets",
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-10-08"
+}
