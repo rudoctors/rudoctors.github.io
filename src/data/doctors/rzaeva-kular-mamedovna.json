@@ -25,9 +25,9 @@
   ],
   "contacts": {
     "phone": "+381 655 737 777",
-    "appointmentUrl": "https://n1222091.alteg.io/company/1167832/personal/select-master/master-info/1167832/2839848?o=",
+    "email": null,
     "website": "https://citilab.rs/ru/doctors/rzaeva",
-    "email": null
+    "appointmentUrl": "https://n1222091.alteg.io/company/1167832/personal/select-master/master-info/1167832/2839848?o="
   },
   "reviews": [
     {
@@ -62,7 +62,7 @@
     "google-sheets",
     "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-12",
   "bio": "Документы: Временная лицензия",
   "specializationText": "Кардиолог"
 }
