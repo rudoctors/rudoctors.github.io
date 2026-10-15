@@ -24,9 +24,9 @@
     }
   ],
   "contacts": {
+    "appointmentUrl": "https://n1222091.alteg.io/company/1167832/personal/select-master/master-info/1167832/2802680?o=m2802680",
     "email": null,
-    "telegram": "https://t.me/sashazhiznevskaya",
-    "appointmentUrl": "https://n1222091.alteg.io/company/1167832/personal/select-master/master-info/1167832/2802680?o=m2802680"
+    "telegram": "https://t.me/sashazhiznevskaya"
   },
   "reviews": [
     {
@@ -61,5 +61,5 @@
     "t.me/vrachivserbii",
     "citilab.rs"
   ],
-  "updatedAt": "2026-10-12"
+  "updatedAt": "2026-10-15"
 }
