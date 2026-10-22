@@ -4,14 +4,16 @@
   "nameEn": "Kirill Prikhotkov",
   "specializations": [
     "psychiatrist",
-    "child_psychiatrist"
+    "child_psychiatrist",
+    "therapist"
   ],
   "specializationText": "Психиатр/подростковый психиатр",
   "photo": "/photos/rd-77.webp",
   "city": "Belgrade",
   "district": "Savski Venac",
   "languages": [
-    "ru"
+    "ru",
+    "en"
   ],
   "formats": [
     "offline",
@@ -30,8 +32,15 @@
       "years": "2024-2026"
     }
   ],
-  "workplaces": [],
+  "workplaces": [
+    {
+      "clinic": "Doctorus",
+      "city": "Belgrade"
+    }
+  ],
   "contacts": {
+    "phone": "+381 69 101 92 69",
+    "email": null,
     "telegram": "https://t.me/drpsy_prikhotkov",
     "mapsUrl": "https://maps.app.goo.gl/bLB9KyTxMBLmG2Tq8?g_st=ic"
   },
@@ -56,7 +65,9 @@
   "hidden": false,
   "featured": false,
   "sources": [
-    "rusdoctors.net"
+    "rusdoctors.net",
+    "google-sheets",
+    "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-09-13"
+  "updatedAt": "2026-10-22"
 }
