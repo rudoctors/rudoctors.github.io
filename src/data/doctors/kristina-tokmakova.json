@@ -33,10 +33,10 @@
   ],
   "contacts": {
     "phone": "+381 65 6737 777",
-    "appointmentUrl": "https://n1425872.alteg.io",
-    "website": "https://www.alfamedstar.rs/doctors/tokmakova",
     "email": null,
     "telegram": "https://t.me/alfamedstar_rs",
+    "website": "https://www.alfamedstar.rs/doctors/tokmakova",
+    "appointmentUrl": "https://n1425872.alteg.io",
     "mapsUrl": "https://maps.app.goo.gl/nC2QMD6J8kgNUcG98"
   },
   "reviews": [
@@ -110,5 +110,5 @@
     "google-sheets",
     "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-10-26"
+  "updatedAt": "2026-10-29"
 }
