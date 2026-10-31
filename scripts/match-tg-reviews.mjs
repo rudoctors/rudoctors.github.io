@@ -188,6 +188,12 @@ for (const msg of rawReviews) {
   if (rawText.length < 50 || rawText.length > 2000) continue;
   if (/^\*{0,2}(РЕКЛАМА|реклама\b)/i.test(rawText)) continue;
 
+  const fromLower = (msg.from || "").toLowerCase();
+  if (/поиск в|easyrelocate|@search|бот /i.test(fromLower)) continue;
+  if (/специалисты по вашему запросу|по вашему запросу:|подходящие специалисты|в моей базе данных|в контексте есть упоминание|результаты поиска|найденные специалисты/i.test(tLower)) continue;
+  if (/(?:в белграде|в нови саде|в нови-саде|в сербии) есть несколько (?:рекомендованных|русскоговорящих)/i.test(tLower)) continue;
+  if ((rawText.match(/•/g) || []).length >= 2 && /📍|📞|Telegram:/i.test(rawText)) continue;
+
   // Must contain feedback / recommendation / visit intent
   const isFeedback =
     /(рекоменду|совету|была у|был у|были у|обратил|помог|лечил|спасибо|отличн|хорош|понравил|профессионал|грамотн|аккуратн|доволен|довольна|внимательн|замечательн|при[её]м|осмотр)/i.test(

@@ -17,18 +17,16 @@ const doctors = publicDoctors()
   <div class="mx-auto max-w-2xl px-4 py-12">
     <h1 class="text-3xl font-extrabold text-navy-900">Оставить отзыв</h1>
     <p class="mt-2 text-slate-600">
-      Заполните форму — мы откроем предзаполненную страницу GitHub. После подтверждения заявка станет
-      публичной Issue, а отзыв будет опубликован после модерации.
-    </p>
-    <p class="mt-3 rounded-xl border border-amber-200 bg-amber-50 p-3 text-sm text-amber-900">
-      <strong>Важно:</strong> откроется предзаполненная публичная форма GitHub. Только после отдельного
-      подтверждения текст отзыва, имя автора и дата станут публичной Issue, доступной всем без исключения.
-      Отзыв может содержать сведения о здоровье — не включайте конфиденциальные сведения и персональные
-      данные третьих лиц. Как обрабатываются данные — в
-      <a href="/privacy/" class="underline">политике конфиденциальности</a>.
+      Заполните форму ниже. Вы сможете мгновенно отправить отзыв через Telegram разработчику
+      <a href={SITE.developerTelegram} target="_blank" rel="noopener noreferrer" class="text-brand-700 font-semibold hover:underline">{SITE.developerTelegramLabel}</a>,
+      в бот модерации или скопировать готовый текст.
     </p>
 
-    <form id="review-form" class="card p-6 mt-8 space-y-4">
+    <div class="mt-4 rounded-xl border border-sky-100 bg-sky-50 p-4 text-sm text-sky-900">
+      <strong>Как это работает:</strong> отзывы проходят быструю проверку редакции на отсутствие спама и рекламы, после чего публикуются в каталоге. Пожалуйста, не указывайте конфиденциальные диагнозы и персональные данные третьих лиц.
+    </div>
+
+    <form id="review-form" class="card p-6 mt-6 space-y-4">
       <div>
         <label class="block text-sm font-semibold mb-1" for="doctor">Врач</label>
         <select id="doctor" name="doctor" class="input" required>
@@ -39,7 +37,7 @@ const doctors = publicDoctors()
 
       <div class="grid sm:grid-cols-2 gap-4">
         <div>
-          <label class="block text-sm font-semibold mb-1" for="author">Ваше имя</label>
+          <label class="block text-sm font-semibold mb-1" for="author">Ваше имя (или псевдоним)</label>
           <input id="author" name="author" class="input" required maxlength="80" placeholder="Анна" autocomplete="name" />
         </div>
         <div>
@@ -55,7 +53,7 @@ const doctors = publicDoctors()
       </div>
 
       <div>
-        <label class="block text-sm font-semibold mb-1" for="text">Отзыв</label>
+        <label class="block text-sm font-semibold mb-1" for="text">Текст отзыва</label>
         <textarea
           id="text"
           name="text"
@@ -63,7 +61,7 @@ const doctors = publicDoctors()
           required
           minlength="30"
           maxlength="2000"
-          placeholder="Расскажите о приёме: как прошло, что понравилось, что нет…"></textarea>
+          placeholder="Расскажите о приёме: как прошло, что понравилось, помогло ли лечение…"></textarea>
         <div class="text-xs text-slate-400 mt-1">Минимум 30 символов. Без персональных данных третьих лиц.</div>
       </div>
 
@@ -75,27 +73,97 @@ const doctors = publicDoctors()
 
       <label class="flex items-start gap-2 text-sm text-slate-600">
         <input type="checkbox" name="consent" required class="mt-1 rounded border-slate-300 text-brand-600 focus:ring-brand-500" />
-        Понимаю, что после подтверждения данные станут публичной GitHub Issue; отзыв — мой личный опыт;
-        согласен с <a href="/about/#reviews-policy" class="text-brand-700 underline">правилами публикации</a> и
+        Подтверждаю, что отзыв описывает мой личный опыт; согласен с
+        <a href="/about/#reviews-policy" class="text-brand-700 underline">правилами публикации</a> и
         <a href="/privacy/" class="text-brand-700 underline">политикой конфиденциальности</a>.
       </label>
 
-      <button type="submit" class="btn-primary w-full">Отправить на модерацию</button>
+      <button type="submit" class="btn-primary w-full !py-3 font-bold text-base">
+        Сформировать и отправить отзыв
+      </button>
       <p id="form-status" class="text-sm text-slate-500 hidden" role="status" aria-live="polite"></p>
     </form>
 
-    <div class="mt-6 text-sm text-slate-500">
-      Или напишите напрямую в сообщество:
-      <a href={SITE.telegram} target="_blank" rel="noopener noreferrer" class="text-brand-700 hover:underline">{SITE.telegramLabel}</a>
+    <!-- Success / Action Box (hidden by default) -->
+    <div id="review-success-box" class="card p-6 mt-6 border-2 border-emerald-200 bg-emerald-50/40 hidden space-y-4">
+      <div class="flex items-center gap-2 text-emerald-800 font-extrabold text-lg">
+        <svg class="w-6 h-6 text-emerald-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+        Отзыв сформирован и готов к отправке!
+      </div>
+      <p class="text-sm text-slate-700">
+        Выберите удобный способ передать отзыв модератору:
+      </p>
+
+      <div class="flex flex-wrap gap-2.5 pt-1">
+        <a
+          id="btn-tg-dev"
+          href={SITE.developerTelegram}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-primary !bg-sky-600 hover:!bg-sky-700 inline-flex items-center gap-1.5"
+        >
+          <span>Написать в Telegram ({SITE.developerTelegramLabel})</span>
+        </a>
+
+        <a
+          id="btn-tg-share"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-secondary inline-flex items-center gap-1.5"
+        >
+          <span>Поделиться в Telegram</span>
+        </a>
+
+        <button
+          type="button"
+          id="btn-copy-review"
+          class="btn-secondary inline-flex items-center gap-1.5"
+        >
+          <span id="btn-copy-text">Скопировать текст</span>
+        </button>
+      </div>
+
+      <div>
+        <label class="block text-xs font-semibold text-slate-600 mb-1" for="review-preview">Готовый текст:</label>
+        <textarea
+          id="review-preview"
+          readonly
+          class="input bg-white text-xs font-mono min-h-28 text-slate-700 select-all"></textarea>
+      </div>
+
+      <div class="pt-2 text-xs text-slate-500 border-t border-emerald-200/60">
+        У вас есть аккаунт на GitHub? Вы также можете
+        <a id="btn-github-issue" href="#" target="_blank" rel="noopener noreferrer" class="text-brand-700 underline font-medium">создать GitHub Issue</a>.
+      </div>
+    </div>
+
+    <div class="mt-8 flex items-center justify-between text-sm text-slate-500 border-t border-slate-200 pt-6">
+      <div>
+        Разработчик: <a href={SITE.developerTelegram} target="_blank" rel="noopener noreferrer" class="text-brand-700 hover:underline font-medium">{SITE.developerTelegramLabel}</a>
+      </div>
+      <div>
+        Сообщество: <a href={SITE.telegram} target="_blank" rel="noopener noreferrer" class="text-brand-700 hover:underline font-medium">{SITE.telegramLabel}</a>
+      </div>
     </div>
   </div>
 </Layout>
 
 <script>
   import { isHoneypotFilled, cooldownRemainingMs, markSubmitted, formatCooldown } from "../lib/formGuard";
+  import { SITE } from "../lib/site";
 
   const form = document.getElementById("review-form") as HTMLFormElement | null;
   const status = document.getElementById("form-status");
+  const successBox = document.getElementById("review-success-box");
+  const previewArea = document.getElementById("review-preview") as HTMLTextAreaElement | null;
+  const btnTgDev = document.getElementById("btn-tg-dev") as HTMLAnchorElement | null;
+  const btnTgShare = document.getElementById("btn-tg-share") as HTMLAnchorElement | null;
+  const btnCopy = document.getElementById("btn-copy-review");
+  const btnCopyText = document.getElementById("btn-copy-text");
+  const btnGithub = document.getElementById("btn-github-issue") as HTMLAnchorElement | null;
   const KEY = "leave-review";
 
   const params = new URLSearchParams(location.search);
@@ -103,7 +171,7 @@ const doctors = publicDoctors()
   const sel = document.getElementById("doctor") as HTMLSelectElement | null;
   if (pre && sel) sel.value = pre;
 
-  form?.addEventListener("submit", async (e) => {
+  form?.addEventListener("submit", (e) => {
     e.preventDefault();
     if (!form) return;
 
@@ -115,9 +183,10 @@ const doctors = publicDoctors()
       return;
     }
 
-    const wait = cooldownRemainingMs(KEY, 90_000);
+    const wait = cooldownRemainingMs(KEY, 30_000);
     if (wait > 0) {
       if (status) {
+        status.classList.remove("hidden");
         status.className = "text-sm mt-2 text-slate-500";
         status.textContent = formatCooldown(wait);
       }
@@ -125,43 +194,101 @@ const doctors = publicDoctors()
     }
 
     const fd = new FormData(form);
-    const doctor = String(fd.get("doctor") || "").trim();
+    const doctorSlug = String(fd.get("doctor") || "").trim();
+    const doctorName = sel?.selectedOptions[0]?.text || doctorSlug;
     const author = String(fd.get("author") || "").trim();
     const rating = String(fd.get("rating") || "5").trim();
     const text = String(fd.get("text") || "").trim();
 
-    if (!doctor || !author || text.length < 30) {
+    if (!doctorSlug || !author || text.length < 30) {
       if (status) {
+        status.classList.remove("hidden");
         status.className = "text-sm mt-2 text-red-600";
-        status.textContent = doctor || !author
-          ? "Выберите врача и укажите имя без пустых пробелов."
+        status.textContent = !doctorSlug || !author
+          ? "Выберите врача и укажите имя."
           : "Отзыв должен содержать не менее 30 символов.";
       }
-      if (!doctor) sel?.focus();
+      if (!doctorSlug) sel?.focus();
       else if (!author) document.getElementById("author")?.focus();
       else document.getElementById("text")?.focus();
       return;
     }
 
-    const title = `Отзыв: ${doctor} (${rating}★)`;
-    const body = [
-      `**Врач:** ${doctor}`,
-      `**Автор:** ${author}`,
-      `**Оценка:** ${rating}/5`,
-      `**Дата:** ${new Date().toISOString().slice(0, 10)}`,
-      "",
+    // Prepare message text
+    const today = new Date().toISOString().slice(0, 10);
+    const formattedMessage = [
+      `💬 Отзыв для каталога Rudoctors`,
+      ``,
+      `Врач: ${doctorName} (${doctorSlug})`,
+      `Автор: ${author}`,
+      `Оценка: ${rating}/5`,
+      `Дата: ${today}`,
+      ``,
+      `Текст отзыва:`,
       text,
-      "",
-      "---",
-      "_Создано через форму rudoctors.github.io_",
+      ``,
+      `---`,
+      `Отправлено через rudoctors.github.io/leave-review/`
     ].join("\n");
 
-    const url = `https://github.com/rudoctors/rudoctors.github.io/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=review`;
-    markSubmitted(KEY);
-    if (status) {
-      status.className = "text-sm mt-2 text-slate-500";
-      status.textContent = "Открываем форму GitHub для отправки отзыва…";
+    if (previewArea) {
+      previewArea.value = formattedMessage;
     }
-    window.open(url, "_blank", "noopener,noreferrer");
+
+    // Telegram share URL
+    const shareUrl = `https://t.me/share/url?url=${encodeURIComponent("https://rudoctors.github.io")}&text=${encodeURIComponent(formattedMessage)}`;
+    if (btnTgShare) {
+      btnTgShare.href = shareUrl;
+    }
+
+    // Direct developer Telegram
+    if (btnTgDev) {
+      btnTgDev.href = `${SITE.developerTelegram}?text=${encodeURIComponent(formattedMessage)}`;
+    }
+
+    // GitHub Issue fallback
+    const title = `Отзыв: ${doctorName} (${rating}★)`;
+    const ghUrl = `https://github.com/rudoctors/rudoctors.github.io/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(formattedMessage)}&labels=review`;
+    if (btnGithub) {
+      btnGithub.href = ghUrl;
+    }
+
+    markSubmitted(KEY);
+
+    if (status) {
+      status.classList.add("hidden");
+    }
+
+    // Reveal the action box
+    if (successBox) {
+      successBox.classList.remove("hidden");
+      successBox.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
+
+    // Try to open Telegram directly without blocking if allowed
+    try {
+      window.open(shareUrl, "_blank", "noopener,noreferrer");
+    } catch {
+      // Ignored if popup blocked, user has the UI buttons right in view
+    }
+  });
+
+  // Copy to clipboard handler
+  btnCopy?.addEventListener("click", async () => {
+    if (!previewArea) return;
+    try {
+      await navigator.clipboard.writeText(previewArea.value);
+      if (btnCopyText) {
+        const orig = btnCopyText.textContent;
+        btnCopyText.textContent = "Скопировано!";
+        setTimeout(() => {
+          btnCopyText.textContent = orig;
+        }, 3000);
+      }
+    } catch {
+      previewArea.select();
+      document.execCommand("copy");
+      if (btnCopyText) btnCopyText.textContent = "Скопировано!";
+    }
   });
 </script>

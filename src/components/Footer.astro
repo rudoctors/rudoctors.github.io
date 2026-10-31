@@ -34,18 +34,28 @@ import { SITE } from "../lib/site";
     </div>
 
     <div>
-      <div class="text-sm font-semibold text-slate-900 mb-3">Сообщество</div>
+      <div class="text-sm font-semibold text-slate-900 mb-3">Сообщество и поддержка</div>
       <p class="text-sm text-slate-600 mb-3">
         Чат «Медицина в Сербии» — {SITE.telegramLabel}
       </p>
-      <a
-        href={SITE.telegram}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn-primary"
-      >
-        Открыть Telegram
-      </a>
+      <div class="flex flex-col gap-2">
+        <a
+          href={SITE.telegram}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-primary text-center"
+        >
+          Чат {SITE.telegramLabel}
+        </a>
+        <a
+          href={SITE.developerTelegram}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-secondary text-xs text-center !py-2"
+        >
+          Разработчик: {SITE.developerTelegramLabel}
+        </a>
+      </div>
       <p class="mt-6 text-xs text-slate-400">
         © {new Date().getFullYear()} Rudoctors
       </p>
