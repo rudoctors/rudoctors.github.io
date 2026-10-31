@@ -10,9 +10,11 @@ import fs from "node:fs";
 import path from "node:path";
 
 const ROOT = path.join(import.meta.dirname, "..");
-const SRC =
-  process.env.TG_EXPORT_PATH ||
-  "D:/Data/Downloads/Telegram Desktop/ChatExport_2026-09-24/result.json";
+const DEFAULT_SRCS = [
+  "D:/Data/Downloads/Telegram Desktop/ChatExport_2026-09-24/result.json",
+  "D:/Data/Downloads/Telegram Desktop/ChatExport_2026-10-31/result.json",
+];
+const SRCS = process.env.TG_EXPORT_PATH ? [process.env.TG_EXPORT_PATH] : DEFAULT_SRCS.filter((f) => fs.existsSync(f));
 const OUT_DIR = path.join(ROOT, "scripts");
 
 const VISITKA_TOPIC_IDS = new Set([123302, 123341, 194327]);
@@ -68,16 +70,38 @@ function clean(s) {
 }
 
 async function main() {
-  if (!fs.existsSync(SRC)) {
-    console.error(`Export not found: ${SRC}`);
+  if (SRCS.length === 0) {
+    console.error("No export files found!");
     process.exit(1);
   }
-  console.log(`Reading ${SRC} ...`);
-  const j = JSON.parse(fs.readFileSync(SRC, "utf8"));
-  const msgs = Array.isArray(j.messages) ? j.messages : [];
-  console.log(`chat=${j.name} messages=${msgs.length}`);
+  const msgsMap = new Map();
+  let chatName = "";
+  for (const src of SRCS) {
+    console.log(`Reading ${src} ...`);
+    const j = JSON.parse(fs.readFileSync(src, "utf8"));
+    chatName = chatName || j.name;
+    const list = Array.isArray(j.messages) ? j.messages : [];
+    console.log(`  chat=${j.name} messages=${list.length}`);
+    for (const m of list) {
+      if (m && m.id != null) {
+        msgsMap.set(m.id, m);
+      }
+    }
+  }
+  const msgs = Array.from(msgsMap.values()).sort((a, b) => (a.id || 0) - (b.id || 0));
+  console.log(`Total unique merged messages: ${msgs.length}`);
 
-  const topicTitle = new Map();
+  const topicTitle = new Map([
+    [54282, "Отзывы о врачах"],
+    [123302, "Визитки"],
+    [123341, "Визитки (архив)"],
+    [194327, "Визитки врачей"],
+    [61163, "Поиск врача"],
+    [84284, "Флуд"],
+    [125513, "Клиники/Вакансии"],
+    [74480, "Информация"],
+    [204507, "Статьи"],
+  ]);
   const replyTo = new Map();
   for (const m of msgs) {
     if (m.type === "service" && m.action === "topic_created" && m.id != null) {
@@ -208,8 +232,8 @@ async function main() {
   };
 
   write("tg-export-stats.json", {
-    chat: j.name,
-    source: SRC,
+    chat: chatName,
+    source: SRCS.join(", "),
     generatedAt: new Date().toISOString(),
     ...stats,
     counts: {

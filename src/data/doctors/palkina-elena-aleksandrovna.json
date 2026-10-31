@@ -22,12 +22,21 @@
   "contacts": {
     "website": "https://taplink.cc/elenapalkina"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-214142",
+      "author": "Ekaterina Golitsyna",
+      "date": "2026-10-15",
+      "rating": 0,
+      "text": "Отличная врач в Палкине, удалили сыну зуб - ни слезинки. Валерия Сивко. Огромная благодарность, если бы все были как она🙏🏻",
+      "source": "https://t.me/vrachivserbii/214142"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/127589"
   ],
-  "updatedAt": "2026-09-24"
+  "updatedAt": "2026-10-31"
 }

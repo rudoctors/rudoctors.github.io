@@ -6,6 +6,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
 const doctorsDir = path.join(root, "src", "data", "doctors");
 const reviewsSource = path.join(root, "scripts", "tg-export-reviews.json");
+const recosSource = path.join(root, "scripts", "tg-export-recommendations.json");
+const visitkasSource = path.join(root, "scripts", "tg-export-visitkas.json");
 
 if (!fs.existsSync(reviewsSource)) {
   console.error("Reviews source file not found:", reviewsSource);
@@ -22,7 +24,7 @@ const sensitiveSpecialties = new Set([
   "oncologist",
   "urologist",
   "proctologist",
-  "narcologist"
+  "narcologist",
 ]);
 
 function maskAuthor(author, isSensitive) {
@@ -36,7 +38,6 @@ function maskAuthor(author, isSensitive) {
   if (parts.length >= 2) {
     return `${parts[0]} ${parts[1][0]}.`;
   }
-  // Single word author: if it looks like username with surname, mask last chars
   if (clean.length > 8 && /[a-z]/i.test(clean)) {
     return clean.slice(0, 4) + "...";
   }
@@ -74,11 +75,34 @@ for (const file of files) {
 }
 
 // Build surname count to know uniqueness
-const surnameCount = new Map();
+const wordCount = new Map();
 for (const { doc } of doctors) {
   const parts = cleanTitle(doc.name).split(/\s+/);
-  const ln = parts[0].toLowerCase();
-  surnameCount.set(ln, (surnameCount.get(ln) || 0) + 1);
+  for (const p of parts) {
+    const w = p.toLowerCase();
+    wordCount.set(w, (wordCount.get(w) || 0) + 1);
+  }
+}
+
+function getStem(word) {
+  const w = word.toLowerCase();
+  return w.slice(
+    0,
+    Math.max(
+      4,
+      w.length -
+        (w.endsWith("а") ||
+        w.endsWith("я") ||
+        w.endsWith("ий") ||
+        w.endsWith("ый") ||
+        w.endsWith("ов") ||
+        w.endsWith("ев") ||
+        w.endsWith("ой") ||
+        w.endsWith("ин")
+          ? 2
+          : 1)
+    )
+  );
 }
 
 // Build matchers
@@ -88,87 +112,132 @@ for (const item of doctors) {
   const cleanN = cleanTitle(doc.name);
   const parts = cleanN.split(/\s+/);
   if (parts.length >= 2) {
-    const lastName = parts[0];
-    const firstName = parts[1];
-    const lnLower = lastName.toLowerCase();
-    const fnLower = firstName.toLowerCase();
-    const isUnique = surnameCount.get(lnLower) === 1;
+    const p1 = parts[0];
+    const p2 = parts[1];
+    const p1Lower = p1.toLowerCase();
+    const p2Lower = p2.toLowerCase();
+    const p1Stem = getStem(p1);
+    const p2Stem = getStem(p2);
 
-    // Stem: at least 4 letters, strip typical endings
-    const lnStem = lnLower.slice(
-      0,
-      Math.max(4, lnLower.length - (lnLower.endsWith("а") || lnLower.endsWith("я") || lnLower.endsWith("ий") || lnLower.endsWith("ый") || lnLower.endsWith("ов") || lnLower.endsWith("ев") ? 2 : 1))
-    );
-    const fnStem = fnLower.slice(0, Math.max(3, fnLower.length - 1));
+    let tgHandle = (doc.contacts && doc.contacts.telegram) || "";
+    tgHandle = tgHandle.replace(/https?:\/\/t\.me\//i, "").replace(/^@/, "").trim().toLowerCase();
+    if (tgHandle.length < 4 || tgHandle === "bot" || tgHandle.includes("/")) {
+      tgHandle = null;
+    }
 
     const isSensitive = doc.specializations.some((s) => sensitiveSpecialties.has(s));
 
     matchers.push({
       item,
       doc,
-      lastName,
-      firstName,
-      lnLower,
-      fnLower,
-      lnStem,
-      fnStem,
-      isUnique,
+      p1,
+      p2,
+      p1Lower,
+      p2Lower,
+      p1Stem,
+      p2Stem,
+      p1Unique: wordCount.get(p1Lower) === 1,
+      p2Unique: wordCount.get(p2Lower) === 1,
+      tgHandle,
       isSensitive,
-      fullName: `${lastName} ${firstName}`.toLowerCase(),
-      revFullName: `${firstName} ${lastName}`.toLowerCase()
+      fullName: `${p1} ${p2}`.toLowerCase(),
+      revFullName: `${p2} ${p1}`.toLowerCase(),
     });
   }
 }
 
-const rawReviews = JSON.parse(fs.readFileSync(reviewsSource, "utf8"));
-console.log(`Analyzing ${rawReviews.length} Telegram reviews against ${doctors.length} doctors...`);
+// Read raw reviews, recommendations, and patient feedback from visitkas deduplicated
+const msgsMap = new Map();
+for (const src of [reviewsSource, recosSource, visitkasSource]) {
+  if (fs.existsSync(src)) {
+    const list = JSON.parse(fs.readFileSync(src, "utf8"));
+    for (const m of list) {
+      if (m && m.id != null) {
+        // If from visitkas, exclude obvious doctor self-intro cards
+        if (src === visitkasSource && /(меня зовут|я врач|веду при[её]м|приглашаю на|обо мне|мо[йя] образован)/i.test(m.text || "")) {
+          continue;
+        }
+        msgsMap.set(m.id, m);
+      }
+    }
+  }
+}
+const rawReviews = Array.from(msgsMap.values()).sort((a, b) => (a.id || 0) - (b.id || 0));
+console.log(`Analyzing ${rawReviews.length} Telegram messages against ${doctors.length} doctors...`);
 
-const falsePositiveStems = new Set(["куку", "друг", "капл", "масс", "прие", "бере", "свет"]);
+const falsePositiveStems = new Set([
+  "куку",
+  "друг",
+  "капл",
+  "масс",
+  "прие",
+  "бере",
+  "свет",
+  "влад",
+  "анна",
+  "мари",
+  "иван",
+  "алек",
+  "серг",
+]);
 const newReviewsBySlug = new Map();
 
 for (const msg of rawReviews) {
   if (existingReviewIds.has(String(msg.id))) continue;
   const rawText = (msg.text || "").trim();
-  if (rawText.length < 50 || rawText.length > 1500) continue;
+  if (rawText.length < 50 || rawText.length > 2000) continue;
   if (/^\*{0,2}(РЕКЛАМА|реклама\b)/i.test(rawText)) continue;
 
   // Must contain feedback / recommendation / visit intent
-  const isFeedback = /(рекоменду|совету|была у|был у|были у|обратил|помог|лечил|спасибо|отличн|хорош|понравил|профессионал|грамотн|аккуратн|доволен|довольна|внимательн|замечательн)/i.test(
-    rawText
-  );
+  const isFeedback =
+    /(рекоменду|совету|была у|был у|были у|обратил|помог|лечил|спасибо|отличн|хорош|понравил|профессионал|грамотн|аккуратн|доволен|довольна|внимательн|замечательн|при[её]м|осмотр)/i.test(
+      rawText
+    );
   if (!isFeedback) continue;
 
   const tLower = rawText.toLowerCase();
 
   for (const m of matchers) {
-    // Avoid self-messages (doctor giving advice)
-    if (msg.from && (msg.from.toLowerCase().includes(m.lnLower) || m.fullName.includes(msg.from.toLowerCase()))) {
+    // Avoid self-messages (doctor giving advice / promo)
+    if (
+      msg.from &&
+      (msg.from.toLowerCase().includes(m.p1Lower) ||
+        msg.from.toLowerCase().includes(m.p2Lower) ||
+        (m.tgHandle && msg.from.toLowerCase().includes(m.tgHandle)))
+    ) {
       continue;
     }
 
     let hit = false;
 
+    // Condition 0: Telegram handle match (@handle or t.me/handle)
+    if (m.tgHandle && (tLower.includes("@" + m.tgHandle) || tLower.includes("t.me/" + m.tgHandle))) {
+      hit = true;
+    }
     // Condition 1: Direct full name match
-    if (tLower.includes(m.fullName) || tLower.includes(m.revFullName)) {
+    else if (tLower.includes(m.fullName) || tLower.includes(m.revFullName)) {
       hit = true;
     }
-    // Condition 2: Surname stem + First name stem together (at least 4 chars each)
+    // Condition 2: Both stems present (e.g. "Евгений" and "Бакуров")
     else if (
-      m.lnStem.length >= 4 &&
-      !falsePositiveStems.has(m.lnStem) &&
-      tLower.includes(m.lnStem) &&
-      tLower.includes(m.fnStem)
+      m.p1Stem.length >= 4 &&
+      m.p2Stem.length >= 4 &&
+      !falsePositiveStems.has(m.p1Stem) &&
+      !falsePositiveStems.has(m.p2Stem) &&
+      tLower.includes(m.p1Stem) &&
+      tLower.includes(m.p2Stem)
     ) {
       hit = true;
     }
-    // Condition 3: Explicit 'доктор / врач / были у <Surname>' with length >= 5
+    // Condition 3: Explicit 'доктор / врач / были у <UniqueName>' with stem >= 5
     else if (
-      m.isUnique &&
-      m.lnStem.length >= 5 &&
-      !falsePositiveStems.has(m.lnStem)
+      (m.p1Unique && m.p1Stem.length >= 5 && !falsePositiveStems.has(m.p1Stem)) ||
+      (m.p2Unique && m.p2Stem.length >= 5 && !falsePositiveStems.has(m.p2Stem))
     ) {
+      const stemToTest =
+        m.p1Unique && m.p1Stem.length >= 5 && !falsePositiveStems.has(m.p1Stem) ? m.p1Stem : m.p2Stem;
       const docRe = new RegExp(
-        `(?:доктор|врач|д-р|dr\\.?|prof\\.?|была у|был у|были у|записались к|ходили к|лечились у|при[её]м у)\\s+[а-яёa-z\\s]{0,15}${m.lnStem}`,
+        `(?:доктор|врач|д-р|dr\\.?|prof\\.?|была у|был у|были у|записались к|ходили к|лечились у|при[её]м у)\\s+[а-яёa-z\\s]{0,15}${stemToTest}`,
         "i"
       );
       if (docRe.test(tLower)) {
@@ -183,7 +252,7 @@ for (const msg of rawReviews) {
         date: msg.date ? String(msg.date).slice(0, 10) : "",
         rating: 0,
         text: cleanReviewText(rawText),
-        source: `https://t.me/vrachivserbii/${msg.id}`
+        source: `https://t.me/vrachivserbii/${msg.id}`,
       };
 
       if (!newReviewsBySlug.has(m.doc.slug)) {

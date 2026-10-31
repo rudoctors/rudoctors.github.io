@@ -27,7 +27,16 @@
     "website": "https://citilab.rs/",
     "email": null
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-214565",
+      "author": "Dench",
+      "date": "2026-10-18",
+      "rating": 0,
+      "text": "#невролог #белград\nЗдравствуйте !Писал отзыв о неврологе Артёме Шафикове из Ситилаба, но его почему-то удалили.\nХотел поблагодарить доктора за прием и назначенное лечение, очень эмпатичный и добрый врач!❤️",
+      "source": "https://t.me/vrachivserbii/214565"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
@@ -36,6 +45,6 @@
     "citilab.rs",
     "rusdoctors.net"
   ],
-  "updatedAt": "2026-10-29",
+  "updatedAt": "2026-10-31",
   "photo": "/photos/rd-82.webp"
 }

@@ -2,20 +2,24 @@
 import Layout from "../../layouts/Layout.astro";
 import { allSpecializationKeys, publicDoctors, specLabel } from "../../lib/doctors";
 import { computeRating } from "../../lib/rating";
+import { plural } from "../../lib/site";
 
 const keys = allSpecializationKeys();
-const withCounts = keys.map((k) => ({
-  key: k,
-  label: specLabel(k),
-  count: publicDoctors().filter((d) => d.specializations.includes(k)).length,
-  avg:
-    (() => {
-      const docs = publicDoctors().filter((d) => d.specializations.includes(k));
-      const ratings = docs.map((d) => computeRating(d)).filter((r) => r.count > 0);
-      if (!ratings.length) return 0;
-      return Math.round((ratings.reduce((s, r) => s + r.average, 0) / ratings.length) * 10) / 10;
-    })(),
-}));
+const withCounts = keys.map((k) => {
+  const docs = publicDoctors().filter((d) => d.specializations.includes(k));
+  const ratings = docs.map((d) => computeRating(d)).filter((r) => r.average > 0);
+  const avg = ratings.length
+    ? Math.round((ratings.reduce((s, r) => s + r.average, 0) / ratings.length) * 10) / 10
+    : 0;
+  const reviewsCount = docs.reduce((sum, d) => sum + (d.reviews?.length || 0), 0);
+  return {
+    key: k,
+    label: specLabel(k),
+    count: docs.length,
+    avg,
+    reviewsCount,
+  };
+});
 ---
 
 <Layout
@@ -50,7 +54,13 @@ const withCounts = keys.map((k) => ({
               </span>
             </div>
             <div class="mt-2 text-sm text-slate-500">
-              {s.avg > 0 ? `Средний рейтинг ${s.avg}` : "Отзывы собираются"}
+              {s.avg > 0 ? (
+                `Средний рейтинг ${s.avg}`
+              ) : s.reviewsCount > 0 ? (
+                `${s.reviewsCount} ${plural(s.reviewsCount, "отзыв", "отзыва", "отзывов")}`
+              ) : (
+                `${s.count} ${plural(s.count, "специалист", "специалиста", "специалистов")}`
+              )}
             </div>
           </a>
         ))

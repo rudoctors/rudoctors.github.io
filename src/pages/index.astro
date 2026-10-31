@@ -9,8 +9,8 @@ import { SITE, SCHEMA_IDS, plural, citySlug } from "../lib/site";
 const stats = siteStats();
 const top = publicDoctors()
   .map((d) => ({ d, r: computeRating(d) }))
-  .filter((x) => x.r.count > 0 && x.r.average > 0)
-  .sort((a, b) => b.r.average - a.r.average || b.r.count - a.r.count)
+  .filter((x) => x.r.count > 0)
+  .sort((a, b) => b.r.average - a.r.average || b.r.count - a.r.count || (b.d.updatedAt || "").localeCompare(a.d.updatedAt || ""))
   .slice(0, 6)
   .map((x) => x.d);
 
@@ -144,8 +144,8 @@ const jsonLd = [
         </div>
       ) : (
         <div class="card p-8 text-center text-slate-500">
-          Отзывы ещё собираются. Будьте первым —{" "}
-          <a href="/leave-review/" class="text-brand-700 font-semibold hover:underline">оставьте отзыв</a>.
+          В каталоге формируется подборка врачей. Вы можете{" "}
+          <a href="/leave-review/" class="text-brand-700 font-semibold hover:underline">оставить отзыв</a>.
         </div>
       )
     }

@@ -19,12 +19,21 @@
     "phone": "+381 64 352 4982",
     "website": "https://www.facebook.com/ana.stevanovic.1276"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-1211",
+      "author": "Elena Kovalenko",
+      "date": "2022-04-03",
+      "rating": 0,
+      "text": "Лучший стоматолог в Белграде Ана Стеванович! Русскоговорящая отличный знаток своего дела!!!\n\nhttps://www.facebook.com/ana.stevanovic.1276\n\n+381 64 3524 982 номер ее телефона.",
+      "source": "https://t.me/vrachivserbii/1211"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/1211"
   ],
-  "updatedAt": "2026-09-24"
+  "updatedAt": "2026-10-31"
 }

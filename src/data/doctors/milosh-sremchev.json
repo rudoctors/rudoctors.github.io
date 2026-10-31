@@ -19,12 +19,21 @@
     }
   ],
   "contacts": {},
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-87451",
+      "author": "Veronika Zelvenskiy",
+      "date": "2023-12-13",
+      "rating": 0,
+      "text": "Добрый день! Не могу ничего сказать о страховке, у нас ее нет, обращались платно. Но точно могу порекомендовать замечательного педиатра - Милош Сремчев в Евромедик! Внимательный, вдумчивый, грамотный доктор. Мы к нему из Белграда ездим (его недавно перевели в Нови Сад).",
+      "source": "https://t.me/vrachivserbii/87451"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/87451"
   ],
-  "updatedAt": "2026-09-24"
+  "updatedAt": "2026-10-31"
 }

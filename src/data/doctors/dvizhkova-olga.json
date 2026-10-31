@@ -22,12 +22,21 @@
     ],
     "telegram": "https://t.me/nimcare"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-199407",
+      "author": "Поиск в чате",
+      "date": "2026-07-14",
+      "rating": 0,
+      "text": "Специалисты по вашему запросу:\n\n• Движкова Ольга\n📞 info@nimcare.rs, +381 69 4457777\nВрач-терапевт и ревматолог. Специализируется на диагностике и лечении ревматологических заболеваний, ведет прием в Белграде.",
+      "source": "https://t.me/vrachivserbii/199407"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
     "google-sheets",
     "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-10-29"
+  "updatedAt": "2026-10-31"
 }

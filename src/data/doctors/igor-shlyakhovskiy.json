@@ -24,11 +24,20 @@
     "telegram": "https://t.me/surgmoscow",
     "website": "https://t.me/SurgMoscow"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-96240",
+      "author": "Евгений Бакуров | Уролог Белград",
+      "date": "2024-03-21",
+      "rating": 0,
+      "text": "Здравствуйте\nШляховский Игорь @SurgMoscow занимается хирургией ЖКБ. Клиника где он работает одна из самых оснащенных. Посмотрите в его канале Хирургия  в Сербии",
+      "source": "https://t.me/vrachivserbii/96240"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
     "rusdoctors.net"
   ],
-  "updatedAt": "2026-03-07"
+  "updatedAt": "2026-10-31"
 }
