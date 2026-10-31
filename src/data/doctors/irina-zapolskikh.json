@@ -8,7 +8,11 @@
   ],
   "specializationText": "Дерматология, косметология, трихология",
   "city": "Novi Sad",
-  "languages": [],
+  "languages": [
+    "ru",
+    "sr",
+    "en"
+  ],
   "formats": [
     "offline"
   ],
@@ -42,6 +46,7 @@
     }
   ],
   "contacts": {
+    "email": null,
     "telegram": "https://t.me/ira_zap_cosmetolog"
   },
   "reviews": [
@@ -105,7 +110,9 @@
   "hidden": false,
   "featured": false,
   "sources": [
-    "rusdoctors.net"
+    "rusdoctors.net",
+    "google-sheets",
+    "t.me/vrachivserbii"
   ],
   "updatedAt": "2026-10-31"
 }
