@@ -1,0 +1,56 @@
+{
+  "slug": "natalya-hudyakova",
+  "name": "Наталья Худякова",
+  "nameEn": "Natalya Khudyakova",
+  "specializations": [
+    "endocrinologist",
+    "ultrasound_diagnostics"
+  ],
+  "specializationText": "Эндокринолог, диетолог, врач УЗИ",
+  "city": "Belgrade",
+  "district": "Savski Venac",
+  "experienceYears": 18,
+  "languages": [
+    "ru",
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline",
+    "online"
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "telegram"
+  ],
+  "bio": "Доктор медицинских наук, эндокринолог, диетолог, врач УЗИ со стажем 18 лет. Действующий профессор Международного колледжа профессионального образования Белграда (ICEPS), экс-доцент СПбГУ. Автор более 100 научных публикаций и руководств по эндокринологии. Персонализированные программы восстановления здоровья при сахарном диабете, метаболическом синдроме, заболеваниях щитовидной железы. УЗИ щитовидной железы на приёме.",
+  "education": [
+    {
+      "year": 2006,
+      "text": "Санкт-Петербургский Государственный Университет — медицинский факультет"
+    },
+    {
+      "year": 2020,
+      "text": "Ученая степень доктора медицинских наук (д.м.н.) по специальности «Эндокринология»"
+    }
+  ],
+  "workplaces": [
+    {
+      "clinic": "Doctorus Expert",
+      "address": "Višegradska 1A, Savski Venac, Belgrade",
+      "city": "Belgrade",
+      "district": "Savski Venac",
+      "url": "https://doctorus.rs"
+    }
+  ],
+  "contacts": {
+    "phone": "+381691019269",
+    "telegram": "https://t.me/doctorus_expert",
+    "website": "https://doctorus.rs"
+  },
+  "reviews": [],
+  "source": "Telegram: https://t.me/vrachivserbii/211780",
+  "createdAt": "2026-10-31",
+  "updatedAt": "2026-10-31"
+}

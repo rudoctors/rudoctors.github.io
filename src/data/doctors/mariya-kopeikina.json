@@ -1,0 +1,46 @@
+{
+  "slug": "mariya-kopeikina",
+  "name": "Мария Копейкина",
+  "nameEn": "Mariya Kopeikina",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "Врач стоматолог-терапевт",
+  "city": "Belgrade",
+  "district": "Belgrade",
+  "experienceYears": 10,
+  "languages": [
+    "ru",
+    "uk",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "telegram"
+  ],
+  "bio": "Врач стоматолог-терапевт с 10-летним клиническим опытом. Лечение кариеса любой сложности у подростков и взрослых с применением коффердама, эндодонтическое лечение корневых каналов, реставрации композитными материалами высокой эстетики, комплексная ультразвуковая гигиена и Air-Flow.",
+  "education": [
+    {
+      "year": 2014,
+      "text": "Киевский Медицинский Университет — стоматологический факультет"
+    }
+  ],
+  "workplaces": [
+    {
+      "clinic": "Стоматологический кабинет",
+      "city": "Belgrade",
+      "address": "Belgrade, Serbia"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/Marijakopeikina"
+  },
+  "reviews": [],
+  "source": "Telegram: https://t.me/vrachivserbii/127187",
+  "createdAt": "2026-10-31",
+  "updatedAt": "2026-10-31"
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "amir-dzhafarov",
+  "name": "Амир Джафаров",
+  "nameEn": "Amir Dzhafarov",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "Стоматолог общей практики",
+  "city": "Belgrade",
+  "district": "Dorcol, Stari Grad",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "telegram"
+  ],
+  "education": [],
+  "bio": "Стоматолог общей практики в Белграде. Лечение кариеса и его осложнений, современное эндодонтическое лечение каналов зуба, восстановление разрушенных зубов, высокоэстетические композитные реставрации, первичная диагностика и составление комплексных планов лечения.",
+  "workplaces": [
+    {
+      "clinic": "Dental Simina",
+      "address": "Simina 9a, Dorćol, Stari Grad, Belgrade",
+      "city": "Belgrade",
+      "district": "Dorcol, Stari Grad"
+    }
+  ],
+  "contacts": {
+    "phone": "+38162200082",
+    "telegram": "https://t.me/dentalsimina9a"
+  },
+  "reviews": [
+    {
+      "id": "tg-214882",
+      "author": "Доктор Ajbolit78 Aleksej Prahov",
+      "date": "2026-10-20",
+      "rating": 0,
+      "text": "👨‍⚕️ Амир Джафаров — стоматолог общей практики\n\nОсновные направления работы:\n— лечение кариеса и его осложнений\n— эндодонтическое лечение (лечение каналов)\n— восстановление разрушенных зубов\n— эстетические реставрации\n— первичная диагностика и планирование лечения\n\nПациенты ценят Амира за:\n— аккуратную и бережную работу\n— понятные объяснения без сложных терминов\n— внимательное отношение и спокойную атмосферу на приёме\n— современный подход к лечению\n\nАмир Джафаров помогает сохранить зубы и подобрать максимально щадящее и эффективное решение для каждого пациента.\n\n📍 Белград, Dorćol, Simina 9a\n📲 Запись по телефону +381 622 00082\nTelegram, Viber, WhatsApp\nInstagram: dentalsimina9a",
+      "source": "https://t.me/vrachivserbii/214882"
+    }
+  ],
+  "source": "Telegram: https://t.me/vrachivserbii/214882",
+  "createdAt": "2026-10-31",
+  "updatedAt": "2026-10-31"
+}

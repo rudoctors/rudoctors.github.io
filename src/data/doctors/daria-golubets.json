@@ -1,0 +1,52 @@
+{
+  "slug": "daria-golubets",
+  "name": "Дарья Голубец",
+  "nameEn": "Daria Golubets",
+  "specializations": [
+    "dentist"
+  ],
+  "specializationText": "Врач-стоматолог пародонтолог",
+  "city": "Belgrade",
+  "district": "Novi Beograd",
+  "experienceYears": 7,
+  "languages": [
+    "ru",
+    "sr",
+    "uk"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "telegram"
+  ],
+  "bio": "Врач-стоматолог пародонтолог с 7-летним стажем. Комплексная пародонтологическая диагностика по компьютерной томографии, составление пародонтальной карты PerioChart, профессиональная гигиена по протоколу GBT, закрытый кюретаж (Scaling and root planning), плазмотерапия (PRP), инъекции гиалуроновой кислоты (Revident/Hyadent BG), пародонтологическая подготовка к протезированию и ортодонтии. Приём взрослых и детей от 6 лет под увеличением (бинокуляры).",
+  "education": [
+    {
+      "year": 2019,
+      "text": "Украинская Медицинская Стоматологическая Академия (УМСА), г. Полтава — диплом врача-стоматолога"
+    },
+    {
+      "year": 2022,
+      "text": "Донецкий Национальный Медицинский Университет им. М. Горького — интернатура"
+    }
+  ],
+  "workplaces": [
+    {
+      "clinic": "Smile ON",
+      "address": "West 65 Tower, Omladinskih brigada 86, Novi Beograd",
+      "city": "Belgrade",
+      "district": "Novi Beograd"
+    }
+  ],
+  "contacts": {
+    "telegram": "https://t.me/Smileon_belgrade_bot",
+    "website": "https://smileon.rs"
+  },
+  "reviews": [],
+  "source": "Telegram: https://t.me/vrachivserbii/202610",
+  "createdAt": "2026-10-31",
+  "updatedAt": "2026-10-31"
+}
