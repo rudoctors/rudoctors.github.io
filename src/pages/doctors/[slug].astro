@@ -99,10 +99,10 @@ const jsonLd: Record<string, unknown>[] = [
                     alt={doctor.name}
                     width={128}
                     height={128}
-                    class="h-28 w-28 md:h-32 md:w-32 rounded-3xl object-cover bg-slate-100"
+                    class="h-28 w-28 md:h-32 md:w-32 rounded-3xl object-cover object-top bg-slate-100 ring-1 ring-slate-900/5 shadow-xs"
                   />
                 ) : (
-                  <div class="h-28 w-28 md:h-32 md:w-32 rounded-3xl bg-brand-100 text-brand-800 flex items-center justify-center font-extrabold text-3xl">
+                  <div class="h-28 w-28 md:h-32 md:w-32 rounded-3xl bg-teal-50 text-teal-800 ring-1 ring-teal-600/10 flex items-center justify-center font-extrabold text-3xl select-none">
                     {initials}
                   </div>
                 )
@@ -184,7 +184,16 @@ const jsonLd: Record<string, unknown>[] = [
             <section class="card p-6" id="about">
               <h2 class="text-lg font-extrabold text-navy-900 mb-3">О враче</h2>
               <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed text-[15px] whitespace-pre-line">
-                {doctor.bio.replace(/<[^>]+>/g, "\n").replace(/\n{3,}/g, "\n\n").trim()}
+                {doctor.bio
+                  .replace(/<[^>]+>/g, "\n")
+                  .replace(/&quot;/g, '"')
+                  .replace(/&#39;/g, "'")
+                  .replace(/&amp;/g, "&")
+                  .replace(/&lt;/g, "<")
+                  .replace(/&gt;/g, ">")
+                  .replace(/&nbsp;/g, " ")
+                  .replace(/\n{3,}/g, "\n\n")
+                  .trim()}
               </div>
             </section>
           )

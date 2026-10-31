@@ -1,0 +1,44 @@
+{
+  "slug": "olivera-levakov",
+  "name": "Оливера Леваков",
+  "nameEn": "Olivera Levakov",
+  "specializations": [
+    "dermatologist",
+    "cosmetologist"
+  ],
+  "specializationText": "Дерматолог, врач эстетической медицины (дерматоскопия, удаление новообразований кожи)",
+  "city": "Novi Sad",
+  "languages": [
+    "sr",
+    "en",
+    "ru"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач-дерматолог в Нови-Саде. Специализируется на дерматоскопии, удалении доброкачественных новообразований кожи (папиллом, родинок, кератом) и эстетических процедурах.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Novi Sad Poliklinika",
+      "city": "Novi Sad"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-178614",
+      "author": "Пациент из сообщества",
+      "date": "2026-02-10",
+      "rating": 0,
+      "text": "В Нови-Саде удаление родинок и новообразований кожи проводит доктор Оливера Леваков. Внимательный приём и аккуратная работа.",
+      "source": "https://t.me/vrachivserbii/178614"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-10-31"
+}

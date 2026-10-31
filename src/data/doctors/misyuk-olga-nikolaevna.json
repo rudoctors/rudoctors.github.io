@@ -16,7 +16,6 @@
   "education": [],
   "workplaces": [],
   "contacts": {
-    "phone": "09615 (",
     "email": null,
     "website": "https://taplink.cc/helga_mon"
   },
@@ -28,6 +27,14 @@
       "text": "Обращалась к неврологу Ольге Мисюк. Врач подобрала для меня рекомендации, и около полугода меня не беспокоит та проблема, с которой я раньше обращалась. Благодарю и рекомендую.",
       "source": "Telegram: https://t.me/vrachivserbii/189106",
       "lang": "ru"
+    },
+    {
+      "id": "tg-120214",
+      "author": "M R 🐸",
+      "date": "2024-12-04",
+      "rating": 0,
+      "text": "а кто-нибудь был у Мисюк Ольги в Белграде? а то отзывов не нахожу..",
+      "source": "https://t.me/vrachivserbii/120214"
     }
   ],
   "hidden": false,
@@ -36,5 +43,5 @@
     "google-sheets",
     "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-09-24"
+  "updatedAt": "2026-10-31"
 }

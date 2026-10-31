@@ -18,12 +18,21 @@
     "phone": "+381 62 868 2169",
     "email": "tamonia15@gmail.com"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-187489",
+      "author": "Лилия 💐",
+      "date": "2026-04-08",
+      "rating": 0,
+      "text": "Хотелось бы отметить и поблагодарить стоматолога Сокурова Таймураза , прекрасного молодого специалиста ))\nРаботает аккуратно и качественно)\nПервый раз лечила зубы без укола и страха)\nОчень была этому удивлена и рада)\nРекомендую ))",
+      "source": "https://t.me/vrachivserbii/187489"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/180437"
   ],
-  "updatedAt": "2026-09-24"
+  "updatedAt": "2026-10-31"
 }

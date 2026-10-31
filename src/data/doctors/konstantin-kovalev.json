@@ -2,7 +2,8 @@
   "slug": "konstantin-kovalev",
   "name": "Константин Ковалев",
   "specializations": [
-    "therapist"
+    "psychiatrist",
+    "psychotherapist"
   ],
   "specializationText": "Врач психиатр, психотерапевт",
   "city": "Belgrade",

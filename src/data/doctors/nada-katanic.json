@@ -24,12 +24,21 @@
     }
   ],
   "contacts": {},
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-64079",
+      "author": "Sophie",
+      "date": "2023-05-09",
+      "rating": 0,
+      "text": "Ходила в MediGroup Jedro на ул.Юрий Гагарина, 14 к Dr Nada Katanić #гинеколог #белград\nГоворит по сербски/английски/испански.\nОчень доброжелательная, аккуратная и внимательная. Нашла причину болей и назначила доп.анализы (кровь на онкомаркеры и МРТ) чтобы после разработать схему лечения.\nПо стоимости было 9900 (прием, узи, мазки и PAPA тест).\nСоветую",
+      "source": "https://t.me/vrachivserbii/64079"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/146471"
   ],
-  "updatedAt": "2026-09-24"
+  "updatedAt": "2026-10-31"
 }

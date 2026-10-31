@@ -24,12 +24,21 @@
   "contacts": {
     "phone": "+38166355855"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-62510",
+      "author": "Anastasia Goncharuk",
+      "date": "2023-04-25",
+      "rating": 0,
+      "text": "Вот выше как раз врача рекомендуют https://t.me/vrachivserbii/1/29528\n\nПульмонолог Александра Вуков в О2",
+      "source": "https://t.me/vrachivserbii/62510"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/18120"
   ],
-  "updatedAt": "2026-09-24"
+  "updatedAt": "2026-10-31"
 }

@@ -21,12 +21,29 @@
     }
   ],
   "contacts": {},
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-124877",
+      "author": "Liza Vechtomova",
+      "date": "2025-01-15",
+      "rating": 0,
+      "text": "#дерматолог\nБыла на приёме у дерматолога Александра Алексич, осмотр родинок на всем теле. Очень понравилась доктор, осмотрела супер внимательно, общались на английском. Стоимость 6300 динар\nhttps://www.medigroup.rs/lekari/aleksic-aleksandra/",
+      "source": "https://t.me/vrachivserbii/124877"
+    },
+    {
+      "id": "tg-63940",
+      "author": "Даша",
+      "date": "2023-05-08",
+      "rating": 0,
+      "text": "#дерматолог\n#Белград\n\nДерматолог Dr Aleksandra Aleksić (MediGroup).\nОбращалась к ней в рамках профилактического осмотра с дерматоскопией. Провели осмотр родинок на всём теле с помощью дерматоскопа, дали рекомендации по поводу атоп. дерматита. Врач очень внимательная, аккуратная и доброжелательная, общались на английском.",
+      "source": "https://t.me/vrachivserbii/63940"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/142680"
   ],
-  "updatedAt": "2026-09-24"
+  "updatedAt": "2026-10-31"
 }

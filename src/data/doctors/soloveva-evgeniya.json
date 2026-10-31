@@ -2,7 +2,8 @@
   "slug": "soloveva-evgeniya",
   "name": "Соловьева Евгения",
   "specializations": [
-    "therapist"
+    "psychiatrist",
+    "neurologist"
   ],
   "specializationText": "Психиатр, невролог, психотерапевт",
   "city": "Belgrade",
@@ -21,7 +22,7 @@
     }
   ],
   "contacts": {
-    "phone": "+381691019269 (",
+    "phone": "+381 69 101 9269",
     "email": null
   },
   "reviews": [],

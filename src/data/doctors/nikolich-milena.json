@@ -21,12 +21,21 @@
     }
   ],
   "contacts": {},
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-76991",
+      "author": "Nata",
+      "date": "2023-09-07",
+      "rating": 0,
+      "text": "#педиатр\nХотелось бы поделиться прекрасным доктором Миленой Николич. Ординация Здраво Дете.\nОчень доброжелательная, профессиональная и адекватная, отлично говорит на английском. Всегда на связи, отвечает на вопросы, помогает. Очень рекомендую!\nhttps://www.ordinacijazdravodete.com",
+      "source": "https://t.me/vrachivserbii/76991"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/142392"
   ],
-  "updatedAt": "2026-09-24"
+  "updatedAt": "2026-10-31"
 }

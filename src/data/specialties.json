@@ -46,5 +46,7 @@
   "speech_therapist": "Логопед",
   "dietitian": "Диетолог",
   "nutritionist": "Нутрициолог",
-  "oncologist": "Онколог"
+  "oncologist": "Онколог",
+  "rheumatologist": "Ревматолог",
+  "infectiologist": "Инфекционист"
 }

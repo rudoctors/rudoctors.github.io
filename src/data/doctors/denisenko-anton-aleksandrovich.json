@@ -22,12 +22,21 @@
   "contacts": {
     "website": "https://yandex.ru/medicine/doctor/denisenko_anton_tBNVzJNW8zihZ"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-210039",
+      "author": "Elina",
+      "date": "2026-09-20",
+      "rating": 0,
+      "text": "#отзыв\nПосещаю уже второй раз Palkin dental center. В первый раз к ортодонту Анастасии Бобылевой, которая подробно все рассказала на консультации о моей ситуации с зубами спустя 10 лет от снятия брекетов. Во второй раз сходила на консультацию к Денисенко Антону. Все посмотрели, сделали снимки, план лечения написали. Приятная клиника и приятные врачи. Спасибо!",
+      "source": "https://t.me/vrachivserbii/210039"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/200367"
   ],
-  "updatedAt": "2026-09-24"
+  "updatedAt": "2026-10-31"
 }

@@ -2,7 +2,8 @@
   "slug": "mayya-andreevna-sklyar",
   "name": "Майя Андреевна Скляр",
   "specializations": [
-    "therapist"
+    "psychiatrist",
+    "psychotherapist"
   ],
   "specializationText": "врач-психиатр\nпсихотерапевт",
   "city": "Belgrade",

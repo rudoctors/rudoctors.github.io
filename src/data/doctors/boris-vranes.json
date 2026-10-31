@@ -22,12 +22,21 @@
     }
   ],
   "contacts": {},
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-91954",
+      "author": "Alice н.",
+      "date": "2024-01-31",
+      "rating": 0,
+      "text": "#гинеколог\nКому надо гинеколога в НБГ - рекомендую Dr Boris Vranes в Euromedik на Bulevar Umetnosti.\nГоворит на офигенном английском, все объясняет, в отличие от других врачей не стал \"журить\" за лишний вес и помог разобраться с гормонами.\nА еще оказывается тут спирали ставят под анастезией (еще посмотрим саму процедуру но уже сам факт радует).",
+      "source": "https://t.me/vrachivserbii/91954"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/146471"
   ],
-  "updatedAt": "2026-09-24"
+  "updatedAt": "2026-10-31"
 }

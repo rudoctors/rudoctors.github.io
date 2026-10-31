@@ -19,12 +19,21 @@
     }
   ],
   "contacts": {},
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-55700",
+      "author": "Aleksandra Shikhmareva",
+      "date": "2023-03-02",
+      "rating": 0,
+      "text": "#кардиолог #детский #белград\nProf. Dr. Jovan Košutić.\nДелали УЗИ сердца ребенку 3х лет в центре Pulse. Доктор говорит на английском. Очень внимательно и долго проводил диагностику, всем довольна.",
+      "source": "https://t.me/vrachivserbii/55700"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/55700"
   ],
-  "updatedAt": "2026-09-24"
+  "updatedAt": "2026-10-31"
 }

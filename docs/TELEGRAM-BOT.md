@@ -95,7 +95,7 @@ webhook-хостинг, напр. Cloudflare Workers).
    npm run tg:bot                # long polling (окно/терминал держать открытым)
    ```
 
-`.env` в `.gitignore` — не коммитить и не переносить в память/PAIOS.
+`.env` в `.gitignore` — не коммитить и не переносить в память агентов.
 
 ## Ограничения
 

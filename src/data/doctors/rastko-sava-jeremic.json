@@ -1,0 +1,47 @@
+{
+  "slug": "rastko-sava-jeremic",
+  "name": "Растко Сава Еремич",
+  "nameEn": "Rastko Sava Jeremić",
+  "specializations": [
+    "traumatologist_orthopedist",
+    "pediatrician"
+  ],
+  "specializationText": "Детский травматолог-ортопед (экстренная помощь, рентген-диагностика травм)",
+  "city": "Belgrade",
+  "languages": [
+    "en",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Детский врач травматолог-ортопед в Белграде (Университетская детская клиника Tiršova / Univerzitetska dečja klinika). Оказывает экстренную помощь при переломах, ушибах и спортивных травмах у детей.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Университетская детская клиника Tiršova (Univerzitetska dečja klinika)",
+      "address": "Tiršova 10, Beograd",
+      "city": "Belgrade",
+      "url": "https://udk.bg.ac.rs/"
+    }
+  ],
+  "contacts": {
+    "website": "https://udk.bg.ac.rs/"
+  },
+  "reviews": [
+    {
+      "id": "tg-109971",
+      "author": "Александра",
+      "date": "2024-08-20",
+      "rating": 0,
+      "text": "Обращались в Университетскую детскую клинику Tiršova с подозрением на перелом у ребёнка. Дежурный врач Растко Сава Еремич осмотрела, направила на рентген и дала рекомендации. Очень доброжелательные специалисты, врач говорит по-английски.",
+      "source": "https://t.me/vrachivserbii/109971"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-10-31"
+}

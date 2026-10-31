@@ -17,9 +17,24 @@ const initials = doctor.name
   .join("")
   .toUpperCase();
 const photo = doctor.photo;
+
+function decodeHtml(str: string): string {
+  return str
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&nbsp;/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+const cleanBio = doctor.bio ? decodeHtml(doctor.bio) : "";
 ---
 
-<article class="card p-5 flex flex-col gap-4">
+<article class="card p-5 flex flex-col gap-3.5">
   <div class="flex gap-4 items-start">
     <div class="shrink-0">
       {
@@ -31,10 +46,10 @@ const photo = doctor.photo;
             height={72}
             loading={priority ? "eager" : "lazy"}
             fetchpriority={priority ? "high" : "auto"}
-            class="h-16 w-16 rounded-2xl object-cover bg-slate-100"
+            class="h-16 w-16 rounded-2xl object-cover object-top bg-slate-100 ring-1 ring-slate-900/5 shadow-xs"
           />
         ) : (
-          <div class="h-16 w-16 rounded-2xl bg-brand-100 text-brand-800 flex items-center justify-center font-bold text-lg">
+          <div class="h-16 w-16 rounded-2xl bg-teal-50 text-teal-800 ring-1 ring-teal-600/10 flex items-center justify-center font-bold text-lg select-none">
             {initials}
           </div>
         )
@@ -42,40 +57,39 @@ const photo = doctor.photo;
     </div>
 
     <div class="min-w-0 flex-1">
-      <div class="flex flex-wrap items-center gap-2">
+      <div class="flex flex-col gap-0.5">
         <a
           href={`/doctors/${doctor.slug}/`}
-          class="font-bold text-lg text-navy-900 hover:text-brand-700 truncate"
+          class="font-bold text-lg text-navy-900 hover:text-brand-700 leading-snug line-clamp-2"
         >
           {doctor.name}
         </a>
+        <div class="text-xs text-slate-500">
+          {[doctor.city, doctor.district].filter(Boolean).join(" · ")}
+          {doctor.experienceYears ? ` · стаж ${doctor.experienceYears} лет` : ""}
+        </div>
       </div>
 
-      <div class="mt-1 flex flex-wrap gap-1.5">
+      <div class="mt-2 flex flex-wrap gap-1.5">
         {doctor.specializations.slice(0, 3).map((s) => (
           <span class="chip">{specLabel(s)}</span>
         ))}
       </div>
-
-      <div class="mt-2 text-sm text-slate-600">
-        {[doctor.city, doctor.district].filter(Boolean).join(" · ")}
-        {doctor.experienceYears ? ` · стаж ${doctor.experienceYears} лет` : ""}
-      </div>
-    </div>
-
-    <div class="hidden sm:block text-right">
-      <Stars rating={rating.average} count={rating.count} size="sm" />
     </div>
   </div>
 
+  <div class="flex items-center justify-between text-xs text-slate-500">
+    <Stars rating={rating.average} count={rating.count} size="sm" />
+  </div>
+
   {
-    doctor.bio && (
-      <p class="text-sm text-slate-600 line-clamp-2 leading-relaxed">{doctor.bio.replace(/<[^>]+>/g, "")}</p>
+    cleanBio && (
+      <p class="text-sm text-slate-600 line-clamp-2 leading-relaxed">{cleanBio}</p>
     )
   }
 
-  <div class="mt-auto flex items-center justify-between gap-3 pt-2 border-t border-slate-100">
-    <div class="flex flex-wrap gap-1.5 text-xs text-slate-500">
+  <div class="mt-auto flex items-center justify-between gap-3 pt-2.5 border-t border-slate-100">
+    <div class="flex flex-wrap gap-1.5 text-xs text-slate-500 min-w-0">
       {doctor.languages.slice(0, 4).map((l) => (
         <span class="px-2 py-0.5 rounded-md bg-slate-100">{l.toUpperCase()}</span>
       ))}
@@ -84,12 +98,12 @@ const photo = doctor.photo;
         <span class="px-2 py-0.5 rounded-md bg-slate-100">Очно</span>
       )}
     </div>
-    <a href={`/doctors/${doctor.slug}/`} class="btn-secondary !py-1.5 !px-3 text-xs" aria-label={`Профиль: ${doctor.name}`}>
+    <a
+      href={`/doctors/${doctor.slug}/`}
+      class="btn-secondary !py-1.5 !px-3 text-xs whitespace-nowrap shrink-0"
+      aria-label={`Профиль: ${doctor.name}`}
+    >
       Профиль →
     </a>
-  </div>
-
-  <div class="sm:hidden">
-    <Stars rating={rating.average} count={rating.count} size="sm" />
   </div>
 </article>

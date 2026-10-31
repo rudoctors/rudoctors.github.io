@@ -1,0 +1,48 @@
+{
+  "slug": "dusko-avramovic",
+  "name": "Душко Аврамович",
+  "nameEn": "Duško Avramović",
+  "specializations": [
+    "gastroenterologist",
+    "ultrasound_diagnostics"
+  ],
+  "specializationText": "Гастроэнтеролог, врач УЗИ (гастроскопия, колоноскопия, УЗИ брюшной полости)",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Врач-гастроэнтеролог в Белграде (клиника Euromedic). Проводит гастроскопию и колоноскопию (в том числе под седацией), а также ультразвуковое исследование органов брюшной полости. Владеет русским языком.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Euromedic",
+      "address": "Pariske komune 22, Novi Beograd",
+      "city": "Belgrade",
+      "url": "https://euromedic.rs/"
+    }
+  ],
+  "contacts": {
+    "website": "https://euromedic.rs/"
+  },
+  "reviews": [
+    {
+      "id": "tg-174942",
+      "author": "Пациент из сообщества",
+      "date": "2026-01-16",
+      "rating": 0,
+      "text": "В Euromedic гастроскопию и колоноскопию с седацией проводит рекомендуемый врач Душко Аврамович (говорит на русском, делает УЗИ брюшной полости). Процедура проходит под седацией, после чего врач подробно всё объясняет.",
+      "source": "https://t.me/vrachivserbii/174942"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-10-31"
+}

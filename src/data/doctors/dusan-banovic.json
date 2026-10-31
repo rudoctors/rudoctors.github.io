@@ -22,12 +22,21 @@
     }
   ],
   "contacts": {},
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-72743",
+      "author": "Anastasia",
+      "date": "2023-07-29",
+      "rating": 0,
+      "text": "Добрый день!\nРекомендация по кардиологии: доктор Dušan Banović из клиники Cardios, Нови Сад.\nДоктор говорит на английском, произвел очень хорошее впечатление (сбор анамнеза, узи сердца и экг). Дал рекомендации, направления к другим специалистам. В общем, рекомендую\n\nУ меня прием был по страховке, но насколько я помню, цена 5500 на первичный осмотр (узи+экг).\nhttps://www.cardiosnovisad.rs/",
+      "source": "https://t.me/vrachivserbii/72743"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/146642"
   ],
-  "updatedAt": "2026-09-24"
+  "updatedAt": "2026-10-31"
 }

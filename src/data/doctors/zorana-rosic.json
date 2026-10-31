@@ -19,12 +19,29 @@
     }
   ],
   "contacts": {},
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-87571",
+      "author": "Dmitry Nikonorov",
+      "date": "2023-12-14",
+      "rating": 0,
+      "text": "Здравствуйте, я хочу порекомендовать флеболога Dr Zoranovic из Prva Poliklinika.\nПодозревал, что у меня образовался тромб в ноге, доктор сразу на приеме провел УЗИ сосудов, назначил лечение. Все было на русском языке. С организацией записи помог @nenadzivanovic1983",
+      "source": "https://t.me/vrachivserbii/87571"
+    },
+    {
+      "id": "tg-55948",
+      "author": "Dmitriy Andreev",
+      "date": "2023-03-04",
+      "rating": 0,
+      "text": "#дерматолог #белград\nDr Zorana Babic\nЕУРОМЕДИК во Врачаре. Мне врач понравился: говорит по английски, требуемые операции провела без проблем.",
+      "source": "https://t.me/vrachivserbii/55948"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/174861"
   ],
-  "updatedAt": "2026-09-24"
+  "updatedAt": "2026-10-31"
 }

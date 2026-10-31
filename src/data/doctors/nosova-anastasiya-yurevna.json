@@ -23,12 +23,21 @@
   "contacts": {
     "telegram": "https://t.me/AU_dentist"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-126652",
+      "author": "Dmitrii",
+      "date": "2025-01-31",
+      "rating": 0,
+      "text": "Хочу выразить огромную благодарность доктору Анастасии Носовой за помощь и поддержку. Несмотря на то, что она не являлась моим лечащим врачом, Анастасия внимательно выслушала меня, изучила мой случай и дала исчерпывающую консультацию.\n\n@AU_dentist",
+      "source": "https://t.me/vrachivserbii/126652"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/147420"
   ],
-  "updatedAt": "2026-09-24"
+  "updatedAt": "2026-10-31"
 }

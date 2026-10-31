@@ -20,12 +20,21 @@
     }
   ],
   "contacts": {},
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-151453",
+      "author": "Sem Stepanov / Сосудистый хирург/флеболог",
+      "date": "2025-08-08",
+      "rating": 0,
+      "text": "Есть хороший специалист маммолог. Marko Jevrić. Ведет прием в Медигруп на Славии. Работает как хирург с м/ж каждый день. Знаю несколько дам которые у него оперировались и всем довольны.",
+      "source": "https://t.me/vrachivserbii/151453"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/151453"
   ],
-  "updatedAt": "2026-09-24"
+  "updatedAt": "2026-10-31"
 }

@@ -20,12 +20,21 @@
     }
   ],
   "contacts": {},
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-115477",
+      "author": "Anna Utkina",
+      "date": "2024-10-18",
+      "rating": 0,
+      "text": "#новисад #гастроэнтеролог #детский\nDr med. Dijana Savić Bjelica\n\nРекомендую детского гастроэнтеролога Dr med. Dijana Savić Bjelica в Medigroup на Cara Dusana.\nУ ребенка 5 лет были периодические боли в животе. Врач разговаривала по-английски, сделала узи и поставила диагноз, подробно объяснила проблему и ответила на мои вопросы. Начали принимать прописанные лекарства и где-то в течении недели боли полностью ушли и вот уже полгода этой проблемы больше нет.",
+      "source": "https://t.me/vrachivserbii/115477"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/115477"
   ],
-  "updatedAt": "2026-09-24"
+  "updatedAt": "2026-10-31"
 }

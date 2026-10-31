@@ -22,7 +22,24 @@
     "phone": "021 420120",
     "website": "https://drilic.rs/"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-54332",
+      "author": "Елена",
+      "date": "2023-02-23",
+      "rating": 0,
+      "text": "#гинеколог #НовиСад\nБыла на приеме у Tamara Vujkov. Хорошо говорит на английском. Очень понравилось. Прием с осмотром и УЗИ стоил около 8000. Знаю, что из этой клиники ещё были хорошие отзывы на Ivana Anđić.\nЗаписывалась через Вайбер по номеру с сайта.\nhttps://drilic.rs/\nSpecijalistička ginekološko-akušerska ordinacija \"DR ILIĆ-FEMMA HEALTH\"\n021 420120\nhttps://maps.app.goo.gl/tWHwHGM8ZnxiUvxs5",
+      "source": "https://t.me/vrachivserbii/54332"
+    },
+    {
+      "id": "tg-54341",
+      "author": "Ann N.",
+      "date": "2023-02-23",
+      "rating": 0,
+      "text": "#гинеколог #НовиСад\nТоже хочу оставить отзыв на кликину Femma Health dr  Ivana Anđić. По англ говорит нормально, но на этом из плюсов, к сожалению все. На мой запрос \"выпила монурал, не помог\" посоветовала выпить еще монурала, а когда я сказала, что нужно что-то другое, открыла телефон и начала гуглить. А и еще, осмотр проводился не одноразовым пластиковым зеркалом, а металлическим 😐 Первый раз за прием с узи и мазками отдала около 100 евро, второй раз за повторно назначенный монурал еще 4000 динар. Капец.\n\nhttps://drilic.rs/\nSpecijalistička ginekološko-akušerska ordinacija \"DR ILIĆ-FEMMA HEALTH\"\n021 420120",
+      "source": "https://t.me/vrachivserbii/54341"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
@@ -30,5 +47,5 @@
     "https://t.me/vrachivserbii/54332",
     "https://t.me/vrachivserbii/54341"
   ],
-  "updatedAt": "2026-09-24"
+  "updatedAt": "2026-10-31"
 }

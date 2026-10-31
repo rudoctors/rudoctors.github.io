@@ -2,7 +2,8 @@
   "slug": "ovcharov-stanislav",
   "name": "Овчаров Станислав",
   "specializations": [
-    "therapist"
+    "pulmonologist",
+    "manual_therapist"
   ],
   "specializationText": "Пульмонолог\nтерапевт\nмануальная терапия",
   "city": "Novi Sad",

@@ -1,0 +1,44 @@
+{
+  "slug": "slobodan-sreckovic",
+  "name": "Слободан Сречкович",
+  "nameEn": "Slobodan Srećković",
+  "specializations": [
+    "proctologist",
+    "gastroenterologist"
+  ],
+  "specializationText": "Проктолог, гастроэнтеролог, эндоскопист (колоноскопия с анестезией)",
+  "city": "Belgrade",
+  "languages": [
+    "en",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "Специалист по эндоскопии и проктологии в Белграде (Poliklinika VUK Prima). Проводит колоноскопию под седацией с забором биопсийных проб. Чуткий и внимательный врач, свободно говорит по-английски.",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika VUK Prima",
+      "address": "Beograd",
+      "city": "Belgrade"
+    }
+  ],
+  "contacts": {},
+  "reviews": [
+    {
+      "id": "tg-174942-ss",
+      "author": "Пациент из сообщества",
+      "date": "2026-01-16",
+      "rating": 0,
+      "text": "Доктор Слободан Сречкович проводит колоноскопию с анестезией в Poliklinika VUK Prima. Он очень чуткий и внимательный, свободно говорит по-английски.",
+      "source": "https://t.me/vrachivserbii/174942"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "t.me/vrachivserbii"
+  ],
+  "updatedAt": "2026-10-31"
+}

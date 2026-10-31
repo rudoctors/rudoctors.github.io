@@ -20,12 +20,21 @@
     }
   ],
   "contacts": {},
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-101018",
+      "author": "Elena",
+      "date": "2024-05-12",
+      "rating": 0,
+      "text": "#детскийстоматолог #новисад\nБыли с дочкой (4,5 г) у детского стоматолога Marija Jovanov в клинике Matijević Nikolić Vasić (Heroja Pinkija 6, Novi Sad) на профилактическом приеме. Все понравилось, врач внимательная (говорит по-сербский и по-английски), сначала 15 минут разговаривала с ребенком, показала инструменты, дала попробовать. После приема подарили пакет подарков с щеткой, пастой, раскрасками и наклейками. Рекомендую",
+      "source": "https://t.me/vrachivserbii/101018"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/101018"
   ],
-  "updatedAt": "2026-09-24"
+  "updatedAt": "2026-10-31"
 }

@@ -23,12 +23,21 @@
     "phone": "021 525924",
     "website": "https://maps.app.goo.gl/T6P9EnYmr98SvRobA"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-55161",
+      "author": "Жаннет",
+      "date": "2023-02-28",
+      "rating": 0,
+      "text": "Stomatološka poliklinika prof. Džolev\n021 525924\nhttps://maps.app.goo.gl/T6P9EnYmr98SvRobA\nРекомендую хируга dr Ratko Džolev.\nЦена не дорргая удалиния молочного зуба нам обошлось 1500 динар.",
+      "source": "https://t.me/vrachivserbii/55161"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/55161"
   ],
-  "updatedAt": "2026-09-24"
+  "updatedAt": "2026-10-31"
 }
