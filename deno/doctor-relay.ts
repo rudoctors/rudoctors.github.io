@@ -3,10 +3,15 @@
  *
  * POST /api/doctor-request — форма сайта (fetch, без перехода): создаёт GitHub Issue
  *   и присылает карточку владельцу в Telegram с callback-кнопками.
- * POST /telegram — Telegram webhook: мгновенная обработка ✅/❌ и команд ok/no.
+ * POST /api/review — форма отзыва: пишет в Google Sheet (CRM), шлёт Telegram карточку
+ *   с кнопками rev_ok:<id> / rev_no:<id>.
+ * POST /telegram — Telegram webhook: мгновенная обработка ✅/❌ и команд ok/no,
+ *   а также одобрение/отклонение отзывов через rev_ok/rev_no.
  *
  * Env: TELEGRAM_BOT_TOKEN, TELEGRAM_ADMIN_CHAT_ID, GITHUB_TOKEN, GITHUB_REPO,
- *      WEBHOOK_SECRET (сверяется с X-Telegram-Bot-Api-Secret-Token).
+ *      WEBHOOK_SECRET (сверяется с X-Telegram-Bot-Api-Secret-Token),
+ *      GAS_REVIEW_WEBHOOK_URL (Google Apps Script CRM webhook URL),
+ *      GOOGLE_SHEET_ID (ID Google Таблицы отзывов).
  * Логика карточки синхронизирована со scripts/telegram-bot.mjs.
  */
 const REPO = Deno.env.get("GITHUB_REPO") || "rudoctors/rudoctors.github.io";
@@ -14,12 +19,13 @@ const TG_TOKEN = Deno.env.get("TELEGRAM_BOT_TOKEN") || "";
 const ADMIN_CHAT = Deno.env.get("TELEGRAM_ADMIN_CHAT_ID") || "";
 const GH_TOKEN = Deno.env.get("GITHUB_TOKEN") || "";
 const WEBHOOK_SECRET = Deno.env.get("WEBHOOK_SECRET") || "";
+const GAS_REVIEW_URL = Deno.env.get("GAS_REVIEW_WEBHOOK_URL") || "";
 const DIR_DOCTORS = "src/data/doctors";
 const LABEL_REQUEST = "doctor-request";
 const LABEL_SENT = "tg-sent";
 const INTAKE_MARKER = "🩺 Заявка для каталога Rudoctors";
 
-const SPECIALTIES: Record<string, string> = 
+const SPECIALTIES: Record<string, string> = {
   "psychiatrist": "Психиатр",
   "child_psychiatrist": "Детский психиатр",
   "psychiatrist_child": "Детский психиатр",
@@ -68,7 +74,7 @@ const SPECIALTIES: Record<string, string> =
   "dietitian": "Диетолог",
   "nutritionist": "Нутрициолог",
   "oncologist": "Онколог",
-;
+};
 
 function esc(s: string | undefined): string {
   return String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -254,6 +260,206 @@ async function sendCard(issueNumber: number, fields: Fields) {
   });
 }
 
+// ─── Review CRM ──────────────────────────────────────────────────────────────
+
+interface ReviewData {
+  id: string;         // RD-YYMM-XXX
+  doctorSlug: string;
+  doctorName: string;
+  author: string;
+  rating: number;
+  text: string;
+  date: string;       // ISO YYYY-MM-DD
+}
+
+/** Generate unique review ID: RD-YYMM-NNN */
+function reviewId(): string {
+  const now = new Date();
+  const yymm = `${String(now.getFullYear()).slice(2)}${String(now.getMonth() + 1).padStart(2, "0")}`;
+  const suffix = String(Math.floor(100 + Math.random() * 900));
+  return `RD-${yymm}-${suffix}`;
+}
+
+/** Send review data to Google Apps Script CRM (writes to Google Sheet + sends Telegram card from GAS). */
+async function sendToGAS(rev: Omit<ReviewData, "id">): Promise<string | null> {
+  if (!GAS_REVIEW_URL) return null;
+  try {
+    const res = await fetch(GAS_REVIEW_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        doctor_slug: rev.doctorSlug,
+        doctor_name: rev.doctorName,
+        author: rev.author,
+        rating: rev.rating,
+        text: rev.text,
+      }),
+    });
+    const data = await res.json().catch(() => ({})) as Record<string, unknown>;
+    return data?.ok ? String(data.id || "") : null;
+  } catch (e) {
+    console.warn("GAS CRM write failed:", e);
+    return null;
+  }
+}
+
+/** Update review status in GAS Sheet by review ID. */
+async function updateGASStatus(id: string, status: string): Promise<void> {
+  if (!GAS_REVIEW_URL) return;
+  // GAS GET endpoint: ?action=updateStatus&id=...&status=...
+  const gasUrl = GAS_REVIEW_URL.replace(/\/exec.*$/, "/exec") +
+    `?action=updateStatus&id=${encodeURIComponent(id)}&status=${encodeURIComponent(status)}`;
+  await fetch(gasUrl).catch((e) => console.warn("GAS status update failed:", e));
+}
+
+/** Build Telegram card for a new review, with approve/reject inline buttons. */
+function reviewMessage(rev: ReviewData): string {
+  const stars = "⭐".repeat(rev.rating) + (rev.rating < 5 ? "☆".repeat(5 - rev.rating) : "");
+  return [
+    `💬 <b>Новый отзыв</b> · <code>${esc(rev.id)}</code>`,
+    "",
+    `<b>Врач:</b> ${esc(rev.doctorName)} (<code>${esc(rev.doctorSlug)}</code>)`,
+    `<b>Автор:</b> ${esc(rev.author)}`,
+    `<b>Оценка:</b> ${stars} ${rev.rating}/5`,
+    `<b>Дата:</b> ${esc(rev.date)}`,
+    "",
+    `<b>Текст:</b>`,
+    esc(rev.text.slice(0, 800)),
+  ].filter(Boolean).join("\n");
+}
+
+const reviewKeyboard = (id: string) => ({
+  inline_keyboard: [[
+    { text: "✅ Опубликовать", callback_data: `rev_ok:${id}` },
+    { text: "❌ Отклонить", callback_data: `rev_no:${id}` },
+  ]],
+});
+
+/** Publish approved review: append to doctor JSON and commit to GitHub. */
+async function publishReview(rev: ReviewData): Promise<string> {
+  const path = `${DIR_DOCTORS}/${rev.doctorSlug}.json`;
+
+  // Fetch existing doctor JSON
+  let existing: Record<string, unknown>;
+  let sha: string;
+  try {
+    const file = await gh(`/repos/${REPO}/contents/${path}`);
+    sha = String(file.sha);
+    const decoded = atob(String(file.content).replace(/\s/g, ""));
+    existing = JSON.parse(decoded);
+  } catch (e) {
+    throw new Error(`Врач не найден: ${path} — ${String(e).slice(0, 120)}`);
+  }
+
+  // Append review
+  const reviews = Array.isArray(existing.reviews) ? existing.reviews : [];
+  const newReview = {
+    author: rev.author,
+    rating: rev.rating,
+    text: rev.text,
+    date: rev.date,
+    source: `rudoctors-crm#${rev.id}`,
+  };
+  reviews.push(newReview);
+  existing.reviews = reviews;
+  existing.updatedAt = rev.date;
+
+  const content = JSON.stringify(existing, null, 2) + "\n";
+  const bytes = new TextEncoder().encode(content);
+  let bin = "";
+  for (const b of bytes) bin += String.fromCharCode(b);
+  const encoded = btoa(bin);
+
+  await gh(`/repos/${REPO}/contents/${path}`, {
+    method: "PUT",
+    body: JSON.stringify({
+      message: `Add review for ${rev.doctorName} (${rev.id})`,
+      content: encoded,
+      sha,
+      branch: "main",
+    }),
+  });
+
+  await updateGASStatus(rev.id, "4. Опубликован");
+  return `✅ Опубликовано: отзыв ${rev.id} → ${path}`;
+}
+
+
+/** Handle rev_ok / rev_no callbacks for review moderation. */
+async function handleReviewCallback(
+  cb: Record<string, unknown>,
+  action: "ok" | "no",
+  revId: string,
+): Promise<void> {
+  const msg = cb.message as Record<string, unknown>;
+  const chatId = String((msg?.chat as Record<string, unknown>)?.id ?? "");
+  const messageId = msg?.message_id;
+
+  if (chatId !== String(ADMIN_CHAT)) {
+    await tg("answerCallbackQuery", { callback_query_id: cb.id, text: "Доступно только владельцу", show_alert: true });
+    return;
+  }
+
+  // Fetch review data from GAS
+  let rev: ReviewData | null = null;
+  if (GAS_REVIEW_URL) {
+    try {
+      const gasUrl = GAS_REVIEW_URL.replace(/\/exec.*$/, "/exec") + `?action=getReview&id=${encodeURIComponent(revId)}`;
+      const gasRes = await fetch(gasUrl);
+      const gasData = await gasRes.json().catch(() => ({})) as Record<string, unknown>;
+      if (gasData?.ok && gasData?.review) {
+        const r = gasData.review as Record<string, unknown>;
+        rev = {
+          id:         String(r.id || revId),
+          doctorSlug: String(r.doctor_slug || ""),
+          doctorName: String(r.doctor_name || ""),
+          author:     String(r.author || ""),
+          rating:     Number(r.rating) || 5,
+          text:       String(r.text || ""),
+          date:       String(r.date || new Date().toISOString().slice(0, 10)),
+        };
+      }
+    } catch (e) {
+      console.warn("GAS getReview failed:", e);
+    }
+  }
+
+  if (!rev) {
+    await tg("answerCallbackQuery", {
+      callback_query_id: cb.id,
+      text: "Не удалось получить данные отзыва из CRM. Проверьте таблицу вручную.",
+      show_alert: true,
+    });
+    return;
+  }
+
+  try {
+    if (action === "ok") {
+      const result = await publishReview(rev);
+      await tg("answerCallbackQuery", { callback_query_id: cb.id, text: result.slice(0, 190) });
+      if (messageId) {
+        await tg("editMessageText", {
+          chat_id: ADMIN_CHAT, message_id: messageId,
+          text: `✅ <b>Опубликован</b> · ${esc(rev.id)}\n${esc(rev.doctorName)} — ${rev.rating}★\n<i>Деплой ~2–3 мин</i>`,
+          parse_mode: "HTML",
+        });
+      }
+    } else {
+      await updateGASStatus(rev.id, "3. Отклонён");
+      await tg("answerCallbackQuery", { callback_query_id: cb.id, text: `❌ Отзыв ${rev.id} отклонён` });
+      if (messageId) {
+        await tg("editMessageText", {
+          chat_id: ADMIN_CHAT, message_id: messageId,
+          text: `❌ <b>Отклонён</b> · ${esc(rev.id)}\n${esc(rev.doctorName)} — ${rev.rating}★`,
+          parse_mode: "HTML",
+        });
+      }
+    }
+  } catch (e) {
+    await tg("answerCallbackQuery", { callback_query_id: cb.id, text: `Ошибка: ${String(e).slice(0, 180)}`, show_alert: true });
+  }
+}
+
 async function ensureLabel(name: string) {
   try {
     await gh(`/repos/${REPO}/labels`, { method: "POST", body: JSON.stringify({ name, color: "0e8a16" }) });
@@ -306,9 +512,19 @@ async function rejectDoctor(issueNumber: number): Promise<string> {
 }
 
 async function handleCallback(cb: Record<string, unknown>) {
-  const chatId = String((cb.message as Record<string, unknown>)?.chat?.id ?? "");
-  const messageId = (cb.message as Record<string, unknown>)?.message_id;
+  const msg = cb.message as Record<string, unknown>;
+  const chatId = String((msg?.chat as Record<string, unknown>)?.id ?? "");
+  const messageId = msg?.message_id;
   const data = String(cb.data || "");
+
+  // Review moderation: rev_ok:<id> / rev_no:<id>
+  const revMatch = data.match(/^rev_(ok|no):(.+)$/);
+  if (revMatch) {
+    await handleReviewCallback(cb, revMatch[1] as "ok" | "no", revMatch[2]);
+    return;
+  }
+
+  // Doctor request moderation: ok:<issue> / no:<issue>
   const m = data.match(/^(ok|no):(\d+)$/);
   if (!m) { await tg("answerCallbackQuery", { callback_query_id: cb.id, text: "Неизвестное действие" }); return; }
   if (chatId !== String(ADMIN_CHAT)) {
@@ -401,6 +617,23 @@ async function handleTelegramUpdate(update: Record<string, unknown>) {
 
 Deno.serve(async (req: Request) => {
   const url = new URL(req.url);
+
+  // CORS preflight for review form
+  if (req.method === "OPTIONS") {
+    return new Response(null, {
+      status: 204,
+      headers: {
+        "Access-Control-Allow-Origin": "https://rudoctors.github.io",
+        "Access-Control-Allow-Methods": "POST, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type",
+      },
+    });
+  }
+
+  const corsHeaders = {
+    "Access-Control-Allow-Origin": "https://rudoctors.github.io",
+  };
+
   if (req.method === "POST" && url.pathname === "/telegram") {
     if (WEBHOOK_SECRET && req.headers.get("X-Telegram-Bot-Api-Secret-Token") !== WEBHOOK_SECRET) {
       return new Response("forbidden", { status: 403 });
@@ -409,6 +642,147 @@ Deno.serve(async (req: Request) => {
     try { await handleTelegramUpdate(update); } catch (e) { console.error("update error", e); }
     return new Response("ok");
   }
+
+  if (req.method === "POST" && url.pathname === "/api/review") {
+    try {
+      const data = await req.json().catch(() => ({}));
+
+      // Honeypot check
+      if (String(data.website_hp || "").trim()) {
+        return json({ ok: true }, 200); // silent drop
+      }
+
+      const doctorSlug = String(data.doctor_slug || "").trim().slice(0, 80);
+      const doctorName = String(data.doctor_name || doctorSlug).trim().slice(0, 120);
+      const author = String(data.author || "").trim().slice(0, 80);
+      const rating = Math.min(5, Math.max(1, Number(data.rating) || 5));
+      const text = String(data.text || "").trim().slice(0, 2000);
+
+      if (!doctorSlug || !author || text.length < 20) {
+        return new Response(
+          JSON.stringify({ ok: false, error: "Обязательные поля: врач, автор, текст (мин. 20 символов)" }),
+          { status: 400, headers: { "Content-Type": "application/json", ...corsHeaders } },
+        );
+      }
+
+      const id = reviewId();
+      const today = new Date().toISOString().slice(0, 10);
+      const rev: ReviewData = { id, doctorSlug, doctorName, author, rating, text, date: today };
+
+      // Write to Google Sheet CRM via GAS (non-blocking, best-effort)
+      sendToGAS(rev);
+
+      // Build Telegram message with embedded JSON for approval
+      // JSON is embedded as an HTML comment — invisible in TG, but parseable from message text
+      const tgText = reviewMessage(rev) + `\n<!--rev:${JSON.stringify(rev)}-->`;
+
+      await tg("sendMessage", {
+        chat_id: ADMIN_CHAT,
+        text: tgText,
+        parse_mode: "HTML",
+        link_preview_options: { is_disabled: true },
+        reply_markup: reviewKeyboard(id),
+      });
+
+      return new Response(
+        JSON.stringify({ ok: true, id }),
+        { status: 200, headers: { "Content-Type": "application/json", ...corsHeaders } },
+      );
+    } catch (e) {
+      console.error("review intake error", e);
+      return new Response(
+        JSON.stringify({ ok: false, error: String(e).slice(0, 200) }),
+        { status: 500, headers: { "Content-Type": "application/json", ...corsHeaders } },
+      );
+    }
+  }
+
+  // CORS preflight for review endpoint
+  const CORS_ORIGIN = "https://rudoctors.github.io";
+  if (req.method === "OPTIONS" && (url.pathname === "/api/review" || url.pathname === "/api/doctor-request")) {
+    return new Response(null, {
+      status: 204,
+      headers: {
+        "Access-Control-Allow-Origin": CORS_ORIGIN,
+        "Access-Control-Allow-Methods": "POST, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type",
+      },
+    });
+  }
+
+  function corsJson(data: unknown, status = 200): Response {
+    return new Response(JSON.stringify(data), {
+      status,
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": CORS_ORIGIN,
+      },
+    });
+  }
+
+  if (req.method === "POST" && url.pathname === "/api/review") {
+    try {
+      const data = await req.json().catch(() => ({}));
+
+      // Honeypot check
+      if (String(data.website_hp || "").trim()) {
+        return corsJson({ ok: true, id: "ignored" });
+      }
+
+      const doctorSlug = String(data.doctor_slug || "").trim().slice(0, 120);
+      const doctorName = String(data.doctor_name || "").trim().slice(0, 120);
+      const author     = String(data.author      || "").trim().slice(0, 80);
+      const rating     = Math.min(5, Math.max(1, Number(data.rating) || 5));
+      const text       = String(data.text        || "").trim().slice(0, 2000);
+
+      if (!doctorSlug || !author || text.length < 10) {
+        return corsJson({ ok: false, error: "Обязательные поля: doctor_slug, author, text (≥10 символов)" }, 400);
+      }
+
+      const id = reviewId();
+      const today = new Date().toISOString().slice(0, 10);
+      const rev: ReviewData = { id, doctorSlug, doctorName, author, rating, text, date: today };
+
+      // Write to Google Sheet via GAS and send Telegram card
+      if (GAS_REVIEW_URL) {
+        const gasRes = await fetch(GAS_REVIEW_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            doctor_slug: doctorSlug,
+            doctor_name: doctorName,
+            author,
+            rating,
+            text,
+          }),
+        }).catch((e) => { console.warn("GAS error:", e); return null; });
+        if (gasRes) {
+          const gasData = await gasRes.json().catch(() => ({})) as Record<string, unknown>;
+          // Use GAS-generated ID if available
+          if (gasData?.ok && gasData?.id) {
+            rev.id = String(gasData.id);
+          }
+        }
+      } else {
+        console.warn("GAS_REVIEW_WEBHOOK_URL not set, sending Telegram card only");
+      }
+
+      // Send Telegram notification with approve/reject buttons
+      await tg("sendMessage", {
+        chat_id: ADMIN_CHAT,
+        text: reviewMessage(rev),
+        parse_mode: "HTML",
+        link_preview_options: { is_disabled: true },
+        reply_markup: reviewKeyboard(rev.id),
+      });
+
+      return corsJson({ ok: true, id: rev.id });
+    } catch (e) {
+      console.error("review intake error", e);
+      return corsJson({ ok: false, error: String(e).slice(0, 200) }, 500);
+    }
+  }
+
   if (req.method === "POST" && url.pathname === "/api/doctor-request") {
     try {
       const data = await req.json().catch(() => ({}));
