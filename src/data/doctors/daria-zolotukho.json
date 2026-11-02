@@ -3,7 +3,8 @@
   "name": "Дарья Золотухо",
   "nameEn": "Daria Zolotukho",
   "specializations": [
-    "rheumatologist"
+    "rheumatologist",
+    "therapist"
   ],
   "specializationText": "Ревматолог, терапевт",
   "photo": "/photos/rd-76.webp",
@@ -86,5 +87,5 @@
     "google-sheets",
     "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-10-31"
+  "updatedAt": "2026-11-02"
 }

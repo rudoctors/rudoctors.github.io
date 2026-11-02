@@ -3,7 +3,8 @@
   "name": "Соловьева Евгения",
   "specializations": [
     "psychiatrist",
-    "neurologist"
+    "neurologist",
+    "therapist"
   ],
   "specializationText": "Психиатр, невролог, психотерапевт",
   "city": "Belgrade",
@@ -41,5 +42,5 @@
     "google-sheets",
     "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-10-31"
+  "updatedAt": "2026-11-02"
 }

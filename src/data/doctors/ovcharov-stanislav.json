@@ -3,7 +3,8 @@
   "name": "Овчаров Станислав",
   "specializations": [
     "pulmonologist",
-    "manual_therapist"
+    "manual_therapist",
+    "therapist"
   ],
   "specializationText": "Пульмонолог\nтерапевт\nмануальная терапия",
   "city": "Novi Sad",
@@ -28,5 +29,5 @@
     "google-sheets",
     "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-10-29"
+  "updatedAt": "2026-11-02"
 }

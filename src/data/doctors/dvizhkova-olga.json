@@ -2,7 +2,8 @@
   "slug": "dvizhkova-olga",
   "name": "Движкова Ольга",
   "specializations": [
-    "rheumatologist"
+    "rheumatologist",
+    "therapist"
   ],
   "specializationText": "Терапевт\nРевматолог",
   "city": "Belgrade",
@@ -29,5 +30,5 @@
     "google-sheets",
     "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-10-31"
+  "updatedAt": "2026-11-02"
 }

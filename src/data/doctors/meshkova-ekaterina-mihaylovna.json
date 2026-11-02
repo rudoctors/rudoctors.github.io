@@ -2,7 +2,8 @@
   "slug": "meshkova-ekaterina-mihaylovna",
   "name": "Мешкова Екатерина Михайловна",
   "specializations": [
-    "radiologist"
+    "radiologist",
+    "therapist"
   ],
   "city": "Belgrade",
   "languages": [
@@ -47,7 +48,7 @@
     "t.me/vrachivserbii",
     "rusdoctors.net"
   ],
-  "updatedAt": "2026-10-31",
+  "updatedAt": "2026-11-02",
   "bio": "Документы: Диплом РФ, сертификат рентгенолог РФ, постоянная лицензия ВОП Сербия",
   "specializationText": "Терапевт, Рентгенолог"
 }

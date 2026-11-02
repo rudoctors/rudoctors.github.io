@@ -3,7 +3,8 @@
   "name": "Большаков Дмитрий Андреевич",
   "specializations": [
     "psychiatrist",
-    "psychotherapist"
+    "psychotherapist",
+    "therapist"
   ],
   "specializationText": "психотерапевт\nпсихиатр\nсомнолог\n(рецепты не выписывает)",
   "city": "Belgrade",
@@ -27,5 +28,5 @@
     "google-sheets",
     "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-10-31"
+  "updatedAt": "2026-11-02"
 }

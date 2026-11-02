@@ -3,7 +3,8 @@
   "name": "Иванов Денис",
   "specializations": [
     "neurologist",
-    "manual_therapist"
+    "manual_therapist",
+    "therapist"
   ],
   "specializationText": "Невролог\nрефлексотерапевт\nмануальный терапевт",
   "city": "Novi Sad",
@@ -235,5 +236,5 @@
     "google-sheets",
     "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-10-31"
+  "updatedAt": "2026-11-02"
 }

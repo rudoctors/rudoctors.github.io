@@ -3,7 +3,8 @@
   "name": "Скрыпник Ирина Анатольевна",
   "specializations": [
     "pulmonologist",
-    "allergist"
+    "allergist",
+    "therapist"
   ],
   "specializationText": "Пульмонолог\nаллерголог\n терапевт",
   "experienceYears": 9,
@@ -62,5 +63,5 @@
     "t.me/vrachivserbii",
     "citilab.rs"
   ],
-  "updatedAt": "2026-10-31"
+  "updatedAt": "2026-11-02"
 }

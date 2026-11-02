@@ -4,7 +4,8 @@
   "specializations": [
     "psychiatrist",
     "narcologist",
-    "psychotherapist"
+    "psychotherapist",
+    "therapist"
   ],
   "specializationText": "психотерапевт\nпсихиатр нарколог",
   "city": "Belgrade",
@@ -85,5 +86,5 @@
     "google-sheets",
     "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-10-31"
+  "updatedAt": "2026-11-02"
 }
