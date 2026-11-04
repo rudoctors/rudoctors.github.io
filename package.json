@@ -11,6 +11,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "check": "astro check",
+    "check:relay": "deno check --no-config --sloppy-imports deno/doctor-relay.ts deno/review-intake.ts",
+    "check:review": "deno test --allow-read --no-config --sloppy-imports deno/review-flow.test.ts",
     "lint": "astro check",
     "seed": "node scripts/seed.mjs",
     "tg:bot": "node scripts/telegram-bot.mjs",
@@ -28,6 +30,7 @@
     "tag:en": "node scripts/tag-en-reviews.mjs",
     "translate": "node scripts/translate-reviews.mjs",
     "detect:dups": "node scripts/detect-dups.mjs",
+    "audit:clinics": "node scripts/clinics-audit.mjs",
     "photos:webp": "node scripts/convert-photos-webp.mjs",
     "refresh": "node scripts/fetch-sheet.mjs && node scripts/fetch-citilab.mjs && node scripts/seed.mjs && node scripts/tag-en-reviews.mjs && npm run check",
     "indexnow": "node scripts/indexnow.mjs"

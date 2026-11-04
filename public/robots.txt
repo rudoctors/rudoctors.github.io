@@ -4,6 +4,7 @@ Disallow: /admin/
 Disallow: /leave-review/
 Disallow: /add-doctor/
 Disallow: /packages/
+Disallow: /guides/
 
 # AI answer engines — allow indexing of public pages for citations
 User-agent: GPTBot

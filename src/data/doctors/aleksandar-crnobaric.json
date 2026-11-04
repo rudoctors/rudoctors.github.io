@@ -16,6 +16,7 @@
   "workplaces": [
     {
       "clinic": "MediGroup",
+      "clinicId": "medigroup-belgrade",
       "city": "Belgrade"
     }
   ],

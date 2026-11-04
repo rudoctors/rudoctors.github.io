@@ -1,7 +1,7 @@
 # Rudoctors — состояние проекта (state)
 
 Обновлено: 2026-09-24  
-Репозиторий: `https://github.com/rudoctors/rudoctors.github.io` (орг `rudoctors` под аккаунтом TheWayofDHD, ветка `main`)  
+Репозиторий: `https://github.com/rudoctors/rudoctors.github.io` (орг `rudoctors` под аккаунтом `Myusername-isnotavailable`, ветка `main`)  
 Локальная папка: `D:\Projects\rudoctors\site`  
 Live: `https://rudoctors.github.io`
 
@@ -206,7 +206,7 @@ gh run list --limit 5
 | Ресурс | Путь / URL |
 |--------|------------|
 | Control site | `D:\Projects\rudoctors\site` |
-| GitHub org | `rudoctors` (TheWayofDHD) |
+| GitHub org | `rudoctors` (`Myusername-isnotavailable`) |
 | Repo | `rudoctors/rudoctors.github.io` |
 | Pages | `https://rudoctors.github.io` |
 | State-файл | `D:\Projects\rudoctors\site\STATE.md` |

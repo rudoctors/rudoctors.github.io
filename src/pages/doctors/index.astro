@@ -4,12 +4,101 @@ import DoctorCard from "../../components/DoctorCard.astro";
 import Banner from "../../components/Banner.astro";
 import { publicDoctors, allSpecializationKeys, allCities, specLabel } from "../../lib/doctors";
 import { computeRating } from "../../lib/rating";
-import { SITE } from "../../lib/site";
+import { SITE, cityLabel } from "../../lib/site";
 
-const doctors = publicDoctors().map((d) => ({
-  doctor: d,
-  rating: computeRating(d),
-}));
+const PAGE_SIZE = 24;
+
+function decodeHtml(str: string): string {
+  return str
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&nbsp;/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function truncateText(str: string, max: number): string {
+  if (str.length <= max) return str;
+  const cut = str.slice(0, max);
+  const sp = cut.lastIndexOf(" ");
+  const head = sp > Math.floor(max * 0.6) ? cut.slice(0, sp) : cut;
+  return `${head.trimEnd()}…`;
+}
+
+// Default order = client default sort (rating avg desc, then reviews desc),
+// so the statically rendered first page matches what JS shows without filters.
+const ranked = publicDoctors()
+  .map((doctor) => ({ doctor, rating: computeRating(doctor) }))
+  .sort((a, b) => {
+    if (b.rating.average !== a.rating.average) return b.rating.average - a.rating.average;
+    return (b.doctor.reviews?.length || 0) - (a.doctor.reviews?.length || 0);
+  });
+
+const staticCards = ranked.slice(0, PAGE_SIZE);
+const total = ranked.length;
+const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+
+const specLabels: Record<string, string> = {};
+for (const { doctor } of ranked) {
+  for (const key of doctor.specializations) {
+    if (!(key in specLabels)) specLabels[key] = specLabel(key);
+  }
+}
+
+interface CatalogRecord {
+  s: string;
+  n: string;
+  c: string;
+  sp: string[];
+  f: string[];
+  l: string[];
+  rv: number;
+  cn: number;
+  ra: number;
+  e?: number;
+  ne?: string;
+  d?: string;
+  st?: string;
+  p?: string;
+  b?: string;
+}
+
+const records: CatalogRecord[] = ranked.map(({ doctor, rating }) => {
+  const rec: CatalogRecord = {
+    s: doctor.slug,
+    n: doctor.name,
+    c: doctor.city,
+    sp: doctor.specializations,
+    f: doctor.formats,
+    l: doctor.languages,
+    rv: doctor.reviews?.length || 0,
+    cn: rating.count,
+    ra: rating.average,
+  };
+  if (doctor.experienceYears) rec.e = doctor.experienceYears;
+  if (doctor.nameEn) rec.ne = doctor.nameEn;
+  if (doctor.district) rec.d = doctor.district;
+  if (doctor.specializationText) rec.st = doctor.specializationText;
+  if (doctor.photo) rec.p = doctor.photo;
+  const bio = doctor.bio ? truncateText(decodeHtml(doctor.bio), 160) : "";
+  if (bio) rec.b = bio;
+  return rec;
+});
+
+const catalogJson = JSON.stringify({
+  records,
+  labels: specLabels,
+  pageSize: PAGE_SIZE,
+}).replace(/</g, "\\u003c");
+
+const initialMeta =
+  totalPages > 1
+    ? `Всего: ${total} · страница 1 из ${totalPages} (по ${PAGE_SIZE})`
+    : `Найдено: ${total} из ${total}`;
 
 const specs = allSpecializationKeys();
 const cities = allCities();
@@ -57,7 +146,7 @@ const jsonLd = {
         <label class="block text-xs font-semibold text-slate-500 mb-1" for="city">Город</label>
         <select id="city" name="city" class="input">
           <option value="">Все</option>
-          {cities.map((c) => <option value={c}>{c}</option>)}
+          {cities.map((c) => <option value={c}>{cityLabel(c)}</option>)}
         </select>
       </div>
       <div class="md:col-span-2">
@@ -82,49 +171,23 @@ const jsonLd = {
           <input type="checkbox" name="withReviews" value="1" class="rounded border-slate-300 text-brand-600 focus:ring-brand-500" />
           Есть отзывы
         </label>
-        <button type="button" id="reset" class="text-sm text-slate-500 hover:text-slate-800 underline-offset-2 hover:underline ml-auto">
+        <button type="button" id="reset-filters" class="text-sm text-slate-500 hover:text-slate-800 underline-offset-2 hover:underline ml-auto">
           Сбросить
         </button>
       </div>
     </form>
 
-    <div id="result-meta" class="text-sm text-slate-500 mb-4" role="status" aria-live="polite"></div>
+    <div id="result-meta" class="text-sm text-slate-500 mb-4" role="status" aria-live="polite">{initialMeta}</div>
 
     <Banner placement="catalog-top" class="mb-6" />
 
     <div id="doctor-grid" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
       {
-        doctors.map(({ doctor }, index) => {
-          const specLabels = doctor.specializations.map(specLabel).join(" ");
-          const hay = [
-            doctor.name,
-            doctor.nameEn || "",
-            doctor.specializationText || "",
-            doctor.city,
-            doctor.district || "",
-            doctor.specializations.join(" "),
-            specLabels,
-          ]
-            .join(" ")
-            .toLowerCase();
-          return (
-            <div
-              class="doctor-item"
-              data-slug={doctor.slug}
-              data-name={doctor.name.toLowerCase()}
-              data-specs={doctor.specializations.join(",")}
-              data-search={hay}
-              data-city={doctor.city}
-              data-formats={doctor.formats.join(",")}
-              data-reviews={doctor.reviews?.length || 0}
-              data-rating={computeRating(doctor).average}
-              data-exp={doctor.experienceYears || 0}
-              data-langs={doctor.languages.join(",")}
-            >
-              <DoctorCard doctor={doctor} priority={index < 3} />
-            </div>
-          );
-        })
+        staticCards.map(({ doctor }, index) => (
+          <div class="doctor-item" data-slug={doctor.slug}>
+            <DoctorCard doctor={doctor} priority={index < 3} />
+          </div>
+        ))
       }
     </div>
 
@@ -141,175 +204,356 @@ const jsonLd = {
     <div id="empty" class="hidden card p-10 text-center text-slate-500">
       Ничего не найдено. Попробуйте изменить фильтры.
     </div>
+
+    <details id="all-doctors" class="card p-4 md:p-5 mt-8">
+      <summary class="cursor-pointer text-sm font-semibold text-slate-700 select-none">
+        Все врачи каталога ({total}) — полный список
+      </summary>
+      <div class="mt-3 flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-slate-600">
+        {
+          ranked.map(({ doctor }, i) => (
+            <>
+              {i > 0 && <span aria-hidden="true">·</span>}
+              <a href={`/doctors/${doctor.slug}/`} class="hover:text-brand-700 hover:underline">
+                {doctor.name}
+              </a>
+            </>
+          ))
+        }
+      </div>
+    </details>
+
+    <noscript>
+      <p class="mt-6 card p-4 text-sm text-slate-600">
+        Показаны первые {PAGE_SIZE} карточек. Фильтры, сортировка и постраничный просмотр работают при включённом
+        JavaScript; полный список врачей — в разделе «Все врачи каталога».
+      </p>
+    </noscript>
   </div>
-</Layout>
 
-<script define:vars={{ doctorCount: doctors.length }}>
-  const PAGE_SIZE = 24;
-  const form = document.getElementById("filters");
-  const grid = document.getElementById("doctor-grid");
-  const empty = document.getElementById("empty");
-  const meta = document.getElementById("result-meta");
-  const pager = document.getElementById("pager");
-  const pageLabel = document.getElementById("page-label");
-  const pagePrev = document.getElementById("page-prev");
-  const pageNext = document.getElementById("page-next");
-  const items = [...document.querySelectorAll(".doctor-item")];
-  const baseDocTitle = "Каталог врачей · Rudoctors";
+  <script type="application/json" id="catalog-data" set:html={catalogJson} />
 
-  let page = 1;
-
-  const params = new URLSearchParams(location.search);
-  const setFromParams = () => {
-    for (const [k, v] of params.entries()) {
-      const el = form.elements.namedItem(k);
-      if (!el) continue;
-      if (el.type === "checkbox") el.checked = v === "1" || v === "true";
-      else el.value = v;
-    }
-  };
-  setFromParams();
-
-  function hasActiveFilter(fd) {
-    return Boolean(
-      String(fd.get("q") || "").trim() ||
-        String(fd.get("spec") || "") ||
-        String(fd.get("city") || "") ||
-        fd.get("online") === "1" ||
-        fd.get("withReviews") === "1"
-    );
-  }
-
-  function setPageTitle(p, total, filteredNow) {
-    if (total <= 0 || p <= 1 || filteredNow) {
-      document.title = baseDocTitle;
-      return;
-    }
-    document.title = `Каталог врачей — страница ${p} · Rudoctors`;
-  }
-
-  function apply({ keepPage = false } = {}) {
-    const fd = new FormData(form);
-    const q = String(fd.get("q") || "").trim().toLowerCase();
-    const spec = String(fd.get("spec") || "");
-    const city = String(fd.get("city") || "");
-    const sort = String(fd.get("sort") || "rating");
-    const online = fd.get("online") === "1" || fd.get("on") === "on";
-    const withReviews = fd.get("withReviews") === "1" || fd.get("wr") === "on";
-    const onlineChecked = form.querySelector('[name="online"]')?.checked;
-    const reviewsChecked = form.querySelector('[name="withReviews"]')?.checked;
-    const filtered = hasActiveFilter(fd);
-
-    let matchCount = 0;
-    const matchedSet = new Set();
-    for (const item of items) {
-      const d = item.dataset;
-      let ok = true;
-      if (q) {
-        const hay = d.search || `${d.name} ${d.specs}`.toLowerCase();
-        if (!hay.includes(q)) ok = false;
-      }
-      if (spec && !(d.specs || "").split(",").includes(spec)) ok = false;
-      if (city && d.city !== city) ok = false;
-      if ((onlineChecked || online) && !(d.formats || "").includes("online")) ok = false;
-      if ((reviewsChecked || withReviews) && Number(d.reviews) < 1) ok = false;
-      if (ok) {
-        matchedSet.add(item);
-        matchCount++;
-      }
+  <script>
+    interface ClientRecord {
+      s: string;
+      n: string;
+      c: string;
+      sp: string[];
+      f: string[];
+      l: string[];
+      rv: number;
+      cn: number;
+      ra: number;
+      e?: number;
+      ne?: string;
+      d?: string;
+      st?: string;
+      p?: string;
+      b?: string;
+      hay?: string;
     }
 
-    // sort all items (stable DOM order for matched set)
-    const arr = items.slice();
-    arr.sort((a, b) => {
-      const da = a.dataset,
-        db = b.dataset;
-      if (sort === "name") return (da.name || "").localeCompare(db.name || "", "ru");
-      if (sort === "exp") return Number(db.exp) - Number(da.exp);
-      if (sort === "reviews") return Number(db.reviews) - Number(da.reviews);
-      const ra = Number(da.rating),
-        rb = Number(db.rating);
-      if (rb !== ra) return rb - ra;
-      return Number(db.reviews) - Number(da.reviews);
-    });
-    for (const el of arr) grid.appendChild(el);
-
-    // matched list in sorted DOM order (after sort)
-    const matched = arr.filter((el) => matchedSet.has(el));
-
-    // D2: empty filters → paginate 24; active filter → full list
-    if (!filtered) {
-      const totalPages = Math.max(1, Math.ceil(matchCount / PAGE_SIZE));
-      if (!keepPage) page = 1;
-      if (page > totalPages) page = totalPages;
-      const start = (page - 1) * PAGE_SIZE;
-      const end = start + PAGE_SIZE;
-      let visible = 0;
-      for (const item of items) {
-        const idx = matched.indexOf(item);
-        const ok = idx >= start && idx < end;
-        item.classList.toggle("hidden", !ok);
-        if (ok) visible++;
-      }
-      empty.classList.toggle("hidden", visible > 0);
-      meta.textContent =
-        totalPages > 1
-          ? `Всего: ${matchCount} · страница ${page} из ${totalPages} (по ${PAGE_SIZE})`
-          : `Найдено: ${matchCount} из ${doctorCount}`;
-      pager.classList.toggle("hidden", totalPages <= 1);
-      pager.classList.toggle("flex", totalPages > 1);
-      if (totalPages > 1) {
-        pageLabel.textContent = `Страница ${page} / ${totalPages}`;
-        pagePrev.disabled = page <= 1;
-        pageNext.disabled = page >= totalPages;
-      }
-      setPageTitle(page, matchCount, false);
-    } else {
-      for (const item of items) {
-        item.classList.toggle("hidden", !matchedSet.has(item));
-      }
-      empty.classList.toggle("hidden", matchCount > 0);
-      meta.textContent = `Найдено: ${matchCount} из ${doctorCount} (полный список)`;
-      pager.classList.add("hidden");
-      pager.classList.remove("flex");
-      page = 1;
-      setPageTitle(1, matchCount, true);
+    interface ClientData {
+      records: ClientRecord[];
+      labels: Record<string, string>;
+      pageSize: number;
     }
 
-    const next = new URLSearchParams();
-    for (const [k, v] of fd.entries()) if (v) next.set(k, String(v));
-    if (form.querySelector('[name="online"]')?.checked) next.set("online", "1");
-    if (form.querySelector('[name="withReviews"]')?.checked) next.set("withReviews", "1");
-    if (!filtered && page > 1) next.set("page", String(page));
-    const qs = next.toString();
-    history.replaceState(null, "", qs ? `${location.pathname}?${qs}` : location.pathname);
-  }
+    const ESCAPES: Record<string, string> = {
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#39;",
+    };
 
-  // restore page from URL when no filters
-  const pageParam = Number(params.get("page") || "1");
-  if (Number.isFinite(pageParam) && pageParam >= 1) page = pageParam;
+    function esc(value: string): string {
+      return String(value).replace(/[&<>"']/g, (c) => ESCAPES[c] || c);
+    }
 
-  form?.addEventListener("submit", (e) => {
-    e.preventDefault();
-    apply();
-  });
-  form?.addEventListener("change", () => apply({ keepPage: false }));
-  document.getElementById("reset")?.addEventListener("click", () => {
-    form.reset();
-    page = 1;
-    apply();
-  });
-  pagePrev?.addEventListener("click", () => {
-    if (page > 1) {
-      page--;
+    function plural(n: number, one: string, few: string, many: string): string {
+      const m10 = n % 10;
+      const m100 = n % 100;
+      if (m10 === 1 && m100 !== 11) return one;
+      if (m10 >= 2 && m10 <= 4 && (m10 < 10 || m10 >= 20)) return few;
+      return many;
+    }
+
+    const CITY_LABELS: Record<string, string> = {
+      Belgrade: "Белград",
+      "Novi Sad": "Нови-Сад",
+      "Niš": "Ниш",
+      "Pančevo": "Панчево",
+      Subotica: "Суботица",
+    };
+
+    function displayCity(city: string): string {
+      return CITY_LABELS[city] || city;
+    }
+
+    function boot(DATA: ClientData | null): void {
+      if (!DATA || !Array.isArray(DATA.records) || DATA.records.length === 0) return;
+
+      const records = DATA.records;
+      const labels: Record<string, string> = DATA.labels || {};
+      const PAGE_SIZE = Number(DATA.pageSize) || 24;
+      const doctorCount = records.length;
+
+      for (const r of records) {
+        r.hay = [
+          r.n,
+          r.ne || "",
+          r.st || "",
+          r.c,
+          displayCity(r.c),
+          r.d || "",
+          r.sp.join(" "),
+          r.sp.map((k) => labels[k] || k).join(" "),
+        ]
+          .join(" ")
+          .toLowerCase();
+      }
+
+      const formRaw = document.getElementById("filters");
+      const gridRaw = document.getElementById("doctor-grid");
+      const emptyRaw = document.getElementById("empty");
+      const metaRaw = document.getElementById("result-meta");
+      const pagerRaw = document.getElementById("pager");
+      const pageLabelRaw = document.getElementById("page-label");
+      const pagePrevRaw = document.getElementById("page-prev");
+      const pageNextRaw = document.getElementById("page-next");
+      if (
+        !(formRaw instanceof HTMLFormElement) ||
+        !gridRaw ||
+        !emptyRaw ||
+        !metaRaw ||
+        !pagerRaw ||
+        !pageLabelRaw ||
+        !(pagePrevRaw instanceof HTMLButtonElement) ||
+        !(pageNextRaw instanceof HTMLButtonElement)
+      ) {
+        return;
+      }
+      const form: HTMLFormElement = formRaw;
+      const grid: HTMLElement = gridRaw;
+      const empty: HTMLElement = emptyRaw;
+      const meta: HTMLElement = metaRaw;
+      const pager: HTMLElement = pagerRaw;
+      const pageLabel: HTMLElement = pageLabelRaw;
+      const pagePrev: HTMLButtonElement = pagePrevRaw;
+      const pageNext: HTMLButtonElement = pageNextRaw;
+
+      const baseDocTitle = "Каталог врачей · Rudoctors";
+      let page = 1;
+      // State currently reflected by the DOM (the static first page matches this default).
+      let renderedState = ["", "", "", "", ""].join("|") + "|1|rating";
+
+      const params = new URLSearchParams(location.search);
+      const setFromParams = () => {
+        for (const [k, v] of params.entries()) {
+          const el = form.elements.namedItem(k) as
+            | HTMLInputElement
+            | HTMLSelectElement
+            | RadioNodeList
+            | null;
+          if (!el) continue;
+          if (el instanceof HTMLInputElement && el.type === "checkbox") {
+            el.checked = v === "1" || v === "true";
+          } else {
+            el.value = v;
+          }
+        }
+      };
+      setFromParams();
+
+      function starsHtml(r: ClientRecord): string {
+        if (r.cn === 0) return `<span class="badge-new">Пока нет отзывов</span>`;
+        if (r.ra === 0) {
+          return `<span class="inline-flex items-center gap-1.5 text-xs font-medium text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md"><svg class="w-3.5 h-3.5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>${r.cn} ${plural(r.cn, "отзыв", "отзыва", "отзывов")}</span>`;
+        }
+        const full = Math.round(r.ra);
+        const shown = Math.min(5, Math.max(1, full));
+        const stars = "★".repeat(shown);
+        const rest = "★".repeat(5 - shown);
+        return `<div class="flex items-center gap-2"><span class="font-extrabold text-navy-900 text-sm">${r.ra.toFixed(1)}</span><span class="text-amber-400 tracking-tight text-xs" aria-hidden>${stars}<span class="text-slate-300">${rest}</span></span><span class="text-xs text-slate-500">${r.cn} ${plural(r.cn, "отзыв", "отзыва", "отзывов")}</span></div>`;
+      }
+
+      function cardHtml(r: ClientRecord, i: number): string {
+        const initials = r.n
+          .split(/\s+/)
+          .slice(0, 2)
+          .map((p) => p[0])
+          .join("")
+          .toUpperCase();
+        const eager = i < 3;
+        const media = r.p
+          ? `<img src="${esc(r.p)}" alt="${esc(r.n)}" width="72" height="72" loading="${eager ? "eager" : "lazy"}" fetchpriority="${eager ? "high" : "auto"}" class="h-16 w-16 rounded-2xl object-cover object-top bg-slate-100 ring-1 ring-slate-900/5 shadow-xs">`
+          : `<div class="h-16 w-16 rounded-2xl bg-teal-50 text-teal-800 ring-1 ring-teal-600/10 flex items-center justify-center font-bold text-lg select-none">${esc(initials)}</div>`;
+        const placeLine =
+          [displayCity(r.c), r.d].filter(Boolean).join(" · ") + (r.e ? ` · стаж ${r.e} лет` : "");
+        const chips = r.sp
+          .slice(0, 3)
+          .map((s) => `<span class="chip">${esc(labels[s] || s)}</span>`)
+          .join("");
+        const bio = r.b
+          ? `<p class="text-sm text-slate-600 line-clamp-2 leading-relaxed">${esc(r.b)}</p>`
+          : "";
+        const langs = r.l
+          .slice(0, 4)
+          .map((l) => `<span class="px-2 py-0.5 rounded-md bg-slate-100">${esc(l.toUpperCase())}</span>`)
+          .join("");
+        const formats =
+          (r.f.includes("online") ? `<span class="chip">Онлайн</span>` : "") +
+          (r.f.includes("offline")
+            ? `<span class="px-2 py-0.5 rounded-md bg-slate-100">Очно</span>`
+            : "");
+        const href = `/doctors/${esc(r.s)}/`;
+        return `<div class="doctor-item" data-slug="${esc(r.s)}"><article class="card p-5 flex flex-col gap-3.5"><div class="flex gap-4 items-start"><div class="shrink-0">${media}</div><div class="min-w-0 flex-1"><div class="flex flex-col gap-0.5"><a href="${href}" class="font-bold text-lg text-navy-900 hover:text-brand-700 leading-snug line-clamp-2">${esc(r.n)}</a><div class="text-xs text-slate-500">${esc(placeLine)}</div></div><div class="mt-2 flex flex-wrap gap-1.5">${chips}</div></div></div><div class="flex items-center justify-between text-xs text-slate-500">${starsHtml(r)}</div>${bio}<div class="mt-auto flex items-center justify-between gap-3 pt-2.5 border-t border-slate-100"><div class="flex flex-wrap gap-1.5 text-xs text-slate-500 min-w-0">${langs}${formats}</div><a href="${href}" class="btn-secondary !py-1.5 !px-3 text-xs whitespace-nowrap shrink-0" aria-label="Профиль: ${esc(r.n)}">Профиль →</a></div></article></div>`;
+      }
+
+      function hasActiveFilter(fd: FormData): boolean {
+        return Boolean(
+          String(fd.get("q") || "").trim() ||
+            String(fd.get("spec") || "") ||
+            String(fd.get("city") || "") ||
+            fd.get("online") === "1" ||
+            fd.get("withReviews") === "1"
+        );
+      }
+
+      function setPageTitle(p: number, totalCount: number, filteredNow: boolean): void {
+        if (totalCount <= 0 || p <= 1 || filteredNow) {
+          document.title = baseDocTitle;
+          return;
+        }
+        document.title = `Каталог врачей — страница ${p} · Rudoctors`;
+      }
+
+      function apply({ keepPage = false }: { keepPage?: boolean } = {}): void {
+        const fd = new FormData(form);
+        const q = String(fd.get("q") || "").trim().toLowerCase();
+        const spec = String(fd.get("spec") || "");
+        const city = String(fd.get("city") || "");
+        const sort = String(fd.get("sort") || "rating");
+        const onlineChecked = form.querySelector<HTMLInputElement>('[name="online"]')?.checked;
+        const reviewsChecked = form.querySelector<HTMLInputElement>('[name="withReviews"]')?.checked;
+        const online = fd.get("online") === "1" || fd.get("on") === "on" || onlineChecked;
+        const withReviews =
+          fd.get("withReviews") === "1" || fd.get("wr") === "on" || reviewsChecked;
+        const filtered = hasActiveFilter(fd);
+
+        const matched = records.filter((r) => {
+          if (q && !(r.hay || "").includes(q)) return false;
+          if (spec && !r.sp.includes(spec)) return false;
+          if (city && r.c !== city) return false;
+          if (online && !r.f.includes("online")) return false;
+          if (withReviews && r.rv < 1) return false;
+          return true;
+        });
+
+        matched.sort((a, b) => {
+          if (sort === "name") return a.n.toLowerCase().localeCompare(b.n.toLowerCase(), "ru");
+          if (sort === "exp") return (b.e || 0) - (a.e || 0);
+          if (sort === "reviews") return b.rv - a.rv;
+          if (b.ra !== a.ra) return b.ra - a.ra;
+          return b.rv - a.rv;
+        });
+
+        const matchCount = matched.length;
+        let visible: ClientRecord[] = [];
+        let pages = 1;
+
+        if (!filtered) {
+          pages = Math.max(1, Math.ceil(matchCount / PAGE_SIZE));
+          if (!keepPage) page = 1;
+          if (page > pages) page = pages;
+          visible = matched.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+        } else {
+          page = 1;
+          visible = matched;
+        }
+
+        const filterIdentity = [
+          String(fd.get("q") || "").trim(),
+          spec,
+          city,
+          online ? "1" : "",
+          withReviews ? "1" : "",
+        ].join("|");
+        const state = `${filterIdentity}|${page}|${sort}`;
+        if (state !== renderedState) {
+          grid.innerHTML = visible.map((r, i) => cardHtml(r, i)).join("");
+          renderedState = state;
+        }
+
+        empty.classList.toggle("hidden", visible.length > 0);
+
+        if (!filtered) {
+          meta.textContent =
+            pages > 1
+              ? `Всего: ${matchCount} · страница ${page} из ${pages} (по ${PAGE_SIZE})`
+              : `Найдено: ${matchCount} из ${doctorCount}`;
+          pager.classList.toggle("hidden", pages <= 1);
+          pager.classList.toggle("flex", pages > 1);
+          if (pages > 1) {
+            pageLabel.textContent = `Страница ${page} / ${pages}`;
+            pagePrev.disabled = page <= 1;
+            pageNext.disabled = page >= pages;
+          }
+          setPageTitle(page, matchCount, false);
+        } else {
+          meta.textContent = `Найдено: ${matchCount} из ${doctorCount} (полный список)`;
+          pager.classList.add("hidden");
+          pager.classList.remove("flex");
+          setPageTitle(1, matchCount, true);
+        }
+
+        const next = new URLSearchParams();
+        for (const [k, v] of fd.entries()) if (v) next.set(k, String(v));
+        if (form.querySelector<HTMLInputElement>('[name="online"]')?.checked) next.set("online", "1");
+        if (form.querySelector<HTMLInputElement>('[name="withReviews"]')?.checked) {
+          next.set("withReviews", "1");
+        }
+        if (!filtered && page > 1) next.set("page", String(page));
+        const qs = next.toString();
+        history.replaceState(null, "", qs ? `${location.pathname}?${qs}` : location.pathname);
+      }
+
+      const pageParam = Number(params.get("page") || "1");
+      if (Number.isFinite(pageParam) && pageParam >= 1) page = pageParam;
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        apply();
+      });
+      form.addEventListener("change", () => apply({ keepPage: false }));
+      document.getElementById("reset-filters")?.addEventListener("click", () => {
+        form.reset();
+        page = 1;
+        apply();
+      });
+      pagePrev.addEventListener("click", () => {
+        if (page > 1) {
+          page--;
+          apply({ keepPage: true });
+          document.getElementById("result-meta")?.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      });
+      pageNext.addEventListener("click", () => {
+        page++;
+        apply({ keepPage: true });
+        document.getElementById("result-meta")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
       apply({ keepPage: true });
-      document.getElementById("result-meta")?.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-  });
-  pageNext?.addEventListener("click", () => {
-    page++;
-    apply({ keepPage: true });
-    document.getElementById("result-meta")?.scrollIntoView({ behavior: "smooth", block: "start" });
-  });
-  apply({ keepPage: true });
-</script>
+
+    const dataEl = document.getElementById("catalog-data");
+    let payload: ClientData | null = null;
+    try {
+      payload = JSON.parse(dataEl?.textContent ?? "null") as ClientData | null;
+    } catch {
+      payload = null;
+    }
+    boot(payload);
+  </script>
+</Layout>

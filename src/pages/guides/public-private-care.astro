@@ -1,0 +1,96 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+const title = "Государственная поликлиника и приватная клиника";
+const description =
+  "Чем государственная поликлиника и приватная клиника в Сербии различаются по процессу поиска и записи; справочный гайд в статусе черновика.";
+
+const guide = {
+  slug: "public-private-care",
+  status: "draft",
+  source: "TBD — источник уточнить",
+  sourceDate: "TBD — дата уточнить",
+  medicalReview: "TBD — назначить ответственного",
+};
+---
+
+<Layout
+  title={title}
+  description={description}
+  noindex
+  breadcrumbs={[
+    { name: "Главная", path: "/" },
+    { name: "Гайды", path: "/guides/" },
+    { name: title, path: `/guides/${guide.slug}/` },
+  ]}
+>
+  <div class="mx-auto max-w-3xl px-4 py-12">
+    <div class="card p-4 mb-8 border-l-4 border-amber-400 bg-amber-50">
+      <p class="text-sm font-semibold text-amber-900">Черновик (draft)</p>
+      <p class="mt-1 text-sm text-slate-700">
+        Материал находится в статусе черновика: источник, дата и медицинское/источниковедческое
+        ревью ещё не заполнены. До заполнения этих данных текст не должен публиковаться.
+        Гайд не является медицинской рекомендацией и не заменяет консультацию врача.
+      </p>
+    </div>
+
+    <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900">{title}</h1>
+    <p class="mt-3 text-slate-600 leading-relaxed">
+      Как устроен поиск и запись в государственной поликлинике и в приватной клинике.
+      Материал подготовлен в статусе черновика и носит справочный, навигационный характер.
+    </p>
+
+    <h2 class="mt-10 font-extrabold text-xl text-navy-900">1. Государственная поликлиника</h2>
+    <p class="mt-2 text-slate-600">
+      В государственных поликлиниках доступ и очереди устроены по внутренним правилам учреждений.
+      Правила распределения и запись могут различаться в зависимости от клиники и региона.
+    </p>
+
+    <h2 class="mt-8 font-extrabold text-xl text-navy-900">2. Приватная клиника</h2>
+    <p class="mt-2 text-slate-600">
+      В приватных клиниках запись обычно проходит через клинику. Формат приёма может быть
+      офлайн или онлайн; конкретные условия нужно уточнять в клинике.
+    </p>
+
+    <h2 class="mt-8 font-extrabold text-xl text-navy-900">3. Связь с каталогом</h2>
+    <p class="mt-2 text-slate-600">
+      Каталог Rudoctors помогает найти врача и клинику. Сам выбор между государственной и
+      приватной моделью зависит от ситуации пациента и врача.
+    </p>
+
+    <div class="card p-6 mt-10 text-center">
+      <h2 class="font-extrabold text-navy-900">Что дальше</h2>
+      <div class="mt-4 flex flex-wrap justify-center gap-3">
+        <a href="/doctors/" class="btn-primary">Найти врача</a>
+        <a href="/guides/insurance-appointments/" class="btn-ghost">Страховка и запись</a>
+        <a href="/contacts/" class="btn-ghost">Связаться</a>
+      </div>
+    </div>
+
+    <div class="card p-5 mt-8">
+      <h2 class="font-extrabold text-navy-900">Статус материала</h2>
+      <dl class="mt-4 grid gap-4 sm:grid-cols-2 text-sm">
+        <div>
+          <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Статус</dt>
+          <dd class="mt-1 font-semibold text-slate-900">{guide.status}</dd>
+        </div>
+        <div>
+          <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Источник</dt>
+          <dd class="mt-1 text-slate-900">{guide.source}</dd>
+        </div>
+        <div>
+          <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Дата</dt>
+          <dd class="mt-1 text-slate-900">{guide.sourceDate}</dd>
+        </div>
+        <div>
+          <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Ревью</dt>
+          <dd class="mt-1 text-slate-900">{guide.medicalReview}</dd>
+        </div>
+      </dl>
+      <p class="mt-4 text-sm text-slate-600">
+        Требования к материалу: источник, дата и медицинское/источниковедческое ревью должны быть
+        заполнены ответственным до публикации. Пока значения не заполнены — публикация невозможна.
+      </p>
+    </div>
+  </div>
+</Layout>

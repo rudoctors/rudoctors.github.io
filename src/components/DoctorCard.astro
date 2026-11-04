@@ -2,6 +2,7 @@
 import type { Doctor } from "../lib/types";
 import { computeRating } from "../lib/rating";
 import { specLabel } from "../lib/doctors";
+import { cityLabel } from "../lib/site";
 import Stars from "./Stars.astro";
 
 interface Props {
@@ -65,7 +66,7 @@ const cleanBio = doctor.bio ? decodeHtml(doctor.bio) : "";
           {doctor.name}
         </a>
         <div class="text-xs text-slate-500">
-          {[doctor.city, doctor.district].filter(Boolean).join(" · ")}
+          {[cityLabel(doctor.city), doctor.district].filter(Boolean).join(" · ")}
           {doctor.experienceYears ? ` · стаж ${doctor.experienceYears} лет` : ""}
         </div>
       </div>
@@ -79,7 +80,7 @@ const cleanBio = doctor.bio ? decodeHtml(doctor.bio) : "";
   </div>
 
   <div class="flex items-center justify-between text-xs text-slate-500">
-    <Stars rating={rating.average} count={rating.count} size="sm" />
+    <Stars rating={rating.average} count={rating.ratedCount} textCount={rating.count - rating.ratedCount} size="sm" />
   </div>
 
   {

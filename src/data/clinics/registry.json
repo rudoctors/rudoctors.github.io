@@ -1,0 +1,2506 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-04",
+  "notes": "Auto-derived draft registry from existing doctor workplace strings. Names, addresses and coordinates are unverified and are not canonical until human review; no coordinates are asserted. Similar names are only reported by scripts/clinics-audit.mjs and are never merged automatically.",
+  "clinics": [
+    {
+      "id": "klinika-medigroup-belgrade",
+      "name": "Клиника MediGroup",
+      "city": "Belgrade",
+      "aliases": [],
+      "sources": [
+        "google-sheets",
+        "src/data/doctors/filipovi-aleksandar.json",
+        "src/data/doctors/vyazovetskaya-nina.json",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "klinika-medigroup-belgrade-loc-1",
+          "address": {
+            "value": "",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/filipovi-aleksandar.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/vyazovetskaya-nina.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "klinika-medigroup-nis",
+      "name": "Клиника MediGroup",
+      "city": "Niš",
+      "aliases": [],
+      "sources": [
+        "google-sheets",
+        "src/data/doctors/tkalich-oksana.json",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "klinika-medigroup-nis-loc-1",
+          "address": {
+            "value": "",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/tkalich-oksana.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "klinika-medigroup-novi-sad",
+      "name": "Клиника MediGroup",
+      "city": "Novi Sad",
+      "aliases": [],
+      "sources": [
+        "google-sheets",
+        "src/data/doctors/smolenceva-lyudmila.json",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "klinika-medigroup-novi-sad-loc-1",
+          "address": {
+            "value": "",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/smolenceva-lyudmila.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "poliklinika-citilab-belgrade",
+      "name": "Поликлиника CITILAB",
+      "city": "Belgrade",
+      "aliases": [],
+      "sources": [
+        "citilab.rs",
+        "google-sheets",
+        "src/data/doctors/gudovannaya-lyudmila-nikolaevna.json",
+        "src/data/doctors/pereshivko-anastasiya-igorevna.json",
+        "src/data/doctors/skrypnik-irina-anatolevna.json",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "poliklinika-citilab-belgrade-loc-1",
+          "address": {
+            "value": "Dubljanska 41, Belgrade",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/gudovannaya-lyudmila-nikolaevna.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/skrypnik-irina-anatolevna.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "poliklinika-citilab-belgrade-loc-2",
+          "address": {
+            "value": "",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/pereshivko-anastasiya-igorevna.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "poliklinika-citilab-novi-sad",
+      "name": "Поликлиника CITILAB",
+      "city": "Novi Sad",
+      "aliases": [],
+      "sources": [
+        "google-sheets",
+        "src/data/doctors/goncharuk-anastasiya.json",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "poliklinika-citilab-novi-sad-loc-1",
+          "address": {
+            "value": "",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/goncharuk-anastasiya.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "alfamedstar-belgrade",
+      "name": "AlfaMedStar",
+      "city": "Belgrade",
+      "aliases": [],
+      "sources": [
+        "citilab.rs",
+        "google-sheets",
+        "https://t.me/vrachivserbii/200475",
+        "https://t.me/vrachivserbii/202781",
+        "https://t.me/vrachivserbii/203386",
+        "rusdoctors.net",
+        "serbia.alfamedstar.com",
+        "src/data/doctors/aleksandra-yudina.json",
+        "src/data/doctors/diana-gorbunova.json",
+        "src/data/doctors/elena-bakovich.json",
+        "src/data/doctors/elizaveta-gracheva.json",
+        "src/data/doctors/igor-shtuchnyy.json",
+        "src/data/doctors/inga-sakeyan.json",
+        "src/data/doctors/kirill-kozyrev.json",
+        "src/data/doctors/konstantin-kovalev.json",
+        "src/data/doctors/konstantina-ivanovna-kovaleva.json",
+        "src/data/doctors/kristina-tokmakova.json",
+        "src/data/doctors/nadezhda-bakuleva.json",
+        "src/data/doctors/pavel-borisov.json",
+        "src/data/doctors/polina-sokolova.json",
+        "src/data/doctors/selivanovskaya-anna-sergeevna.json",
+        "src/data/doctors/timur-mukaev.json",
+        "src/data/doctors/vera-golysheva.json",
+        "src/data/doctors/yuliya-avakyanc.json",
+        "src/data/doctors/yuliya-ostanina.json",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "alfamedstar-belgrade-loc-1",
+          "address": {
+            "value": "Milentija Popovića 5v, Beograd 11000",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/aleksandra-yudina.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/diana-gorbunova.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/elizaveta-gracheva.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/igor-shtuchnyy.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/inga-sakeyan.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/kirill-kozyrev.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/kristina-tokmakova.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/nadezhda-bakuleva.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/pavel-borisov.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/polina-sokolova.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/timur-mukaev.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/vera-golysheva.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/yuliya-avakyanc.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/yuliya-ostanina.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "alfamedstar-belgrade-loc-2",
+          "address": {
+            "value": "",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/elena-bakovich.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/konstantin-kovalev.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/konstantina-ivanovna-kovaleva.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/selivanovskaya-anna-sergeevna.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "alfamedstar-novi-sad",
+      "name": "AlfaMedStar",
+      "city": "Novi Sad",
+      "aliases": [],
+      "sources": [
+        "google-sheets",
+        "rusdoctors.net",
+        "serbia.alfamedstar.com",
+        "src/data/doctors/igor-shtuchnyy.json",
+        "src/data/doctors/shtuchnyy-igor.json",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "alfamedstar-novi-sad-loc-1",
+          "address": {
+            "value": "",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/igor-shtuchnyy.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/shtuchnyy-igor.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "belmedic-belgrade",
+      "name": "BelMedic",
+      "city": "Belgrade",
+      "aliases": [],
+      "sources": [
+        "https://t.me/vrachivserbii/109602",
+        "https://t.me/vrachivserbii/110847",
+        "https://t.me/vrachivserbii/122721",
+        "https://t.me/vrachivserbii/144504",
+        "https://t.me/vrachivserbii/154642",
+        "https://t.me/vrachivserbii/75464",
+        "https://t.me/vrachivserbii/77387",
+        "https://t.me/vrachivserbii/95619",
+        "https://t.me/vrachivserbii/97431",
+        "src/data/doctors/andrej-bajec.json",
+        "src/data/doctors/boban-dordevic.json",
+        "src/data/doctors/bojan-markovic.json",
+        "src/data/doctors/dejan-stefanovic.json",
+        "src/data/doctors/jelena-dordevic.json",
+        "src/data/doctors/milan-yovanovich.json",
+        "src/data/doctors/nenad-zivkovic.json",
+        "src/data/doctors/nikolich-miryana.json",
+        "src/data/doctors/slavko-jankovic.json",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "belmedic-belgrade-loc-1",
+          "address": {
+            "value": "Kneginje Zorka 7",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/milan-yovanovich.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "belmedic-belgrade-loc-2",
+          "address": {
+            "value": "Koste Jovanovića 87",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/nenad-zivkovic.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "belmedic-belgrade-loc-3",
+          "address": {
+            "value": "",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/andrej-bajec.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/boban-dordevic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/bojan-markovic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/dejan-stefanovic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/jelena-dordevic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/nikolich-miryana.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/slavko-jankovic.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "cardios-novi-sad",
+      "name": "Cardios",
+      "city": "Novi Sad",
+      "aliases": [],
+      "sources": [
+        "https://t.me/vrachivserbii/129802",
+        "https://t.me/vrachivserbii/146642",
+        "src/data/doctors/dusan-banovic.json",
+        "src/data/doctors/emil-matovina.json",
+        "src/data/doctors/vesna-perisic.json",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "cardios-novi-sad-loc-1",
+          "address": {
+            "value": "",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/dusan-banovic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/emil-matovina.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/vesna-perisic.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "citilab-belgrade",
+      "name": "CITILAB",
+      "city": "Belgrade",
+      "aliases": [],
+      "sources": [
+        "citilab.rs",
+        "google-sheets",
+        "https://t.me/vrachivserbii/157826",
+        "https://t.me/vrachivserbii/185875",
+        "rusdoctors.net",
+        "src/data/doctors/borisova-mariya-evgenevna.json",
+        "src/data/doctors/callagova-elena-vladimirovna.json",
+        "src/data/doctors/dmitriev-sergey-anatolevich.json",
+        "src/data/doctors/gaydadym-vera-viktorovna.json",
+        "src/data/doctors/hvostikova-dina-evgenevna.json",
+        "src/data/doctors/ivleva-zulfiya-magomed-salamovna.json",
+        "src/data/doctors/kolchev-sergey-aleksandrovich.json",
+        "src/data/doctors/meshkova-ekaterina-mihaylovna.json",
+        "src/data/doctors/nonko-elena-viktorovna.json",
+        "src/data/doctors/rzaeva-kular-mamedovna.json",
+        "src/data/doctors/shlyahovskaya-olga-nikolaevna.json",
+        "src/data/doctors/vadim-igorevich-karpanin.json",
+        "src/data/doctors/vahrameev-sergey-sergeevich.json",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "citilab-belgrade-loc-1",
+          "address": {
+            "value": "Dubljanska 41",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/dmitriev-sergey-anatolevich.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "citilab-belgrade-loc-2",
+          "address": {
+            "value": "Dubljanska 41, Belgrade",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/borisova-mariya-evgenevna.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/callagova-elena-vladimirovna.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/gaydadym-vera-viktorovna.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/hvostikova-dina-evgenevna.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/ivleva-zulfiya-magomed-salamovna.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/kolchev-sergey-aleksandrovich.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/meshkova-ekaterina-mihaylovna.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/nonko-elena-viktorovna.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/rzaeva-kular-mamedovna.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/shlyahovskaya-olga-nikolaevna.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/vadim-igorevich-karpanin.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/vahrameev-sergey-sergeevich.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "doctorus-belgrade",
+      "name": "Doctorus",
+      "city": "Belgrade",
+      "aliases": [],
+      "sources": [
+        "google-sheets",
+        "rusdoctors.net",
+        "src/data/doctors/almikeeva-alisa.json",
+        "src/data/doctors/evgeniya-rumyanceva.json",
+        "src/data/doctors/grigorenko-viktoriya.json",
+        "src/data/doctors/kirill-prikhotkov.json",
+        "src/data/doctors/soloveva-evgeniya.json",
+        "src/data/doctors/tatiana-iarushina.json",
+        "src/data/doctors/yarushina-tatyana.json",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "doctorus-belgrade-loc-1",
+          "address": {
+            "value": "",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/almikeeva-alisa.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/evgeniya-rumyanceva.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/grigorenko-viktoriya.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/kirill-prikhotkov.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/soloveva-evgeniya.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/tatiana-iarushina.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/yarushina-tatyana.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "doctorus-expert-belgrade",
+      "name": "Doctorus Expert",
+      "city": "Belgrade",
+      "aliases": [],
+      "sources": [
+        "https://t.me/vrachivserbii/136686",
+        "https://t.me/vrachivserbii/147026",
+        "https://t.me/vrachivserbii/161566",
+        "https://t.me/vrachivserbii/177411",
+        "https://t.me/vrachivserbii/186514",
+        "https://t.me/vrachivserbii/190357",
+        "src/data/doctors/anastasiya-hromova.json",
+        "src/data/doctors/andrey-morozov.json",
+        "src/data/doctors/kravchenko-elena-arkadevna.json",
+        "src/data/doctors/natalya-hudyakova.json",
+        "t.me/vrachivserbii",
+        "telegram"
+      ],
+      "locations": [
+        {
+          "id": "doctorus-expert-belgrade-loc-1",
+          "address": {
+            "value": "Вишеградска 1А",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/anastasiya-hromova.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "doctorus-expert-belgrade-loc-2",
+          "address": {
+            "value": "Višegradska 1A",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/kravchenko-elena-arkadevna.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "doctorus-expert-belgrade-loc-3",
+          "address": {
+            "value": "Višegradska 1A, Savski Venac, Belgrade",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/natalya-hudyakova.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "doctorus-expert-belgrade-loc-4",
+          "address": {
+            "value": "",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/andrey-morozov.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "euromedic-belgrade",
+      "name": "Euromedic",
+      "city": "Belgrade",
+      "aliases": [],
+      "sources": [
+        "https://t.me/vrachivserbii/101062",
+        "https://t.me/vrachivserbii/105649",
+        "https://t.me/vrachivserbii/126636",
+        "https://t.me/vrachivserbii/128962",
+        "https://t.me/vrachivserbii/136363",
+        "https://t.me/vrachivserbii/143332",
+        "https://t.me/vrachivserbii/153597",
+        "https://t.me/vrachivserbii/194653",
+        "https://t.me/vrachivserbii/200265",
+        "https://t.me/vrachivserbii/35412",
+        "https://t.me/vrachivserbii/57734",
+        "https://t.me/vrachivserbii/66310",
+        "https://t.me/vrachivserbii/69885",
+        "https://t.me/vrachivserbii/80295",
+        "src/data/doctors/biljana-veljkovic.json",
+        "src/data/doctors/dragan-gunjic.json",
+        "src/data/doctors/dragoslava-andrejic.json",
+        "src/data/doctors/dusko-avramovic.json",
+        "src/data/doctors/jasna-vejnovic.json",
+        "src/data/doctors/marija-dokic.json",
+        "src/data/doctors/milena-pavlovic.json",
+        "src/data/doctors/milton-pesut.json",
+        "src/data/doctors/sandra-radovic.json",
+        "src/data/doctors/slavica-obradovic.json",
+        "src/data/doctors/slobodan-radulovic.json",
+        "src/data/doctors/svetlana-stefanovich.json",
+        "src/data/doctors/tamara-bogavac.json",
+        "src/data/doctors/zlatomir-srdanov.json",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "euromedic-belgrade-loc-1",
+          "address": {
+            "value": "Cara Dušana",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/marija-dokic.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "euromedic-belgrade-loc-2",
+          "address": {
+            "value": "Cvijićeva 42",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/tamara-bogavac.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "euromedic-belgrade-loc-3",
+          "address": {
+            "value": "Jurija Gagarina",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/sandra-radovic.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "euromedic-belgrade-loc-4",
+          "address": {
+            "value": "Nenadovića 7",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/jasna-vejnovic.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "euromedic-belgrade-loc-5",
+          "address": {
+            "value": "Pariske komune 22",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/biljana-veljkovic.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "euromedic-belgrade-loc-6",
+          "address": {
+            "value": "Pariske komune 22, Novi Beograd",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/dusko-avramovic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/milena-pavlovic.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "euromedic-belgrade-loc-7",
+          "address": {
+            "value": "Višegradska",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/milton-pesut.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "euromedic-belgrade-loc-8",
+          "address": {
+            "value": "Voždovac, Stefana Prvovenčanog 32",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/dragoslava-andrejic.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "euromedic-belgrade-loc-9",
+          "address": {
+            "value": "",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/dragan-gunjic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/slavica-obradovic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/slobodan-radulovic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/svetlana-stefanovich.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/zlatomir-srdanov.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "euromedic-novi-sad",
+      "name": "Euromedic",
+      "city": "Novi Sad",
+      "aliases": [],
+      "sources": [
+        "https://t.me/vrachivserbii/87451",
+        "src/data/doctors/milosh-sremchev.json",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "euromedic-novi-sad-loc-1",
+          "address": {
+            "value": "",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/milosh-sremchev.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "medigroup-belgrade",
+      "name": "MediGroup",
+      "city": "Belgrade",
+      "aliases": [],
+      "sources": [
+        "google-sheets",
+        "https://t.me/vrachivserbii/107587",
+        "https://t.me/vrachivserbii/117289",
+        "https://t.me/vrachivserbii/121057",
+        "https://t.me/vrachivserbii/128744",
+        "https://t.me/vrachivserbii/135998",
+        "https://t.me/vrachivserbii/136032",
+        "https://t.me/vrachivserbii/142666",
+        "https://t.me/vrachivserbii/142680",
+        "https://t.me/vrachivserbii/144500",
+        "https://t.me/vrachivserbii/146629",
+        "https://t.me/vrachivserbii/151812",
+        "https://t.me/vrachivserbii/157746",
+        "https://t.me/vrachivserbii/165588",
+        "https://t.me/vrachivserbii/165755",
+        "https://t.me/vrachivserbii/183725",
+        "https://t.me/vrachivserbii/194420",
+        "https://t.me/vrachivserbii/203358",
+        "https://t.me/vrachivserbii/31433",
+        "https://t.me/vrachivserbii/55646",
+        "https://t.me/vrachivserbii/56262",
+        "https://t.me/vrachivserbii/57737",
+        "https://t.me/vrachivserbii/60910",
+        "https://t.me/vrachivserbii/62693",
+        "https://t.me/vrachivserbii/67693",
+        "https://t.me/vrachivserbii/71258",
+        "https://t.me/vrachivserbii/71261",
+        "https://t.me/vrachivserbii/71328",
+        "https://t.me/vrachivserbii/95324",
+        "rusdoctors.net",
+        "src/data/doctors/aleksandar-crnobaric.json",
+        "src/data/doctors/aleksandar-stamenkovic.json",
+        "src/data/doctors/aleksandra-aleksic.json",
+        "src/data/doctors/aleksandra-pikula.json",
+        "src/data/doctors/bogosavlevich-svetlana.json",
+        "src/data/doctors/bozhidar-yakovlevich.json",
+        "src/data/doctors/branislav-duric.json",
+        "src/data/doctors/dana-brajovic.json",
+        "src/data/doctors/dmitrije-nikolic.json",
+        "src/data/doctors/dragana-matkovic.json",
+        "src/data/doctors/ekaterina-selina.json",
+        "src/data/doctors/elena-ianik.json",
+        "src/data/doctors/evseev-aleksey.json",
+        "src/data/doctors/mica-petrovacki.json",
+        "src/data/doctors/milan-nikolic.json",
+        "src/data/doctors/milica-kostic-andelic.json",
+        "src/data/doctors/miomir-kocic.json",
+        "src/data/doctors/nikola-mikelj.json",
+        "src/data/doctors/nikola-milekic.json",
+        "src/data/doctors/predrag-ilic.json",
+        "src/data/doctors/ranko-herin.json",
+        "src/data/doctors/sandra-nedovic.json",
+        "src/data/doctors/vesna-muhic.json",
+        "t.me/vrachivserbii",
+        "telegram"
+      ],
+      "locations": [
+        {
+          "id": "medigroup-belgrade-loc-1",
+          "address": {
+            "value": "бульвар Александра",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/bogosavlevich-svetlana.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "medigroup-belgrade-loc-2",
+          "address": {
+            "value": "бульвар Милутина Миланковича, 3",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/evseev-aleksey.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "medigroup-belgrade-loc-3",
+          "address": {
+            "value": "Прием в Нови саде в двух локациях: DZ MedoGroup Sajam, Cara Dušana, в Белграде: DZ MediGroup Jedro.",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/elena-ianik.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "medigroup-belgrade-loc-4",
+          "address": {
+            "value": "Belgrade, Serbia",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/mica-petrovacki.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "medigroup-belgrade-loc-5",
+          "address": {
+            "value": "Bulevar oslobođenja 321",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/ekaterina-selina.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "medigroup-belgrade-loc-6",
+          "address": {
+            "value": "Gospodar Jovanova 51",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/aleksandra-pikula.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "medigroup-belgrade-loc-7",
+          "address": {
+            "value": "Jurija Gagarina 14",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/vesna-muhic.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "medigroup-belgrade-loc-8",
+          "address": {
+            "value": "Kralja Aleksandra",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/branislav-duric.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/nikola-milekic.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "medigroup-belgrade-loc-9",
+          "address": {
+            "value": "Milutina Milankovića 3",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/milica-kostic-andelic.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "medigroup-belgrade-loc-10",
+          "address": {
+            "value": "Pariske komune 26",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/miomir-kocic.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "medigroup-belgrade-loc-11",
+          "address": {
+            "value": "",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/aleksandar-crnobaric.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/aleksandar-stamenkovic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/aleksandra-aleksic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/bozhidar-yakovlevich.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/dana-brajovic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/dmitrije-nikolic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/dragana-matkovic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/milan-nikolic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/nikola-mikelj.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/predrag-ilic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/ranko-herin.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/sandra-nedovic.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "medigroup-novi-sad",
+      "name": "MediGroup",
+      "city": "Novi Sad",
+      "aliases": [],
+      "sources": [
+        "https://t.me/vrachivserbii/115477",
+        "https://t.me/vrachivserbii/144769",
+        "https://t.me/vrachivserbii/165755",
+        "https://t.me/vrachivserbii/186192",
+        "https://t.me/vrachivserbii/194420",
+        "https://t.me/vrachivserbii/200407",
+        "https://t.me/vrachivserbii/203358",
+        "https://t.me/vrachivserbii/206006",
+        "https://t.me/vrachivserbii/55229",
+        "src/data/doctors/darko-uzelac.json",
+        "src/data/doctors/dijana-savic-bjelica.json",
+        "src/data/doctors/ekaterina-selina.json",
+        "src/data/doctors/kivikangas-regina.json",
+        "src/data/doctors/sandra-kljajic.json",
+        "src/data/doctors/yuliya-sekretova.json",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "medigroup-novi-sad-loc-1",
+          "address": {
+            "value": "Balzakova 44",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/darko-uzelac.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "medigroup-novi-sad-loc-2",
+          "address": {
+            "value": "Cara Dušana",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/dijana-savic-bjelica.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/sandra-kljajic.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "medigroup-novi-sad-loc-3",
+          "address": {
+            "value": "Cara Dusana 26",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/ekaterina-selina.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "medigroup-novi-sad-loc-4",
+          "address": {
+            "value": "",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/kivikangas-regina.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/yuliya-sekretova.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "medigroup-kalenic-belgrade",
+      "name": "MediGroup Kalenič",
+      "city": "Belgrade",
+      "aliases": [],
+      "sources": [
+        "https://t.me/vrachivserbii/114568",
+        "https://t.me/vrachivserbii/114569",
+        "https://t.me/vrachivserbii/181416",
+        "https://t.me/vrachivserbii/55949",
+        "https://t.me/vrachivserbii/55951",
+        "https://t.me/vrachivserbii/72160",
+        "https://t.me/vrachivserbii/74217",
+        "src/data/doctors/aleksandra-dmitrievic.json",
+        "src/data/doctors/predrag-skovric.json",
+        "src/data/doctors/svetlana-petrovic.json",
+        "src/data/doctors/vladimir-gordic.json",
+        "src/data/doctors/zorka-popovic.json",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "medigroup-kalenic-belgrade-loc-1",
+          "address": {
+            "value": "",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/aleksandra-dmitrievic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/predrag-skovric.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/svetlana-petrovic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/vladimir-gordic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/zorka-popovic.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "new-hospital-novi-sad",
+      "name": "New Hospital",
+      "city": "Novi Sad",
+      "aliases": [],
+      "sources": [
+        "https://t.me/vrachivserbii/109674",
+        "https://t.me/vrachivserbii/142735",
+        "https://t.me/vrachivserbii/146808",
+        "https://t.me/vrachivserbii/175139",
+        "https://t.me/vrachivserbii/186598",
+        "https://t.me/vrachivserbii/68566",
+        "src/data/doctors/baygerov-aleksandr-georgievich.json",
+        "src/data/doctors/jadranka-dragas.json",
+        "src/data/doctors/mile-bjelobrk.json",
+        "src/data/doctors/omar-fata-nahhas.json",
+        "src/data/doctors/snezana-blazic.json",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "new-hospital-novi-sad-loc-1",
+          "address": {
+            "value": "",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/baygerov-aleksandr-georgievich.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/jadranka-dragas.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/mile-bjelobrk.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/omar-fata-nahhas.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/snezana-blazic.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "palkin-dental-center-belgrade",
+      "name": "Palkin Dental Center",
+      "city": "Belgrade",
+      "aliases": [],
+      "sources": [
+        "https://t.me/vrachivserbii/135813",
+        "https://t.me/vrachivserbii/138896",
+        "https://t.me/vrachivserbii/146007",
+        "https://t.me/vrachivserbii/176675",
+        "https://t.me/vrachivserbii/191355",
+        "https://t.me/vrachivserbii/191889",
+        "https://t.me/vrachivserbii/193757",
+        "https://t.me/vrachivserbii/196216",
+        "https://t.me/vrachivserbii/196304",
+        "https://t.me/vrachivserbii/196349",
+        "https://t.me/vrachivserbii/200367",
+        "https://t.me/vrachivserbii/200659",
+        "https://t.me/vrachivserbii/201193",
+        "https://t.me/vrachivserbii/206032",
+        "https://t.me/vrachivserbii/206430",
+        "https://t.me/vrachivserbii/207629",
+        "https://t.me/vrachivserbii/209131",
+        "https://t.me/vrachivserbii/209221",
+        "src/data/doctors/alexandra-bruma.json",
+        "src/data/doctors/anna-firsova.json",
+        "src/data/doctors/bakay-vladislav-andreevich.json",
+        "src/data/doctors/bobyleva-anastasiya-igorevna.json",
+        "src/data/doctors/denisenko-anton-aleksandrovich.json",
+        "src/data/doctors/dmitriy-sergeevich-chernov.json",
+        "src/data/doctors/ekaterina-serdyukova.json",
+        "src/data/doctors/ivana-drazic.json",
+        "src/data/doctors/nadezhda-hromova.json",
+        "src/data/doctors/nurova-malika-farhodovna.json",
+        "src/data/doctors/sava-markovic.json",
+        "src/data/doctors/semenova-anastasiya-aleksandrovna.json",
+        "src/data/doctors/strahinja-ilic.json",
+        "src/data/doctors/zhelobova-olga-vasilevna.json",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "palkin-dental-center-belgrade-loc-1",
+          "address": {
+            "value": "Делиградска, 6",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/bakay-vladislav-andreevich.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/bobyleva-anastasiya-igorevna.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/denisenko-anton-aleksandrovich.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/dmitriy-sergeevich-chernov.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/zhelobova-olga-vasilevna.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "palkin-dental-center-belgrade-loc-2",
+          "address": {
+            "value": "Deligradska",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/sava-markovic.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "palkin-dental-center-belgrade-loc-3",
+          "address": {
+            "value": "Deligradska 6",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/ekaterina-serdyukova.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/nurova-malika-farhodovna.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "palkin-dental-center-belgrade-loc-4",
+          "address": {
+            "value": "",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/alexandra-bruma.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/anna-firsova.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/ivana-drazic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/nadezhda-hromova.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/semenova-anastasiya-aleksandrovna.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/strahinja-ilic.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "prva-poliklinika-belgrade",
+      "name": "Prva Poliklinika",
+      "city": "Belgrade",
+      "aliases": [],
+      "sources": [
+        "https://t.me/vrachivserbii/112173",
+        "https://t.me/vrachivserbii/157859",
+        "https://t.me/vrachivserbii/74137",
+        "https://t.me/vrachivserbii/76975",
+        "https://t.me/vrachivserbii/87423",
+        "https://t.me/vrachivserbii/95084",
+        "https://t.me/vrachivserbii/95320",
+        "src/data/doctors/igor-krdic.json",
+        "src/data/doctors/jelena-petrovic.json",
+        "src/data/doctors/miljanka-vuksanovic.json",
+        "src/data/doctors/miodrag-ilic.json",
+        "src/data/doctors/sanja-dragasevic.json",
+        "src/data/doctors/vladimir-aleksandrovich-chernovskiy.json",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "prva-poliklinika-belgrade-loc-1",
+          "address": {
+            "value": "Krunska 38",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/miodrag-ilic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/vladimir-aleksandrovich-chernovskiy.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "prva-poliklinika-belgrade-loc-2",
+          "address": {
+            "value": "",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/igor-krdic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/jelena-petrovic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/miljanka-vuksanovic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/sanja-dragasevic.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "smile-on-belgrade",
+      "name": "Smile ON",
+      "city": "Belgrade",
+      "aliases": [],
+      "sources": [
+        "src/data/doctors/daria-golubets.json",
+        "src/data/doctors/igor-golubets.json",
+        "src/data/doctors/mariya-sidorova.json",
+        "src/data/doctors/sergey-prokopyev.json",
+        "telegram"
+      ],
+      "locations": [
+        {
+          "id": "smile-on-belgrade-loc-1",
+          "address": {
+            "value": "West 65 Tower, Omladinskih brigada 86, Novi Beograd",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/daria-golubets.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/igor-golubets.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/mariya-sidorova.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/sergey-prokopyev.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "vizim-belgrade",
+      "name": "Vizim",
+      "city": "Belgrade",
+      "aliases": [],
+      "sources": [
+        "https://t.me/vrachivserbii/105649",
+        "https://t.me/vrachivserbii/110076",
+        "https://t.me/vrachivserbii/127113",
+        "https://t.me/vrachivserbii/143485",
+        "https://t.me/vrachivserbii/144500",
+        "https://t.me/vrachivserbii/144504",
+        "https://t.me/vrachivserbii/146629",
+        "https://t.me/vrachivserbii/153158",
+        "https://t.me/vrachivserbii/174861",
+        "https://t.me/vrachivserbii/183725",
+        "https://t.me/vrachivserbii/185455",
+        "https://t.me/vrachivserbii/188515",
+        "https://t.me/vrachivserbii/191555",
+        "https://t.me/vrachivserbii/203358",
+        "https://t.me/vrachivserbii/31433",
+        "https://t.me/vrachivserbii/60910",
+        "https://t.me/vrachivserbii/98009",
+        "src/data/doctors/anna-mirzoeva.json",
+        "src/data/doctors/anna-sarkisova.json",
+        "src/data/doctors/denis-vladimirovich-vdovin.json",
+        "src/data/doctors/dimitriadis-diana.json",
+        "src/data/doctors/dragan-cirovic.json",
+        "src/data/doctors/evseev-aleksey.json",
+        "src/data/doctors/jelena-stevovski-radovic.json",
+        "src/data/doctors/kovalev-mihail.json",
+        "src/data/doctors/petkovich-darya.json",
+        "src/data/doctors/snezana-stojanovic-manojlovic.json",
+        "src/data/doctors/zorana-rosic.json",
+        "src/data/doctors/zugic-vladimir.json",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "vizim-belgrade-loc-1",
+          "address": {
+            "value": "Zdravka Čelara 14",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/zugic-vladimir.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "vizim-belgrade-loc-2",
+          "address": {
+            "value": "Zdravka Čelara 14a",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/jelena-stevovski-radovic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/kovalev-mihail.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "vizim-belgrade-loc-3",
+          "address": {
+            "value": "",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/anna-mirzoeva.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/anna-sarkisova.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/denis-vladimirovich-vdovin.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/dimitriadis-diana.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/dragan-cirovic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/evseev-aleksey.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/petkovich-darya.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/snezana-stojanovic-manojlovic.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/zorana-rosic.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "vizim-novi-sad",
+      "name": "Vizim",
+      "city": "Novi Sad",
+      "aliases": [],
+      "sources": [
+        "https://t.me/vrachivserbii/136730",
+        "https://t.me/vrachivserbii/182636",
+        "https://t.me/vrachivserbii/185455",
+        "src/data/doctors/denis-vladimirovich-vdovin.json",
+        "src/data/doctors/ekaterina-gennadievna-chervyacova.json",
+        "src/data/doctors/femic-marko.json",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "vizim-novi-sad-loc-1",
+          "address": {
+            "value": "Futoški put, 87",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/ekaterina-gennadievna-chervyacova.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "vizim-novi-sad-loc-2",
+          "address": {
+            "value": "",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/denis-vladimirovich-vdovin.json",
+                "retrievedAt": "2026-11-04"
+              },
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/femic-marko.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "zepter-dental-belgrade",
+      "name": "Zepter Dental",
+      "city": "Belgrade",
+      "aliases": [],
+      "sources": [
+        "https://t.me/vrachivserbii/120260",
+        "https://t.me/vrachivserbii/137502",
+        "https://t.me/vrachivserbii/147420",
+        "https://t.me/vrachivserbii/186319",
+        "https://t.me/vrachivserbii/194609",
+        "src/data/doctors/anastasia-larina.json",
+        "src/data/doctors/bagaev-ilya-georgievich.json",
+        "src/data/doctors/vislobokova-elena.json",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "zepter-dental-belgrade-loc-1",
+          "address": {
+            "value": "Краља Петра 32",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/vislobokova-elena.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "zepter-dental-belgrade-loc-2",
+          "address": {
+            "value": "Kralja Petra",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/anastasia-larina.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        },
+        {
+          "id": "zepter-dental-belgrade-loc-3",
+          "address": {
+            "value": "",
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": [
+              {
+                "kind": "doctor-workplace",
+                "ref": "src/data/doctors/bagaev-ilya-georgievich.json",
+                "retrievedAt": "2026-11-04"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": null,
+            "verification": "unverified",
+            "verifiedAt": null,
+            "verifiedBy": null,
+            "provenance": []
+          }
+        }
+      ]
+    }
+  ]
+}

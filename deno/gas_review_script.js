@@ -10,6 +10,9 @@
 
 const SHEET_NAME = "Отзывы";
 const REVIEW_PREFIX = "RD-";
+// Единый порог текста: такой же, как в браузере (leave-review.astro) и relay
+// (deno/review-intake.ts -> REVIEW_TEXT_MIN). Проверяется deno/review-flow.test.ts.
+const TEXT_MIN = 30;
 
 // ── helpers ──────────────────────────────────────────────────────────────────
 
@@ -129,11 +132,14 @@ function doPost(e) {
     const doctor_slug = String(data.doctor_slug || "").trim().slice(0, 120);
     const doctor_name = String(data.doctor_name || "").trim().slice(0, 120);
     const author      = String(data.author      || "").trim().slice(0, 80);
-    const rating      = parseInt(data.rating, 10) || 5;
+    // Оценка НЕобязательна: только целые 1..5 попадают в таблицу,
+    // всё прочее (отсутствует/битая/0/6) остаётся пустым — НИКОГДА не подменяется на 5.
+    const ratingRaw   = Number(data.rating);
+    const ratingValue = Number.isInteger(ratingRaw) && ratingRaw >= 1 && ratingRaw <= 5 ? ratingRaw : "";
     const text        = String(data.text        || "").trim().slice(0, 2000);
 
-    if (!doctor_slug || !author || text.length < 10) {
-      return createJsonResponse_({ ok: false, error: "Обязательные поля: doctor_slug, author, text (≥10 симв.)" });
+    if (!doctor_slug || !author || text.length < TEXT_MIN) {
+      return createJsonResponse_({ ok: false, error: "Обязательные поля: doctor_slug, author, text (мин. " + TEXT_MIN + " симв.); оценка 1–5 — необязательно" });
     }
 
     const id = generateId_();
@@ -144,13 +150,13 @@ function doPost(e) {
     const sheet = getSheet_();
     sheet.appendRow([
       id, dateFormatted, "1. Новый", doctor_slug, doctor_name,
-      author, rating, text, ""
+      author, ratingValue, text, ""
     ]);
     const lastRow = sheet.getLastRow();
     sheet.getRange(lastRow, 1, 1, 9).setVerticalAlignment("top");
 
     // Telegram-карточка с кнопками
-    notifyTelegram_({ id, dateFormatted, doctor_slug, doctor_name, author, rating, text });
+    notifyTelegram_({ id, dateFormatted, doctor_slug, doctor_name, author, rating: ratingValue, text });
 
     return createJsonResponse_({ ok: true, id });
 
@@ -245,7 +251,10 @@ function notifyTelegram_({ id, dateFormatted, doctor_slug, doctor_name, author, 
   const chatId = tgChat_();
   if (!chatId) return;
 
-  const stars = "⭐".repeat(Math.min(Math.max(parseInt(rating, 10), 1), 5));
+  const hasRating = rating !== "" && rating !== null && rating !== undefined;
+  const stars = hasRating
+    ? "⭐".repeat(Math.min(Math.max(parseInt(rating, 10), 1), 5))
+    : "";
   const preview = text.length > 300 ? text.slice(0, 300) + "…" : text;
 
   const message =
@@ -253,7 +262,7 @@ function notifyTelegram_({ id, dateFormatted, doctor_slug, doctor_name, author, 
     "<b>Врач:</b> " + escHtml_(doctor_name || doctor_slug) + "\n" +
     "<b>Slug:</b> <code>" + escHtml_(doctor_slug) + "</code>\n" +
     "<b>Автор:</b> " + escHtml_(author) + "\n" +
-    "<b>Оценка:</b> " + rating + "/5 " + stars + "\n" +
+    "<b>Оценка:</b> " + (hasRating ? rating + "/5 " + stars : "— (без оценки)") + "\n" +
     "<b>Дата:</b> " + dateFormatted + "\n\n" +
     escHtml_(preview);
 

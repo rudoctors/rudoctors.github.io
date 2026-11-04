@@ -17,6 +17,7 @@
 | `npm run translate` | Запасной API-перевод (no-op без `TRANSLATE_API_KEY`); основной путь — ИИ-агент |
 | `npm run photos:webp` | JPG → WebP 512px + rewrite `photo` в JSON |
 | `npm run detect:dups` | Поиск дублей имён |
+| `npm run audit:clinics` | Read-only аудит реестра клиник, provenance и publication gates |
 | `astro dev --background` | Dev-сервер в фоне (см. AGENTS.md) |
 
 ## Структура

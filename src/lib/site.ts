@@ -92,3 +92,21 @@ export function citySlug(city: string): string {
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 }
+
+/**
+ * Safe Russian display label for a canonical city value coming from doctor data.
+ * Only real cities present in the dataset are localized; unknown values pass
+ * through unchanged so no facts are invented.
+ */
+const CITY_LABELS_RU: Record<string, string> = {
+  Belgrade: "Белград",
+  "Novi Sad": "Нови-Сад",
+  "Niš": "Ниш",
+  "Pančevo": "Панчево",
+  Subotica: "Суботица",
+};
+
+export function cityLabel(city: string | null | undefined): string {
+  const key = String(city || "").trim();
+  return CITY_LABELS_RU[key] || key;
+}

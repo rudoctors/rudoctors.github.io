@@ -39,8 +39,9 @@ const doctors = publicDoctors()
           <input id="author" name="author" class="input" required maxlength="80" placeholder="Анна" autocomplete="name" />
         </div>
         <div>
-          <label class="block text-sm font-semibold mb-1" for="rating">Оценка</label>
-          <select id="rating" name="rating" class="input" required>
+          <label class="block text-sm font-semibold mb-1" for="rating">Оценка (необязательно)</label>
+          <select id="rating" name="rating" class="input">
+            <option value="">Без оценки</option>
             <option value="5">5 — отлично</option>
             <option value="4">4 — хорошо</option>
             <option value="3">3 — нормально</option>
@@ -154,7 +155,11 @@ const doctors = publicDoctors()
     const doctorSlug = String(fd.get("doctor") || "").trim();
     const doctorName = sel?.selectedOptions[0]?.text || doctorSlug;
     const author = String(fd.get("author") || "").trim();
-    const rating = String(fd.get("rating") || "5").trim();
+    const ratingRaw = String(fd.get("rating") || "").trim();
+    const ratingNum = Number(ratingRaw);
+    // Оценка опциональна: отправляем поле ТОЛЬКО когда выбрано целое 1..5.
+    // Пустая оценка → без rating в JSON; никакого «|| 5» — на relay-стороне тоже.
+    const hasRating = ratingRaw !== "" && Number.isInteger(ratingNum) && ratingNum >= 1 && ratingNum <= 5;
     const text = String(fd.get("text") || "").trim();
 
     // Client-side validation
@@ -187,7 +192,7 @@ const doctors = publicDoctors()
           doctor_slug: doctorSlug,
           doctor_name: doctorName,
           author,
-          rating: Number(rating),
+          ...(hasRating ? { rating: ratingNum } : {}),
           text,
           website_hp: String(fd.get("website_trap") || ""),
         }),

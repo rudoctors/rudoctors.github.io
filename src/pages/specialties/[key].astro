@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import DoctorCard from "../../components/DoctorCard.astro";
 import { allSpecializationKeys, publicDoctors, specLabel } from "../../lib/doctors";
+import { cityLabel } from "../../lib/site";
 import intros from "../../data/specialty-intros.json";
 
 export function getStaticPaths() {
@@ -25,7 +26,7 @@ const intro =
 const citiesPresent = [...new Set(doctors.map((d) => d.city))];
 const faqLine =
   citiesPresent.length > 0
-    ? `Запись к врачу-специалисту «${label}» возможна в: ${citiesPresent.join(", ")}.`
+    ? `Запись к врачу-специалисту «${label}» возможна в: ${citiesPresent.map(cityLabel).join(", ")}.`
     : `Карточки специалистов «${label}» появляются в каталоге по мере проверки данных.`;
 ---
 

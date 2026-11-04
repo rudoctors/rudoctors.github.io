@@ -43,7 +43,9 @@ export function computeRating(doctor: Doctor): RatingSummary {
     .filter((x): x is { r: Review; score: number } => x.score !== null);
 
   if (scored.length === 0) {
-    return { average: 0, count: all.length, weighted: 0, breakdown: {} };
+    // Нет ни одной валидной числовой оценки: среднее 0 → AggregateRating не публикуется.
+    // count = все текстовые отзывы; ratedCount = 0.
+    return { average: 0, count: all.length, ratedCount: 0, weighted: 0, breakdown: {} };
   }
 
   let wSum = 0;
@@ -65,8 +67,7 @@ export function computeRating(doctor: Doctor): RatingSummary {
   }
 
   const count = scored.length;
-  const prior = 3.5;
-  const priorWeight = 2;
+  const prior = 3.5;  const priorWeight = 2;
   const rawAvg = sum / count;
   const shrunk = (rawAvg * count + prior * priorWeight) / (count + priorWeight);
   const weighted = wTotal > 0 ? wSum / wTotal : shrunk;
@@ -74,7 +75,11 @@ export function computeRating(doctor: Doctor): RatingSummary {
 
   return {
     average: Math.round(finalAvg * 100) / 100,
-    count,
+    // count = ВСЕ релевантные отзывы (текстовые + с оценкой) → заголовок «Отзывы (N)»
+    // совпадает со списком; ratedCount = только числа 1..5, вошедшие в average
+    // → столько же публикуется в AggregateRating.reviewCount (согласованность).
+    count: all.length,
+    ratedCount: scored.length,
     weighted: Math.round(weighted * 100) / 100,
     breakdown,
   };

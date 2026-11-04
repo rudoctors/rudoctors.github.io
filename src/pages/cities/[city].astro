@@ -2,7 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import DoctorCard from "../../components/DoctorCard.astro";
 import { allCities, publicDoctors, specLabel } from "../../lib/doctors";
-import { citySlug } from "../../lib/site";
+import { citySlug, cityLabel, SITE, SCHEMA_IDS } from "../../lib/site";
 import cityIntros from "../../data/city-intros.json";
 
 export function getStaticPaths() {
@@ -17,6 +17,7 @@ interface Props {
 }
 
 const { city } = Astro.props;
+const cityRu = cityLabel(city);
 const doctors = publicDoctors().filter((d) => d.city === city);
 const specCounts = [...new Set(doctors.flatMap((d) => d.specializations))]
   .map((k) => ({ k, label: specLabel(k), n: doctors.filter((d) => d.specializations.includes(k)).length }))
@@ -25,27 +26,40 @@ const specCounts = [...new Set(doctors.flatMap((d) => d.specializations))]
 const introsMap = cityIntros as Record<string, string>;
 const intro =
   introsMap[city] ||
-  `Русскоязычные врачи в ${city}: рейтинги, отзывы пациентов, специализации и контакты. ${doctors.length} карточек в каталоге Rudoctors.`;
+  `Русскоязычные врачи в ${cityRu}, Сербия: рейтинги, отзывы пациентов, специализации и контакты. ${doctors.length} карточек в каталоге Rudoctors.`;
 const cityPath = `/cities/${citySlug(city)}/`;
 ---
 
 <Layout
-  title={`Врачи в ${city}`}
-  description={`Русскоязычные врачи в ${city}, Сербия: рейтинги, отзывы, специальности и контакты. ${doctors.length} карточек — запись к врачу.`}
+  title={`Врачи в ${cityRu}, Сербия`}
+  description={`Русскоязычные врачи в ${cityRu}, Сербия: рейтинги, отзывы, специальности и контакты. ${doctors.length} карточек — запись к врачу.`}
+  jsonLd={{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: `Врачи в ${cityRu}, Сербия`,
+    url: `${SITE.url}${cityPath}`,
+    description: `Русскоязычные врачи в ${cityRu}, Сербия: рейтинги, отзывы, специальности и контакты.`,
+    isPartOf: { "@id": SCHEMA_IDS.website },
+    about: {
+      "@type": "City",
+      name: cityRu,
+      containedInPlace: { "@type": "Country", name: "Сербия" },
+    },
+  }}
   breadcrumbs={[
     { name: "Главная", path: "/" },
     { name: "Города", path: "/cities/" },
-    { name: city, path: cityPath },
+    { name: cityRu, path: cityPath },
   ]}
 >
   <div class="mx-auto max-w-6xl px-4 py-10">
     <nav class="text-sm text-slate-500 mb-6">
       <a href="/cities/" class="hover:text-brand-700">Города</a>
       <span class="mx-2">/</span>
-      <span class="text-slate-800">{city}</span>
+      <span class="text-slate-800">{cityRu}</span>
     </nav>
 
-    <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900">Врачи в {city}</h1>
+    <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900">Врачи в {cityRu}</h1>
     <p class="mt-2 text-slate-600">{doctors.length} карточек в каталоге</p>
     <div class="mt-4 max-w-3xl text-slate-700 leading-relaxed">
       <p>{intro}</p>

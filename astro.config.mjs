@@ -8,10 +8,10 @@ export default defineConfig({
   site: "https://rudoctors.github.io",
   trailingSlash: "always",
   redirects: {
-    "/doctors/prahov-aleksey": "/doctors/aleksej-pravov",
-    "/doctors/yanik-elena": "/doctors/elena-ianik",
-    "/doctors/pozharickaya-elena": "/doctors/elena-pozharickaya",
-    "/doctors/shtuchnyy-igor": "/doctors/igor-shtuchnyy",
+    "/doctors/prahov-aleksey": "/doctors/aleksej-pravov/",
+    "/doctors/yanik-elena": "/doctors/elena-ianik/",
+    "/doctors/pozharickaya-elena": "/doctors/elena-pozharickaya/",
+    "/doctors/shtuchnyy-igor": "/doctors/igor-shtuchnyy/",
   },
   integrations: [
     sitemap({
@@ -19,7 +19,8 @@ export default defineConfig({
         !page.includes("/admin/") &&
         !page.includes("/leave-review") &&
         !page.includes("/add-doctor") &&
-        !page.includes("/packages"),
+        !page.includes("/packages") &&
+        !page.includes("/guides"),
     }),
   ],
   vite: {

@@ -4,9 +4,11 @@ import { plural } from "../lib/site";
 interface Props {
   rating: number;
   count: number;
+  /** Отзывы без числовой оценки (текстовые) — показываются бейджем, когда оценок нет. */
+  textCount?: number;
   size?: "sm" | "md" | "lg";
 }
-const { rating, count, size = "md" } = Astro.props;
+const { rating, count, textCount = 0, size = "md" } = Astro.props;
 const full = Math.round(rating);
 const textClass = size === "lg" ? "text-3xl" : size === "sm" ? "text-sm" : "text-lg";
 const starClass = size === "lg" ? "text-xl" : size === "sm" ? "text-xs" : "text-sm";
@@ -14,14 +16,16 @@ const starClass = size === "lg" ? "text-xl" : size === "sm" ? "text-xs" : "text-
 
 {
   count === 0 ? (
-    <span class="badge-new">Пока нет отзывов</span>
-  ) : rating === 0 ? (
-    <span class="inline-flex items-center gap-1.5 text-xs font-medium text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md">
-      <svg class="w-3.5 h-3.5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-      </svg>
-      {count} {plural(count, "отзыв", "отзыва", "отзывов")}
-    </span>
+    textCount > 0 ? (
+      <span class="inline-flex items-center gap-1.5 text-xs font-medium text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md">
+        <svg class="w-3.5 h-3.5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+        </svg>
+        {textCount} {plural(textCount, "отзыв", "отзыва", "отзывов")}
+      </span>
+    ) : (
+      <span class="badge-new">Пока нет отзывов</span>
+    )
   ) : (
     <div class="flex items-center gap-2">
       <span class={`font-extrabold text-navy-900 ${textClass}`}>{rating.toFixed(1)}</span>
@@ -29,7 +33,7 @@ const starClass = size === "lg" ? "text-xl" : size === "sm" ? "text-xs" : "text-
         {"★".repeat(Math.min(5, Math.max(1, full)))}
         <span class="text-slate-300">{"★".repeat(Math.max(0, 5 - Math.min(5, Math.max(1, full))))}</span>
       </span>
-      <span class="text-xs text-slate-500">{count} {plural(count, "отзыв", "отзыва", "отзывов")}</span>
+      <span class="text-xs text-slate-500">{count} {plural(count, "оценка", "оценки", "оценок")}</span>
     </div>
   )
 }

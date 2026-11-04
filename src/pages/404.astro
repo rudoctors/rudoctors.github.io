@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { allCities } from "../lib/doctors";
-import { citySlug } from "../lib/site";
+import { citySlug, cityLabel } from "../lib/site";
 
 const cities = allCities()
   .map((c) => ({
@@ -46,7 +46,7 @@ const cities = allCities()
         {
           cities.map((c) => (
             <a href={c.href} class="chip hover:bg-brand-100">
-              {c.city}
+              {cityLabel(c.city)}
             </a>
           ))
         }

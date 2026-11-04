@@ -21,6 +21,8 @@ const GH_TOKEN = Deno.env.get("GITHUB_TOKEN") || "";
 const WEBHOOK_SECRET = Deno.env.get("WEBHOOK_SECRET") || "";
 const GAS_REVIEW_URL = Deno.env.get("GAS_REVIEW_WEBHOOK_URL") || "";
 const DIR_DOCTORS = "src/data/doctors";
+const CORS_ORIGIN = "https://rudoctors.github.io";
+import { normalizeReview, parseOptionalRating, type ReviewInput } from "./review-intake.ts";
 const LABEL_REQUEST = "doctor-request";
 const LABEL_SENT = "tg-sent";
 const INTAKE_MARKER = "🩺 Заявка для каталога Rudoctors";
@@ -262,13 +264,8 @@ async function sendCard(issueNumber: number, fields: Fields) {
 
 // ─── Review CRM ──────────────────────────────────────────────────────────────
 
-interface ReviewData {
-  id: string;         // RD-YYMM-XXX
-  doctorSlug: string;
-  doctorName: string;
-  author: string;
-  rating: number;
-  text: string;
+interface ReviewData extends ReviewInput {
+  id: string;         // RD-YYMM-NNN (от GAS или локально)
   date: string;       // ISO YYYY-MM-DD
 }
 
@@ -278,29 +275,6 @@ function reviewId(): string {
   const yymm = `${String(now.getFullYear()).slice(2)}${String(now.getMonth() + 1).padStart(2, "0")}`;
   const suffix = String(Math.floor(100 + Math.random() * 900));
   return `RD-${yymm}-${suffix}`;
-}
-
-/** Send review data to Google Apps Script CRM (writes to Google Sheet + sends Telegram card from GAS). */
-async function sendToGAS(rev: Omit<ReviewData, "id">): Promise<string | null> {
-  if (!GAS_REVIEW_URL) return null;
-  try {
-    const res = await fetch(GAS_REVIEW_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        doctor_slug: rev.doctorSlug,
-        doctor_name: rev.doctorName,
-        author: rev.author,
-        rating: rev.rating,
-        text: rev.text,
-      }),
-    });
-    const data = await res.json().catch(() => ({})) as Record<string, unknown>;
-    return data?.ok ? String(data.id || "") : null;
-  } catch (e) {
-    console.warn("GAS CRM write failed:", e);
-    return null;
-  }
 }
 
 /** Update review status in GAS Sheet by review ID. */
@@ -314,13 +288,15 @@ async function updateGASStatus(id: string, status: string): Promise<void> {
 
 /** Build Telegram card for a new review, with approve/reject inline buttons. */
 function reviewMessage(rev: ReviewData): string {
-  const stars = "⭐".repeat(rev.rating) + (rev.rating < 5 ? "☆".repeat(5 - rev.rating) : "");
+  const ratingLine = rev.rating !== null
+    ? `<b>Оценка:</b> ${"⭐".repeat(rev.rating)}${rev.rating < 5 ? "☆".repeat(5 - rev.rating) : ""} ${rev.rating}/5`
+    : "<b>Оценка:</b> — (без оценки)";
   return [
     `💬 <b>Новый отзыв</b> · <code>${esc(rev.id)}</code>`,
     "",
     `<b>Врач:</b> ${esc(rev.doctorName)} (<code>${esc(rev.doctorSlug)}</code>)`,
     `<b>Автор:</b> ${esc(rev.author)}`,
-    `<b>Оценка:</b> ${stars} ${rev.rating}/5`,
+    ratingLine,
     `<b>Дата:</b> ${esc(rev.date)}`,
     "",
     `<b>Текст:</b>`,
@@ -351,11 +327,12 @@ async function publishReview(rev: ReviewData): Promise<string> {
     throw new Error(`Врач не найден: ${path} — ${String(e).slice(0, 120)}`);
   }
 
-  // Append review
+  // Append review; rating is written ONLY when a valid 1..5 was supplied.
+  // Text-only (scoreless) reviews must never carry an invented `rating: 5`.
   const reviews = Array.isArray(existing.reviews) ? existing.reviews : [];
   const newReview = {
     author: rev.author,
-    rating: rev.rating,
+    ...(rev.rating !== null ? { rating: rev.rating } : {}),
     text: rev.text,
     date: rev.date,
     source: `rudoctors-crm#${rev.id}`,
@@ -414,7 +391,8 @@ async function handleReviewCallback(
           doctorSlug: String(r.doctor_slug || ""),
           doctorName: String(r.doctor_name || ""),
           author:     String(r.author || ""),
-          rating:     Number(r.rating) || 5,
+          // Оценка опциональна: пустая/битая из таблицы → null, никогда не подменяется на 5
+          rating:     parseOptionalRating(r.rating),
           text:       String(r.text || ""),
           date:       String(r.date || new Date().toISOString().slice(0, 10)),
         };
@@ -440,7 +418,7 @@ async function handleReviewCallback(
       if (messageId) {
         await tg("editMessageText", {
           chat_id: ADMIN_CHAT, message_id: messageId,
-          text: `✅ <b>Опубликован</b> · ${esc(rev.id)}\n${esc(rev.doctorName)} — ${rev.rating}★\n<i>Деплой ~2–3 мин</i>`,
+          text: `✅ <b>Опубликован</b> · ${esc(rev.id)}\n${esc(rev.doctorName)} — ${rev.rating !== null ? `${rev.rating}★` : "без оценки"}\n<i>Деплой ~2–3 мин</i>`,
           parse_mode: "HTML",
         });
       }
@@ -450,7 +428,7 @@ async function handleReviewCallback(
       if (messageId) {
         await tg("editMessageText", {
           chat_id: ADMIN_CHAT, message_id: messageId,
-          text: `❌ <b>Отклонён</b> · ${esc(rev.id)}\n${esc(rev.doctorName)} — ${rev.rating}★`,
+          text: `❌ <b>Отклонён</b> · ${esc(rev.id)}\n${esc(rev.doctorName)} — ${rev.rating !== null ? `${rev.rating}★` : "без оценки"}`,
           parse_mode: "HTML",
         });
       }
@@ -623,7 +601,7 @@ Deno.serve(async (req: Request) => {
     return new Response(null, {
       status: 204,
       headers: {
-        "Access-Control-Allow-Origin": "https://rudoctors.github.io",
+        "Access-Control-Allow-Origin": CORS_ORIGIN,
         "Access-Control-Allow-Methods": "POST, OPTIONS",
         "Access-Control-Allow-Headers": "Content-Type",
       },
@@ -631,7 +609,7 @@ Deno.serve(async (req: Request) => {
   }
 
   const corsHeaders = {
-    "Access-Control-Allow-Origin": "https://rudoctors.github.io",
+    "Access-Control-Allow-Origin": CORS_ORIGIN,
   };
 
   if (req.method === "POST" && url.pathname === "/telegram") {
@@ -643,72 +621,14 @@ Deno.serve(async (req: Request) => {
     return new Response("ok");
   }
 
-  if (req.method === "POST" && url.pathname === "/api/review") {
-    try {
-      const data = await req.json().catch(() => ({}));
-
-      // Honeypot check
-      if (String(data.website_hp || "").trim()) {
-        return json({ ok: true }, 200); // silent drop
-      }
-
-      const doctorSlug = String(data.doctor_slug || "").trim().slice(0, 80);
-      const doctorName = String(data.doctor_name || doctorSlug).trim().slice(0, 120);
-      const author = String(data.author || "").trim().slice(0, 80);
-      const rating = Math.min(5, Math.max(1, Number(data.rating) || 5));
-      const text = String(data.text || "").trim().slice(0, 2000);
-
-      if (!doctorSlug || !author || text.length < 20) {
-        return new Response(
-          JSON.stringify({ ok: false, error: "Обязательные поля: врач, автор, текст (мин. 20 символов)" }),
-          { status: 400, headers: { "Content-Type": "application/json", ...corsHeaders } },
-        );
-      }
-
-      const id = reviewId();
-      const today = new Date().toISOString().slice(0, 10);
-      const rev: ReviewData = { id, doctorSlug, doctorName, author, rating, text, date: today };
-
-      // Write to Google Sheet CRM via GAS (non-blocking, best-effort)
-      sendToGAS(rev);
-
-      // Build Telegram message with embedded JSON for approval
-      // JSON is embedded as an HTML comment — invisible in TG, but parseable from message text
-      const tgText = reviewMessage(rev) + `\n<!--rev:${JSON.stringify(rev)}-->`;
-
-      await tg("sendMessage", {
-        chat_id: ADMIN_CHAT,
-        text: tgText,
-        parse_mode: "HTML",
-        link_preview_options: { is_disabled: true },
-        reply_markup: reviewKeyboard(id),
-      });
-
-      return new Response(
-        JSON.stringify({ ok: true, id }),
-        { status: 200, headers: { "Content-Type": "application/json", ...corsHeaders } },
-      );
-    } catch (e) {
-      console.error("review intake error", e);
-      return new Response(
-        JSON.stringify({ ok: false, error: String(e).slice(0, 200) }),
-        { status: 500, headers: { "Content-Type": "application/json", ...corsHeaders } },
-      );
-    }
-  }
-
-  // CORS preflight for review endpoint
-  const CORS_ORIGIN = "https://rudoctors.github.io";
-  if (req.method === "OPTIONS" && (url.pathname === "/api/review" || url.pathname === "/api/doctor-request")) {
-    return new Response(null, {
-      status: 204,
-      headers: {
-        "Access-Control-Allow-Origin": CORS_ORIGIN,
-        "Access-Control-Allow-Methods": "POST, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type",
-      },
-    });
-  }
+  // ── Единственный канонический вход отзывов ────────────────────────────────
+  // ВАЖНО: ровно ОДИН обработчик POST /api/review. Второй (дублированный) блок
+  // удалён — раньше у копий расходились правила (порог текста 10 vs 20,
+  // `rating || 5`), что порождало scoreless-отзывы с выдуманной оценкой 5.
+  // Валидация общая с браузером: deno/review-intake.ts.
+  //
+  // CORS preflight: обрабатывается в общем OPTIONS-блоке выше (один, до
+  // разбора маршрутов); второй блок-дубликат здесь не нужен.
 
   function corsJson(data: unknown, status = 200): Response {
     return new Response(JSON.stringify(data), {
@@ -722,28 +642,23 @@ Deno.serve(async (req: Request) => {
 
   if (req.method === "POST" && url.pathname === "/api/review") {
     try {
-      const data = await req.json().catch(() => ({}));
+      const data = await req.json().catch(() => ({})) as Record<string, unknown>;
 
       // Honeypot check
       if (String(data.website_hp || "").trim()) {
         return corsJson({ ok: true, id: "ignored" });
       }
 
-      const doctorSlug = String(data.doctor_slug || "").trim().slice(0, 120);
-      const doctorName = String(data.doctor_name || "").trim().slice(0, 120);
-      const author     = String(data.author      || "").trim().slice(0, 80);
-      const rating     = Math.min(5, Math.max(1, Number(data.rating) || 5));
-      const text       = String(data.text        || "").trim().slice(0, 2000);
-
-      if (!doctorSlug || !author || text.length < 10) {
-        return corsJson({ ok: false, error: "Обязательные поля: doctor_slug, author, text (≥10 символов)" }, 400);
+      const normalized = normalizeReview(data);
+      if (!normalized.ok) {
+        return corsJson({ ok: false, error: normalized.error }, 400);
       }
+      const { doctorSlug, doctorName, author, rating, text } = normalized.review;
 
-      const id = reviewId();
       const today = new Date().toISOString().slice(0, 10);
-      const rev: ReviewData = { id, doctorSlug, doctorName, author, rating, text, date: today };
 
       // Write to Google Sheet via GAS and send Telegram card
+      let gasId: string | null = null;
       if (GAS_REVIEW_URL) {
         const gasRes = await fetch(GAS_REVIEW_URL, {
           method: "POST",
@@ -760,12 +675,17 @@ Deno.serve(async (req: Request) => {
           const gasData = await gasRes.json().catch(() => ({})) as Record<string, unknown>;
           // Use GAS-generated ID if available
           if (gasData?.ok && gasData?.id) {
-            rev.id = String(gasData.id);
+            gasId = String(gasData.id);
           }
         }
       } else {
         console.warn("GAS_REVIEW_WEBHOOK_URL not set, sending Telegram card only");
       }
+
+      const rev: ReviewData = {
+        id: gasId !== null ? gasId : reviewId(),
+        doctorSlug, doctorName, author, rating, text, date: today,
+      };
 
       // Send Telegram notification with approve/reject buttons
       await tg("sendMessage", {

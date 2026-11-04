@@ -18,6 +18,7 @@
   "workplaces": [
     {
       "clinic": "CITILAB",
+      "clinicId": "citilab-belgrade",
       "address": "Dubljanska 41, Belgrade",
       "city": "Belgrade",
       "url": "https://citilab.rs/ru"

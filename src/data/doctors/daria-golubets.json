@@ -36,6 +36,7 @@
   "workplaces": [
     {
       "clinic": "Smile ON",
+      "clinicId": "smile-on-belgrade",
       "address": "West 65 Tower, Omladinskih brigada 86, Novi Beograd",
       "city": "Belgrade",
       "district": "Novi Beograd"

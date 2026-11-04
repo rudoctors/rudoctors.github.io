@@ -15,6 +15,7 @@
   "workplaces": [
     {
       "clinic": "Palkin Dental Center",
+      "clinicId": "palkin-dental-center-belgrade",
       "address": "Делиградска, 6",
       "city": "Belgrade"
     }
