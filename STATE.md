@@ -1,7 +1,7 @@
 # Rudoctors — состояние проекта (state)
 
 Обновлено: 2026-09-24  
-Репозиторий: `https://github.com/rudoctors/rudoctors.github.io` (орг `rudoctors` под аккаунтом `Myusername-isnotavailable`, ветка `main`)  
+Репозиторий: `https://github.com/rudoctors/rudoctors.github.io` (орг `rudoctors` под аккаунтом `Myusername-isnotavailable`, ветка `main`)
 Локальная папка: `D:\Projects\rudoctors\site`  
 Live: `https://rudoctors.github.io`
 
