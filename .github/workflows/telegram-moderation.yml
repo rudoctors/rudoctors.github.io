@@ -39,6 +39,34 @@ jobs:
         with:
           node-version: 22
 
+      # Apps Script uses a least-privilege fine-grained PAT that can create an
+      # Issue but cannot administer repository labels. Label only the strict,
+      # server-generated doctor-intake format before the bot synchronises it.
+      - name: Label verified doctor intake
+        if: github.event_name == 'issues' && github.event.action == 'opened'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const title = issue?.title ?? "";
+            const body = issue?.body ?? "";
+            const isDoctorIntake =
+              title.startsWith("Новый врач:") &&
+              /(?:^|\n)CRM ID: DR-[A-Za-z0-9-]+(?:\r?$|\n)/m.test(body) &&
+              body.includes("Отправлено через форму rudoctors.github.io/add-doctor/");
+
+            if (!isDoctorIntake) {
+              core.info("Issue is not a verified doctor-intake payload; leaving labels unchanged.");
+              return;
+            }
+
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              labels: ["doctor-request"],
+            });
+
       - name: Sync requests and process moderation buttons
         run: node scripts/telegram-bot.mjs --ci
         env:

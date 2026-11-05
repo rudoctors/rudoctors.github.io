@@ -107,36 +107,7 @@ function doctorCreateGithubIssue_(request) {
   if (code < 200 || code >= 300 || !Number.isInteger(payload.number)) {
     throw new Error("GitHub Issue creation failed (HTTP " + code + ")");
   }
-  doctorEnsureGithubLabel_(repo, token, payload.number);
   return { number: payload.number, url: payload.html_url || "" };
-}
-
-function doctorEnsureGithubLabel_(repo, token, issueNumber) {
-  // Do this explicitly: some fine-grained GitHub tokens create the Issue but
-  // silently omit labels provided in the creation payload. The moderation
-  // workflow relies on this label to route the request.
-  const response = UrlFetchApp.fetch(
-    "https://api.github.com/repos/" + repo + "/issues/" + issueNumber + "/labels",
-    {
-      method: "post",
-      contentType: "application/json",
-      headers: {
-        Authorization: "Bearer " + token,
-        Accept: "application/vnd.github+json",
-        "X-GitHub-Api-Version": "2022-11-28"
-      },
-      payload: JSON.stringify({ labels: ["doctor-request"] }),
-      muteHttpExceptions: true
-    }
-  );
-  const code = response.getResponseCode();
-  let labels = [];
-  try { labels = JSON.parse(response.getContentText()); } catch (_) {}
-  if (code < 200 || code >= 300 || !Array.isArray(labels) || !labels.some(function(label) {
-    return label && label.name === "doctor-request";
-  })) {
-    throw new Error("GitHub doctor-request label failed (HTTP " + code + ")");
-  }
 }
 
 function doctorNotifyTelegram_(request, issue) {
