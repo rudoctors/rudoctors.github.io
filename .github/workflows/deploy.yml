@@ -22,6 +22,7 @@ concurrency:
 
 env:
   HAS_TRANSLATE_KEY: ${{ secrets.TRANSLATE_API_KEY != '' }}
+  PUBLIC_DOCTOR_WEBHOOK_URL: ${{ vars.PUBLIC_DOCTOR_WEBHOOK_URL }}
 
 jobs:
   build:

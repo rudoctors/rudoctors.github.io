@@ -159,7 +159,7 @@ import { SITE } from "../lib/site";
   const successTitle = document.getElementById("add-success-title");
   const successCopy = document.getElementById("add-success-copy");
   const KEY = "add-doctor";
-  const RELAY_URL = "https://rudoctors-relay.deno.dev/api/doctor-request";
+  const DOCTOR_WEBHOOK_URL = import.meta.env.PUBLIC_DOCTOR_WEBHOOK_URL?.trim() || "";
 
   form?.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -256,9 +256,13 @@ import { SITE } from "../lib/site";
     }
 
     try {
-      const response = await fetch(RELAY_URL, {
+      if (!DOCTOR_WEBHOOK_URL) {
+        throw new Error("doctor webhook is not configured");
+      }
+      const response = await fetch(DOCTOR_WEBHOOK_URL, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        // A simple request avoids an Apps Script CORS preflight.
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
         body: JSON.stringify({
           name,
           spec,
