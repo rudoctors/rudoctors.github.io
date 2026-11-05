@@ -82,10 +82,10 @@ import { SITE } from "../lib/site";
         <svg class="w-6 h-6 text-emerald-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
         </svg>
-        Заявка сформирована и готова к отправке!
+        <span id="add-success-title">Заявка отправлена на модерацию!</span>
       </div>
-      <p class="text-sm text-slate-700">
-        Выберите удобный способ передать карточку модератору:
+      <p id="add-success-copy" class="text-sm text-slate-700">
+        Модератор получит заявку и проверит данные перед публикацией.
       </p>
 
       <div class="flex flex-wrap gap-2.5 pt-1">
@@ -156,9 +156,12 @@ import { SITE } from "../lib/site";
   const btnCopy = document.getElementById("btn-copy-add");
   const btnCopyText = document.getElementById("btn-copy-add-text");
   const btnGithub = document.getElementById("btn-add-github-issue") as HTMLAnchorElement | null;
+  const successTitle = document.getElementById("add-success-title");
+  const successCopy = document.getElementById("add-success-copy");
   const KEY = "add-doctor";
+  const RELAY_URL = "https://rudoctors-relay.deno.dev/api/doctor-request";
 
-  form?.addEventListener("submit", (e) => {
+  form?.addEventListener("submit", async (e) => {
     e.preventDefault();
     if (!form) return;
 
@@ -240,22 +243,63 @@ import { SITE } from "../lib/site";
       btnGithub.href = ghUrl;
     }
 
-    markSubmitted(KEY);
-
+    const submitButton = form.querySelector<HTMLButtonElement>("button[type='submit']");
+    const defaultButtonText = submitButton?.textContent || "Сформировать и отправить заявку";
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = "Отправляем…";
+    }
     if (status) {
-      status.classList.add("hidden");
+      status.classList.remove("hidden");
+      status.className = "text-sm mt-2 text-slate-500";
+      status.textContent = "Отправляем заявку на модерацию…";
     }
 
-    if (successBox) {
-      successBox.classList.remove("hidden");
-      successBox.scrollIntoView({ behavior: "smooth", block: "nearest" });
-    }
-
-    // Try opening Telegram without blocking if allowed
     try {
-      window.open(shareUrl, "_blank", "noopener,noreferrer");
+      const response = await fetch(RELAY_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name,
+          spec,
+          city,
+          exp,
+          clinic,
+          contact,
+          about,
+          website_hp: String(fd.get("website_trap") || ""),
+        }),
+      });
+      const result = await response.json().catch(() => ({ ok: false }));
+      if (!response.ok || result.ok !== true || !Number.isInteger(result.issue)) {
+        throw new Error("request failed");
+      }
+
+      markSubmitted(KEY);
+      form.reset();
+      if (status) status.classList.add("hidden");
+      if (successTitle) successTitle.textContent = "Заявка отправлена на модерацию!";
+      if (successCopy) successCopy.textContent = `Заявка №${result.issue} передана модератору. Мы проверим данные перед публикацией.`;
+      if (successBox) {
+        successBox.classList.remove("hidden");
+        successBox.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }
     } catch {
-      // Ignored if popup blocked, UI buttons visible
+      if (status) {
+        status.className = "text-sm mt-2 text-red-600";
+        status.textContent = "Не удалось отправить заявку автоматически. Используйте один из способов ниже.";
+      }
+      if (successTitle) successTitle.textContent = "Автоматическая отправка недоступна";
+      if (successCopy) successCopy.textContent = "Передайте уже заполненную заявку через Telegram, копирование или GitHub — данные в форме сохранены.";
+      if (successBox) {
+        successBox.classList.remove("hidden");
+        successBox.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }
+    } finally {
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = defaultButtonText;
+      }
     }
   });
 
