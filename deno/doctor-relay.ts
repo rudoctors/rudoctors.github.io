@@ -716,7 +716,7 @@ Deno.serve(async (req: Request) => {
         about: String(data.about || "").trim().slice(0, 1500),
       };
       if (!fields.name || !fields.spec || !fields.city || !fields.contact) {
-        return json({ ok: false, error: "Обязательные поля: имя, специальность, город, контакт" }, 400);
+        return corsJson({ ok: false, error: "Обязательные поля: имя, специальность, город, контакт" }, 400);
       }
       const issueBody = [
         `**Имя:** ${fields.name}`,
@@ -740,10 +740,10 @@ Deno.serve(async (req: Request) => {
       await sendCard(number, fields);
       await ensureLabel(LABEL_SENT);
       try { await gh(`/repos/${REPO}/issues/${number}/labels`, { method: "POST", body: JSON.stringify({ labels: [LABEL_SENT] }) }); } catch { /* не критично */ }
-      return json({ ok: true, issue: number });
+      return corsJson({ ok: true, issue: number });
     } catch (e) {
       console.error("intake error", e);
-      return json({ ok: false, error: String(e).slice(0, 200) }, 500);
+      return corsJson({ ok: false, error: String(e).slice(0, 200) }, 500);
     }
   }
   return json({ ok: true, service: "rudoctors-moderation-relay" });
