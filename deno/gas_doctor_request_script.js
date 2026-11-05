@@ -3,7 +3,8 @@
  *
  * Развернуть как Web app: Execute as: Me; Who has access: Anyone.
  * Script Properties (не хранить в репозитории):
- *   TELEGRAM_BOT_TOKEN, TELEGRAM_ADMIN_CHAT_ID, GITHUB_TOKEN, GITHUB_REPO
+ *   GOOGLE_SHEET_ID, TELEGRAM_BOT_TOKEN, TELEGRAM_ADMIN_CHAT_ID,
+ *   GITHUB_TOKEN, GITHUB_REPO
  */
 
 const DOCTOR_SHEET_NAME = "Заявки врачей";
@@ -31,7 +32,13 @@ function doctorRequestId_() {
 }
 
 function doctorSheet_() {
-  const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  // This is deliberately a standalone Apps Script project. Do not bind it to
+  // the review CRM script: that project owns a separate doPost handler.
+  const spreadsheetId = doctorProperty_("GOOGLE_SHEET_ID");
+  if (!/^[A-Za-z0-9_-]{20,}$/.test(spreadsheetId)) {
+    throw new Error("GOOGLE_SHEET_ID is not configured");
+  }
+  const spreadsheet = SpreadsheetApp.openById(spreadsheetId);
   let sheet = spreadsheet.getSheetByName(DOCTOR_SHEET_NAME);
   if (sheet) return sheet;
 
@@ -68,11 +75,12 @@ function doctorCreateGithubIssue_(request) {
     `Специальность: ${request.spec}`,
     `Город: ${request.city}`,
     `Стаж: ${request.exp || "—"}`,
-    `Клиника / кабинет: ${request.clinic || "—"}`,
-    `Контакт для записи: ${request.contact}`,
+    `Клиника: ${request.clinic || "—"}`,
+    `Контакт: ${request.contact}`,
     "",
-    "### О враче",
+    "О себе:",
     request.about || "—",
+    "---",
     "",
     "Отправлено через форму rudoctors.github.io/add-doctor/."
   ].join("\n");
