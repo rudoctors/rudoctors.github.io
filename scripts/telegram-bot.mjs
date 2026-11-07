@@ -319,19 +319,40 @@ class Telegram {
   }
 
   async req(method, body, opts = {}) {
-    const res = await fetch(`https://api.telegram.org/bot${this.token}/${method}`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(body),
-      signal: opts.signal,
-    });
-    const data = await res.json().catch(() => ({}));
-    if (!data.ok) {
-      const err = new Error(`Telegram ${method} failed: ${data.error_code || res.status} ${data.description || ""}`);
-      err.code = data.error_code;
-      throw err;
+    const maxRetries = 3;
+    let lastErr;
+    for (let attempt = 1; attempt <= maxRetries; attempt++) {
+      try {
+        const res = await fetch(`https://api.telegram.org/bot${this.token}/${method}`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+          signal: opts.signal,
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!data.ok) {
+          const status = data.error_code || res.status;
+          const err = new Error(`Telegram ${method} failed: ${status} ${data.description || ""}`);
+          err.code = data.error_code || res.status;
+          if (attempt < maxRetries && (status >= 500 || status === 429)) {
+            const delay = status === 429 && data.parameters?.retry_after ? data.parameters.retry_after * 1000 : 1500 * attempt;
+            await new Promise((r) => setTimeout(r, delay));
+            continue;
+          }
+          throw err;
+        }
+        return data.result;
+      } catch (err) {
+        lastErr = err;
+        const isNetworkOr5xx = !err.code || err.code >= 500;
+        if (attempt < maxRetries && isNetworkOr5xx) {
+          await new Promise((r) => setTimeout(r, 1500 * attempt));
+          continue;
+        }
+        throw err;
+      }
     }
-    return data.result;
+    throw lastErr;
   }
 
   getMe() {
