@@ -161,32 +161,6 @@ import { SITE } from "../lib/site";
   const KEY = "add-doctor";
   const DOCTOR_WEBHOOK_URL = import.meta.env.PUBLIC_DOCTOR_WEBHOOK_URL?.trim() || "";
 
-  function submitDoctorIntake(payload: Record<string, string>) {
-    const target = `doctor-intake-${Date.now()}`;
-    const iframe = document.createElement("iframe");
-    iframe.name = target;
-    iframe.hidden = true;
-
-    const relay = document.createElement("form");
-    relay.method = "POST";
-    relay.action = DOCTOR_WEBHOOK_URL;
-    relay.target = target;
-    relay.acceptCharset = "UTF-8";
-    for (const [name, value] of Object.entries(payload)) {
-      const input = document.createElement("input");
-      input.type = "hidden";
-      input.name = name;
-      input.value = value;
-      relay.append(input);
-    }
-    document.body.append(iframe, relay);
-    relay.submit();
-    window.setTimeout(() => {
-      relay.remove();
-      iframe.remove();
-    }, 30_000);
-  }
-
   form?.addEventListener("submit", async (e) => {
     e.preventDefault();
     if (!form) return;
@@ -285,16 +259,25 @@ import { SITE } from "../lib/site";
       if (!DOCTOR_WEBHOOK_URL) {
         throw new Error("doctor webhook is not configured");
       }
-      submitDoctorIntake({
-        name,
-        spec,
-        city,
-        exp,
-        clinic,
-        contact,
-        about,
-        website_hp: String(fd.get("website_trap") || ""),
+      const response = await fetch(DOCTOR_WEBHOOK_URL, {
+        method: "POST",
+        // This is deliberately a simple request. If the browser cannot reach
+        // the external endpoint, the catch block keeps the manual fallback
+        // visible instead of claiming a delivery that was not confirmed.
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({
+          name,
+          spec,
+          city,
+          exp,
+          clinic,
+          contact,
+          about,
+          website_hp: String(fd.get("website_trap") || ""),
+        }),
       });
+      if (response.type !== "opaque") throw new Error("request failed");
 
       markSubmitted(KEY);
       form.reset();
