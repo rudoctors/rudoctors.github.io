@@ -138,10 +138,12 @@ function doctorNotifyTelegram_(request, issue) {
 function doPost(e) {
   try {
     let payload = {};
+    const rawBody = (e && e.postData && e.postData.contents) || "";
     try {
-      payload = JSON.parse((e && e.postData && e.postData.contents) || "{}");
+      payload = rawBody ? JSON.parse(rawBody) : {};
     } catch (_) {
-      return doctorJson_({ ok: false, error: "invalid_json" });
+      // Browser-native form posts arrive as URL-encoded fields rather than JSON.
+      payload = (e && e.parameter) || {};
     }
 
     const request = {
