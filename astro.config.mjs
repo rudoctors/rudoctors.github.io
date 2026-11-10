@@ -5,7 +5,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://rudoctors.github.io",
+  site: "https://rudoctors.com",
   trailingSlash: "always",
   redirects: {
     "/doctors/prahov-aleksey": "/doctors/aleksej-pravov/",
