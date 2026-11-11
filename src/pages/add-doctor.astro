@@ -66,8 +66,10 @@ import { SITE } from "../lib/site";
 
       <label class="flex items-start gap-2 text-sm text-slate-600">
         <input type="checkbox" name="consent" required class="mt-1 rounded border-slate-300 text-brand-600 focus:ring-brand-500" />
-        Подтверждаю, что передаваемые данные являются публичными; согласен с
-        <a href="/privacy/" class="text-brand-700 underline">политикой конфиденциальности</a>.
+        <span>
+          Подтверждаю, что передаваемые данные являются публичными; согласен с
+          <a href="/privacy/" class="text-brand-700 underline">политикой конфиденциальности</a>.
+        </span>
       </label>
 
       <button type="submit" class="btn-primary w-full !py-3 font-bold text-base">
@@ -82,10 +84,10 @@ import { SITE } from "../lib/site";
         <svg class="w-6 h-6 text-emerald-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
         </svg>
-        <span id="add-success-title">Заявка отправлена на модерацию!</span>
+        <span id="add-success-title">Запрос отправлен!</span>
       </div>
       <p id="add-success-copy" class="text-sm text-slate-700">
-        Модератор получит заявку и проверит данные перед публикацией.
+        Заявка принята на модерацию. Мы проверим данные перед публикацией.
       </p>
 
       <div class="flex flex-wrap gap-2.5 pt-1">
@@ -216,7 +218,7 @@ import { SITE } from "../lib/site";
     if (about) {
       fields.push(``, `О враче:`, about);
     }
-    fields.push(``, `---`, `Отправлено через rudoctors.github.io/add-doctor/`);
+    fields.push(``, `---`, `Отправлено через rudoctors.com/add-doctor/`);
 
     const tgText = fields.join("\n");
 
@@ -225,7 +227,7 @@ import { SITE } from "../lib/site";
     }
 
     // Telegram share URL
-    const shareUrl = `https://t.me/share/url?url=${encodeURIComponent("https://rudoctors.github.io")}&text=${encodeURIComponent(tgText)}`;
+    const shareUrl = `https://t.me/share/url?url=${encodeURIComponent("https://rudoctors.com")}&text=${encodeURIComponent(tgText)}`;
     if (btnTgShare) {
       btnTgShare.href = shareUrl;
     }
@@ -261,9 +263,6 @@ import { SITE } from "../lib/site";
       }
       const response = await fetch(DOCTOR_WEBHOOK_URL, {
         method: "POST",
-        // This is deliberately a simple request. If the browser cannot reach
-        // the external endpoint, the catch block keeps the manual fallback
-        // visible instead of claiming a delivery that was not confirmed.
         mode: "no-cors",
         headers: { "Content-Type": "text/plain;charset=utf-8" },
         body: JSON.stringify({
@@ -277,13 +276,16 @@ import { SITE } from "../lib/site";
           website_hp: String(fd.get("website_trap") || ""),
         }),
       });
-      if (response.type !== "opaque") throw new Error("request failed");
+
+      if (response.type !== "opaque" && !response.ok) {
+        throw new Error("request failed");
+      }
 
       markSubmitted(KEY);
       form.reset();
       if (status) status.classList.add("hidden");
-      if (successTitle) successTitle.textContent = "Заявка отправлена на модерацию!";
-      if (successCopy) successCopy.textContent = "Заявка принята для обработки. Мы проверим данные перед публикацией.";
+      if (successTitle) successTitle.textContent = "Запрос отправлен!";
+      if (successCopy) successCopy.textContent = "Заявка принята на модерацию. Мы проверим данные перед публикацией.";
       if (successBox) {
         successBox.classList.remove("hidden");
         successBox.scrollIntoView({ behavior: "smooth", block: "nearest" });

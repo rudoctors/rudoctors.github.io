@@ -126,7 +126,11 @@ class GitHub {
         body: JSON.stringify({ name, color: "0e8a16" }),
       });
     } catch (e) {
-      if (!String(e.message).includes("422")) throw e;
+      const msg = String(e.message || "");
+      if (msg.includes("422") || msg.includes("404") || msg.includes("403")) {
+        return;
+      }
+      throw e;
     }
   }
 
@@ -134,6 +138,8 @@ class GitHub {
     return this.req(`/repos/${this.cfg.repo}/issues/${n}/labels`, {
       method: "POST",
       body: JSON.stringify({ labels: [name] }),
+    }).catch((e) => {
+      log(`Не удалось установить метку ${name} на issue #${n}: ${e.message}`);
     });
   }
 

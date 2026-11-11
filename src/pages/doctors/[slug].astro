@@ -34,6 +34,11 @@ const apptUrl = safeUrl(doctor.contacts.appointmentUrl);
 const tgUrl = safeUrl(doctor.contacts.telegram);
 const webUrl = safeUrl(doctor.contacts.website);
 const mapsUrl = safeUrl(doctor.contacts.mapsUrl);
+const photoUrl = doctor.photo
+  ? (doctor.photo.startsWith("http://") || doctor.photo.startsWith("https://")
+      ? doctor.photo
+      : new URL(doctor.photo, SITE.url).href)
+  : undefined;
 
 const jsonLd: Record<string, unknown>[] = [
   {
@@ -53,7 +58,7 @@ const jsonLd: Record<string, unknown>[] = [
         }
       : undefined,
     telephone: doctor.contacts.phone || undefined,
-    image: doctor.photo || undefined,
+    image: photoUrl,
     aggregateRating:
       rating.ratedCount > 0 && rating.average > 0
         ? {

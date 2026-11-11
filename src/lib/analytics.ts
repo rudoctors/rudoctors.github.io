@@ -1,13 +1,17 @@
-/** Lightweight outbound click + pageview hooks. Plausible/Umami optional. */
+/** Lightweight outbound click + pageview hooks. Plausible/Umami/YM/GA optional. */
 export function initAnalytics(): void {
   const track = (event: string, props?: Record<string, string | number>) => {
     const w = window as unknown as {
       plausible?: (e: string, o?: { props?: Record<string, string | number> }) => void;
       umami?: { track: (e: string, o?: Record<string, string | number>) => void };
+      ym?: (id: number, action: string, target: string, params?: Record<string, unknown>) => void;
+      gtag?: (command: string, action: string, params?: Record<string, unknown>) => void;
     };
     try {
       w.plausible?.(event, props ? { props } : undefined);
       w.umami?.track(event, props);
+      w.ym?.(114195788, "reachGoal", event, props);
+      w.gtag?.("event", event, props);
     } catch {
       /* analytics optional */
     }
@@ -18,7 +22,7 @@ export function initAnalytics(): void {
     if (!el) return;
     const href = el.getAttribute("href") || "";
     if (!href) return;
-    if (/^(https?:)?\/\//i.test(href) && !href.includes("rudoctors.github.io")) {
+    if (/^(https?:)?\/\//i.test(href) && !href.includes("rudoctors.com") && !href.includes("rudoctors.github.io")) {
       track("Outbound Click", { url: href.slice(0, 200) });
       if (/alteg\.io|appointment|calendar/i.test(href) || el.textContent?.includes("Записаться")) {
         track("Appointment Click", { url: href.slice(0, 200) });

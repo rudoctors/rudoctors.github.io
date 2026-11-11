@@ -81,7 +81,7 @@ const jsonLd = [
             placeholder="Имя, специальность или район…"
             aria-label="Поиск врача"
           />
-          <button type="submit" class="btn bg-accent-500 hover:bg-accent-400 text-white h-12 px-6 text-base">
+          <button type="submit" class="btn bg-accent-700 hover:bg-accent-800 text-white font-bold h-12 px-6 text-base shadow-sm">
             Найти
           </button>
         </form>
@@ -138,8 +138,8 @@ const jsonLd = [
     {
       top.length > 0 ? (
         <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {top.map((d, index) => (
-            <DoctorCard doctor={d} priority={index < 3} />
+          {top.map((d) => (
+            <DoctorCard doctor={d} />
           ))}
         </div>
       ) : (
@@ -157,7 +157,7 @@ const jsonLd = [
       <h2 class="text-xl md:text-2xl font-extrabold text-navy-900">Новые и обновлённые карточки</h2>
     </div>
     <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-      {fresh.map((d, index) => <DoctorCard doctor={d} priority={index < 3} />)}
+      {fresh.map((d) => <DoctorCard doctor={d} />)}
     </div>
   </section>
 

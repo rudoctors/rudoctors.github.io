@@ -69,6 +69,8 @@
   --color-navy-900: #0f172a;
   --color-accent-400: #fb923c;
   --color-accent-500: #f97316;
+  --color-accent-700: #c2410c;
+  --color-accent-800: #9a3412;
 }
 
 html {
@@ -135,11 +137,11 @@ main:focus {
 }
 
 .btn-primary {
-  background: #0d9488;
+  background: #0f766e;
   color: #fff;
 }
 .btn-primary:hover {
-  background: #0f766e;
+  background: #115e59;
 }
 
 .btn-secondary {

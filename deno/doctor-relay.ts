@@ -21,7 +21,17 @@ const GH_TOKEN = Deno.env.get("GITHUB_TOKEN") || "";
 const WEBHOOK_SECRET = Deno.env.get("WEBHOOK_SECRET") || "";
 const GAS_REVIEW_URL = Deno.env.get("GAS_REVIEW_WEBHOOK_URL") || "";
 const DIR_DOCTORS = "src/data/doctors";
-const CORS_ORIGIN = "https://rudoctors.github.io";
+const ALLOWED_ORIGINS = new Set([
+  "https://rudoctors.com",
+  "https://www.rudoctors.com",
+  "https://rudoctors.github.io",
+  "http://localhost:4321",
+]);
+
+function getCorsOrigin(req: Request): string {
+  const origin = req.headers.get("Origin") || "";
+  return ALLOWED_ORIGINS.has(origin) ? origin : "https://rudoctors.com";
+}
 import { normalizeReview, parseOptionalRating, type ReviewInput } from "./review-intake.ts";
 const LABEL_REQUEST = "doctor-request";
 const LABEL_SENT = "tg-sent";
@@ -596,12 +606,14 @@ async function handleTelegramUpdate(update: Record<string, unknown>) {
 Deno.serve(async (req: Request) => {
   const url = new URL(req.url);
 
+  const origin = getCorsOrigin(req);
+
   // CORS preflight for review form
   if (req.method === "OPTIONS") {
     return new Response(null, {
       status: 204,
       headers: {
-        "Access-Control-Allow-Origin": CORS_ORIGIN,
+        "Access-Control-Allow-Origin": origin,
         "Access-Control-Allow-Methods": "POST, OPTIONS",
         "Access-Control-Allow-Headers": "Content-Type",
       },
@@ -609,7 +621,7 @@ Deno.serve(async (req: Request) => {
   }
 
   const corsHeaders = {
-    "Access-Control-Allow-Origin": CORS_ORIGIN,
+    "Access-Control-Allow-Origin": origin,
   };
 
   if (req.method === "POST" && url.pathname === "/telegram") {
@@ -635,7 +647,7 @@ Deno.serve(async (req: Request) => {
       status,
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": CORS_ORIGIN,
+        "Access-Control-Allow-Origin": origin,
       },
     });
   }

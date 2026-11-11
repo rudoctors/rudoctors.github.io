@@ -62,9 +62,41 @@ if (breadcrumbs && breadcrumbs.length > 0) {
     <link rel="alternate" hreflang="ru" href={canonical} />
     <link rel="alternate" hreflang="x-default" href={canonical} />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://plausible.io https://cloud.umami.is; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://plausible.io https://cloud.umami.is https://api.github.com; base-uri 'self'; form-action 'self' https://github.com" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://plausible.io https://cloud.umami.is https://mc.yandex.ru https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: https://mc.yandex.ru; font-src 'self'; connect-src 'self' https://plausible.io https://cloud.umami.is https://api.github.com https://mc.yandex.ru https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; base-uri 'self'; form-action 'self' https://github.com" />
     {noindex && <meta name="robots" content="noindex, nofollow" />}
     {!noindex && <meta name="robots" content="index, follow, max-image-preview:large" />}
+    {
+      !noAnalytics && (
+        <>
+          <script is:inline>
+            (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+            ym(114195788, "init", {
+              clickmap: true,
+              trackLinks: true,
+              accurateTrackBounce: true,
+              webvisor: true
+            });
+          </script>
+          <noscript>
+            <div>
+              <img src="https://mc.yandex.ru/watch/114195788" style="position:absolute; left:-9999px;" alt="" />
+            </div>
+          </noscript>
+          <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-RS8CWBWDCB"></script>
+          <script is:inline>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RS8CWBWDCB', { anonymize_ip: true });
+          </script>
+        </>
+      )
+    }
     {
       !noAnalytics && import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN && (
         <script

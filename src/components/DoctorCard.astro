@@ -93,7 +93,7 @@ const cleanBio = doctor.bio ? decodeHtml(doctor.bio) : "";
   }
 
   <div class="mt-auto flex items-center justify-between gap-3 pt-2.5 border-t border-slate-100">
-    <div class="flex flex-wrap gap-1.5 text-xs text-slate-500 min-w-0">
+    <div class="flex flex-wrap gap-1.5 text-xs text-slate-700 font-medium min-w-0">
       {doctor.languages.slice(0, 4).map((l) => (
         <span class="px-2 py-0.5 rounded-md bg-slate-100">{l.toUpperCase()}</span>
       ))}
