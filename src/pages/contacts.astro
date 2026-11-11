@@ -13,7 +13,7 @@ const jsonLd = {
     "@id": SCHEMA_IDS.organization,
     name: SITE.name,
     url: SITE.url,
-    email: "hello@rudoctors.github.io",
+    email: SITE.email,
     sameAs: [SITE.telegram, `https://github.com/rudoctors/rudoctors.github.io`],
   },
 };
@@ -33,17 +33,28 @@ const jsonLd = {
     <p class="mt-3 text-slate-600 leading-relaxed">
       Rudoctors — независимый каталог русскоязычных врачей в Сербии. Отвечаем на вопросы пациентов,
       врачей и партнёров: запись, правки карточек, отзывы, баннерное размещение и сотрудничество.
-      Выберите удобный канал ниже — Telegram-чат сообщества или прямой контакт с разработчиком.
+      Выберите удобный канал ниже — официальный email, Telegram-чат сообщества или прямой контакт с разработчиком.
     </p>
 
-    <div class="mt-8 grid gap-4 sm:grid-cols-2">
+    <div class="mt-8 grid gap-4 sm:grid-cols-3">
+      <div class="card p-6">
+        <div class="text-xs font-bold uppercase tracking-widest text-brand-700">Официальная почта</div>
+        <h2 class="mt-2 font-extrabold text-navy-900">Email</h2>
+        <p class="mt-2 text-sm text-slate-600">
+          Для официальных запросов, партнёрства, предложений клиник и подтверждения данных:
+        </p>
+        <a href={`mailto:${SITE.email}`} class="btn-primary mt-4 inline-flex">
+          {SITE.email}
+        </a>
+      </div>
+
       <div class="card p-6">
         <div class="text-xs font-bold uppercase tracking-widest text-brand-700">Сообщество</div>
         <h2 class="mt-2 font-extrabold text-navy-900">Telegram-чат</h2>
         <p class="mt-2 text-sm text-slate-600">
           Чат «Медицина в Сербии» — {SITE.telegramLabel}: рекомендации врачей, записи, опыт сообщества.
         </p>
-        <a href={SITE.telegram} target="_blank" rel="noopener noreferrer" class="btn-primary mt-4 inline-flex">
+        <a href={SITE.telegram} target="_blank" rel="noopener noreferrer" class="btn-secondary mt-4 inline-flex">
           Открыть Telegram
         </a>
       </div>
@@ -54,7 +65,7 @@ const jsonLd = {
         <p class="mt-2 text-sm text-slate-600">
           Технические вопросы, баги, предложения и интеграции: {SITE.developerTelegramLabel}.
         </p>
-        <a href={SITE.developerTelegram} target="_blank" rel="noopener noreferrer" class="btn-primary mt-4 inline-flex">
+        <a href={SITE.developerTelegram} target="_blank" rel="noopener noreferrer" class="btn-secondary mt-4 inline-flex">
           Написать {SITE.developerTelegramLabel}
         </a>
       </div>

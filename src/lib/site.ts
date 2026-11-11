@@ -3,7 +3,8 @@ export const SITE = {
   title: "Rudoctors — врачи Сербии: рейтинг и отзывы",
   description:
     "Каталог русскоязычных врачей в Сербии: Белград, Нови-Сад и другие города. Рейтинги, отзывы пациентов, специализации, опыт и контакты.",
-  url: "https://rudoctors.github.io",
+  url: "https://rudoctors.com",
+  email: "info@rudoctors.com",
   telegram: "https://t.me/vrachivserbii",
   telegramLabel: "@vrachivserbii",
   developerTelegram: "https://t.me/balkandunav",
