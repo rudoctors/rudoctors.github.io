@@ -5,12 +5,27 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
 const doctorsDir = path.join(root, "src", "data", "doctors");
+const auditDir = path.join(root, "scripts", "tg-parsed");
 const reviewsSource = path.join(root, "scripts", "tg-export-reviews.json");
 const recosSource = path.join(root, "scripts", "tg-export-recommendations.json");
 const visitkasSource = path.join(root, "scripts", "tg-export-visitkas.json");
+const shouldWrite = process.argv.includes("--write");
+const today = new Date().toISOString().slice(0, 10);
+const approvalsPath = path.join(root, "scripts", "tg-parsed", "review-approvals.json");
 
 if (!fs.existsSync(reviewsSource)) {
   console.error("Reviews source file not found:", reviewsSource);
+  process.exit(1);
+}
+
+const approvedPairs = new Set(
+  (fs.existsSync(approvalsPath) ? JSON.parse(fs.readFileSync(approvalsPath, "utf8")) : []).map(
+    ({ messageId, slug }) => `${messageId}:${slug}`
+  )
+);
+
+if (shouldWrite && approvedPairs.size === 0) {
+  console.error("Refusing to write without reviewed entries in scripts/tg-parsed/review-approvals.json");
   process.exit(1);
 }
 
@@ -180,13 +195,20 @@ const falsePositiveStems = new Set([
   "алек",
   "серг",
 ]);
+// Publicly used name variants which cannot be matched by Russian inflection alone.
+const reviewAliasesBySlug = new Map([
+  ["datienko-elena", ["олена дати", "елена нонко"]],
+  ["strahinja-ilic", ["страхиня илич", "илич страхиня"]],
+]);
 const newReviewsBySlug = new Map();
+const proposedReviews = [];
 
 for (const msg of rawReviews) {
   if (existingReviewIds.has(String(msg.id))) continue;
   const rawText = (msg.text || "").trim();
   if (rawText.length < 50 || rawText.length > 2000) continue;
   if (/^\*{0,2}(РЕКЛАМА|реклама\b)/i.test(rawText)) continue;
+  const tLower = rawText.toLowerCase();
 
   const fromLower = (msg.from || "").toLowerCase();
   if (/поиск в|easyrelocate|@search|бот /i.test(fromLower)) continue;
@@ -201,8 +223,6 @@ for (const msg of rawReviews) {
     );
   if (!isFeedback) continue;
 
-  const tLower = rawText.toLowerCase();
-
   for (const m of matchers) {
     // Avoid self-messages (doctor giving advice / promo)
     if (
@@ -214,7 +234,8 @@ for (const msg of rawReviews) {
       continue;
     }
 
-    let hit = false;
+    const approved = approvedPairs.has(`${msg.id}:${m.doc.slug}`);
+    let hit = approved;
 
     // Condition 0: Telegram handle match (@handle or t.me/handle)
     if (m.tgHandle && (tLower.includes("@" + m.tgHandle) || tLower.includes("t.me/" + m.tgHandle))) {
@@ -222,6 +243,10 @@ for (const msg of rawReviews) {
     }
     // Condition 1: Direct full name match
     else if (tLower.includes(m.fullName) || tLower.includes(m.revFullName)) {
+      hit = true;
+    }
+    // Condition 1b: explicitly listed name variant.
+    else if ((reviewAliasesBySlug.get(m.doc.slug) || []).some((alias) => tLower.includes(alias))) {
       hit = true;
     }
     // Condition 2: Both stems present (e.g. "Евгений" and "Бакуров")
@@ -235,23 +260,7 @@ for (const msg of rawReviews) {
     ) {
       hit = true;
     }
-    // Condition 3: Explicit 'доктор / врач / были у <UniqueName>' with stem >= 5
-    else if (
-      (m.p1Unique && m.p1Stem.length >= 5 && !falsePositiveStems.has(m.p1Stem)) ||
-      (m.p2Unique && m.p2Stem.length >= 5 && !falsePositiveStems.has(m.p2Stem))
-    ) {
-      const stemToTest =
-        m.p1Unique && m.p1Stem.length >= 5 && !falsePositiveStems.has(m.p1Stem) ? m.p1Stem : m.p2Stem;
-      const docRe = new RegExp(
-        `(?:доктор|врач|д-р|dr\\.?|prof\\.?|была у|был у|были у|записались к|ходили к|лечились у|при[её]м у)\\s+[а-яёa-z\\s]{0,15}${stemToTest}`,
-        "i"
-      );
-      if (docRe.test(tLower)) {
-        hit = true;
-      }
-    }
-
-    if (hit) {
+    if (hit && (!shouldWrite || approved)) {
       const reviewObj = {
         id: `tg-${msg.id}`,
         author: maskAuthor(msg.from, m.isSensitive),
@@ -265,7 +274,13 @@ for (const msg of rawReviews) {
         newReviewsBySlug.set(m.doc.slug, []);
       }
       newReviewsBySlug.get(m.doc.slug).push({ item: m.item, review: reviewObj });
-      break;
+      proposedReviews.push({
+        messageId: msg.id,
+        date: reviewObj.date,
+        slug: m.doc.slug,
+        doctor: m.doc.name,
+        source: reviewObj.source,
+      });
     }
   }
 }
@@ -296,10 +311,20 @@ for (const [, entries] of newReviewsBySlug.entries()) {
   if (addedForDoc > 0) {
     // Sort reviews newest first
     doc.reviews.sort((a, b) => (b.date || "").localeCompare(a.date || ""));
-    doc.updatedAt = "2026-10-31";
-    fs.writeFileSync(item.filePath, JSON.stringify(doc, null, 2) + "\n", "utf8");
+    doc.updatedAt = today;
+    if (shouldWrite) {
+      fs.writeFileSync(item.filePath, JSON.stringify(doc, null, 2) + "\n", "utf8");
+    }
     doctorsUpdated++;
   }
 }
 
-console.log(`Successfully added ${totalAdded} genuine reviews across ${doctorsUpdated} doctor profiles.`);
+fs.mkdirSync(auditDir, { recursive: true });
+const auditPath = path.join(auditDir, "review-match-audit.json");
+fs.writeFileSync(
+  auditPath,
+  JSON.stringify({ generatedAt: new Date().toISOString(), mode: shouldWrite ? "write" : "dry-run", proposedReviews }, null, 2) + "\n",
+  "utf8"
+);
+console.log(`${shouldWrite ? "Added" : "Proposed"} ${totalAdded} reviews across ${doctorsUpdated} doctor profiles.`);
+console.log(`audit=${auditPath}`);

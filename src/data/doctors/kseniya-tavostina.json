@@ -19,10 +19,9 @@
   "education": [],
   "workplaces": [
     {
-      "clinic": "Ginekološka ordinacija Taita",
-      "address": "Нови Сад, ул. Мичуринова 68б",
-      "city": "Novi Sad",
-      "mapsUrl": "https://maps.app.goo.gl/SLb3qCZ99wi3KQuTA?g_st=ac"
+      "clinic": "BestMedica",
+      "address": "Ћирила и Методија 16, Нови Сад",
+      "city": "Novi Sad"
     }
   ],
   "contacts": {
@@ -85,5 +84,5 @@
   "sources": [
     "rusdoctors.net"
   ],
-  "updatedAt": "2026-10-31"
+  "updatedAt": "2026-11-11"
 }
