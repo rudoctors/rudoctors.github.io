@@ -1,0 +1,31 @@
+{
+  "slug": "vladislav-hashimov",
+  "name": "Владислав Хашимов",
+  "specializations": [
+    "psychologist"
+  ],
+  "specializationText": "Психолог",
+  "city": "Belgrade",
+  "languages": [
+    "ru"
+  ],
+  "formats": [
+    "offline",
+    "online"
+  ],
+  "bio": "Дипломированный психолог. Работает с тревогой, неопределённостью и эмоциональным выгоранием; проводит очные консультации в Белграде и онлайн.",
+  "education": [],
+  "workplaces": [],
+  "contacts": {
+    "telegram": "https://t.me/vladhashimov",
+    "website": "https://so-vlad-anie.ru"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://t.me/vrachivserbii/216866",
+    "https://www.uglavnom.rs/delaytemalenkieshagi-psikholog-obemigratsii-knizhnomklubeisa"
+  ],
+  "updatedAt": "2026-11-11"
+}
