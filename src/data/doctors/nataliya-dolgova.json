@@ -1,0 +1,41 @@
+{
+  "slug": "nataliya-dolgova",
+  "name": "Наталия Долгова",
+  "nameEn": "Natalia Dolgova",
+  "specializations": [
+    "psychologist"
+  ],
+  "specializationText": "Практический психолог, тренер по нейроинтеграции",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "formats": [
+    "offline",
+    "online"
+  ],
+  "bio": "Практический психолог и тренер по нейроинтеграции. Работает со стрессом, перегрузкой и выгоранием; проводит очные консультации в Белграде и онлайн.",
+  "education": [
+    {
+      "degree": "Dr. phil., Германия, magna cum laude"
+    },
+    {
+      "degree": "Практический психолог, МПГУ, 1080 часов"
+    }
+  ],
+  "workplaces": [],
+  "contacts": {
+    "email": "hello@natalicompass.com",
+    "telegram": "https://t.me/natali_tvet_pro",
+    "website": "https://natalicompass.com/ru/",
+    "appointmentUrl": "https://natalicompass.com/ru/booking/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": true,
+  "sources": [
+    "https://natalicompass.com/ru/"
+  ],
+  "updatedAt": "2026-11-11"
+}
