@@ -79,6 +79,19 @@
 - [x] Sprint D: doctors pagination D2 (пустые фильтры → 24/page, активный → полный список), убран data-bio, unique title page N
 - [x] Sprint E: llms.txt markdown + Niš, 404 поиск+города, OPS security headers + контент-модель, analytics GH Secrets **пусты** (отметить)
 - [x] Sprint F (новый аудит 24.09.2026): PAT memory-only + legacy cleanup + no analytics на `/admin/`; точный disclosure публичных GitHub Issues; license/verification schema+UI; meta CSP/referrer; skip-link, nav aria, ToS, breadcrumbs list, LCP priority, banners CTA, robots BOM, thin content list, privacy Issues+analytics, trim-валидация форм
+- [x] Phase 7 — Партнёрские программы и баннерная монетизация (18.11.2026):
+  - [x] SafetyWing Ambassador (ID `26640201`): размещён в `home-top` (Nomad Insurance для экспатов).
+  - [x] DocMa: проверено отсутствие открытой партнёрки, нереферальная заглушка удалена.
+  - [x] Admitad / Mitgo: площадка `RuDoctors` (ID `3023787`) верифицирована через meta-тег в Layout.astro, статус Active.
+  - [x] Подключен оффер AliExpress WW (ID `6115`, instant auto-moderation) с таргетированным диплинком в раздел медтехники и товаров для здоровья в `home-bottom`.
+  - [x] Компонент `Banner.astro`: добавлены `target="_blank"` и `rel="noopener noreferrer sponsored"`.
+  - [x] Поданы заявки на модерацию рекламодателей: iHerb WW (ID 17044), Trip.com WW (ID 23733), Localrent (ID 15387).
+  - [x] Изменения собраны (`npm run build` 510 страниц) и развернуты на проде `rudoctors.com`.
+
+## TODO / Что ждём (ожидающие события)
+- [ ] **iHerb WW в Admitad**: дождаться решения рекламодателя (сейчас `Awaiting moderation of advertiser`). Как только одобрят — сгенерировать диплинк и разместить/проротировать в баннерных слотах (витамины, БАДы, аптечка для экспатов).
+- [ ] **Trip.com WW и Localrent в Admitad**: дождаться решения рекламодателей (модерация тревел-офферов).
+- [ ] **Ротация офферов**: при подключении iHerb настроить ротацию слотов (`home-top` — SafetyWing, `home-bottom` — iHerb / AliExpress, либо ротация по показам/сессиям).
 - [ ] P0 follow-up: внести официальные license/verification данные (сейчас 0/140) и реквизиты владельца в ToS перед платным контрактом
 - [ ] E2E admin hide-flow — PAT создаст пользователь (PAT done)
 - [ ] Первый banner/placement request до 15.12.2026
