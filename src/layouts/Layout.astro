@@ -62,7 +62,7 @@ if (breadcrumbs && breadcrumbs.length > 0) {
     <link rel="alternate" hreflang="ru" href={canonical} />
     <link rel="alternate" hreflang="x-default" href={canonical} />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://plausible.io https://cloud.umami.is https://mc.yandex.ru https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: https://mc.yandex.ru; font-src 'self'; connect-src 'self' https://plausible.io https://cloud.umami.is https://api.github.com https://mc.yandex.ru https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; base-uri 'self'; form-action 'self' https://github.com" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://plausible.io https://cloud.umami.is https://mc.yandex.ru https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: https://mc.yandex.ru; font-src 'self'; connect-src 'self' https://plausible.io https://cloud.umami.is https://api.github.com https://mc.yandex.ru https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://script.google.com https://script.googleusercontent.com https://rudoctors-relay.deno.dev; base-uri 'self'; form-action 'self' https://github.com https://script.google.com" />
     {noindex && <meta name="robots" content="noindex, nofollow" />}
     {!noindex && <meta name="robots" content="index, follow, max-image-preview:large" />}
     {
