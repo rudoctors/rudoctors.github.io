@@ -118,7 +118,9 @@ const doctors = publicDoctors()
 <script>
   import { isHoneypotFilled, cooldownRemainingMs, markSubmitted, formatCooldown } from "../lib/formGuard";
 
-  const RELAY_URL = "https://rudoctors-relay.deno.dev/api/review";
+  const REVIEW_WEBHOOK_URL =
+    import.meta.env.PUBLIC_REVIEW_WEBHOOK_URL?.trim() ||
+    "https://script.google.com/macros/s/AKfycbzwHMzGWg5Q3UMJhhaNNE7PgCHxISsh2ON1p91JdWkGbvufEHxfu0UQvRsTH5tA1i83/exec";
   const DRAFT_KEY = "rudoctors_review_draft";
 
   const form = document.getElementById("review-form") as HTMLFormElement | null;
@@ -231,9 +233,10 @@ const doctors = publicDoctors()
     if (fallbackBox) fallbackBox.classList.add("hidden");
 
     try {
-      const res = await fetch(RELAY_URL, {
+      const res = await fetch(REVIEW_WEBHOOK_URL, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
         body: JSON.stringify({
           doctor_slug: doctorSlug,
           doctor_name: doctorName,
@@ -244,21 +247,16 @@ const doctors = publicDoctors()
         }),
       });
 
-      const data = await res.json().catch(() => ({ ok: false })) as { ok: boolean; id?: string; error?: string };
-
-      if (data.ok) {
-        markSubmitted(KEY);
-        try { localStorage.removeItem(DRAFT_KEY); } catch {}
-        // Show success screen
-        form.classList.add("hidden");
-        if (successBox) successBox.classList.remove("hidden");
-        if (reviewIdLine && data.id) {
-          reviewIdLine.textContent = `Номер отзыва: ${data.id}`;
-        }
-        successBox?.scrollIntoView({ behavior: "smooth", block: "nearest" });
-      } else {
-        throw new Error(data.error || "Неизвестная ошибка");
+      if (res.type !== "opaque" && !res.ok) {
+        throw new Error("Ошибка приёма на сервере");
       }
+
+      markSubmitted(KEY);
+      try { localStorage.removeItem(DRAFT_KEY); } catch {}
+      // Show success screen
+      form.classList.add("hidden");
+      if (successBox) successBox.classList.remove("hidden");
+      successBox?.scrollIntoView({ behavior: "smooth", block: "nearest" });
     } catch (err) {
       if (status) {
         status.classList.remove("hidden");
