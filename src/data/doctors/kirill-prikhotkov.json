@@ -42,6 +42,8 @@
     "phone": "+381 69 101 92 69",
     "email": null,
     "telegram": "https://t.me/drpsy_prikhotkov",
+    "website": "https://doctorus.rs/ru/doctors/3085551",
+    "appointmentUrl": "https://doctorus.altegio.me/company/1278366/personal/menu?o=m3085551",
     "mapsUrl": "https://maps.app.goo.gl/bLB9KyTxMBLmG2Tq8?g_st=ic"
   },
   "reviews": [
@@ -91,7 +93,8 @@
   "sources": [
     "rusdoctors.net",
     "google-sheets",
-    "t.me/vrachivserbii"
+    "t.me/vrachivserbii",
+    "doctorus.rs"
   ],
   "updatedAt": "2026-11-18"
 }

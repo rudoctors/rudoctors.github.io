@@ -2,7 +2,8 @@
   "slug": "pletyuhin-ilya-yurevich",
   "name": "Плетюхин Илья Юрьевич",
   "specializations": [
-    "psychiatrist"
+    "psychiatrist",
+    "narcologist"
   ],
   "specializationText": "Психиатр \nНарколог",
   "city": "Belgrade",
@@ -35,5 +36,5 @@
     "google-sheets",
     "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-11-16"
+  "updatedAt": "2026-11-18"
 }

@@ -19,7 +19,8 @@
     }
   ],
   "contacts": {
-    "phone": "+381 11 40 40 100"
+    "phone": "+381 11 40 40 100",
+    "website": "https://www.medigroup.rs/lekari/kivikangas-regina/"
   },
   "reviews": [
     {
@@ -36,7 +37,9 @@
   "sources": [
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/165755",
-    "https://t.me/vrachivserbii/194420"
+    "https://t.me/vrachivserbii/194420",
+    "medigroup.rs"
   ],
-  "updatedAt": "2026-10-31"
+  "updatedAt": "2026-11-18",
+  "photo": "https://www.medigroup.rs/wp-content/uploads/2026/01/dr-regina-kivikangas-medigroup.jpg"
 }

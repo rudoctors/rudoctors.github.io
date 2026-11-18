@@ -1,0 +1,37 @@
+{
+  "slug": "egor-golubev",
+  "name": "Егор Голубев",
+  "specializations": [
+    "pediatrician"
+  ],
+  "specializationText": "Педиатр",
+  "photo": "https://assets.alteg.io/masters/origin/b/b0/b0a794bfabeba88_20260910160227.png",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Doctorus Expert",
+      "address": "Višegradska 1A, Savski Venac",
+      "city": "Belgrade",
+      "url": "https://doctorus.rs/"
+    }
+  ],
+  "contacts": {
+    "website": "https://doctorus.rs/ru/doctors/3098179",
+    "appointmentUrl": "https://doctorus.altegio.me/company/1278366/personal/menu?o=m3098179"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "doctorus.rs"
+  ],
+  "updatedAt": "2026-11-18"
+}

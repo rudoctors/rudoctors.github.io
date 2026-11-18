@@ -162,7 +162,8 @@
   "hidden": false,
   "featured": false,
   "sources": [
-    "rusdoctors.net"
+    "rusdoctors.net",
+    "medigroup.rs"
   ],
   "updatedAt": "2026-11-18"
 }

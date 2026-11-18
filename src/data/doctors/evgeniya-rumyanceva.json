@@ -39,6 +39,7 @@
     "email": null,
     "telegram": "https://t.me/evgeniia_rumiantseva",
     "website": "https://doctorus.rs/",
+    "appointmentUrl": "https://doctorus.altegio.me/company/1278366/personal/menu?o=m2920650",
     "mapsUrl": "https://maps.app.goo.gl/WDeosW9u5Yjmk8kV7?g_st=ic"
   },
   "reviews": [
@@ -80,7 +81,8 @@
   "sources": [
     "rusdoctors.net",
     "google-sheets",
-    "t.me/vrachivserbii"
+    "t.me/vrachivserbii",
+    "doctorus.rs"
   ],
-  "updatedAt": "2026-11-16"
+  "updatedAt": "2026-11-18"
 }

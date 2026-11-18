@@ -21,6 +21,11 @@
     {
       "clinic": "клиника Тесла Медикал (онлайн или очно)",
       "city": "Belgrade"
+    },
+    {
+      "clinic": "MediGroup",
+      "city": "Belgrade",
+      "url": "https://www.medigroup.rs/lekari/gusak-aleksandra/"
     }
   ],
   "contacts": {
@@ -197,7 +202,9 @@
   "featured": false,
   "sources": [
     "google-sheets",
-    "t.me/vrachivserbii"
+    "t.me/vrachivserbii",
+    "medigroup.rs"
   ],
-  "updatedAt": "2026-11-16"
+  "updatedAt": "2026-11-18",
+  "photo": "https://www.medigroup.rs/wp-content/uploads/2026/09/dr-aleksandra-gusak-medigroup.jpg"
 }

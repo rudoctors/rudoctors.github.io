@@ -205,6 +205,38 @@
       "textOriginal": "I want to share my experience of communicating with endocrinologist Inga Sakeyan. She carefully and in detail asks about nutrition, health and activities, tries to understand the problem and select the right treatment. You can see that she cares. A very friendly and pleasant doctor to communicate with.",
       "langSource": "en",
       "translatedAt": "2026-09-23"
+    },
+    {
+      "id": "alfa-inga-sakeyan-0_1",
+      "author": "Инна",
+      "date": "",
+      "rating": 0,
+      "text": "Хочу поделиться своим опытом общения с эндокринологом Ингой Сакеян. Она внимательно и подробно расспрашивает о питании, здоровье и активностях, старается разобраться в проблеме и подобрать правильное лечение. Видно, что ей небезразлично. Очень доброжелательная и приятная в общении доктор.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-inga-sakeyan-1_1",
+      "author": "Лиана",
+      "date": "",
+      "rating": 0,
+      "text": "Прекрасный специалист, ответила на все вопросы. Большое спасибо!",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-inga-sakeyan-2_1",
+      "author": "Валерия",
+      "date": "",
+      "rating": 0,
+      "text": "Инга Суреновна произвела хорошее впечатление как врач-эндокринолог. Общение было тёплым и внимательным, с ощущением заботы о моём самочувствии. Особенно ценно — внимание к деталям и ясные, спокойные объяснения. Осталось ощущение уважения и профессионализма.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-inga-sakeyan-3_1",
+      "author": "Екатерина",
+      "date": "",
+      "rating": 0,
+      "text": "Развернутый и информативный ответ! Обязательно обращусь к этому специалисту еще раз! Очень компетентный эндокринолог!",
+      "source": "serbia.alfamedstar.com"
     }
   ],
   "hidden": false,
@@ -215,5 +247,5 @@
     "google-sheets",
     "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-11-16"
+  "updatedAt": "2026-11-18"
 }

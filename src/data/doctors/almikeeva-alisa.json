@@ -26,7 +26,8 @@
     "phone": "01 9269",
     "email": null,
     "telegram": "https://t.me/almikeeva_aa",
-    "website": "https://doctorus.rs/"
+    "website": "https://doctorus.rs/",
+    "appointmentUrl": "https://doctorus.altegio.me/company/1278366/personal/menu?o=m2795680"
   },
   "reviews": [
     {
@@ -202,7 +203,9 @@
   "featured": false,
   "sources": [
     "google-sheets",
-    "t.me/vrachivserbii"
+    "t.me/vrachivserbii",
+    "doctorus.rs"
   ],
-  "updatedAt": "2026-11-16"
+  "updatedAt": "2026-11-18",
+  "photo": "https://assets.alteg.io/masters/origin/d/de/deee66d087d658c_20261104121019.png"
 }

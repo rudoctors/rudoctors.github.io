@@ -4,7 +4,8 @@
   "nameEn": "Daniil Nesterenko",
   "specializations": [
     "psychotherapist",
-    "therapist"
+    "therapist",
+    "psychiatrist"
   ],
   "specializationText": "Психотерапия",
   "photo": "/photos/rd-69.webp",
@@ -91,5 +92,5 @@
     "google-sheets",
     "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-11-16"
+  "updatedAt": "2026-11-18"
 }

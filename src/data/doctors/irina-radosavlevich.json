@@ -2,7 +2,8 @@
   "slug": "irina-radosavlevich",
   "name": "Ирина Радосавлевич",
   "specializations": [
-    "psychologist"
+    "psychologist",
+    "therapist"
   ],
   "specializationText": "практикующий психолог; ЭОТ, схема-терапия, МАК-терапия, гипнотерапия",
   "city": "Novi Sad",
@@ -20,7 +21,8 @@
     }
   ],
   "contacts": {
-    "phone": "+381 61 661 2513"
+    "phone": "+381 61 661 2513",
+    "website": "https://www.medigroup.rs/lekari/radosavljevic-irina/"
   },
   "reviews": [
     {
@@ -37,7 +39,9 @@
   "sources": [
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/161995",
-    "https://t.me/vrachivserbii/189436"
+    "https://t.me/vrachivserbii/189436",
+    "medigroup.rs"
   ],
-  "updatedAt": "2026-10-31"
+  "updatedAt": "2026-11-18",
+  "photo": "https://www.medigroup.rs/wp-content/uploads/2026/01/dr-irina-radosavljevic-medigroup.jpg"
 }

@@ -26,10 +26,16 @@
       "district": "Stari Grad, Zvezdara, Vracar, Palilula",
       "url": "https://www.medigroup.rs/lekari/zagarskikh-anna",
       "mapsUrl": "https://maps.app.goo.gl/wcqHSDXmwpFxMr9E8?g_st=ac"
+    },
+    {
+      "clinic": "MediGroup",
+      "city": "Belgrade",
+      "url": "https://www.medigroup.rs/lekari/zagarskikh-anna/"
     }
   ],
   "contacts": {
     "telegram": "https://t.me/annaagava",
+    "website": "https://www.medigroup.rs/lekari/zagarskikh-anna/",
     "appointmentUrl": "https://www.medigroup.rs/kontakt/",
     "mapsUrl": "https://maps.app.goo.gl/wcqHSDXmwpFxMr9E8?g_st=ac"
   },
@@ -46,7 +52,8 @@
   "hidden": false,
   "featured": false,
   "sources": [
-    "rusdoctors.net"
+    "rusdoctors.net",
+    "medigroup.rs"
   ],
-  "updatedAt": "2026-10-31"
+  "updatedAt": "2026-11-18"
 }

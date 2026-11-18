@@ -1,0 +1,35 @@
+{
+  "slug": "bilyana-maryanovich",
+  "name": "Биляна Марьянович",
+  "specializations": [
+    "rehabilitologist"
+  ],
+  "specializationText": "Врач-реабилитолог",
+  "photo": "https://www.medigroup.rs/wp-content/uploads/2024/02/E001634-dr-Biljana-Marjanovic-2.jpg",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "city": "Belgrade",
+      "url": "https://www.medigroup.rs/lekari/marjanovic-biljana/"
+    }
+  ],
+  "contacts": {
+    "website": "https://www.medigroup.rs/lekari/marjanovic-biljana/"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "medigroup.rs"
+  ],
+  "updatedAt": "2026-11-18"
+}

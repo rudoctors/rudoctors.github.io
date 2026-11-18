@@ -2,7 +2,8 @@
   "slug": "voloshina-marina",
   "name": "Волошина Марина",
   "specializations": [
-    "therapist"
+    "therapist",
+    "gastroenterologist"
   ],
   "specializationText": "Врач общей практики постоянная сербская лицензия \nВрач ультразвуковой диагностики (включая доплер)\nВрач гастроэнтеролог (российский сертификат)",
   "city": "Belgrade",
@@ -99,5 +100,5 @@
     "google-sheets",
     "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-11-16"
+  "updatedAt": "2026-11-18"
 }

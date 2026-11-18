@@ -25,7 +25,8 @@
   ],
   "contacts": {
     "phone": "+381 11 40 40 100",
-    "email": null
+    "email": null,
+    "website": "https://www.medigroup.rs/lekari/tkalic-oksana/"
   },
   "reviews": [
     {
@@ -41,7 +42,9 @@
   "featured": false,
   "sources": [
     "google-sheets",
-    "t.me/vrachivserbii"
+    "t.me/vrachivserbii",
+    "medigroup.rs"
   ],
-  "updatedAt": "2026-11-16"
+  "updatedAt": "2026-11-18",
+  "photo": "https://www.medigroup.rs/wp-content/uploads/2024/04/E003993-dr-Oksana-Tkalic.jpg"
 }

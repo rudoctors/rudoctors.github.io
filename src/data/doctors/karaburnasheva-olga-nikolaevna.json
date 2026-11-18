@@ -2,7 +2,8 @@
   "slug": "karaburnasheva-olga-nikolaevna",
   "name": "Карабурнашева Ольга Николаевна",
   "specializations": [
-    "pediatrician"
+    "pediatrician",
+    "neurologist"
   ],
   "specializationText": "Педиатр",
   "city": "Belgrade",
@@ -17,11 +18,14 @@
   "workplaces": [
     {
       "clinic": "клиника Vizim doctors",
-      "city": "Belgrade"
+      "city": "Belgrade",
+      "address": "Dubljanska 41, Belgrade"
     }
   ],
   "contacts": {
     "phone": "0117857777",
+    "appointmentUrl": "https://n1224063.alteg.io/company/1167832/personal/menu/master-info/1167832/2640030?o=m2640030",
+    "website": "https://taplink.cc/helga_mon",
     "email": null
   },
   "reviews": [],
@@ -29,7 +33,9 @@
   "featured": false,
   "sources": [
     "google-sheets",
-    "t.me/vrachivserbii"
+    "t.me/vrachivserbii",
+    "citilab.rs"
   ],
-  "updatedAt": "2026-11-16"
+  "updatedAt": "2026-11-18",
+  "experienceYears": 28
 }

@@ -16,15 +16,19 @@ for (const f of fs.readdirSync(dir).filter((x) => x.endsWith(".json"))) {
   let dirty = false;
   for (const r of doc.reviews) {
     if (!r.text) continue;
-    // alfa source is English; skip if already lang set
-    const isAlfa = r.source === "serbia.alfamedstar.com";
+    // Alfa reviews can be RU or EN; only tag EN if no cyrillic and looks English
+    const isRussian = /[а-яё]/i.test(r.text);
     const looksEn =
-      isAlfa ||
-      (!/[а-яё]/i.test(r.text) && /\b(the|and|with|was|very|doctor|good)\b/i.test(r.text));
+      !isRussian &&
+      (r.source === "serbia.alfamedstar.com" ||
+        /\b(the|and|with|was|very|doctor|good)\b/i.test(r.text));
     if (looksEn && !r.lang) {
       r.lang = "en";
       dirty = true;
       total++;
+    } else if (isRussian && r.lang === "en") {
+      delete r.lang;
+      dirty = true;
     }
     if (r.lang === "en" && !r.textOriginal) {
       // if not yet translated, keep original as text for now; after translation:

@@ -2,11 +2,16 @@
   "slug": "ekaterina-aleksandrovna-trofimova",
   "name": "Екатерина Александровна Трофимова",
   "specializations": [
-    "osteopath"
+    "osteopath",
+    "endocrinologist"
   ],
   "specializationText": "врач-остеопат",
   "city": "Belgrade",
-  "languages": [],
+  "languages": [
+    "ru",
+    "sr",
+    "en"
+  ],
   "formats": [
     "offline"
   ],
@@ -14,6 +19,8 @@
   "education": [],
   "workplaces": [],
   "contacts": {
+    "phone": "+381621429627",
+    "email": null,
     "telegram": "https://t.me/drTrofiKa",
     "website": "https://www.instagram.com/drtrofika"
   },
@@ -55,7 +62,8 @@
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
-    "https://t.me/vrachivserbii/202014"
+    "https://t.me/vrachivserbii/202014",
+    "google-sheets"
   ],
-  "updatedAt": "2026-10-31"
+  "updatedAt": "2026-11-18"
 }

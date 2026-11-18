@@ -1,0 +1,81 @@
+{
+  "slug": "natalya-sokolova",
+  "name": "Наталья Соколова",
+  "nameEn": "Наталья Соколова",
+  "specializations": [
+    "pediatrician"
+  ],
+  "specializationText": "Педиатр",
+  "experienceYears": 6,
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "en",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "AlfaMedStar",
+      "address": "Milentija Popovića 5v, Beograd 11000",
+      "city": "Belgrade",
+      "district": "Нови-Београд",
+      "url": "https://serbia.alfamedstar.com/"
+    }
+  ],
+  "contacts": {
+    "website": "https://serbia.alfamedstar.com/en/doctors/natalya-sokolova",
+    "appointmentUrl": "https://serbia.alfamedstar.com/en/doctors"
+  },
+  "reviews": [
+    {
+      "id": "alfa-natalya-sokolova-0",
+      "author": "Екатерина",
+      "date": "",
+      "rating": 0,
+      "text": "Месяц лечили «аллергию» строгой диетой без результата. Наталья Павловна тщательно осмотрела дочь, расспросила о нюансах, показала высокую компетенцию в иммунологии и дерматологии. Получили чёткий план терапии. Благодаря ей мы сохранили ГВ, дочь идёт на поправку, а ребёнок, который давно не улыбался на приёмах, наконец улыбнулся!",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-natalya-sokolova-1",
+      "author": "Анна",
+      "date": "",
+      "rating": 0,
+      "text": "Дочь (4,5 г.) год жаловалась на боли в животе, в поликлинике говорили, что это норма. Наталья Павловна тщательно расспросила, осмотрела, назначила УЗИ и анализы. Выявлена целиакия и дефицит железа/витамина Д. Назначена диета и лечение. Очень благодарна за профессионализм и вовлечённость, остались на связи после приёма.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-natalya-sokolova-2",
+      "author": "Ольга",
+      "date": "",
+      "rating": 0,
+      "text": "Обратились с больным ухом и температурой. Наталья Павловна выявила отит, показала его, рассказала, как смотреть ушки дома. На протяжении всей болезни была на связи. Очень добрая и внимательная, сразу расположила к себе ребёнка.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-natalya-sokolova-3",
+      "author": "Мария",
+      "date": "",
+      "rating": 0,
+      "text": "Приём с новорождённой. Выявлен недовес, составлен план по выравниванию веса. Подобрана смесь, бутылочка, накладки для комфортного сосания. Получила ответы на все вопросы. Очень внимательный и компетентный специалист.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-natalya-sokolova-4",
+      "author": "Светлана",
+      "date": "",
+      "rating": 0,
+      "text": "Обратились с аллергией. Наталья Павловна назначила анализы, подсказала, как быстро облегчить зуд и снять отёк. Расписала варианты лечения и составила аптечку в отпуск с ребёнком. Подход основан на доказательной медицине, наблюдаемся с 2025 года.",
+      "source": "serbia.alfamedstar.com"
+    }
+  ],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "serbia.alfamedstar.com"
+  ],
+  "updatedAt": "2026-11-18"
+}

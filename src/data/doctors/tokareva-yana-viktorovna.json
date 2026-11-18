@@ -2,7 +2,8 @@
   "slug": "tokareva-yana-viktorovna",
   "name": "Токарева Яна Викторовна",
   "specializations": [
-    "therapist"
+    "therapist",
+    "dermatologist"
   ],
   "specializationText": "Врач общей практики\n\n*Ординатура по дерматологии (сертификат медицинская косметология)\n\nОрдинатура по реабилитационной медицине",
   "city": "Belgrade",
@@ -33,5 +34,5 @@
     "google-sheets",
     "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-11-16"
+  "updatedAt": "2026-11-18"
 }

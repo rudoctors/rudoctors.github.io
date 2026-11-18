@@ -16,11 +16,20 @@
   ],
   "bio": "Документы: Диплом РФ, лицензия в Сербии",
   "education": [],
-  "workplaces": [],
+  "workplaces": [
+    {
+      "clinic": "Doctorus Expert",
+      "address": "Višegradska 1A, Savski Venac",
+      "city": "Belgrade",
+      "url": "https://doctorus.rs/"
+    }
+  ],
   "contacts": {
     "phone": "+381621429627",
     "email": null,
-    "telegram": "https://t.me/gummy_doc"
+    "telegram": "https://t.me/gummy_doc",
+    "website": "https://doctorus.rs/ru/doctors/3083401",
+    "appointmentUrl": "https://doctorus.altegio.me/company/1278366/personal/menu?o=m3083401"
   },
   "reviews": [
     {
@@ -36,7 +45,9 @@
   "featured": false,
   "sources": [
     "google-sheets",
-    "t.me/vrachivserbii"
+    "t.me/vrachivserbii",
+    "doctorus.rs"
   ],
-  "updatedAt": "2026-11-16"
+  "updatedAt": "2026-11-18",
+  "photo": "https://assets.alteg.io/masters/origin/0/08/08fb5df825587ad_20260908125943.png"
 }

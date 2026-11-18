@@ -15,11 +15,18 @@
   ],
   "bio": "Документы: Диплом РФ\nЛицензия в Сербии",
   "education": [],
-  "workplaces": [],
+  "workplaces": [
+    {
+      "clinic": "MediGroup",
+      "city": "Belgrade",
+      "url": "https://www.medigroup.rs/lekari/radygina-ekaterina/"
+    }
+  ],
   "contacts": {
     "phone": "011 40 40 100",
     "email": null,
-    "telegram": "https://t.me/Ekaterina_dermatovenerologist"
+    "telegram": "https://t.me/Ekaterina_dermatovenerologist",
+    "website": "https://www.medigroup.rs/lekari/radygina-ekaterina/"
   },
   "reviews": [
     {
@@ -123,7 +130,9 @@
   "featured": false,
   "sources": [
     "google-sheets",
-    "t.me/vrachivserbii"
+    "t.me/vrachivserbii",
+    "medigroup.rs"
   ],
-  "updatedAt": "2026-11-16"
+  "updatedAt": "2026-11-18",
+  "photo": "https://www.medigroup.rs/wp-content/uploads/2025/10/dr-ekaterina-radygina-medigroup.jpg"
 }

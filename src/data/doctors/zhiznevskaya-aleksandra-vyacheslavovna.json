@@ -2,7 +2,8 @@
   "slug": "zhiznevskaya-aleksandra-vyacheslavovna",
   "name": "Жизневская Александра Вячеславовна",
   "specializations": [
-    "therapist"
+    "therapist",
+    "infectiologist"
   ],
   "specializationText": "врач общей практики, \nинфекционист",
   "experienceYears": 5,
@@ -245,5 +246,5 @@
     "t.me/vrachivserbii",
     "citilab.rs"
   ],
-  "updatedAt": "2026-11-16"
+  "updatedAt": "2026-11-18"
 }

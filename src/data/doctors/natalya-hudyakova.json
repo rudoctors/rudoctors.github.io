@@ -22,7 +22,8 @@
   "hidden": false,
   "featured": false,
   "sources": [
-    "telegram"
+    "telegram",
+    "doctorus.rs"
   ],
   "bio": "Доктор медицинских наук, эндокринолог, диетолог, врач УЗИ со стажем 18 лет. Действующий профессор Международного колледжа профессионального образования Белграда (ICEPS), экс-доцент СПбГУ. Автор более 100 научных публикаций и руководств по эндокринологии. Персонализированные программы восстановления здоровья при сахарном диабете, метаболическом синдроме, заболеваниях щитовидной железы. УЗИ щитовидной железы на приёме.",
   "education": [
@@ -47,10 +48,12 @@
   "contacts": {
     "phone": "+381691019269",
     "telegram": "https://t.me/doctorus_expert",
-    "website": "https://doctorus.rs"
+    "website": "https://doctorus.rs",
+    "appointmentUrl": "https://doctorus.altegio.me/company/1278366/personal/menu?o=m3105286"
   },
   "reviews": [],
   "source": "Telegram: https://t.me/vrachivserbii/211780",
   "createdAt": "2026-10-31",
-  "updatedAt": "2026-10-31"
+  "updatedAt": "2026-11-18",
+  "photo": "https://assets.alteg.io/masters/origin/1/18/18b67679dee35fa_20260920191911.png"
 }

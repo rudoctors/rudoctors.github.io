@@ -2,11 +2,14 @@
   "slug": "bobyleva-anastasiya-igorevna",
   "name": "Бобылёва Анастасия Игоревна",
   "specializations": [
-    "dentist"
+    "dentist",
+    "dermatologist"
   ],
   "specializationText": "Ортодонт, гнатолог",
   "city": "Belgrade",
-  "languages": [],
+  "languages": [
+    "ru"
+  ],
   "formats": [
     "offline"
   ],
@@ -19,7 +22,13 @@
       "city": "Belgrade"
     }
   ],
-  "contacts": {},
+  "contacts": {
+    "phone": "+381 65 573 77 77 (",
+    "appointmentUrl": "https://n1427311.alteg.io/company/1357508/personal/select-master/master-info/1357508/3080256?o=m3080256",
+    "website": "https://n1427311.alteg.io/company/1357508/personal/select-master?o=m3080256",
+    "email": null,
+    "telegram": "https://t.me/tame_lynx"
+  },
   "reviews": [
     {
       "id": "tg-215594",
@@ -34,7 +43,10 @@
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
-    "https://t.me/vrachivserbii/206430"
+    "https://t.me/vrachivserbii/206430",
+    "google-sheets",
+    "citilab.rs"
   ],
-  "updatedAt": "2026-10-31"
+  "updatedAt": "2026-11-18",
+  "experienceYears": 13
 }

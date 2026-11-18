@@ -23,7 +23,8 @@
   "contacts": {
     "phone": "+381 69 101 92 69",
     "email": null,
-    "website": "https://app.medesk.net/patient/?e=6787b57ddb0b220cf5517b6d&a=anonymous"
+    "website": "https://app.medesk.net/patient/?e=6787b57ddb0b220cf5517b6d&a=anonymous",
+    "appointmentUrl": "https://doctorus.altegio.me/company/1278366/personal/menu?o=m2920648"
   },
   "reviews": [
     {
@@ -79,7 +80,9 @@
   "featured": false,
   "sources": [
     "google-sheets",
-    "t.me/vrachivserbii"
+    "t.me/vrachivserbii",
+    "doctorus.rs"
   ],
-  "updatedAt": "2026-11-16"
+  "updatedAt": "2026-11-18",
+  "photo": "https://assets.alteg.io/masters/origin/7/77/77fd04abf22389b_20251215122946.png"
 }

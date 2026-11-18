@@ -2,7 +2,8 @@
   "slug": "smolenceva-lyudmila",
   "name": "Смоленцева Людмила",
   "specializations": [
-    "therapist"
+    "therapist",
+    "rheumatologist"
   ],
   "specializationText": "Терапевт\nРевматолог",
   "city": "Novi Sad",
@@ -23,7 +24,8 @@
   ],
   "contacts": {
     "phone": "+381 11 40 40 100",
-    "email": null
+    "email": null,
+    "website": "https://www.medigroup.rs/lekari/smolentceva-liudmila/"
   },
   "reviews": [
     {
@@ -47,7 +49,9 @@
   "featured": false,
   "sources": [
     "google-sheets",
-    "t.me/vrachivserbii"
+    "t.me/vrachivserbii",
+    "medigroup.rs"
   ],
-  "updatedAt": "2026-11-16"
+  "updatedAt": "2026-11-18",
+  "photo": "https://www.medigroup.rs/wp-content/uploads/2026/01/dr-med-liudmila-smolentceva-medigroup.jpg"
 }

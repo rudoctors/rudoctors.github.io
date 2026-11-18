@@ -58,15 +58,19 @@ Legacy: `https://rudoctors.github.io` (настроен перенос адре�
 | **`e3683d7`** | **Telegram ChatExport:** 279 новых карточек, 220 курированных отзывов, 415 публичных профилей, 477 страниц; CI `36052115202` — **success** |
 | `1693580` | **Telegram updates (11.11.2026):** 19 проверенных отзывов, карточка психолога Хашимова |
 | `9629fd8` | **SEO guides (18.11.2026):** 10 медицинских гайдов, sitemap, навигация |
-| `current` | **Telegram ChatExport + Google Sheets (18.11.2026):** 19 проверенных отзывов в 15 карточек, аудит Google Sheet (109 строк, 0 коллизий) |
+| `55a9aca` | **Telegram ChatExport + Google Sheets (18.11.2026):** 19 проверенных отзывов в 15 карточек, аудит Google Sheet (109 строк, 0 коллизий) |
+| `44eb55f` | **Automation:** Telethon экспорт (`scripts/export-telethon.py`, gitignored) |
+| `current` | **Клиники (AlfaMedStar, MediGroup, Doctorus, Citilab):** 5 новых врачей, 58 новых отзывов AlfaMedStar, скраперы клиник, 440 врачей / 2110 отзывов / 45 специальностей / 5 городов (515 страниц) |
 
 ---
 
 ## Текущее состояние (спринты A→F, 24.09.2026)
 
-### Верификация
-- `npm run check` — 0 errors / 0 warnings / 0 hints.
-- `npm run build` — **477 pages**, sitemap-index; 415 публичных профилей врачей + 4 архивных redirect.
+### Верификация (18.11.2026)
+- `npm run check` — 0 errors / 0 warnings.
+- `npm run build` — **515 pages**, sitemap-index; **440 публичных профилей** врачей + 4 архивных redirect; **2110 отзывов**.
+- `npm run detect:dups` — total 445 (440 visible + 5 admin/archived), 0 visible dup groups.
+- Live счётчик главной: `440 врачей 2110 отзывов 45 специальностей 5 городов`.
 - dist: packages noindex, sitemap без `/packages`, 0 «Рекомендуем» в HTML.
 - Live smoke: `/`, `/doctors/` (+`?page=2` client), `/cities/nis/`, `/llms.txt`, `/404`, forms, doctor profile — **200**; data-bio=0; www.t.me=0; pager present; honeypot present.
 - CI `3050da7` → run `36020752013` — **success** (build 21s + deploy 2m13s); IndexNow ping OK.

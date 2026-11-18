@@ -1,0 +1,42 @@
+{
+  "slug": "leyla-taukumova",
+  "name": "Лейла Таукумова",
+  "specializations": [
+    "therapist",
+    "rheumatologist"
+  ],
+  "specializationText": "Врач общей практики, ревматолог, доктор медицинских наук",
+  "photo": "https://assets.alteg.io/masters/origin/3/3c/3ccb66f43cfa1d3_20260112155911.png",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "education": [
+    {
+      "degree": "д.м.н."
+    }
+  ],
+  "workplaces": [
+    {
+      "clinic": "Doctorus Expert",
+      "address": "Višegradska 1A, Savski Venac",
+      "city": "Belgrade",
+      "url": "https://doctorus.rs/"
+    }
+  ],
+  "contacts": {
+    "website": "https://doctorus.rs/ru/doctors/2970335",
+    "appointmentUrl": "https://doctorus.altegio.me/company/1278366/personal/menu?o=m2970335"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "doctorus.rs"
+  ],
+  "updatedAt": "2026-11-18"
+}

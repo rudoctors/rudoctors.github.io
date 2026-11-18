@@ -1,0 +1,38 @@
+{
+  "slug": "ekaterina-sherashova",
+  "name": "Екатерина Шерашова",
+  "specializations": [
+    "pediatrician",
+    "gastroenterologist"
+  ],
+  "specializationText": "Педиатр, детский гастроэнтеролог",
+  "photo": "https://assets.alteg.io/masters/origin/8/86/860d8e09b75a3aa_20260829095310.png",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Doctorus Expert",
+      "address": "Višegradska 1A, Savski Venac",
+      "city": "Belgrade",
+      "url": "https://doctorus.rs/"
+    }
+  ],
+  "contacts": {
+    "website": "https://doctorus.rs/ru/doctors/3080290",
+    "appointmentUrl": "https://doctorus.altegio.me/company/1278366/personal/menu?o=m3080290"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "doctorus.rs"
+  ],
+  "updatedAt": "2026-11-18"
+}

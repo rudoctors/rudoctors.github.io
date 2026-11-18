@@ -69,6 +69,30 @@
       "textOriginal": "I had an appointment with therapist Timur Ilyasovich after several weeks of constant fatigue and blood pressure fluctuations. I liked that the doctor wasn't in a hurry and asked many clarifying questions. He ordered tests and adjusted the treatment afterwards. Within a couple of weeks my condition noticeably improved. I would also like to note his calm manner of communication and clear explanations without complicated medical terms.",
       "langSource": "en",
       "translatedAt": "2026-09-23"
+    },
+    {
+      "id": "alfa-timur-mukaev-0_1",
+      "author": "Алексей",
+      "date": "",
+      "rating": 0,
+      "text": "Обращался к Тимуру Мукаеву с затяжным кашлем. Врач внимательно выслушал, назначил обследование и подробно объяснил результаты. Лечение помогло, остался доволен приемом.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-timur-mukaev-1_1",
+      "author": "Ольга",
+      "date": "",
+      "rating": 0,
+      "text": "Была на приеме у терапевта Тимура Ильясовича после нескольких недель постоянной усталости и скачков давления. Понравилось, что врач не торопился и задавал много уточняющих вопросов. Назначил анализы, после которых скорректировал лечение. Через пару недель самочувствие заметно улучшилось. Отдельно хочу отметить спокойную манеру общения и понятные объяснения без сложных медицинских терминов.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-timur-mukaev-2",
+      "author": "Лена",
+      "date": "",
+      "rating": 0,
+      "text": "Хочу поблагодарить Тимура Мукаева за профессионализм и человеческое отношение. Обратилась с высокой температурой и сильной слабостью, когда уже начала переживать, что заболевание дает осложнения. Врач очень внимательно провел осмотр, подробно расспросил о симптомах и объяснил, какие признаки требуют особого внимания. Особенно понравилось, что он не ограничился стандартными рекомендациями, а подробно рассказал, как контролировать состояние дома и в каких случаях нужно обращаться повторно. Сейчас полностью восстановилась и могу сказать, что давно не встречала такого внимательного отношения к пациентам.",
+      "source": "serbia.alfamedstar.com"
     }
   ],
   "hidden": false,
@@ -79,5 +103,5 @@
     "google-sheets",
     "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-11-16"
+  "updatedAt": "2026-11-18"
 }

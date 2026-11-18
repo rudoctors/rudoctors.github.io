@@ -20,11 +20,17 @@
     {
       "clinic": "Поликлиника CITILAB",
       "city": "Novi Sad"
+    },
+    {
+      "clinic": "MediGroup",
+      "city": "Belgrade",
+      "url": "https://www.medigroup.rs/lekari/goncharuk-anastasiia/"
     }
   ],
   "contacts": {
     "phone": "+381 65 573 77 77",
-    "email": null
+    "email": null,
+    "website": "https://www.medigroup.rs/lekari/goncharuk-anastasiia/"
   },
   "reviews": [
     {
@@ -88,7 +94,9 @@
   "featured": false,
   "sources": [
     "google-sheets",
-    "t.me/vrachivserbii"
+    "t.me/vrachivserbii",
+    "medigroup.rs"
   ],
-  "updatedAt": "2026-11-16"
+  "updatedAt": "2026-11-18",
+  "photo": "https://www.medigroup.rs/wp-content/uploads/2026/09/E003773-dr-Anastasiia-Goncharuk.jpg"
 }

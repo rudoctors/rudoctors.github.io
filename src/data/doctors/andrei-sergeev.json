@@ -4,7 +4,8 @@
   "nameEn": "Andrei Sergeev",
   "specializations": [
     "pediatrician",
-    "allergist_immunologist"
+    "allergist_immunologist",
+    "pulmonologist"
   ],
   "specializationText": "педиатрия, аллергология-иммунология",
   "photo": "/photos/rd-14.webp",
@@ -119,5 +120,5 @@
     "google-sheets",
     "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-11-16"
+  "updatedAt": "2026-11-18"
 }

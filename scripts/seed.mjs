@@ -135,6 +135,29 @@ if (fs.existsSync(outDir)) {
   }
 }
 
+function calcStats(docs) {
+  const publicDocs = docs.filter((d) => !d.hidden);
+  const specs = new Set();
+  const cities = new Set();
+  let reviews = 0;
+  for (const d of publicDocs) {
+    if (d.city) cities.add(d.city);
+    for (const s of d.specializations || []) specs.add(s);
+    reviews += (d.reviews || []).length;
+  }
+  return {
+    doctors: publicDocs.length,
+    reviews,
+    specializations: specs.size,
+    cities: cities.size,
+  };
+}
+
+const initialStats = calcStats([...existingBySlug.values()]);
+console.log(
+  `Initial stats: ${initialStats.doctors} doctors, ${initialStats.reviews} reviews, ${initialStats.specializations} specs, ${initialStats.cities} cities`
+);
+
 const usedSlugs = new Set(existingBySlug.keys());
 
 function uniqueSlug(base) {
@@ -145,6 +168,26 @@ function uniqueSlug(base) {
   }
   usedSlugs.add(s);
   return s;
+}
+
+function levenshtein(a, b) {
+  const m = a.length, n = b.length;
+  const d = Array.from({ length: m + 1 }, () => new Array(n + 1));
+  for (let i = 0; i <= m; i++) d[i][0] = i;
+  for (let j = 0; j <= n; j++) d[0][j] = j;
+  for (let i = 1; i <= m; i++) {
+    for (let j = 1; j <= n; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + cost);
+    }
+  }
+  return d[m][n];
+}
+
+function tokenMatches(t1, t2) {
+  if (t1 === t2) return true;
+  if (t1.length >= 6 && t2.length >= 6 && levenshtein(t1, t2) <= 1) return true;
+  return false;
 }
 
 function nameTokens(name) {
@@ -159,13 +202,43 @@ function namesMatch(a, b) {
   const ta = nameTokens(a);
   const tb = nameTokens(b);
   if (!ta.length || !tb.length) return false;
-  if (ta.length === 1 || tb.length === 1) return ta[0] === tb[0];
-  // mutual subset (order-independent; extra patronymic ok)
-  const sa = new Set(ta);
-  const sb = new Set(tb);
-  const shared = ta.filter((t) => sb.has(t)).length;
-  if (shared < 2) return false;
-  return ta.every((t) => sb.has(t)) || tb.every((t) => sa.has(t));
+  if (ta.length === 1 || tb.length === 1) return tokenMatches(ta[0], tb[0]);
+  let shared = 0;
+  for (const t1 of ta) {
+    if (tb.some((t2) => tokenMatches(t1, t2))) shared++;
+  }
+  return shared >= 2;
+}
+
+const SPEC_KEYWORDS = [
+  [/терапевт|общ(ей|ая)\s+практик|internista/i, "therapist"],
+  [/педиатр|неонатолог/i, "pediatrician"],
+  [/кардиолог/i, "cardiologist"],
+  [/невролог/i, "neurologist"],
+  [/психиатр|психотерапевт/i, "psychiatrist"],
+  [/эндокринолог/i, "endocrinologist"],
+  [/гинеколог|акушер/i, "gynecologist"],
+  [/дерматолог|дерматовенеролог|косметолог|трихолог/i, "dermatologist"],
+  [/гастроэнтеролог/i, "gastroenterologist"],
+  [/пульмонолог|аллерголог/i, "pulmonologist"],
+  [/ревматолог/i, "rheumatologist"],
+  [/инфекционист/i, "infectiologist"],
+  [/реабилитолог|физиотерапевт/i, "rehabilitologist"],
+  [/гематолог/i, "hematologist"],
+  [/уролог|андролог/i, "urologist"],
+  [/хирург/i, "surgeon"],
+  [/лор|оториноларинголог/i, "otorhinolaryngologist"],
+  [/нарколог/i, "narcologist"],
+  [/офтальмолог/i, "ophthalmologist"],
+];
+
+function mapSpecRu(text) {
+  if (!text) return ["therapist"];
+  const out = [];
+  for (const [re, key] of SPEC_KEYWORDS) {
+    if (re.test(text)) out.push(key);
+  }
+  return out.length ? [...new Set(out)] : ["therapist"];
 }
 
 function findExisting(nameCandidates) {
@@ -287,12 +360,14 @@ const EN_SPEC = {
 
 function mapSpec(text) {
   if (!text) return ["therapist"];
+  const ru = mapSpecRu(text);
+  if (ru.length && (ru.length > 1 || ru[0] !== "therapist")) return ru;
   const t = String(text).toLowerCase();
   for (const [k, v] of Object.entries(EN_SPEC)) {
     if (t.includes(k.toLowerCase())) return [v];
   }
   if (t.includes("pediatric endocrin")) return ["child_endocrinologist", "pediatrician"];
-  return ["therapist"];
+  return ru.length ? ru : ["therapist"];
 }
 
 function guessExp(text, explicit) {
@@ -328,9 +403,20 @@ if (fs.existsSync(alfaPath)) {
     const exp = guessExp("", a.exp === "2" ? undefined : a.exp);
 
     if (existing) {
-      const seen = new Set((existing.reviews || []).map((r) => r.id || r.text));
+      if (!existing.reviews) existing.reviews = [];
+      const seenText = new Set(existing.reviews.map((r) => r.text.trim()));
+      const seenId = new Set(existing.reviews.map((r) => r.id));
       for (const r of reviews) {
-        if (!seen.has(r.id) && !seen.has(r.text)) existing.reviews.push(r);
+        if (seenText.has(r.text.trim())) continue;
+        let revId = r.id;
+        let suffix = 1;
+        while (seenId.has(revId)) {
+          revId = `${r.id}_${suffix++}`;
+        }
+        r.id = revId;
+        seenId.add(revId);
+        seenText.add(r.text.trim());
+        existing.reviews.push(r);
       }
       if (!existing.experienceYears && exp) existing.experienceYears = exp;
       if (!existing.sources.includes("serbia.alfamedstar.com")) {
@@ -380,34 +466,6 @@ if (fs.existsSync(alfaPath)) {
 
 // --- Google Sheets (public CSV → scripts/sheet-doctors.json) ---
 const sheetPath = path.join(__dirname, "sheet-doctors.json");
-const SPEC_KEYWORDS = [
-  [/терапевт|общ(ей|ая)\s+практик|internista/i, "therapist"],
-  [/педиатр|неонатолог/i, "pediatrician"],
-  [/кардиолог/i, "cardiologist"],
-  [/невролог/i, "neurologist"],
-  [/психиатр|психотерапевт/i, "psychiatrist"],
-  [/эндокринолог/i, "endocrinologist"],
-  [/гинеколог|акушер/i, "gynecologist"],
-  [/дерматолог|косметолог|трихолог/i, "dermatologist"],
-  [/гастроэнтеролог/i, "gastroenterologist"],
-  [/пульмонолог|аллерголог/i, "pulmonologist"],
-  [/ревматолог/i, "therapist"],
-  [/инфекционист/i, "therapist"],
-  [/гематолог/i, "hematologist"],
-  [/уролог/i, "urologist"],
-  [/хирург/i, "surgeon"],
-  [/лор|оториноларинголог/i, "otorhinolaryngologist"],
-  [/нарколог/i, "narcologist"],
-  [/офтальмолог/i, "ophthalmologist"],
-];
-
-function mapSpecRu(text) {
-  if (!text) return ["therapist"];
-  for (const [re, key] of SPEC_KEYWORDS) {
-    if (re.test(text)) return [key];
-  }
-  return ["therapist"];
-}
 
 function parseSheetCity(city) {
   const s = String(city || "");
@@ -607,6 +665,150 @@ if (fs.existsSync(citiPath)) {
   }
 }
 
+// --- medigroup.rs (scripts/medigroup-doctors.json) ---
+const mediPath = path.join(__dirname, "medigroup-doctors.json");
+if (fs.existsSync(mediPath)) {
+  const medi = readJson(mediPath);
+  for (const m of medi) {
+    if (!m?.name) continue;
+    const existing = findExisting([m.name]) || seed.find((s) => namesMatch(m.name, s.name));
+    const specializations = mapSpecRu(m.specialty);
+    const photo = m.photo || undefined;
+    const sources = ["medigroup.rs"];
+
+    if (existing) {
+      if (!existing.photo && photo) existing.photo = photo;
+      if (!existing.specializationText && m.specialty) {
+        existing.specializationText = m.specialty;
+      }
+      for (const sp of specializations) {
+        if (!existing.specializations.includes(sp)) existing.specializations.push(sp);
+      }
+      if (!existing.workplaces) existing.workplaces = [];
+      const hasMg = existing.workplaces.some((w) => /medigroup/i.test(w.clinic || ""));
+      if (!hasMg) {
+        existing.workplaces.push({
+          clinic: "MediGroup",
+          city: m.city || "Belgrade",
+          url: m.url || "https://www.medigroup.rs/russkie-vrachi/",
+        });
+      }
+      if (!existing.contacts) existing.contacts = {};
+      if (!existing.contacts.website && m.url) existing.contacts.website = m.url;
+      existing.sources = [...new Set([...(existing.sources || []), ...sources])];
+      existing.updatedAt = new Date().toISOString().slice(0, 10);
+      if (!seed.includes(existing)) seed.push(existing);
+    } else {
+      const slug = uniqueSlug(slugify(m.name) || m.slug);
+      const card = upsert({
+        slug,
+        name: m.name,
+        specializations,
+        specializationText: m.specialty || undefined,
+        photo,
+        city: m.city || "Belgrade",
+        district: undefined,
+        languages: ["ru", "sr"],
+        formats: ["offline"],
+        bio: undefined,
+        education: [],
+        workplaces: [
+          {
+            clinic: "MediGroup",
+            city: m.city || "Belgrade",
+            url: m.url || "https://www.medigroup.rs/russkie-vrachi/",
+          },
+        ],
+        contacts: {
+          website: m.url || undefined,
+        },
+        reviews: [],
+        hidden: false,
+        featured: false,
+        sources,
+        updatedAt: new Date().toISOString().slice(0, 10),
+      });
+      if (card && !seed.includes(card)) seed.push(card);
+    }
+  }
+}
+
+// --- doctorus.rs (scripts/doctorus-doctors.json) ---
+const docPath = path.join(__dirname, "doctorus-doctors.json");
+if (fs.existsSync(docPath)) {
+  const doctorusList = readJson(docPath);
+  for (const d of doctorusList) {
+    if (!d?.name) continue;
+    const existing = findExisting([d.name]) || seed.find((s) => namesMatch(d.name, s.name));
+    const specializations = mapSpecRu(d.specialtyText || d.specialty);
+    const photo = d.photo || undefined;
+    const sources = ["doctorus.rs"];
+
+    if (existing) {
+      if (!existing.photo && photo) existing.photo = photo;
+      if (!existing.specializationText && d.specialtyText) {
+        existing.specializationText = d.specialtyText;
+      }
+      for (const sp of specializations) {
+        if (!existing.specializations.includes(sp)) existing.specializations.push(sp);
+      }
+      if (!existing.workplaces) existing.workplaces = [];
+      const hasDoc = existing.workplaces.some((w) => /doctorus/i.test(w.clinic || ""));
+      if (!hasDoc) {
+        existing.workplaces.push({
+          clinic: "Doctorus Expert",
+          address: d.address || "Višegradska 1A, Savski Venac",
+          city: d.city || "Belgrade",
+          url: "https://doctorus.rs/",
+        });
+      }
+      if (!existing.contacts) existing.contacts = {};
+      if (d.bookingUrl && !existing.contacts.appointmentUrl) {
+        existing.contacts.appointmentUrl = d.bookingUrl;
+      }
+      if (d.url && !existing.contacts.website) {
+        existing.contacts.website = d.url;
+      }
+      existing.sources = [...new Set([...(existing.sources || []), ...sources])];
+      existing.updatedAt = new Date().toISOString().slice(0, 10);
+      if (!seed.includes(existing)) seed.push(existing);
+    } else {
+      const slug = uniqueSlug(slugify(d.name) || d.slug);
+      const card = upsert({
+        slug,
+        name: d.name,
+        specializations,
+        specializationText: d.specialtyText || undefined,
+        photo,
+        city: d.city || "Belgrade",
+        district: undefined,
+        languages: d.languages || ["ru", "sr"],
+        formats: ["offline"],
+        bio: undefined,
+        education: d.degree ? [{ degree: d.degree }] : [],
+        workplaces: [
+          {
+            clinic: "Doctorus Expert",
+            address: d.address || "Višegradska 1A, Savski Venac",
+            city: d.city || "Belgrade",
+            url: "https://doctorus.rs/",
+          },
+        ],
+        contacts: {
+          website: d.url || undefined,
+          appointmentUrl: d.bookingUrl || undefined,
+        },
+        reviews: [],
+        hidden: false,
+        featured: false,
+        sources,
+        updatedAt: new Date().toISOString().slice(0, 10),
+      });
+      if (card && !seed.includes(card)) seed.push(card);
+    }
+  }
+}
+
 // write merge-in-place: never wipe admin/manual cards
 const bySlug = new Map();
 for (const doc of [...existingBySlug.values(), ...seed]) {
@@ -628,6 +830,14 @@ for (const f of fs.readdirSync(outDir)) {
 
 const withReviews = toWrite.filter((d) => (d.reviews || []).length > 0).length;
 const withExp = toWrite.filter((d) => d.experienceYears).length;
+const finalStats = calcStats(toWrite);
+
 console.log(
   `Seeded ${toWrite.length} doctors (merge-in-place), ${withReviews} with reviews, ${withExp} with experience, total reviews ${toWrite.reduce((n, d) => n + (d.reviews?.length || 0), 0)}`
+);
+console.log(
+  `Final stats: ${finalStats.doctors} doctors, ${finalStats.reviews} reviews, ${finalStats.specializations} specs, ${finalStats.cities} cities`
+);
+console.log(
+  `Delta: +${finalStats.doctors - initialStats.doctors} doctors, +${finalStats.reviews - initialStats.reviews} reviews, +${finalStats.specializations - initialStats.specializations} specs, +${finalStats.cities - initialStats.cities} cities`
 );

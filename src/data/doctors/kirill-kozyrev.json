@@ -160,6 +160,46 @@
       "textOriginal": "I came after a long period of unsuccessful attempts to stabilize my condition. Kirill Sergeyevich understood the situation from the first visit, carefully selected medication, and explained the rationale. Within weeks I felt real improvement. He was always available, answered questions, and monitored progress. I am very grateful for his dedication and professionalism.",
       "langSource": "en",
       "translatedAt": "2026-09-23"
+    },
+    {
+      "id": "alfa-kirill-kozyrev-0_1",
+      "author": "Андрей",
+      "date": "",
+      "rating": 0,
+      "text": "Обратился с тревогой и постоянным внутренним напряжением. На приёме было спокойно и понятно: врач подробно расспросил, объяснил, что со мной происходит, и предложил план работы. Отдельно понравилось, что всё объяснялось простым языком, без давления и запугивания.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-kirill-kozyrev-1_1",
+      "author": "Егор",
+      "date": "",
+      "rating": 0,
+      "text": "Для меня было важно найти специалиста, который сочетает психиатрический и психотерапевтический подход. На консультации получил ощущение системности: врач не только собрал анамнез, но и помог увидеть, как мои симптомы связаны с образом жизни, тревогой и привычными мыслями.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-kirill-kozyrev-2_1",
+      "author": "Максим",
+      "date": "",
+      "rating": 0,
+      "text": "Пришёл в состоянии сильной неопределённости, потому что долго не понимал, что со мной происходит. После консультации стало значительно яснее: разобрали симптомы, возможные причины и дальнейшие шаги. Было ощущение внимательного и вдумчивого отношения.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-kirill-kozyrev-3_1",
+      "author": "Ольга",
+      "date": "",
+      "rating": 0,
+      "text": "Понравилось, что врач не ограничился формальным опросом, а действительно вник в мою ситуацию. На приёме чувствовала себя спокойно, можно было задавать вопросы и получать понятные ответы. После встречи осталось ощущение, что есть маршрут, а не просто общие слова.",
+      "source": "serbia.alfamedstar.com"
+    },
+    {
+      "id": "alfa-kirill-kozyrev-4_1",
+      "author": "Алёна",
+      "date": "",
+      "rating": 0,
+      "text": "Обратилась после долгого периода безрезультатных попыток наладить состояние. Кирилл Сергеевич с первого приёма вник в ситуацию, тщательно подобрал препараты, объяснил логику назначений. Уже через несколько недель почувствовала реальный эффект. Всегда был на связи, отвечал на вопросы, следил за динамикой. Чувствуется искренняя заинтересованность в результате. Очень благодарна за неравнодушие и профессионализм.",
+      "source": "serbia.alfamedstar.com"
     }
   ],
   "hidden": false,
@@ -170,5 +210,5 @@
     "google-sheets",
     "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-11-16"
+  "updatedAt": "2026-11-18"
 }
