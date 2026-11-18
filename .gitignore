@@ -32,6 +32,7 @@ scripts/citilab-doctors.json
 scripts/tg-posts.json
 scripts/tg-export-*.json
 scripts/tg-parsed/
+scripts/export-telethon*
 .DS_Store
 
 
