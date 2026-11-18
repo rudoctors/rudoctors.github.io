@@ -81,6 +81,13 @@ const doctors = publicDoctors()
         Отправить отзыв
       </button>
       <p id="form-status" class="text-sm text-slate-500 hidden" role="status" aria-live="polite"></p>
+
+      <div id="fallback-tg" class="mt-4 p-4 rounded-xl border border-amber-200 bg-amber-50 hidden">
+        <p class="text-sm font-semibold text-amber-900 mb-2">Не удалось отправить отзыв через сервер. Вы можете отправить его напрямую разработчику в Telegram:</p>
+        <a id="fallback-tg-btn" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 btn-secondary !py-2 !px-4 text-sm font-bold">
+          📨 Отправить отзыв в Telegram (@balkandunav)
+        </a>
+      </div>
     </form>
 
     <!-- Inline success screen (hidden by default) -->
@@ -112,6 +119,7 @@ const doctors = publicDoctors()
   import { isHoneypotFilled, cooldownRemainingMs, markSubmitted, formatCooldown } from "../lib/formGuard";
 
   const RELAY_URL = "https://rudoctors-relay.deno.dev/api/review";
+  const DRAFT_KEY = "rudoctors_review_draft";
 
   const form = document.getElementById("review-form") as HTMLFormElement | null;
   const status = document.getElementById("form-status");
@@ -119,12 +127,49 @@ const doctors = publicDoctors()
   const reviewIdLine = document.getElementById("review-id-line");
   const submitBtn = document.getElementById("submit-btn") as HTMLButtonElement | null;
   const sel = document.getElementById("doctor") as HTMLSelectElement | null;
+  const authorInput = document.getElementById("author") as HTMLInputElement | null;
+  const ratingInput = document.getElementById("rating") as HTMLSelectElement | null;
+  const textInput = document.getElementById("text") as HTMLTextAreaElement | null;
+  const fallbackBox = document.getElementById("fallback-tg");
+  const fallbackBtn = document.getElementById("fallback-tg-btn") as HTMLAnchorElement | null;
   const KEY = "leave-review";
 
-  // Pre-fill doctor from URL param
+  // Pre-fill doctor from URL param or restore draft
   const params = new URLSearchParams(location.search);
   const pre = params.get("doctor");
-  if (pre && sel) sel.value = pre;
+  if (pre && sel) {
+    sel.value = pre;
+  }
+
+  // Restore draft if available
+  try {
+    const rawDraft = localStorage.getItem(DRAFT_KEY);
+    if (rawDraft) {
+      const draft = JSON.parse(rawDraft);
+      if (draft.doctor && sel && !sel.value) sel.value = draft.doctor;
+      if (draft.author && authorInput && !authorInput.value) authorInput.value = draft.author;
+      if (draft.rating && ratingInput && !ratingInput.value) ratingInput.value = draft.rating;
+      if (draft.text && textInput && !textInput.value) textInput.value = draft.text;
+    }
+  } catch {}
+
+  // Auto-save draft on input
+  const persistDraft = () => {
+    try {
+      localStorage.setItem(
+        DRAFT_KEY,
+        JSON.stringify({
+          doctor: sel?.value || "",
+          author: authorInput?.value || "",
+          rating: ratingInput?.value || "",
+          text: textInput?.value || "",
+        })
+      );
+    } catch {}
+  };
+
+  form?.addEventListener("input", persistDraft);
+  form?.addEventListener("change", persistDraft);
 
   form?.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -183,6 +228,7 @@ const doctors = publicDoctors()
       submitBtn.textContent = "Отправляем…";
     }
     if (status) status.classList.add("hidden");
+    if (fallbackBox) fallbackBox.classList.add("hidden");
 
     try {
       const res = await fetch(RELAY_URL, {
@@ -202,6 +248,7 @@ const doctors = publicDoctors()
 
       if (data.ok) {
         markSubmitted(KEY);
+        try { localStorage.removeItem(DRAFT_KEY); } catch {}
         // Show success screen
         form.classList.add("hidden");
         if (successBox) successBox.classList.remove("hidden");
@@ -216,7 +263,13 @@ const doctors = publicDoctors()
       if (status) {
         status.classList.remove("hidden");
         status.className = "text-sm mt-2 text-red-600";
-        status.textContent = `Ошибка отправки: ${String(err).slice(0, 120)}. Попробуйте позже.`;
+        status.textContent = `Ошибка отправки: ${String(err).slice(0, 120)}. Текст отзыва сохранён.`;
+      }
+      if (fallbackBox && fallbackBtn) {
+        const ratingStr = hasRating ? `${ratingNum}/5` : "без оценки";
+        const msg = `🩺 Отзыв для Rudoctors:\nВрач: ${doctorName} (${doctorSlug})\nАвтор: ${author}\nОценка: ${ratingStr}\n\nТекст:\n${text}`;
+        fallbackBtn.href = `https://t.me/balkandunav?text=${encodeURIComponent(msg)}`;
+        fallbackBox.classList.remove("hidden");
       }
     } finally {
       if (submitBtn) {
