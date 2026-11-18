@@ -1,5 +1,11 @@
 # Настройка Cloudflare Turnstile для RuDoctors
 
+> [!NOTE]
+> **Текущий статус:** Развёрнуто и активно в продакшене (18.11.2026).  
+> **Виджет:** `RuDoctors Reviews` (Managed Mode)  
+> **Хосты:** `rudoctors.com`, `rudoctors.rs`, `localhost`  
+> **Site Key:** `0x4AAAAAAGHmLz99DPYSzDQd` (прописан в GitHub Variables `PUBLIC_TURNSTILE_SITEKEY`)
+
 ## Зачем это нужно
 Cloudflare Turnstile защищает форму отзывов (`/leave-review/`) от спам-ботов, DoS-атак и автоматизированных накруток.
 В отличие от классической графической капчи (reCAPTCHA со светофорами/пешеходами):

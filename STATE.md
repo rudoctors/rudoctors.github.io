@@ -60,7 +60,26 @@ Legacy: `https://rudoctors.github.io` (настроен перенос адре�
 | `9629fd8` | **SEO guides (18.11.2026):** 10 медицинских гайдов, sitemap, навигация |
 | `55a9aca` | **Telegram ChatExport + Google Sheets (18.11.2026):** 19 проверенных отзывов в 15 карточек, аудит Google Sheet (109 строк, 0 коллизий) |
 | `44eb55f` | **Automation:** Telethon экспорт (`scripts/export-telethon.py`, gitignored) |
-| `current` | **Клиники (AlfaMedStar, MediGroup, Doctorus, Citilab):** 5 новых врачей, 58 новых отзывов AlfaMedStar, скраперы клиник, 440 врачей / 2110 отзывов / 45 специальностей / 5 городов (515 страниц) |
+| `848c5fa` | **Клиники (AlfaMedStar, MediGroup, Doctorus, Citilab):** 5 новых врачей, 58 новых отзывов AlfaMedStar, скраперы клиник, 440 врачей / 2110 отзывов / 45 специальностей / 5 городов (515 страниц) |
+| `1a546a8` | **Платформа отзывов и Cloudflare Turnstile (18.11.2026):** фикс CSP для Google Apps Script, интеграция Cloudflare Turnstile anti-bot капчи, спам-фильтр ссылок в GAS, переменная `PUBLIC_TURNSTILE_SITEKEY`, деплой run `44393185707` |
+
+---
+
+## Платформа отзывов и защита от DoS/спама (Задача 6 · 18.11.2026)
+
+- **Форма отправки отзывов:** `/leave-review/` — исправлена ошибка отправки `TypeError: Failed to fetch` (в `Layout.astro` в директивы `connect-src` и `form-action` добавлены правила для Google Apps Script и Cloudflare).
+- **Google Apps Script Webhook:** скрипт CRM отзывов подключен напрямую (`https://script.google.com/macros/s/AKfycbzwHMzGWg5Q3UMJhhaNNE7PgCHxISsh2ON1p91JdWkGbvufEHxfu0UQvRsTH5tA1i83/exec`).
+- **Telegram-модерация:** бот `@rudoctors_moderation_bot` (`TELEGRAM_ADMIN_CHAT_ID: 8953219173`) получает карточки новых отзывов с кнопками «✅ Опубликовать» / «❌ Отклонить».
+- **Защита от ботов и DoS (Cloudflare Turnstile):**
+  - Создан виджет в Cloudflare Dashboard: имя `RuDoctors Reviews`, режим `Managed` (умная проверка без пазлов и светофоров), домены: `rudoctors.com`, `rudoctors.rs`, `localhost`.
+  - **Site Key (публичный):** `0x4AAAAAAGHmLz99DPYSzDQd` (прописан в GitHub Repo Variables `PUBLIC_TURNSTILE_SITEKEY` и в `site/.env`).
+  - **Secret Key (секретный):** `0x4AAAAAAGHmL_4AWwIwr-RtdJwiLwM2a6k` (внесён в Script Properties Google Apps Script `CF_TURNSTILE_SECRET_KEY`).
+  - **Контентный спам-фильтр:** встроен в `gas_review_script.js` — отзывы со ссылками (`http`, `t.me`, `.ru/`, `.com/`) и ключевиками рекламы/казино сразу получают статус `3. Отклонён` и не отправляются в Telegram-чат модератора.
+- **Верификация в браузере (BrowserOS neo):**
+  - Страница `https://rudoctors.com/leave-review/` открыта и протестирована в реальном браузере;
+  - Красная тестовая плашка («Только для тестирования...») полностью устранена, отображается боевой значок Cloudflare Turnstile;
+  - Отправка отзывов и доставка уведомлений в Telegram протестированы наживую (отзывы `RD-261118-101` и `RD-261118-398` успешно доставлены).
+- **Руководство по настройке:** `docs/CLOUDFLARE-TURNSTILE-SETUP.md`.
 
 ---
 
