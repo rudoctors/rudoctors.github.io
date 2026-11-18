@@ -5,7 +5,9 @@
  * Колонки: A: ID | B: Дата | C: Статус | D: Slug врача | E: Имя врача | F: Автор | G: Оценка | H: Текст | I: Примечание
  *
  * Деплой: Web App, Execute as: Me, Who has access: Anyone
- * Env via Script Properties: TELEGRAM_BOT_TOKEN, TELEGRAM_ADMIN_CHAT_ID
+ * Env via Script Properties:
+ *   TELEGRAM_BOT_TOKEN, TELEGRAM_ADMIN_CHAT_ID,
+ *   CF_TURNSTILE_SECRET_KEY (опционально, для валидации капчи Cloudflare Turnstile)
  */
 
 const SHEET_NAME = "Отзывы";
@@ -39,6 +41,40 @@ function tgSend_(payload) {
       muteHttpExceptions: true
     });
   } catch (e) { Logger.log("tgSend error: " + e); }
+}
+
+/**
+ * Валидация токена Cloudflare Turnstile через siteverify API.
+ * Если CF_TURNSTILE_SECRET_KEY не настроен в Script Properties,
+ * функция возвращает true (graceful fallback).
+ */
+function verifyTurnstile_(token) {
+  const secret = getProp_("CF_TURNSTILE_SECRET_KEY");
+  if (!secret) return true;
+  if (!token) return false;
+  try {
+    const resp = UrlFetchApp.fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
+      method: "post",
+      contentType: "application/x-www-form-urlencoded",
+      payload: "secret=" + encodeURIComponent(secret) + "&response=" + encodeURIComponent(token),
+      muteHttpExceptions: true
+    });
+    const data = JSON.parse(resp.getContentText());
+    return Boolean(data.success);
+  } catch (err) {
+    Logger.log("Turnstile verification error: " + err);
+    return true; // fail-open при временных сбоях сети Cloudflare
+  }
+}
+
+/**
+ * Эвристический спам-фильтр: пациенты не размещают в отзывах рекламные ссылки и ключевики.
+ */
+function isSpamText_(text) {
+  if (!text) return false;
+  const linkPattern = /https?:\/\/|www\.[a-z0-9_-]+\.[a-z]{2,}|t\.me\/|[a-z0-9_-]+\.(?:ru|com|org|io|net|xyz|top|online|vip|pro)\/[a-z0-9_/?=-]+/i;
+  const keywordPattern = /казино|casino|vulkan|1xbet|ставки на спорт|крипт(?:а|овалют)|free spins|заработок в интернете/i;
+  return linkPattern.test(text) || keywordPattern.test(text);
 }
 
 function createJsonResponse_(data) {
@@ -128,6 +164,12 @@ function doPost(e) {
       return createJsonResponse_({ ok: true, status: "ignored" });
     }
 
+    // Cloudflare Turnstile anti-bot verification
+    const cfToken = String(data.cf_turnstile_response || data["cf-turnstile-response"] || "").trim();
+    if (!verifyTurnstile_(cfToken)) {
+      return createJsonResponse_({ ok: false, error: "Проверка на спам не пройдена. Пожалуйста, обновите страницу." });
+    }
+
     // Обязательные поля
     const doctor_slug = String(data.doctor_slug || "").trim().slice(0, 120);
     const doctor_name = String(data.doctor_name || "").trim().slice(0, 120);
@@ -146,17 +188,24 @@ function doPost(e) {
     const now = new Date();
     const dateFormatted = Utilities.formatDate(now, "Europe/Belgrade", "dd.MM.yyyy HH:mm");
 
+    // Фильтрация спам-содержимого (реклама / внешние ссылки)
+    const isSpam = isSpamText_(text);
+    const initialStatus = isSpam ? "3. Отклонён" : "1. Новый";
+    const note = isSpam ? "Автоматический спам-фильтр (ссылка или реклама)" : "";
+
     // Запись в таблицу
     const sheet = getSheet_();
     sheet.appendRow([
-      id, dateFormatted, "1. Новый", doctor_slug, doctor_name,
-      author, ratingValue, text, ""
+      id, dateFormatted, initialStatus, doctor_slug, doctor_name,
+      author, ratingValue, text, note
     ]);
     const lastRow = sheet.getLastRow();
     sheet.getRange(lastRow, 1, 1, 9).setVerticalAlignment("top");
 
-    // Telegram-карточка с кнопками
-    notifyTelegram_({ id, dateFormatted, doctor_slug, doctor_name, author, rating: ratingValue, text });
+    // Telegram-карточка с кнопками: отправляется ТОЛЬКО для легитимных отзывов
+    if (!isSpam) {
+      notifyTelegram_({ id, dateFormatted, doctor_slug, doctor_name, author, rating: ratingValue, text });
+    }
 
     return createJsonResponse_({ ok: true, id });
 

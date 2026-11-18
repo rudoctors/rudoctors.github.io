@@ -3,7 +3,9 @@
 Обновлено: 2026-11-18  
 Репозиторий: `https://github.com/rudoctors/rudoctors.github.io` (орг `rudoctors` под аккаунтом `Myusername-isnotavailable`, ветка `main`)
 Локальная папка: `D:\Projects\rudoctors\site`  
-Live: `https://rudoctors.github.io`
+Live (Основной): `https://rudoctors.com`  
+Зеркало 301: `https://rudoctors.rs` (выкуплен 18.11.2026 до 18.11.2027, Cloudflare Edge 301, DNS-верификация Google/Яндекс/Bing)  
+Legacy: `https://rudoctors.github.io` (настроен перенос адреса в GSC)
 
 ---
 
@@ -12,7 +14,9 @@ Live: `https://rudoctors.github.io`
 - **Продукт:** русскоязычный каталог врачей в Сербии (рейтинги, отзывы, запись).
 - **Стек:** Astro 7.3.4 + TypeScript strict + Tailwind CSS 4; JSON в репо = GitHub CMS; GitHub Actions → GitHub Pages; Node ≥22.12.
 - **Монетизация (главная цель):** **баннерная реклама / продажа сайта** (приоритет над featured-пакетами, 24.09.2026); денежный сигнал — первый banner/placement request до **15.12.2026**.
-- **Домен:** нет (GitHub Pages, `*.github.io`). Яндекс без своего домена недоступен.
+- **Домены:** 
+  - `rudoctors.com` — основной рабочий канонический домен (делегирован на Neoserv/GitHub Pages, Enforce HTTPS активен, органический трафик в GSC и Яндексе).
+  - `rudoctors.rs` — официальное национальное 301-зеркало в реестре RNIDS (Loopia d.o.o., Cloudflare NS, Edge 301 с сохранением путей и параметров, TXT-верификация в GSC, Я.Вебмастере и Bing).
 
 ---
 

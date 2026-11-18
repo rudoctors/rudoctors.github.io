@@ -14,6 +14,7 @@ const doctors = publicDoctors()
   description="Оставьте отзыв о враче из каталога Rudoctors — он поможет другим пациентам."
   noindex
 >
+  <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
   <div class="mx-auto max-w-2xl px-4 py-12">
     <h1 class="text-3xl font-extrabold text-navy-900">Оставить отзыв</h1>
     <p class="mt-2 text-slate-600">
@@ -77,6 +78,11 @@ const doctors = publicDoctors()
         <a href="/privacy/" class="text-brand-700 underline">политикой конфиденциальности</a>.
       </label>
 
+      <!-- Cloudflare Turnstile anti-spam widget -->
+      <div id="cf-turnstile-wrap" class="my-2 min-h-[65px] flex items-center justify-start">
+        <div id="cf-turnstile"></div>
+      </div>
+
       <button type="submit" id="submit-btn" class="btn-primary w-full !py-3 font-bold text-base">
         Отправить отзыв
       </button>
@@ -122,6 +128,48 @@ const doctors = publicDoctors()
     import.meta.env.PUBLIC_REVIEW_WEBHOOK_URL?.trim() ||
     "https://script.google.com/macros/s/AKfycbzwHMzGWg5Q3UMJhhaNNE7PgCHxISsh2ON1p91JdWkGbvufEHxfu0UQvRsTH5tA1i83/exec";
   const DRAFT_KEY = "rudoctors_review_draft";
+  const TURNSTILE_SITEKEY =
+    import.meta.env.PUBLIC_TURNSTILE_SITEKEY?.trim() || "1x00000000000000000000AA";
+
+  let turnstileToken = "";
+  let turnstileWidgetId: string | null = null;
+
+  function renderTurnstile() {
+    const w = window as any;
+    if (!w.turnstile || turnstileWidgetId !== null) return;
+    const container = document.getElementById("cf-turnstile");
+    if (!container) return;
+    try {
+      turnstileWidgetId = w.turnstile.render(container, {
+        sitekey: TURNSTILE_SITEKEY,
+        theme: "light",
+        callback: (token: string) => {
+          turnstileToken = token;
+        },
+        "expired-callback": () => {
+          turnstileToken = "";
+        },
+        "error-callback": () => {
+          // Fallback: do not permanently block legitimate users on network failure
+        },
+      });
+    } catch (e) {
+      console.warn("Turnstile render error:", e);
+    }
+  }
+
+  if ((window as any).turnstile) {
+    renderTurnstile();
+  } else {
+    window.addEventListener("load", renderTurnstile);
+    const cfTimer = setInterval(() => {
+      if ((window as any).turnstile) {
+        clearInterval(cfTimer);
+        renderTurnstile();
+      }
+    }, 300);
+    setTimeout(() => clearInterval(cfTimer), 8000);
+  }
 
   const form = document.getElementById("review-form") as HTMLFormElement | null;
   const status = document.getElementById("form-status");
@@ -233,6 +281,11 @@ const doctors = publicDoctors()
     if (fallbackBox) fallbackBox.classList.add("hidden");
 
     try {
+      const w = window as any;
+      const cfResponse =
+        turnstileToken ||
+        (w.turnstile && turnstileWidgetId !== null ? w.turnstile.getResponse(turnstileWidgetId) : "");
+
       const res = await fetch(REVIEW_WEBHOOK_URL, {
         method: "POST",
         mode: "no-cors",
@@ -243,6 +296,7 @@ const doctors = publicDoctors()
           author,
           ...(hasRating ? { rating: ratingNum } : {}),
           text,
+          cf_turnstile_response: cfResponse,
           website_hp: String(fd.get("website_trap") || ""),
         }),
       });
@@ -253,6 +307,10 @@ const doctors = publicDoctors()
 
       markSubmitted(KEY);
       try { localStorage.removeItem(DRAFT_KEY); } catch {}
+      if (w.turnstile && turnstileWidgetId !== null) {
+        try { w.turnstile.reset(turnstileWidgetId); } catch {}
+        turnstileToken = "";
+      }
       // Show success screen
       form.classList.add("hidden");
       if (successBox) successBox.classList.remove("hidden");
