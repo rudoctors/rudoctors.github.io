@@ -11,17 +11,6 @@
     "tone": "brand"
   },
   {
-    "id": "telemed-consult",
-    "slot": "home-bottom",
-    "active": true,
-    "label": "Телемедицина",
-    "title": "Онлайн-консультация доказательного врача",
-    "text": "Второе мнение, терапевты и педиатры на связи 24/7. Расшифровка анализов и консультации на русском языке.",
-    "cta": "Выбрать врача",
-    "href": "https://docma.ru/?utm_source=rudoctors&utm_medium=banner",
-    "tone": "slate"
-  },
-  {
     "id": "join-as-doctor",
     "slot": "catalog-top",
     "active": true,
