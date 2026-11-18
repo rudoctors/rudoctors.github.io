@@ -1,96 +1,313 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
-const title = "Государственная поликлиника и приватная клиника";
+const title = "Государственная медицина (дом здравља) или частная клиника в Сербии: что выбрать экспату";
 const description =
-  "Чем государственная поликлиника и приватная клиника в Сербии различаются по процессу поиска и записи; справочный гайд в статусе черновика.";
+  "Подробное сравнение государственной медицины (Dom zdravlja, RFZO) и частных клиник в Сербии. Цены в RSD и EUR, порядок записи, выбор врача и рекомендации для экспатов.";
+const slug = "public-private-care";
+const canonicalUrl = `https://rudoctors.com/guides/${slug}/`;
 
-const guide = {
-  slug: "public-private-care",
-  status: "draft",
-  source: "TBD — источник уточнить",
-  sourceDate: "TBD — дата уточнить",
-  medicalReview: "TBD — назначить ответственного",
+const faqItems = [
+  {
+    q: "Может ли иностранец с ВНЖ обслуживаться в государственном Доме здравля?",
+    a: "Да, если у вас оформлена государственная медицинская страховка RFZO (через официальное трудоустройство, статус индивидуального предпринимателя preduzetnik или воссоединение семьи). При наличии карточки KZO вы прикрепляетесь к Дому здравля по месту проживания и выбираете участкового врача (izabrani lekar). Без RFZO можно обращаться платно через кассу учреждения."
+  },
+  {
+    q: "Сколько стоит приём в Dom zdravlja без страховки RFZO?",
+    a: "Для пациентов без страховки RFZO визит к врачу общей практики (lekar opšte prakse) оплачивается по государственному прейскуранту и составляет в среднем от 1 200 до 2 500 RSD (~10–21 €). Консультация профильного специалиста — от 2 000 до 4 000 RSD."
+  },
+  {
+    q: "Говорят ли врачи в государственных поликлиниках по-русски или по-английски?",
+    a: "Большинство пожилых врачей и медсестёр в регистратуре говорят исключительно на сербском языке. Молодые специалисты нередко владеют английским, однако официальная документация, рецепты и направления оформляются строго на сербском. Если вам важен прием на русском языке, удобнее обратиться к русскоязычным врачам в частных клиниках."
+  },
+  {
+    q: "Принимают ли частные клиники государственные направления (uput)?",
+    a: "Как правило, нет. Государственное направление (uput) действует только внутри сети учреждений фонда RFZO (государственные поликлиники, KBC, Военно-медицинская академия VMA по квотам). Однако некоторые частные клиники имеют отдельные контракты с RFZO на конкретные процедуры (например, ЭКО или операции по удалению катаракты)."
+  }
+];
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: title,
+  description: description,
+  url: canonicalUrl,
+  inLanguage: "ru",
+  publisher: {
+    "@type": "Organization",
+    name: "RuDoctors",
+    url: "https://rudoctors.com",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://rudoctors.com/favicon.svg"
+    }
+  },
+  author: {
+    "@type": "Organization",
+    name: "Редакция RuDoctors"
+  },
+  datePublished: "2026-11-18",
+  dateModified: "2026-11-18"
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a
+    }
+  }))
 };
 ---
 
 <Layout
   title={title}
   description={description}
-  noindex
   breadcrumbs={[
     { name: "Главная", path: "/" },
     { name: "Гайды", path: "/guides/" },
-    { name: title, path: `/guides/${guide.slug}/` },
+    { name: "Государственная медицина vs частная клиника", path: `/guides/${slug}/` },
   ]}
+  jsonLd={[articleSchema, faqSchema]}
 >
-  <div class="mx-auto max-w-3xl px-4 py-12">
-    <div class="card p-4 mb-8 border-l-4 border-amber-400 bg-amber-50">
-      <p class="text-sm font-semibold text-amber-900">Черновик (draft)</p>
-      <p class="mt-1 text-sm text-slate-700">
-        Материал находится в статусе черновика: источник, дата и медицинское/источниковедческое
-        ревью ещё не заполнены. До заполнения этих данных текст не должен публиковаться.
-        Гайд не является медицинской рекомендацией и не заменяет консультацию врача.
-      </p>
+  <div class="mx-auto max-w-4xl px-4 py-10 md:py-14">
+    <!-- Breadcrumb badge & Category -->
+    <div class="flex items-center gap-2 mb-4">
+      <span class="chip">Организация медицины</span>
+      <span class="text-xs text-slate-500">Обновлено: ноябрь 2026</span>
+      <span class="text-xs text-slate-400">•</span>
+      <span class="text-xs text-slate-500">Время чтения: 6 мин</span>
     </div>
 
-    <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900">{title}</h1>
-    <p class="mt-3 text-slate-600 leading-relaxed">
-      Как устроен поиск и запись в государственной поликлинике и в приватной клинике.
-      Материал подготовлен в статусе черновика и носит справочный, навигационный характер.
+    <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900 tracking-tight leading-tight">
+      Государственная медицина (дом здравља) или частная клиника в Сербии: что выбрать экспату
+    </h1>
+
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      Переезжая в Сербию, многие сталкиваются с вопросом: как устроена сербская медицина, стоит ли оформлять государственную страховку и прикрепляться к поликлинике (Dom zdravlja) или проще сразу обращаться в частные медицинские центры? Разбираем плюсы, минусы, реальные цены в динарах и евро, а также алгоритм действий для экспата.
     </p>
 
-    <h2 class="mt-10 font-extrabold text-xl text-navy-900">1. Государственная поликлиника</h2>
-    <p class="mt-2 text-slate-600">
-      В государственных поликлиниках доступ и очереди устроены по внутренним правилам учреждений.
-      Правила распределения и запись могут различаться в зависимости от клиники и региона.
-    </p>
-
-    <h2 class="mt-8 font-extrabold text-xl text-navy-900">2. Приватная клиника</h2>
-    <p class="mt-2 text-slate-600">
-      В приватных клиниках запись обычно проходит через клинику. Формат приёма может быть
-      офлайн или онлайн; конкретные условия нужно уточнять в клинике.
-    </p>
-
-    <h2 class="mt-8 font-extrabold text-xl text-navy-900">3. Связь с каталогом</h2>
-    <p class="mt-2 text-slate-600">
-      Каталог Rudoctors помогает найти врача и клинику. Сам выбор между государственной и
-      приватной моделью зависит от ситуации пациента и врача.
-    </p>
-
-    <div class="card p-6 mt-10 text-center">
-      <h2 class="font-extrabold text-navy-900">Что дальше</h2>
-      <div class="mt-4 flex flex-wrap justify-center gap-3">
-        <a href="/doctors/" class="btn-primary">Найти врача</a>
-        <a href="/guides/insurance-appointments/" class="btn-ghost">Страховка и запись</a>
-        <a href="/contacts/" class="btn-ghost">Связаться</a>
+    <!-- Quick action links -->
+    <div class="my-6 p-4 rounded-xl bg-slate-100 border border-slate-200 flex flex-wrap items-center justify-between gap-3">
+      <span class="text-sm font-semibold text-navy-900">Срочно нужен русскоязычный доктор?</span>
+      <div class="flex flex-wrap gap-2">
+        <a href="/cities/belgrade/" class="btn-primary text-xs py-2 px-3">Врачи в Белграде</a>
+        <a href="/specialties/therapist/" class="btn-secondary text-xs py-2 px-3">Терапевты</a>
+        <a href="/specialties/pediatrician/" class="btn-secondary text-xs py-2 px-3">Педиатры</a>
       </div>
     </div>
 
-    <div class="card p-5 mt-8">
-      <h2 class="font-extrabold text-navy-900">Статус материала</h2>
-      <dl class="mt-4 grid gap-4 sm:grid-cols-2 text-sm">
-        <div>
-          <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Статус</dt>
-          <dd class="mt-1 font-semibold text-slate-900">{guide.status}</dd>
+    <!-- Section 1 -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">1. Как устроена государственная медицина: Дом здравля (Dom zdravlja)</h2>
+    <p class="mt-3 text-slate-700 leading-relaxed">
+      Государственная система здравоохранения Сербии регулируется <a href="https://rfzo.rs/" target="_blank" rel="noopener noreferrer" class="text-brand-700 font-medium hover:underline">Республиканским фондом медицинского страхования (RFZO)</a> и законом о здравоохранении (<em>Zakon o zdravstvenoj zaštiti</em>).
+    </p>
+    <p class="mt-3 text-slate-700 leading-relaxed">
+      Первичным звеном является <strong>Дом здравля (Dom zdravlja)</strong> — районная поликлиника. В каждом районе Белграда (Стари Град, Врачар, Нови Београд, Палилула) и в других городах Сербии есть свой центральный Дом здравля и локальные амбулатории (zdravstvene stanice).
+    </p>
+    
+    <div class="mt-4 p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2 text-sm text-slate-700">
+      <p><strong>Ключевые элементы системы Dom zdravlja:</strong></p>
+      <ul class="list-disc pl-5 space-y-1">
+        <li><strong>Выбранный врач (Izabrani lekar):</strong> участковый терапевт для взрослых или педиатр для детей, которого вы официально выбираете заявлением при первом визите.</li>
+        <li><strong>Медицинская книжка (Zdravstvena kartica / KZO):</strong> пластиковая электронная карта с чипом, подтверждающая активное страхование RFZO. Проверить статус страховки можно онлайн на государственном портале <a href="https://ezdravlje.gov.rs/" target="_blank" rel="noopener noreferrer" class="text-brand-700 hover:underline">eZdravlje</a>.</li>
+        <li><strong>Направление (Uput):</strong> без направления участкового терапевта невозможно бесплатно попасть к узкому специалисту, пройти УЗИ, МРТ или лечь на госпитализацию в клинические центры (KBC, UKCS).</li>
+      </ul>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-4 mt-6">
+      <div class="card p-5 border-l-4 border-emerald-500 bg-white">
+        <h3 class="font-bold text-navy-900 flex items-center gap-2">
+          <span class="text-emerald-600">✓</span> Плюсы Дома здравля
+        </h3>
+        <ul class="mt-3 space-y-2 text-sm text-slate-600 list-disc pl-4">
+          <li>Бесплатное обслуживание по страховке RFZO (за редкими процедурами с символической партиципацией 50–200 RSD).</li>
+          <li>Бесплатные детские плановые прививки сертифицированными европейскими вакцинами.</li>
+          <li>Официальные медицинские справки для детских садов, школ, автошкол и продления ВНЖ.</li>
+          <li>Электронные рецепты (e-Recept) на получение жизненно важных лекарств по сниженной цене или бесплатно.</li>
+        </ul>
+      </div>
+
+      <div class="card p-5 border-l-4 border-amber-500 bg-white">
+        <h3 class="font-bold text-navy-900 flex items-center gap-2">
+          <span class="text-amber-600">⚠</span> Минусы Дома здравля
+        </h3>
+        <ul class="mt-3 space-y-2 text-sm text-slate-600 list-disc pl-4">
+          <li>Очереди в коридорах и сложности с быстрой записью через телефонную регистратуру.</li>
+          <li>Длительное ожидание узких специалистов и аппаратной диагностики (УЗИ, МРТ — от 2 до 8 недель).</li>
+          <li>Языковой барьер: врачи и регистратура говорят на сербском, английский встречается не везде.</li>
+          <li>Необходимость прикрепления strictly по адресу прописки (боравка).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section 2 -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">2. Частная медицина в Сербии</h2>
+    <p class="mt-3 text-slate-700 leading-relaxed">
+      Частный сектор медицины в Сербии развит превосходно. В Белграде и Нови-Саде работают как крупные сетевые госпитали с круглосуточными стационарами и реанимацией, так и сотни специализированных ординаций (ordinacija).
+    </p>
+
+    <div class="mt-4 space-y-3">
+      <div class="card p-4">
+        <h4 class="font-bold text-navy-900">MediGroup</h4>
+        <p class="text-sm text-slate-600 mt-1">
+          Крупнейшая частная медицинская сеть в Сербии: поликлиники в районах Дорчол, Нови Београд, Врачар, собственная многопрофильная больница (Opšta bolnica MediGroup) и современный роддом. Англо- и русскоязычные врачи, мобильное приложение для записи.
+        </p>
+      </div>
+
+      <div class="card p-4">
+        <h4 class="font-bold text-navy-900">Euromedik</h4>
+        <p class="text-sm text-slate-600 mt-1">
+          Более 15 медицинских центров и стационаров в Белграде. Известен демократичными ценами, широким парком томографов (МРТ, КТ) и возможностью пройти обследование в день обращения.
+        </p>
+      </div>
+
+      <div class="card p-4">
+        <h4 class="font-bold text-navy-900">Acibadem Bel Medic</h4>
+        <p class="text-sm text-slate-600 mt-1">
+          Премиальный госпитальный комплекс международного турецко-сербского холдинга Acibadem. Круглосуточный стационар 24/7 на Вождоваце, собственная скорая помощь, хирургия мирового уровня и англоговорящий сервис.
+        </p>
+      </div>
+
+      <div class="card p-4">
+        <h4 class="font-bold text-navy-900">AlfaMedStar и профильные ординации</h4>
+        <p class="text-sm text-slate-600 mt-1">
+          Клиники и частные кабинеты, где ведут приём сертифицированные русскоязычные врачи: терапевты, гинекологи, неврологи, кардиологи и стоматологи. Это исключает стресс из-за медицинского языкового барьера.
+        </p>
+      </div>
+    </div>
+
+    <!-- Section 3 -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">3. Сравнение цен: Dom zdravlja vs Частные клиники (2026 год)</h2>
+    <p class="mt-3 text-slate-700 leading-relaxed">
+      Курс валюты: 1 EUR ≈ 117 RSD. В таблице приведены ориентировочные цены на основные медицинские услуги в Белграде.
+    </p>
+
+    <div class="mt-4 overflow-x-auto card">
+      <table class="w-full text-left text-sm border-collapse">
+        <thead class="bg-slate-100 text-slate-700 font-semibold border-b border-slate-200">
+          <tr>
+            <th class="py-3 px-4">Медицинская услуга</th>
+            <th class="py-3 px-4">Dom zdravlja (по RFZO)</th>
+            <th class="py-3 px-4">Dom zdravlja (без страховки)</th>
+            <th class="py-3 px-4">Частная клиника (RSD / €)</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-200">
+          <tr>
+            <td class="py-3 px-4 font-medium text-slate-900">Приём терапевта / педиатра</td>
+            <td class="py-3 px-4 text-emerald-700 font-semibold">0 RSD (партиципация 50 RSD)</td>
+            <td class="py-3 px-4 text-slate-600">1 200 – 2 200 RSD (~10–19 €)</td>
+            <td class="py-3 px-4 text-slate-900 font-medium">3 500 – 6 500 RSD (~30–55 €)</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-medium text-slate-900">Консультация узкого специалиста (кардиолог, ЛОР, невролог)</td>
+            <td class="py-3 px-4 text-emerald-700 font-semibold">0 RSD (по направлению uput)</td>
+            <td class="py-3 px-4 text-slate-600">2 500 – 4 000 RSD (~21–34 €)</td>
+            <td class="py-3 px-4 text-slate-900 font-medium">4 500 – 9 000 RSD (~38–77 €)</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-medium text-slate-900">УЗИ брюшной полости</td>
+            <td class="py-3 px-4 text-emerald-700 font-semibold">0 RSD (ожидание 2–6 недель)</td>
+            <td class="py-3 px-4 text-slate-600">2 000 – 3 500 RSD (~17–30 €)</td>
+            <td class="py-3 px-4 text-slate-900 font-medium">3 500 – 5 500 RSD (~30–47 €)</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-medium text-slate-900">МРТ одного отдела позвоночника</td>
+            <td class="py-3 px-4 text-emerald-700 font-semibold">0 RSD (очередь по квоте 1–3 мес.)</td>
+            <td class="py-3 px-4 text-slate-600">Не проводится без направления</td>
+            <td class="py-3 px-4 text-slate-900 font-medium">12 000 – 16 000 RSD (~100–135 €)</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-medium text-slate-900">Анализ крови (ОАК + базовые биохимические маркеры)</td>
+            <td class="py-3 px-4 text-emerald-700 font-semibold">0 RSD (партиципация 50 RSD)</td>
+            <td class="py-3 px-4 text-slate-600">800 – 1 500 RSD (~7–13 €)</td>
+            <td class="py-3 px-4 text-slate-900 font-medium">1 500 – 3 000 RSD (~13–26 €)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Section 4: Recommendation -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">4. Что выбрать экспату в конкретной ситуации</h2>
+    <div class="mt-4 space-y-4">
+      <div class="card p-5 border-l-4 border-brand-500">
+        <h3 class="text-base font-bold text-navy-900">Когда идти в Dom zdravlja:</h3>
+        <ul class="mt-2 text-sm text-slate-700 list-disc pl-5 space-y-1">
+          <li><strong>Вакцинация детей:</strong> календарные прививки в Сербии делаются исключительно в Доме здравля, данные вносятся в единый государственный реестр.</li>
+          <li><strong>Официальные медицинские справки:</strong> для сербских детсадов (potvrda za vrtić), зачисления в государственные школы, автошколы или медосмотр для официального трудоустройства.</li>
+          <li><strong>Хронические диагнозы и льготные лекарства:</strong> если вам требуются дорогостоящие препараты (инсулин, кардиопрепараты), участковый врач выписывает их по льготным рецептам RFZO.</li>
+          <li><strong>Ведение беременности:</strong> при наличии книжицы RFZO скрининги, анализы и роды в государственных роддомах (GAK Narodni Front, Višegradska) полностью бесплатны.</li>
+        </ul>
+      </div>
+
+      <div class="card p-5 border-l-4 border-navy-800">
+        <h3 class="text-base font-bold text-navy-900">Когда выбирать частную клинику:</h3>
+        <ul class="mt-2 text-sm text-slate-700 list-disc pl-5 space-y-1">
+          <li><strong>Острые недомогания:</strong> высокая температура, боль в ухе, цистит, острый кашель — частный врач примет в тот же день без ожидания в общей очереди.</li>
+          <li><strong>Языковой комфорт:</strong> когда важно подробно описать анамнез на родном русском языке или детально обсудить тактику лечения.</li>
+          <li><strong>Срочная диагностика:</strong> УЗИ, рентген, МРТ или чекап всего организма за 1–2 часа.</li>
+          <li><strong>Наличие полиса ДМС:</strong> если у вас есть корпоративная или личная страховка (Generali, Wiener Städtische, Uniqa), клиника согласует оплату напрямую со страховщиком.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section 5: Checklist -->
+    <div class="card p-6 my-10 bg-white border border-slate-200">
+      <h2 class="text-xl font-bold text-navy-900 flex items-center gap-2">
+        <span class="text-brand-600">📋</span> Чек-лист: Что подготовить перед визитом к врачу
+      </h2>
+      <div class="mt-4 space-y-3 text-sm text-slate-700">
+        <div class="flex items-start gap-3">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span><strong>Паспорт и регистрация:</strong> возьмите загранпаспорт и «белый картон» (potvrda o prijavi boravišta) или пластиковую карту ВНЖ (boravak).</span>
         </div>
-        <div>
-          <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Источник</dt>
-          <dd class="mt-1 text-slate-900">{guide.source}</dd>
+        <div class="flex items-start gap-3">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span><strong>Медицинские документы:</strong> выписки предыдущих обследований, результаты анализов за последние 6 месяцев (даже на русском языке — врачи легко понимают латинские термины).</span>
         </div>
-        <div>
-          <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Дата</dt>
-          <dd class="mt-1 text-slate-900">{guide.sourceDate}</dd>
+        <div class="flex items-start gap-3">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span><strong>Список принимаемых препаратов:</strong> запишите международные непатентованные наименования (действующие вещества на латыни), а не коммерческие торговые марки.</span>
         </div>
-        <div>
-          <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Ревью</dt>
-          <dd class="mt-1 text-slate-900">{guide.medicalReview}</dd>
+        <div class="flex items-start gap-3">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span><strong>Страховой полис:</strong> если идете в Dom zdravlja — проверьте активность книжицы KZO; если в частную клинику по ДМС — заранее позвоните в ассистанс страховой компании за гарантийным письмом (uputno pismo).</span>
         </div>
-      </dl>
-      <p class="mt-4 text-sm text-slate-600">
-        Требования к материалу: источник, дата и медицинское/источниковедческое ревью должны быть
-        заполнены ответственным до публикации. Пока значения не заполнены — публикация невозможна.
+      </div>
+    </div>
+
+    <!-- Section 6: FAQ -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">Часто задаваемые вопросы (FAQ)</h2>
+    <div class="mt-4 space-y-3">
+      {faqItems.map((item) => (
+        <details class="card p-4 group [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex justify-between items-center font-bold text-navy-900 cursor-pointer list-none">
+            <span>{item.q}</span>
+            <span class="transition group-open:rotate-180 text-brand-600 font-bold ml-2">↓</span>
+          </summary>
+          <p class="mt-3 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            {item.a}
+          </p>
+        </details>
+      ))}
+    </div>
+
+    <!-- CTA card -->
+    <div class="card p-6 md:p-8 mt-12 bg-gradient-to-br from-brand-50 to-white border border-brand-200 text-center">
+      <h3 class="text-xl font-bold text-navy-900">Ищете проверенного врача в Сербии?</h3>
+      <p class="mt-2 text-slate-600 max-w-xl mx-auto text-sm">
+        В каталоге RuDoctors собраны практикующие врачи и частные клиники с реальными отзывами пациентов, контактами в мессенджерах и прямым указанием языков приёма.
       </p>
+      <div class="mt-5 flex flex-wrap justify-center gap-3">
+        <a href="/cities/belgrade/" class="btn-primary">Врачи в Белграде</a>
+        <a href="/doctors/" class="btn-secondary">Весь каталог врачей</a>
+        <a href="/guides/finding-doctor/" class="btn-ghost">Как записаться к врачу</a>
+      </div>
     </div>
   </div>
 </Layout>

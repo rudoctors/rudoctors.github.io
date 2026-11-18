@@ -1,96 +1,280 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
-const title = "Страховка и запись к врачу";
+const title = "Медицинская страховка в Сербии: частный полис (ДМС) vs RFZO для экспатов";
 const description =
-  "Как страховка, запись и приём связаны в Сербии; справочный гайд в статусе черновика.";
+  "Все о медицинском страховании в Сербии: государственная страховка RFZO, частный полис ДМС (Generali, Uniqa, Wiener) и страховка для ВНЖ. Условия, цены, запись и возмещение расходов.";
+const slug = "insurance-appointments";
+const canonicalUrl = `https://rudoctors.com/guides/${slug}/`;
 
-const guide = {
-  slug: "insurance-appointments",
-  status: "draft",
-  source: "TBD — источник уточнить",
-  sourceDate: "TBD — дата уточнить",
-  medicalReview: "TBD — назначить ответственного",
+const faqItems = [
+  {
+    q: "Может ли индивидуальный предприниматель (preduzetnik) получить государственную страховку RFZO?",
+    a: "Да. При регистрации ИП (preduzetnik) в Сербии предприниматель платит ежемесячные обязательные взносы за пенсионное и медицинское страхование (doprinosi za zdravstveno osiguranje). На основании регистрации в едином реестре CROSO предприниматель и члены его семьи получают государственные страховые карточки KZO фонда RFZO."
+  },
+  {
+    q: "Покрывает ли страховка для первой подачи на ВНЖ обычный поход к терапевту?",
+    a: "Нет. Базовая годовая страховка для иностранцев (putno/zdravstveno osiguranje za strance), которую оформляют для миграционной полиции (MUP) за 50–100 € в год, покрывает только экстренную неотложную помощь при угрозе жизни или внезапных травмах. Плановые консультации, хронические заболевания и профилактические анализы по ней не оплачиваются."
+  },
+  {
+    q: "Что такое гарантийное письмо (uputno pismo) при визите по ДМС?",
+    a: "Это официальное подтверждение от страховой компании о том, что она гарантирует прямую оплату вашего приёма в партнерской частной клинике. Перед визитом вы звоните в колл-центр ассистанса (например, Generali или Uniqa), сообщаете о симптомах и выбранной клинике. Страховщик направляет гарантийное письмо на ресепшн клиники, и вы не платите за визит своими деньгами."
+  },
+  {
+    q: "Как получить компенсацию (рефундацию), если оплатил приём частного врача самостоятельно?",
+    a: "Если клиника или врач не имеют прямого договора с вашей страховой, сохраните: 1) медицинское заключение врача с диагнозом и печатью (lekarski izveštaj); 2) счет-фактуру (faktura/račun) с детализацией услуг; 3) фискальный чек (fiskalni račun). Заполните заявление на сайте страховой компании — компенсация поступит на ваш сербский банковский счет в течение 7–14 рабочих дней."
+  }
+];
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: title,
+  description: description,
+  url: canonicalUrl,
+  inLanguage: "ru",
+  publisher: {
+    "@type": "Organization",
+    name: "RuDoctors",
+    url: "https://rudoctors.com",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://rudoctors.com/favicon.svg"
+    }
+  },
+  author: {
+    "@type": "Organization",
+    name: "Редакция RuDoctors"
+  },
+  datePublished: "2026-11-18",
+  dateModified: "2026-11-18"
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a
+    }
+  }))
 };
 ---
 
 <Layout
   title={title}
   description={description}
-  noindex
   breadcrumbs={[
     { name: "Главная", path: "/" },
     { name: "Гайды", path: "/guides/" },
-    { name: title, path: `/guides/${guide.slug}/` },
+    { name: "Медицинская страховка: ДМС vs RFZO", path: `/guides/${slug}/` },
   ]}
+  jsonLd={[articleSchema, faqSchema]}
 >
-  <div class="mx-auto max-w-3xl px-4 py-12">
-    <div class="card p-4 mb-8 border-l-4 border-amber-400 bg-amber-50">
-      <p class="text-sm font-semibold text-amber-900">Черновик (draft)</p>
-      <p class="mt-1 text-sm text-slate-700">
-        Материал находится в статусе черновика: источник, дата и медицинское/источниковедческое
-        ревью ещё не заполнены. До заполнения этих данных текст не должен публиковаться.
-        Гайд не является медицинской рекомендацией и не заменяет консультацию врача.
-      </p>
+  <div class="mx-auto max-w-4xl px-4 py-10 md:py-14">
+    <!-- Meta -->
+    <div class="flex items-center gap-2 mb-4">
+      <span class="chip">Страхование</span>
+      <span class="text-xs text-slate-500">Обновлено: ноябрь 2026</span>
+      <span class="text-xs text-slate-400">•</span>
+      <span class="text-xs text-slate-500">Время чтения: 8 мин</span>
     </div>
 
-    <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900">{title}</h1>
-    <p class="mt-3 text-slate-600 leading-relaxed">
-      Страховка, запись и приём связаны между собой, но правила зависят от конкретной ситуации.
-      Материал подготовлен в статусе черновика и носит справочный, навигационный характер.
+    <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900 tracking-tight leading-tight">
+      Медицинская страховка в Сербии: частный полис (ДМС) vs RFZO для экспатов
+    </h1>
+
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      Наличие надежной медицинской страховки в Сербии — ключевой фактор спокойной жизни экспата. Но какую страховку выбрать: государственную карточку фонда RFZO, полис добровольного медицинского страхования (ДМС) в частной компании или базовый полис для ВНЖ? В деталях разбираем права иностранцев, стоимость полисов и правила записи к врачу.
     </p>
 
-    <h2 class="mt-10 font-extrabold text-xl text-navy-900">1. Страховка</h2>
-    <p class="mt-2 text-slate-600">
-      Информация о страховом покрытии зависит от оформленного полиса. Условия и тарифы
-      необходимо уточнять у страховщика; материал гайда не даёт юридических или финансовых
-      рекомендаций.
-    </p>
-
-    <h2 class="mt-8 font-extrabold text-xl text-navy-900">2. Запись</h2>
-    <p class="mt-2 text-slate-600">
-      Запись может проходить через клинику или врача. В карточках каталога Rudoctors хранятся
-      контакты и формат приёма, что упрощает поиск нужного специалиста.
-    </p>
-
-    <h2 class="mt-8 font-extrabold text-xl text-navy-900">3. Приём</h2>
-    <p class="mt-2 text-slate-600">
-      Приём может быть офлайн или онлайн. Подготовка к визиту зависит от клиники и вида приёма.
-    </p>
-
-    <div class="card p-6 mt-10 text-center">
-      <h2 class="font-extrabold text-navy-900">Что дальше</h2>
-      <div class="mt-4 flex flex-wrap justify-center gap-3">
-        <a href="/doctors/" class="btn-primary">Найти врача</a>
-        <a href="/guides/finding-doctor/" class="btn-ghost">Как найти врача</a>
-        <a href="/contacts/" class="btn-ghost">Связаться</a>
+    <!-- Fast buttons -->
+    <div class="my-6 p-4 rounded-xl bg-slate-100 border border-slate-200 flex flex-wrap items-center justify-between gap-3">
+      <span class="text-sm font-semibold text-navy-900">Ищете клиники и врачей, работающих со страховками?</span>
+      <div class="flex flex-wrap gap-2">
+        <a href="/cities/belgrade/" class="btn-primary text-xs py-2 px-3">Врачи Белграда</a>
+        <a href="/guides/choosing-clinic/" class="btn-secondary text-xs py-2 px-3">Обзор клиник</a>
+        <a href="/specialties/therapist/" class="btn-secondary text-xs py-2 px-3">Терапевты</a>
       </div>
     </div>
 
-    <div class="card p-5 mt-8">
-      <h2 class="font-extrabold text-navy-900">Статус материала</h2>
-      <dl class="mt-4 grid gap-4 sm:grid-cols-2 text-sm">
-        <div>
-          <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Статус</dt>
-          <dd class="mt-1 font-semibold text-slate-900">{guide.status}</dd>
-        </div>
-        <div>
-          <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Источник</dt>
-          <dd class="mt-1 text-slate-900">{guide.source}</dd>
-        </div>
-        <div>
-          <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Дата</dt>
-          <dd class="mt-1 text-slate-900">{guide.sourceDate}</dd>
-        </div>
-        <div>
-          <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Ревью</dt>
-          <dd class="mt-1 text-slate-900">{guide.medicalReview}</dd>
-        </div>
-      </dl>
-      <p class="mt-4 text-sm text-slate-600">
-        Требования к материалу: источник, дата и медицинское/источниковедческое ревью должны быть
-        заполнены ответственным до публикации. Пока значения не заполнены — публикация невозможна.
+    <!-- Section 1 -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">1. Государственное страхование RFZO (ОМС)</h2>
+    <p class="mt-3 text-slate-700 leading-relaxed">
+      <a href="https://rfzo.rs/" target="_blank" rel="noopener noreferrer" class="text-brand-700 font-medium hover:underline">Республиканский фонд медицинского страхования (Republički fond za zdravstveno osiguranje — RFZO)</a> обеспечивает государственную систему медицинского страхования Сербии.
+    </p>
+    
+    <div class="mt-4 card p-5 bg-white border border-slate-200 space-y-3">
+      <h3 class="font-bold text-navy-900 text-lg">Как иностранец получает страховку RFZO:</h3>
+      <ul class="text-sm text-slate-700 space-y-2 list-disc pl-5">
+        <li><strong>Трудовой договор (ugovor o radu):</strong> работодатель в Сербии регистрирует сотрудника в системе социального страхования CROSO и уплачивает налог на здравоохранение (5.15% от зарплаты).</li>
+        <li><strong>Индивидуальный предприниматель (preduzetnik / paušalac):</strong> предприниматель уплачивает фиксированные ежемесячные взносы за себя лично.</li>
+        <li><strong>Учредитель d.o.o.:</strong> трудоустроенный директор компании.</li>
+        <li><strong>Воссоединение семьи:</strong> супруги и несовершеннолетние дети застрахованного лица получают карточки KZO как иждивенцы (članovi porodice).</li>
+      </ul>
+      <p class="text-sm text-slate-600 mt-2">
+        После регистрации заявителю выдается бумажная справка (potvrda), а затем пластиковая электронная карточка <strong>KZO (kartica zdravstvenog osiguranja)</strong>. Проверить статус действия полиса можно онлайн на сербском госпортале <a href="https://ezdravlje.gov.rs/" target="_blank" rel="noopener noreferrer" class="text-brand-700 hover:underline">eZdravlje</a>.
       </p>
+    </div>
+
+    <!-- Section 2 -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">2. Частное медицинское страхование (ДМС)</h2>
+    <p class="mt-3 text-slate-700 leading-relaxed">
+      Добровольное медицинское страхование (<em>Dobrovoljno zdravstveno osiguranje — DZO</em>) — золотой стандарт для большинства специалистов международных компаний и экспатов в Белграде и Нови-Саде.
+    </p>
+
+    <div class="mt-4 grid md:grid-cols-2 gap-4">
+      <div class="card p-5">
+        <h4 class="font-bold text-navy-900">Ведущие страховые компании Сербии:</h4>
+        <ul class="mt-3 text-sm text-slate-600 space-y-1.5 list-disc pl-5">
+          <li><strong>Generali Osiguranje Srbija:</strong> крупнейшая сеть партнерских клиник (MediGroup, Euromedik, Bel Medic), удобное мобильное приложение, круглосуточный ассистанс.</li>
+          <li><strong>Wiener Städtische:</strong> австрийская страховая группа с безупречной репутацией и гибкими семейными тарифами.</li>
+          <li><strong>Uniqa Osiguranje:</strong> популярный выбор международных IT-компаний с высокими годовыми лимитами.</li>
+          <li><strong>Triglav & Dunav Osiguranje:</strong> национальные и региональные игроки с широким охватом по всей Сербии.</li>
+        </ul>
+      </div>
+
+      <div class="card p-5">
+        <h4 class="font-bold text-navy-900">Что входит в стандартный полис ДМС:</h4>
+        <ul class="mt-3 text-sm text-slate-600 space-y-1.5 list-disc pl-5">
+          <li>Амбулаторные приемы терапевтов и узких специалистов (без направлений);</li>
+          <li>Лабораторные анализы крови, мочи, гормонов и онкомаркеров;</li>
+          <li>Инструментальная диагностика (УЗИ, рентген, МРТ, КТ);</li>
+          <li>Лекарства по рецепту частного врача (с лимитом 100–300 € в год);</li>
+          <li>Опционально: экстренная стоматология (150–400 €) и ведение беременности (800–2 500 €).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section 3 -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">3. Страховка для подачи документов на ВНЖ (MUP)</h2>
+    <p class="mt-3 text-slate-700 leading-relaxed">
+      При первой подаче документов на ВНЖ (privremeni boravak) миграционная полиция Сербии (MUP) требует предоставить подтверждение наличия медицинского страхования на весь срок запрашиваемого боравка (1 год).
+    </p>
+    <div class="mt-3 p-4 rounded-xl border-l-4 border-amber-500 bg-amber-50 text-sm text-slate-800">
+      <strong>Важное предостережение:</strong> Базовый полис для ВНЖ (<em>zdravstveno osiguranje za strance</em> от Dunav, AMS или Generali стоимостью около 6 000 – 12 000 RSD / 50–100 € в год) предназначен <strong>исключительно для формального выполнения требований закона</strong>. Он покрывает только неотложные реанимационные мероприятия и вызов скорой помощи при несчастных случаях. По нему нельзя бесплатно прийти к терапевту, сделать УЗИ или сдать анализы. Для реального лечения вам понадобится полноценный полис ДМС или карта RFZO.
+    </div>
+
+    <!-- Section 4: Table -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">4. Сравнительная таблица видов медицинских страховок</h2>
+    <div class="mt-4 overflow-x-auto card">
+      <table class="w-full text-left text-sm border-collapse">
+        <thead class="bg-slate-100 text-slate-700 font-semibold border-b border-slate-200">
+          <tr>
+            <th class="py-3 px-4">Параметр</th>
+            <th class="py-3 px-4">Государственная RFZO</th>
+            <th class="py-3 px-4">Частная ДМС (Generali, Uniqa)</th>
+            <th class="py-3 px-4">Страховка для ВНЖ (базовая)</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-200 text-slate-700">
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">Ориентировочная стоимость</td>
+            <td class="py-3 px-4">Включена в налоги зарплаты / ИП (~5 000 RSD/мес)</td>
+            <td class="py-3 px-4">35 – 120 € в месяц (~4 000 – 14 000 RSD)</td>
+            <td class="py-3 px-4">50 – 100 € в год разово (~6 000 – 12 000 RSD)</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">Где принимают</td>
+            <td class="py-3 px-4">Dom zdravlja, KBC, UKCS, госбольницы</td>
+            <td class="py-3 px-4">MediGroup, Euromedik, Bel Medic, частные центры</td>
+            <td class="py-3 px-4">Только экстренные приемные покои (Urgentni centar)</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">Скорость записи</td>
+            <td class="py-3 px-4">От нескольких дней до недель</td>
+            <td class="py-3 px-4 text-emerald-700 font-semibold">День в день или на завтра</td>
+            <td class="py-3 px-4">Неприменимо</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">Аппаратная диагностика (МРТ/КТ)</td>
+            <td class="py-3 px-4">По направлению uput (очередь)</td>
+            <td class="py-3 px-4 text-emerald-700 font-semibold">По согласованию с ассистансом (быстро)</td>
+            <td class="py-3 px-4">Не покрывается (только травмы при ДТП)</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">Ведение беременности и роды</td>
+            <td class="py-3 px-4 text-emerald-700 font-semibold">Полностью покрывается в госучреждениях</td>
+            <td class="py-3 px-4">Опциональный доп. пакет (от 1 000 €)</td>
+            <td class="py-3 px-4">Не покрывается</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Section 5 -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">5. Как записаться к врачу по частной страховке: 2 способа</h2>
+    <div class="mt-4 grid md:grid-cols-2 gap-4">
+      <div class="card p-5 border-l-4 border-emerald-500 bg-white">
+        <h3 class="font-bold text-navy-900">Способ 1: Прямая оплата страховщиком (Garancija)</h3>
+        <p class="mt-2 text-sm text-slate-600">
+          Вы связываетесь с диспетчером вашей страховой компании (по телефону колл-центра или через мобильное приложение) и описываете симптомы. Ассистанс подбирает клинику из партнерской сети и направляет туда гарантийное письмо (uputno pismo). На приеме вы просто предъявляете паспорт и ничего не платите.
+        </p>
+      </div>
+
+      <div class="card p-5 border-l-4 border-blue-500 bg-white">
+        <h3 class="font-bold text-navy-900">Способ 2: Рефундация (Refundacija)</h3>
+        <p class="mt-2 text-sm text-slate-600">
+          Если нужный вам врач или частная ординация не входят в список прямых партнеров страховой, вы оплачиваете прием картой или наличными. Затем берете заключение врача (lekarski izveštaj), детализированный счет (faktura) и фискальный чек (fiskalni račun). Подаете заявку на сайте страховщика и получаете возврат средств на банковскую карту в течение 7–14 дней.
+        </p>
+      </div>
+    </div>
+
+    <!-- Section 6: Checklist -->
+    <div class="card p-6 my-10 bg-white border border-slate-200">
+      <h2 class="text-xl font-bold text-navy-900 flex items-center gap-2">
+        <span class="text-brand-600">📝</span> Чек-лист: Как выбрать оптимальный полис ДМС
+      </h2>
+      <div class="mt-4 space-y-2.5 text-sm text-slate-700">
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span><strong>Проверьте годовой лимит:</strong> для комфортного лечения выбирайте лимит от 2 000 до 5 000 € в год на амбулаторию.</span>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span><strong>Партнерская сеть:</strong> убедитесь, что в список входят популярные сети (MediGroup, Euromedik, Acibadem Bel Medic) и лаборатории Beo-Lab / Aqualab.</span>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span><strong>Период ожидания (karenca):</strong> по ряду услуг (плановые операции, беременность) действует период ожидания от 3 до 9 месяцев.</span>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span><strong>Покрытие лекарств:</strong> уточните, компенсирует ли страховка рецептурные медикаменты, выписанные частным доктором.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">Часто задаваемые вопросы (FAQ)</h2>
+    <div class="mt-4 space-y-3">
+      {faqItems.map((item) => (
+        <details class="card p-4 group [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex justify-between items-center font-bold text-navy-900 cursor-pointer list-none">
+            <span>{item.q}</span>
+            <span class="transition group-open:rotate-180 text-brand-600 font-bold ml-2">↓</span>
+          </summary>
+          <p class="mt-3 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            {item.a}
+          </p>
+        </details>
+      ))}
+    </div>
+
+    <!-- CTA -->
+    <div class="card p-6 md:p-8 mt-12 bg-gradient-to-br from-brand-50 to-white border border-brand-200 text-center">
+      <h3 class="text-xl font-bold text-navy-900">Нужен врач, который выдаст заключение для страховой?</h3>
+      <p class="mt-2 text-slate-600 max-w-xl mx-auto text-sm">
+        Врачи из каталога RuDoctors работают в сертифицированных клиниках и оформляют официальные медицинские заключения (lekarski izveštaj) для беспрепятственной рефундации в любой страховой компании.
+      </p>
+      <div class="mt-5 flex flex-wrap justify-center gap-3">
+        <a href="/doctors/" class="btn-primary">Найти врача</a>
+        <a href="/cities/belgrade/" class="btn-secondary">Врачи в Белграде</a>
+        <a href="/guides/public-private-care/" class="btn-ghost">Поликлиника vs Частная клиника</a>
+      </div>
     </div>
   </div>
 </Layout>

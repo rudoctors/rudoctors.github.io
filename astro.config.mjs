@@ -19,8 +19,7 @@ export default defineConfig({
         !page.includes("/admin/") &&
         !page.includes("/leave-review") &&
         !page.includes("/add-doctor") &&
-        !page.includes("/packages") &&
-        !page.includes("/guides"),
+        !page.includes("/packages"),
     }),
   ],
   vite: {

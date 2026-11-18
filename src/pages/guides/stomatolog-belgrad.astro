@@ -1,0 +1,286 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+const title = "Стоматология в Сербии: цены, имплантация, лечение зубов в Белграде (2026)";
+const description =
+  "Подробный гид по стоматологии в Белграде: русскоязычные стоматологи, цены на пломбы, чистку AirFlow, удаление зубов мудрости, циркониевые коронки и импланты Straumann/Osstem.";
+const slug = "stomatolog-belgrad";
+const canonicalUrl = `https://rudoctors.com/guides/${slug}/`;
+
+const faqItems = [
+  {
+    q: "Почему стоматология в Сербии так популярна у иностранцев?",
+    a: "Сербия является одним из признанных европейских центров стоматологического туризма. Здесь работают выпускники сильной школы Стоматологического факультета Белградского университета, используются топовые материалы из Германии, Швейцарии и США (пломбировочные композиты, швейцарские импланты Straumann, цирконий Zirkonzahn), при этом стоимость услуг в 2–3 раза ниже, чем в Западной Европе, Великобритании или США."
+  },
+  {
+    q: "Дают ли сербские стоматологи гарантию на лечение и импланты?",
+    a: "Да. На терапевтическое лечение (световые пломбы) стандартная гарантия в сербских частных ординациях составляет от 1 до 2 лет. На дентальные имплантаты премиальных марок (Straumann, Nobel) производители дают пожизненную международную гарантию, а клиника — гарантию на работу врача-имплантолога (от 5 до 10 лет) с выдачей персонального имплантологического паспорта."
+  },
+  {
+    q: "Где в Белграде сделать панорамный снимок (Ortopan) или 3D КТ зубов?",
+    a: "В Белграде действуют специализированные независимые центры дентальной радиологии (Dental Rendgen), такие как сети Orto-Pan, 3D Rendgen Centar и Rendgen Dijagnostika. Панорамный снимок (Ortopan) стоит 1 500–2 200 RSD (~13–19 €), а 3D конусно-лучевая томография челюстей (CBCT) — 3 500–6 000 RSD (~30–50 €). Направление от стоматолога обычно не требуется, снимок выдается на диске через 10 минут."
+  },
+  {
+    q: "Покрывает ли страховка ДМС лечение зубов?",
+    a: "Базовые полисы добровольного медицинского страхования (ДМС) обычно покрывают только экстренную неотложную стоматологическую помощь (снятие острой боли, вскрытие абсцесса) с небольшим лимитом (100–300 € в год). Плановое лечение кариеса, чистка, ортодонтия и имплантация требуют подключения расширенного стоматологического пакета (stomatološki aneks) или оплачиваются пациентом самостоятельно."
+  }
+];
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: title,
+  description: description,
+  url: canonicalUrl,
+  inLanguage: "ru",
+  publisher: {
+    "@type": "Organization",
+    name: "RuDoctors",
+    url: "https://rudoctors.com",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://rudoctors.com/favicon.svg"
+    }
+  },
+  author: {
+    "@type": "Organization",
+    name: "Редакция RuDoctors"
+  },
+  datePublished: "2026-11-18",
+  dateModified: "2026-11-18"
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a
+    }
+  }))
+};
+---
+
+<Layout
+  title={title}
+  description={description}
+  breadcrumbs={[
+    { name: "Главная", path: "/" },
+    { name: "Гайды", path: "/guides/" },
+    { name: "Стоматология в Сербии: цены и клиники", path: `/guides/${slug}/` },
+  ]}
+  jsonLd={[articleSchema, faqSchema]}
+>
+  <div class="mx-auto max-w-4xl px-4 py-10 md:py-14">
+    <!-- Meta badge -->
+    <div class="flex items-center gap-2 mb-4">
+      <span class="chip">Стоматология</span>
+      <span class="text-xs text-slate-500">Обновлено: ноябрь 2026</span>
+      <span class="text-xs text-slate-400">•</span>
+      <span class="text-xs text-slate-500">Время чтения: 8 мин</span>
+    </div>
+
+    <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900 tracking-tight leading-tight">
+      Стоматология в Сербии: цены, имплантация, лечение зубов в Белграде (2026)
+    </h1>
+
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      Стоматология в Сербии — одна из самых развитых и конкурентных отраслей медицины. Белград давно заслужил статус европейского хаба высококачественного стоматологического лечения: сюда приезжают пациенты со всей Европы за установкой имплантов, циркониевых коронок и исправлением прикуса. Для русскоязычного сообщества в Сербии работает множество опытных врачей-стоматологов, ведущих приём на русском языке. Разбираем актуальный прайс-лист в сербских динарах и евро, стандарты качества и советы по выбору ординации.
+    </p>
+
+    <!-- Fast buttons -->
+    <div class="my-6 p-4 rounded-xl bg-slate-100 border border-slate-200 flex flex-wrap items-center justify-between gap-3">
+      <span class="text-sm font-semibold text-navy-900">Записаться к проверенному стоматологу:</span>
+      <div class="flex flex-wrap gap-2">
+        <a href="/specialties/dentist/" class="btn-primary text-xs py-2 px-3">Все стоматологи</a>
+        <a href="/specialties/dental_implantologist/" class="btn-secondary text-xs py-2 px-3">Имплантологи</a>
+        <a href="/specialties/dental_surgeon/" class="btn-secondary text-xs py-2 px-3">Хирурги-стоматологи</a>
+        <a href="/cities/belgrade/" class="btn-secondary text-xs py-2 px-3">Белград</a>
+      </div>
+    </div>
+
+    <!-- Section 1 -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">1. Особенности стоматологического рынка Сербии</h2>
+    <p class="mt-3 text-slate-700 leading-relaxed">
+      В Сербии стоматологическая клиника называется <strong>Стоматолошка ординација (Stomatološka ordinacija)</strong>. Подавляющее большинство жителей страны лечат зубы в частном секторе, так как государственное страхование RFZO покрывает взрослым лишь экстренное удаление зуба при острой боли.
+    </p>
+
+    <div class="mt-4 grid md:grid-cols-3 gap-4">
+      <div class="card p-5 border-l-4 border-brand-600 bg-white">
+        <h3 class="font-bold text-navy-900">Мировые материалы</h3>
+        <p class="mt-2 text-xs text-slate-600 leading-relaxed">
+          Используются проверенные пломбировочные материалы (японские Gradia, американские 3M Filtek, Estelite), швейцарские и южнокорейские импланты (Straumann, Osstem, Dentium), немецкая керамика Ivoclar.
+        </p>
+      </div>
+
+      <div class="card p-5 border-l-4 border-emerald-600 bg-white">
+        <h3 class="font-bold text-navy-900">Русскоязычные врачи</h3>
+        <p class="mt-2 text-xs text-slate-600 leading-relaxed">
+          В Белграде и Нови-Саде успешно ведут практику десятки сертифицированных докторов из РФ и стран СНГ, получивших сербскую нострификацию дипломов и лицензии Палаты стоматологов Сербии (Stomatološka komora Srbije).
+        </p>
+      </div>
+
+      <div class="card p-5 border-l-4 border-blue-600 bg-white">
+        <h3 class="font-bold text-navy-900">Собственные лаборатории</h3>
+        <p class="mt-2 text-xs text-slate-600 leading-relaxed">
+          В Белграде развита сеть зуботехнических CAD/CAM лабораторий, где фрезеруются коронки из диоксида циркония и виниры E.max в кратчайшие сроки (3–7 дней).
+        </p>
+      </div>
+    </div>
+
+    <!-- Section 2: Price Table -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">2. Прайс-лист на стоматологические услуги в Белграде (2026 год)</h2>
+    <p class="mt-3 text-slate-700 leading-relaxed">
+      Курс валюты: 1 EUR ≈ 117 RSD. Цены зависят от ценовой категории клиники, квалификации врача и бренда расходных материалов.
+    </p>
+
+    <div class="mt-4 overflow-x-auto card">
+      <table class="w-full text-left text-sm border-collapse">
+        <thead class="bg-slate-100 text-slate-700 font-semibold border-b border-slate-200">
+          <tr>
+            <th class="py-3 px-4">Процедура</th>
+            <th class="py-3 px-4">Сербское название</th>
+            <th class="py-3 px-4">Цена в RSD</th>
+            <th class="py-3 px-4">Цена в EUR (€)</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-200 text-slate-700">
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">Консультация стоматолога и составление плана лечения</td>
+            <td class="py-3 px-4">Stomatološki pregled i plan terapije</td>
+            <td class="py-3 px-4 font-medium">0 – 2 000 RSD</td>
+            <td class="py-3 px-4 text-emerald-700 font-medium">0 – 17 € (часто бесплатно)</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">Профессиональная гигиена (ультразвук + AirFlow + полировка)</td>
+            <td class="py-3 px-4">Uklanjanje kamenca i poliranje (AirFlow)</td>
+            <td class="py-3 px-4 font-medium">3 500 – 6 500 RSD</td>
+            <td class="py-3 px-4">~30 – 55 €</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">Световая пломба (лечение поверхностного/среднего кариеса)</td>
+            <td class="py-3 px-4">Kompozitna plomba (jednopovršinska / dvopovršinska)</td>
+            <td class="py-3 px-4 font-medium">3 200 – 6 000 RSD</td>
+            <td class="py-3 px-4">~27 – 50 €</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">Эндодонтия (лечение каналов зуба с пломбировкой)</td>
+            <td class="py-3 px-4">Lečenje kanala korena zuba (endodoncija)</td>
+            <td class="py-3 px-4 font-medium">6 000 – 14 000 RSD</td>
+            <td class="py-3 px-4">~50 – 120 €</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">Простое удаление зуба с анестезией</td>
+            <td class="py-3 px-4">Rutinsko vađenje zuba</td>
+            <td class="py-3 px-4 font-medium">2 500 – 4 500 RSD</td>
+            <td class="py-3 px-4">~21 – 38 €</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">Хирургическое удаление зуба мудрости (восьмерки)</td>
+            <td class="py-3 px-4">Hirurško vađenje impaktiranog umnjaka</td>
+            <td class="py-3 px-4 font-medium">7 500 – 15 000 RSD</td>
+            <td class="py-3 px-4">~64 – 130 €</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">Дентальный имплантат (Osstem / Dentium / Megagen)</td>
+            <td class="py-3 px-4">Zubni implant (standard)</td>
+            <td class="py-3 px-4 font-medium">47 000 – 70 000 RSD</td>
+            <td class="py-3 px-4">~400 – 600 €</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">Премиальный имплантат (Straumann / Nobel Biocare)</td>
+            <td class="py-3 px-4">Zubni implant (premium)</td>
+            <td class="py-3 px-4 font-medium">76 000 – 110 000 RSD</td>
+            <td class="py-3 px-4">~650 – 950 €</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">Коронка из диоксида циркония (Zirconia)</td>
+            <td class="py-3 px-4">Bezmetalna cirkonijum krunica</td>
+            <td class="py-3 px-4 font-medium">21 000 – 33 000 RSD</td>
+            <td class="py-3 px-4">~180 – 280 €</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">Керамический винир E.max</td>
+            <td class="py-3 px-4">Keramička faseta (Vinir E.max)</td>
+            <td class="py-3 px-4 font-medium">25 000 – 38 000 RSD</td>
+            <td class="py-3 px-4">~210 – 325 €</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Section 3: Diagnostic imaging -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">3. Рентген-снимки челюсти: где сделать в Белграде</h2>
+    <p class="mt-3 text-slate-700 leading-relaxed">
+      Для качественного планирования имплантации или удаления сложных зубов мудрости требуется панорамный рентген или трехмерный снимок. В Белграде они выполняются в независимых рентген-центрах:
+    </p>
+    <div class="mt-4 p-4 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-700 space-y-2">
+      <p>
+        <strong>1. Панорамный снимок всех зубов (Ortopantomogram / Ortopan):</strong> стоит от 1 500 до 2 200 RSD (~13–19 €). Позволяет оценить общее состояние корней зубов, костной ткани и зачатков непрорезавшихся зубов.
+      </p>
+      <p>
+        <strong>2. 3D компьютерная томография (3D CBCT челюсти):</strong> стоит 3 500 – 6 000 RSD (~30–50 €). Необходима хирургу-имплантологу для трехмерного измерения плотности и высоты костной ткани перед вживлением титанового винта.
+      </p>
+      <p class="text-xs text-slate-500">
+        📍 <em>Популярные сети рентгена в Белграде:</em> <strong>Orto-Pan</strong> (филиалы в центре, на Врачаре и Новом Белграде), <strong>3D Rendgen Dijagnostika</strong>. Процедура занимает 5 минут, диск отдают сразу на руки.
+      </p>
+    </div>
+
+    <!-- Section 4: Checklist -->
+    <div class="card p-6 my-10 bg-white border border-slate-200">
+      <h2 class="text-xl font-bold text-navy-900 flex items-center gap-2">
+        <span class="text-brand-600">✓</span> Чек-лист: Что спросить у стоматолога перед началом лечения
+      </h2>
+      <div class="mt-4 space-y-2.5 text-sm text-slate-700">
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span><strong>Согласован ли письменный план лечения:</strong> убедитесь, что в смете зафиксированы все этапы, включая анестезию, рентген-контроль и слепки.</span>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span><strong>Бренд импланта и паспорт изделия:</strong> уточните, выдадут ли вам оригинальный паспорт имплантата с серийным номером и стикером производителя.</span>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span><strong>Сроки гарантии:</strong> спросите о гарантийных обязательствах клиники на пломбы (стандартно 1–2 года) и ортопедические коронки.</span>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span><strong>Способы оплаты:</strong> проверьте возможность оплаты картой или наличными динарами (RSD).</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">Часто задаваемые вопросы (FAQ)</h2>
+    <div class="mt-4 space-y-3">
+      {faqItems.map((item) => (
+        <details class="card p-4 group [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex justify-between items-center font-bold text-navy-900 cursor-pointer list-none">
+            <span>{item.q}</span>
+            <span class="transition group-open:rotate-180 text-brand-600 font-bold ml-2">↓</span>
+          </summary>
+          <p class="mt-3 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            {item.a}
+          </p>
+        </details>
+      ))}
+    </div>
+
+    <!-- CTA -->
+    <div class="card p-6 md:p-8 mt-12 bg-gradient-to-br from-brand-50 to-white border border-brand-200 text-center">
+      <h3 class="text-xl font-bold text-navy-900">Ищете русскоязычного стоматолога в Белграде?</h3>
+      <p class="mt-2 text-slate-600 max-w-xl mx-auto text-sm">
+        В каталоге RuDoctors представлены проверенные стоматологи-терапевты, хирурги, ортопеды и имплантологи с отзывами реальных пациентов и прямыми контактами в WhatsApp и Telegram.
+      </p>
+      <div class="mt-5 flex flex-wrap justify-center gap-3">
+        <a href="/specialties/dentist/" class="btn-primary">Каталог стоматологов</a>
+        <a href="/specialties/dental_implantologist/" class="btn-secondary">Имплантологи</a>
+        <a href="/cities/belgrade/" class="btn-ghost">Врачи Белграда</a>
+      </div>
+    </div>
+  </div>
+</Layout>

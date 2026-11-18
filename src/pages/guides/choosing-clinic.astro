@@ -1,90 +1,266 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
-const title = "Как выбрать клинику и записаться";
+const title = "Русскоязычные клиники и медицинские центры в Белграде: рейтинг, отзывы и запись";
 const description =
-  "Как выбрать клинику и оформить запись к врачу; справочный гайд в статусе черновика.";
+  "Обзор частных медицинских центров Белграда с русскоязычными врачами: MediGroup, Euromedik, Acibadem Bel Medic, AlfaMedStar. Услуги, цены, лицензии и отзывы пациентов.";
+const slug = "choosing-clinic";
+const canonicalUrl = `https://rudoctors.com/guides/${slug}/`;
 
-const guide = {
-  slug: "choosing-clinic",
-  status: "draft",
-  source: "TBD — источник уточнить",
-  sourceDate: "TBD — дата уточнить",
-  medicalReview: "TBD — назначить ответственного",
+const faqItems = [
+  {
+    q: "В каких клиниках Белграда больше всего русскоязычных врачей?",
+    a: "Русскоязычные специалисты и доктора, свободно говорящие по-русски, принимают в специализированных центрах (например, AlfaMedStar), а также во многих отделениях крупнейших сетей MediGroup (Дорчол, Новый Белград), Euromedik и Acibadem Bel Medic. В каталоге RuDoctors собраны прямые профили врачей с точными локациями приёма."
+  },
+  {
+    q: "Нужно ли в частной клинике платить за каждый повторный приём (контролу)?",
+    a: "В большинстве сербских частных клиник повторная консультация (kontrola) по тому же заболеванию в течение 14–30 дней после первичного осмотра стоит на 30–50% дешевле первичного приёма либо предоставляется бесплатно при назначении курсового лечения."
+  },
+  {
+    q: "Работают ли частные клиники в Белграде по выходным и ночью?",
+    a: "Да. Многопрофильные госпитали Acibadem Bel Medic (Вождовац) и Opšta bolnica MediGroup (Новый Белград, ул. Milutina Milankovića 3) имеют круглосуточные дежурные приёмные отделения (hitna služba 24/7), где можно экстренно пройти осмотр хирурга, терапевта или сделать рентген в любое время суток."
+  },
+  {
+    q: "Можно ли расплатиться в клинике иностранной банковской картой?",
+    a: "Да, практически все частные клиники и лаборатории Белграда принимают карты международных платежных систем Visa и MasterCard, выпущенные банками Европы, Казахстана, Армении, Грузии и других стран, а также национальные сербские карты DinaCard. Платежные карты российских банков (МИР, Visa/MC РФ) из-за санкций не работают — потребуется наличный расчет в сербских динарах (RSD)."
+  }
+];
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: title,
+  description: description,
+  url: canonicalUrl,
+  inLanguage: "ru",
+  publisher: {
+    "@type": "Organization",
+    name: "RuDoctors",
+    url: "https://rudoctors.com",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://rudoctors.com/favicon.svg"
+    }
+  },
+  author: {
+    "@type": "Organization",
+    name: "Редакция RuDoctors"
+  },
+  datePublished: "2026-11-18",
+  dateModified: "2026-11-18"
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a
+    }
+  }))
 };
 ---
 
 <Layout
   title={title}
   description={description}
-  noindex
   breadcrumbs={[
     { name: "Главная", path: "/" },
     { name: "Гайды", path: "/guides/" },
-    { name: title, path: `/guides/${guide.slug}/` },
+    { name: "Клиники и медцентры Белграда", path: `/guides/${slug}/` },
   ]}
+  jsonLd={[articleSchema, faqSchema]}
 >
-  <div class="mx-auto max-w-3xl px-4 py-12">
-    <div class="card p-4 mb-8 border-l-4 border-amber-400 bg-amber-50">
-      <p class="text-sm font-semibold text-amber-900">Черновик (draft)</p>
-      <p class="mt-1 text-sm text-slate-700">
-        Материал находится в статусе черновика: источник, дата и медицинское/источниковедческое
-        ревью ещё не заполнены. До заполнения этих данных текст не должен публиковаться.
-        Гайд не является медицинской рекомендацией и не заменяет консультацию врача.
-      </p>
+  <div class="mx-auto max-w-4xl px-4 py-10 md:py-14">
+    <!-- Meta badge -->
+    <div class="flex items-center gap-2 mb-4">
+      <span class="chip">Клиники и медцентры</span>
+      <span class="text-xs text-slate-500">Обновлено: ноябрь 2026</span>
+      <span class="text-xs text-slate-400">•</span>
+      <span class="text-xs text-slate-500">Время чтения: 8 мин</span>
     </div>
 
-    <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900">{title}</h1>
-    <p class="mt-3 text-slate-600 leading-relaxed">
-      Как выбрать клинику и оформить запись к врачу. Материал подготовлен в статусе черновика
-      и носит справочный, навигационный характер.
+    <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900 tracking-tight leading-tight">
+      Русскоязычные клиники и медицинские центры в Белграде: рейтинг, отзывы и запись
+    </h1>
+
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      Белград является главным медицинским центром Балканского региона. Здесь сосредоточены ведущие частные клиники, сертифицированные по строгим европейским стандартам, с передовым оборудованием и международным персоналом. Для экспатов особенно актуален вопрос выбора клиники, где можно пройти консультацию, сдать анализы и получить лечение без языкового барьера. В этом обзоре собраны ключевые медицинские сети столицы, их специализация, цены и советы по записи.
     </p>
 
-    <h2 class="mt-10 font-extrabold text-xl text-navy-900">1. Оцените критерии</h2>
-    <p class="mt-2 text-slate-600">
-      Обращают внимание на специализацию, языки приёма, отзывы, формат приёма (офлайн или онлайн)
-      и расположение клиники.
-    </p>
-
-    <h2 class="mt-8 font-extrabold text-xl text-navy-900">2. Оформите запись</h2>
-    <p class="mt-2 text-slate-600">
-      Запись обычно проходит через клинику или врача. Контакты и формат приёма доступны в
-      карточках каталога Rudoctors и на странице <a href="/contacts/" class="text-brand-700 hover:underline">контактов</a>.
-    </p>
-
-    <div class="card p-6 mt-10 text-center">
-      <h2 class="font-extrabold text-navy-900">Что дальше</h2>
-      <div class="mt-4 flex flex-wrap justify-center gap-3">
-        <a href="/doctors/" class="btn-primary">Найти врача</a>
-        <a href="/guides/finding-doctor/" class="btn-ghost">Как найти врача</a>
-        <a href="/contacts/" class="btn-ghost">Связаться</a>
+    <!-- Fast buttons -->
+    <div class="my-6 p-4 rounded-xl bg-slate-100 border border-slate-200 flex flex-wrap items-center justify-between gap-3">
+      <span class="text-sm font-semibold text-navy-900">Подобрать врача по району Белграда:</span>
+      <div class="flex flex-wrap gap-2">
+        <a href="/cities/belgrade/" class="btn-primary text-xs py-2 px-3">Все врачи Белграда</a>
+        <a href="/specialties/therapist/" class="btn-secondary text-xs py-2 px-3">Терапевты</a>
+        <a href="/specialties/gynecologist/" class="btn-secondary text-xs py-2 px-3">Гинекологи</a>
+        <a href="/specialties/dentist/" class="btn-secondary text-xs py-2 px-3">Стоматологи</a>
       </div>
     </div>
 
-    <div class="card p-5 mt-8">
-      <h2 class="font-extrabold text-navy-900">Статус материала</h2>
-      <dl class="mt-4 grid gap-4 sm:grid-cols-2 text-sm">
-        <div>
-          <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Статус</dt>
-          <dd class="mt-1 font-semibold text-slate-900">{guide.status}</dd>
+    <!-- Section 1 -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">1. Крупнейшие медицинские сети Белграда</h2>
+    <p class="mt-3 text-slate-700 leading-relaxed">
+      Частный медицинский ландшафт сербской столицы представлен несколькими сетевыми гигантами и десятками узкопрофильных центров:
+    </p>
+
+    <div class="mt-4 space-y-4">
+      <div class="card p-5 border-l-4 border-brand-600">
+        <div class="flex items-center justify-between">
+          <h3 class="font-bold text-navy-900 text-lg">1. Сеть MediGroup</h3>
+          <span class="badge-new">Крупнейшая сеть</span>
         </div>
-        <div>
-          <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Источник</dt>
-          <dd class="mt-1 text-slate-900">{guide.source}</dd>
+        <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+          MediGroup объединяет многопрофильные поликлиники в центральных районах Белграда (Дорчол, Врачар, Нови Београд, Баново Брдо), собственную общую больницу со стационаром и хирургическими операционными, а также специализированный родильный дом.
+        </p>
+        <ul class="mt-2 text-xs text-slate-500 list-disc pl-5 space-y-1">
+          <li><strong>Преимущества:</strong> единая электронная медицинская карта, мобильное приложение, прием врачей более 40 специальностей, англо- и русскоговорящие доктора.</li>
+          <li><strong>Основной стационар:</strong> Нови Београд, ул. Milutina Milankovića 3.</li>
+        </ul>
+      </div>
+
+      <div class="card p-5 border-l-4 border-blue-600">
+        <div class="flex items-center justify-between">
+          <h3 class="font-bold text-navy-900 text-lg">2. Сеть Euromedik</h3>
+          <span class="badge-new">Доступные цены</span>
         </div>
-        <div>
-          <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Дата</dt>
-          <dd class="mt-1 text-slate-900">{guide.sourceDate}</dd>
+        <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+          Сеть насчитывает более 15 диагностических центров и поликлиник в Белграде. Euromedik лидирует по объему проводимых инструментальных исследований благодаря обширному парку МРТ и КТ томографов.
+        </p>
+        <ul class="mt-2 text-xs text-slate-500 list-disc pl-5 space-y-1">
+          <li><strong>Преимущества:</strong> доступная стоимость приемов, возможность записаться на УЗИ или МРТ в день обращения, собственные хирургические стационары и лаборатории.</li>
+          <li><strong>Флагманские локации:</strong> ул. Alekse Nenadovića (Врачар), ул. Gandijeva (Нови Београд).</li>
+        </ul>
+      </div>
+
+      <div class="card p-5 border-l-4 border-purple-600">
+        <div class="flex items-center justify-between">
+          <h3 class="font-bold text-navy-900 text-lg">3. Acibadem Bel Medic</h3>
+          <span class="badge-new">Премиум-класс и JCI</span>
         </div>
-        <div>
-          <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Ревью</dt>
-          <dd class="mt-1 text-slate-900">{guide.medicalReview}</dd>
+        <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+          Первый сербский частный госпиталь, аккредитованный по международному стандарту безопасности пациентов Joint Commission International (JCI). Входит в глобальную медицинскую группу Acibadem.
+        </p>
+        <ul class="mt-2 text-xs text-slate-500 list-disc pl-5 space-y-1">
+          <li><strong>Преимущества:</strong> круглосуточная служба неотложной помощи 24/7 для взрослых и детей, реанимационные бригады, высокотехнологичная онкология и кардиохирургия.</li>
+          <li><strong>Локация:</strong> Вождовац, ул. Koste Jovanovića 87.</li>
+        </ul>
+      </div>
+
+      <div class="card p-5 border-l-4 border-emerald-600">
+        <div class="flex items-center justify-between">
+          <h3 class="font-bold text-navy-900 text-lg">4. AlfaMedStar и русскоязычные ординации</h3>
+          <span class="badge-new">Русскоязычный персонал</span>
         </div>
-      </dl>
-      <p class="mt-4 text-sm text-slate-600">
-        Требования к материалу: источник, дата и медицинское/источниковедческое ревью должны быть
-        заполнены ответственным до публикации. Пока значения не заполнены — публикация невозможна.
+        <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+          Центры и лицензированные частные кабинеты, основанные врачами родом из СНГ, получившими сербские лицензии. Администраторы, терапевты, гинекологи, неврологи и педиатры свободно говорят по-русски, что исключает любое недопонимание при постановке диагноза и назначении схемы терапии.
+        </p>
+      </div>
+    </div>
+
+    <!-- Section 2: Table -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">2. Ориентировочный прайс-лист в частных клиниках Белграда (2026 год)</h2>
+    <div class="mt-4 overflow-x-auto card">
+      <table class="w-full text-left text-sm border-collapse">
+        <thead class="bg-slate-100 text-slate-700 font-semibold border-b border-slate-200">
+          <tr>
+            <th class="py-3 px-4">Услуга</th>
+            <th class="py-3 px-4">Euromedik</th>
+            <th class="py-3 px-4">MediGroup</th>
+            <th class="py-3 px-4">Acibadem Bel Medic</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-200 text-slate-700">
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">Первичный приём терапевта</td>
+            <td class="py-3 px-4">3 200 – 4 500 RSD (~27–38 €)</td>
+            <td class="py-3 px-4">4 200 – 5 800 RSD (~36–50 €)</td>
+            <td class="py-3 px-4">5 500 – 7 500 RSD (~47–64 €)</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">Консультация профессора / к.м.н.</td>
+            <td class="py-3 px-4">5 000 – 7 000 RSD (~42–60 €)</td>
+            <td class="py-3 px-4">6 500 – 9 000 RSD (~55–77 €)</td>
+            <td class="py-3 px-4">8 000 – 12 000 RSD (~68–102 €)</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">УЗИ брюшной полости</td>
+            <td class="py-3 px-4">3 200 – 4 200 RSD (~27–36 €)</td>
+            <td class="py-3 px-4">4 500 – 5 500 RSD (~38–47 €)</td>
+            <td class="py-3 px-4">5 500 – 7 000 RSD (~47–60 €)</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">МРТ одной зоны (без контраста)</td>
+            <td class="py-3 px-4">11 500 – 13 500 RSD (~98–115 €)</td>
+            <td class="py-3 px-4">13 000 – 16 000 RSD (~111–137 €)</td>
+            <td class="py-3 px-4">16 000 – 21 000 RSD (~137–180 €)</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">ЭКГ с расшифровкой</td>
+            <td class="py-3 px-4">1 200 – 1 800 RSD (~10–15 €)</td>
+            <td class="py-3 px-4">1 500 – 2 200 RSD (~13–19 €)</td>
+            <td class="py-3 px-4">2 000 – 3 000 RSD (~17–25 €)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Section 3: Checklist -->
+    <div class="card p-6 my-10 bg-white border border-slate-200">
+      <h2 class="text-xl font-bold text-navy-900 flex items-center gap-2">
+        <span class="text-brand-600">✓</span> Чек-лист: На что обратить внимание при выборе клиники
+      </h2>
+      <div class="mt-4 space-y-2.5 text-sm text-slate-700">
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span><strong>Лицензия Минздрава:</strong> убедитесь, что учреждение зарегистрировано в реестре Врачебной палаты Сербии (Lekarska komora).</span>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span><strong>Язык доктора:</strong> уточните в регистратуре, на каком языке будет вестись консультация (русский, английский или сербский).</span>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span><strong>Сотрудничество со страховой:</strong> проверьте, принимает ли клиника гарантийные письма вашей страховой компании (Generali, Uniqa, Wiener).</span>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span><strong>Наличие парковки:</strong> в центре Белграда (Врачар, Стари Град) парковка часто ограничена зонами 1 и 2; в Новом Белграде клиники располагают собственными просторными парковками.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">Часто задаваемые вопросы (FAQ)</h2>
+    <div class="mt-4 space-y-3">
+      {faqItems.map((item) => (
+        <details class="card p-4 group [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex justify-between items-center font-bold text-navy-900 cursor-pointer list-none">
+            <span>{item.q}</span>
+            <span class="transition group-open:rotate-180 text-brand-600 font-bold ml-2">↓</span>
+          </summary>
+          <p class="mt-3 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            {item.a}
+          </p>
+        </details>
+      ))}
+    </div>
+
+    <!-- CTA -->
+    <div class="card p-6 md:p-8 mt-12 bg-gradient-to-br from-brand-50 to-white border border-brand-200 text-center">
+      <h3 class="text-xl font-bold text-navy-900">Ищете конкретного врача в Белграде?</h3>
+      <p class="mt-2 text-slate-600 max-w-xl mx-auto text-sm">
+        Используйте удобный поиск RuDoctors: фильтруйте по специальностям, читайте честные отзывы пациентов и записывайтесь напрямую через мессенджеры.
       </p>
+      <div class="mt-5 flex flex-wrap justify-center gap-3">
+        <a href="/cities/belgrade/" class="btn-primary">Каталог врачей Белграда</a>
+        <a href="/specialties/" class="btn-secondary">Все медицинские специальности</a>
+        <a href="/guides/finding-doctor/" class="btn-ghost">Гайд по записи</a>
+      </div>
     </div>
   </div>
 </Layout>

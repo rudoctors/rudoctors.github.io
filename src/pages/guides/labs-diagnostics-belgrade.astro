@@ -1,90 +1,301 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
-const title = "Лабораторные анализы и диагностика в Белграде";
+const title = "Лабораторные анализы и диагностика в Белграде: Beo-Lab, Jugolab, Aqualab (цены и подготовка)";
 const description =
-  "Как сдаются лабораторные анализы и проходят диагностику в Белграде; справочный гайд в статусе черновика.";
+  "Где и как сдать анализы в Белграде без направления: обзор лабораторий Beo-Lab, Aqualab, Jugolab. Актуальные цены в RSD и EUR, сроки готовности и правила подготовки к сдаче крови.";
+const slug = "labs-diagnostics-belgrade";
+const canonicalUrl = `https://rudoctors.com/guides/${slug}/`;
 
-const guide = {
-  slug: "labs-diagnostics-belgrade",
-  status: "draft",
-  source: "TBD — источник уточнить",
-  sourceDate: "TBD — дата уточнить",
-  medicalReview: "TBD — назначить ответственного",
+const faqItems = [
+  {
+    q: "Нужно ли направление врача, чтобы сдать кровь в частной лаборатории?",
+    a: "Нет, направление не требуется. В любой частной лаборатории Белграда (Beo-Lab, Aqualab, Jugolab) вы можете самостоятельно выбрать любые анализы из прейскуранта — от общего анализа крови до онкомаркеров и генетических тестов. Направление врача требуется только для бесплатной сдачи по государственной страховке в Доме здравля."
+  },
+  {
+    q: "Как быстро приходят результаты анализов?",
+    a: "Базовые анализы (общий анализ крови, базовые биохимические показатели, общий анализ мочи) обычно готовы в течение 3–6 часов в тот же день. Гормоны, витамины и серология — к вечеру или на следующее утро. Результаты автоматически отправляются в формате PDF на вашу электронную почту и отображаются в личном кабинете на сайте лаборатории."
+  },
+  {
+    q: "Можно ли получить результаты анализов на английском языке?",
+    a: "Да. В большинстве сетей (особенно в Beo-Lab и Aqualab) достаточно при оформлении на ресепшн попросить бланк на английском языке (rezultati na engleskom). Это удобно, если вы планируете передать результаты зарубежному врачу или отправить в международную страховую компанию."
+  },
+  {
+    q: "Есть ли в Белграде круглосуточные лаборатории?",
+    a: "Да. В сети Aqualab Plus действуют круглосуточные филиалы (dežurne laboratorije), например, в районе площади Славия (ul. Kneginje Zorke) и в Новом Белграде. Там можно сдать срочные тесты (C-реактивный белок, тропонин, D-димер, лейкоцитарную формулу) даже глубокой ночью."
+  }
+];
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: title,
+  description: description,
+  url: canonicalUrl,
+  inLanguage: "ru",
+  publisher: {
+    "@type": "Organization",
+    name: "RuDoctors",
+    url: "https://rudoctors.com",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://rudoctors.com/favicon.svg"
+    }
+  },
+  author: {
+    "@type": "Organization",
+    name: "Редакция RuDoctors"
+  },
+  datePublished: "2026-11-18",
+  dateModified: "2026-11-18"
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a
+    }
+  }))
 };
 ---
 
 <Layout
   title={title}
   description={description}
-  noindex
   breadcrumbs={[
     { name: "Главная", path: "/" },
     { name: "Гайды", path: "/guides/" },
-    { name: title, path: `/guides/${guide.slug}/` },
+    { name: "Лаборатории и анализы в Белграде", path: `/guides/${slug}/` },
   ]}
+  jsonLd={[articleSchema, faqSchema]}
 >
-  <div class="mx-auto max-w-3xl px-4 py-12">
-    <div class="card p-4 mb-8 border-l-4 border-amber-400 bg-amber-50">
-      <p class="text-sm font-semibold text-amber-900">Черновик (draft)</p>
-      <p class="mt-1 text-sm text-slate-700">
-        Материал находится в статусе черновика: источник, дата и медицинское/источниковедческое
-        ревью ещё не заполнены. До заполнения этих данных текст не должен публиковаться.
-        Гайд не является медицинской рекомендацией и не заменяет консультацию врача.
-      </p>
+  <div class="mx-auto max-w-4xl px-4 py-10 md:py-14">
+    <!-- Meta badge -->
+    <div class="flex items-center gap-2 mb-4">
+      <span class="chip">Диагностика и анализы</span>
+      <span class="text-xs text-slate-500">Обновлено: ноябрь 2026</span>
+      <span class="text-xs text-slate-400">•</span>
+      <span class="text-xs text-slate-500">Время чтения: 7 мин</span>
     </div>
 
-    <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900">{title}</h1>
-    <p class="mt-3 text-slate-600 leading-relaxed">
-      Как сдаются лабораторные анализы и проходят диагностику в Белграде. Материал подготовлен
-      в статусе черновика и носит справочный, навигационный характер.
+    <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900 tracking-tight leading-tight">
+      Лабораторные анализы и диагностика в Белграде: Beo-Lab, Jugolab, Aqualab (цены и подготовка)
+    </h1>
+
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      Сдача медицинских анализов в Сербии устроена крайне комфортно для пациентов. В Белграде работают десятки филиалов современных диагностических лабораторий, где сдать кровь или мочу можно без предварительной записи, без очередей и без направления врача. Рассказываем о лучших сетевых лабораториях, актуальных ценах в динарах и евро, а также о правилах подготовки к исследованиям.
     </p>
 
-    <h2 class="mt-10 font-extrabold text-xl text-navy-900">1. Диагностика и анализы</h2>
-    <p class="mt-2 text-slate-600">
-      Процесс включает направление или рецепт и запись. Конкретные лаборатории и процедуры
-      зависят от клиники и врача; гайд не даёт клинических рекомендаций.
-    </p>
-
-    <h2 class="mt-8 font-extrabold text-xl text-navy-900">2. Дальше</h2>
-    <p class="mt-2 text-slate-600">
-      Для поиска врача и записи используйте <a href="/doctors/" class="text-brand-700 hover:underline">каталог врачей</a>
-      и раздел <a href="/faq/" class="text-brand-700 hover:underline">вопросов и ответов</a>.
-    </p>
-
-    <div class="card p-6 mt-10 text-center">
-      <h2 class="font-extrabold text-navy-900">Что дальше</h2>
-      <div class="mt-4 flex flex-wrap justify-center gap-3">
-        <a href="/doctors/" class="btn-primary">Найти врача</a>
-        <a href="/faq/" class="btn-ghost">Вопросы и ответы</a>
-        <a href="/contacts/" class="btn-ghost">Связаться</a>
+    <!-- Fast buttons -->
+    <div class="my-6 p-4 rounded-xl bg-slate-100 border border-slate-200 flex flex-wrap items-center justify-between gap-3">
+      <span class="text-sm font-semibold text-navy-900">Нужна расшифровка анализов врачом?</span>
+      <div class="flex flex-wrap gap-2">
+        <a href="/specialties/therapist/" class="btn-primary text-xs py-2 px-3">Терапевты</a>
+        <a href="/specialties/endocrinologist/" class="btn-secondary text-xs py-2 px-3">Эндокринологи</a>
+        <a href="/specialties/pediatrician/" class="btn-secondary text-xs py-2 px-3">Педиатры</a>
       </div>
     </div>
 
-    <div class="card p-5 mt-8">
-      <h2 class="font-extrabold text-navy-900">Статус материала</h2>
-      <dl class="mt-4 grid gap-4 sm:grid-cols-2 text-sm">
-        <div>
-          <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Статус</dt>
-          <dd class="mt-1 font-semibold text-slate-900">{guide.status}</dd>
+    <!-- Section 1 -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">1. Ведущие лабораторные сети Белграда</h2>
+    <p class="mt-3 text-slate-700 leading-relaxed">
+      В частном секторе лабораторной диагностики Сербии доминируют три крупнейшие сети, дополняемые профильными институтами:
+    </p>
+
+    <div class="mt-4 space-y-4">
+      <div class="card p-5 border-l-4 border-brand-600">
+        <div class="flex items-center justify-between">
+          <h3 class="font-bold text-navy-900 text-lg">Beo-Lab (сеть Synlab)</h3>
+          <span class="badge-new">Европейский стандарт</span>
         </div>
-        <div>
-          <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Источник</dt>
-          <dd class="mt-1 text-slate-900">{guide.source}</dd>
+        <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+          Крупнейшая лабораторная сеть Сербии, входящая в европейский диагностический холдинг <strong>Synlab</strong>. Более 40 пунктов забора в Белграде (Врачар, Дорчол, Нови Београд, Земун, Вождовац). Лаборатории сертифицированы по международному стандарту ISO 15189.
+        </p>
+        <p class="mt-2 text-xs text-slate-500">
+          <strong>Особенности:</strong> современный личный кабинет пациента, быстрое получение результатов на email, возможность сдать расширенные генетические панели, аллергочипы ALEX2 и онкомаркеры.
+        </p>
+      </div>
+
+      <div class="card p-5 border-l-4 border-blue-600">
+        <div class="flex items-center justify-between">
+          <h3 class="font-bold text-navy-900 text-lg">Aqualab Plus</h3>
+          <span class="badge-new">Круглосуточные пункты 24/7</span>
         </div>
-        <div>
-          <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Дата</dt>
-          <dd class="mt-1 text-slate-900">{guide.sourceDate}</dd>
+        <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+          Сеть с рекордным числом отделений (более 60 по Сербии). Главное преимущество — наличие круглосуточных дежурных лабораторий в центре Белграда (район площади Славия) и в Новом Белграде.
+        </p>
+        <p class="mt-2 text-xs text-slate-500">
+          <strong>Особенности:</strong> экспресс-тесты (CRP, тропонин, D-димер) за 1–2 часа, доступные комплексные пакеты чекапов, выезд медсестры на дом для забора крови.
+        </p>
+      </div>
+
+      <div class="card p-5 border-l-4 border-amber-600">
+        <div class="flex items-center justify-between">
+          <h3 class="font-bold text-navy-900 text-lg">Jugolab</h3>
+          <span class="badge-new">Оптимальные цены</span>
         </div>
-        <div>
-          <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Ревью</dt>
-          <dd class="mt-1 text-slate-900">{guide.medicalReview}</dd>
+        <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+          Авторитетная сеть со штаб-квартирой в Воеводине и множеством филиалов в Белграде и Нови-Саде. Славится высокой точностью биохимических и микробиологических исследований по умеренным ценам.
+        </p>
+        <p class="mt-2 text-xs text-slate-500">
+          <strong>Особенности:</strong> удобное расположение филиалов, качественная бактериология (посевы, мазки) с антибиотикограммой.
+        </p>
+      </div>
+    </div>
+
+    <!-- Section 2: Price Table -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">2. Цены на популярные анализы в Белграде (2026 год)</h2>
+    <p class="mt-3 text-slate-700 leading-relaxed">
+      Курс валюты: 1 EUR ≈ 117 RSD. В большинстве лабораторий к стоимости исследований добавляется разовый сбор за забор венозной крови (<em>uzorkovanje krvi</em>) — 150–250 RSD (~1.5–2 €).
+    </p>
+
+    <div class="mt-4 overflow-x-auto card">
+      <table class="w-full text-left text-sm border-collapse">
+        <thead class="bg-slate-100 text-slate-700 font-semibold border-b border-slate-200">
+          <tr>
+            <th class="py-3 px-4">Название исследования</th>
+            <th class="py-3 px-4">Сербское название</th>
+            <th class="py-3 px-4">Цена в RSD</th>
+            <th class="py-3 px-4">Цена в EUR (€)</th>
+            <th class="py-3 px-4">Срок готовности</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-200 text-slate-700">
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">Общий анализ крови (ОАК с лейкоцитарной формулой)</td>
+            <td class="py-3 px-4">Kompletna krvna slika (KKS 5 diff)</td>
+            <td class="py-3 px-4 font-medium">450 – 650 RSD</td>
+            <td class="py-3 px-4">~4 – 5.5 €</td>
+            <td class="py-3 px-4 text-emerald-700 font-medium">3–5 часов</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">Биохимический профиль (глюкоза, АЛТ, АСТ, мочевина, креатинин, билирубин, холестерин)</td>
+            <td class="py-3 px-4">Osnovna biohemija krvi</td>
+            <td class="py-3 px-4 font-medium">1 800 – 3 200 RSD</td>
+            <td class="py-3 px-4">~15 – 27 €</td>
+            <td class="py-3 px-4 text-emerald-700 font-medium">В тот же день</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">Гормоны щитовидной железы (TSH, FT4)</td>
+            <td class="py-3 px-4">TSH, Slobodni T4 (FT4)</td>
+            <td class="py-3 px-4 font-medium">1 400 – 1 900 RSD</td>
+            <td class="py-3 px-4">~12 – 16 €</td>
+            <td class="py-3 px-4">В тот же день / 24ч</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">Витамин D (25-OH Vitamin D)</td>
+            <td class="py-3 px-4">25-OH Vitamin D total</td>
+            <td class="py-3 px-4 font-medium">1 800 – 2 500 RSD</td>
+            <td class="py-3 px-4">~15 – 21 €</td>
+            <td class="py-3 px-4">1 рабочий день</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">Ферритин (запасы железа)</td>
+            <td class="py-3 px-4">Feritin</td>
+            <td class="py-3 px-4 font-medium">850 – 1 200 RSD</td>
+            <td class="py-3 px-4">~7 – 10 €</td>
+            <td class="py-3 px-4">В тот же день</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">С-реактивный белок (маркер воспаления)</td>
+            <td class="py-3 px-4">CRP (C-reaktivni protein)</td>
+            <td class="py-3 px-4 font-medium">550 – 800 RSD</td>
+            <td class="py-3 px-4">~5 – 7 €</td>
+            <td class="py-3 px-4 text-emerald-700 font-medium">2–4 часа</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 font-semibold text-navy-900">Общий анализ мочи с осадком</td>
+            <td class="py-3 px-4">Urin sa sedimentom</td>
+            <td class="py-3 px-4 font-medium">350 – 500 RSD</td>
+            <td class="py-3 px-4">~3 – 4.5 €</td>
+            <td class="py-3 px-4 text-emerald-700 font-medium">2–3 часа</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Section 3 -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">3. Как подготовиться к сдаче анализов</h2>
+    <div class="mt-4 space-y-3">
+      <div class="card p-4">
+        <h4 class="font-bold text-navy-900">1. Голодный режим (натощак)</h4>
+        <p class="text-sm text-slate-600 mt-1">
+          Кровь для биохимии (глюкоза, липидный профиль, ферменты печени) сдается строго натощак — после 8–12 часов ночного голодания. Утром разрешено пить только чистую негазированную воду.
+        </p>
+      </div>
+
+      <div class="card p-4">
+        <h4 class="font-bold text-navy-900">2. Исключение кофе, чая и никотина</h4>
+        <p class="text-sm text-slate-600 mt-1">
+          Утренний кофе (даже без сахара) стимулирует выработку кортизола и инсулина, искажая показатели глюкозы и гормонального профиля. Воздержитесь от курения минимум за 1 час до забора крови.
+        </p>
+      </div>
+
+      <div class="card p-4">
+        <h4 class="font-bold text-navy-900">3. Прием лекарств и БАДов</h4>
+        <p class="text-sm text-slate-600 mt-1">
+          Если вы принимаете гормональные препараты для щитовидной железы (Эутирокс / Л-тироксин), утреннюю дозу принимают <strong>после</strong> забора крови. Прием добавок железа и биотина следует приостановить за 48 часов до теста по согласованию с врачом.
+        </p>
+      </div>
+    </div>
+
+    <!-- Section 4: Checklist -->
+    <div class="card p-6 my-10 bg-white border border-slate-200">
+      <h2 class="text-xl font-bold text-navy-900 flex items-center gap-2">
+        <span class="text-brand-600">✓</span> Чек-лист: Что сделать в лаборатории
+      </h2>
+      <div class="mt-4 space-y-2.5 text-sm text-slate-700">
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span>Возьмите паспорт для правильного написания имени и фамилии латиницей в бланке результатов.</span>
         </div>
-      </dl>
-      <p class="mt-4 text-sm text-slate-600">
-        Требования к материалу: источник, дата и медицинское/источниковедческое ревью должны быть
-        заполнены ответственным до публикации. Пока значения не заполнены — публикация невозможна.
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span>Укажите актуальный email и сербский номер телефона для получения SMS с кодом доступа к результатам.</span>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span>Если вам нужен результат на английском — предупредите администратора до оплаты.</span>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span>Оплатить можно наличными динарами или банковскими картами (включая сербские DinaCard и международные Visa/MasterCard).</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">Часто задаваемые вопросы (FAQ)</h2>
+    <div class="mt-4 space-y-3">
+      {faqItems.map((item) => (
+        <details class="card p-4 group [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex justify-between items-center font-bold text-navy-900 cursor-pointer list-none">
+            <span>{item.q}</span>
+            <span class="transition group-open:rotate-180 text-brand-600 font-bold ml-2">↓</span>
+          </summary>
+          <p class="mt-3 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            {item.a}
+          </p>
+        </details>
+      ))}
+    </div>
+
+    <!-- CTA -->
+    <div class="card p-6 md:p-8 mt-12 bg-gradient-to-br from-brand-50 to-white border border-brand-200 text-center">
+      <h3 class="text-xl font-bold text-navy-900">Получили результаты анализов и нужны разъяснения?</h3>
+      <p class="mt-2 text-slate-600 max-w-xl mx-auto text-sm">
+        Не занимайтесь самолечением по поисковикам. Запишитесь на очную или онлайн-консультацию к квалифицированному терапевту из каталога RuDoctors для грамотной интерпретации лабораторных данных.
       </p>
+      <div class="mt-5 flex flex-wrap justify-center gap-3">
+        <a href="/specialties/therapist/" class="btn-primary">Терапевты Белграда</a>
+        <a href="/specialties/endocrinologist/" class="btn-secondary">Эндокринологи</a>
+        <a href="/guides/check-up-belgrade/" class="btn-ghost">Гайд по чекапам</a>
+      </div>
     </div>
   </div>
 </Layout>

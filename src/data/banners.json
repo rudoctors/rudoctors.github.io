@@ -1,35 +1,35 @@
 [
   {
-    "id": "test-insurance",
+    "id": "safetywing-insurance",
     "slot": "home-top",
     "active": true,
-    "label": "Реклама",
-    "title": "Страхование в Сербии",
-    "text": "ДМС и страхование для русскоязычных экспатов: полисы, покрытие, помощь с оформлением.",
-    "cta": "Разместить рекламу",
-    "href": "/contacts/?topic=banner",
-    "tone": "slate"
-  },
-  {
-    "id": "test-clinic",
-    "slot": "home-bottom",
-    "active": true,
-    "label": "Реклама",
-    "title": "Клиника в Белграде",
-    "text": "Приём на русском: терапевт, педиатр, диагностика. Запись онлайн и по телефону.",
-    "cta": "Разместить рекламу",
-    "href": "/contacts/?topic=banner",
+    "label": "Партнёр",
+    "title": "Медицинская страховка для экспатов",
+    "text": "SafetyWing Nomad Insurance: амбулаторное и стационарное лечение, экстренная помощь в Сербии и по всему миру.",
+    "cta": "Рассчитать полис",
+    "href": "https://safetywing.com/nomad-insurance?referenceID=26640201&utm_source=26640201&utm_medium=Ambassador",
     "tone": "brand"
   },
   {
-    "id": "test-catalog-insurance",
+    "id": "telemed-consult",
+    "slot": "home-bottom",
+    "active": true,
+    "label": "Телемедицина",
+    "title": "Онлайн-консультация доказательного врача",
+    "text": "Второе мнение, терапевты и педиатры на связи 24/7. Расшифровка анализов и консультации на русском языке.",
+    "cta": "Выбрать врача",
+    "href": "https://docma.ru/?ref=ВАШ_ID",
+    "tone": "slate"
+  },
+  {
+    "id": "join-as-doctor",
     "slot": "catalog-top",
     "active": true,
-    "label": "Реклама",
-    "title": "Страхование для экспатов",
-    "text": "Полис ДМС в Сербии: сравнение покрытий и помощь на русском.",
-    "cta": "Разместить рекламу",
-    "href": "/contacts/?topic=banner",
+    "label": "Врачам и клиникам",
+    "title": "Практикуете в Сербии?",
+    "text": "Разместите профиль в каталоге rudoctors: привлекайте русскоязычных пациентов и развивайте практику.",
+    "cta": "Добавить анкету",
+    "href": "/add-doctor/",
     "tone": "slate"
   }
 ]

@@ -39,7 +39,13 @@ const list = (banners as BannerItem[]).filter((b) => b.slot === placement && b.a
             <h3 class="font-extrabold text-navy-900 text-lg">{b.title}</h3>
             <p class="mt-1 text-sm text-slate-600 leading-relaxed">{b.text}</p>
           </div>
-          <a href={b.href} class="btn-secondary shrink-0 self-start sm:self-center" data-banner-id={b.id}>
+          <a
+            href={b.href}
+            class="btn-secondary shrink-0 self-start sm:self-center"
+            data-banner-id={b.id}
+            target={b.href.startsWith("http") ? "_blank" : undefined}
+            rel={b.href.startsWith("http") ? "noopener noreferrer sponsored" : undefined}
+          >
             {b.cta} →
           </a>
         </article>

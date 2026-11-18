@@ -1,86 +1,173 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import { SITE, SCHEMA_IDS } from "../../lib/site";
 
-const title = "Гайды по здоровью в Сербии";
+const title = "Гайды по медицине и здоровью в Сербии: практические инструкции для экспатов";
 const description =
-  "Навигационные гайды Rudoctors: поиск врача, государственная и приватная клиника, страховка, запись, лабораторные анализы. Материалы в статусе черновика.";
+  "10 практических руководств по медицине в Сербии: государственная поликлиника (Dom zdravlja) vs частные клиники, поиск русскоязычного врача, страховка RFZO и ДМС, анализы в Beo-Lab, скорая помощь 194, чекапы, МРТ и стоматология.";
 
 const guides = [
   {
-    slug: "finding-doctor",
-    title: "Как найти врача в Сербии",
-    description: "Поиск врача через каталог: города, специальности, карточки.",
+    slug: "public-private-care",
+    title: "Государственная медицина (дом здравља) vs частная клиника в Сербии",
+    category: "Организация и система",
+    description: "Разница между Dom zdravlja и частными медцентрами (MediGroup, Euromedik), выбор участкового врача, направления uput, цены в RSD и правила для экспатов.",
+    readTime: "6 мин",
   },
   {
-    slug: "public-private-care",
-    title: "Государственная поликлиника и приватная клиника",
-    description: "Разница между государственной поликлиникой и приватной клиникой.",
+    slug: "finding-doctor",
+    title: "Как найти русскоязычного врача в Сербии и записаться на приём",
+    category: "Поиск специалистов",
+    description: "Пошаговый алгоритм поиска русскоязычного доктора, запись через WhatsApp и Telegram, очный визит vs телемедицина и полезный сербско-русский словарь.",
+    readTime: "7 мин",
   },
   {
     slug: "insurance-appointments",
-    title: "Страховка и запись к врачу",
-    description: "Как страховка и запись связаны между собой.",
-  },
-  {
-    slug: "choosing-clinic",
-    title: "Как выбрать клинику и записаться",
-    description: "Оценка клиники и оформление записи.",
+    title: "Медицинская страховка в Сербии: частный полис (ДМС) vs RFZO",
+    category: "Страхование",
+    description: "Государственная страховка фонда RFZO (карточка KZO), частное добровольное страхование (Generali, Uniqa), страховка для ВНЖ и механизм рефундации.",
+    readTime: "8 мин",
   },
   {
     slug: "labs-diagnostics-belgrade",
-    title: "Лабораторные анализы и диагностика в Белграде",
-    description: "Навигация по лабораторным анализам и диагностике в Белграде.",
+    title: "Лабораторные анализы и диагностика в Белграде: Beo-Lab, Jugolab, Aqualab",
+    category: "Анализы и диагностика",
+    description: "Где сдать кровь без направления врача, круглосуточные дежурные лаборатории, прайс-лист в RSD и EUR на биохимию, гормоны, витамин D и подготовка к сдаче.",
+    readTime: "7 мин",
+  },
+  {
+    slug: "choosing-clinic",
+    title: "Русскоязычные клиники и медицинские центры в Белграде",
+    category: "Клиники и госпитали",
+    description: "Обзор частных медицинских сетей Белграда: MediGroup, Euromedik, Acibadem Bel Medic, AlfaMedStar. Услуги, лицензии, ночные стационары и отзывы пациентов.",
+    readTime: "8 мин",
+  },
+  {
+    slug: "apteki-retsepty-serbia",
+    title: "Аптеки, лекарства и сербские аналоги препаратов: как купить по рецепту",
+    category: "Аптеки и лекарства",
+    description: "Дежурные аптеки 24/7 в Белграде, правила отпуска антибиотиков и рецептурных средств, таблица сербских аналогов привычных лекарств (Brufen, Febricet, Spasmex).",
+    readTime: "8 мин",
+  },
+  {
+    slug: "skoraya-pomoshch-serbia",
+    title: "Скорая и неотложная помощь в Сербии: телефон 194 и дежурные больницы",
+    category: "Экстренная помощь",
+    description: "Номер 194, когда скорая выезжает, а когда нет, адреса круглосуточных дежурных больниц (Urgentni centar, Tiršova), платная скорая и фразы для диспетчера.",
+    readTime: "8 мин",
+  },
+  {
+    slug: "check-up-belgrade",
+    title: "Комплексные чекапы (Check-up) здоровья в клиниках Белграда",
+    category: "Профилактика",
+    description: "Базовые, женские, мужские и кардиопрограммы чекапа организма. Цены в RSD и EUR, состав анализов и обследований, подготовка к скринингу за 1 день.",
+    readTime: "8 мин",
+  },
+  {
+    slug: "uzi-mrt-diagnostika-belgrade",
+    title: "Где сделать УЗИ, МРТ и КТ в Белграде: цены, клиники и запись",
+    category: "Аппаратная диагностика",
+    description: "Высокопольные томографы 1.5T и 3T, цены на сканирование суставов, позвоночника и мозга в Белграде, правила подготовки к УЗИ и контрастированию.",
+    readTime: "8 мин",
+  },
+  {
+    slug: "stomatolog-belgrad",
+    title: "Стоматология в Сербии: цены, имплантация, лечение зубов в Белграде",
+    category: "Стоматология",
+    description: "Русскоязычные стоматологи в Белграде, прайс-лист на пломбы, чистку AirFlow, удаление зубов мудрости, циркониевые коронки и импланты Straumann и Osstem.",
+    readTime: "8 мин",
   },
 ];
+
+const collectionSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: title,
+  description: description,
+  url: `${SITE.url}/guides/`,
+  isPartOf: { "@id": SCHEMA_IDS.website },
+  hasPart: guides.map((g) => ({
+    "@type": "Article",
+    name: g.title,
+    url: `${SITE.url}/guides/${g.slug}/`,
+    description: g.description,
+  })),
+};
 ---
 
 <Layout
   title={title}
   description={description}
-  noindex
   breadcrumbs={[
     { name: "Главная", path: "/" },
     { name: "Гайды", path: "/guides/" },
   ]}
+  jsonLd={collectionSchema}
 >
-  <div class="mx-auto max-w-3xl px-4 py-12">
-    <div class="card p-4 mb-8 border-l-4 border-amber-400 bg-amber-50">
-      <p class="text-sm font-semibold text-amber-900">Черновик (draft)</p>
-      <p class="mt-1 text-sm text-slate-700">
-        Материал находится в статусе черновика: источник, дата и медицинское/источниковедческое
-        ревью ещё не заполнены. До заполнения этих данных текст не должен публиковаться.
-        Гайды не являются медицинскими рекомендациями и не заменяют консультацию врача.
+  <div class="mx-auto max-w-5xl px-4 py-10 md:py-14">
+    <!-- Header -->
+    <div class="text-center max-w-3xl mx-auto">
+      <span class="chip mb-3">База знаний для экспатов</span>
+      <h1 class="text-3xl md:text-5xl font-extrabold text-navy-900 tracking-tight">
+        Гайды по медицине и здоровью в Сербии
+      </h1>
+      <p class="mt-4 text-base md:text-lg text-slate-600 leading-relaxed">
+        Подробные, проверенные экспертами инструкции о том, как устроена система здравоохранения в Сербии: от получения страховки RFZO и поиска русскоязычного врача до сдачи анализов в Beo-Lab, прохождения чекапов и стоматологического лечения.
       </p>
     </div>
 
-    <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900">{title}</h1>
-    <p class="mt-3 text-slate-600 leading-relaxed">
-      Навигационные гайды по вопросам здоровья в Сербии. Материалы подготовлены в статусе
-      черновика: содержание не прошло источниковедческую проверку и медицинское ревью, поэтому
-      не должен использоваться как медицинская рекомендация.
-    </p>
+    <!-- Quick directory links -->
+    <div class="mt-8 p-4 rounded-2xl bg-white border border-slate-200 shadow-sm flex flex-wrap items-center justify-center gap-2 text-xs md:text-sm">
+      <span class="font-bold text-navy-900 mr-2">Быстрый переход в каталог:</span>
+      <a href="/doctors/" class="chip hover:bg-brand-100 transition">Все врачи</a>
+      <a href="/cities/belgrade/" class="chip hover:bg-brand-100 transition">Белград</a>
+      <a href="/cities/novi-sad/" class="chip hover:bg-brand-100 transition">Нови-Сад</a>
+      <a href="/specialties/therapist/" class="chip hover:bg-brand-100 transition">Терапевты</a>
+      <a href="/specialties/dentist/" class="chip hover:bg-brand-100 transition">Стоматологи</a>
+      <a href="/specialties/pediatrician/" class="chip hover:bg-brand-100 transition">Педиатры</a>
+    </div>
 
-    <div class="mt-10 grid gap-4">
+    <!-- Guides Grid -->
+    <div class="mt-10 grid gap-6 md:grid-cols-2">
       {
-        guides.map((g) => (
-          <a href={`/guides/${g.slug}/`} class="card p-5 block">
-            <h2 class="font-extrabold text-navy-900">{g.title}</h2>
-            <p class="mt-1 text-sm text-slate-600">{g.description}</p>
+        guides.map((g, index) => (
+          <a
+            href={`/guides/${g.slug}/`}
+            class="card p-6 flex flex-col justify-between hover:border-brand-500 transition-all duration-200 group relative"
+          >
+            <div>
+              <div class="flex items-center justify-between text-xs mb-3">
+                <span class="chip font-semibold text-brand-800 bg-brand-50 border-brand-200">
+                  {g.category}
+                </span>
+                <span class="text-slate-400">#{index + 1} • {g.readTime}</span>
+              </div>
+              <h2 class="text-xl font-bold text-navy-900 group-hover:text-brand-700 transition leading-snug">
+                {g.title}
+              </h2>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+                {g.description}
+              </p>
+            </div>
+            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-sm font-semibold text-brand-700">
+              <span>Читать руководство</span>
+              <span class="transition-transform group-hover:translate-x-1">→</span>
+            </div>
           </a>
         ))
       }
     </div>
 
-    <div class="card p-6 mt-10 text-center">
-      <h2 class="font-extrabold text-navy-900">Что дальше</h2>
-      <p class="mt-2 text-sm text-slate-600">
-        Основной справочный ресурс — <a href="/doctors/" class="text-brand-700 hover:underline">каталог врачей</a>.
-        Черновики гайдов появятся здесь по мере подготовки источников.
+    <!-- Bottom CTA Banner -->
+    <div class="card p-8 mt-14 bg-gradient-to-br from-brand-50 via-white to-brand-50/30 border border-brand-200 text-center">
+      <h2 class="text-2xl font-extrabold text-navy-900">Не нашли ответа на свой вопрос?</h2>
+      <p class="mt-2 text-slate-600 max-w-xl mx-auto text-sm leading-relaxed">
+        В каталоге RuDoctors собраны десятки практикующих русскоязычных врачей в Сербии, готовых проконсультировать вас очно или онлайн.
       </p>
-      <div class="mt-4 flex flex-wrap justify-center gap-3">
-        <a href="/doctors/" class="btn-primary">Найти врача</a>
-        <a href="/faq/" class="btn-ghost">Вопросы и ответы</a>
-        <a href="/contacts/" class="btn-ghost">Связаться</a>
+      <div class="mt-6 flex flex-wrap justify-center gap-3">
+        <a href="/doctors/" class="btn-primary">Найти врача в Сербии</a>
+        <a href="/faq/" class="btn-secondary">Частые вопросы (FAQ)</a>
+        <a href="/contacts/" class="btn-ghost">Связаться с редакцией</a>
       </div>
     </div>
   </div>

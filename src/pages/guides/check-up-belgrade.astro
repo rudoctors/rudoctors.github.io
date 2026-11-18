@@ -1,0 +1,283 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+const title = "Комплексные чекапы (Check-up) здоровья в клиниках Белграда: программы, цены и подготовка";
+const description =
+  "Гид по чекапам организма в Белграде: базовые, женские, мужские и кардиопрограммы в MediGroup, Euromedik и Bel Medic. Актуальные цены в RSD и EUR, список анализов и подготовка.";
+const slug = "check-up-belgrade";
+const canonicalUrl = `https://rudoctors.com/guides/${slug}/`;
+
+const faqItems = [
+  {
+    q: "Сколько времени занимает прохождение комплексного чекапа?",
+    a: "Базовый, мужской или женский чекап в частных клиниках Белграда обычно занимает от 2 до 4 часов. Все обследования (сдача крови, УЗИ, ЭКГ, консультации врачей) проводятся в одном здании по заранее согласованному таймингу без очередей. Результаты лабораторных тестов и итоговое врачебное заключение выдаются в тот же день или на следующее утро."
+  },
+  {
+    q: "Покрывает ли страховка ДМС профилактический чекап?",
+    a: "Да, большинство корпоративных и расширенных индивидуальных полисов добровольного страхования (Generali, Wiener, Uniqa) включают опцию ежегодного систематического осмотра (godišnji sistematski pregled). Для записи достаточно обратиться в ассистанс вашей страховой компании."
+  },
+  {
+    q: "В какой день цикла женщинам лучше проходить чекап?",
+    a: "Оптимальным периодом для женского чекапа (осмотр гинеколога, мазок PAPA-тест, УЗИ органов малого таза и УЗИ молочных желез) являются 5–10 дни менструального цикла (считая с первого дня менструации). В этот период ткани молочных желез и эндометрий максимально информативны для ультразвуковой визуализации."
+  },
+  {
+    q: "Выдается ли итоговое заключение на русском или английском языке?",
+    a: "В частных клиниках заключение оформляется на сербском или английском языке. Если чекап проводит русскоязычный доктор из каталога RuDoctors, итоговая консультация и разъяснение всех рекомендаций проходят на русском языке."
+  }
+];
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: title,
+  description: description,
+  url: canonicalUrl,
+  inLanguage: "ru",
+  publisher: {
+    "@type": "Organization",
+    name: "RuDoctors",
+    url: "https://rudoctors.com",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://rudoctors.com/favicon.svg"
+    }
+  },
+  author: {
+    "@type": "Organization",
+    name: "Редакция RuDoctors"
+  },
+  datePublished: "2026-11-18",
+  dateModified: "2026-11-18"
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a
+    }
+  }))
+};
+---
+
+<Layout
+  title={title}
+  description={description}
+  breadcrumbs={[
+    { name: "Главная", path: "/" },
+    { name: "Гайды", path: "/guides/" },
+    { name: "Чекапы здоровья в Белграде", path: `/guides/${slug}/` },
+  ]}
+  jsonLd={[articleSchema, faqSchema]}
+>
+  <div class="mx-auto max-w-4xl px-4 py-10 md:py-14">
+    <!-- Meta badge -->
+    <div class="flex items-center gap-2 mb-4">
+      <span class="chip">Профилактика и чекап</span>
+      <span class="text-xs text-slate-500">Обновлено: ноябрь 2026</span>
+      <span class="text-xs text-slate-400">•</span>
+      <span class="text-xs text-slate-500">Время чтения: 8 мин</span>
+    </div>
+
+    <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900 tracking-tight leading-tight">
+      Комплексные чекапы (Check-up) здоровья в клиниках Белграда: программы, цены и подготовка
+    </h1>
+
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      Профилактический чекап организма (в Сербии известный как <em>sistematski pregled</em>) — лучший способ вовремя обнаружить скрытые заболевания, проверить сердечно-сосудистую систему, эндокринный баланс и онкобезопасность. В сербских медицинских центрах программы обследования построены по строгим международным протоколам, а их стоимость ощутимо привлекательнее, чем в Западной Европе. Разбираем состав программ, цены в RSD и EUR и нюансы подготовки.
+    </p>
+
+    <!-- Fast buttons -->
+    <div class="my-6 p-4 rounded-xl bg-slate-100 border border-slate-200 flex flex-wrap items-center justify-between gap-3">
+      <span class="text-sm font-semibold text-navy-900">Специалисты для проведения чекапа:</span>
+      <div class="flex flex-wrap gap-2">
+        <a href="/specialties/therapist/" class="btn-primary text-xs py-2 px-3">Терапевты</a>
+        <a href="/specialties/cardiologist/" class="btn-secondary text-xs py-2 px-3">Кардиологи</a>
+        <a href="/specialties/gynecologist/" class="btn-secondary text-xs py-2 px-3">Гинекологи</a>
+        <a href="/specialties/urologist/" class="btn-secondary text-xs py-2 px-3">Урологи</a>
+      </div>
+    </div>
+
+    <!-- Section 1 -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">1. Зачем проходить систематический осмотр в Сербии</h2>
+    <p class="mt-3 text-slate-700 leading-relaxed">
+      Переезд в новую страну, смена климата, рациона питания, стресс адаптации и повышенная жесткость воды нередко вызывают обострение скрытых дефицитов и вялотекущих воспалительных процессов. Чекап позволяет:
+    </p>
+    <ul class="mt-3 space-y-1.5 text-sm text-slate-700 list-disc pl-5">
+      <li>Пройти все консультации и диагностику за одно утро (2–4 часа) без очередей;</li>
+      <li>Оценить риски атеросклероза, гипертонии, сахарного диабета и болезней щитовидной железы;</li>
+      <li>Получить подробный паспорт здоровья (lekarski izveštaj) с персональными рекомендациями по образу жизни и питанию.</li>
+    </ul>
+
+    <!-- Section 2: Programs & Prices -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">2. Популярные программы чекапа и цены (2026 год)</h2>
+    <p class="mt-3 text-slate-700 leading-relaxed">
+      Курс валюты: 1 EUR ≈ 117 RSD. Ведущие частные клиники Белграда (MediGroup, Euromedik, Acibadem Bel Medic) предлагают стандартизированные пакеты обследования.
+    </p>
+
+    <div class="mt-4 space-y-4">
+      <div class="card p-5 border-l-4 border-brand-600">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <h3 class="font-bold text-navy-900 text-lg">1. Базовый чекап (Osnovni sistematski pregled)</h3>
+          <span class="font-bold text-brand-700 text-base">12 000 – 19 000 RSD (~100–160 €)</span>
+        </div>
+        <p class="mt-2 text-sm text-slate-600">
+          Универсальный ежегодный скрининг для взрослых до 40 лет без выраженных хронических жалоб.
+        </p>
+        <div class="mt-3 p-3 bg-slate-50 rounded-lg text-xs text-slate-700 space-y-1">
+          <p><strong>Что входит в программу:</strong></p>
+          <ul class="list-disc pl-4 space-y-0.5">
+            <li>Осмотр и консультация врача-терапевта (lekar opšte prakse);</li>
+            <li>ЭКГ в 12 отведениях с расшифровкой;</li>
+            <li>УЗИ органов брюшной полости (печень, желчный пузырь, поджелудочная, селезенка, почки);</li>
+            <li>Лабораторные анализы: ОАК с лейкоцитарной формулой, СОЭ, глюкоза, липидный профиль (холестерин, ЛПВП, ЛПНП, триглицериды), АЛТ, АСТ, билирубин, креатинин, мочевина, общий анализ мочи с осадком.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card p-5 border-l-4 border-pink-500">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <h3 class="font-bold text-navy-900 text-lg">2. Женский чекап (Ženski zdravstveni paket)</h3>
+          <span class="font-bold text-pink-700 text-base">18 000 – 32 000 RSD (~150–270 €)</span>
+        </div>
+        <p class="mt-2 text-sm text-slate-600">
+          Специализированная программа женского репродуктивного и гормонального здоровья.
+        </p>
+        <div class="mt-3 p-3 bg-slate-50 rounded-lg text-xs text-slate-700 space-y-1">
+          <p><strong>Что входит в программу:</strong></p>
+          <ul class="list-disc pl-4 space-y-0.5">
+            <li>Консультация акушера-гинеколога с бимануальным осмотром;</li>
+            <li>Видеокольпоскопия шейки матки;</li>
+            <li>Онкоцитологический мазок (PAPA test) и мазок на степень чистоты влагалища (VS);</li>
+            <li>УЗИ органов малого таза (трансвагинальное);</li>
+            <li>УЗИ молочных желез с регионарными лимфоузлами (или цифровая маммография после 40 лет);</li>
+            <li>УЗИ щитовидной железы + гормоны TSH и свободный T4.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card p-5 border-l-4 border-blue-600">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <h3 class="font-bold text-navy-900 text-lg">3. Мужской чекап (Muški sistematski paket)</h3>
+          <span class="font-bold text-blue-700 text-base">15 000 – 28 000 RSD (~130–240 €)</span>
+        </div>
+        <p class="mt-2 text-sm text-slate-600">
+          Фокус на урологическое здоровье, мужскую фертильность и профилактику сердечно-сосудистых рисков.
+        </p>
+        <div class="mt-3 p-3 bg-slate-50 rounded-lg text-xs text-slate-700 space-y-1">
+          <p><strong>Что входит в программу:</strong></p>
+          <ul class="list-disc pl-4 space-y-0.5">
+            <li>Консультация уролога;</li>
+            <li>УЗИ почек, мочевого пузыря и предстательной железы (с определением остаточной мочи);</li>
+            <li>Онкомаркер рака простаты (PSA общий и свободный);</li>
+            <li>Общий тестостерон;</li>
+            <li>Расширенная биохимия крови и печеночный профиль;</li>
+            <li>ЭКГ и консультация терапевта по итогам обследования.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card p-5 border-l-4 border-amber-600">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <h3 class="font-bold text-navy-900 text-lg">4. Кардиологический чекап (Kardio paket)</h3>
+          <span class="font-bold text-amber-700 text-base">20 000 – 35 000 RSD (~170–300 €)</span>
+        </div>
+        <p class="mt-2 text-sm text-slate-600">
+          Углубленная проверка сердца и сосудов для людей с повышенным давлением, одышкой или наследственными факторами.
+        </p>
+        <div class="mt-3 p-3 bg-slate-50 rounded-lg text-xs text-slate-700 space-y-1">
+          <p><strong>Что входит в программу:</strong></p>
+          <ul class="list-disc pl-4 space-y-0.5">
+            <li>Консультация кардиолога высшей категории / профессора;</li>
+            <li>Эхокардиография (УЗИ сердца с допплеровским картированием кровотока);</li>
+            <li>Стресс-тест на беговой дорожке или велоэргометре (ergometrija / stress test);</li>
+            <li>Липидограмма высокого разрешения, C-реактивный белок ультрачувствительный, коагулограмма.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3 -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">3. Где пройти чекап в Белграде</h2>
+    <div class="mt-4 grid md:grid-cols-3 gap-4">
+      <div class="card p-4">
+        <h4 class="font-bold text-navy-900">MediGroup</h4>
+        <p class="text-xs text-slate-600 mt-1">
+          Флагманские центры в Новом Белграде и на Дорчоле. Собственный стационар, лабораторный комплекс, возможность включить в чекап гастроскопию под медикаментозным сном.
+        </p>
+      </div>
+
+      <div class="card p-4">
+        <h4 class="font-bold text-navy-900">Euromedik</h4>
+        <p class="text-xs text-slate-600 mt-1">
+          Более 15 локаций. Самые демократичные цены на пакетные чекапы в Белграде, быстрая запись через колл-центр, мощный парк аппаратов УЗИ и томографов.
+        </p>
+      </div>
+
+      <div class="card p-4">
+        <h4 class="font-bold text-navy-900">Acibadem Bel Medic</h4>
+        <p class="text-xs text-slate-600 mt-1">
+          Премиум-сегмент в Вождоваце. Персональный англоязычный координатор на всё время чекапа, уютные VIP-палаты дневного пребывания, международный консилиум.
+        </p>
+      </div>
+    </div>
+
+    <!-- Section 4: Checklist -->
+    <div class="card p-6 my-10 bg-white border border-slate-200">
+      <h2 class="text-xl font-bold text-navy-900 flex items-center gap-2">
+        <span class="text-brand-600">✓</span> Чек-лист: Подготовка к прохождению чекапа
+      </h2>
+      <div class="mt-4 space-y-2.5 text-sm text-slate-700">
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span><strong>Строгий голод 8–10 часов:</strong> накануне легкий ужин до 19:00. Утром в день обследования не завтракать, чай и кофе исключить (только вода).</span>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span><strong>Удобная спортивная одежда и обувь:</strong> если в программу входит стресс-тест на беговой дорожке (ergometrija), возьмите кроссовки и футболку.</span>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span><strong>Для УЗИ мочевого пузыря и малого таза:</strong> за 1 час до процедуры выпить 0.5–1 литр чистой воды без газа (исследование проводится при умеренно наполненном пузыре).</span>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span><strong>Предыдущие выписки:</strong> возьмите результаты прошлых исследований, чтобы врач мог оценить динамику показателей во времени.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">Часто задаваемые вопросы (FAQ)</h2>
+    <div class="mt-4 space-y-3">
+      {faqItems.map((item) => (
+        <details class="card p-4 group [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex justify-between items-center font-bold text-navy-900 cursor-pointer list-none">
+            <span>{item.q}</span>
+            <span class="transition group-open:rotate-180 text-brand-600 font-bold ml-2">↓</span>
+          </summary>
+          <p class="mt-3 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            {item.a}
+          </p>
+        </details>
+      ))}
+    </div>
+
+    <!-- CTA -->
+    <div class="card p-6 md:p-8 mt-12 bg-gradient-to-br from-brand-50 to-white border border-brand-200 text-center">
+      <h3 class="text-xl font-bold text-navy-900">Хотите подобрать программу чекапа индивидуально?</h3>
+      <p class="mt-2 text-slate-600 max-w-xl mx-auto text-sm">
+        В каталоге RuDoctors можно проконсультироваться с терапевтом, который составит персональный перечень обследований с учетом вашего возраста, анамнеза и семейных рисков.
+      </p>
+      <div class="mt-5 flex flex-wrap justify-center gap-3">
+        <a href="/specialties/therapist/" class="btn-primary">Подобрать терапевта</a>
+        <a href="/guides/labs-diagnostics-belgrade/" class="btn-secondary">Лаборатории Белграда</a>
+        <a href="/guides/uzi-mrt-diagnostika-belgrade/" class="btn-ghost">Гайд по УЗИ и МРТ</a>
+      </div>
+    </div>
+  </div>
+</Layout>

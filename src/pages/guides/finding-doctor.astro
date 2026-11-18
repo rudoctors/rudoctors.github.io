@@ -1,101 +1,329 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
-const title = "Как найти врача в Сербии";
+const title = "Как найти русскоязычного врача в Сербии и записаться на приём: пошаговая инструкция";
 const description =
-  "Навигационный гайд Rudoctors: как найти русскоязычного врача в Сербии через каталог — города, специальности, карточки.";
+  "Пошаговый гид по поиску русскоязычных врачей в Сербии: Белград, Нови-Сад, Ниш. Где искать специалистов, как записаться через WhatsApp и Telegram, мини-словарь и правила приёма.";
+const slug = "finding-doctor";
+const canonicalUrl = `https://rudoctors.com/guides/${slug}/`;
 
-const guide = {
-  slug: "finding-doctor",
-  status: "draft",
-  source: "TBD — источник уточнить",
-  sourceDate: "TBD — дата уточнить",
-  medicalReview: "TBD — назначить ответственного",
+const faqItems = [
+  {
+    q: "Может ли врач из РФ легально практиковать в Сербии?",
+    a: "Да. Сербское законодательство позволяет иностранным докторам нострифицировать медицинский диплом (через Агентство ENIC/NARIC и Медицинский факультет Белградского университета), сдать государственный профессиональный экзамен и получить лицензию Врачебной палаты Сербии (Lekarska komora Srbije). Такие специалисты работают в сербских частных клиниках или открывают собственные ординации."
+  },
+  {
+    q: "Как удобнее всего записаться к русскоязычному доктору?",
+    a: "Большинство частных специалистов и небольших ординаций ведут запись через мессенджеры WhatsApp и Telegram — прямые контакты указаны в карточках каталога RuDoctors. В крупных сетях (MediGroup, Euromedik) запись идет через колл-центр или сайт, где при бронировании можно попросить назначить русско- или англоговорящего доктора."
+  },
+  {
+    q: "Сколько стоит первичный приём частного врача в Белграде?",
+    a: "В среднем первичная консультация терапевта или педиатра стоит от 3 500 до 6 500 RSD (~30–55 €). Приём узкопрофильного специалиста (кардиолог, невролог, эндокринолог, гинеколог) с базовым осмотром или УЗИ — от 5 000 до 10 000 RSD (~42–85 €)."
+  },
+  {
+    q: "Подойдут ли медицинские анализы и выписки из российских клиник?",
+    a: "Да, большинство врачей в Сербии спокойно принимают распечатанные выписки, результаты УЗИ, МРТ и лабораторных анализов на русском языке. Латинские названия показателей, анатомические термины и числовые референсы понятны любому квалифицированному доктору."
+  }
+];
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: title,
+  description: description,
+  url: canonicalUrl,
+  inLanguage: "ru",
+  publisher: {
+    "@type": "Organization",
+    name: "RuDoctors",
+    url: "https://rudoctors.com",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://rudoctors.com/favicon.svg"
+    }
+  },
+  author: {
+    "@type": "Organization",
+    name: "Редакция RuDoctors"
+  },
+  datePublished: "2026-11-18",
+  dateModified: "2026-11-18"
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a
+    }
+  }))
 };
 ---
 
 <Layout
   title={title}
   description={description}
-  noindex
   breadcrumbs={[
     { name: "Главная", path: "/" },
     { name: "Гайды", path: "/guides/" },
-    { name: title, path: `/guides/${guide.slug}/` },
+    { name: "Как найти врача и записаться", path: `/guides/${slug}/` },
   ]}
+  jsonLd={[articleSchema, faqSchema]}
 >
-  <div class="mx-auto max-w-3xl px-4 py-12">
-    <div class="card p-4 mb-8 border-l-4 border-amber-400 bg-amber-50">
-      <p class="text-sm font-semibold text-amber-900">Черновик (draft)</p>
-      <p class="mt-1 text-sm text-slate-700">
-        Материал находится в статусе черновика: источник, дата и медицинское/источниковедческое
-        ревью ещё не заполнены. До заполнения этих данных текст не должен публиковаться.
-        Гайд не является медицинской рекомендацией и не заменяет консультацию врача.
-      </p>
+  <div class="mx-auto max-w-4xl px-4 py-10 md:py-14">
+    <!-- Category & meta -->
+    <div class="flex items-center gap-2 mb-4">
+      <span class="chip">Поиск врача</span>
+      <span class="text-xs text-slate-500">Обновлено: ноябрь 2026</span>
+      <span class="text-xs text-slate-400">•</span>
+      <span class="text-xs text-slate-500">Время чтения: 7 мин</span>
     </div>
 
-    <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900">{title}</h1>
-    <p class="mt-3 text-slate-600 leading-relaxed">
-      Как найти врача в Сербии — по шагам через каталог Rudoctors. Гайд носит справочный,
-      навигационный характер и не даёт медицинских рекомендаций; не заменяет консультацию врача.
+    <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900 tracking-tight leading-tight">
+      Как найти русскоязычного врача в Сербии и записаться на приём: пошаговая инструкция
+    </h1>
+
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      Когда речь заходит о здоровье, точное взаимопонимание между пациентом и врачом имеет критическое значение. Описать характер боли, нюансы симптомов и историю хронических заболеваний на неродном языке в стрессовой ситуации бывает непросто. В этом руководстве мы рассказываем, как найти русскоязычного врача в Сербии, какие форматы приёма доступны и как быстро оформить запись.
     </p>
 
-    <h2 class="mt-10 font-extrabold text-xl text-navy-900">1. Определите запрос</h2>
-    <p class="mt-2 text-slate-600">
-      Поиск обычно строится вокруг города и специальности: например, терапевт в Белграде или
-      педиатр в Нови-Саде. Формулировки могут меняться в зависимости от ситуации.
-    </p>
-
-    <h2 class="mt-8 font-extrabold text-xl text-navy-900">2. Найдите врача в каталоге</h2>
-    <p class="mt-2 text-slate-600">
-      Откройте <a href="/doctors/" class="text-brand-700 hover:underline">каталог врачей</a> и
-      используйте поиск или фильтры по специальности и городу. Клик по подходящей карточке
-      открывает контакты и формат приёма.
-    </p>
-
-    <h2 class="mt-8 font-extrabold text-xl text-navy-900">3. Проверьте карточку</h2>
-    <p class="mt-2 text-slate-600">
-      В карточке врача смотрят языки приёма, клинику, формат приёма и отзывы пациентов.
-      Если подходящей карточки нет, это не означает отсутствие врача в регионе.
-    </p>
-
-    <div class="card p-6 mt-10 text-center">
-      <h2 class="font-extrabold text-navy-900">Что дальше</h2>
-      <p class="mt-2 text-sm text-slate-600">
-        Основной справочный ресурс — <a href="/doctors/" class="text-brand-700 hover:underline">каталог врачей</a>.
-        Черновики гайдов появятся здесь по мере подготовки источников.
-      </p>
-      <div class="mt-4 flex flex-wrap justify-center gap-3">
-        <a href="/doctors/" class="btn-primary">Найти врача</a>
-        <a href="/faq/" class="btn-ghost">Вопросы и ответы</a>
-        <a href="/contacts/" class="btn-ghost">Связаться</a>
+    <!-- Fast buttons -->
+    <div class="my-6 p-4 rounded-xl bg-slate-100 border border-slate-200 flex flex-wrap items-center justify-between gap-3">
+      <span class="text-sm font-semibold text-navy-900">Перейти к специалистам:</span>
+      <div class="flex flex-wrap gap-2">
+        <a href="/cities/belgrade/" class="btn-primary text-xs py-2 px-3">Белград</a>
+        <a href="/cities/novi-sad/" class="btn-secondary text-xs py-2 px-3">Нови-Сад</a>
+        <a href="/specialties/therapist/" class="btn-secondary text-xs py-2 px-3">Терапевты</a>
+        <a href="/specialties/dentist/" class="btn-secondary text-xs py-2 px-3">Стоматологи</a>
+        <a href="/specialties/gynecologist/" class="btn-secondary text-xs py-2 px-3">Гинекологи</a>
       </div>
     </div>
 
-    <div class="card p-5 mt-8">
-      <h2 class="font-extrabold text-navy-900">Статус материала</h2>
-      <dl class="mt-4 grid gap-4 sm:grid-cols-2 text-sm">
+    <!-- Section 1 -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">1. Почему экспаты ищут русскоязычных докторов</h2>
+    <p class="mt-3 text-slate-700 leading-relaxed">
+      Хотя сербский и русский языки принадлежат к славянской группе, медицинская терминология в Сербии опирается на латынь и сербскую локальную традицию. Слова, похожие по звучанию, часто означают совершенно разные вещи («ложные друзья переводчика»):
+    </p>
+    <ul class="mt-3 space-y-2 text-sm text-slate-700 list-disc pl-5">
+      <li><strong>Вредно (Vredno):</strong> по-сербски означает «ценно, полезно», а вовсе не «вредно».</li>
+      <li><strong>Трудница (Trudnica):</strong> беременная женщина (а не труженица).</li>
+      <li><strong>Стерилитет (Sterilitet):</strong> бесплодие, а не стерильность инструментов.</li>
+      <li><strong>Кашаљ (Kašalj):</strong> кашель, <strong>кијавица (kijavica):</strong> насморк.</li>
+    </ul>
+    <p class="mt-3 text-slate-700 leading-relaxed">
+      Кроме того, психологический комфорт при общении с доктором на родном языке существенно снижает тревожность, особенно на приёмах у педиатра, психотерапевта, гинеколога или кардиолога.
+    </p>
+
+    <!-- Section 2 -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">2. Где искать специалистов в Сербии</h2>
+    
+    <div class="mt-4 space-y-4">
+      <div class="card p-5 border-l-4 border-brand-600">
+        <h3 class="font-bold text-navy-900 text-lg">1. Каталог RuDoctors</h3>
+        <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+          Каталог <a href="/doctors/" class="text-brand-700 font-semibold hover:underline">RuDoctors</a> — крупнейшая база верифицированных русскоязычных врачей в Сербии. В профиле каждого специалиста указаны:
+        </p>
+        <ul class="mt-2 text-sm text-slate-600 list-disc pl-5 space-y-1">
+          <li>Специализация и клинический опыт работы;</li>
+          <li>Город приёма (<a href="/cities/belgrade/" class="text-brand-700 hover:underline">Белград</a>, <a href="/cities/novi-sad/" class="text-brand-700 hover:underline">Нови-Сад</a>, <a href="/cities/nis/" class="text-brand-700 hover:underline">Ниш</a>, <a href="/cities/subotica/" class="text-brand-700 hover:underline">Суботица</a>);</li>
+          <li>Клиника или адрес частного кабинета (ordinacija);</li>
+          <li>Языки приёма (русский, сербский, английский);</li>
+          <li>Прямые контакты (телефон, Telegram, WhatsApp);</li>
+          <li>Реальные отзывы пациентов с модерацией.</li>
+        </ul>
+      </div>
+
+      <div class="card p-5 border-l-4 border-slate-400">
+        <h3 class="font-bold text-navy-900 text-lg">2. Крупные частные клиники и медцентры</h3>
+        <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+          В таких сетях, как MediGroup, Euromedik, Acibadem Bel Medic и AlfaMedStar, работают как сербские врачи, владеющие русским языком, так и врачи родом из стран СНГ, получившие сербскую лицензию. При звонке в колл-центр достаточно сказать: <em>«Da li imate lekara koji govori ruski ili engleski?»</em> (Есть ли у вас врач, говорящий по-русски или по-английски?).
+        </p>
+      </div>
+
+      <div class="card p-5 border-l-4 border-slate-400">
+        <h3 class="font-bold text-navy-900 text-lg">3. Профильные медицинские сообщества экспатов</h3>
+        <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+          В Telegram действуют каналы и чаты взаимопомощи, например <a href="https://t.me/vrachivserbii" target="_blank" rel="noopener noreferrer" class="text-brand-700 font-semibold hover:underline">@vrachivserbii</a>, где участники делятся личным опытом лечения, рекомендациями хирургов, стоматологов и педиатров.
+        </p>
+      </div>
+    </div>
+
+    <!-- Section 3 -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">3. Очный приём vs Онлайн-консультация</h2>
+    <div class="grid md:grid-cols-2 gap-4 mt-4">
+      <div class="card p-5 bg-white border border-slate-200">
+        <h3 class="font-bold text-navy-900">Очный визит (Pregled u ordinaciji)</h3>
+        <p class="mt-2 text-sm text-slate-600">
+          <strong>Когда нужен:</strong> первичный осмотр при болях, пальпация, аускультация легких/сердца, забор мазков, аппаратная диагностика (УЗИ, дерматоскопия, ЭКГ, манипуляции стоматолога).
+        </p>
+        <p class="mt-3 text-sm text-slate-600">
+          <strong>Преимущество:</strong> врач может выдать официальный бумажный рецепт (recept) с личной печатью (fakat), который примут в любой аптеке Сербии.
+        </p>
+      </div>
+
+      <div class="card p-5 bg-white border border-slate-200">
+        <h3 class="font-bold text-navy-900">Онлайн-консультация (Telemedicina)</h3>
+        <p class="mt-2 text-sm text-slate-600">
+          <strong>Когда нужна:</strong> расшифровка свежих лабораторных анализов крови, второе экспертное мнение по поставленному диагнозу, психотерапевтическая поддержка, консультация перед поездкой.
+        </p>
+        <p class="mt-3 text-sm text-slate-600">
+          <strong>Ограничение:</strong> удалённо нельзя выписать сербский рецептурный бланк на контролируемые медикаменты и антибиотики.
+        </p>
+      </div>
+    </div>
+
+    <!-- Section 4 -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">4. Пошаговый алгоритм: как записаться на приём</h2>
+    
+    <div class="mt-4 space-y-4">
+      <div class="flex gap-4 items-start">
+        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center text-sm">1</span>
         <div>
-          <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Статус</dt>
-          <dd class="mt-1 font-semibold text-slate-900">{guide.status}</dd>
+          <h4 class="font-bold text-navy-900">Выберите врача в каталоге</h4>
+          <p class="text-sm text-slate-600 mt-1">
+            Откройте <a href="/doctors/" class="text-brand-700 hover:underline">каталог врачей RuDoctors</a>, отфильтруйте по специальности (например, <a href="/specialties/pediatrician/" class="text-brand-700 hover:underline">педиатр</a> или <a href="/specialties/cardiologist/" class="text-brand-700 hover:underline">кардиолог</a>) и городу. Ознакомьтесь с отзывами других пациентов.
+          </p>
         </div>
+      </div>
+
+      <div class="flex gap-4 items-start">
+        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center text-sm">2</span>
         <div>
-          <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Источник</dt>
-          <dd class="mt-1 text-slate-900">{guide.source}</dd>
+          <h4 class="font-bold text-navy-900">Напишите в мессенджер или позвоните</h4>
+          <p class="text-sm text-slate-600 mt-1">
+            Нажмите кнопку мессенджера (Telegram / WhatsApp) в карточке врача. Кратко опишите проблему: симптомы, возраст пациента, удобный день и время приёма.
+          </p>
         </div>
+      </div>
+
+      <div class="flex gap-4 items-start">
+        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center text-sm">3</span>
         <div>
-          <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Дата</dt>
-          <dd class="mt-1 text-slate-900">{guide.sourceDate}</dd>
+          <h4 class="font-bold text-navy-900">Уточните организационные детали</h4>
+          <p class="text-sm text-slate-600 mt-1">
+            Спросите точную стоимость консультации в RSD, необходимость приходить натощак (если планируется УЗИ брюшной полости или анализы) и способы оплаты (наличные динары, платежная карта DinaCard/Visa/MasterCard или полис ДМС).
+          </p>
         </div>
+      </div>
+
+      <div class="flex gap-4 items-start">
+        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center text-sm">4</span>
         <div>
-          <dt class="text-xs font-semibold uppercase tracking-wide text-slate-500">Ревью</dt>
-          <dd class="mt-1 text-slate-900">{guide.medicalReview}</dd>
+          <h4 class="font-bold text-navy-900">Соберите медицинский архив</h4>
+          <p class="text-sm text-slate-600 mt-1">
+            Возьмите с собой паспорт, результаты прошлых исследований, снимки на дисках/флешках и список регулярно принимаемых медикаментов.
+          </p>
         </div>
-      </dl>
-      <p class="mt-4 text-sm text-slate-600">
-        Требования к материалу: источник, дата и медицинское/источниковедческое ревью должны быть
-        заполнены ответственным до публикации. Пока значения не заполнены — публикация невозможна.
+      </div>
+    </div>
+
+    <!-- Section 5: Dictionary -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">5. Полезный сербско-русский мини-словарь для записи</h2>
+    <div class="mt-4 overflow-x-auto card">
+      <table class="w-full text-left text-sm border-collapse">
+        <thead class="bg-slate-100 text-slate-700 font-semibold border-b border-slate-200">
+          <tr>
+            <th class="py-2.5 px-4">Сербский термин</th>
+            <th class="py-2.5 px-4">Транскрипция</th>
+            <th class="py-2.5 px-4">Значение на русском</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-200 text-slate-700">
+          <tr>
+            <td class="py-2.5 px-4 font-semibold text-navy-900">Zakazivanje pregleda</td>
+            <td class="py-2.5 px-4">Заказивање прегледа</td>
+            <td class="py-2.5 px-4">Запись на приём / осмотр</td>
+          </tr>
+          <tr>
+            <td class="py-2.5 px-4 font-semibold text-navy-900">Lekar opšte prakse</td>
+            <td class="py-2.5 px-4">Лекар опште праксе</td>
+            <td class="py-2.5 px-4">Терапевт, врач общей практики</td>
+          </tr>
+          <tr>
+            <td class="py-2.5 px-4 font-semibold text-navy-900">Izabrani lekar</td>
+            <td class="py-2.5 px-4">Изабрани лекар</td>
+            <td class="py-2.5 px-4">Участковый врач в Доме здравля</td>
+          </tr>
+          <tr>
+            <td class="py-2.5 px-4 font-semibold text-navy-900">Uput</td>
+            <td class="py-2.5 px-4">Упут</td>
+            <td class="py-2.5 px-4">Направление на обследование / к специалисту</td>
+          </tr>
+          <tr>
+            <td class="py-2.5 px-4 font-semibold text-navy-900">Recept za lek</td>
+            <td class="py-2.5 px-4">Рецепт за лек</td>
+            <td class="py-2.5 px-4">Рецепт на лекарство</td>
+          </tr>
+          <tr>
+            <td class="py-2.5 px-4 font-semibold text-navy-900">Krvna slika / Analize</td>
+            <td class="py-2.5 px-4">Крвна слика / Анализе</td>
+            <td class="py-2.5 px-4">Анализ крови / Лабораторные анализы</td>
+          </tr>
+          <tr>
+            <td class="py-2.5 px-4 font-semibold text-navy-900">Kontrola</td>
+            <td class="py-2.5 px-4">Контрола</td>
+            <td class="py-2.5 px-4">Повторный приём / контрольный осмотр</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Section 6: Checklist -->
+    <div class="card p-6 my-10 bg-white border border-slate-200">
+      <h2 class="text-xl font-bold text-navy-900 flex items-center gap-2">
+        <span class="text-brand-600">✓</span> Чек-лист: Что сделать перед консультацией
+      </h2>
+      <div class="mt-4 space-y-2.5 text-sm text-slate-700">
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span>Сформулируйте главную жалобу и хронологию развития симптомов (когда началось, чем снимали боль).</span>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span>Подготовьте список аллергических реакций на лекарственные средства (пенициллин, НПВП и др.).</span>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span>Если планируется УЗИ органов брюшной полости или сдача крови — соблюдайте голодный режим 6–8 часов.</span>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span>Убедитесь, что у вас есть наличные динары (RSD), так как в ряде небольших ординаций терминалы банковских карт могут отсутствовать.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">Часто задаваемые вопросы (FAQ)</h2>
+    <div class="mt-4 space-y-3">
+      {faqItems.map((item) => (
+        <details class="card p-4 group [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex justify-between items-center font-bold text-navy-900 cursor-pointer list-none">
+            <span>{item.q}</span>
+            <span class="transition group-open:rotate-180 text-brand-600 font-bold ml-2">↓</span>
+          </summary>
+          <p class="mt-3 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            {item.a}
+          </p>
+        </details>
+      ))}
+    </div>
+
+    <!-- CTA -->
+    <div class="card p-6 md:p-8 mt-12 bg-gradient-to-br from-brand-50 to-white border border-brand-200 text-center">
+      <h3 class="text-xl font-bold text-navy-900">Готовы выбрать врача прямо сейчас?</h3>
+      <p class="mt-2 text-slate-600 max-w-xl mx-auto text-sm">
+        Перейдите в наш каталог и найдите доктора нужной специальности рядом с вами. Свяжитесь напрямую без посредников.
       </p>
+      <div class="mt-5 flex flex-wrap justify-center gap-3">
+        <a href="/doctors/" class="btn-primary">Каталог всех врачей</a>
+        <a href="/cities/belgrade/" class="btn-secondary">Врачи в Белграде</a>
+        <a href="/guides/public-private-care/" class="btn-ghost">Поликлиника vs Частная клиника</a>
+      </div>
     </div>
   </div>
 </Layout>

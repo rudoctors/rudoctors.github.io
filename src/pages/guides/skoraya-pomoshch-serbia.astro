@@ -1,0 +1,327 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+const title = "Скорая и неотложная помощь в Сербии: телефон 194, дежурные больницы и вызов врача";
+const description =
+  "Как вызвать скорую помощь в Сербии по номеру 194: когда бригада приедет, адреса дежурных больниц Белграда (Urgentni centar, Tiršova), платная скорая и фразы для диспетчера.";
+const slug = "skoraya-pomoshch-serbia";
+const canonicalUrl = `https://rudoctors.com/guides/${slug}/`;
+
+const faqItems = [
+  {
+    q: "Приедет ли государственная скорая 194 при температуре 39°C у взрослого?",
+    a: "В 95% случаев — нет. Сербская служба Hitna pomoć (194) ориентирована строго на жизнеугрожающие состояния (остановка сердца, инсульт, политравмы при ДТП, сильные кровотечения). При высокой температуре или давлении диспетчер даст телефонные инструкции по приему жаропонижающих и порекомендует самостоятельно добраться до Дома здравля или дежурной больницы."
+  },
+  {
+    q: "Куда везти ребенка с острой болью в животе или травмой в Белграде?",
+    a: "В Белграде круглосуточно дежурят два ведущих детских учреждения: Университетская детская клиника в Тиршовой (UDK Tiršova, ул. Tiršova 10 в центре) и Институт матери и ребенка (Institut za majku i dete, Нови Београд, ул. Radoja Dakića 6–8). Принимают без направления в экстренных случаях круглосуточно."
+  },
+  {
+    q: "Сколько стоит вызов частной скорой помощи в Белграде?",
+    a: "Вызов частного реанимобиля (Acibadem Bel Medic или MediGroup) с врачебной бригадой стоит в среднем от 10 000 до 18 000 RSD (~85–150 €). Если требуется госпитализация в частный стационар или реанимационные манипуляции, они тарифицируются отдельно или покрываются полисом ДМС."
+  },
+  {
+    q: "Бесплатна ли экстренная помощь для иностранцев без страховки?",
+    a: "Согласно статье Закона о здравоохранении Республики Сербия (Zakon o zdravstvenoj zaštiti), неотложная медицинская помощь при состояниях, представляющих непосредственную угрозу жизни (hitna medicinska pomoć), оказывается любому человеку на территории Сербии безотлагательно. Затраты на последующее плановое пребывание в палате без страховки RFZO выставляются пациенту по государственному тарифу."
+  }
+];
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: title,
+  description: description,
+  url: canonicalUrl,
+  inLanguage: "ru",
+  publisher: {
+    "@type": "Organization",
+    name: "RuDoctors",
+    url: "https://rudoctors.com",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://rudoctors.com/favicon.svg"
+    }
+  },
+  author: {
+    "@type": "Organization",
+    name: "Редакция RuDoctors"
+  },
+  datePublished: "2026-11-18",
+  dateModified: "2026-11-18"
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a
+    }
+  }))
+};
+---
+
+<Layout
+  title={title}
+  description={description}
+  breadcrumbs={[
+    { name: "Главная", path: "/" },
+    { name: "Гайды", path: "/guides/" },
+    { name: "Скорая и неотложная помощь", path: `/guides/${slug}/` },
+  ]}
+  jsonLd={[articleSchema, faqSchema]}
+>
+  <div class="mx-auto max-w-4xl px-4 py-10 md:py-14">
+    <!-- Meta badge -->
+    <div class="flex items-center gap-2 mb-4">
+      <span class="chip">Экстренная помощь</span>
+      <span class="text-xs text-slate-500">Обновлено: ноябрь 2026</span>
+      <span class="text-xs text-slate-400">•</span>
+      <span class="text-xs text-slate-500">Время чтения: 8 мин</span>
+    </div>
+
+    <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900 tracking-tight leading-tight">
+      Скорая и неотложная помощь в Сербии: телефон 194, дежурные больницы и вызов врача
+    </h1>
+
+    <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+      Экстренная медицинская ситуация за границей — всегда стресс. В Сербии служба скорой помощи работает по европейским протоколам триажа (сортировки пациентов), которые существенно отличаются от принятых в странах постсоветского пространства. В этом гайде собраны телефоны экстренных служб, алгоритм общения с диспетчером 194, адреса круглосуточных дежурных госпиталей Белграда и правила экстренной госпитализации.
+    </p>
+
+    <!-- Emergency numbers card -->
+    <div class="my-6 p-5 rounded-2xl bg-rose-50 border-2 border-rose-200">
+      <h3 class="text-lg font-bold text-rose-950 mb-3 flex items-center gap-2">
+        <span>🚨</span> Главные телефоны экстренных служб Сербии (звонок бесплатный):
+      </h3>
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-3 text-center">
+        <div class="bg-white p-3 rounded-xl border border-rose-200 shadow-sm">
+          <div class="text-2xl font-extrabold text-rose-700">194</div>
+          <div class="text-xs font-semibold text-slate-700 mt-0.5">Скорая помощь (Hitna pomoć)</div>
+        </div>
+        <div class="bg-white p-3 rounded-xl border border-rose-200 shadow-sm">
+          <div class="text-2xl font-extrabold text-slate-900">192</div>
+          <div class="text-xs font-semibold text-slate-700 mt-0.5">Полиция (Policija)</div>
+        </div>
+        <div class="bg-white p-3 rounded-xl border border-rose-200 shadow-sm">
+          <div class="text-2xl font-extrabold text-amber-700">193</div>
+          <div class="text-xs font-semibold text-slate-700 mt-0.5">Пожарная охрана (Vatrogasci)</div>
+        </div>
+        <div class="bg-white p-3 rounded-xl border border-rose-200 shadow-sm">
+          <div class="text-2xl font-extrabold text-navy-900">112</div>
+          <div class="text-xs font-semibold text-slate-700 mt-0.5">Единая служба спасения</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 1 -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">1. Как работает скорая помощь (194): когда бригада выезжает</h2>
+    <p class="mt-3 text-slate-700 leading-relaxed">
+      Государственная скорая помощь Сербии — это служба <strong>реанимации и жизнеобеспечения</strong> на догоспитальном этапе. Врачи скорой не снимают симптомы простуды, не делают уколы от давления и не выписывают больничные листы на дому.
+    </p>
+
+    <div class="mt-4 grid md:grid-cols-2 gap-4">
+      <div class="card p-5 border-l-4 border-emerald-500 bg-white">
+        <h3 class="font-bold text-navy-900">Бригада 194 ВЫЕЗЖАЕТ НЕМЕДЛЕННО:</h3>
+        <ul class="mt-3 space-y-1.5 text-sm text-slate-600 list-disc pl-5">
+          <li>Потеря сознания, кома, судорожные припадки;</li>
+          <li>Острая давящая боль за грудиной (подозрение на инфаркт миокарда);</li>
+          <li>Внезапная асимметрия лица, слабость в руке, нарушение речи (инсульт);</li>
+          <li>Острое удушье, тяжелый астматический статус, анафилаксия;</li>
+          <li>Массивное кровотечение, не останавливающееся жгутом/повязкой;</li>
+          <li>Тяжелые автокатастрофы, кататравмы (падение с высоты), ожоги большой площади.</li>
+        </ul>
+      </div>
+
+      <div class="card p-5 border-l-4 border-amber-500 bg-white">
+        <h3 class="font-bold text-navy-900">Бригада 194 НЕ ВЫЕЗЖАЕТ:</h3>
+        <ul class="mt-3 space-y-1.5 text-sm text-slate-600 list-disc pl-5">
+          <li>Температура 38–39.5°C при ОРВИ или гриппе;</li>
+          <li>Повышенное или пониженное артериальное давление без неврологической симптоматики;</li>
+          <li>Боли в спине, остеохондроз, легкие бытовые порезы;</li>
+          <li>Пищевые отравления и гастроэнтерит средней тяжести;</li>
+          <li>Транспортировка стабильных лежачих больных в плановом порядке.</li>
+        </ul>
+        <p class="mt-3 text-xs text-slate-500">
+          <em>Что делать в таких случаях:</em> вызвать такси и самостоятельно отправиться в круглосуточный приёмный покой дежурной больницы либо обратиться к дежурному врачу в Dom zdravlja.
+        </p>
+      </div>
+    </div>
+
+    <!-- Section 2 -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">2. Дежурные больницы Белграда: куда ехать самостоятельно</h2>
+    <p class="mt-3 text-slate-700 leading-relaxed">
+      В Белграде действует система дежурств (<em>dežurne bolnice</em>). Запомните эти адреса для экстренных случаев:
+    </p>
+
+    <div class="mt-4 space-y-4">
+      <div class="card p-5 border-l-4 border-rose-600">
+        <div class="flex items-center justify-between">
+          <h3 class="font-bold text-navy-900 text-lg">Ургентный центр (Urgentni centar UKCS)</h3>
+          <span class="badge-new">Взрослые 24/7 каждый день</span>
+        </div>
+        <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+          Главный национальный центр экстренной хирургии, травматологии, токсикологии и реанимации Сербии. Сюда везут самые тяжелые случаи со всей страны.
+        </p>
+        <p class="mt-2 text-xs text-slate-500">
+          📍 <strong>Адрес:</strong> Белград, ул. Pasterova 2 (возле парка Караджордже). Круглосуточно. Телефон: +381 11 3618-444.
+        </p>
+      </div>
+
+      <div class="card p-5 border-l-4 border-blue-600">
+        <div class="flex items-center justify-between">
+          <h3 class="font-bold text-navy-900 text-lg">Городские клинические центры (KBC)</h3>
+          <span class="badge-new">Дежурят посменно</span>
+        </div>
+        <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+          Для взрослых пациентов дежурства по экстренной хирургии и терапии распределены между тремя клиническими центрами. Информацию о том, кто дежурит сегодня, можно узнать по телефону 194:
+        </p>
+        <ul class="mt-2 text-xs text-slate-600 space-y-1 list-disc pl-5">
+          <li><strong>KBC Zvezdara:</strong> ул. Dimitrija Tucovića 161. Тел: +381 11 3810-900.</li>
+          <li><strong>KBC Zemun:</strong> ул. Vukova 9 (Земун). Тел: +381 11 3772-666.</li>
+          <li><strong>KBC Dr Dragiša Mišović:</strong> ул. Heroja Milana Tepića 1 (Дединье). Тел: +381 11 3630-600.</li>
+        </ul>
+      </div>
+
+      <div class="card p-5 border-l-4 border-emerald-600">
+        <div class="flex items-center justify-between">
+          <h3 class="font-bold text-navy-900 text-lg">Экстренная педиатрия (Дети до 18 лет 24/7)</h3>
+          <span class="badge-new">Детская неотложка</span>
+        </div>
+        <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+          Для детей в Белграде работают две специализированные университетские клиники с круглосуточным экстренным приемом:
+        </p>
+        <ul class="mt-2 text-xs text-slate-600 space-y-1 list-disc pl-5">
+          <li><strong>Университетская детская клиника в Тиршовой (UDK Tiršova):</strong> ул. Tiršova 10. Телефон: +381 11 2060-600. (Хирургия, травмы, острая педиатрия).</li>
+          <li><strong>Институт матери и ребенка (Institut za majku i dete «Dr Vukan Čupić»):</strong> Нови Београд, ул. Radoja Dakića 6–8. Телефон: +381 11 3108-108.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section 3: Private Ambulances -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">3. Платная скорая помощь в Белграде</h2>
+    <p class="mt-3 text-slate-700 leading-relaxed">
+      Если государственная скорая отказывается выезжать на высокую температуру или давление, а доехать в больницу самостоятельно нет возможности, вы можете вызвать частную бригаду:
+    </p>
+
+    <div class="mt-4 grid md:grid-cols-2 gap-4">
+      <div class="card p-4">
+        <h4 class="font-bold text-navy-900">Acibadem Bel Medic (Скорая 24/7)</h4>
+        <p class="text-sm text-slate-600 mt-1">
+          Собственный парк современных реанимобилей. Выезд врачебной бригады на дом, оказание экстренной помощи, капельницы, транспортировка в стационар.
+        </p>
+        <p class="mt-2 text-xs font-semibold text-brand-700">📞 Телефон: +381 11 309 1000</p>
+      </div>
+
+      <div class="card p-4">
+        <h4 class="font-bold text-navy-900">MediGroup Hitna pomoć</h4>
+        <p class="text-sm text-slate-600 mt-1">
+          Экстренная медицинская служба крупнейшей частной сети. Выезд врача общей практики или педиатра на дом, экстренная госпитализация в Opšta bolnica MediGroup.
+        </p>
+        <p class="mt-2 text-xs font-semibold text-brand-700">📞 Телефон: +381 11 40 40 100</p>
+      </div>
+    </div>
+
+    <!-- Section 4: Language phrases -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">4. Полезные фразы при звонке в 194</h2>
+    <div class="mt-4 overflow-x-auto card">
+      <table class="w-full text-left text-sm border-collapse">
+        <thead class="bg-slate-100 text-slate-700 font-semibold border-b border-slate-200">
+          <tr>
+            <th class="py-2.5 px-4">Сербская фраза</th>
+            <th class="py-2.5 px-4">Произношение</th>
+            <th class="py-2.5 px-4">Перевод на русский</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-200 text-slate-700">
+          <tr>
+            <td class="py-2.5 px-4 font-semibold text-rose-700">Hitno je!</td>
+            <td class="py-2.5 px-4">Хитно йе!</td>
+            <td class="py-2.5 px-4 font-medium">Это срочно!</td>
+          </tr>
+          <tr>
+            <td class="py-2.5 px-4 font-semibold text-slate-900">Čovek je bez svesti!</td>
+            <td class="py-2.5 px-4">Човек йе без свести!</td>
+            <td class="py-2.5 px-4">Человек потерял сознание!</td>
+          </tr>
+          <tr>
+            <td class="py-2.5 px-4 font-semibold text-slate-900">Jak bol u grudima i gušenje</td>
+            <td class="py-2.5 px-4">Як бол у грудима и гушенье</td>
+            <td class="py-2.5 px-4">Сильная боль в груди и удушье</td>
+          </tr>
+          <tr>
+            <td class="py-2.5 px-4 font-semibold text-slate-900">Jako krvarenje</td>
+            <td class="py-2.5 px-4">Яко крваренье</td>
+            <td class="py-2.5 px-4">Сильное кровотечение</td>
+          </tr>
+          <tr>
+            <td class="py-2.5 px-4 font-semibold text-slate-900">Dete ima visoku temperaturu i konvulzije</td>
+            <td class="py-2.5 px-4">Дете има високу температуру и конвулзийе</td>
+            <td class="py-2.5 px-4">У ребенка высокая температура и судороги</td>
+          </tr>
+          <tr>
+            <td class="py-2.5 px-4 font-semibold text-slate-900">Moja adresa je...</td>
+            <td class="py-2.5 px-4">Моя адреса йе...</td>
+            <td class="py-2.5 px-4">Мой адрес...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Section 5: Checklist -->
+    <div class="card p-6 my-10 bg-white border border-slate-200">
+      <h2 class="text-xl font-bold text-navy-900 flex items-center gap-2">
+        <span class="text-brand-600">✓</span> Чек-лист: Что делать при экстренной поездке в дежурный госпиталь
+      </h2>
+      <div class="mt-4 space-y-2.5 text-sm text-slate-700">
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span><strong>Возьмите документы:</strong> загранпаспорт, белый картон (регистрацию) или карту ВНЖ, страховой полис (RFZO или ДМС).</span>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span><strong>Деньги:</strong> наличные динары (RSD) для оплаты такси и возможных первичных медицинских услуг при отсутствии страховки.</span>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span><strong>Медикаменты:</strong> возьмите упаковки лекарств, которые пациент принимает на постоянной основе, чтобы показать дежурному врачу.</span>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <input type="checkbox" class="mt-1 rounded text-brand-600" />
+          <span><strong>Не давайте обезболивающее при острой боли в животе:</strong> анальгетики смазывают клиническую картину острого аппендицита или прободения до осмотра хирургом.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <h2 class="mt-10 text-2xl font-bold text-navy-900">Часто задаваемые вопросы (FAQ)</h2>
+    <div class="mt-4 space-y-3">
+      {faqItems.map((item) => (
+        <details class="card p-4 group [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex justify-between items-center font-bold text-navy-900 cursor-pointer list-none">
+            <span>{item.q}</span>
+            <span class="transition group-open:rotate-180 text-brand-600 font-bold ml-2">↓</span>
+          </summary>
+          <p class="mt-3 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            {item.a}
+          </p>
+        </details>
+      ))}
+    </div>
+
+    <!-- CTA -->
+    <div class="card p-6 md:p-8 mt-12 bg-gradient-to-br from-brand-50 to-white border border-brand-200 text-center">
+      <h3 class="text-xl font-bold text-navy-900">Нужна консультация врача после снятия острого состояния?</h3>
+      <p class="mt-2 text-slate-600 max-w-xl mx-auto text-sm">
+        Для планового наблюдения, назначения контрольных анализов и коррекции лечения найдите профильного русскоязычного специалиста в каталоге RuDoctors.
+      </p>
+      <div class="mt-5 flex flex-wrap justify-center gap-3">
+        <a href="/doctors/" class="btn-primary">Каталог врачей</a>
+        <a href="/cities/belgrade/" class="btn-secondary">Врачи в Белграде</a>
+        <a href="/guides/apteki-retsepty-serbia/" class="btn-ghost">Аптеки и лекарства</a>
+      </div>
+    </div>
+  </div>
+</Layout>
