@@ -5,16 +5,24 @@
 | Источник | Что даёт | Script | Статус |
 |----------|----------|--------|--------|
 | `https://rusdoctors.net/api/doctors` | базовые карточки | seed (raw) | ✅ |
-| `https://serbia.alfamedstar.com/en/doctors/{slug}` | 14 врачей, 50 отзывов (EN, `lang=en`) | `scripts/scrape-alfa.mjs` | ✅ |
+| `https://serbia.alfamedstar.com/ru/doctors` | 17 врачей, 64 отзыва на русском языке | `scripts/scrape-alfa.mjs` | ✅ |
+| `https://www.medigroup.rs/russkie-vrachi/` | 20 врачей, фото, филиалы, ссылки | `scripts/scrape-medigroup.mjs` | ✅ |
+| `https://doctorus.rs/ru` | 9 врачей, ученые степени, запись Altegio | `scripts/scrape-doctorus.mjs` | ✅ |
+| `https://citilab.rs/ru/doctors` | 20 врачей, **experienceYears**, фото, booking | `scripts/fetch-citilab.mjs` | ✅ |
+| Google Sheets (public CSV) | 109 строк: ФИО, спец., город, контакты, языки, документы | `scripts/fetch-sheet.mjs` | ✅ |
+| Telegram Desktop / Telethon (@balkandunav) | >219 471 сообщений → 2021 курированный отзыв | `export-telethon.py` + `match-tg-reviews.mjs` | ✅ |
 | `https://rusdoctors.net/api/clinics` | клиники | seed (raw) | ✅ |
-| Google Sheets (public CSV) | 106 врачей: ФИО, спец., город, контакты, языки, документы | `scripts/fetch-sheet.mjs` | ✅ |
-| `https://citilab.rs/ru/doctors` | 19 врачей, **experienceYears**, фото, booking | `scripts/fetch-citilab.mjs` | ✅ |
-| `https://t.me/s/russmedicserbia` | 139 постов → 14 визиток, 2 review_candidate | `scripts/fetch-tg.mjs` | ✅ (карточки; отзывы N/A — без имени врача) |
-| `t.me/vrachivserbii` | таблица врачей (источник Sheets) | via Sheets | ✅ |
-| Telegram Desktop export `ChatExport_2026-09-24` | 151 898 сообщений → 6 451 doctor-oriented → 279 новых карточек, 220 курированных отзывов | `scripts/preprocess-tg-export.mjs` + `scripts/import-tg-cards.mjs` | ✅ |
+| `https://t.me/s/russmedicserbia` | 139 постов → 14 визиток, 2 review_candidate | `scripts/fetch-tg.mjs` | ✅ |
 
-**Итог после импорта 24.09.2026:** 419 JSON-карточек, 415 публичных; 4 скрыты как подтверждённые архивные дубли; `npm run detect:dups` → 0.
-Фото: `npm run photos:webp` → 53 WebP (~40MB JPG → ~1MB webp в репо ссылок).
+**Итог на 18.11.2026:** 445 карточек (440 публичных, 5 скрытых/редиректов), 2110 отзывов; `npm run detect:dups` → 0; сборка 515 статических страниц.
+
+## Клиники Сербии
+
+- **AlfaMedStar (`https://serbia.alfamedstar.com/`):** Новый динамический парсер достаёт врачей, специализацию, стаж и русскоязычные отзывы пациентов из `class="...text..."`.
+- **MediGroup (`https://www.medigroup.rs/russkie-vrachi/`):** Динамический парсер выгружает русскоязычных врачей сети, фото высокого разрешения и адреса отделений.
+- **Doctorus Expert (`https://doctorus.rs/ru`):** Парсер выгружает врачей клиники, ученые степени и прямые ссылки на онлайн-запись через платформу Altegio (`doctorus.altegio.me`).
+- **Citilab (`https://citilab.rs/ru/doctors/`):** Выгружает врачей, филиалы и стаж работы.
+- **Единая команда:** `npm run fetch:clinics` обновляет все клиники за один вызов.
 
 ## Google Sheets
 
