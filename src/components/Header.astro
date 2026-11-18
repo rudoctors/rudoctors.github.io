@@ -5,6 +5,7 @@ const nav = [
   { href: "/doctors/", label: "Врачи" },
   { href: "/specialties/", label: "Специальности" },
   { href: "/cities/", label: "Города" },
+  { href: "/guides/", label: "Гайды" },
   { href: "/about/", label: "О проекте" },
 ];
 const path = Astro.url.pathname;
@@ -50,21 +51,29 @@ const path = Astro.url.pathname;
       <button
         type="button"
         id="mobile-menu-btn"
-        class="md:hidden btn-ghost px-2"
+        class="mobile-menu-btn btn-ghost px-2 md:!hidden"
         aria-label="Открыть меню"
         aria-expanded="false"
         aria-controls="mobile-menu"
       >
-        ☰
+        <span id="mobile-menu-icon" class="text-lg leading-none select-none">☰</span>
       </button>
     </div>
   </div>
 
-  <div id="mobile-menu" class="md:hidden hidden border-t border-slate-200 bg-white">
+  <div id="mobile-menu" class="mobile-menu hidden md:!hidden border-t border-slate-200 bg-white">
     <nav class="px-4 py-3 flex flex-col gap-1" aria-label="Мобильная навигация">
       {
         nav.map((item) => (
-          <a href={item.href} class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50">
+          <a
+            href={item.href}
+            class:list={[
+              "px-3 py-2 rounded-lg text-sm font-medium",
+              path.startsWith(item.href)
+                ? "text-brand-700 bg-brand-50"
+                : "text-slate-700 hover:bg-slate-50",
+            ]}
+          >
             {item.label}
           </a>
         ))
@@ -74,12 +83,46 @@ const path = Astro.url.pathname;
   </div>
 </header>
 
+<style>
+  @media (min-width: 768px) {
+    #mobile-menu-btn,
+    #mobile-menu,
+    .mobile-menu-btn,
+    .mobile-menu {
+      display: none !important;
+    }
+  }
+</style>
+
 <script>
-  const btn = document.getElementById("mobile-menu-btn");
-  const menu = document.getElementById("mobile-menu");
-  btn?.addEventListener("click", () => {
-    const open = menu?.classList.toggle("hidden") === false;
-    btn.setAttribute("aria-expanded", open ? "true" : "false");
-    btn.setAttribute("aria-label", open ? "Закрыть меню" : "Открыть меню");
-  });
+  function setupMobileMenu() {
+    const btn = document.getElementById("mobile-menu-btn");
+    const menu = document.getElementById("mobile-menu");
+    const icon = document.getElementById("mobile-menu-icon");
+    if (!btn || !menu) return;
+
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isClosed = menu.classList.toggle("hidden");
+      const open = !isClosed;
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+      btn.setAttribute("aria-label", open ? "Закрыть меню" : "Открыть меню");
+      if (icon) {
+        icon.textContent = open ? "✕" : "☰";
+      }
+    });
+
+    document.addEventListener("click", (e) => {
+      const target = e.target;
+      if (target instanceof Node && !btn.contains(target) && !menu.contains(target) && !menu.classList.contains("hidden")) {
+        menu.classList.add("hidden");
+        btn.setAttribute("aria-expanded", "false");
+        btn.setAttribute("aria-label", "Открыть меню");
+        if (icon) icon.textContent = "☰";
+      }
+    });
+  }
+
+  setupMobileMenu();
+  document.addEventListener("astro:page-load", setupMobileMenu);
 </script>
