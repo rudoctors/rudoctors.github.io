@@ -11,6 +11,17 @@
     "tone": "brand"
   },
   {
+    "id": "admitad-aliexpress-health",
+    "slot": "home-bottom",
+    "active": true,
+    "label": "Партнёр",
+    "title": "Домашняя медтехника и товары для здоровья",
+    "text": "Тонометры, ингаляторы, пульсоксиметры, ортопедические изделия и средства ухода с доставкой в Сербию.",
+    "cta": "Выбрать на AliExpress",
+    "href": "https://rzekl.com/g/1e8d1144944acc19dce216525dc3e8/?ulp=https%3A%2F%2Fwww.aliexpress.com%2Fcategory%2F66%2Fhealth-beauty.html",
+    "tone": "slate"
+  },
+  {
     "id": "join-as-doctor",
     "slot": "catalog-top",
     "active": true,

@@ -104,7 +104,7 @@ Live: `https://rudoctors.github.io`
 - Убраны: бейдж «Рекомендуем» (DoctorCard, [slug]), секция «Рекомендуемые профили» (index).
 - `/packages/`: `noindex`, вне sitemap, без публичных ссылок (footer/index/about/contacts/faq).
 - CTA: «Баннерная реклама» → `/contacts/?topic=banner`.
-- **Test banners**: `src/data/banners.json` + `Banner.astro` — home-top (страховка), home-bottom (клиника), catalog-top (страховка); метка «Реклама»; клики → `Banner Click` в analytics hooks.
+- **Affiliate & Partner banners**: `src/data/banners.json` + `Banner.astro` — `home-top` (SafetyWing Nomad Insurance, Ambassador ID 26640201), `home-bottom` (Admitad AliExpress медтехника и товары для здоровья, оффер 6115, площадка 3023787), `catalog-top` (призыв для врачей «Практикуете в Сербии?» → `/add-doctor/`); метка «Партнёр» / «Реклама»; ссылки с `rel="noopener noreferrer sponsored"` и `target="_blank"`. Admitad верифицирован meta-тегом Mitgo ID `1a868a55-35f8-4564-98ae-c80a1ae06976`. Офферы iHerb, Trip.com, Localrent отправлены на модерацию рекламодателей.
 
 ### Шрифты (self-host)
 - Manrope variable woff2, 6 subset: cyrillic-ext, cyrillic, greek, vietnamese, latin-ext, latin (~190KB total).
