@@ -1,6 +1,6 @@
 # Rudoctors — состояние проекта (state)
 
-Обновлено: 2026-09-24  
+Обновлено: 2026-11-18  
 Репозиторий: `https://github.com/rudoctors/rudoctors.github.io` (орг `rudoctors` под аккаунтом `Myusername-isnotavailable`, ветка `main`)
 Локальная папка: `D:\Projects\rudoctors\site`  
 Live: `https://rudoctors.github.io`
@@ -52,6 +52,9 @@ Live: `https://rudoctors.github.io`
 | **`328e6c4`** | **feat(moderation): Telegram-бот модерации заявок (`@rudoctors_moderation_bot`)** — кнопки ✅/❌, публикация JSON, E2E verified; `site/.env` готов |
 | **`70dda92`** | E2E-тестовая карточка удалена (бот опубликовал и снял) |
 | **`e3683d7`** | **Telegram ChatExport:** 279 новых карточек, 220 курированных отзывов, 415 публичных профилей, 477 страниц; CI `36052115202` — **success** |
+| `1693580` | **Telegram updates (11.11.2026):** 19 проверенных отзывов, карточка психолога Хашимова |
+| `9629fd8` | **SEO guides (18.11.2026):** 10 медицинских гайдов, sitemap, навигация |
+| `current` | **Telegram ChatExport + Google Sheets (18.11.2026):** 19 проверенных отзывов в 15 карточек, аудит Google Sheet (109 строк, 0 коллизий) |
 
 ---
 
