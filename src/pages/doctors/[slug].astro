@@ -174,7 +174,7 @@ const jsonLd: Record<string, unknown>[] = [
                 </a>
               )
             }
-            <a href={`/leave-review/?doctor=${doctor.slug}`} class="btn-ghost">
+            <a href={`/leave-review/?doctor=${doctor.slug}`} class="btn-ghost" rel="nofollow">
               Оставить отзыв
             </a>
           </div>
@@ -213,7 +213,7 @@ const jsonLd: Record<string, unknown>[] = [
               Отзывы
               {rating.count > 0 && <span class="text-slate-400 font-semibold">({rating.count})</span>}
             </h2>
-            <a href={`/leave-review/?doctor=${doctor.slug}`} class="text-sm text-brand-700 font-semibold hover:underline">
+            <a href={`/leave-review/?doctor=${doctor.slug}`} class="text-sm text-brand-700 font-semibold hover:underline" rel="nofollow">
               + Добавить
             </a>
           </div>
@@ -223,7 +223,7 @@ const jsonLd: Record<string, unknown>[] = [
               <div class="rounded-2xl bg-slate-50 border border-dashed border-slate-200 p-6 text-center">
                 <p class="text-slate-600">Отзывов пока нет.</p>
                 <p class="text-sm text-slate-500 mt-1">Если вы были у этого врача — поделитесь впечатлением.</p>
-                <a href={`/leave-review/?doctor=${doctor.slug}`} class="btn-primary mt-4">
+                <a href={`/leave-review/?doctor=${doctor.slug}`} class="btn-primary mt-4" rel="nofollow">
                   Написать первый отзыв
                 </a>
               </div>
