@@ -1,6 +1,6 @@
 # Rudoctors — состояние проекта (state)
 
-Обновлено: 2026-11-18  
+Обновлено: 2026-11-20  
 Репозиторий: `https://github.com/rudoctors/rudoctors.github.io` (орг `rudoctors` под аккаунтом `Myusername-isnotavailable`, ветка `main`)
 Локальная папка: `D:\Projects\rudoctors\site`  
 Live (Основной): `https://rudoctors.com`  
@@ -62,6 +62,7 @@ Legacy: `https://rudoctors.github.io` (настроен перенос адре�
 | `44eb55f` | **Automation:** Telethon экспорт (`scripts/export-telethon.py`, gitignored) |
 | `848c5fa` | **Клиники (AlfaMedStar, MediGroup, Doctorus, Citilab):** 5 новых врачей, 58 новых отзывов AlfaMedStar, скраперы клиник, 440 врачей / 2110 отзывов / 45 специальностей / 5 городов (515 страниц) |
 | `1a546a8` | **Платформа отзывов и Cloudflare Turnstile (18.11.2026):** фикс CSP для Google Apps Script, интеграция Cloudflare Turnstile anti-bot капчи, спам-фильтр ссылок в GAS, переменная `PUBLIC_TURNSTILE_SITEKEY`, деплой run `44393185707` |
+| **`pending`** | **feat(data): weekly catalog sync - Telegram + clinics update (20.11.2026):** 5 новых отзывов, 1 новый врач (Елена Мостицкая, Doctorus Expert), слияние дубликатов (Датиенко→Нонко, Ковалёва→Ковалёв), 439 врачей / 2113 отзывов / 45 специальностей / 5 городов (514 страниц) |
 
 ---
 
@@ -85,11 +86,11 @@ Legacy: `https://rudoctors.github.io` (настроен перенос адре�
 
 ## Текущее состояние (спринты A→F, 24.09.2026)
 
-### Верификация (18.11.2026)
-- `npm run check` — 0 errors / 0 warnings.
-- `npm run build` — **515 pages**, sitemap-index; **440 публичных профилей** врачей + 4 архивных redirect; **2110 отзывов**.
-- `npm run detect:dups` — total 445 (440 visible + 5 admin/archived), 0 visible dup groups.
-- Live счётчик главной: `440 врачей 2110 отзывов 45 специальностей 5 городов`.
+### Верификация (20.11.2026)
+- `npm run check` — 0 errors / 0 warnings / 3 hints.
+- `npm run build` — **514 pages**, sitemap-index; **439 публичных профилей** врачей + 5 архивных redirect; **2113 отзывов**.
+- `npm run detect:dups` — total 444 (439 visible + 5 admin/archived), 0 visible dup groups.
+- Live счётчик главной: `439 врачей 2113 отзывов 45 специальностей 5 городов`.
 - dist: packages noindex, sitemap без `/packages`, 0 «Рекомендуем» в HTML.
 - Live smoke: `/`, `/doctors/` (+`?page=2` client), `/cities/nis/`, `/llms.txt`, `/404`, forms, doctor profile — **200**; data-bio=0; www.t.me=0; pager present; honeypot present.
 - CI `3050da7` → run `36020752013` — **success** (build 21s + deploy 2m13s); IndexNow ping OK.

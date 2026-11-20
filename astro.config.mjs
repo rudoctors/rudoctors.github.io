@@ -8,6 +8,8 @@ export default defineConfig({
   site: "https://rudoctors.com",
   trailingSlash: "always",
   redirects: {
+    "/doctors/konstantina-ivanovna-kovaleva": "/doctors/konstantin-kovalev/",
+    "/doctors/datienko-elena": "/doctors/nonko-elena-viktorovna/",
     "/doctors/prahov-aleksey": "/doctors/aleksej-pravov/",
     "/doctors/yanik-elena": "/doctors/elena-ianik/",
     "/doctors/pozharickaya-elena": "/doctors/elena-pozharickaya/",

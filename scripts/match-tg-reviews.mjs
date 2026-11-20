@@ -42,6 +42,18 @@ const sensitiveSpecialties = new Set([
   "narcologist",
 ]);
 
+const clinicHandles = new Set([
+  "citilabrs",
+  "alfamedstar_rs",
+  "doctorus_expert",
+  "vrachivserbii",
+  "palkinrs",
+  "palkin",
+  "medigroup",
+  "euromedik",
+  "search",
+]);
+
 function maskAuthor(author, isSensitive) {
   if (!author || author.trim() === "" || author === "undefined") {
     return "Пациент из сообщества";
@@ -86,7 +98,9 @@ for (const file of files) {
   for (const r of doc.reviews || []) {
     existingReviewIds.add(String(r.id).replace(/^tg-/, ""));
   }
-  doctors.push({ doc, filePath });
+  if (!doc.hidden) {
+    doctors.push({ doc, filePath });
+  }
 }
 
 // Build surname count to know uniqueness
@@ -136,7 +150,13 @@ for (const item of doctors) {
 
     let tgHandle = (doc.contacts && doc.contacts.telegram) || "";
     tgHandle = tgHandle.replace(/https?:\/\/t\.me\//i, "").replace(/^@/, "").trim().toLowerCase();
-    if (tgHandle.length < 4 || tgHandle === "bot" || tgHandle.includes("/")) {
+    if (
+      tgHandle.length < 4 ||
+      tgHandle === "bot" ||
+      tgHandle.includes("/") ||
+      tgHandle.startsWith("+") ||
+      clinicHandles.has(tgHandle)
+    ) {
       tgHandle = null;
     }
 
@@ -194,12 +214,32 @@ const falsePositiveStems = new Set([
   "иван",
   "алек",
   "серг",
+  "репа",
+  "преп",
 ]);
 // Publicly used name variants which cannot be matched by Russian inflection alone.
 const reviewAliasesBySlug = new Map([
-  ["datienko-elena", ["олена дати", "елена нонко"]],
+  ["nonko-elena-viktorovna", ["олена дати", "елена нонко", "датієнко", "датиенко"]],
   ["strahinja-ilic", ["страхиня илич", "илич страхиня"]],
+  ["artem-semenov", ["артем семенов", "семенов артем", "артему семенову", "семенова артема"]],
+  ["semenova-anastasiya-aleksandrovna", ["семенова анастасия", "анастасия семенова", "анастасии семеновой", "семеновой анастасии"]],
+  ["kirill-melihov", ["кирилл мелихов", "мелихов кирилл"]],
+  ["inga-sakeyan", ["инга сакеян", "ингу сакеян", "инге сакеян", "сакеян инга", "сакеян ингу"]],
 ]);
+
+const specialtyKeywords = [
+  { tag: /#мануальныйтерапевт/i, valid: ["manual_therapist", "neurologist"] },
+  { tag: /#ортодонт/i, valid: ["dentist", "orthodontist"] },
+  { tag: /#гинеколог/i, valid: ["gynecologist", "obstetrician_gynecologist"] },
+  { tag: /#психиатр/i, valid: ["psychiatrist", "psychiatrist_child", "child_psychiatrist"] },
+  { tag: /#педиатр/i, valid: ["pediatrician"] },
+  { tag: /#дерматолог/i, valid: ["dermatologist", "cosmetologist"] },
+  { tag: /#лор|#отоларинголог/i, valid: ["otolaryngologist"] },
+  { tag: /#стоматолог/i, valid: ["dentist", "orthodontist"] },
+  { tag: /#эндокринолог/i, valid: ["endocrinologist"] },
+  { tag: /#кардиолог/i, valid: ["cardiologist"] },
+  { tag: /#офтальмолог|#окулист/i, valid: ["ophthalmologist"] },
+];
 const newReviewsBySlug = new Map();
 const proposedReviews = [];
 
@@ -208,7 +248,7 @@ for (const msg of rawReviews) {
   const rawText = (msg.text || "").trim();
   if (rawText.length < 50 || rawText.length > 2000) continue;
   if (/^\*{0,2}(РЕКЛАМА|реклама\b)/i.test(rawText)) continue;
-  const tLower = rawText.toLowerCase();
+  const tLower = rawText.toLowerCase().replace(/\s+/g, " ");
 
   const fromLower = (msg.from || "").toLowerCase();
   if (/поиск в|easyrelocate|@search|бот /i.test(fromLower)) continue;
@@ -249,16 +289,29 @@ for (const msg of rawReviews) {
     else if ((reviewAliasesBySlug.get(m.doc.slug) || []).some((alias) => tLower.includes(alias))) {
       hit = true;
     }
-    // Condition 2: Both stems present (e.g. "Евгений" and "Бакуров")
+    // Condition 2: Both stems present with word boundaries
     else if (
       m.p1Stem.length >= 4 &&
       m.p2Stem.length >= 4 &&
       !falsePositiveStems.has(m.p1Stem) &&
       !falsePositiveStems.has(m.p2Stem) &&
-      tLower.includes(m.p1Stem) &&
-      tLower.includes(m.p2Stem)
+      new RegExp(`(?:^|[^а-яёa-z])${m.p1Stem}[а-яёa-z]*`, "i").test(tLower) &&
+      new RegExp(`(?:^|[^а-яёa-z])${m.p2Stem}[а-яёa-z]*`, "i").test(tLower)
     ) {
       hit = true;
+    }
+
+    // Reject unapproved matches that conflict with explicit specialty hashtags in review
+    if (hit && !approved) {
+      for (const spec of specialtyKeywords) {
+        if (spec.tag.test(tLower)) {
+          const matchesAny = spec.valid.some((s) => m.doc.specializations.includes(s));
+          if (!matchesAny) {
+            hit = false;
+            break;
+          }
+        }
+      }
     }
     if (hit && (!shouldWrite || approved)) {
       const reviewObj = {

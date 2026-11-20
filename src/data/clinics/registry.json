@@ -241,7 +241,6 @@
         "src/data/doctors/inga-sakeyan.json",
         "src/data/doctors/kirill-kozyrev.json",
         "src/data/doctors/konstantin-kovalev.json",
-        "src/data/doctors/konstantina-ivanovna-kovaleva.json",
         "src/data/doctors/kristina-tokmakova.json",
         "src/data/doctors/nadezhda-bakuleva.json",
         "src/data/doctors/pavel-borisov.json",
@@ -358,11 +357,6 @@
               {
                 "kind": "doctor-workplace",
                 "ref": "src/data/doctors/konstantin-kovalev.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/konstantina-ivanovna-kovaleva.json",
                 "retrievedAt": "2026-11-04"
               },
               {

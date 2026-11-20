@@ -1,0 +1,37 @@
+{
+  "slug": "elena-mostickaya",
+  "name": "Елена Мостицкая",
+  "specializations": [
+    "pediatrician"
+  ],
+  "specializationText": "Педиатр, неонатолог",
+  "photo": "https://assets.alteg.io/masters/origin/1/1f/1f0f5e2d3b382b4_20261118210339.png",
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Doctorus Expert",
+      "address": "Višegradska 1A, Savski Venac",
+      "city": "Belgrade",
+      "url": "https://doctorus.rs/"
+    }
+  ],
+  "contacts": {
+    "website": "https://doctorus.rs/ru/doctors/3141263",
+    "appointmentUrl": "https://doctorus.altegio.me/company/1278366/personal/menu?o=m3141263"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "doctorus.rs"
+  ],
+  "updatedAt": "2026-11-20"
+}

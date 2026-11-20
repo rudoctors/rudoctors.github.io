@@ -27,11 +27,20 @@
     "website": "https://doctorus.rs/ru/doctors/3098179",
     "appointmentUrl": "https://doctorus.altegio.me/company/1278366/personal/menu?o=m3098179"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-219085",
+      "author": "Azalia",
+      "date": "2026-11-16",
+      "rating": 0,
+      "text": "#педиатр #белград\nУже дважды посетили педиатра Егора Голубева в клинике Doctorus. Врач очень внимательный, подробно собрал анамнез и ответил на все интересующие вопросы. Что немаловажно - старается найти подход к ребенку, даже если тоддлер отказывается сотрудничать. Назначения доктора помогли срочно решить возникшую проблему, поэтому рекомендую специалиста⭐",
+      "source": "https://t.me/vrachivserbii/219085"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
     "doctorus.rs"
   ],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-20"
 }

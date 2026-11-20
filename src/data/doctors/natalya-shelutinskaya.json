@@ -25,7 +25,16 @@
     "telegram": "https://t.me/Natality33",
     "website": "https://www.medigroup.rs/lokacije/domovi-zdravlja/dom-zdravlja-medigroup-pancevo/"
   },
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "tg-196573",
+      "author": "Мари Матушкина",
+      "date": "2026-06-22",
+      "rating": 0,
+      "text": "Если вы ищете хорошего докмед Лора, приезжайте в Панчево. В клинике Медигруп работает супер врач Наталья Шелутинская. Лечимся у нее всей семьей, в том числе сын с аденоидами. Грамотный подход, умный, внимательный специалист. Рекомендую.",
+      "source": "https://t.me/vrachivserbii/196573"
+    }
+  ],
   "hidden": false,
   "featured": false,
   "sources": [
@@ -33,6 +42,6 @@
     "https://t.me/vrachivserbii/157850",
     "medigroup.rs"
   ],
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-20",
   "photo": "https://www.medigroup.rs/wp-content/uploads/2026/01/dr-natalia-shelutinskaia-medigroup.jpg"
 }
