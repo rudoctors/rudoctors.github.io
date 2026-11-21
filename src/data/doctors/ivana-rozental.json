@@ -6,7 +6,7 @@
   "specializations": [
     "therapist"
   ],
-  "city": "Petrovaradin",
+  "city": "Novi Sad",
   "languages": [
     "sr",
     "en"
@@ -34,5 +34,6 @@
     "https://biramdoktora.rs/doktori/ivana-rozental"
   ],
   "updatedAt": "2026-11-21",
-  "photo": "https://cdn.sanity.io/images/lvy58kla/production/5d0bc1a0b234ee0dda5aca2ee8112ca233b2ebd9-1080x1080.png?w=520&h=520&fit=crop&auto=format&q=75"
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/5d0bc1a0b234ee0dda5aca2ee8112ca233b2ebd9-1080x1080.png?w=520&h=520&fit=crop&auto=format&q=75",
+  "district": "Petrovaradin"
 }

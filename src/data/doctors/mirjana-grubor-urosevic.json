@@ -6,7 +6,7 @@
   "specializations": [
     "pulmonologist"
   ],
-  "city": "Grad",
+  "city": "Belgrade",
   "languages": [
     "sr",
     "en"
@@ -32,5 +32,6 @@
     "https://stetoskop.info/doktor/mirjana-grubor-urosevic"
   ],
   "updatedAt": "2026-11-21",
-  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/153/mirjana-grubor-urosevic.jpg"
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/153/mirjana-grubor-urosevic.jpg",
+  "district": "Stari Grad"
 }

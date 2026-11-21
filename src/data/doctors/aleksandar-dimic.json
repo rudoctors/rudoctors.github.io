@@ -6,7 +6,7 @@
   "specializations": [
     "dentist"
   ],
-  "city": "Rakovica",
+  "city": "Belgrade",
   "languages": [
     "sr",
     "en"
@@ -54,5 +54,6 @@
     "verified": true
   },
   "verificationStatus": "verified",
-  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/1966/aleksandar-dimic.webp"
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/1966/aleksandar-dimic.webp",
+  "district": "Rakovica"
 }

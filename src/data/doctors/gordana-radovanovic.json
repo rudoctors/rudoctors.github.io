@@ -6,7 +6,7 @@
   "specializations": [
     "pediatrician"
   ],
-  "city": "Lazarevac",
+  "city": "Belgrade",
   "languages": [
     "sr",
     "en"
@@ -36,5 +36,6 @@
     "authority": "Lekarska komora Srbije",
     "verified": true
   },
-  "verificationStatus": "verified"
+  "verificationStatus": "verified",
+  "district": "Lazarevac"
 }

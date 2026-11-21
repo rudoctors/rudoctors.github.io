@@ -6,7 +6,7 @@
   "specializations": [
     "surgeon"
   ],
-  "city": "Venac",
+  "city": "Belgrade",
   "languages": [
     "sr",
     "en"
@@ -36,5 +36,6 @@
     "https://stetoskop.info/doktor/milan-prekajski"
   ],
   "updatedAt": "2026-11-21",
-  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/271/milan-prekajski.jpg"
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/271/milan-prekajski.jpg",
+  "district": "Savski Venac"
 }

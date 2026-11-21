@@ -22,7 +22,11 @@ const {
   breadcrumbs,
 } = Astro.props;
 
-const fullTitle = title ? `${title} · ${SITE.name}` : SITE.title;
+const fullTitle = title
+  ? /rudoctors/i.test(title)
+    ? title
+    : `${title} · ${SITE.name}`
+  : SITE.title;
 const canonical = new URL(Astro.url.pathname, SITE.url).href;
 const ogImage = new URL("/og.png", SITE.url).href;
 

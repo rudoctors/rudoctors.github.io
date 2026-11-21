@@ -6,7 +6,7 @@
   "specializations": [
     "therapist"
   ],
-  "city": "Novi Beograd",
+  "city": "Belgrade",
   "languages": [
     "sr",
     "en"
@@ -34,5 +34,6 @@
     "https://biramdoktora.rs/doktori/natasa-ristic-stanivukovic"
   ],
   "updatedAt": "2026-11-21",
-  "photo": "https://cdn.sanity.io/images/lvy58kla/production/8534138d18c24900662a2b1e2681e906b678cf78-1080x1350.png?w=520&h=520&fit=crop&auto=format&q=75"
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/8534138d18c24900662a2b1e2681e906b678cf78-1080x1350.png?w=520&h=520&fit=crop&auto=format&q=75",
+  "district": "Novi Beograd"
 }

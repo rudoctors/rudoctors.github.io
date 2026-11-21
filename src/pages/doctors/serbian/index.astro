@@ -15,6 +15,9 @@ const doctors = serbianDoctors().sort((a, b) => {
 });
 
 const total = doctors.length;
+const PAGE_SIZE = 24;
+const visibleDoctors = doctors.slice(0, PAGE_SIZE);
+
 const specsPresent = [...new Set(doctors.flatMap((d) => d.specializations))]
   .filter(Boolean)
   .map((k) => ({
@@ -144,12 +147,24 @@ const jsonLd = [
           </div>
 
           <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {doctors.map((doctor, index) => (
+            {visibleDoctors.map((doctor, index) => (
               <div class="doctor-item" data-slug={doctor.slug}>
                 <DoctorCard doctor={doctor} priority={index < 3} />
               </div>
             ))}
           </div>
+
+          {total > PAGE_SIZE && (
+            <div class="card p-6 bg-white border-brand-100 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left mt-8">
+              <div>
+                <div class="font-bold text-slate-900 text-base">Показаны первые {visibleDoctors.length} из {total} специалистов</div>
+                <div class="text-sm text-slate-500 mt-0.5">Воспользуйтесь интерактивным каталогом с фильтрацией по 26 городам, специальностям и отзывам.</div>
+              </div>
+              <a href="/doctors/?origin=rs" class="btn-primary whitespace-nowrap shrink-0">
+                Смотреть всех {total} врачей с фильтрами →
+              </a>
+            </div>
+          )}
         </div>
       )
     }

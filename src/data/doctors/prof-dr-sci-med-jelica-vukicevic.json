@@ -6,7 +6,7 @@
   "specializations": [
     "dermatologist"
   ],
-  "city": "Savski Venac",
+  "city": "Belgrade",
   "languages": [
     "sr",
     "en"
@@ -34,5 +34,6 @@
     "https://biramdoktora.rs/doktori/jelica-vukicevic"
   ],
   "updatedAt": "2026-11-21",
-  "photo": "https://cdn.sanity.io/images/lvy58kla/production/54b73296ac292487a0298c1659cd9156e76e0668-3000x3000.jpg?w=520&h=520&fit=crop&auto=format&q=75"
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/54b73296ac292487a0298c1659cd9156e76e0668-3000x3000.jpg?w=520&h=520&fit=crop&auto=format&q=75",
+  "district": "Savski Venac"
 }

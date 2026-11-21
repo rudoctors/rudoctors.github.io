@@ -6,7 +6,7 @@
   "specializations": [
     "therapist"
   ],
-  "city": "Novi Beograd",
+  "city": "Belgrade",
   "languages": [
     "sr",
     "en"
@@ -40,5 +40,6 @@
     "authority": "Lekarska komora Srbije",
     "verified": true
   },
-  "verificationStatus": "verified"
+  "verificationStatus": "verified",
+  "district": "Novi Beograd"
 }
