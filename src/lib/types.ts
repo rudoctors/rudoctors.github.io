@@ -58,7 +58,8 @@ export type ClinicCategory =
   | "dental"
   | "laboratory"
   | "ordination"
-  | "hospital";
+  | "hospital"
+  | "dom-zdravlja";
 
 export interface Clinic {
   id: string;

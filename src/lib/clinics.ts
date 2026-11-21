@@ -23,7 +23,7 @@ export interface MapClinicPoint {
   name: string;
   category: ClinicCategory;
   categoryLabel: string;
-  categoryColor: "blue" | "green" | "orange" | "purple" | "red";
+  categoryColor: "blue" | "green" | "orange" | "purple" | "red" | "cyan";
   city: string;
   cityRu: string;
   district?: string;
@@ -42,7 +42,7 @@ export const CLINIC_CATEGORY_META: Record<
   {
     label: string;
     pluralLabel: string;
-    color: "blue" | "green" | "orange" | "purple" | "red";
+    color: "blue" | "green" | "orange" | "purple" | "red" | "cyan";
     hex: string;
     bgClass: string;
     textClass: string;
@@ -59,6 +59,16 @@ export const CLINIC_CATEGORY_META: Record<
     textClass: "text-blue-700",
     borderClass: "border-blue-200",
     iconSvg: `<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-3M9 9h1M9 13h1M9 17h1"/></svg>`,
+  },
+  "dom-zdravlja": {
+    label: "Дом здравља (Поликлиника)",
+    pluralLabel: "Дом здравља",
+    color: "cyan",
+    hex: "#0891b2",
+    bgClass: "bg-cyan-50",
+    textClass: "text-cyan-800",
+    borderClass: "border-cyan-200",
+    iconSvg: `<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M4 21V9l8-6 8 6v12h-6v-7h-4v7H4z"/><path d="M9 9h1M14 9h1M9 13h1M14 13h1"/></svg>`,
   },
   dental: {
     label: "Стоматология",
@@ -216,6 +226,10 @@ export function getBelgradeDistricts(): string[] {
     "Палилула",
     "Вождовац",
     "Звездара",
+    "Земун",
+    "Чукарица",
+    "Раковица",
+    "Дедиње",
     "Савски Венац (Славија)",
     "Савски Венац (Бањица)",
   ];

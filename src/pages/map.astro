@@ -7,8 +7,8 @@ const mapUrl = `${SITE.url}/map/`;
 ---
 
 <Layout
-  title="Интерактивная карта медицинских клиник Сербии — адреса, больницы 24/7 и врачи"
-  description="Интерактивная карта проверенных медицинских центров, стоматологий, лабораторий и круглосуточных стационаров 24/7 в Белграде, Нови-Саде и Нише с контактами и врачами каталога RuDoctors."
+  title="Интерактивная карта клиник Сербии — Дом здравља, больницы 24/7 и частные медцентры"
+  description="Интерактивная карта медицинских учреждений Сербии: районные поликлиники (Дом здравља), круглосуточные больницы и детские институты 24/7, частные медцентры и врачи RuDoctors."
   breadcrumbs={[
     { name: "Главная", path: "/" },
     { name: "Карта клиник", path: "/map/" },
@@ -16,14 +16,14 @@ const mapUrl = `${SITE.url}/map/`;
   jsonLd={{
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Интерактивная карта медицинских клиник Сербии",
+    name: "Интерактивная карта медицинских клиник и Домов здравля Сербии",
     url: mapUrl,
     description:
-      "Карта клиник, стоматологий, лабораторий и стационаров в Белграде, Нови-Саде и других городах Сербии.",
+      "Карта клиник, районных поликлиник (Дом здравља), стоматологий, лабораторий и стационаров 24/7 в Белграде, Нови-Саде и Сербии.",
     isPartOf: { "@id": SCHEMA_IDS.website },
     about: {
       "@type": "MedicalOrganization",
-      name: "Клиники и медицинские центры Сербии",
+      name: "Клиники, поликлиники и больницы Сербии",
       areaServed: { "@type": "Country", name: "Сербия" },
     },
   }}
@@ -40,13 +40,13 @@ const mapUrl = `${SITE.url}/map/`;
     <div class="mb-6">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 text-brand-700 text-xs font-semibold mb-3 border border-brand-100">
         <span>🗺️</span>
-        <span>Интерактивный справочник медицины</span>
+        <span>Интерактивный справочник медицины Сербии</span>
       </div>
       <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy-900 tracking-tight">
-        Медицинские клиники Сербии на карте
+        Медицинские клиники и Дома здравля Сербии на карте
       </h1>
       <p class="mt-3 text-sm sm:text-base text-slate-600 max-w-3xl leading-relaxed">
-        Находите проверенные клиники, стоматологии, лаборатории анализов и круглосуточные стационары 24/7 в Белграде, Нови-Саде и Нише. Точные адреса, районы, маршруты проезда и прямая связь со специалистами из каталога RuDoctors.
+        Районные поликлиники (Дом здравља), круглосуточные стационары 24/7, детские неотложки, роддома и частные медицинские центры Белграда, Нови-Сада и Ниша с адресами, телефонами и врачами каталога RuDoctors.
       </p>
     </div>
 
@@ -54,14 +54,14 @@ const mapUrl = `${SITE.url}/map/`;
     <ClinicsMap />
 
     <!-- Explanatory Guide Section -->
-    <div class="mt-12 pt-8 border-t border-slate-200 grid gap-6 sm:grid-cols-3 text-sm">
+    <div class="mt-12 pt-8 border-t border-slate-200 grid gap-5 sm:grid-cols-2 lg:grid-cols-4 text-sm">
       <div class="card p-5">
-        <div class="w-9 h-9 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-lg mb-3">
-          🏥
+        <div class="w-9 h-9 rounded-xl bg-cyan-100 text-cyan-800 flex items-center justify-center text-lg mb-3">
+          🏛️
         </div>
-        <h3 class="font-bold text-slate-900 text-base">Цветовая классификация</h3>
+        <h3 class="font-bold text-slate-900 text-base">Дом здравља (Поликлиники)</h3>
         <p class="mt-2 text-xs text-slate-600 leading-relaxed">
-          Каждое учреждение на карте обозначено своим цветом: <strong class="text-blue-600">синий</strong> — многопрофильные медцентры (MediGroup, Euromedic, Bel Medic), <strong class="text-emerald-600">зеленый</strong> — стоматологии, <strong class="text-orange-600">оранжевый</strong> — лаборатории анализов, <strong class="text-purple-600">фиолетовый</strong> — ординации, <strong class="text-rose-600">красный</strong> — стационары 24/7.
+          Первичная государственная помощь по месту проживания. Выбор участкового терапевта (izabrani lekar), вакцинация, базовая диагностика по полису RFZO (или платно через кассу) и дежурные врачи в выходные дни.
         </p>
       </div>
 
@@ -69,19 +69,29 @@ const mapUrl = `${SITE.url}/map/`;
         <div class="w-9 h-9 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center text-lg mb-3">
           🚨
         </div>
-        <h3 class="font-bold text-slate-900 text-base">Экстренная помощь 24/7</h3>
+        <h3 class="font-bold text-slate-900 text-base">Стационары и КБЦ 24/7</h3>
         <p class="mt-2 text-xs text-slate-600 leading-relaxed">
-          В случае острой необходимости на карте выделены национальные центры неотложной помощи с круглосуточным приёмом: Военно-медицинская академия (ВМА) и Клинический центр Сербии (UKCS / Ургентный центр).
+          Экстренная хирургия и терапия: Ургентный центр (UKCS), Военно-медицинская академия (ВМА), КБЦ Др Драгиша Мишовић, КБЦ Звездара и КБЦ Земун, принимающие пациентов круглосуточно.
         </p>
       </div>
 
       <div class="card p-5">
-        <div class="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-lg mb-3">
-          👨‍⚕️
+        <div class="w-9 h-9 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center text-lg mb-3">
+          👶
         </div>
-        <h3 class="font-bold text-slate-900 text-base">Принимающие врачи</h3>
+        <h3 class="font-bold text-slate-900 text-base">Детская неотложка и роддома</h3>
         <p class="mt-2 text-xs text-slate-600 leading-relaxed">
-          В карточке филиала на карте вы сразу видите русскоязычных врачей каталога RuDoctors, принимающих в этой клинике. Кликайте на карточку врача для перехода к отзывам, квалификации и записи.
+          Для детей 24/7 открыты Университетская клиника в Тиршовой (UDK Tiršova) и Институт матери и ребенка. Главный акушерский стационар и роддом — ГАК Народни Фронт.
+        </p>
+      </div>
+
+      <div class="card p-5">
+        <div class="w-9 h-9 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-lg mb-3">
+          🏥
+        </div>
+        <h3 class="font-bold text-slate-900 text-base">Частные центры и врачи</h3>
+        <p class="mt-2 text-xs text-slate-600 leading-relaxed">
+          Ведущие частные сети (MediGroup, Euromedic, Bel Medic, Vizim) и профильные ординации. В карточке филиала отображаются русскоязычные специалисты каталога RuDoctors.
         </p>
       </div>
     </div>

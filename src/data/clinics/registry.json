@@ -3002,6 +3002,1143 @@
           }
         }
       ]
+    },
+    {
+      "id": "dz-vracar-belgrade",
+      "name": "Дом здравља Врачар",
+      "category": "dom-zdravlja",
+      "city": "Belgrade",
+      "district": "Врачар",
+      "phone": "+381 11 3402 522",
+      "website": "http://www.dzvracar.org.rs/",
+      "aliases": [
+        "Dom Zdravlja Vračar",
+        "DZ Vračar"
+      ],
+      "sources": [
+        "official-registry",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "dz-vracar-belgrade-loc-1",
+          "district": "Врачар",
+          "address": {
+            "value": "Velimira Todorovića 1, Vračar, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "http://www.dzvracar.org.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 44.79381,
+              "lng": 20.48972
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "http://www.dzvracar.org.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dz-starigrad-belgrade",
+      "name": "Дом здравља Стари Град",
+      "category": "dom-zdravlja",
+      "city": "Belgrade",
+      "district": "Стари Град (Дорћол)",
+      "phone": "+381 11 3215 600",
+      "website": "https://www.dzstarigrad.org/",
+      "aliases": [
+        "Dom Zdravlja Stari Grad",
+        "DZ Stari Grad"
+      ],
+      "sources": [
+        "official-registry",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "dz-starigrad-belgrade-loc-1",
+          "district": "Стари Град (Дорћол)",
+          "address": {
+            "value": "Simina 27, Stari Grad, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://www.dzstarigrad.org/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 44.81931,
+              "lng": 20.46082
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://www.dzstarigrad.org/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dz-novibeograd-belgrade",
+      "name": "Дом здравља Нови Београд",
+      "category": "dom-zdravlja",
+      "city": "Belgrade",
+      "district": "Нови Београд",
+      "phone": "+381 11 2222 100",
+      "website": "https://www.dznbgd.com/",
+      "aliases": [
+        "Dom Zdravlja Novi Beograd",
+        "DZ Novi Beograd"
+      ],
+      "sources": [
+        "official-registry",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "dz-novibeograd-belgrade-loc-1",
+          "district": "Нови Београд",
+          "address": {
+            "value": "Maršala Tolbuhina 30, Novi Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://www.dznbgd.com/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 44.82982,
+              "lng": 20.41321
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://www.dznbgd.com/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          }
+        },
+        {
+          "id": "dz-novibeograd-belgrade-loc-2",
+          "district": "Нови Београд",
+          "address": {
+            "value": "Nehruova 53 (Blok 44), Novi Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://www.dznbgd.com/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 44.80122,
+              "lng": 20.38421
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://www.dznbgd.com/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dz-savskivenac-belgrade",
+      "name": "Дом здравља Савски Венац",
+      "category": "dom-zdravlja",
+      "city": "Belgrade",
+      "district": "Савски Венац",
+      "phone": "+381 11 2068 800",
+      "website": "https://dzsk.rs/",
+      "aliases": [
+        "Dom Zdravlja Savski Venac",
+        "DZ Savski Venac"
+      ],
+      "sources": [
+        "official-registry",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "dz-savskivenac-belgrade-loc-1",
+          "district": "Савски Венац",
+          "address": {
+            "value": "Pasterova 1, Savski Venac, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://dzsk.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 44.80052,
+              "lng": 20.46101
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://dzsk.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dz-palilula-belgrade",
+      "name": "Дом здравља Палилула",
+      "category": "dom-zdravlja",
+      "city": "Belgrade",
+      "district": "Палилула",
+      "phone": "+381 11 3224 321",
+      "website": "https://dzpalilula.org.rs/",
+      "aliases": [
+        "Dom Zdravlja Palilula",
+        "DZ Palilula"
+      ],
+      "sources": [
+        "official-registry",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "dz-palilula-belgrade-loc-1",
+          "district": "Палилула",
+          "address": {
+            "value": "Knez Danilova 16, Palilula, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://dzpalilula.org.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 44.81182,
+              "lng": 20.47701
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://dzpalilula.org.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dz-zvezdara-belgrade",
+      "name": "Дом здравља Звездара",
+      "category": "dom-zdravlja",
+      "city": "Belgrade",
+      "district": "Звездара",
+      "phone": "+381 11 3040 500",
+      "website": "https://dzzvezdara.rs/",
+      "aliases": [
+        "Dom Zdravlja Zvezdara",
+        "DZ Zvezdara"
+      ],
+      "sources": [
+        "official-registry",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "dz-zvezdara-belgrade-loc-1",
+          "district": "Звездара",
+          "address": {
+            "value": "Olge Jovanović 11, Zvezdara, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://dzzvezdara.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 44.79252,
+              "lng": 20.49981
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://dzzvezdara.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dz-vozdovac-belgrade",
+      "name": "Дом здравља Вождовац",
+      "category": "dom-zdravlja",
+      "city": "Belgrade",
+      "district": "Вождовац",
+      "phone": "+381 11 3080 500",
+      "website": "https://dzvozdovac.rs/",
+      "aliases": [
+        "Dom Zdravlja Voždovac",
+        "DZ Voždovac"
+      ],
+      "sources": [
+        "official-registry",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "dz-vozdovac-belgrade-loc-1",
+          "district": "Вождовац",
+          "address": {
+            "value": "Ustanička 16, Voždovac, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://dzvozdovac.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 44.78201,
+              "lng": 20.48502
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://dzvozdovac.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dz-zemun-belgrade",
+      "name": "Дом здравља Земун",
+      "category": "dom-zdravlja",
+      "city": "Belgrade",
+      "district": "Земун",
+      "phone": "+381 11 2195 422",
+      "website": "https://dzzemun.org.rs/",
+      "aliases": [
+        "Dom Zdravlja Zemun",
+        "DZ Zemun"
+      ],
+      "sources": [
+        "official-registry",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "dz-zemun-belgrade-loc-1",
+          "district": "Земун",
+          "address": {
+            "value": "Rada Končara 46, Zemun, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://dzzemun.org.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 44.84301,
+              "lng": 20.39502
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://dzzemun.org.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dz-cukarica-belgrade",
+      "name": "Дом здравља Чукарица",
+      "category": "dom-zdravlja",
+      "city": "Belgrade",
+      "district": "Чукарица",
+      "phone": "+381 11 3538 300",
+      "website": "https://dzcukarica.rs/",
+      "aliases": [
+        "Dom Zdravlja Čukarica",
+        "DZ Čukarica"
+      ],
+      "sources": [
+        "official-registry",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "dz-cukarica-belgrade-loc-1",
+          "district": "Чукарица",
+          "address": {
+            "value": "Požeška 82, Čukarica, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://dzcukarica.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 44.78121,
+              "lng": 20.41502
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://dzcukarica.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dz-rakovica-belgrade",
+      "name": "Дом здравља Раковица",
+      "category": "dom-zdravlja",
+      "city": "Belgrade",
+      "district": "Раковица",
+      "phone": "+381 11 3582 822",
+      "website": "https://dzrakovica.rs/",
+      "aliases": [
+        "Dom Zdravlja Rakovica",
+        "DZ Rakovica"
+      ],
+      "sources": [
+        "official-registry",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "dz-rakovica-belgrade-loc-1",
+          "district": "Раковица",
+          "address": {
+            "value": "Kraljice Jelene 22, Rakovica, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://dzrakovica.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 44.75201,
+              "lng": 20.44802
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://dzrakovica.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dz-novisad-liman",
+      "name": "Дом здравља Нови Сад (Лиман)",
+      "category": "dom-zdravlja",
+      "city": "Novi Sad",
+      "district": "Лиман",
+      "phone": "+381 21 4879 000",
+      "website": "https://dzns.rs/",
+      "aliases": [
+        "Dom Zdravlja Novi Sad Liman",
+        "DZ Liman"
+      ],
+      "sources": [
+        "official-registry",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "dz-novisad-liman-loc-1",
+          "district": "Лиман",
+          "address": {
+            "value": "Bulevar cara Lazara 77, Novi Sad",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://dzns.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 45.24102,
+              "lng": 19.83501
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://dzns.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dz-novisad-zmaj",
+      "name": "Дом здравља Нови Сад (Змај Огњена Вука)",
+      "category": "dom-zdravlja",
+      "city": "Novi Sad",
+      "district": "Центар",
+      "phone": "+381 21 4879 000",
+      "website": "https://dzns.rs/",
+      "aliases": [
+        "Dom Zdravlja Zmaj Ognjena Vuka",
+        "DZ Novi Sad Centar"
+      ],
+      "sources": [
+        "official-registry",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "dz-novisad-zmaj-loc-1",
+          "district": "Центар",
+          "address": {
+            "value": "Zmaj Ognjena Vuka 19, Novi Sad",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://dzns.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 45.26051,
+              "lng": 19.83852
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://dzns.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dz-nis-central",
+      "name": "Дом здравља Ниш",
+      "category": "dom-zdravlja",
+      "city": "Niš",
+      "district": "Медијана",
+      "phone": "+381 18 503 503",
+      "website": "https://domzdravljanis.co.rs/",
+      "aliases": [
+        "Dom Zdravlja Niš",
+        "DZ Niš"
+      ],
+      "sources": [
+        "official-registry",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "dz-nis-central-loc-1",
+          "district": "Медијана",
+          "address": {
+            "value": "Vojvode Tankosića 15, Niš",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://domzdravljanis.co.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 43.32101,
+              "lng": 21.90502
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://domzdravljanis.co.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "kbc-misovic-belgrade",
+      "name": "КБЦ Др Драгиша Мишовић",
+      "category": "hospital",
+      "city": "Belgrade",
+      "district": "Дедиње",
+      "phone": "+381 11 3630 600",
+      "website": "https://dragisamisovic.bg.ac.rs/",
+      "is24h": true,
+      "aliases": [
+        "KBC Dr Dragiša Mišović",
+        "Bolnica Dragiša Mišović",
+        "KBC Dedinje"
+      ],
+      "sources": [
+        "official-registry",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "kbc-misovic-belgrade-loc-1",
+          "district": "Дедиње",
+          "address": {
+            "value": "Heroja Milana Tepića 1, Savski Venac, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://dragisamisovic.bg.ac.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 44.77581,
+              "lng": 20.45782
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://dragisamisovic.bg.ac.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "kbc-zvezdara-belgrade",
+      "name": "КБЦ Звездара (Градска болница)",
+      "category": "hospital",
+      "city": "Belgrade",
+      "district": "Звездара",
+      "phone": "+381 11 3810 900",
+      "website": "https://kbczvezdara.rs/",
+      "is24h": true,
+      "aliases": [
+        "KBC Zvezdara",
+        "Gradska bolnica Zvezdara"
+      ],
+      "sources": [
+        "official-registry",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "kbc-zvezdara-belgrade-loc-1",
+          "district": "Звездара",
+          "address": {
+            "value": "Dimitrija Tucovića 161, Zvezdara, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://kbczvezdara.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 44.80151,
+              "lng": 20.50152
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://kbczvezdara.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "kbc-zemun-belgrade",
+      "name": "КБЦ Земун",
+      "category": "hospital",
+      "city": "Belgrade",
+      "district": "Земун",
+      "phone": "+381 11 3772 666",
+      "website": "https://kbczemun.rs/",
+      "is24h": true,
+      "aliases": [
+        "KBC Zemun",
+        "Gradska bolnica Zemun"
+      ],
+      "sources": [
+        "official-registry",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "kbc-zemun-belgrade-loc-1",
+          "district": "Земун",
+          "address": {
+            "value": "Vukova 9, Zemun, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://kbczemun.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 44.84551,
+              "lng": 20.41052
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://kbczemun.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "tirsova-belgrade",
+      "name": "Университетская детская клиника в Тиршовой (UDK Tiršova)",
+      "category": "hospital",
+      "city": "Belgrade",
+      "district": "Савски Венац",
+      "phone": "+381 11 2060 600",
+      "website": "https://tirsova.rs/",
+      "is24h": true,
+      "aliases": [
+        "UDK Tiršova",
+        "Tiršova",
+        "Dečja bolnica Tiršova"
+      ],
+      "sources": [
+        "official-registry",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "tirsova-belgrade-loc-1",
+          "district": "Савски Венац",
+          "address": {
+            "value": "Tiršova 10, Savski Venac, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://tirsova.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 44.80101,
+              "lng": 20.46252
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://tirsova.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "institut-majka-dete-belgrade",
+      "name": "Институт матери и ребенка «Др Вукан Чупић»",
+      "category": "hospital",
+      "city": "Belgrade",
+      "district": "Нови Београд",
+      "phone": "+381 11 3108 108",
+      "website": "https://imd.org.rs/",
+      "is24h": true,
+      "aliases": [
+        "Institut za majku i dete",
+        "Institut za zdravstvenu zaštitu majke i deteta"
+      ],
+      "sources": [
+        "official-registry",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "institut-majka-dete-belgrade-loc-1",
+          "district": "Нови Београд",
+          "address": {
+            "value": "Radoja Dakića 6-8, Novi Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://imd.org.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 44.83401,
+              "lng": 20.40702
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://imd.org.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "gak-narodni-front-belgrade",
+      "name": "ГАК Народни Фронт (Роддом и гинекология 24/7)",
+      "category": "hospital",
+      "city": "Belgrade",
+      "district": "Савски Венац",
+      "phone": "+381 11 2068 200",
+      "website": "https://gakfront.org/",
+      "is24h": true,
+      "aliases": [
+        "GAK Narodni Front",
+        "Narodni Front",
+        "Porodilište Narodni Front"
+      ],
+      "sources": [
+        "official-registry",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "gak-narodni-front-belgrade-loc-1",
+          "district": "Савски Венац",
+          "address": {
+            "value": "Kraljice Natalije 62, Savski Venac, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://gakfront.org/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 44.81051,
+              "lng": 20.45802
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://gakfront.org/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "kcv-novi-sad",
+      "name": "Клинический центр Воеводины (KCV)",
+      "category": "hospital",
+      "city": "Novi Sad",
+      "district": "Сајмиште",
+      "phone": "+381 21 484 3484",
+      "website": "https://kcv.rs/",
+      "is24h": true,
+      "aliases": [
+        "Klinički centar Vojvodine",
+        "KCV",
+        "Pokrajinska bolnica"
+      ],
+      "sources": [
+        "official-registry",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "kcv-novi-sad-loc-1",
+          "district": "Сајмиште",
+          "address": {
+            "value": "Hajduk Veljkova 1-9, Novi Sad",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://kcv.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 45.25351,
+              "lng": 19.82362
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://kcv.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ukc-nis",
+      "name": "Университетский клинический центр Ниш (UKC Niš)",
+      "category": "hospital",
+      "city": "Niš",
+      "district": "Медијана",
+      "phone": "+381 18 505 100",
+      "website": "https://kcnis.rs/",
+      "is24h": true,
+      "aliases": [
+        "Univerzitetski klinički centar Niš",
+        "UKC Niš"
+      ],
+      "sources": [
+        "official-registry",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "ukc-nis-loc-1",
+          "district": "Медијана",
+          "address": {
+            "value": "Bulevar dr Zorana Đinđića 48, Niš",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://kcnis.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 43.31851,
+              "lng": 21.92152
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "url": "https://kcnis.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          }
+        }
+      ]
     }
   ]
 }
