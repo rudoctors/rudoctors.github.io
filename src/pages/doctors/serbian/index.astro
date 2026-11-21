@@ -2,9 +2,9 @@
 import Layout from "../../../layouts/Layout.astro";
 import DoctorCard from "../../../components/DoctorCard.astro";
 import Banner from "../../../components/Banner.astro";
-import { serbianDoctors } from "../../../lib/doctors";
+import { serbianDoctors, specLabel } from "../../../lib/doctors";
 import { computeRating } from "../../../lib/rating";
-import { SITE, plural } from "../../../lib/site";
+import { SITE, cityLabel, citySlug, plural, SCHEMA_IDS } from "../../../lib/site";
 
 const doctors = serbianDoctors().sort((a, b) => {
   if (a.featured !== b.featured) return a.featured ? -1 : 1;
@@ -15,15 +15,47 @@ const doctors = serbianDoctors().sort((a, b) => {
 });
 
 const total = doctors.length;
+const specsPresent = [...new Set(doctors.flatMap((d) => d.specializations))]
+  .filter(Boolean)
+  .map((k) => ({
+    key: k,
+    label: specLabel(k),
+    count: doctors.filter((d) => d.specializations.includes(k)).length,
+  }))
+  .sort((a, b) => b.count - a.count);
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  name: "Сербские врачи: каталог и отзывы на русском",
-  url: `${SITE.url}/doctors/serbian/`,
-  description:
-    "Каталог национальных сербских врачей и клиник в Сербии (Белград, Нови-Сад, Ниш). Отзывы пациентов на русском языке, специальности, ординации и прямые контакты.",
-};
+const citiesPresent = [...new Set(doctors.map((d) => d.city))]
+  .filter(Boolean)
+  .map((c) => ({
+    city: c,
+    label: cityLabel(c),
+    slug: citySlug(c),
+    count: doctors.filter((d) => d.city === c).length,
+  }))
+  .sort((a, b) => b.count - a.count);
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Сербские врачи: каталог и отзывы на русском",
+    url: `${SITE.url}/doctors/serbian/`,
+    description:
+      "Каталог национальных сербских врачей и клиник в Сербии (Белград, Нови-Сад, Ниш). Отзывы пациентов на русском языке, специальности, ординации и прямые контакты.",
+    isPartOf: { "@id": SCHEMA_IDS.website },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Сербские врачи в Сербии",
+    itemListElement: doctors.slice(0, 30).map((d, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: d.name,
+      url: `${SITE.url}/doctors/${d.slug}/`,
+    })),
+  },
+];
 ---
 
 <Layout
@@ -55,11 +87,39 @@ const jsonLd = {
         в оригинальном сербском написании (латиница), а медицинские специальности, квалификация и отзывы пациентов
         переведены на русский язык с возможностью просмотра сербского первоисточника.
       </p>
+
       <div class="mt-4 flex flex-wrap gap-2 text-xs">
-        <a href="/doctors/" class="chip hover:bg-slate-200">← Все врачи каталога</a>
-        <a href="/doctors/?origin=ru" class="chip hover:bg-slate-200">Русскоязычные врачи</a>
+        <a href="/doctors/" class="chip hover:bg-slate-200 transition">← Все врачи каталога</a>
+        <a href="/doctors/?origin=ru" class="chip hover:bg-slate-200 transition">Русскоязычные врачи</a>
         <span class="chip bg-rose-50 text-rose-700 ring-1 ring-rose-600/10 font-semibold">🇷🇸 Сербские врачи ({total})</span>
       </div>
+    </div>
+
+    <!-- Quick specialty and city filters -->
+    <div class="card p-5 mb-8 space-y-4">
+      <div>
+        <div class="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Специальности сербских врачей:</div>
+        <div class="flex flex-wrap gap-1.5">
+          {specsPresent.slice(0, 16).map((s) => (
+            <a href={`/doctors/?origin=rs&spec=${s.key}`} class="chip hover:bg-brand-50 transition">
+              {s.label} · {s.count}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      {citiesPresent.length > 0 && (
+        <div class="pt-3 border-t border-slate-100">
+          <div class="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Города:</div>
+          <div class="flex flex-wrap gap-2">
+            {citiesPresent.map((c) => (
+              <a href={`/doctors/?origin=rs&city=${c.city}`} class="text-xs text-slate-600 hover:text-brand-700 underline-offset-2 hover:underline">
+                {c.label} ({c.count})
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
 
     <Banner placement="catalog-top" class="mb-8" />
@@ -74,8 +134,13 @@ const jsonLd = {
         </div>
       ) : (
         <div class="space-y-6">
-          <div class="text-sm text-slate-500">
-            Найдено специалистов: {total} {plural(total, "сербский врач", "сербских врача", "сербских врачей")}
+          <div class="flex items-center justify-between text-sm text-slate-500">
+            <div>
+              Найдено специалистов: <strong class="text-slate-800">{total}</strong> {plural(total, "сербский врач", "сербских врача", "сербских врачей")}
+            </div>
+            <a href="/doctors/?origin=rs" class="text-xs text-brand-700 hover:underline">
+              Открыть в поиске с фильтрами →
+            </a>
           </div>
 
           <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">

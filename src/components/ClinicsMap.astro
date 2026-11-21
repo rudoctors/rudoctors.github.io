@@ -647,6 +647,12 @@ const emergencyCount = allPoints.filter((p) => p.is24h).length;
         scrollWheelZoom: true,
       });
 
+      if (map.attributionControl) {
+        map.attributionControl.setPrefix(
+          '<a href="https://leafletjs.com" target="_blank" rel="noopener noreferrer">Leaflet</a>'
+        );
+      }
+
       // Standard OpenStreetMap tiles
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         attribution:
@@ -844,6 +850,9 @@ const emergencyCount = allPoints.filter((p) => p.is24h).length;
 </script>
 
 <style is:global>
+  .leaflet-attribution-flag {
+    display: none !important;
+  }
   .custom-clinic-marker {
     background: transparent !important;
     border: none !important;

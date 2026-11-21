@@ -3,6 +3,7 @@ import { SITE } from "../lib/site";
 
 const nav = [
   { href: "/doctors/", label: "Врачи" },
+  { href: "/doctors/serbian/", label: "Сербские врачи 🇷🇸" },
   { href: "/specialties/", label: "Специальности" },
   { href: "/cities/", label: "Города" },
   { href: "/map/", label: "Карта" },
@@ -10,6 +11,17 @@ const nav = [
   { href: "/about/", label: "О проекте" },
 ];
 const path = Astro.url.pathname;
+
+function isNavActive(itemHref: string, currentPath: string): boolean {
+  if (itemHref === "/doctors/") {
+    return (
+      currentPath === "/doctors/" ||
+      currentPath.startsWith("/doctors/?") ||
+      (currentPath.startsWith("/doctors/") && !currentPath.startsWith("/doctors/serbian/"))
+    );
+  }
+  return currentPath.startsWith(itemHref);
+}
 ---
 
 <header class="sticky top-0 z-40 backdrop-blur bg-white/90 border-b border-slate-200">
@@ -24,10 +36,10 @@ const path = Astro.url.pathname;
         nav.map((item) => (
           <a
             href={item.href}
-            aria-current={path.startsWith(item.href) ? "page" : undefined}
+            aria-current={isNavActive(item.href, path) ? "page" : undefined}
             class:list={[
               "px-3 py-2 rounded-lg text-sm font-medium",
-              path.startsWith(item.href)
+              isNavActive(item.href, path)
                 ? "text-brand-700 bg-brand-50"
                 : "text-slate-600 hover:text-slate-900 hover:bg-slate-100",
             ]}
@@ -70,7 +82,7 @@ const path = Astro.url.pathname;
             href={item.href}
             class:list={[
               "px-3 py-2 rounded-lg text-sm font-medium",
-              path.startsWith(item.href)
+              isNavActive(item.href, path)
                 ? "text-brand-700 bg-brand-50"
                 : "text-slate-700 hover:bg-slate-50",
             ]}

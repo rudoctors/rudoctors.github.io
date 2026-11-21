@@ -78,6 +78,23 @@ const cityPath = `/cities/${citySlug(city)}/`;
       )
     }
 
+    <div class="mt-4 flex flex-wrap gap-2 text-xs">
+      <a href={`/doctors/?city=${city}`} class="chip bg-brand-50 text-brand-700 font-semibold ring-1 ring-brand-600/20">
+        Все в г. {cityRu} ({doctors.length})
+      </a>
+      {doctors.some((d) => d.origin === "rs") && (
+        <a href={`/doctors/?city=${city}&origin=rs`} class="chip bg-rose-50 text-rose-700 hover:bg-rose-100 font-semibold ring-1 ring-rose-600/20 flex items-center gap-1 transition">
+          <span aria-hidden="true">🇷🇸</span>
+          <span>Сербские врачи ({doctors.filter((d) => d.origin === "rs").length})</span>
+        </a>
+      )}
+      {doctors.some((d) => d.origin !== "rs") && (
+        <a href={`/doctors/?city=${city}&origin=ru`} class="chip hover:bg-slate-200 transition">
+          Русскоязычные врачи ({doctors.filter((d) => d.origin !== "rs").length})
+        </a>
+      )}
+    </div>
+
     <div class="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
       {doctors.map((d) => <DoctorCard doctor={d} />)}
     </div>

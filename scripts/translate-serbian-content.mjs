@@ -7,7 +7,6 @@
  * Usage:
  *   node scripts/translate-serbian-content.mjs
  */
-import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 export const SERBIAN_SPECIALTY_MAP = {
