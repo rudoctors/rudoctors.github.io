@@ -1,0 +1,40 @@
+{
+  "slug": "gordana-radovanovic",
+  "name": "Gordana Radovanović",
+  "nameRu": "Гордана Радованович",
+  "origin": "rs",
+  "specializations": [
+    "pediatrician"
+  ],
+  "city": "Lazarevac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Viva",
+      "city": "Lazarevac"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/pedijatrija/opsti-pedijatar/gordana-radovanovic-lazarevac-647.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "201882",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

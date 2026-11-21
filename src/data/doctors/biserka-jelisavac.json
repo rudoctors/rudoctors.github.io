@@ -1,0 +1,34 @@
+{
+  "slug": "biserka-jelisavac",
+  "name": "Biserka Jelisavac",
+  "nameRu": "Бисерка Елисавац",
+  "origin": "rs",
+  "specializations": [
+    "pediatrician"
+  ],
+  "city": "Novi Sad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dr Biserka Jelisavac",
+      "city": "Novi Sad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/pedijatrija/opsti-pedijatar/biserka-jelisavac-novi-sad-611.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

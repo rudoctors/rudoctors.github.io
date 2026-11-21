@@ -1,0 +1,37 @@
+{
+  "slug": "gordana-acimovic",
+  "name": "Gordana Aćimović",
+  "nameRu": "Гордана Ачимович",
+  "origin": "rs",
+  "specializations": [
+    "plastic_surgeon"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/gordana-acimovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "105570",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

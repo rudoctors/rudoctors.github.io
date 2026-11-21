@@ -1,0 +1,34 @@
+{
+  "slug": "radovan-milosevic",
+  "name": "Radovan Milošević",
+  "nameRu": "Радован Милошевич",
+  "origin": "rs",
+  "specializations": [
+    "urologist"
+  ],
+  "city": "Venac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Clinicanova",
+      "city": "Venac"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/hirurgija/urolog/radovan-milosevic-savski-venac-154.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

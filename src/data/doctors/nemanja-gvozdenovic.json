@@ -1,0 +1,44 @@
+{
+  "slug": "nemanja-gvozdenovic",
+  "name": "Nemanja Gvozdenović",
+  "nameRu": "Неманьа Гвозденович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Novi Sad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Bonadea",
+      "city": "Novi Sad",
+      "address": "Jovana Đorđevića 11, Novi Sad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38121557707"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/nemanja-gvozdenovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/99cca67cc8d5523bc36593a0e3215b8904802a26-1080x1080.png?w=520&h=520&fit=crop&auto=format&q=75",
+  "license": {
+    "number": "206031",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

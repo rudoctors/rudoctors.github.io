@@ -1,0 +1,38 @@
+{
+  "slug": "lenke-loboda-kiralj",
+  "name": "Lenke Loboda Kiralj",
+  "nameRu": "Ленке Лобода Кираль",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Vizus",
+      "city": "Subotica",
+      "address": "Evgenija Kumičića 19, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381659201222"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/lenke-loboda-kiralj"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/c5c72786accaff7733f5cea572ae397199c35510-1080x1350.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

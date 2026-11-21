@@ -1,0 +1,42 @@
+{
+  "slug": "milan-djukic",
+  "name": "Milan Đukić",
+  "nameRu": "Милан Джукич",
+  "origin": "rs",
+  "specializations": [
+    "cardiologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dr Žutić",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/pedijatrija/deciji-kardiolog/milan-djukic-novi-beograd-431.htm",
+    "https://stetoskop.info/doktor/milan-djukic"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "100272",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/275/milan-dukic.jpg"
+}

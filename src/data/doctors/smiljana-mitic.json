@@ -1,0 +1,34 @@
+{
+  "slug": "smiljana-mitic",
+  "name": "Smiljana  Mitić",
+  "nameRu": "Смильана  Митич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Branislava Smiljković stomatološka ordinacija",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/smiljana--mitic-novi-beograd-264.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

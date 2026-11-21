@@ -1,0 +1,34 @@
+{
+  "slug": "uros-borisev",
+  "name": "Uroš Borišev",
+  "nameRu": "Урош Боришев",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Novi Sad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Repić",
+      "city": "Novi Sad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/proteticar/uros-borisev-novi-sad-603.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

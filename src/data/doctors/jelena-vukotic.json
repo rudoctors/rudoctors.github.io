@@ -1,0 +1,34 @@
+{
+  "slug": "jelena-vukotic",
+  "name": "Jelena Vukotić",
+  "nameRu": "Елена Вукотич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka ordinacija Milosavljević",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/jelena-vukotic-palilula-304.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

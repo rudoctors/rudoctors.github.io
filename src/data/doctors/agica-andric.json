@@ -1,0 +1,38 @@
+{
+  "slug": "agica-andric",
+  "name": "agica Andrić",
+  "nameRu": "агица Андрич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Novi Sad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Specijalistička Ordinacija Internum",
+      "city": "Novi Sad",
+      "address": "Bulevar Oslobođenja 151, Novi Sad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38163246030"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/dragica-andric"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/c5c72786accaff7733f5cea572ae397199c35510-1080x1350.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

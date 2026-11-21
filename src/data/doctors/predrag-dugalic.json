@@ -1,0 +1,49 @@
+{
+  "slug": "predrag-dugalic",
+  "name": "Predrag Dugalić",
+  "nameRu": "Предраг Дугалич",
+  "origin": "rs",
+  "specializations": [
+    "gastroenterologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dom Zdravlja Park Medica",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Medica Interna Plus",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Moja Poliklinika",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Poliklinika Nela Medica",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381600687461"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/predrag-dugalic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/27196/Nenaslovljeni-dizajn.png"
+}

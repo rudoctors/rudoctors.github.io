@@ -1,0 +1,31 @@
+{
+  "slug": "dusan-nejkovic",
+  "name": "Dušan Nejković",
+  "nameRu": "Душан Нейкович",
+  "origin": "rs",
+  "specializations": [
+    "neurologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/dusan-nejkovic"
+  ],
+  "updatedAt": "2026-11-21"
+}

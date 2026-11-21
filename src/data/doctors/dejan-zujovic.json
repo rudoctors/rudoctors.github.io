@@ -1,0 +1,34 @@
+{
+  "slug": "dejan-zujovic",
+  "name": "Dejan Žujović",
+  "nameRu": "Дейан Жуйович",
+  "origin": "rs",
+  "specializations": [
+    "pulmonologist"
+  ],
+  "city": "Venac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Intrnistička ordinacija UltraMedik",
+      "city": "Venac"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/interna-medicina/pulmolog/dejan-zujovic-savski-venac-395.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

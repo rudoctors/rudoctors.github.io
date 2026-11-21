@@ -1,0 +1,38 @@
+{
+  "slug": "slobodanka-petkovic",
+  "name": "Slobodanka Petković",
+  "nameRu": "Слободанка Петкович",
+  "origin": "rs",
+  "specializations": [
+    "gynecologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/slobodanka-petkovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/21/slobodanka-petkovic.jpg",
+  "license": {
+    "number": "105010",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

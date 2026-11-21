@@ -1,0 +1,43 @@
+{
+  "slug": "radovan-milenkovic",
+  "name": "Radovan Milenković",
+  "nameRu": "Радован Миленкович",
+  "origin": "rs",
+  "specializations": [
+    "radiologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika Panacea",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381600687461"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/radovan-milenkovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/218/radovan-milenkovic.jpg",
+  "license": {
+    "number": "105839",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

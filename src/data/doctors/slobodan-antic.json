@@ -1,0 +1,46 @@
+{
+  "slug": "slobodan-antic",
+  "name": "Slobodan Antić",
+  "nameRu": "Слободан Антич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Kruševac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dentoelit",
+      "city": "Kruševac"
+    },
+    {
+      "clinic": "Life Impuls",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/slobodan-antic-krusevac-70.htm",
+    "https://stetoskop.info/doktor/slobodan-antic-2"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "302257",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/2489/slobodan-antic.png"
+}

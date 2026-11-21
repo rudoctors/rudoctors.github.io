@@ -1,0 +1,43 @@
+{
+  "slug": "rastko-maglic",
+  "name": "Rastko Maglić",
+  "nameRu": "Растко Маглич",
+  "origin": "rs",
+  "specializations": [
+    "gynecologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Medicinski sistem Beograd - MSB",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381112068351"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/rastko-maglic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/167/rastko-maglic.jpg",
+  "license": {
+    "number": "104077",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

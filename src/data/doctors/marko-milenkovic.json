@@ -1,0 +1,40 @@
+{
+  "slug": "marko-milenkovic",
+  "name": "Marko Milenković",
+  "nameRu": "Марко Миленкович",
+  "origin": "rs",
+  "specializations": [
+    "dental_implantologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Eurodent",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/implantolog/marko-milenkovic-cukarica-51.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "308395",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

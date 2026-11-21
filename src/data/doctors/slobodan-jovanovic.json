@@ -1,0 +1,32 @@
+{
+  "slug": "slobodan-jovanovic",
+  "name": "Slobodan Jovanović",
+  "nameRu": "Слободан Йованович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/slobodan-jovanovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/1907/slobodan-jovanovic.png"
+}

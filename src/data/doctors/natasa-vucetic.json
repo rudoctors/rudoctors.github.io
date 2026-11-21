@@ -1,0 +1,43 @@
+{
+  "slug": "natasa-vucetic",
+  "name": "Nataša Vučetić",
+  "nameRu": "Наташа Вучетич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Vrbas",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika Dr Božičić",
+      "city": "Vrbas",
+      "address": "JNA 3, Vrbas"
+    },
+    {
+      "clinic": "Eumed",
+      "city": "Bačka Topola",
+      "address": "Svetosavska 5, Bačka Topola"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "0648254141"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/natasa-vucetic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/c5c72786accaff7733f5cea572ae397199c35510-1080x1350.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

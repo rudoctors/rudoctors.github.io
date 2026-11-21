@@ -1,0 +1,34 @@
+{
+  "slug": "milijan-bondzulic",
+  "name": "Milijan Bondžulić",
+  "nameRu": "Милийан Бонджулич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Uzice",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Bondžulić",
+      "city": "Uzice"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/proteticar/milijan-bondzulic-uzice-585.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

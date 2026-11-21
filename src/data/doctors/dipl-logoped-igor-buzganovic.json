@@ -1,0 +1,32 @@
+{
+  "slug": "dipl-logoped-igor-buzganovic",
+  "name": "Dipl. logoped Igor Buzganović",
+  "nameRu": "Дипл. логопед Игор Бузганович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381641897281, +3816115"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/igor-buzganovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/619/igor-buzganovic.jpg"
+}

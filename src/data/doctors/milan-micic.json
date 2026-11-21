@@ -1,0 +1,40 @@
+{
+  "slug": "milan-micic",
+  "name": "Milan  Mićić",
+  "nameRu": "Милан  Мичич",
+  "origin": "rs",
+  "specializations": [
+    "urologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Nada",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/hirurgija/urolog/milan--micic-cukarica-486.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "106196",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

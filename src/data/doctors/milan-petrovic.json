@@ -1,0 +1,40 @@
+{
+  "slug": "milan-petrovic",
+  "name": "Milan  Petrović",
+  "nameRu": "Милан  Петрович",
+  "origin": "rs",
+  "specializations": [
+    "surgeon"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Nada",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/hirurgija/opsti-hirurg/milan--petrovic-cukarica-485.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "308916",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "mila-milicic",
+  "name": "Mila Miličić",
+  "nameRu": "Мила Миличич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Jagodina",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Miličić",
+      "city": "Jagodina"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/mila-milicic-jagodina-553.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "tomislav-tomica-kostic",
+  "name": "Tomislav (Tomica) Kostić",
+  "nameRu": "Томислав (Томица) Костич",
+  "origin": "rs",
+  "specializations": [
+    "cardiologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika Human",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38163687447"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/tomislav-kostic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/2497/tomislav-tomica-kostic.png"
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "sci-med-aleksandar-radulovic",
+  "name": "sci med Aleksandar Radulović",
+  "nameRu": "сци мед Александар Радулович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika Sente",
+      "city": "Subotica",
+      "address": "Lajoša Joa 4A, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38124520698"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/aleksandar-radulovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/154c148c39e0a03b2d88541842b5319fb3aa6dcb-2460x3690.jpg?w=520&h=520&fit=crop&auto=format&q=75"
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "dragan-lugonjic",
+  "name": "Dragan Lugonjic",
+  "nameRu": "Драган Лугоньиц",
+  "origin": "rs",
+  "specializations": [
+    "gynecologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/dragan-lugonjic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/33/dragan-lugonjic.jpg",
+  "license": {
+    "number": "202195",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

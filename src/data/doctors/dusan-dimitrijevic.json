@@ -1,0 +1,34 @@
+{
+  "slug": "dusan-dimitrijevic",
+  "name": "Dušan Dimitrijević",
+  "nameRu": "Душан Димитрийевич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dental - Art",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/parodontolog/dusan-dimitrijevic-nis-730.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "dunja-jaksic",
+  "name": "Dunja Jakšić",
+  "nameRu": "Дуньа Йакшич",
+  "origin": "rs",
+  "specializations": [
+    "gastroenterologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381641250658"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/dunja-jaksic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/1295/dunja-jaksic.jpg"
+}

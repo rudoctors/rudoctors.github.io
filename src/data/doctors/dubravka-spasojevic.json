@@ -1,0 +1,34 @@
+{
+  "slug": "dubravka-spasojevic",
+  "name": "Dubravka Spasojević",
+  "nameRu": "Дубравка Спасойевич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Grad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka ordinacija Gentle touch",
+      "city": "Grad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/dubravka-spasojevic-stari-grad-225.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "struk-nutr-dijet-natalija-jovanic",
+  "name": "Struk. nutr. dijet. Natalija Jovanić",
+  "nameRu": "Струк. нутр. дийет. Наталийа Йованич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Megaclinic",
+      "city": "Subotica",
+      "address": "Aleja Maršala Tita 33, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38124557789"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/natalija-jovanic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/230aaf092346bfa50a933a59e1305837d3976caa-1080x1350.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

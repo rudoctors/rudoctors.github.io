@@ -1,0 +1,34 @@
+{
+  "slug": "maja-radunovic",
+  "name": "Maja Radunović",
+  "nameRu": "Майа Радунович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dental Studio Maja",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/maja-radunovic-vracar-288.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "tijana-vasiljevic",
+  "name": "Tijana Vasiljević",
+  "nameRu": "Тийана Васильевич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Timident",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/ortodont/tijana-vasiljevic-nis-689.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

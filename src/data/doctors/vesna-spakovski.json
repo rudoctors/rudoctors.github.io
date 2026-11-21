@@ -1,0 +1,34 @@
+{
+  "slug": "vesna-spakovski",
+  "name": "Vesna Špakovski",
+  "nameRu": "Весна Шпаковски",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Whitedent",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/proteticar/vesna-spakovski-nis-711.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

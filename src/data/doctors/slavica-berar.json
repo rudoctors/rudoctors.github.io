@@ -1,0 +1,43 @@
+{
+  "slug": "slavica-berar",
+  "name": "Slavica Berar",
+  "nameRu": "Славица Берар",
+  "origin": "rs",
+  "specializations": [
+    "gp"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Porodični lekar Slavica",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38163687463"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/slavica-berar"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/201/slavica-berar.png",
+  "license": {
+    "number": "207301",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

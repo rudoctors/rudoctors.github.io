@@ -1,0 +1,37 @@
+{
+  "slug": "slavica-pavlovic",
+  "name": "Slavica Pavlović",
+  "nameRu": "Славица Павлович",
+  "origin": "rs",
+  "specializations": [
+    "gynecologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/slavica-pavlovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "107913",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

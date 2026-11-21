@@ -1,0 +1,32 @@
+{
+  "slug": "dejan-stevanovic",
+  "name": "Dejan Stevanović",
+  "nameRu": "Дейан Стеванович",
+  "origin": "rs",
+  "specializations": [
+    "child_psychiatrist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38163687447"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/dejan-stevanovic-2"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/320/dejan-stevanovic-1.jpg"
+}

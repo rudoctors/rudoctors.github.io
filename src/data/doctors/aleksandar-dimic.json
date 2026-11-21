@@ -1,0 +1,58 @@
+{
+  "slug": "aleksandar-dimic",
+  "name": "Aleksandar Dimić",
+  "nameRu": "Александар Димич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Rakovica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "AD dent",
+      "city": "Rakovica"
+    },
+    {
+      "clinic": "Dom Zdravlja Maja",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Family Medica 21 - Niš",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Family Medica 22 - Vranje",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Poliklinika Natus",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/aleksandar-dimic-rakovica-213.htm",
+    "https://stetoskop.info/doktor/aleksandar-dimic"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "306039",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/1966/aleksandar-dimic.webp"
+}

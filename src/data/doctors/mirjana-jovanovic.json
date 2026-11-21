@@ -1,0 +1,44 @@
+{
+  "slug": "mirjana-jovanovic",
+  "name": "Mirjana Jovanović",
+  "nameRu": "Мирйана Йованович",
+  "origin": "rs",
+  "specializations": [
+    "pediatrician"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Zvrk",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Acibadem Bel Medic",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Opšta bolnica Avala",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/pedijatrija/opsti-pedijatar/mirjana-jovanovic-zvezdara-215.htm",
+    "https://stetoskop.info/doktor/mirjana-jovanovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/1528/mirjana-jovanovic.jpg"
+}

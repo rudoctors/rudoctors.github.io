@@ -1,0 +1,37 @@
+{
+  "slug": "zorana-vasiljevic",
+  "name": "Zorana Vasiljević",
+  "nameRu": "Зорана Васильевич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/zorana-vasiljevic"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "100010",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

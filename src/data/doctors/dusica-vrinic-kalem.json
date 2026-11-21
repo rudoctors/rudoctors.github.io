@@ -1,0 +1,31 @@
+{
+  "slug": "dusica-vrinic-kalem",
+  "name": "Dušica Vrinić Kalem",
+  "nameRu": "Душица Вринич Калем",
+  "origin": "rs",
+  "specializations": [
+    "gastroenterologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/dusica-vrinic-kalem"
+  ],
+  "updatedAt": "2026-11-21"
+}

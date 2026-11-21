@@ -1,0 +1,34 @@
+{
+  "slug": "radivoje-radosavljevic",
+  "name": "Radivoje Radosavljević",
+  "nameRu": "Радивойе Радосавльевич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dentalplus22",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/proteticar/radivoje-radosavljevic-vracar-93.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

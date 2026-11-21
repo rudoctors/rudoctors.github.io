@@ -1,0 +1,38 @@
+{
+  "slug": "livija-despenic",
+  "name": "Livija Despenić",
+  "nameRu": "Ливийа Деспенич",
+  "origin": "rs",
+  "specializations": [
+    "neurologist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Megaclinic",
+      "city": "Subotica",
+      "address": "Aleja Maršala Tita 33, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38124557789"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/livija-despenic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/85ace76339e83dc1eb9a07e0eba441aab85b8d83-1200x1444.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

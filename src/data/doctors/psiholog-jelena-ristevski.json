@@ -1,0 +1,31 @@
+{
+  "slug": "psiholog-jelena-ristevski",
+  "name": "Psiholog Jelena Ristevski",
+  "nameRu": "Психолог Елена Ристевски",
+  "origin": "rs",
+  "specializations": [
+    "psychiatrist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/jelena-ristevski"
+  ],
+  "updatedAt": "2026-11-21"
+}

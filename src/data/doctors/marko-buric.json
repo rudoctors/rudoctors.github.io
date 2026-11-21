@@ -1,0 +1,34 @@
+{
+  "slug": "marko-buric",
+  "name": "Marko Burić",
+  "nameRu": "Марко Бурич",
+  "origin": "rs",
+  "specializations": [
+    "surgeon"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatoloski centar Nis",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/oralni-hirurg/marko-buric-nis-717.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

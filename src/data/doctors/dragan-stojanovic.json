@@ -1,0 +1,34 @@
+{
+  "slug": "dragan-stojanovic",
+  "name": "Dragan Stojanović",
+  "nameRu": "Драган Стойанович",
+  "origin": "rs",
+  "specializations": [
+    "surgeon"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Nis Dental",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/oralni-hirurg/dragan--stojanovic-nis-712.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

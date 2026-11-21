@@ -1,0 +1,40 @@
+{
+  "slug": "gordana-ilkic",
+  "name": "Gordana Ilkić",
+  "nameRu": "Гордана Илкич",
+  "origin": "rs",
+  "specializations": [
+    "pediatrician"
+  ],
+  "city": "Pančevo",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Panpedijatrija",
+      "city": "Pančevo"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/pedijatrija/opsti-pedijatar/gordana-ilkic-pancevo-529.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "205281",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

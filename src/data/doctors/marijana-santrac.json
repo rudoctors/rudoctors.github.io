@@ -1,0 +1,34 @@
+{
+  "slug": "marijana-santrac",
+  "name": "Marijana Santrač",
+  "nameRu": "Марийана Сантрач",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Pančevo",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Biodent",
+      "city": "Pančevo"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/marijana-santrac-pancevo-534.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

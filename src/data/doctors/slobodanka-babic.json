@@ -1,0 +1,43 @@
+{
+  "slug": "slobodanka-babic",
+  "name": "Slobodanka Babić",
+  "nameRu": "Слободанка Бабич",
+  "origin": "rs",
+  "specializations": [
+    "gynecologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Vaša kuća zdravlja",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38163687460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/slobodanka-babic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/186/slobodanka-babic.jpg",
+  "license": {
+    "number": "107234",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

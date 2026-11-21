@@ -1,0 +1,37 @@
+{
+  "slug": "ratko-tomasevic",
+  "name": "Ratko Tomašević",
+  "nameRu": "Ратко Томашевич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/ratko-tomasevic"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "108555",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

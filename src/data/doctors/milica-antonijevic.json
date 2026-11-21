@@ -1,0 +1,43 @@
+{
+  "slug": "milica-antonijevic",
+  "name": "Milica Antonijević",
+  "nameRu": "Милица Антонийевич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Ginea",
+      "city": "Subotica",
+      "address": "Ivana Gorana Kovačića 3, Subotica"
+    },
+    {
+      "clinic": "NovaMed",
+      "city": "Subotica",
+      "address": "Banijska 57, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38124553766"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/milica-antonijevic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/9dc04633fa9d6b276e4fe6d42792f3dd3a5f9b66-1080x1080.jpg?w=520&h=520&fit=crop&auto=format&q=75"
+}

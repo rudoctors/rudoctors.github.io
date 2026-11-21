@@ -1,0 +1,38 @@
+{
+  "slug": "nina-nadjalin-popov",
+  "name": "Nina Nađalin Popov",
+  "nameRu": "Нина Наджалин Попов",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Zrenjanin",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Popov",
+      "city": "Zrenjanin",
+      "address": "Ive Lole Ribara 7, Zrenjanin"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38123528840"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/nina-nadjalin-popov"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/bd3c45004b8ac5de1c1b38264d2547955132537a-1080x1080.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

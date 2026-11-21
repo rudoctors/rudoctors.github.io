@@ -1,0 +1,34 @@
+{
+  "slug": "hidajet-malicevic",
+  "name": "Hidajet Malićević",
+  "nameRu": "Хидайет Маличевич",
+  "origin": "rs",
+  "specializations": [
+    "pulmonologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dr Žutić",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/interna-medicina/pulmolog/hidajet-malicevic-novi-beograd-445.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

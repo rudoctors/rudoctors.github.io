@@ -1,171 +1,158 @@
+#!/usr/bin/env node
 /**
- * Scraper for Stetoskop.info doctor profiles.
- * Extracts: structured Physician JSON-LD, work affiliations, bio, photo, contact, and reviews.
- *
- * Usage:
- *   node scripts/scrape-stetoskop.mjs [--limit=50] [--slug=bojan-jovanovic] [--city=beograd]
- * Output:
- *   scripts/stetoskop-raw.json
+ * Высокоскоростной параллельный скрапер Stetoskop.info (1000 врачей).
  */
-import fs from "node:fs";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const ROOT = path.join(__dirname, "..");
-const OUT_FILE = path.join(ROOT, "scripts", "stetoskop-raw.json");
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const SITEMAP_URL = "https://stetoskop.info/sitemap-lekari.xml";
-const USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const SITEMAP_URL = 'https://stetoskop.info/sitemap-lekari.xml';
+const OUT_FILE = path.join(__dirname, '..', 'src', 'data', 'sources', 'serbian', 'raw-stetoskop.json');
+const CONCURRENCY = 15;
+const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36';
 
 function cleanDoctorTitle(name) {
-  return String(name || "")
-    .replace(/^(Prim\.\s*|Prof\.\s*|Doc\.\s*|Spec\.\s*|dr\s*med\.\s*|dr\s*sci\.\s*|dr\s*|mr\s*sci\.\s*|mr\s*)+/gi, "")
+  return String(name || '')
+    .replace(/^(Prim\.\s*|Prof\.\s*|Doc\.\s*|Spec\.\s*|dr\s*med\.\s*|dr\s*sci\.\s*|dr\s*|mr\s*sci\.\s*|mr\s*)+/gi, '')
     .trim();
 }
 
 function cleanHtml(html) {
-  return String(html || "")
-    .replace(/<[^>]+>/g, " ")
+  return String(html || '')
+    .replace(/<[^>]+>/g, ' ')
     .replace(/&quot;/g, '"')
     .replace(/&#39;/g, "'")
-    .replace(/&amp;/g, "&")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&nbsp;/g, " ")
-    .replace(/\s+/g, " ")
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/\s+/g, ' ')
     .trim();
 }
 
-async function fetchDoctorProfile(url) {
-  try {
-    const res = await fetch(url, { headers: { "User-Agent": USER_AGENT } });
-    if (!res.ok) {
-      console.warn(`[stetoskop] HTTP ${res.status} for ${url}`);
-      return null;
-    }
-    const html = await res.text();
-
-    // 1. Parse JSON-LD
-    let physicianLd = null;
-    const jsonLdRegex = /<script type="application\/ld\+json">([\s\S]*?)<\/script>/gi;
-    let match;
-    while ((match = jsonLdRegex.exec(html)) !== null) {
-      try {
-        const parsed = JSON.parse(match[1]);
-        if (parsed["@type"] === "Physician") {
-          physicianLd = parsed;
-          break;
-        }
-      } catch {}
-    }
-
-    const rawName = physicianLd?.name || "";
-    const cleanName = cleanDoctorTitle(rawName);
-    const photo = physicianLd?.image || undefined;
-    const bioLd = physicianLd?.description || "";
-    const phone = physicianLd?.telephone || undefined;
-    const rawSpecialties = physicianLd?.medicalSpecialty || [];
-    const affiliations = Array.isArray(physicianLd?.hospitalAffiliation)
-      ? physicianLd.hospitalAffiliation.map((a) => ({
-          clinic: a.name || "",
-          url: a.url || "",
-        }))
-      : [];
-
-    // 2. Extract sections from HTML if present
-    const bioSectionMatch = html.match(/<h[23][^>]*>O lekaru<\/h[23]>([\s\S]*?)<\/(?:section|div)>/i);
-    const bioText = bioSectionMatch ? cleanHtml(bioSectionMatch[1]) : bioLd;
-
-    const experienceMatch = html.match(/<h[23][^>]*>Radno iskustvo<\/h[23]>([\s\S]*?)<\/(?:section|div)>/i);
-    const experienceText = experienceMatch ? cleanHtml(experienceMatch[1]) : "";
-
-    const educationMatch = html.match(/<h[23][^>]*>Obrazovanje<\/h[23]>([\s\S]*?)<\/(?:section|div)>/i);
-    const educationText = educationMatch ? cleanHtml(educationMatch[1]) : "";
-
-    // 3. Extract ratings / questions count
-    let rating = 0;
-    let reviewCount = 0;
-    const ratingMatch = html.match(/<span[^>]*class="[^"]*ocena[^"]*"[^>]*>([\d.,]+)<\/span>/i);
-    if (ratingMatch) {
-      rating = parseFloat(ratingMatch[1].replace(",", "."));
-    }
-
-    const slug = url.replace(/\/+$/, "").split("/").pop();
-
-    return {
-      source: "stetoskop.info",
-      sourceUrl: url,
-      slug,
-      rawName,
-      name: cleanName,
-      photo,
-      phone,
-      specialties: rawSpecialties,
-      workplaces: affiliations,
-      bio: bioText,
-      experienceText,
-      educationText,
-      rating: rating > 0 ? rating : undefined,
-      reviewCount,
-    };
-  } catch (err) {
-    console.error(`[stetoskop] Error fetching ${url}:`, err.message);
-    return null;
-  }
+async function fetchText(url) {
+  const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return res.text();
 }
 
-async function getDoctorUrlsFromSitemap(limit = 100) {
-  console.log(`[stetoskop] Fetching sitemap: ${SITEMAP_URL} ...`);
-  const res = await fetch(SITEMAP_URL, { headers: { "User-Agent": USER_AGENT } });
-  if (!res.ok) throw new Error(`Failed to load sitemap: ${res.status}`);
-  const xml = await res.text();
-  const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-  console.log(`[stetoskop] Found total ${urls.length} doctor URLs in sitemap.`);
-  return urls.slice(0, limit);
+function parseDoctorPage(html, url) {
+  let physician = null;
+  const jsonLdRegex = /<script type="application\/ld\+json">([\s\S]*?)<\/script>/gi;
+  let match;
+  while ((match = jsonLdRegex.exec(html)) !== null) {
+    try {
+      const parsed = JSON.parse(match[1]);
+      if (parsed['@type'] === 'Physician') {
+        physician = parsed;
+        break;
+      }
+    } catch {}
+  }
+
+  if (!physician) return null;
+
+  const rawName = physician.name || '';
+  const cleanName = cleanDoctorTitle(rawName);
+  if (!cleanName) return null;
+
+  const photo = physician.image || undefined;
+  const bioLd = physician.description || '';
+  const phone = physician.telephone || undefined;
+  const rawSpecialties = physician.medicalSpecialty || [];
+
+  const affiliations = Array.isArray(physician.hospitalAffiliation)
+    ? physician.hospitalAffiliation.map((a) => ({
+        clinic: a.name || '',
+        url: a.url || '',
+        city: 'Belgrade'
+      }))
+    : [];
+
+  const address = physician.address || {};
+  const city = address.addressLocality || 'Belgrade';
+
+  const bioSectionMatch = html.match(/<h[23][^>]*>O lekaru<\/h[23]>([\s\S]*?)<\/(?:section|div)>/i);
+  const bioText = bioSectionMatch ? cleanHtml(bioSectionMatch[1]) : bioLd;
+
+  const experienceMatch = html.match(/<h[23][^>]*>Radno iskustvo<\/h[23]>([\s\S]*?)<\/(?:section|div)>/i);
+  const experienceText = experienceMatch ? cleanHtml(experienceMatch[1]) : '';
+
+  return {
+    source: 'stetoskop.info',
+    url,
+    name: cleanName,
+    fullNameWithTitle: rawName,
+    photo,
+    phone,
+    city,
+    specialties: rawSpecialties,
+    workplaces: affiliations,
+    bio: bioText,
+    experienceText,
+    scrapedAt: new Date().toISOString()
+  };
+}
+
+async function getDoctorUrls(limit = 1000) {
+  console.log(`[*] Загрузка sitemap: ${SITEMAP_URL}...`);
+  const xml = await fetchText(SITEMAP_URL);
+  const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
+  console.log(`    -> Найдено ${locs.length} профилей на Stetoskop.info.`);
+  return locs.slice(0, limit);
+}
+
+async function parallelFetchAll(urls) {
+  const results = [];
+  let index = 0;
+  let activeWorkers = 0;
+
+  return new Promise((resolve) => {
+    function next() {
+      if (index >= urls.length && activeWorkers === 0) {
+        return resolve(results);
+      }
+
+      while (activeWorkers < CONCURRENCY && index < urls.length) {
+        const i = index++;
+        const url = urls[i];
+        activeWorkers++;
+
+        fetchText(url)
+          .then((html) => {
+            const data = parseDoctorPage(html, url);
+            if (data) results.push(data);
+          })
+          .catch(() => {})
+          .finally(() => {
+            activeWorkers--;
+            if (results.length % 100 === 0 || index >= urls.length) {
+              console.log(`    [Stetoskop] Прогресс: ${results.length}/${urls.length}...`);
+            }
+            next();
+          });
+      }
+    }
+
+    next();
+  });
 }
 
 async function main() {
   const args = process.argv.slice(2);
-  let limit = 20;
-  let targetSlug = null;
+  const limitIdx = args.indexOf('--limit');
+  const limit = limitIdx !== -1 ? parseInt(args[limitIdx + 1], 10) : 1000;
 
-  for (const arg of args) {
-    if (arg.startsWith("--limit=")) limit = parseInt(arg.split("=")[1], 10);
-    if (arg.startsWith("--slug=")) targetSlug = arg.split("=")[1];
-  }
-
-  const results = [];
-
-  if (targetSlug) {
-    const url = `https://stetoskop.info/doktor/${targetSlug}`;
-    console.log(`[stetoskop] Scraping single doctor: ${url} ...`);
-    const doc = await fetchDoctorProfile(url);
-    if (doc) results.push(doc);
-  } else {
-    const urls = await getDoctorUrlsFromSitemap(limit);
-    console.log(`[stetoskop] Scraping ${urls.length} doctor profiles ...`);
-
-    for (let i = 0; i < urls.length; i++) {
-      const u = urls[i];
-      process.stdout.write(`[${i + 1}/${urls.length}] ${u} ... `);
-      const doc = await fetchDoctorProfile(u);
-      if (doc) {
-        results.push(doc);
-        console.log(`OK: ${doc.name} (${doc.specialties.join(", ")})`);
-      } else {
-        console.log("SKIP");
-      }
-      // Gentle throttle
-      await new Promise((r) => setTimeout(r, 200));
-    }
-  }
-
-  fs.writeFileSync(OUT_FILE, JSON.stringify(results, null, 2), "utf8");
-  console.log(`[stetoskop] Saved ${results.length} doctor profiles to ${OUT_FILE}`);
+  fs.mkdirSync(path.dirname(OUT_FILE), { recursive: true });
+  const urls = await getDoctorUrls(limit);
+  console.log(`[*] Запуск параллельного сбора ${urls.length} врачей со Stetoskop.info (потоков: ${CONCURRENCY})...`);
+  const doctors = await parallelFetchAll(urls);
+  fs.writeFileSync(OUT_FILE, JSON.stringify(doctors, null, 2), 'utf-8');
+  console.log(`[✓] Stetoskop.info: сохранено ${doctors.length} врачей в ${OUT_FILE}`);
 }
 
-main().catch((err) => {
-  console.error("[stetoskop] Fatal error:", err);
-  process.exit(1);
-});
+main().catch(console.error);

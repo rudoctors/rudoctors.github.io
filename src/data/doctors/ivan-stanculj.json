@@ -1,0 +1,37 @@
+{
+  "slug": "ivan-stanculj",
+  "name": "Ivan Stanculj",
+  "nameRu": "Иван Станцуль",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/ivan-stanculj"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "118350",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

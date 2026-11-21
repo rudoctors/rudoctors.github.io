@@ -1,0 +1,34 @@
+{
+  "slug": "tatjana-bjekic",
+  "name": "Tatjana  Bjekić",
+  "nameRu": "Татйана  Бйекич",
+  "origin": "rs",
+  "specializations": [
+    "pediatrician"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Zvrk",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/pedijatrija/opsti-pedijatar/tatjana--bjekic-zvezdara-214.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

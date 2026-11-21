@@ -1,0 +1,37 @@
+{
+  "slug": "jelena-bosiljkic-pesic",
+  "name": "Jelena Bosiljkić Pešić",
+  "nameRu": "Елена Босилькич Пешич",
+  "origin": "rs",
+  "specializations": [
+    "gynecologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dea Donna - ginekološka ordinacija",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38163687460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/jelena-bosiljkic-pesic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/2086/jelena-bosiljkic-pesic.png"
+}

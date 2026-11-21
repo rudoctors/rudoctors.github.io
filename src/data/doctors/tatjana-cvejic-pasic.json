@@ -1,0 +1,37 @@
+{
+  "slug": "tatjana-cvejic-pasic",
+  "name": "Tatjana Cvejić Pašić",
+  "nameRu": "Татйана Цвейич Пашич",
+  "origin": "rs",
+  "specializations": [
+    "gastroenterologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika Medikom",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38163687463"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/tatjana-cvejic-pasic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/2427/tatjana-cvejic-pasic.webp"
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "pavle-randjelovic",
+  "name": "Pavle Ranđelović",
+  "nameRu": "Павле Ранджелович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/pavle-randjelovic"
+  ],
+  "updatedAt": "2026-11-21"
+}

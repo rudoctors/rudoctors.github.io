@@ -1,0 +1,32 @@
+{
+  "slug": "dejan-milutinovic",
+  "name": "Dejan Milutinović",
+  "nameRu": "Дейан Милутинович",
+  "origin": "rs",
+  "specializations": [
+    "plastic_surgeon"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381113391258"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/dejan-milutinovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/295/dejan-milutinovic.jpg"
+}

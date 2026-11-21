@@ -1,0 +1,38 @@
+{
+  "slug": "jovana-kovacic",
+  "name": "Jovana Kovačić",
+  "nameRu": "Йована Ковачич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Sombor",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Cardiomedica Dr Bošnjak",
+      "city": "Sombor",
+      "address": "Čonopljanski put 15c, Sombor"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38125426791"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/jovana-kovacic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/8ef96b786efb543e0fb63eb45545248361cb7a59-1080x1080.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

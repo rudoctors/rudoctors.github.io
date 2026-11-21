@@ -1,0 +1,44 @@
+{
+  "slug": "ivana-kupresanin",
+  "name": "Ivana Kuprešanin",
+  "nameRu": "Ивана Купрешанин",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Kuprešanin",
+      "city": "Subotica",
+      "address": "Dimitrija Tucovića 6, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381643910040"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/ivana-kupresanin"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/15d9b6a837aabc9dd208aa49116d494fa6354f37-2533x2533.jpg?w=520&h=520&fit=crop&auto=format&q=75",
+  "license": {
+    "number": "105337",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

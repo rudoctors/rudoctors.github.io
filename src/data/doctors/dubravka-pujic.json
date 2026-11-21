@@ -1,0 +1,34 @@
+{
+  "slug": "dubravka-pujic",
+  "name": "Dubravka Pujić",
+  "nameRu": "Дубравка Пуйич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Pančevo",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka ordinacija Dubravka Pujić",
+      "city": "Pančevo"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/dubravka-pujic-pancevo-551.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

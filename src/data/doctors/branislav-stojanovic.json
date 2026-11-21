@@ -1,0 +1,34 @@
+{
+  "slug": "branislav-stojanovic",
+  "name": "Branislav Stojanović",
+  "nameRu": "Бранислав Стойанович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Implant Centar Stojanović",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/branislav-stojanovic-zemun-245.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

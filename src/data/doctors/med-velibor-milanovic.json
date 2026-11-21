@@ -1,0 +1,45 @@
+{
+  "slug": "med-velibor-milanovic",
+  "name": "med Velibor Milanović",
+  "nameRu": "мед Велибор Миланович",
+  "origin": "rs",
+  "specializations": [
+    "pediatrician"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika Dr Bošković",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Vaša kuća zdravlja",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "VEGA ORL",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381112660384"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/velibor-milanovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/182/velibor-milanovic.jpg"
+}

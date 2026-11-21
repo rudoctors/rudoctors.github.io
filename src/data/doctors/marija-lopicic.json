@@ -1,0 +1,34 @@
+{
+  "slug": "marija-lopicic",
+  "name": "Marija Lopičić",
+  "nameRu": "Марийа Лопичич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "A1 DENT",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/marija-lopicic-novi-beograd-88.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

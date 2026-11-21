@@ -1,0 +1,31 @@
+{
+  "slug": "jovo-tosevski",
+  "name": "Jovo Toševski",
+  "nameRu": "Йово Тошевски",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/jovo-tosevski"
+  ],
+  "updatedAt": "2026-11-21"
+}

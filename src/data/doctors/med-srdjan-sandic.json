@@ -1,0 +1,38 @@
+{
+  "slug": "med-srdjan-sandic",
+  "name": "med Srđan Sandić",
+  "nameRu": "мед Срджан Сандич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika Sente",
+      "city": "Subotica",
+      "address": "Lajoša Joa 4A, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38124520698"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/srdjan-sandic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/568f3133db60f573e51e717e9c3e50c1b9422531-2406x3150.jpg?w=520&h=520&fit=crop&auto=format&q=75"
+}

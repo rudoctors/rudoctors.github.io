@@ -1,0 +1,34 @@
+{
+  "slug": "vladimir-mrdja",
+  "name": "Vladimir Mrđa",
+  "nameRu": "Владимир Мрджа",
+  "origin": "rs",
+  "specializations": [
+    "pulmonologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika OMT",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/interna-medicina/pulmolog/vladimir-mrdja-zemun-368.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

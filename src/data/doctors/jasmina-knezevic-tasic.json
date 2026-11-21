@@ -1,0 +1,37 @@
+{
+  "slug": "jasmina-knezevic-tasic",
+  "name": "Jasmina Knežević Tasić",
+  "nameRu": "Йасмина Кнежевич Тасич",
+  "origin": "rs",
+  "specializations": [
+    "psychiatrist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Lorijen Centar",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381600687461"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/jasmina-knezevic-tasic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/190/jasmina-knezevic-tasic.png"
+}

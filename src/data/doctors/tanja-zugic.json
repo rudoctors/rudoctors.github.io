@@ -1,0 +1,34 @@
+{
+  "slug": "tanja-zugic",
+  "name": "Tanja Žugić",
+  "nameRu": "Таньа Жугич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka ordinacija Žugić",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/tanja-zugic-vracar-57.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

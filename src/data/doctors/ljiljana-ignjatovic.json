@@ -1,0 +1,37 @@
+{
+  "slug": "ljiljana-ignjatovic",
+  "name": "Ljiljana Ignjatović",
+  "nameRu": "Льильана Игньатович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/ljiljana-ignjatovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "201512",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

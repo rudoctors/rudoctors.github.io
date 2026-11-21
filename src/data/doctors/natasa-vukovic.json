@@ -1,0 +1,34 @@
+{
+  "slug": "natasa-vukovic",
+  "name": "Nataša Vuković",
+  "nameRu": "Наташа Вукович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Kraljevo",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dr Vuković",
+      "city": "Kraljevo"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/natasa-vukovic-kraljevo-575.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "lazar-racic",
+  "name": "Lazar Račić",
+  "nameRu": "Лазар Рачич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Sombor",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Baltis",
+      "city": "Sombor",
+      "address": "Matije Gupca 69, Sombor"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38125461533"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/lazar-racic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/f0d3550916f48a5f1246ac90c9bd2b1e1ad5750d-1080x1350.png?w=520&h=520&fit=crop&auto=format&q=75",
+  "license": {
+    "number": "203028",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

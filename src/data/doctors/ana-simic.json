@@ -1,0 +1,40 @@
+{
+  "slug": "ana-simic",
+  "name": "Ana Simić",
+  "nameRu": "Ана Симич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Venac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka ordinacija",
+      "city": "Venac"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/ana-simic-savski-venac-82.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "103307",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

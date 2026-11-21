@@ -1,0 +1,31 @@
+{
+  "slug": "zoran-stiric",
+  "name": "Zoran Štirić",
+  "nameRu": "Зоран Штирич",
+  "origin": "rs",
+  "specializations": [
+    "psychiatrist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/zoran-stiric"
+  ],
+  "updatedAt": "2026-11-21"
+}

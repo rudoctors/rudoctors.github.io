@@ -1,0 +1,34 @@
+{
+  "slug": "ranko-milenkovic",
+  "name": "Ranko Milenković",
+  "nameRu": "Ранко Миленкович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Pančevo",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Milenkovic",
+      "city": "Pančevo"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/proteticar/ranko-milenkovic-pancevo-556.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

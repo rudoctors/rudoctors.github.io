@@ -1,0 +1,34 @@
+{
+  "slug": "predrag-vesic",
+  "name": "Predrag Vešić",
+  "nameRu": "Предраг Вешич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka ordinacija Vešić",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/predrag-vesic-vracar-86.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

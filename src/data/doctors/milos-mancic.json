@@ -1,0 +1,34 @@
+{
+  "slug": "milos-mancic",
+  "name": "Miloš Mančić",
+  "nameRu": "Милош Манчич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Zrenjanin",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Miloš Mančić",
+      "city": "Zrenjanin"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/proteticar/milos-mancic-zrenjanin-59.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

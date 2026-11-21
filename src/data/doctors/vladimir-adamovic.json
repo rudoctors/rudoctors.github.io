@@ -1,0 +1,31 @@
+{
+  "slug": "vladimir-adamovic",
+  "name": "Vladimir Adamović",
+  "nameRu": "Владимир Адамович",
+  "origin": "rs",
+  "specializations": [
+    "psychiatrist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/vladimir-adamovic"
+  ],
+  "updatedAt": "2026-11-21"
+}

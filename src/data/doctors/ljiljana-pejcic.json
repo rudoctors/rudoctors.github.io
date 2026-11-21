@@ -1,0 +1,34 @@
+{
+  "slug": "ljiljana-pejcic",
+  "name": "Ljiljana Pejčić",
+  "nameRu": "Льильана Пейчич",
+  "origin": "rs",
+  "specializations": [
+    "cardiologist"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika Magna Plus",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/pedijatrija/deciji-kardiolog/ljiljana-pejcic-nis-191.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

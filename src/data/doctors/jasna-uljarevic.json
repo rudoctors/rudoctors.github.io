@@ -1,0 +1,34 @@
+{
+  "slug": "jasna-uljarevic",
+  "name": "Jasna Uljarević",
+  "nameRu": "Йасна Ульаревич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Novi Sad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dr Jasna Uljarević",
+      "city": "Novi Sad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/proteticar/jasna-uljarevic-novi-sad-630.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "farmaceut-tatjana-mihajlovic",
+  "name": "Farmaceut Tatjana Mihajlović",
+  "nameRu": "Фармацеут Татйана Михайлович",
+  "origin": "rs",
+  "specializations": [
+    "gp"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/tatjana-mihajlovic"
+  ],
+  "updatedAt": "2026-11-21"
+}

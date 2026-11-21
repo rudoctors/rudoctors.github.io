@@ -1,0 +1,44 @@
+{
+  "slug": "zoran-dukic",
+  "name": "Zoran Dukić",
+  "nameRu": "Зоран Дукич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika Sente",
+      "city": "Subotica",
+      "address": "Lajoša Joa 4A, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38124520698"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/zoran-dukic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/55d523144407d1eb24291e77eb4f8ca0dbbdcbca-1080x1350.png?w=520&h=520&fit=crop&auto=format&q=75",
+  "license": {
+    "number": "203749",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

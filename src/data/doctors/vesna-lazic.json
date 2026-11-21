@@ -1,0 +1,44 @@
+{
+  "slug": "vesna-lazic",
+  "name": "Vesna Lazić",
+  "nameRu": "Весна Лазич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Kraljevo",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Đusić",
+      "city": "Kraljevo",
+      "address": "Vojvode Putnika 64/TC DANICA lok 33, Kraljevo"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38169633803"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/vesna-lazic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/c5c72786accaff7733f5cea572ae397199c35510-1080x1350.png?w=520&h=520&fit=crop&auto=format&q=75",
+  "license": {
+    "number": "102050",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

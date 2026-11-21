@@ -1,0 +1,34 @@
+{
+  "slug": "dragan-andric",
+  "name": "Dragan Andrić",
+  "nameRu": "Драган Андрич",
+  "origin": "rs",
+  "specializations": [
+    "physiotherapist"
+  ],
+  "city": "Kragujevac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Fizioterapeutska Ambulanta Andrić",
+      "city": "Kragujevac"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/ostale-grane/fizioterapeut/dragan-andric-kragujevac-650.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

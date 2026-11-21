@@ -1,0 +1,31 @@
+{
+  "slug": "tatijana-stefanovic",
+  "name": "Tatijana Stefanović",
+  "nameRu": "Татийана Стефанович",
+  "origin": "rs",
+  "specializations": [
+    "psychiatrist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/tatijana-stefanovic"
+  ],
+  "updatedAt": "2026-11-21"
+}

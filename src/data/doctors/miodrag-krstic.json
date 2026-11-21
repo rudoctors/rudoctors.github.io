@@ -1,0 +1,37 @@
+{
+  "slug": "miodrag-krstic",
+  "name": "Miodrag Krstić",
+  "nameRu": "Миодраг Крстич",
+  "origin": "rs",
+  "specializations": [
+    "gastroenterologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/miodrag-krstic"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "101518",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

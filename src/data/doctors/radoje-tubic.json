@@ -1,0 +1,31 @@
+{
+  "slug": "radoje-tubic",
+  "name": "Radoje Tubić",
+  "nameRu": "Радойе Тубич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/radoje-tubic"
+  ],
+  "updatedAt": "2026-11-21"
+}

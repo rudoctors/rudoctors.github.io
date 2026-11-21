@@ -1,0 +1,38 @@
+{
+  "slug": "jovo-katic",
+  "name": "Jovo Katić",
+  "nameRu": "Йово Катич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Inspirium",
+      "city": "Subotica",
+      "address": "Dragiše Mišovića 32/2, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38124545355"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/jovo-katic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/37b095ffdcdbd8db4a58c4154b067b8bcb332fd9-1900x1900.jpg?w=520&h=520&fit=crop&auto=format&q=75"
+}

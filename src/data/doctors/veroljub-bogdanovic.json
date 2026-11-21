@@ -1,0 +1,34 @@
+{
+  "slug": "veroljub-bogdanovic",
+  "name": "Veroljub  Bogdanović",
+  "nameRu": "Верольуб  Богданович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Sabac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dr Veroljub Bogdanović",
+      "city": "Sabac"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/veroljub--bogdanovic-sabac-641.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "gordana-obradovic",
+  "name": "Gordana Obradović",
+  "nameRu": "Гордана Обрадович",
+  "origin": "rs",
+  "specializations": [
+    "gynecologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Acibadem Bel Medic",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Family Medica 26 Zvezdara",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Family Medica 7 - Slavija",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38163687447"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/gordana-obradovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/131/gordana-obradovic.webp",
+  "license": {
+    "number": "106564",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

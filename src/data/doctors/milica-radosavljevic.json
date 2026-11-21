@@ -1,0 +1,40 @@
+{
+  "slug": "milica-radosavljevic",
+  "name": "Milica Radosavljević",
+  "nameRu": "Милица Радосавльевич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Kraljevo",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Radosavljević",
+      "city": "Kraljevo"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/milica-radosavljevic-kraljevo-571.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "116124",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

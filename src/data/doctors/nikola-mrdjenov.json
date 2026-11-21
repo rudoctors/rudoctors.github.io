@@ -1,0 +1,44 @@
+{
+  "slug": "nikola-mrdjenov",
+  "name": "Nikola Mrđenov",
+  "nameRu": "Никола Мрдженов",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Vrbas",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika Dr Božičić",
+      "city": "Vrbas",
+      "address": "JNA 3, Vrbas"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "0648254141"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/nikola-mrdjenov"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/99cca67cc8d5523bc36593a0e3215b8904802a26-1080x1080.png?w=520&h=520&fit=crop&auto=format&q=75",
+  "license": {
+    "number": "203158",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

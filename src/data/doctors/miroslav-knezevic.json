@@ -1,0 +1,54 @@
+{
+  "slug": "miroslav-knezevic",
+  "name": "Miroslav Knežević",
+  "nameRu": "Мирослав Кнежевич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika Sente",
+      "city": "Subotica",
+      "address": "Lajoša Joa 4A, Subotica"
+    },
+    {
+      "clinic": "NovaMed",
+      "city": "Subotica",
+      "address": "Banijska 57, Subotica"
+    },
+    {
+      "clinic": "Megaclinic",
+      "city": "Subotica",
+      "address": "Aleja Maršala Tita 33, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38124520698"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/miroslav-knezevic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/4c4e5ce0c68c28dce5434376e83686726a77a1b2-1080x1080.jpg?w=520&h=520&fit=crop&auto=format&q=75",
+  "license": {
+    "number": "104457",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "biljana-olujic",
+  "name": "Biljana Olujić",
+  "nameRu": "Бильана Олуйич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Sombor",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Cardiomedica Dr Bošnjak",
+      "city": "Sombor",
+      "address": "Čonopljanski put 15c, Sombor"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38125426791"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/biljana-olujic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/f456a041f502a43ea2d0bb2cd34bf60de5c2d4d4-1001x1184.jpg?w=520&h=520&fit=crop&auto=format&q=75"
+}

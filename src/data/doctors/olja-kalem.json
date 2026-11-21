@@ -1,0 +1,34 @@
+{
+  "slug": "olja-kalem",
+  "name": "Olja Kalem",
+  "nameRu": "Ольа Калем",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Novi Sad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dr Olja Kalem",
+      "city": "Novi Sad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/proteticar/olja-kalem-novi-sad-635.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

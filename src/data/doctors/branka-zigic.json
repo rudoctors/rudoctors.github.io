@@ -1,0 +1,34 @@
+{
+  "slug": "branka-zigic",
+  "name": "Branka Žigić",
+  "nameRu": "Бранка Жигич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "ADent",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/branka-zigic-vracar-243.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

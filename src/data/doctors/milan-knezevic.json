@@ -1,0 +1,40 @@
+{
+  "slug": "milan-knezevic",
+  "name": "Milan Knežević",
+  "nameRu": "Милан Кнежевич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka ordinacija Mea:Dent",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/proteticar/milan-knezevic-novi-beograd-58.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "402516",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

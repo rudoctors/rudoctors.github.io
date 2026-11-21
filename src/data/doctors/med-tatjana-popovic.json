@@ -1,0 +1,38 @@
+{
+  "slug": "med-tatjana-popovic",
+  "name": "med Tatjana Popović",
+  "nameRu": "мед Татйана Попович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika Sente",
+      "city": "Subotica",
+      "address": "Lajoša Joa 4A, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38124520698"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/tatjana-popovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/c5c72786accaff7733f5cea572ae397199c35510-1080x1350.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

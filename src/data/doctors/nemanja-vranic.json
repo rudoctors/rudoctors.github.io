@@ -1,0 +1,40 @@
+{
+  "slug": "nemanja-vranic",
+  "name": "Nemanja Vranić",
+  "nameRu": "Неманьа Вранич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Grad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dr Vranić",
+      "city": "Grad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/nemanja-vranic-stari-grad-54.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "107022",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

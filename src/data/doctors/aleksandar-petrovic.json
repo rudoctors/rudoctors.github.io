@@ -1,0 +1,40 @@
+{
+  "slug": "aleksandar-petrovic",
+  "name": "Aleksandar Petrović",
+  "nameRu": "Александар Петрович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Svrljig",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "A2 Dental Clinic",
+      "city": "Svrljig"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/aleksandar-petrovic-svrljig-80.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "204833",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

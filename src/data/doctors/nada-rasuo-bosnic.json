@@ -1,0 +1,38 @@
+{
+  "slug": "nada-rasuo-bosnic",
+  "name": "Nada Rašuo Bosnić",
+  "nameRu": "Нада Рашуо Боснич",
+  "origin": "rs",
+  "specializations": [
+    "neurologist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Megaclinic",
+      "city": "Subotica",
+      "address": "Aleja Maršala Tita 33, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38124557789"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/nada-rasuo-bosnic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/d61f64e08581008d32e832eec0cb6baf3f582e26-1200x1444.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

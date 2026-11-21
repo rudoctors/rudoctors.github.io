@@ -1,0 +1,34 @@
+{
+  "slug": "vasja-gardinovacki",
+  "name": "Vasja Gardinovacki",
+  "nameRu": "Васйа Гардиновацки",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Grocka",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Zub-Art",
+      "city": "Grocka"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/vasja-gardinovacki-grocka-96.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

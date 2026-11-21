@@ -1,0 +1,31 @@
+{
+  "slug": "zvonko-pavlicevic",
+  "name": "Zvonko Pavličević",
+  "nameRu": "Звонко Павличевич",
+  "origin": "rs",
+  "specializations": [
+    "pulmonologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/zvonko-pavlicevic"
+  ],
+  "updatedAt": "2026-11-21"
+}

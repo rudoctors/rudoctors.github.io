@@ -1,0 +1,38 @@
+{
+  "slug": "struk-nutr-dijet-jelena-milunovic",
+  "name": "struk.nutr.dijet Jelena Milunović",
+  "nameRu": "струк.нутр.дийет Елена Милунович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "NovaMed",
+      "city": "Subotica",
+      "address": "Banijska 57, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38124265169"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/jelena-milunovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/7167d9a5caa783772361aef62d410fff4b0e9be6-1024x1024.jpg?w=520&h=520&fit=crop&auto=format&q=75"
+}

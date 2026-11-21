@@ -1,0 +1,34 @@
+{
+  "slug": "aleksandar-grkovic",
+  "name": "Aleksandar Grković",
+  "nameRu": "Александар Гркович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Novi Sad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Repić",
+      "city": "Novi Sad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/aleksandar-grkovic-novi-sad-607.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

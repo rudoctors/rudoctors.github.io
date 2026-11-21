@@ -1,0 +1,40 @@
+{
+  "slug": "predrag-aleksic",
+  "name": "Predrag Aleksić",
+  "nameRu": "Предраг Алексич",
+  "origin": "rs",
+  "specializations": [
+    "urologist"
+  ],
+  "city": "Venac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Clinicanova",
+      "city": "Venac"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/hirurgija/urolog/predrag-aleksic-savski-venac-155.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "101055",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

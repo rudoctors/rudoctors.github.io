@@ -1,0 +1,34 @@
+{
+  "slug": "maja-trajic",
+  "name": "Maja  Trajić",
+  "nameRu": "Майа  Трайич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatoloska ordinacija Trajić",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/proteticar/maja--trajic-novi-beograd-745.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

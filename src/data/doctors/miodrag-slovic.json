@@ -1,0 +1,37 @@
+{
+  "slug": "miodrag-slovic",
+  "name": "Miodrag Slović",
+  "nameRu": "Миодраг Слович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/miodrag-slovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "100922",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

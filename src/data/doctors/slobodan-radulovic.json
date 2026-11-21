@@ -16,6 +16,10 @@
     {
       "clinic": "Euromedic",
       "city": "Belgrade"
+    },
+    {
+      "clinic": "Labo Medica",
+      "city": "Belgrade"
     }
   ],
   "contacts": {},
@@ -24,7 +28,8 @@
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
-    "https://t.me/vrachivserbii/105649"
+    "https://t.me/vrachivserbii/105649",
+    "http://www.nadjidoktora.rs/hirurgija/urolog/slobodan-radulovic-zvezdara-313.htm"
   ],
   "updatedAt": "2026-11-21",
   "origin": "rs",

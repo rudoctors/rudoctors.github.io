@@ -1,0 +1,38 @@
+{
+  "slug": "med-zoltan-sagi",
+  "name": "med Zoltan Šagi",
+  "nameRu": "мед Золтан Шаги",
+  "origin": "rs",
+  "specializations": [
+    "neurologist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika Sente",
+      "city": "Subotica",
+      "address": "Lajoša Joa 4A, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38124520698"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/zoltan-sagi"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/f2f84828fc2df007a0ba517b603884188d0a1e40-2133x3200.jpg?w=520&h=520&fit=crop&auto=format&q=75"
+}

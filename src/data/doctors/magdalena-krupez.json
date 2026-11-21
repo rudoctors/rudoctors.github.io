@@ -1,0 +1,42 @@
+{
+  "slug": "magdalena-krupez",
+  "name": "Magdalena Krupež",
+  "nameRu": "Магдалена Крупеж",
+  "origin": "rs",
+  "specializations": [
+    "plastic_surgeon"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Specijalna bolnica za plastičnu, rekonstruktivnu i estetsku hirurgiju Orea",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/magdalena-krupez"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "107942",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "igor-mitic",
+  "name": "Igor Mitić",
+  "nameRu": "Игор Митич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Novi Sad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Specijalistička Ordinacija Internum",
+      "city": "Novi Sad",
+      "address": "Bulevar Oslobođenja 151, Novi Sad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38163246030"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/igor-mitic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/99cca67cc8d5523bc36593a0e3215b8904802a26-1080x1080.png?w=520&h=520&fit=crop&auto=format&q=75",
+  "license": {
+    "number": "201833",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

@@ -17,6 +17,14 @@
       "clinic": "Dr. Žutić / Medikom",
       "address": "Braničevska 12a",
       "city": "Belgrade"
+    },
+    {
+      "clinic": "Fiziobalans ordinacija fizikalne medicine",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Poliklinika Medikom",
+      "city": "Belgrade"
     }
   ],
   "contacts": {},
@@ -42,7 +50,8 @@
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
-    "https://t.me/vrachivserbii/71262"
+    "https://t.me/vrachivserbii/71262",
+    "https://stetoskop.info/doktor/aleksandra-sekulic"
   ],
   "updatedAt": "2026-11-21",
   "origin": "rs",
@@ -52,5 +61,6 @@
     "authority": "Lekarska komora Srbije",
     "verified": true
   },
-  "verificationStatus": "verified"
+  "verificationStatus": "verified",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/1847/aleksandra-sekulic.png"
 }

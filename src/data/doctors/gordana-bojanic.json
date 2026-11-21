@@ -1,0 +1,34 @@
+{
+  "slug": "gordana-bojanic",
+  "name": "Gordana Bojanić",
+  "nameRu": "Гордана Бойанич",
+  "origin": "rs",
+  "specializations": [
+    "urologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dr Bojanić",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/hirurgija/urolog/gordana-bojanic-palilula-97.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

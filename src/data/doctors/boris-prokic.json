@@ -1,0 +1,40 @@
+{
+  "slug": "boris-prokic",
+  "name": "Boris Prokić",
+  "nameRu": "Борис Прокич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dr. Boris Prokić stomatološka ordinacija",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/boris-prokic-vozdovac-234.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "309370",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

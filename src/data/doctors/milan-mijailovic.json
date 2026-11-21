@@ -1,0 +1,35 @@
+{
+  "slug": "milan-mijailovic",
+  "name": "Milan Mijailović",
+  "nameRu": "Милан Мийаилович",
+  "origin": "rs",
+  "specializations": [
+    "cardiologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Medica Interna Plus",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/milan-mijailovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/45/milan-mijailovic.jpg"
+}

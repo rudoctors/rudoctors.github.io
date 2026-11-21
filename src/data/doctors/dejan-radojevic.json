@@ -1,0 +1,45 @@
+{
+  "slug": "dejan-radojevic",
+  "name": "Dejan Radojević",
+  "nameRu": "Дейан Радойевич",
+  "origin": "rs",
+  "specializations": [
+    "surgeon"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Kolegium Medic",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Specijalistička lekarska ordinacija Vizita",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Vaša kuća zdravlja",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381641724893"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/dejan-radojevic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/129/dejan-radojevic.webp"
+}

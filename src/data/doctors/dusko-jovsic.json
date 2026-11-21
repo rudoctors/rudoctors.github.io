@@ -1,0 +1,34 @@
+{
+  "slug": "dusko-jovsic",
+  "name": "Duško Jovšić",
+  "nameRu": "Душко Йовшич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Rakovica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološki centar Jovšić",
+      "city": "Rakovica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/proteticar/dusko-jovsic-rakovica-94.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "dragan-golubovic",
+  "name": "Dragan Golubović",
+  "nameRu": "Драган Голубович",
+  "origin": "rs",
+  "specializations": [
+    "physiotherapist"
+  ],
+  "city": "Topola",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Ambulanta",
+      "city": "Topola"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/ostale-grane/fizioterapeut/dragan-golubovic-backa-topola-207.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

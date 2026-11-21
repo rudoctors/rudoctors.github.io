@@ -1,0 +1,34 @@
+{
+  "slug": "lara-petrovic",
+  "name": "Lara Petrović",
+  "nameRu": "Лара Петрович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dental Petrović",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/proteticar/lara-petrovic-zvezdara-72.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

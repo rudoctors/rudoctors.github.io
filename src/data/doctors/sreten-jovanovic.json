@@ -1,0 +1,41 @@
+{
+  "slug": "sreten-jovanovic",
+  "name": "Sreten Jovanović",
+  "nameRu": "Сретен Йованович",
+  "origin": "rs",
+  "specializations": [
+    "urologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dr Rončević",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Kolegium Medic",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38163687447"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/sreten-jovanovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/213/sreten-jovanovic.jpg"
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "ruza-bajic",
+  "name": "Ruža Bajić",
+  "nameRu": "Ружа Байич",
+  "origin": "rs",
+  "specializations": [
+    "pediatrician"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dečija igra",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381600275549"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/ruza-bajic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/1272/ruza-bajic.jpg"
+}

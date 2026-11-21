@@ -1,0 +1,37 @@
+{
+  "slug": "snezana-savic",
+  "name": "Snežana Savić",
+  "nameRu": "Снежана Савич",
+  "origin": "rs",
+  "specializations": [
+    "gp"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/snezana-savic"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "401258",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

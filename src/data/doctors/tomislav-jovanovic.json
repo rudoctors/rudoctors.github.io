@@ -1,0 +1,31 @@
+{
+  "slug": "tomislav-jovanovic",
+  "name": "Tomislav Jovanović",
+  "nameRu": "Томислав Йованович",
+  "origin": "rs",
+  "specializations": [
+    "gp"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/tomislav-jovanovic"
+  ],
+  "updatedAt": "2026-11-21"
+}

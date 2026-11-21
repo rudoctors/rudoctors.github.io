@@ -1,0 +1,34 @@
+{
+  "slug": "lidija-mitic",
+  "name": "Lidija Mitić",
+  "nameRu": "Лидийа Митич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Nis Dental",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/proteticar/lidija-mitic-nis-716.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "dragan-kalem",
+  "name": "Dragan Kalem",
+  "nameRu": "Драган Калем",
+  "origin": "rs",
+  "specializations": [
+    "gastroenterologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dom zdravlja Med Sana",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "S Life ordinacija",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Sirius Medical",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38163687460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/dragan-kalem"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/330/dragan-kalem.jpg",
+  "license": {
+    "number": "107534",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

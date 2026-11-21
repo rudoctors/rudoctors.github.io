@@ -1,0 +1,34 @@
+{
+  "slug": "ivona-bjenjas",
+  "name": "Ivona Bjenjaš",
+  "nameRu": "Ивона Бйеньаш",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Grad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Morita centar za dentalni rendgen",
+      "city": "Grad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/ortodont/ivona-bjenjas-stari-grad-321.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

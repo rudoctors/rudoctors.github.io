@@ -1,0 +1,40 @@
+{
+  "slug": "rade-prelevic",
+  "name": "Rade Prelević",
+  "nameRu": "Раде Прелевич",
+  "origin": "rs",
+  "specializations": [
+    "urologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Nada",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/hirurgija/urolog/rade-prelevic-cukarica-487.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "101053",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

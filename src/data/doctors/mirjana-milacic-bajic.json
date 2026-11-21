@@ -1,0 +1,34 @@
+{
+  "slug": "mirjana-milacic-bajic",
+  "name": "Mirjana Milačić Bajić",
+  "nameRu": "Мирйана Милачич Байич",
+  "origin": "rs",
+  "specializations": [
+    "surgeon"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "mmb centar",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/oralni-hirurg/mirjana-milacic-bajic-vracar-211.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

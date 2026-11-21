@@ -1,0 +1,41 @@
+{
+  "slug": "zoran-jovic",
+  "name": "Zoran Jović",
+  "nameRu": "Зоран Йович",
+  "origin": "rs",
+  "specializations": [
+    "cardiologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "InterMedicus Loznica",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Vaša kuća zdravlja",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38163687460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/zoran-jovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/179/zoran-jovic.jpg"
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "miladija-jovanovic",
+  "name": "Miladija Jovanović",
+  "nameRu": "Миладийа Йованович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Miladija Jovanovic",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/miladija-jovanovic-nis-699.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

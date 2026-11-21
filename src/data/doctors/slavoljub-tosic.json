@@ -1,0 +1,34 @@
+{
+  "slug": "slavoljub-tosic",
+  "name": "Slavoljub Tošić",
+  "nameRu": "Славольуб Тошич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Tosic Dent",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/proteticar/slavoljub-tosic-nis-698.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "bojan-culibrk",
+  "name": "Bojan Ćulibrk",
+  "nameRu": "Бойан Чулибрк",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Bačka Palanka",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Bios Lab",
+      "city": "Bačka Palanka",
+      "address": "Jugoslovenske Armije 53, Bačka Palanka"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "021752112"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/bojan-culibrk"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/cb34aa13c859b721ec3d45eeab31b2c5db536ce7-1080x1350.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

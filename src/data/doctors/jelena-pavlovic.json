@@ -1,0 +1,36 @@
+{
+  "slug": "jelena-pavlovic",
+  "name": "Jelena Pavlović",
+  "nameRu": "Елена Павлович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Medica Interna Plus",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381600687461"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/jelena-pavlovic"
+  ],
+  "updatedAt": "2026-11-21"
+}

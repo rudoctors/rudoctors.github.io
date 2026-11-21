@@ -1,0 +1,44 @@
+{
+  "slug": "ljiljana-baturan",
+  "name": "Ljiljana Baturan",
+  "nameRu": "Льильана Батуран",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Kula",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Pedijatrijska Ordinacija Baturan",
+      "city": "Kula",
+      "address": "Sime Šolaje 3, Kula"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381646616479"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/ljiljana-baturan"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/5d0bc1a0b234ee0dda5aca2ee8112ca233b2ebd9-1080x1080.png?w=520&h=520&fit=crop&auto=format&q=75",
+  "license": {
+    "number": "203960",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

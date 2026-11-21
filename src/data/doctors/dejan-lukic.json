@@ -1,0 +1,43 @@
+{
+  "slug": "dejan-lukic",
+  "name": "Dejan Lukić",
+  "nameRu": "Дейан Лукич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Sombor",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Baltis",
+      "city": "Sombor",
+      "address": "Matije Gupca 69, Sombor"
+    },
+    {
+      "clinic": "Cardiomedica Dr Bošnjak",
+      "city": "Sombor",
+      "address": "Čonopljanski put 15c, Sombor"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38125461533"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/dejan-lukic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/ee2d3e65994e42ffb83b690e2fccd4ae3804a649-1080x1350.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

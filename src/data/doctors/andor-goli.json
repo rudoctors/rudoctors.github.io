@@ -1,0 +1,49 @@
+{
+  "slug": "andor-goli",
+  "name": "Andor Goli",
+  "nameRu": "Андор Голи",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Ginea",
+      "city": "Subotica",
+      "address": "Ivana Gorana Kovačića 3, Subotica"
+    },
+    {
+      "clinic": "NovaMed",
+      "city": "Subotica",
+      "address": "Banijska 57, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38124553766"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/andor-goli"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/9377fd6848b13a3b568f7b79fcca5de2addb3219-1080x1080.png?w=520&h=520&fit=crop&auto=format&q=75",
+  "license": {
+    "number": "203703",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

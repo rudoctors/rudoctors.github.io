@@ -1,0 +1,38 @@
+{
+  "slug": "jelena-sredojevic",
+  "name": "Jelena Sredojević",
+  "nameRu": "Елена Средойевич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Novi Sad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Soleil Medica",
+      "city": "Novi Sad",
+      "address": "Branka Radičevića 29, Novi Sad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381603019399"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/jelena-sredojevic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/2a840605a73f7b50787e736074826b99b29b6d9c-1490x1600.jpg?w=520&h=520&fit=crop&auto=format&q=75"
+}

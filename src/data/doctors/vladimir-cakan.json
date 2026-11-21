@@ -1,0 +1,34 @@
+{
+  "slug": "vladimir-cakan",
+  "name": "Vladimir  Čakan",
+  "nameRu": "Владимир  Чакан",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Grad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "C Dental Center",
+      "city": "Grad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/vladimir--cakan-stari-grad-232.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

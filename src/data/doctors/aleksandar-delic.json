@@ -1,0 +1,49 @@
+{
+  "slug": "aleksandar-delic",
+  "name": "Aleksandar Delić",
+  "nameRu": "Александар Делич",
+  "origin": "rs",
+  "specializations": [
+    "neurologist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Megaclinic",
+      "city": "Subotica",
+      "address": "Aleja Maršala Tita 33, Subotica"
+    },
+    {
+      "clinic": "Eumed",
+      "city": "Bačka Topola",
+      "address": "Svetosavska 5, Bačka Topola"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38124557789"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/aleksandar-delic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/95d1871d928632e94a20cd4ba65a1bd418bc998f-573x586.jpg?w=520&h=520&fit=crop&auto=format&q=75",
+  "license": {
+    "number": "200307",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

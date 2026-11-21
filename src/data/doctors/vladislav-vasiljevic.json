@@ -1,0 +1,34 @@
+{
+  "slug": "vladislav-vasiljevic",
+  "name": "Vladislav Vasiljević",
+  "nameRu": "Владислав Васильевич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Timident",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/proteticar/vladislav-vasiljevic-nis-691.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

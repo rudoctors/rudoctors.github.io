@@ -1,0 +1,40 @@
+{
+  "slug": "sanja-nikolic",
+  "name": "Sanja  Nikolić",
+  "nameRu": "Саньа  Николич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Leskovac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Sensa",
+      "city": "Leskovac"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/sanja--nikolic-leskovac-739.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "407469",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

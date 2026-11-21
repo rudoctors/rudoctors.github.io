@@ -1,0 +1,31 @@
+{
+  "slug": "milan-kovijanic",
+  "name": "Milan Kovijanić",
+  "nameRu": "Милан Ковийанич",
+  "origin": "rs",
+  "specializations": [
+    "gastroenterologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/milan-kovijanic"
+  ],
+  "updatedAt": "2026-11-21"
+}

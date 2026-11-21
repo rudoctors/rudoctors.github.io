@@ -1,0 +1,40 @@
+{
+  "slug": "vladan-simic",
+  "name": "Vladan  Simić",
+  "nameRu": "Владан  Симич",
+  "origin": "rs",
+  "specializations": [
+    "pulmonologist"
+  ],
+  "city": "Jagodina",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Pulmo",
+      "city": "Jagodina"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/interna-medicina/pulmolog/vladan--simic-jagodina-509.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "404608",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

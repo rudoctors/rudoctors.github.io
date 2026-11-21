@@ -16,6 +16,13 @@ const DOCTORS_DIR = path.join(ROOT, "src", "data", "doctors");
 const SOURCES_DIR = path.join(ROOT, "src", "data", "sources", "serbian");
 const LKS_INDEX_PATH = path.join(SOURCES_DIR, "lks-licenses-index.json");
 
+function cleanName(raw) {
+  return String(raw || "")
+    .replace(/^(Prim\.\s*dr\s*|Prim\.\s*|Prof\.\s*dr\s*|Prof\.\s*|Doc\.\s*dr\s*|Doc\.\s*|Spec\.\s*dr\s*|Spec\.\s*|dr\s*med\.\s*sc\.\s*|dr\s*med\.\s*|dr\s*sci\.\s*med\.\s*|dr\s*sci\.\s*|dr\s*sc\.\s*med\.\s*|dr\s*sc\.\s*|dr\s*|mr\s*sci\.\s*med\.\s*|mr\s*sci\.\s*|mr\s*|med\.\s*dr\s*|med\.\s*|Ass\.\s*dr\s*sci\.\s*med\.\s*|Ass\.\s*dr\s*|Ass\.\s*)+/gi, "")
+    .replace(/^agan\s+/i, "Dragan ")
+    .trim();
+}
+
 function normalizeKey(str) {
   return String(str || "")
     .toLowerCase()
@@ -75,7 +82,7 @@ export function integrateScrapedDoctors(rawItems, { dryRun = true } = {}) {
   let skippedCount = 0;
 
   for (const item of rawItems) {
-    const rawName = item.name || "";
+    const rawName = cleanName(item.name || "");
     if (!rawName.trim()) continue;
 
     const normName = normalizeKey(rawName);
@@ -270,6 +277,14 @@ async function main() {
   if (fs.existsSync(nadjiFile)) {
     const data = JSON.parse(fs.readFileSync(nadjiFile, "utf8"));
     console.log(`\n[*] Интеграция NađiDoktora (${data.length} записей)...`);
+    integrateScrapedDoctors(data, { dryRun });
+  }
+
+  // 4. Интеграция данных из Stetoskop.info
+  const stetoskopFile = path.join(SOURCES_DIR, "raw-stetoskop.json");
+  if (fs.existsSync(stetoskopFile)) {
+    const data = JSON.parse(fs.readFileSync(stetoskopFile, "utf8"));
+    console.log(`\n[*] Интеграция Stetoskop.info (${data.length} записей)...`);
     integrateScrapedDoctors(data, { dryRun });
   }
 }

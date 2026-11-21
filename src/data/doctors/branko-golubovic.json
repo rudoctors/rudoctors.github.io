@@ -1,0 +1,34 @@
+{
+  "slug": "branko-golubovic",
+  "name": "Branko Golubović",
+  "nameRu": "Бранко Голубович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Grad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka ordinacija dr. Branko Golubović",
+      "city": "Grad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/branko-golubovic-stari-grad-231.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

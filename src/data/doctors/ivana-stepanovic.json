@@ -1,0 +1,32 @@
+{
+  "slug": "ivana-stepanovic",
+  "name": "Ivana Stepanović",
+  "nameRu": "Ивана Степанович",
+  "origin": "rs",
+  "specializations": [
+    "pediatrician"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "1994 - 1997 - Volontirala na Institutu za majku i dete 1997 - 2001 - Radila kao lekar opšte medicine u Domu zdravlja \"Zemun\". 2007 - 2012 - Radila kao specijalista pedijatrije u službi za zdravstvenu zaštitu dece i omladine Doma zdravlja \"Zemun\" REFERENCE / STRUČNI RADOVI / ČLANSTVA Član je lekarske",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/ivana-stepanovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/49/ivana-stepanovic.jpg"
+}

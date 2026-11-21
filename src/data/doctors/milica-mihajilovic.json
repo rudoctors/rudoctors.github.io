@@ -1,0 +1,34 @@
+{
+  "slug": "milica-mihajilovic",
+  "name": "Milica Mihajilović",
+  "nameRu": "Милица Михайилович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "DR MIMI",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/milica-mihajilovic-zvezdara-90.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

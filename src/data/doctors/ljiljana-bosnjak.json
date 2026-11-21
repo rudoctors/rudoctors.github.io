@@ -1,0 +1,38 @@
+{
+  "slug": "ljiljana-bosnjak",
+  "name": "Ljiljana Bošnjak",
+  "nameRu": "Льильана Бошньак",
+  "origin": "rs",
+  "specializations": [
+    "gp"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "- Radiolog u DZ Novi Beograd 2012 - Radiolog u DZ Jedro Reference / Stručni radovi / Članstva Usavršavala sam se iz oblasti patologije dojke, mamografije, skrininga ranog karcinoma dojke na Institutu za onkologiju i radiologiju. Usavršavala se iz oblasti Vaskularne i kolor dopler dijagnostike na Kli",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/ljiljana-bosnjak"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/59/ljiljana-bosnjak.jpg",
+  "license": {
+    "number": "102306",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

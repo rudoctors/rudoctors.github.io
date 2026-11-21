@@ -1,0 +1,38 @@
+{
+  "slug": "srdjan-adamovic",
+  "name": "Srđan Adamović",
+  "nameRu": "Срджан Адамович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Bačka Palanka",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Omega Dent",
+      "city": "Bačka Palanka",
+      "address": "Kralja Petra I 26/1, Bačka Palanka"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381642609872"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/srdjan-adamovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/99cca67cc8d5523bc36593a0e3215b8904802a26-1080x1080.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

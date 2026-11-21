@@ -22,6 +22,11 @@
     {
       "clinic": "Novi Sad Poliklinika",
       "city": "Novi Sad"
+    },
+    {
+      "clinic": "Bonadea",
+      "city": "Novi Sad",
+      "address": "Jovana Đorđevića 11, Novi Sad"
     }
   ],
   "contacts": {},
@@ -46,7 +51,16 @@
   "hidden": false,
   "featured": false,
   "sources": [
-    "t.me/vrachivserbii"
+    "t.me/vrachivserbii",
+    "https://biramdoktora.rs/doktori/olivera-levakov"
   ],
-  "updatedAt": "2026-10-31"
+  "updatedAt": "2026-11-21",
+  "nameRu": "Оливера Леваков",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/c5c72786accaff7733f5cea572ae397199c35510-1080x1350.png?w=520&h=520&fit=crop&auto=format&q=75",
+  "license": {
+    "number": "202462",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
 }

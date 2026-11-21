@@ -19,6 +19,11 @@
     {
       "clinic": "Cardios",
       "city": "Novi Sad"
+    },
+    {
+      "clinic": "Cardiomedica Dr Bošnjak",
+      "city": "Sombor",
+      "address": "Čonopljanski put 15c, Sombor"
     }
   ],
   "contacts": {},
@@ -36,7 +41,8 @@
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
-    "https://t.me/vrachivserbii/146642"
+    "https://t.me/vrachivserbii/146642",
+    "https://biramdoktora.rs/doktori/dusan-banovic"
   ],
   "updatedAt": "2026-11-21",
   "origin": "rs",
@@ -46,5 +52,6 @@
     "authority": "Lekarska komora Srbije",
     "verified": true
   },
-  "verificationStatus": "verified"
+  "verificationStatus": "verified",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/9377fd6848b13a3b568f7b79fcca5de2addb3219-1080x1080.png?w=520&h=520&fit=crop&auto=format&q=75"
 }

@@ -1,0 +1,34 @@
+{
+  "slug": "filip-djordjevic",
+  "name": "Filip Đorđević",
+  "nameRu": "Филип Джорджевич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Kruševac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Radix",
+      "city": "Kruševac"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/proteticar/filip-djordjevic-krusevac-666.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

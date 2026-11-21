@@ -1,0 +1,37 @@
+{
+  "slug": "bojan-stevic",
+  "name": "Bojan Stević",
+  "nameRu": "Бойан Стевич",
+  "origin": "rs",
+  "specializations": [
+    "plastic_surgeon"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Acibadem Bel Medic",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381655004009"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/bojan-stevic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/255/bojan-stevic.jpg"
+}

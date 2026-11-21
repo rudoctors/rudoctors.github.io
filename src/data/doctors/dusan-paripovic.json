@@ -1,0 +1,40 @@
+{
+  "slug": "dusan-paripovic",
+  "name": "Dušan Paripović",
+  "nameRu": "Душан Парипович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Pančevo",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Sanident",
+      "city": "Pančevo"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/proteticar/dusan-paripovic-pancevo-525.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "105407",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "katarina-mackovic",
+  "name": "Katarina Mačković",
+  "nameRu": "Катарина Мачкович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Kraljevo",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Radosavljević",
+      "city": "Kraljevo"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/ortodont/katarina-mackovic-kraljevo-572.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

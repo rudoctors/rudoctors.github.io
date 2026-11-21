@@ -1,0 +1,32 @@
+{
+  "slug": "psiholog-ana-milenkovic",
+  "name": "Psiholog Ana Milenković",
+  "nameRu": "Психолог Ана Миленкович",
+  "origin": "rs",
+  "specializations": [
+    "psychologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38169771899"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/ana-milenkovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/1984/ana-milenkovic.webp"
+}

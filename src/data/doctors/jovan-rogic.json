@@ -1,0 +1,34 @@
+{
+  "slug": "jovan-rogic",
+  "name": "Jovan Rogić",
+  "nameRu": "Йован Рогич",
+  "origin": "rs",
+  "specializations": [
+    "physiotherapist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Ambulanta Rehability",
+      "city": "Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/ostale-grane/fizioterapeut/jovan-rogic-subotica-206.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

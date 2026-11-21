@@ -1,0 +1,34 @@
+{
+  "slug": "ivan-ognjanovic",
+  "name": "Ivan Ognjanović",
+  "nameRu": "Иван Огньанович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Kragujevac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dentalis",
+      "city": "Kragujevac"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/ivan-ognjanovic-kragujevac-123.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

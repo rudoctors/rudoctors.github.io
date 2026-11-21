@@ -1,0 +1,34 @@
+{
+  "slug": "milica-antic-radenkovic",
+  "name": "Milica Antić Radenković",
+  "nameRu": "Милица Антич Раденкович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Nis Dental",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/ortodont/milica-antic-radenkovic-nis-720.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

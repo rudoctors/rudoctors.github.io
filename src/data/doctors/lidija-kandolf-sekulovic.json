@@ -1,0 +1,32 @@
+{
+  "slug": "lidija-kandolf-sekulovic",
+  "name": "Lidija Kandolf Sekulović",
+  "nameRu": "Лидийа Кандолф Секулович",
+  "origin": "rs",
+  "specializations": [
+    "dermatologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/lidija-kandolf-sekulovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/1472/lidija-kandolf-sekulovic.jpg"
+}

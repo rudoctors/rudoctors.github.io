@@ -1,0 +1,38 @@
+{
+  "slug": "bojan-mrgud",
+  "name": "Bojan Mrgud",
+  "nameRu": "Бойан Мргуд",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika Sente",
+      "city": "Subotica",
+      "address": "Lajoša Joa 4A, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38124520698"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/bojan-mrgud"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/0d8e2bfd53620f74d8ae76bf1387fb35d4033bfa-1080x1350.webp?w=520&h=520&fit=crop&auto=format&q=75"
+}

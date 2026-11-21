@@ -1,0 +1,31 @@
+{
+  "slug": "branislav-gvozdenovic",
+  "name": "Branislav Gvozdenović",
+  "nameRu": "Бранислав Гвозденович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/branislav-gvozdenovic"
+  ],
+  "updatedAt": "2026-11-21"
+}

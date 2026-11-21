@@ -1,0 +1,51 @@
+{
+  "slug": "milena-pandrc",
+  "name": "Milena Pandrc",
+  "nameRu": "Милена Пандрц",
+  "origin": "rs",
+  "specializations": [
+    "cardiologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dom zdravlja Med Sana",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Medicinski sistem Beograd - MSB",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Pulmo Sleep Centar Eliksir",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38163687463"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/milena-pandrc"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/3018/milena-pandrc.png",
+  "license": {
+    "number": "113204",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

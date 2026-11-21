@@ -1,0 +1,37 @@
+{
+  "slug": "tijana-antin-pavlovic",
+  "name": "Tijana Antin Pavlović",
+  "nameRu": "Тийана Антин Павлович",
+  "origin": "rs",
+  "specializations": [
+    "child_psychiatrist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Tijana Antin Pavlović",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38163687463"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/tijana-antin-pavlovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/92/tijana-antin-pavlovic.jpg"
+}

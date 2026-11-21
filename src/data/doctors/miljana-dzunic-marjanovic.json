@@ -1,0 +1,34 @@
+{
+  "slug": "miljana-dzunic-marjanovic",
+  "name": "Miljana Džunić Marjanović",
+  "nameRu": "Мильана Джунич Марйанович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Nis Dental",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/miljana-dzunic-marjanovic-nis-723.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

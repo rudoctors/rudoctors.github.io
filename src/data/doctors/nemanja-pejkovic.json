@@ -1,0 +1,34 @@
+{
+  "slug": "nemanja-pejkovic",
+  "name": "Nemanja Pejković",
+  "nameRu": "Неманьа Пейкович",
+  "origin": "rs",
+  "specializations": [
+    "physiotherapist"
+  ],
+  "city": "Kragujevac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Fitnes centar TITAN",
+      "city": "Kragujevac"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/ostale-grane/fizioterapeut/nemanja-pejkovic-kragujevac-89.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

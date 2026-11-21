@@ -17,6 +17,10 @@
     {
       "clinic": "BelMedic",
       "city": "Belgrade"
+    },
+    {
+      "clinic": "Medic One",
+      "city": "Belgrade"
     }
   ],
   "contacts": {},
@@ -34,7 +38,8 @@
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
-    "https://t.me/vrachivserbii/122721"
+    "https://t.me/vrachivserbii/122721",
+    "https://stetoskop.info/doktor/boban-dordevic"
   ],
   "updatedAt": "2026-11-21",
   "license": {
@@ -42,5 +47,8 @@
     "authority": "Lekarska komora Srbije",
     "verified": true
   },
-  "verificationStatus": "verified"
+  "verificationStatus": "verified",
+  "origin": "rs",
+  "nameRu": "Бобан Джорджевич",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/2808/boban-dordevic.png"
 }

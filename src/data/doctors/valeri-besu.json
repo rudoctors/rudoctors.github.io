@@ -1,0 +1,34 @@
+{
+  "slug": "valeri-besu",
+  "name": "Valeri  Besu",
+  "nameRu": "Валери  Бесу",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Zrenjanin",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dr Besu",
+      "city": "Zrenjanin"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/proteticar/valeri--besu-zrenjanin-562.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

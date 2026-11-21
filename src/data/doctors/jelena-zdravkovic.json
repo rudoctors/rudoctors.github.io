@@ -1,0 +1,40 @@
+{
+  "slug": "jelena-zdravkovic",
+  "name": "Jelena Zdravković",
+  "nameRu": "Елена Здравкович",
+  "origin": "rs",
+  "specializations": [
+    "pulmonologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika MEDIKOM",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Dr Rončević",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/interna-medicina/pulmolog/jelena-zdravkovic-vracar-69.htm",
+    "https://stetoskop.info/doktor/jelena-zdravkovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/415/jelena-zdravkovic.jpg"
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "ivana-eskic",
+  "name": "Ivana Eskić",
+  "nameRu": "Ивана Ескич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Novi Beograd",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dr Eskić",
+      "city": "Novi Beograd",
+      "address": "Jurija Gagarina 28/24, Novi Beograd"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381638304306"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/ivana-eskic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/eab286eb165e7c9cc7d9db0d97f5b731d8b39a03-1080x1350.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

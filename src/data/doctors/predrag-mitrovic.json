@@ -1,0 +1,51 @@
+{
+  "slug": "predrag-mitrovic",
+  "name": "Predrag Mitrović",
+  "nameRu": "Предраг Митрович",
+  "origin": "rs",
+  "specializations": [
+    "gynecologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Acibadem Bel Medic",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Opšta bolnica Sava Medical Hospital",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Prva Poliklinika Beograd",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38163687447"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/predrag-mitrovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/133/predrag-mitrovic.png",
+  "license": {
+    "number": "101042",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

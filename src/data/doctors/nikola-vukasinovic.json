@@ -1,0 +1,59 @@
+{
+  "slug": "nikola-vukasinovic",
+  "name": "Nikola Vukašinović",
+  "nameRu": "Никола Вукашинович",
+  "origin": "rs",
+  "specializations": [
+    "neurologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Fiziomedika 018",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Life Impuls",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Poliklinika Human",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Poliklinika Kardio Medika",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Poliklinika Natus",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381600687461"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/nikola-vukasinovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/2322/nikola-vukasinovic.png",
+  "license": {
+    "number": "302296",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "aleksandar-radicevic",
+  "name": "Aleksandar Radičević",
+  "nameRu": "Александар Радичевич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Kruševac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Radix",
+      "city": "Kruševac"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/proteticar/aleksandar-radicevic-krusevac-667.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

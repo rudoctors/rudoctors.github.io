@@ -1,0 +1,53 @@
+{
+  "slug": "marjan-stankovic",
+  "name": "Marjan Stanković",
+  "nameRu": "Марйан Станкович",
+  "origin": "rs",
+  "specializations": [
+    "gastroenterologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dom zdravlja Family Medica",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Family Medica 3 - Zemun",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Family Medica 7 - Slavija",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Poliklinika Dr Bošković",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Poliklinika Nela Medica",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381600687461"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/marjan-stankovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/27197/Nenaslovljeni-dizajn-(1).png"
+}

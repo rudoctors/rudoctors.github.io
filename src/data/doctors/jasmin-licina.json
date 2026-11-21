@@ -1,0 +1,34 @@
+{
+  "slug": "jasmin-licina",
+  "name": "Jasmin  Ličina",
+  "nameRu": "Йасмин  Личина",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Pazar",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka ordinacija Crystal Dent",
+      "city": "Pazar"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/jasmin--licina-novi-pazar-41.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "slaven-strineka",
+  "name": "Slaven Strineka",
+  "nameRu": "Славен Стринека",
+  "origin": "rs",
+  "specializations": [
+    "gynecologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38163687447"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/slaven-strineka"
+  ],
+  "updatedAt": "2026-11-21"
+}

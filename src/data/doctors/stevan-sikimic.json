@@ -1,0 +1,50 @@
+{
+  "slug": "stevan-sikimic",
+  "name": "Stevan Sikimić",
+  "nameRu": "Стеван Сикимич",
+  "origin": "rs",
+  "specializations": [
+    "pulmonologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Nada",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Medica Interna Plus",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Soldo Medicina",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/interna-medicina/pulmolog/stevan-sikimic-cukarica-475.htm",
+    "https://stetoskop.info/doktor/stevan-sikimic"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "105071",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/277/stevan-sikimic.jpg"
+}

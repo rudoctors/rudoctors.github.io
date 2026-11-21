@@ -1,0 +1,41 @@
+{
+  "slug": "suzana-raicevic-sibinovic",
+  "name": "Suzana Raičević Sibinović",
+  "nameRu": "Сузана Раичевич Сибинович",
+  "origin": "rs",
+  "specializations": [
+    "gastroenterologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika Nova VIV",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Vimedic",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38163687460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/suzana-raicevic-sibinovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/1937/suzana-raicevic-sibinovic.png"
+}

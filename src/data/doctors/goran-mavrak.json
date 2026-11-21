@@ -1,0 +1,44 @@
+{
+  "slug": "goran-mavrak",
+  "name": "Goran Mavrak",
+  "nameRu": "Горан Маврак",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "NovaMed",
+      "city": "Subotica",
+      "address": "Banijska 57, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38124265169"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/goran-mavrak"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/0350d12360f97b8adeb273277d7364f50d920b35-600x600.png?w=520&h=520&fit=crop&auto=format&q=75",
+  "license": {
+    "number": "203539",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

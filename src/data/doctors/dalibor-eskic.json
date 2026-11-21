@@ -1,0 +1,38 @@
+{
+  "slug": "dalibor-eskic",
+  "name": "Dalibor Eskić",
+  "nameRu": "Далибор Ескич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Novi Beograd",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dr Eskić",
+      "city": "Novi Beograd",
+      "address": "Jurija Gagarina 28/24, Novi Beograd"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381638304306"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/dalibor-eskic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/9377fd6848b13a3b568f7b79fcca5de2addb3219-1080x1080.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

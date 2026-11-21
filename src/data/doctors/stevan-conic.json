@@ -1,0 +1,31 @@
+{
+  "slug": "stevan-conic",
+  "name": "Stevan Conić",
+  "nameRu": "Стеван Цонич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/stevan-conic"
+  ],
+  "updatedAt": "2026-11-21"
+}

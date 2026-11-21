@@ -1,0 +1,42 @@
+{
+  "slug": "miomir-markovic",
+  "name": "Miomir Marković",
+  "nameRu": "Миомир Маркович",
+  "origin": "rs",
+  "specializations": [
+    "surgeon"
+  ],
+  "city": "Pirot",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MG Stens",
+      "city": "Pirot"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/hirurgija/opsti-hirurg/miomir-markovic-pirot-105.htm",
+    "https://stetoskop.info/doktor/miomir-markovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "106555",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/237/miomir-markovic.jpg"
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "uros-simonovic",
+  "name": "Uroš Simonović",
+  "nameRu": "Урош Симонович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Jagodina",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka ordinacija PS dent",
+      "city": "Jagodina"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/uros-simonovic-jagodina-747.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "116736",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

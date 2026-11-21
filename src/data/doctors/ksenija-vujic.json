@@ -1,0 +1,38 @@
+{
+  "slug": "ksenija-vujic",
+  "name": "Ksenija Vujić",
+  "nameRu": "Ксенийа Вуйич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Novi Sad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Vujić Dental",
+      "city": "Novi Sad",
+      "address": "Bulevar Evrope 21/3, Novi Sad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38163556252"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/ksenija-vujic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/a0d8df968f53e1365acde908cf9d81a58926353c-1200x1600.jpg?w=520&h=520&fit=crop&auto=format&q=75"
+}

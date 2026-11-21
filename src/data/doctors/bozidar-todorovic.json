@@ -1,0 +1,34 @@
+{
+  "slug": "bozidar-todorovic",
+  "name": "Božidar Todorović",
+  "nameRu": "Божидар Тодорович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "ADent",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/bozidar-todorovic--vracar-240.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

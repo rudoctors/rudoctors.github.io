@@ -1,0 +1,34 @@
+{
+  "slug": "momcilo-hristic",
+  "name": "Momčilo Hristić",
+  "nameRu": "Момчило Христич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Grad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dental studio dr. Hristić",
+      "city": "Grad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/momcilo-hristic-stari-grad-230.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "zita-varga-radojevic",
+  "name": "Zita Varga Radojević",
+  "nameRu": "Зита Варга Радойевич",
+  "origin": "rs",
+  "specializations": [
+    "neurologist"
+  ],
+  "city": "Vrbas",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika Dr Božičić",
+      "city": "Vrbas",
+      "address": "JNA 3, Vrbas"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "0648254141"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/zita-varga-radojevic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/c5c72786accaff7733f5cea572ae397199c35510-1080x1350.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

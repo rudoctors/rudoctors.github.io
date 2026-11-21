@@ -1,0 +1,34 @@
+{
+  "slug": "ivana-jovanovic",
+  "name": "Ivana Jovanović",
+  "nameRu": "Ивана Йованович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Grad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka ordinacija dr.Toma M. Jovanović",
+      "city": "Grad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/ivana-jovanovic-stari-grad-253.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "kristian-gerga",
+  "name": "Kristian Gerga",
+  "nameRu": "Кристиан Герга",
+  "origin": "rs",
+  "specializations": [
+    "dental_implantologist"
+  ],
+  "city": "Pančevo",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dr Gerga",
+      "city": "Pančevo"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/implantolog/kristian-gerga-pancevo-120.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

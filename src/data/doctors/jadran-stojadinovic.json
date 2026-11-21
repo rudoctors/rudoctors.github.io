@@ -1,0 +1,34 @@
+{
+  "slug": "jadran-stojadinovic",
+  "name": "Jadran Stojadinović",
+  "nameRu": "Йадран Стойадинович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Adriadent stomatološka ordinacija",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/jadran-stojadinovic-zemun-256.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

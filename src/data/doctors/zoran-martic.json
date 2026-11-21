@@ -1,0 +1,34 @@
+{
+  "slug": "zoran-martic",
+  "name": "Zoran Martić",
+  "nameRu": "Зоран Мартич",
+  "origin": "rs",
+  "specializations": [
+    "surgeon"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Specijalna hirurška bolnica hirurgija dr. Đoković",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/hirurgija/opsti-hirurg/zoran-martic-vozdovac-328.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

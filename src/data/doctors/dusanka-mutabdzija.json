@@ -1,0 +1,38 @@
+{
+  "slug": "dusanka-mutabdzija",
+  "name": "Dušanka Mutabdžija",
+  "nameRu": "Душанка Мутабджийа",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "NovaMed",
+      "city": "Subotica",
+      "address": "Banijska 57, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38124265169"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/dusanka-mutabdzija"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/17fb12d3b480e157e7f92f23ac1cf9e124543300-600x600.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

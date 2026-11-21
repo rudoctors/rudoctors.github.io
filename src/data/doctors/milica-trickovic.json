@@ -1,0 +1,34 @@
+{
+  "slug": "milica-trickovic",
+  "name": "Milica Tričković",
+  "nameRu": "Милица Тричкович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dental - Art",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/milica-trickovic-nis-729.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

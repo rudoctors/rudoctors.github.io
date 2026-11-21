@@ -1,0 +1,37 @@
+{
+  "slug": "aleksandar-mitic",
+  "name": "Aleksandar Mitić",
+  "nameRu": "Александар Митич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/aleksandar-mitic"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "309537",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

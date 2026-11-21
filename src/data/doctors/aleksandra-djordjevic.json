@@ -1,0 +1,40 @@
+{
+  "slug": "aleksandra-djordjevic",
+  "name": "Aleksandra Đorđević",
+  "nameRu": "Александра Джорджевич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dumident",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/ortodont/aleksandra-djordjevic-nis-692.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "113430",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

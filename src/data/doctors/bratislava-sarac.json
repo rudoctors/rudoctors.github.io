@@ -1,0 +1,31 @@
+{
+  "slug": "bratislava-sarac",
+  "name": "Bratislava Šarac",
+  "nameRu": "Братислава Шарац",
+  "origin": "rs",
+  "specializations": [
+    "gp"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/bratislava-sarac"
+  ],
+  "updatedAt": "2026-11-21"
+}

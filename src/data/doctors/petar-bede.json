@@ -1,0 +1,34 @@
+{
+  "slug": "petar-bede",
+  "name": "Petar Bede",
+  "nameRu": "Петар Беде",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Novi Sad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "DR BEDE",
+      "city": "Novi Sad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/petar-bede-novi-sad-622.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

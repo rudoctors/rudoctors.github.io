@@ -1,0 +1,48 @@
+{
+  "slug": "natasa-gocic",
+  "name": "Nataša Gocić",
+  "nameRu": "Наташа Гоцич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika Sente",
+      "city": "Subotica",
+      "address": "Lajoša Joa 4A, Subotica"
+    },
+    {
+      "clinic": "Specijalistička Ordinacija Internum",
+      "city": "Novi Sad",
+      "address": "Bulevar Oslobođenja 151, Novi Sad"
+    },
+    {
+      "clinic": "Bios Lab",
+      "city": "Bačka Palanka",
+      "address": "Jugoslovenske Armije 53, Bačka Palanka"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38124520698"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/natasa-gocic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/8e76e63acb03d0439dcc4e85f46ee886d7e0740b-1080x1350.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "aleksandra-misovic",
+  "name": "Aleksandra Misović",
+  "nameRu": "Александра Мисович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Topola",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Specijalistička stomatološka ordinacija",
+      "city": "Topola"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/proteticar/aleksandra-misovic-topola-203.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

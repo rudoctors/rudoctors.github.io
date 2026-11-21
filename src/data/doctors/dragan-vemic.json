@@ -1,0 +1,44 @@
+{
+  "slug": "dragan-vemic",
+  "name": "Dragan Vemić",
+  "nameRu": "Драган Вемич",
+  "origin": "rs",
+  "specializations": [
+    "dermatologist"
+  ],
+  "city": "Vrbas",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dr Vemić",
+      "city": "Vrbas",
+      "address": "Njegoševa 19/1, Vrbas"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381665255596"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/dragan-vemic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/99cca67cc8d5523bc36593a0e3215b8904802a26-1080x1080.png?w=520&h=520&fit=crop&auto=format&q=75",
+  "license": {
+    "number": "202524",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

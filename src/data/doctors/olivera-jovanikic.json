@@ -1,0 +1,34 @@
+{
+  "slug": "olivera-jovanikic",
+  "name": "Olivera Jovanikić",
+  "nameRu": "Оливера Йованикич",
+  "origin": "rs",
+  "specializations": [
+    "surgeon"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Nada",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/hirurgija/neurohirurg/olivera-jovanikic-cukarica-493.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

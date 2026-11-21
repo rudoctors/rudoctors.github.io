@@ -1,0 +1,34 @@
+{
+  "slug": "marijeta-ristic",
+  "name": "Marijeta Ristić",
+  "nameRu": "Марийета Ристич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Loznica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka ordinacija",
+      "city": "Loznica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/marijeta-ristic-loznica-100.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

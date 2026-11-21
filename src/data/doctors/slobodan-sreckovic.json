@@ -46,7 +46,11 @@
   "hidden": false,
   "featured": false,
   "sources": [
-    "t.me/vrachivserbii"
+    "t.me/vrachivserbii",
+    "https://stetoskop.info/doktor/slobodan-sreckovic"
   ],
-  "updatedAt": "2026-10-31"
+  "updatedAt": "2026-11-21",
+  "origin": "rs",
+  "nameRu": "Слободан Сречкович",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/504/slobodan-sreckovic.jpg"
 }

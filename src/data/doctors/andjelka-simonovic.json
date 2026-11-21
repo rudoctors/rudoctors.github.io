@@ -1,0 +1,34 @@
+{
+  "slug": "andjelka-simonovic",
+  "name": "Anđelka Simonović",
+  "nameRu": "Анджелка Симонович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "ASDENT",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/andjelka-simonovic-nis-121.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

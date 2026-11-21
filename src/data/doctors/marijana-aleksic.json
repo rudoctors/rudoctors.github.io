@@ -1,0 +1,38 @@
+{
+  "slug": "marijana-aleksic",
+  "name": "Marijana Aleksić",
+  "nameRu": "Марийана Алексич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Novi Sad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "NS Dental",
+      "city": "Novi Sad",
+      "address": "Đorđa Jovanovića 8, Novi Sad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381216614617"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/marijana-aleksic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/a79b732744bae2fb0a4c407baa3b3eaf36e353f8-751x751.jpg?w=520&h=520&fit=crop&auto=format&q=75"
+}

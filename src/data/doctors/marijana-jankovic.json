@@ -1,0 +1,34 @@
+{
+  "slug": "marijana-jankovic",
+  "name": "Marijana  Janković",
+  "nameRu": "Марийана  Йанкович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Venac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Pesoni Dent",
+      "city": "Venac"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/marijana--jankovic-savski-venac-220.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

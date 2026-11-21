@@ -1,0 +1,34 @@
+{
+  "slug": "ivana-stamenkovic",
+  "name": "Ivana Stamenković",
+  "nameRu": "Ивана Стаменкович",
+  "origin": "rs",
+  "specializations": [
+    "gynecologist"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Medica Centar",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/ginekologija/ginekolog/ivana-stamenkovic-nis-684.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

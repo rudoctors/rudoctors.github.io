@@ -1,0 +1,34 @@
+{
+  "slug": "milos-potic",
+  "name": "Miloš Potić",
+  "nameRu": "Милош Потич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka ordinacija Mea:Dent",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/milos-potic-novi-beograd-42.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

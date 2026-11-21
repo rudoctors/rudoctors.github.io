@@ -1,0 +1,31 @@
+{
+  "slug": "zoran-bahtijarevic",
+  "name": "Zoran Bahtijarević",
+  "nameRu": "Зоран Бахтийаревич",
+  "origin": "rs",
+  "specializations": [
+    "surgeon"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/zoran-bahtijarevic"
+  ],
+  "updatedAt": "2026-11-21"
+}

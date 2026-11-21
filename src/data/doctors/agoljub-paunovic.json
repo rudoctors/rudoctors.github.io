@@ -1,0 +1,34 @@
+{
+  "slug": "agoljub-paunovic",
+  "name": "agoljub Paunović",
+  "nameRu": "агольуб Паунович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Smederevo",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dentino",
+      "city": "Smederevo"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/proteticar/dragoljub-paunovic-smederevo-541.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

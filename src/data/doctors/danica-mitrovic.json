@@ -1,0 +1,34 @@
+{
+  "slug": "danica-mitrovic",
+  "name": "Danica Mitrović",
+  "nameRu": "Даница Митрович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka ordinacija dr. Danica Mitrović",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/danica-mitrovic-vracar-247.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

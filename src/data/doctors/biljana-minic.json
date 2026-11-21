@@ -1,0 +1,34 @@
+{
+  "slug": "biljana-minic",
+  "name": "Biljana Minić",
+  "nameRu": "Бильана Минич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Leskovac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Sensa",
+      "city": "Leskovac"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/biljana-minic-leskovac-741.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

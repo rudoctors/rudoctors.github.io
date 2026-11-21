@@ -1,0 +1,34 @@
+{
+  "slug": "vladan-mancic",
+  "name": "Vladan Mančić",
+  "nameRu": "Владан Манчич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Palanka",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Moj Zubar",
+      "city": "Palanka"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/vladan-mancic-smederevska-palanka-543.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

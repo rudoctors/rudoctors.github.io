@@ -1,0 +1,38 @@
+{
+  "slug": "agneza-mago-nikodijevic",
+  "name": "Agneza Mago Nikodijević",
+  "nameRu": "Агнеза Маго Никодийевич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Megaclinic",
+      "city": "Subotica",
+      "address": "Aleja Maršala Tita 33, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38124557789"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/agneza-mago-nikodijevic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/5d0bc1a0b234ee0dda5aca2ee8112ca233b2ebd9-1080x1080.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

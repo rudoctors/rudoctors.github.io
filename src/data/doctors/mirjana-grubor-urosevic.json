@@ -1,0 +1,36 @@
+{
+  "slug": "mirjana-grubor-urosevic",
+  "name": "Mirjana Grubor Urošević",
+  "nameRu": "Мирйана Грубор Урошевич",
+  "origin": "rs",
+  "specializations": [
+    "pulmonologist"
+  ],
+  "city": "Grad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Privatna praksa Petrović",
+      "city": "Grad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/interna-medicina/pulmolog/mirjana-grubor-urosevic-stari-grad-348.htm",
+    "https://stetoskop.info/doktor/mirjana-grubor-urosevic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/153/mirjana-grubor-urosevic.jpg"
+}

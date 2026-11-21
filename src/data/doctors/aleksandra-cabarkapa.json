@@ -1,0 +1,34 @@
+{
+  "slug": "aleksandra-cabarkapa",
+  "name": "Aleksandra Čabarkapa",
+  "nameRu": "Александра Чабаркапа",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Pančevo",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dr Taso",
+      "city": "Pančevo"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/aleksandra-cabarkapa-pancevo-539.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

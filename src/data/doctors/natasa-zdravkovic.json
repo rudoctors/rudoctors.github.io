@@ -1,0 +1,37 @@
+{
+  "slug": "natasa-zdravkovic",
+  "name": "Nataša Zdravković",
+  "nameRu": "Наташа Здравкович",
+  "origin": "rs",
+  "specializations": [
+    "gastroenterologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/natasa-zdravkovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "102308",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

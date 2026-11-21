@@ -1,0 +1,31 @@
+{
+  "slug": "manuel-rigo",
+  "name": "Manuel Rigo",
+  "nameRu": "Мануел Риго",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/manuel-rigo"
+  ],
+  "updatedAt": "2026-11-21"
+}

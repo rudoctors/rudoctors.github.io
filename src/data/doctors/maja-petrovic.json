@@ -1,0 +1,34 @@
+{
+  "slug": "maja-petrovic",
+  "name": "Maja Petrović",
+  "nameRu": "Майа Петрович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dentamed",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/maja-petrovic-nis-74.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

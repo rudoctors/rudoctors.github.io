@@ -1,0 +1,38 @@
+{
+  "slug": "andrijana-maric",
+  "name": "Andrijana Marić",
+  "nameRu": "Андрийана Марич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Kula",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Marmezo Medical",
+      "city": "Kula",
+      "address": "Maršala Tita 246d, Kula"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381637332723"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/andrijana-maric"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/de6270a362ac75a408d51621ca9f544bcab6af63-1026x1026.jpg?w=520&h=520&fit=crop&auto=format&q=75"
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "master-psiholog-aleksandra-hever",
+  "name": "Master psiholog Aleksandra Hever",
+  "nameRu": "Мастер психолог Александра Хевер",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Megaclinic",
+      "city": "Subotica",
+      "address": "Aleja Maršala Tita 33, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38124557789"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/aleksandra-hever"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/2cd7c40a002d06084d0fda06d9b898bf6da1722e-1080x1350.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

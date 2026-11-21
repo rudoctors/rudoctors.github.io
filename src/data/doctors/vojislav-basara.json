@@ -1,0 +1,37 @@
+{
+  "slug": "vojislav-basara",
+  "name": "Vojislav Basara",
+  "nameRu": "Войислав Басара",
+  "origin": "rs",
+  "specializations": [
+    "traumatologist_orthopedist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Opšta bolnica Atlas",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38163687463"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/vojislav-basara"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/72/vojislav-basara.png"
+}

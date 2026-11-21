@@ -1,0 +1,34 @@
+{
+  "slug": "milena-stojiljkovic",
+  "name": "Milena Stojiljković",
+  "nameRu": "Милена Стойилькович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dental Art",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/milena-stojiljkovic-nis-222.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

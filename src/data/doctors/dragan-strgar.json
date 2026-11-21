@@ -1,0 +1,44 @@
+{
+  "slug": "dragan-strgar",
+  "name": "Dragan Strgar",
+  "nameRu": "Драган Стргар",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Sombor",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Baltis",
+      "city": "Sombor",
+      "address": "Matije Gupca 69, Sombor"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38125461533"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/dragan-strgar"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/5b588a244f11ae4d8d315137f762e26ac28d9948-1080x1350.png?w=520&h=520&fit=crop&auto=format&q=75",
+  "license": {
+    "number": "207935",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

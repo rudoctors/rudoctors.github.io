@@ -1,0 +1,34 @@
+{
+  "slug": "ljubomir-jovic",
+  "name": "Ljubomir Jović",
+  "nameRu": "Льубомир Йович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dental centar Wisil M",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/ljubomir-jovic-novi-beograd-290.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

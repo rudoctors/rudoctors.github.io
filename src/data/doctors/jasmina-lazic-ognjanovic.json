@@ -1,0 +1,34 @@
+{
+  "slug": "jasmina-lazic-ognjanovic",
+  "name": "Jasmina Lazić Ognjanović",
+  "nameRu": "Йасмина Лазич Огньанович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Nis Dental",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/jasmina-lazic-ognjanovic-nis-722.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

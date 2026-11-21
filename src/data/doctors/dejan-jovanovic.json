@@ -1,0 +1,43 @@
+{
+  "slug": "dejan-jovanovic",
+  "name": "Dejan Jovanović",
+  "nameRu": "Дейан Йованович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Novi Sad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Bonadea",
+      "city": "Novi Sad",
+      "address": "Jovana Đorđevića 11, Novi Sad"
+    },
+    {
+      "clinic": "Opšta bolnica Sava Medical Hospital",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38121557707"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/dejan-jovanovic",
+    "https://stetoskop.info/doktor/dejan-jovanovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/99cca67cc8d5523bc36593a0e3215b8904802a26-1080x1080.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

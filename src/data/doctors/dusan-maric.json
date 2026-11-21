@@ -1,0 +1,47 @@
+{
+  "slug": "dusan-maric",
+  "name": "Dušan Marić",
+  "nameRu": "Душан Марич",
+  "origin": "rs",
+  "specializations": [
+    "traumatologist_orthopedist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika Orto MD",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Specijalna bolnica P.A.R.K.S.",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381600687461"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/dusan-maric"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/1352/dusan-maric.jpg",
+  "license": {
+    "number": "202916",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

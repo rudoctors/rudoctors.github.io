@@ -1,0 +1,37 @@
+{
+  "slug": "jasmina-nikolic",
+  "name": "Jasmina Nikolić",
+  "nameRu": "Йасмина Николич",
+  "origin": "rs",
+  "specializations": [
+    "ophthalmologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika dr Raketić",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38163687463"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/jasmina-nikolic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/55/jasmina-nikolic.jpg"
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "milovan-dimitrijevic",
+  "name": "Milovan Dimitrijević",
+  "nameRu": "Милован Димитрийевич",
+  "origin": "rs",
+  "specializations": [
+    "surgeon"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "MKM specijalistička ordinacija",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Opšta bolnica Avala",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/maksilofacijalni-hirurg/milovan-dimitrijevic-novi-beograd-296.htm",
+    "https://stetoskop.info/doktor/milovan-dimitrijevic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/2812/milovan-dimitrijevic.jpg"
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "violeta-dinic-radovic",
+  "name": "Violeta Dinić Radović",
+  "nameRu": "Виолета Динич Радович",
+  "origin": "rs",
+  "specializations": [
+    "gastroenterologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/violeta-dinic-radovic"
+  ],
+  "updatedAt": "2026-11-21"
+}

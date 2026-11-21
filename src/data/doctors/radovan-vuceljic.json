@@ -1,0 +1,34 @@
+{
+  "slug": "radovan-vuceljic",
+  "name": "Radovan Vučeljić",
+  "nameRu": "Радован Вучельич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dental One",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/radovan-vuceljic-novi-beograd-226.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

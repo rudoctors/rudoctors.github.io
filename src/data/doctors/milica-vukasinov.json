@@ -1,0 +1,34 @@
+{
+  "slug": "milica-vukasinov",
+  "name": "Milica Vukašinov",
+  "nameRu": "Милица Вукашинов",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Pančevo",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Biodent",
+      "city": "Pančevo"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/milica-vukasinov-pancevo-535.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

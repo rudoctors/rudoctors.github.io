@@ -1,0 +1,34 @@
+{
+  "slug": "olivera-kosanovic",
+  "name": "Olivera Kosanović",
+  "nameRu": "Оливера Косанович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka ordinacija Kosanović",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/olivera-kosanovic-novi-beograd-118.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

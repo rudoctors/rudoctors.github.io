@@ -1,0 +1,31 @@
+{
+  "slug": "slavica-simeunovic",
+  "name": "Slavica Simeunović",
+  "nameRu": "Славица Симеунович",
+  "origin": "rs",
+  "specializations": [
+    "gp"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/slavica-simeunovic"
+  ],
+  "updatedAt": "2026-11-21"
+}

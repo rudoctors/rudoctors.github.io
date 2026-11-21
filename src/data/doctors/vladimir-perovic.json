@@ -1,0 +1,40 @@
+{
+  "slug": "vladimir-perovic",
+  "name": "Vladimir Perović",
+  "nameRu": "Владимир Перович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Grad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka ordinacija Vladimir Perović",
+      "city": "Grad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/vladimir-perovic-stari-grad-229.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "100025",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

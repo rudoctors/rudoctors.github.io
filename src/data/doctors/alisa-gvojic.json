@@ -1,0 +1,38 @@
+{
+  "slug": "alisa-gvojic",
+  "name": "Alisa Gvojić",
+  "nameRu": "Алиса Гвойич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Vizus",
+      "city": "Subotica",
+      "address": "Evgenija Kumičića 19, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381659201222"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/alisa-gvojic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/c7bb679239463c5b5b429fa031a6c718ae6b7dec-3022x3798.jpg?w=520&h=520&fit=crop&auto=format&q=75"
+}

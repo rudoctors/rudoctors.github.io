@@ -1,0 +1,44 @@
+{
+  "slug": "milan-bosnjak",
+  "name": "Milan Bošnjak",
+  "nameRu": "Милан Бошньак",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Sombor",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Cardiomedica Dr Bošnjak",
+      "city": "Sombor",
+      "address": "Čonopljanski put 15c, Sombor"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38125426791"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/milan-bosnjak"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/1e59d5164a23fbbe56db82169e58fea4b3d31324-1600x1200.jpg?w=520&h=520&fit=crop&auto=format&q=75",
+  "license": {
+    "number": "203067",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "milosav-djordjevic",
+  "name": "Milosav Đorđević",
+  "nameRu": "Милосав Джорджевич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dumident",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/milosav-djordjevic-nis-694.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "aleksandra-bojovic",
+  "name": "Aleksandra Bojović",
+  "nameRu": "Александра Бойович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "NovaMed",
+      "city": "Subotica",
+      "address": "Banijska 57, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38124265169"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/aleksandra-bojovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/8c4a0a23c2f1e18315b331d846f859d7a2fa4499-1080x1080.jpg?w=520&h=520&fit=crop&auto=format&q=75"
+}

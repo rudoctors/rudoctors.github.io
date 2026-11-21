@@ -1,0 +1,44 @@
+{
+  "slug": "tamara-borkov",
+  "name": "Tamara Borkov",
+  "nameRu": "Тамара Борков",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Vizus",
+      "city": "Subotica",
+      "address": "Evgenija Kumičića 19, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381659201222"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/tamara-borkov"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/f4a2dc4b6df4b00927f1dc3f33579ef9243a08b5-3022x3803.jpg?w=520&h=520&fit=crop&auto=format&q=75",
+  "license": {
+    "number": "203598",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "andja-mosurovic",
+  "name": "Anđa Mosurović",
+  "nameRu": "Анджа Мосурович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/anda-mosurovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "402753",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "ivana-mitrovic",
+  "name": "Ivana Mitrović",
+  "nameRu": "Ивана Митрович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Oki Dent",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/ivana-mitrovic-nis-707.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "302568",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

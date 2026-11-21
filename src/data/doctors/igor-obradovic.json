@@ -1,0 +1,38 @@
+{
+  "slug": "igor-obradovic",
+  "name": "Igor Obradović",
+  "nameRu": "Игор Обрадович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Kraljevo",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Đusić",
+      "city": "Kraljevo",
+      "address": "Vojvode Putnika 64/TC DANICA lok 33, Kraljevo"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38169633803"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/igor-obradovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/9377fd6848b13a3b568f7b79fcca5de2addb3219-1080x1080.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

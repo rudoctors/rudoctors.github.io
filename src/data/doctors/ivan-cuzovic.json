@@ -1,0 +1,34 @@
+{
+  "slug": "ivan-cuzovic",
+  "name": "Ivan Cuzović",
+  "nameRu": "Иван Цузович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Novi Sad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "PROSMILE",
+      "city": "Novi Sad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/ivan-cuzovic-novi-sad-43.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

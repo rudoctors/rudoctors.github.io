@@ -1,0 +1,32 @@
+{
+  "slug": "marko-virijevic",
+  "name": "Marko Virijević",
+  "nameRu": "Марко Вирийевич",
+  "origin": "rs",
+  "specializations": [
+    "traumatologist_orthopedist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/marko-virijevic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/85/marko-virijevic.jpg"
+}

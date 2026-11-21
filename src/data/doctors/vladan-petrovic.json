@@ -1,0 +1,37 @@
+{
+  "slug": "vladan-petrovic",
+  "name": "Vladan Petrović",
+  "nameRu": "Владан Петрович",
+  "origin": "rs",
+  "specializations": [
+    "gastroenterologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/vladan-petrovic-2"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "200114",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

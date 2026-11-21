@@ -1,0 +1,34 @@
+{
+  "slug": "dejan-stojanovic-stojanovic",
+  "name": "Dejan Stojanović Stojanović",
+  "nameRu": "Дейан Стойанович Стойанович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Implant Centar Stojanović",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/dejan-stojanovic-stojanovic-zemun-246.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

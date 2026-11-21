@@ -35,7 +35,8 @@
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
-    "https://t.me/vrachivserbii/101062"
+    "https://t.me/vrachivserbii/101062",
+    "https://stetoskop.info/doktor/sandra-radovic"
   ],
   "updatedAt": "2026-11-21",
   "origin": "rs",
@@ -45,5 +46,6 @@
     "authority": "Lekarska komora Srbije",
     "verified": true
   },
-  "verificationStatus": "verified"
+  "verificationStatus": "verified",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/64/sandra-radovic.jpg"
 }

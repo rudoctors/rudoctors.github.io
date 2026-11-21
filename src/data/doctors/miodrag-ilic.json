@@ -17,6 +17,10 @@
       "clinic": "Prva Poliklinika",
       "address": "Krunska 38",
       "city": "Belgrade"
+    },
+    {
+      "clinic": "Prva Poliklinika Beograd",
+      "city": "Belgrade"
     }
   ],
   "contacts": {},
@@ -34,7 +38,8 @@
   "featured": false,
   "sources": [
     "t.me/vrachivserbii",
-    "https://t.me/vrachivserbii/76975"
+    "https://t.me/vrachivserbii/76975",
+    "https://stetoskop.info/doktor/miodrag-ilic"
   ],
   "updatedAt": "2026-11-21",
   "origin": "rs",
@@ -44,5 +49,6 @@
     "authority": "Lekarska komora Srbije",
     "verified": true
   },
-  "verificationStatus": "verified"
+  "verificationStatus": "verified",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/2145/miodrag-ilic.webp"
 }

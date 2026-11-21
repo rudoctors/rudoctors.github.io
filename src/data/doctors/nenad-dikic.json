@@ -1,0 +1,47 @@
+{
+  "slug": "nenad-dikic",
+  "name": "Nenad Dikić",
+  "nameRu": "Ненад Дикич",
+  "origin": "rs",
+  "specializations": [
+    "cardiologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dom zdravlja Family Medica",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Family Medica 5 - Novi Beograd (Aqualab)",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381600687461"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/nenad-dikic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/1647/nenad-dikic.jpg",
+  "license": {
+    "number": "104011",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

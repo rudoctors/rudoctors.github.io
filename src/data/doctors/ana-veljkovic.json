@@ -1,0 +1,34 @@
+{
+  "slug": "ana-veljkovic",
+  "name": "Ana Veljković",
+  "nameRu": "Ана Велькович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Higija Dent",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/ana-veljkovic-nis-705.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

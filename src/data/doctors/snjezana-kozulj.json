@@ -1,0 +1,34 @@
+{
+  "slug": "snjezana-kozulj",
+  "name": "Snježana  Kožulj",
+  "nameRu": "Сньежана  Кожуль",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Grad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dental One",
+      "city": "Grad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/snjezana--kozulj-stari-grad-227.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

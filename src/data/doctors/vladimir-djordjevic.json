@@ -1,0 +1,37 @@
+{
+  "slug": "vladimir-djordjevic",
+  "name": "Vladimir Đorđević",
+  "nameRu": "Владимир Джорджевич",
+  "origin": "rs",
+  "specializations": [
+    "surgeon"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/vladimir-djordjevic"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "105523",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "bojan-stevanovic",
+  "name": "Bojan  Stevanović",
+  "nameRu": "Бойан  Стеванович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dentic",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/bojan--stevanovic-nis-744.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

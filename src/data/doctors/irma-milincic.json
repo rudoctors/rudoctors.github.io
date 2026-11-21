@@ -1,0 +1,40 @@
+{
+  "slug": "irma-milincic",
+  "name": "Irma Milinčić",
+  "nameRu": "Ирма Милинчич",
+  "origin": "rs",
+  "specializations": [
+    "pulmonologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Intrnistička ordinacija dr. Petrić",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/interna-medicina/pulmolog/irma-milincic-vozdovac-412.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "100563",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

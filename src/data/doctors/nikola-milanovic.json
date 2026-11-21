@@ -1,0 +1,34 @@
+{
+  "slug": "nikola-milanovic",
+  "name": "Nikola Milanović",
+  "nameRu": "Никола Миланович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Kraljevo",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dr Milanović",
+      "city": "Kraljevo"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/nikola-milanovic-kraljevo-564.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

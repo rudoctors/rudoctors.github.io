@@ -1,0 +1,34 @@
+{
+  "slug": "marko-ruzic",
+  "name": "Marko Ružić",
+  "nameRu": "Марко Ружич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Smederevo",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dental orto",
+      "city": "Smederevo"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/marko-ruzic-smederevo-512.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

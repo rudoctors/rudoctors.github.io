@@ -1,0 +1,38 @@
+{
+  "slug": "asist-dr-med-nemanja-popovic",
+  "name": "Asist. dr med. Nemanja Popović",
+  "nameRu": "Асист. др мед. Неманьа Попович",
+  "origin": "rs",
+  "specializations": [
+    "neurologist"
+  ],
+  "city": "Novi Sad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika Dr Brana Kovačević",
+      "city": "Novi Sad",
+      "address": "Mičurinova 28, Novi Sad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38121510555"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/nemanja-popovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/99cca67cc8d5523bc36593a0e3215b8904802a26-1080x1080.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

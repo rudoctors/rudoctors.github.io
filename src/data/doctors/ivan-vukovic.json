@@ -1,0 +1,40 @@
+{
+  "slug": "ivan-vukovic",
+  "name": "Ivan Vuković",
+  "nameRu": "Иван Вукович",
+  "origin": "rs",
+  "specializations": [
+    "urologist"
+  ],
+  "city": "Venac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Clinicanova",
+      "city": "Venac"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/hirurgija/urolog/ivan-vukovic-savski-venac-156.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "105686",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

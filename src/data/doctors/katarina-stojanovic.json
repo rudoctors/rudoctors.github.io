@@ -1,0 +1,34 @@
+{
+  "slug": "katarina-stojanovic",
+  "name": "Katarina Stojanović",
+  "nameRu": "Катарина Стойанович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka ordinacija",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/katarina-stojanovic-novi-beograd-208.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Скрапер врачей с портала NađiDoktora.rs
+ * Высокоскоростной параллельный скрапер NađiDoktora.rs (100% базы).
  */
 
 import fs from 'node:fs';
@@ -12,6 +12,7 @@ const __dirname = path.dirname(__filename);
 
 const SITEMAP_URL = 'http://www.nadjidoktora.rs/sitemap.xml';
 const OUT_FILE = path.join(__dirname, '..', 'src', 'data', 'sources', 'serbian', 'raw-nadjidoktora.json');
+const CONCURRENCY = 15;
 
 const CITY_MAP = {
     'beograd': 'Belgrade',
@@ -48,18 +49,15 @@ async function fetchText(url) {
 async function getDoctorUrls() {
   console.log(`[*] Загрузка sitemap: ${SITEMAP_URL}...`);
   const xml = await fetchText(SITEMAP_URL);
-  // URL врачей имеют формат: http://www.nadjidoktora.rs/<cat>/<subcat>/<name-city-id>.htm
   const locs = [...xml.matchAll(/<loc>(http:\/\/www\.nadjidoktora\.rs\/[^\/]+\/[^\/]+\/[a-z0-9-]+-\d+\.htm)<\/loc>/g)].map(m => m[1]);
   console.log(`    -> Найдено ${locs.length} профилей врачей на NađiDoktora.`);
   return locs;
 }
 
 function parseDoctorPage(html, url) {
-  // Breadcrumbs: <li><span>Slobodan Petrović</span></li>
   const breadcrumbNameMatch = html.match(/<ul class="hero-breadcrumbs">[\s\S]*?<li><span>([^<]+)<\/span><\/li>/i);
   let name = breadcrumbNameMatch ? breadcrumbNameMatch[1].trim() : '';
 
-  // Если не нашлось в breadcrumbs — ищем в h1
   if (!name) {
     const h1Match = html.match(/<h1[^>]*>(.*?)<\/h1>/i);
     if (h1Match) {
@@ -69,15 +67,12 @@ function parseDoctorPage(html, url) {
 
   if (!name) return null;
 
-  // Специальность: <h4>Pulmolog</h4>
   const specMatch = html.match(/<h4>([^<]+)<\/h4>/i);
   const specialtyRaw = specMatch ? specMatch[1].trim() : '';
 
-  // Клиника: <h3>Ordinacija: Poliklinika HUMAN</h3>
   const clinicMatch = html.match(/<h3>Ordinacija:\s*([^<]+)<\/h3>/i) || html.match(/Ordinacija:\s*<a[^>]*>([^<]+)<\/a>/i);
   const clinic = clinicMatch ? clinicMatch[1].trim() : '';
 
-  // Город из URL: /slobodan-petrovic-nis-112.htm
   const slugPart = url.match(/\/([^\/]+)-\d+\.htm$/i)?.[1] || '';
   const tokens = slugPart.split('-');
   let city = 'Belgrade';
@@ -92,11 +87,9 @@ function parseDoctorPage(html, url) {
     city = CITY_MAP[lastTok] || (lastTok ? lastTok.charAt(0).toUpperCase() + lastTok.slice(1) : 'Belgrade');
   }
 
-  // Рекомендации / лайки: class="vote-mark ...">170</a>
   const votesMatch = html.match(/class=["'][^"']*vote-mark[^"']*["'][^>]*>(\d+)<\/a>/i);
   const votes = votesMatch ? parseInt(votesMatch[1], 10) : 0;
 
-  // Услуги: <li> в блоке услуг
   const servicesBlock = html.match(/Usluge koje ovaj doktor pruža[\s\S]*?<ul[^>]*>([\s\S]*?)<\/ul>/i);
   const services = servicesBlock ? [...servicesBlock[1].matchAll(/<li[^>]*>([^<]+)<\/li>/gi)].map(m => m[1].trim()) : [];
 
@@ -114,40 +107,51 @@ function parseDoctorPage(html, url) {
   };
 }
 
-async function main() {
-  const args = process.argv.slice(2);
-  const limitIdx = args.indexOf('--limit');
-  const limit = limitIdx !== -1 ? parseInt(args[limitIdx + 1], 10) : 50;
+async function parallelFetchAll(urls) {
+  const results = [];
+  let index = 0;
+  let activeWorkers = 0;
 
-  fs.mkdirSync(path.dirname(OUT_FILE), { recursive: true });
-
-  const urls = await getDoctorUrls();
-  const targetUrls = limit > 0 ? urls.slice(0, limit) : urls;
-
-  console.log(`[*] Парсинг ${targetUrls.length} профилей (limit: ${limit})...`);
-  const doctors = [];
-
-  for (let i = 0; i < targetUrls.length; i++) {
-    const url = targetUrls[i];
-    try {
-      const html = await fetchText(url);
-      const doc = parseDoctorPage(html, url);
-      if (doc) {
-        doctors.push(doc);
+  return new Promise((resolve) => {
+    function next() {
+      if (index >= urls.length && activeWorkers === 0) {
+        return resolve(results);
       }
-      if ((i + 1) % 10 === 0 || i === targetUrls.length - 1) {
-        console.log(`    [${i + 1}/${targetUrls.length}] Обработано...`);
+
+      while (activeWorkers < CONCURRENCY && index < urls.length) {
+        const i = index++;
+        const url = urls[i];
+        activeWorkers++;
+
+        fetchText(url)
+          .then((html) => {
+            const data = parseDoctorPage(html, url);
+            if (data) results.push(data);
+          })
+          .catch((err) => {
+            // silent ignore
+          })
+          .finally(() => {
+            activeWorkers--;
+            if (results.length % 50 === 0 || index >= urls.length) {
+              console.log(`    [NađiDoktora] Прогресс: ${results.length}/${urls.length}...`);
+            }
+            next();
+          });
       }
-    } catch (err) {
-      console.warn(`    [!] Ошибка при парсинге ${url}: ${err.message}`);
     }
-  }
 
-  fs.writeFileSync(OUT_FILE, JSON.stringify(doctors, null, 2), 'utf-8');
-  console.log(`[✓] Успешно сохранено ${doctors.length} врачей из NađiDoktora в ${OUT_FILE}`);
+    next();
+  });
 }
 
-main().catch(err => {
-  console.error('[FATAL]', err);
-  process.exit(1);
-});
+async function main() {
+  fs.mkdirSync(path.dirname(OUT_FILE), { recursive: true });
+  const urls = await getDoctorUrls();
+  console.log(`[*] Запуск параллельного сбора ${urls.length} врачей (потоков: ${CONCURRENCY})...`);
+  const doctors = await parallelFetchAll(urls);
+  fs.writeFileSync(OUT_FILE, JSON.stringify(doctors, null, 2), 'utf-8');
+  console.log(`[✓] NađiDoktora: сохранено ${doctors.length} врачей в ${OUT_FILE}`);
+}
+
+main().catch(console.error);

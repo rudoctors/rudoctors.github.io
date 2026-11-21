@@ -1,0 +1,43 @@
+{
+  "slug": "prim-dr-dragica-strbac-cizmarevic",
+  "name": "Prim dr Dragica Štrbac Čizmarević",
+  "nameRu": "Прим др Драгица Штрбац Чизмаревич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika Sente",
+      "city": "Subotica",
+      "address": "Lajoša Joa 4A, Subotica"
+    },
+    {
+      "clinic": "Megaclinic",
+      "city": "Subotica",
+      "address": "Aleja Maršala Tita 33, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38124520698"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/dragica-strbac-cizmarevic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/e2e4d5d8aefc11289a39246cd82a4f9d395e65a0-440x530.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "anica-guduric",
+  "name": "Anica Gudurić",
+  "nameRu": "Аница Гудурич",
+  "origin": "rs",
+  "specializations": [
+    "urologist"
+  ],
+  "city": "Venac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Clinicanova",
+      "city": "Venac"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/hirurgija/urolog/anica-guduric-savski-venac-157.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

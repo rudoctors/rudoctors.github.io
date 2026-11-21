@@ -1,0 +1,38 @@
+{
+  "slug": "sci-med-natasa-ristic-stanivukovic",
+  "name": "sci. med. Nataša Ristić Stanivuković",
+  "nameRu": "сци. мед. Наташа Ристич Станивукович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Novi Beograd",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Miokardio",
+      "city": "Novi Beograd",
+      "address": "Gandijeva 176/1, Novi Beograd"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38166224959"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/natasa-ristic-stanivukovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/8534138d18c24900662a2b1e2681e906b678cf78-1080x1350.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

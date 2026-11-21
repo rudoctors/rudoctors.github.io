@@ -1,0 +1,38 @@
+{
+  "slug": "karolj-curnovic",
+  "name": "Karolj Curnović",
+  "nameRu": "Кароль Цурнович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Sombor",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Baltis",
+      "city": "Sombor",
+      "address": "Matije Gupca 69, Sombor"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38125461533"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/karolj-curnovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/2e941de331f4464cc23b31a14b2f26ce19ba43b7-1080x1350.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

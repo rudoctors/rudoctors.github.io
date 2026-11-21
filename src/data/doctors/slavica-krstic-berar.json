@@ -1,0 +1,38 @@
+{
+  "slug": "slavica-krstic-berar",
+  "name": "Slavica Krstić Berar",
+  "nameRu": "Славица Крстич Берар",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Novi Sad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Porodični Lekar Slavica",
+      "city": "Novi Sad",
+      "address": "Bulevar Evrope 20, Novi Sad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381649393113"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/slavica-krstic-berar"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/08267311f61ca7a8120f7ccbc7b7ad2920545035-1080x1350.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

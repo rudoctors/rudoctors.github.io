@@ -1,0 +1,34 @@
+{
+  "slug": "eleonora-bede",
+  "name": "Eleonora Bede",
+  "nameRu": "Елеонора Беде",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Novi Sad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "DR BEDE",
+      "city": "Novi Sad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/eleonora-bede-novi-sad-628.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

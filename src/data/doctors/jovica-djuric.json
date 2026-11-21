@@ -1,0 +1,34 @@
+{
+  "slug": "jovica-djuric",
+  "name": "Jovica Đurić",
+  "nameRu": "Йовица Джурич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dr Jovica Djuric",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/jovica-djuric-nis-708.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

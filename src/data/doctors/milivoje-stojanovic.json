@@ -1,0 +1,34 @@
+{
+  "slug": "milivoje-stojanovic",
+  "name": "Milivoje Stojanović",
+  "nameRu": "Миливойе Стойанович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Ordinacija opšte stomatologije dr Milivoje Stojanović",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/proteticar/milivoje-stojanovic-novi-beograd-75.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

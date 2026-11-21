@@ -1,0 +1,34 @@
+{
+  "slug": "olivera-cucic",
+  "name": "Olivera Cucić",
+  "nameRu": "Оливера Цуцич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Cucic dr Olivera",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/olivera-cucic-nis-702.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

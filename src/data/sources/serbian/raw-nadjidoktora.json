@@ -14,7 +14,7 @@
         "city": "Niš"
       }
     ],
-    "scrapedAt": "2026-11-21T15:49:16.265Z"
+    "scrapedAt": "2026-11-21T16:26:00.898Z"
   },
   {
     "source": "nadjidoktora",
@@ -31,24 +31,160 @@
         "city": "Smederevo"
       }
     ],
-    "scrapedAt": "2026-11-21T15:49:16.303Z"
+    "scrapedAt": "2026-11-21T16:26:00.923Z"
   },
   {
     "source": "nadjidoktora",
-    "url": "http://www.nadjidoktora.rs/hirurgija/neurohirurg/ivan-stefanovic-nis-182.htm",
-    "name": "Ivan Stefanović",
-    "specialtyRaw": "Neurohirurg",
-    "clinic": "Poliklinika Magna Plus",
+    "url": "http://www.nadjidoktora.rs/ginekologija/ginekolog/ivana-stamenkovic-nis-684.htm",
+    "name": "Ivana Stamenković",
+    "specialtyRaw": "Ginekolog",
+    "clinic": "Medica Centar",
     "city": "Niš",
-    "recommendationsCount": 381,
+    "recommendationsCount": 8,
     "services": [],
     "workplaces": [
       {
-        "clinic": "Poliklinika Magna Plus",
+        "clinic": "Medica Centar",
         "city": "Niš"
       }
     ],
-    "scrapedAt": "2026-11-21T15:49:16.402Z"
+    "scrapedAt": "2026-11-21T16:26:00.936Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/ginekologija/ginekolog/nenad-cvetkovic-nis-683.htm",
+    "name": "Nenad Cvetković",
+    "specialtyRaw": "Ginekolog",
+    "clinic": "Medica Centar",
+    "city": "Niš",
+    "recommendationsCount": 99,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Medica Centar",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:00.940Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/interna-medicina/pulmolog/vladan--simic-jagodina-509.htm",
+    "name": "Vladan  Simić",
+    "specialtyRaw": "Pulmolog",
+    "clinic": "Pulmo",
+    "city": "Jagodina",
+    "recommendationsCount": 17,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Pulmo",
+        "city": "Jagodina"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:00.941Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/pedijatrija/opsti-pedijatar/milena-vukovic-krusevac-49.htm",
+    "name": "Milena Vuković",
+    "specialtyRaw": "Opšti pedijatar",
+    "clinic": "Privatna ordinacija",
+    "city": "Kruševac",
+    "recommendationsCount": 55,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Privatna ordinacija",
+        "city": "Kruševac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:00.947Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/hirurgija/urolog/zoran-brkic-zvezdara-87.htm",
+    "name": "Zoran Brkić",
+    "specialtyRaw": "Urolog",
+    "clinic": "Urološka ordinacija dr Brkić",
+    "city": "Belgrade",
+    "recommendationsCount": 46,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Urološka ordinacija dr Brkić",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:00.953Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/drasko-stankovic-palilula-325.htm",
+    "name": "Draško Stanković",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dr Ognjen Stankov",
+    "city": "Belgrade",
+    "recommendationsCount": 40,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Ognjen Stankov",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:00.962Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/interna-medicina/pulmolog/jelena-zdravkovic-vracar-69.htm",
+    "name": "Jelena Zdravković",
+    "specialtyRaw": "Pulmolog",
+    "clinic": "Poliklinika MEDIKOM",
+    "city": "Belgrade",
+    "recommendationsCount": 5,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Poliklinika MEDIKOM",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:00.996Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/ostale-grane/fizioterapeut/dragan-andric-kragujevac-650.htm",
+    "name": "Dragan Andrić",
+    "specialtyRaw": "Fizioterapeut",
+    "clinic": "Fizioterapeutska Ambulanta Andrić",
+    "city": "Kragujevac",
+    "recommendationsCount": 8,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Fizioterapeutska Ambulanta Andrić",
+        "city": "Kragujevac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.046Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/ostale-grane/fizioterapeut/jovan-rogic-subotica-206.htm",
+    "name": "Jovan Rogić",
+    "specialtyRaw": "Fizioterapeut",
+    "clinic": "Ambulanta Rehability",
+    "city": "Subotica",
+    "recommendationsCount": 32,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Ambulanta Rehability",
+        "city": "Subotica"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.087Z"
   },
   {
     "source": "nadjidoktora",
@@ -65,7 +201,24 @@
         "city": "Venac"
       }
     ],
-    "scrapedAt": "2026-11-21T15:49:16.497Z"
+    "scrapedAt": "2026-11-21T16:26:01.098Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/hirurgija/neurohirurg/ivan-stefanovic-nis-182.htm",
+    "name": "Ivan Stefanović",
+    "specialtyRaw": "Neurohirurg",
+    "clinic": "Poliklinika Magna Plus",
+    "city": "Niš",
+    "recommendationsCount": 381,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Poliklinika Magna Plus",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.105Z"
   },
   {
     "source": "nadjidoktora",
@@ -82,6 +235,5089 @@
         "city": "Venac"
       }
     ],
-    "scrapedAt": "2026-11-21T15:49:16.593Z"
+    "scrapedAt": "2026-11-21T16:26:01.122Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/ostale-grane/fizioterapeut/milos-kostic-novi-sad-77.htm",
+    "name": "Miloš Kostić",
+    "specialtyRaw": "Fizioterapeut",
+    "clinic": "Therasuit Novi Sad",
+    "city": "Novi Sad",
+    "recommendationsCount": 24,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Therasuit Novi Sad",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.127Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/ostale-grane/fizioterapeut/dragan-golubovic-backa-topola-207.htm",
+    "name": "Dragan Golubović",
+    "specialtyRaw": "Fizioterapeut",
+    "clinic": "Ambulanta",
+    "city": "Topola",
+    "recommendationsCount": 12,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Ambulanta",
+        "city": "Topola"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.129Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/pedijatrija/opsti-pedijatar/sasa-milicevic-vracar-67.htm",
+    "name": "Saša Milićević",
+    "specialtyRaw": "Opšti pedijatar",
+    "clinic": "Pedijatrijska specijalistička ordinacija Dr Saša Milićević",
+    "city": "Belgrade",
+    "recommendationsCount": 44,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Pedijatrijska specijalistička ordinacija Dr Saša Milićević",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.133Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/interna-medicina/pulmolog/vladimir-mrdja-zemun-368.htm",
+    "name": "Vladimir Mrđa",
+    "specialtyRaw": "Pulmolog",
+    "clinic": "Poliklinika OMT",
+    "city": "Belgrade",
+    "recommendationsCount": 6,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Poliklinika OMT",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.136Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/ostale-grane/fizioterapeut/nemanja-pejkovic-kragujevac-89.htm",
+    "name": "Nemanja Pejković",
+    "specialtyRaw": "Fizioterapeut",
+    "clinic": "Fitnes centar TITAN",
+    "city": "Kragujevac",
+    "recommendationsCount": 9,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Fitnes centar TITAN",
+        "city": "Kragujevac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.147Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/interna-medicina/pulmolog/hidajet-malicevic-novi-beograd-445.htm",
+    "name": "Hidajet Malićević",
+    "specialtyRaw": "Pulmolog",
+    "clinic": "Dr Žutić",
+    "city": "Belgrade",
+    "recommendationsCount": 37,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Žutić",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.179Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/interna-medicina/pulmolog/dejan-zujovic-savski-venac-395.htm",
+    "name": "Dejan Žujović",
+    "specialtyRaw": "Pulmolog",
+    "clinic": "Intrnistička ordinacija UltraMedik",
+    "city": "Venac",
+    "recommendationsCount": 96,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Intrnistička ordinacija UltraMedik",
+        "city": "Venac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.185Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/interna-medicina/pulmolog/mirjana-grubor-urosevic-stari-grad-348.htm",
+    "name": "Mirjana Grubor Urošević",
+    "specialtyRaw": "Pulmolog",
+    "clinic": "Privatna praksa Petrović",
+    "city": "Grad",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Privatna praksa Petrović",
+        "city": "Grad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.190Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/hirurgija/opsti-hirurg/miomir-markovic-pirot-105.htm",
+    "name": "Miomir Marković",
+    "specialtyRaw": "Opšti hirurg",
+    "clinic": "MG Stens",
+    "city": "Pirot",
+    "recommendationsCount": 20,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "MG Stens",
+        "city": "Pirot"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.199Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/hirurgija/neurohirurg/olivera-jovanikic-cukarica-493.htm",
+    "name": "Olivera Jovanikić",
+    "specialtyRaw": "Neurohirurg",
+    "clinic": "Nada",
+    "city": "Belgrade",
+    "recommendationsCount": 30,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Nada",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.296Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/pedijatrija/opsti-pedijatar/biserka-jelisavac-novi-sad-611.htm",
+    "name": "Biserka Jelisavac",
+    "specialtyRaw": "Opšti pedijatar",
+    "clinic": "Dr Biserka Jelisavac",
+    "city": "Novi Sad",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Biserka Jelisavac",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.302Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/ostale-grane/fizioterapeut/svetlana-popovic-stari-grad-277.htm",
+    "name": "Svetlana Popović",
+    "specialtyRaw": "Fizioterapeut",
+    "clinic": "Sempre Viva centar",
+    "city": "Grad",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Sempre Viva centar",
+        "city": "Grad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.335Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/hirurgija/opsti-hirurg/milan-prekajski-savski-venac-151.htm",
+    "name": "Milan Prekajski",
+    "specialtyRaw": "Opšti hirurg",
+    "clinic": "Clinicanova",
+    "city": "Venac",
+    "recommendationsCount": 25,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Clinicanova",
+        "city": "Venac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.364Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/hirurgija/opsti-hirurg/aleksandar--djokovic-vozdovac-327.htm",
+    "name": "Aleksandar  Đoković",
+    "specialtyRaw": "Opšti hirurg",
+    "clinic": "Specijalna hirurška bolnica hirurgija dr. Đoković",
+    "city": "Belgrade",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Specijalna hirurška bolnica hirurgija dr. Đoković",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.378Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/pedijatrija/opsti-pedijatar/gordana-radovanovic-lazarevac-647.htm",
+    "name": "Gordana Radovanović",
+    "specialtyRaw": "Opšti pedijatar",
+    "clinic": "Viva",
+    "city": "Lazarevac",
+    "recommendationsCount": 21,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Viva",
+        "city": "Lazarevac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.382Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/hirurgija/opsti-hirurg/milan--petrovic-cukarica-485.htm",
+    "name": "Milan  Petrović",
+    "specialtyRaw": "Opšti hirurg",
+    "clinic": "Nada",
+    "city": "Belgrade",
+    "recommendationsCount": 5,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Nada",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.384Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/pedijatrija/opsti-pedijatar/gordana-ilkic-pancevo-529.htm",
+    "name": "Gordana Ilkić",
+    "specialtyRaw": "Opšti pedijatar",
+    "clinic": "Panpedijatrija",
+    "city": "Pančevo",
+    "recommendationsCount": 77,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Panpedijatrija",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.391Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/pedijatrija/opsti-pedijatar/vesna-jovicic-vracar-63.htm",
+    "name": "Vesna Jovičić",
+    "specialtyRaw": "Opšti pedijatar",
+    "clinic": "Poliklinika MEDIKOM",
+    "city": "Belgrade",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Poliklinika MEDIKOM",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.391Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/interna-medicina/pulmolog/slobodan-acimovic-cukarica-474.htm",
+    "name": "Slobodan Aćimović",
+    "specialtyRaw": "Pulmolog",
+    "clinic": "Nada",
+    "city": "Belgrade",
+    "recommendationsCount": 19,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Nada",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.395Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/pedijatrija/opsti-pedijatar/danijela-todorovic-vracar-743.htm",
+    "name": "Danijela Todorović",
+    "specialtyRaw": "Opšti pedijatar",
+    "clinic": "Pedijatrija Todorović",
+    "city": "Belgrade",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Pedijatrija Todorović",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.406Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/pedijatrija/opsti-pedijatar/dudica-milenovic-nis-675.htm",
+    "name": "Dudica Milenović",
+    "specialtyRaw": "Opšti pedijatar",
+    "clinic": "Dr Dudica Milenović",
+    "city": "Niš",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Dudica Milenović",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.423Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/pedijatrija/opsti-pedijatar/dusanka-jovicic-pancevo-528.htm",
+    "name": "Dušanka Jovićić",
+    "specialtyRaw": "Opšti pedijatar",
+    "clinic": "Panpedijatrija",
+    "city": "Pančevo",
+    "recommendationsCount": 30,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Panpedijatrija",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.432Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/pedijatrija/deciji-kardiolog/ljiljana-pejcic-nis-191.htm",
+    "name": "Ljiljana Pejčić",
+    "specialtyRaw": "Dečiji kardiolog",
+    "clinic": "Poliklinika Magna Plus",
+    "city": "Niš",
+    "recommendationsCount": 48,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Poliklinika Magna Plus",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.435Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/pedijatrija/deciji-kardiolog/milan-djukic-novi-beograd-431.htm",
+    "name": "Milan Đukić",
+    "specialtyRaw": "Dečiji kardiolog",
+    "clinic": "Dr Žutić",
+    "city": "Belgrade",
+    "recommendationsCount": 33,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Žutić",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.438Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/hirurgija/opsti-hirurg/vladimir-spica-vozdovac-329.htm",
+    "name": "Vladimir Špica",
+    "specialtyRaw": "Opšti hirurg",
+    "clinic": "Specijalna hirurška bolnica hirurgija dr. Đoković",
+    "city": "Belgrade",
+    "recommendationsCount": 52,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Specijalna hirurška bolnica hirurgija dr. Đoković",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.448Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/interna-medicina/pulmolog/irma-milincic-vozdovac-412.htm",
+    "name": "Irma Milinčić",
+    "specialtyRaw": "Pulmolog",
+    "clinic": "Intrnistička ordinacija dr. Petrić",
+    "city": "Belgrade",
+    "recommendationsCount": 26,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Intrnistička ordinacija dr. Petrić",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.452Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/hirurgija/urolog/ivan-vukovic-savski-venac-156.htm",
+    "name": "Ivan Vuković",
+    "specialtyRaw": "Urolog",
+    "clinic": "Clinicanova",
+    "city": "Venac",
+    "recommendationsCount": 177,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Clinicanova",
+        "city": "Venac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.466Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/pedijatrija/opsti-pedijatar/nada-malovic-pancevo-527.htm",
+    "name": "Nada Malović",
+    "specialtyRaw": "Opšti pedijatar",
+    "clinic": "Panpedijatrija",
+    "city": "Pančevo",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Panpedijatrija",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.473Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/pedijatrija/opsti-pedijatar/smilja-bankovic-kragujevac-659.htm",
+    "name": "Smilja Banković",
+    "specialtyRaw": "Opšti pedijatar",
+    "clinic": "Dr Smilja Banković",
+    "city": "Kragujevac",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Smilja Banković",
+        "city": "Kragujevac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.484Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/hirurgija/opsti-hirurg/zoran-martic-vozdovac-328.htm",
+    "name": "Zoran Martić",
+    "specialtyRaw": "Opšti hirurg",
+    "clinic": "Specijalna hirurška bolnica hirurgija dr. Đoković",
+    "city": "Belgrade",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Specijalna hirurška bolnica hirurgija dr. Đoković",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.514Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/pedijatrija/opsti-pedijatar/branka-nestorovic-novi-beograd-420.htm",
+    "name": "Branka Nestorović",
+    "specialtyRaw": "Opšti pedijatar",
+    "clinic": "Dr. Žutić",
+    "city": "Belgrade",
+    "recommendationsCount": 8,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr. Žutić",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.517Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/hirurgija/urolog/gordana-bojanic-palilula-97.htm",
+    "name": "Gordana Bojanić",
+    "specialtyRaw": "Urolog",
+    "clinic": "Dr Bojanić",
+    "city": "Belgrade",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Bojanić",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.585Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/interna-medicina/pulmolog/stevan-sikimic-cukarica-475.htm",
+    "name": "Stevan Sikimić",
+    "specialtyRaw": "Pulmolog",
+    "clinic": "Nada",
+    "city": "Belgrade",
+    "recommendationsCount": 5,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Nada",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.623Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/pedijatrija/opsti-pedijatar/predrag-miljkovic-nis-195.htm",
+    "name": "Predrag Miljković",
+    "specialtyRaw": "Opšti pedijatar",
+    "clinic": "Poliklinika Magna Plus",
+    "city": "Niš",
+    "recommendationsCount": 28,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Poliklinika Magna Plus",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.685Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/pedijatrija/opsti-pedijatar/dragan-maksimovic-savski-venac-145.htm",
+    "name": "Dragan Maksimović",
+    "specialtyRaw": "Opšti pedijatar",
+    "clinic": "Clinicanova",
+    "city": "Venac",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Clinicanova",
+        "city": "Venac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.710Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/milena-stojiljkovic-nis-222.htm",
+    "name": "Milena Stojiljković",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dental Art",
+    "city": "Niš",
+    "recommendationsCount": 8,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dental Art",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.750Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/pedijatrija/opsti-pedijatar/sladjana-stefanovic-nis-183.htm",
+    "name": "Slađana Stefanović",
+    "specialtyRaw": "Opšti pedijatar",
+    "clinic": "Poliklinika Magna Plus",
+    "city": "Niš",
+    "recommendationsCount": 53,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Poliklinika Magna Plus",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.754Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/pedijatrija/opsti-pedijatar/tatjana--bjekic-zvezdara-214.htm",
+    "name": "Tatjana  Bjekić",
+    "specialtyRaw": "Opšti pedijatar",
+    "clinic": "Zvrk",
+    "city": "Belgrade",
+    "recommendationsCount": 20,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Zvrk",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.772Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/pedijatrija/opsti-pedijatar/mirjana-jovanovic-zvezdara-215.htm",
+    "name": "Mirjana Jovanović",
+    "specialtyRaw": "Opšti pedijatar",
+    "clinic": "Zvrk",
+    "city": "Belgrade",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Zvrk",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.778Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/pedijatrija/opsti-pedijatar/nela-stojkovic-nis-193.htm",
+    "name": "Nela Stojković",
+    "specialtyRaw": "Opšti pedijatar",
+    "clinic": "Poliklinika Magna Plus",
+    "city": "Niš",
+    "recommendationsCount": 24,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Poliklinika Magna Plus",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.781Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/natasa-vukovic-kraljevo-574.htm",
+    "name": "Nataša Vuković",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dr Vuković",
+    "city": "Kraljevo",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Vuković",
+        "city": "Kraljevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.784Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/hirurgija/urolog/aleksandar-draskovic-savski-venac-401.htm",
+    "name": "Aleksandar Drašković",
+    "specialtyRaw": "Urolog",
+    "clinic": "Intrnistička ordinacija UltraMedik",
+    "city": "Venac",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Intrnistička ordinacija UltraMedik",
+        "city": "Venac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.808Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/valeri--besu-zrenjanin-560.htm",
+    "name": "Valeri  Besu",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dr Besu",
+    "city": "Zrenjanin",
+    "recommendationsCount": 9,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Besu",
+        "city": "Zrenjanin"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.812Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/hirurgija/urolog/milan--micic-cukarica-486.htm",
+    "name": "Milan  Mićić",
+    "specialtyRaw": "Urolog",
+    "clinic": "Nada",
+    "city": "Belgrade",
+    "recommendationsCount": 29,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Nada",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.828Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/hirurgija/urolog/dejan-ulakovic-vozdovac-333.htm",
+    "name": "Dejan Ulaković",
+    "specialtyRaw": "Urolog",
+    "clinic": "Specijalna hirurška bolnica hirurgija dr. Đoković",
+    "city": "Belgrade",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Specijalna hirurška bolnica hirurgija dr. Đoković",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.832Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/aleksandar-grkovic-novi-sad-605.htm",
+    "name": "Aleksandar Grković",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Repić",
+    "city": "Novi Sad",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Repić",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.842Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/hirurgija/urolog/radovan-milosevic-savski-venac-154.htm",
+    "name": "Radovan Milošević",
+    "specialtyRaw": "Urolog",
+    "clinic": "Clinicanova",
+    "city": "Venac",
+    "recommendationsCount": 22,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Clinicanova",
+        "city": "Venac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.847Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/hirurgija/urolog/anica-guduric-savski-venac-157.htm",
+    "name": "Anica Gudurić",
+    "specialtyRaw": "Urolog",
+    "clinic": "Clinicanova",
+    "city": "Venac",
+    "recommendationsCount": 6,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Clinicanova",
+        "city": "Venac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.851Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/aleksandar-radicevic-krusevac-664.htm",
+    "name": "Aleksandar Radičević",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Radix",
+    "city": "Kruševac",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Radix",
+        "city": "Kruševac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.853Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/aleksandar-petrovic-svrljig-80.htm",
+    "name": "Aleksandar Petrović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "A2 Dental Clinic",
+    "city": "Svrljig",
+    "recommendationsCount": 4,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "A2 Dental Clinic",
+        "city": "Svrljig"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.855Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/hirurgija/urolog/predrag-aleksic-savski-venac-155.htm",
+    "name": "Predrag Aleksić",
+    "specialtyRaw": "Urolog",
+    "clinic": "Clinicanova",
+    "city": "Venac",
+    "recommendationsCount": 154,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Clinicanova",
+        "city": "Venac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.859Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/hirurgija/urolog/slobodan-radulovic-zvezdara-313.htm",
+    "name": "Slobodan Radulović",
+    "specialtyRaw": "Urolog",
+    "clinic": "Labo Medica",
+    "city": "Belgrade",
+    "recommendationsCount": 72,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Labo Medica",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.868Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/aleksandra-djordjevic-nis-693.htm",
+    "name": "Aleksandra Đorđević",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dumident",
+    "city": "Niš",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dumident",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.871Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/aleksandra-acin-stancev-novi-beograd-99.htm",
+    "name": "Aleksandra Acin Stančev",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "La Denta",
+    "city": "Belgrade",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "La Denta",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.872Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/hirurgija/urolog/rade-prelevic-cukarica-487.htm",
+    "name": "Rade Prelević",
+    "specialtyRaw": "Urolog",
+    "clinic": "Nada",
+    "city": "Belgrade",
+    "recommendationsCount": 9,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Nada",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.875Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/aleksandra-cabarkapa-pancevo-539.htm",
+    "name": "Aleksandra Čabarkapa",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dr Taso",
+    "city": "Pančevo",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Taso",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.876Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/ana-simic-savski-venac-82.htm",
+    "name": "Ana Simić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija",
+    "city": "Venac",
+    "recommendationsCount": 13,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija",
+        "city": "Venac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.891Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/biljana-minic-leskovac-741.htm",
+    "name": "Biljana Minić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Sensa",
+    "city": "Leskovac",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Sensa",
+        "city": "Leskovac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.897Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/anja-dragicevic-cukarica-50.htm",
+    "name": "Anja Dragičević",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Eurodent",
+    "city": "Belgrade",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Eurodent",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.900Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/ana-veljkovic-nis-705.htm",
+    "name": "Ana Veljković",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Higija Dent",
+    "city": "Niš",
+    "recommendationsCount": 4,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Higija Dent",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.900Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/ana-murganic-nis-704.htm",
+    "name": "Ana Murganić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Cucic dr Olivera",
+    "city": "Niš",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Cucic dr Olivera",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.906Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/bojan--stevanovic-nis-744.htm",
+    "name": "Bojan  Stevanović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dentic",
+    "city": "Niš",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dentic",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.907Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/borivoje-petrovic-nis-700.htm",
+    "name": "Borivoje Petrović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Petrovic Dent",
+    "city": "Niš",
+    "recommendationsCount": 5,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Petrovic Dent",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.914Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/andjelka-simonovic-nis-121.htm",
+    "name": "Anđelka Simonović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "ASDENT",
+    "city": "Niš",
+    "recommendationsCount": 4,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "ASDENT",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.921Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/veroljub--bogdanovic-sabac-637.htm",
+    "name": "Veroljub  Bogdanović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dr Veroljub Bogdanović",
+    "city": "Sabac",
+    "recommendationsCount": 7,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Veroljub Bogdanović",
+        "city": "Sabac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.964Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/vesna-spakovski-nis-710.htm",
+    "name": "Vesna Špakovski",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Whitedent",
+    "city": "Niš",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Whitedent",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:01.971Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/vasja-gardinovacki-grocka-96.htm",
+    "name": "Vasja Gardinovacki",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Zub-Art",
+    "city": "Grocka",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Zub-Art",
+        "city": "Grocka"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.016Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/vladan-mancic-smederevska-palanka-506.htm",
+    "name": "Vladan Mančić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Moj Zubar",
+    "city": "Palanka",
+    "recommendationsCount": 32,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Moj Zubar",
+        "city": "Palanka"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.045Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/aleksandar--despotovic-novi-beograd-258.htm",
+    "name": "Aleksandar  Despotović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Belle dent",
+    "city": "Belgrade",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Belle dent",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.057Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/aleksandar-dimic-rakovica-213.htm",
+    "name": "Aleksandar Dimić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "AD dent",
+    "city": "Rakovica",
+    "recommendationsCount": 14,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "AD dent",
+        "city": "Rakovica"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.063Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/vladimir-milivojevic-kragujevac-85.htm",
+    "name": "Vladimir Milivojević",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija",
+    "city": "Kragujevac",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija",
+        "city": "Kragujevac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.071Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/branislav-stojanovic-zemun-245.htm",
+    "name": "Branislav Stojanović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Implant Centar Stojanović",
+    "city": "Belgrade",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Implant Centar Stojanović",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.075Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/aleksandar--todorovic-vracar-236.htm",
+    "name": "Aleksandar  Todorović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "ADent stomatološka ordinacija",
+    "city": "Belgrade",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "ADent stomatološka ordinacija",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.090Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/bozidar-todorovic--vracar-240.htm",
+    "name": "Božidar Todorović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "ADent",
+    "city": "Belgrade",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "ADent",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.107Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/vladimir-radosavljevic-kraljevo-570.htm",
+    "name": "Vladimir Radosavljević",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Radosavljević",
+    "city": "Kraljevo",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Radosavljević",
+        "city": "Kraljevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.156Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/bozidar-dimitrijevic-vozdovac-259.htm",
+    "name": "Božidar Dimitrijević",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Bodent stomatološka ordinacija",
+    "city": "Belgrade",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Bodent stomatološka ordinacija",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.161Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/branka-zigic-vracar-243.htm",
+    "name": "Branka Žigić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "ADent",
+    "city": "Belgrade",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "ADent",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.164Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/branislava-smiljkovic-novi-beograd-262.htm",
+    "name": "Branislava Smiljković",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Branislava Smiljković stomatološka ordinacija",
+    "city": "Belgrade",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Branislava Smiljković stomatološka ordinacija",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.168Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/branko-golubovic-stari-grad-231.htm",
+    "name": "Branko Golubović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija dr. Branko Golubović",
+    "city": "Grad",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija dr. Branko Golubović",
+        "city": "Grad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.170Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/vladislav-vasiljevic-nis-690.htm",
+    "name": "Vladislav Vasiljević",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Timident",
+    "city": "Niš",
+    "recommendationsCount": 4,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Timident",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.171Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/gordana-delic-novi-sad-587.htm",
+    "name": "Gordana Delić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Delić",
+    "city": "Novi Sad",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Delić",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.175Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/davor-viskovic-savski-venac-52.htm",
+    "name": "Davor Višković",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dental-V",
+    "city": "Venac",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dental-V",
+        "city": "Venac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.186Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/boris-prokic-vozdovac-234.htm",
+    "name": "Boris Prokić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dr. Boris Prokić stomatološka ordinacija",
+    "city": "Belgrade",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr. Boris Prokić stomatološka ordinacija",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.197Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/branka-trifkovic-vracar-241.htm",
+    "name": "Branka Trifković",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "ADent",
+    "city": "Belgrade",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "ADent",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.204Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/vladimir-milosavljevic-palilula-303.htm",
+    "name": "Vladimir Milosavljević",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija Milosavljević",
+    "city": "Belgrade",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija Milosavljević",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.209Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/damir-taso-pancevo-536.htm",
+    "name": "Damir Taso",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dr Taso",
+    "city": "Pančevo",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Taso",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.210Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/daniela-milosevic-palilula-202.htm",
+    "name": "Daniela Milošević",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Corona",
+    "city": "Belgrade",
+    "recommendationsCount": 4,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Corona",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.231Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/danijela-prascevic-jagodina-547.htm",
+    "name": "Danijela Praščević",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Extra dent",
+    "city": "Jagodina",
+    "recommendationsCount": 5,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Extra dent",
+        "city": "Jagodina"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.234Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/danijela--jovanovic-leskovac-740.htm",
+    "name": "Danijela  Jovanović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Sensa",
+    "city": "Leskovac",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Sensa",
+        "city": "Leskovac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.242Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/gordana-vukasovic-zemun-233.htm",
+    "name": "Gordana Vukasović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Zem - Dent",
+    "city": "Belgrade",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Zem - Dent",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.249Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/vladimir-perovic-stari-grad-229.htm",
+    "name": "Vladimir Perović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija Vladimir Perović",
+    "city": "Grad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija Vladimir Perović",
+        "city": "Grad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.266Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/dragoljub-paunovic-smederevo-502.htm",
+    "name": "Dragoljub Paunović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dentino",
+    "city": "Smederevo",
+    "recommendationsCount": 35,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dentino",
+        "city": "Smederevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.277Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/dragan--stojanovic-nis-714.htm",
+    "name": "Dragan  Stojanović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Nis Dental",
+    "city": "Niš",
+    "recommendationsCount": 4,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Nis Dental",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.278Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/dubravka-pujic-pancevo-515.htm",
+    "name": "Dubravka Pujić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija Dubravka Pujić",
+    "city": "Pančevo",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija Dubravka Pujić",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.323Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/vladimir--cakan-stari-grad-232.htm",
+    "name": "Vladimir  Čakan",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "C Dental Center",
+    "city": "Grad",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "C Dental Center",
+        "city": "Grad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.332Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/dusan-dimitrijevic-nis-223.htm",
+    "name": "Dušan Dimitrijević",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dental Art",
+    "city": "Niš",
+    "recommendationsCount": 4,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dental Art",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.339Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/danica-mitrovic-vracar-247.htm",
+    "name": "Danica Mitrović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija dr. Danica Mitrović",
+    "city": "Belgrade",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija dr. Danica Mitrović",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.348Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/dusan-paripovic-pancevo-521.htm",
+    "name": "Dušan Paripović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Sanident",
+    "city": "Pančevo",
+    "recommendationsCount": 4,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Sanident",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.363Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/eleonora-bede-novi-sad-624.htm",
+    "name": "Eleonora Bede",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "DR BEDE",
+    "city": "Novi Sad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "DR BEDE",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.369Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/dejan-backovic-cukarica-265.htm",
+    "name": "Dejan Bačković",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dental B dr. Bačković",
+    "city": "Belgrade",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dental B dr. Bačković",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.414Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/dejan-dimitrijevic-vozdovac-261.htm",
+    "name": "Dejan Dimitrijević",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Bodent stomatološka ordinacija",
+    "city": "Belgrade",
+    "recommendationsCount": 4,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Bodent stomatološka ordinacija",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.421Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/dejan-stojanovic-stojanovic-zemun-246.htm",
+    "name": "Dejan Stojanović Stojanović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Implant Centar Stojanović",
+    "city": "Belgrade",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Implant Centar Stojanović",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.440Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/dragan-adamovic-novi-beograd-291.htm",
+    "name": "Dragan Adamović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dental centar Wisil M",
+    "city": "Belgrade",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dental centar Wisil M",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.443Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/dragica-manojlovic-vracar-242.htm",
+    "name": "Dragica Manojlović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "ADent",
+    "city": "Belgrade",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "ADent",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.452Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/dragana-gavrilovic-vracar-268.htm",
+    "name": "Dragana Gavrilović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dental Corner Esthetics",
+    "city": "Belgrade",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dental Corner Esthetics",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.455Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/dubravka-spasojevic-stari-grad-225.htm",
+    "name": "Dubravka Spasojević",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija Gentle touch",
+    "city": "Grad",
+    "recommendationsCount": 4,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija Gentle touch",
+        "city": "Grad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.466Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/ivan-cuzovic-novi-sad-43.htm",
+    "name": "Ivan Cuzović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "PROSMILE",
+    "city": "Novi Sad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "PROSMILE",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.834Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/jasna-uljarevic-novi-sad-629.htm",
+    "name": "Jasna Uljarević",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dr Jasna Uljarević",
+    "city": "Novi Sad",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Jasna Uljarević",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.836Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/igor-repic-novi-sad-595.htm",
+    "name": "Igor Repić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Repić",
+    "city": "Novi Sad",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Repić",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.839Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/zorana-bogdanovic-palilula-427.htm",
+    "name": "Zorana Bogdanović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "ZiB-zub",
+    "city": "Belgrade",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "ZiB-zub",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.839Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/ivan-ognjanovic-kragujevac-123.htm",
+    "name": "Ivan Ognjanović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dentalis",
+    "city": "Kragujevac",
+    "recommendationsCount": 13,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dentalis",
+        "city": "Kragujevac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.839Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/jasmin--licina-novi-pazar-41.htm",
+    "name": "Jasmin  Ličina",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija Crystal Dent",
+    "city": "Pazar",
+    "recommendationsCount": 19,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija Crystal Dent",
+        "city": "Pazar"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.839Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/zdravko-zelenovic-vozdovac-78.htm",
+    "name": "Zdravko Zelenović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dr Zelenović",
+    "city": "Belgrade",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Zelenović",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.840Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/jelena-dmitrovic-novi-sad-68.htm",
+    "name": "Jelena Dmitrović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija DMITROVIĆ",
+    "city": "Novi Sad",
+    "recommendationsCount": 4,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija DMITROVIĆ",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.840Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/jasmina-lazic-ognjanovic-nis-722.htm",
+    "name": "Jasmina Lazić Ognjanović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Nis Dental",
+    "city": "Niš",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Nis Dental",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.840Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/ivana-mitrovic-nis-707.htm",
+    "name": "Ivana Mitrović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Oki Dent",
+    "city": "Niš",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Oki Dent",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.840Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/jelena-radovanovic-novi-beograd-76.htm",
+    "name": "Jelena Radovanović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija",
+    "city": "Belgrade",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.887Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/jelena-cosic-nis-725.htm",
+    "name": "Jelena Ćosić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dr Maja Radović",
+    "city": "Niš",
+    "recommendationsCount": 6,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Maja Radović",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.893Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/jelena-stamenkovic-petrovic-nis-706.htm",
+    "name": "Jelena Stamenković Petrović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Oki Dent",
+    "city": "Niš",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Oki Dent",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.906Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/jelena-tosic-miletic-nis-695.htm",
+    "name": "Jelena Tošić Miletić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Tosic Dent",
+    "city": "Niš",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Tosic Dent",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.906Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/jovica-djuric-nis-708.htm",
+    "name": "Jovica Đurić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dr Jovica Djuric",
+    "city": "Niš",
+    "recommendationsCount": 11,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Jovica Djuric",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.911Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/kristina-cucic-nis-703.htm",
+    "name": "Kristina Cucić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Cucic dr Olivera",
+    "city": "Niš",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Cucic dr Olivera",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.913Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/katarina-stojanovic-novi-beograd-208.htm",
+    "name": "Katarina Stojanović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija",
+    "city": "Belgrade",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.915Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/jovanka-dobrijevic-cukarica-55.htm",
+    "name": "Jovanka Dobrijević",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dr. Jovanka Dobrijević",
+    "city": "Belgrade",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr. Jovanka Dobrijević",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.924Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/lidija-mitic-nis-715.htm",
+    "name": "Lidija Mitić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Nis Dental",
+    "city": "Niš",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Nis Dental",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.956Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/lazar--dimitrijevic-nis-221.htm",
+    "name": "Lazar  Dimitrijević",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dental Art",
+    "city": "Niš",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dental Art",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.956Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/maja-radovic-nis-724.htm",
+    "name": "Maja Radović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dr Maja Radović",
+    "city": "Niš",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Maja Radović",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.992Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/maja-petrovic-nis-74.htm",
+    "name": "Maja Petrović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dentamed",
+    "city": "Niš",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dentamed",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:02.993Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/maja--trajic-novi-beograd-746.htm",
+    "name": "Maja  Trajić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatoloska ordinacija Trajic",
+    "city": "Belgrade",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatoloska ordinacija Trajic",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.001Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/ivana-jovanovic-stari-grad-252.htm",
+    "name": "Ivana Jovanović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija dr.Toma M. Jovanović",
+    "city": "Grad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija dr.Toma M. Jovanović",
+        "city": "Grad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.006Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/jelena-gajic-stari-grad-254.htm",
+    "name": "Jelena Gajić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija dr.Toma M. Jovanović",
+    "city": "Grad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija dr.Toma M. Jovanović",
+        "city": "Grad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.008Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/marija-lopicic-novi-beograd-88.htm",
+    "name": "Marija Lopičić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "A1 DENT",
+    "city": "Belgrade",
+    "recommendationsCount": 12,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "A1 DENT",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.022Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/margareta-savovska-kladovo-47.htm",
+    "name": "Margareta Savovska",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija ,,dr Milica''",
+    "city": "Kladovo",
+    "recommendationsCount": 7,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija ,,dr Milica''",
+        "city": "Kladovo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.023Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/jelena-djoric-vracar-248.htm",
+    "name": "Jelena Đorić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija dr. Danica Mitrović",
+    "city": "Belgrade",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija dr. Danica Mitrović",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.029Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/ivana-jovanovic-stari-grad-253.htm",
+    "name": "Ivana Jovanović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija dr.Toma M. Jovanović",
+    "city": "Grad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija dr.Toma M. Jovanović",
+        "city": "Grad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.034Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/ljilja-mijin-vracar-16.htm",
+    "name": "Ljilja Mijin",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija Dr Mijin",
+    "city": "Belgrade",
+    "recommendationsCount": 7,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija Dr Mijin",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.041Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/marijeta-ristic-loznica-100.htm",
+    "name": "Marijeta Ristić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija",
+    "city": "Loznica",
+    "recommendationsCount": 4,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija",
+        "city": "Loznica"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.045Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/marijana-santrac-pancevo-531.htm",
+    "name": "Marijana Santrač",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Biodent",
+    "city": "Pančevo",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Biodent",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.046Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/marko-buric-nis-718.htm",
+    "name": "Marko Burić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Nis Dental",
+    "city": "Niš",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Nis Dental",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.072Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/jelena-vukotic-palilula-304.htm",
+    "name": "Jelena Vukotić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija Milosavljević",
+    "city": "Belgrade",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija Milosavljević",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.090Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/jadran-stojadinovic-zemun-256.htm",
+    "name": "Jadran Stojadinović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Adriadent stomatološka ordinacija",
+    "city": "Belgrade",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Adriadent stomatološka ordinacija",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.093Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/miladija-jovanovic-nis-699.htm",
+    "name": "Miladija Jovanović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Miladija Jovanovic",
+    "city": "Niš",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Miladija Jovanovic",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.095Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/milan-radosavljevic-smederevska-palanka-73.htm",
+    "name": "Milan Radosavljević",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija dr Milan Radosavljević",
+    "city": "Palanka",
+    "recommendationsCount": 4,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija dr Milan Radosavljević",
+        "city": "Palanka"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.116Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/mila-milicic-jagodina-552.htm",
+    "name": "Mila Miličić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Miličić",
+    "city": "Jagodina",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Miličić",
+        "city": "Jagodina"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.130Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/marko-ruzic-smederevo-512.htm",
+    "name": "Marko Ružić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dental orto",
+    "city": "Smederevo",
+    "recommendationsCount": 15,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dental orto",
+        "city": "Smederevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.130Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/jovana-jovicic-novi-beograd-289.htm",
+    "name": "Jovana Jovičić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dental centar Wisil M",
+    "city": "Belgrade",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dental centar Wisil M",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.141Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/milijan-bondzulic-uzice-584.htm",
+    "name": "Milijan Bondžulić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Bondžulić",
+    "city": "Uzice",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Bondžulić",
+        "city": "Uzice"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.154Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/milica-vukasinov-pancevo-535.htm",
+    "name": "Milica Vukašinov",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Biodent",
+    "city": "Pančevo",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Biodent",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.162Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/milica-antic-radenkovic-nis-719.htm",
+    "name": "Milica Antić Radenković",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Nis Dental",
+    "city": "Niš",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Nis Dental",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.162Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/marijana--jankovic-savski-venac-220.htm",
+    "name": "Marijana  Janković",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Pesoni Dent",
+    "city": "Venac",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Pesoni Dent",
+        "city": "Venac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.179Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/ljubomir-jovic-novi-beograd-290.htm",
+    "name": "Ljubomir Jović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dental centar Wisil M",
+    "city": "Belgrade",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dental centar Wisil M",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.195Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/milosav-djordjevic-nis-694.htm",
+    "name": "Milosav Đorđević",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dumident",
+    "city": "Niš",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dumident",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.196Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/milos-opacic-krusevac-53.htm",
+    "name": "Miloš Opačić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "DENTAS",
+    "city": "Kruševac",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "DENTAS",
+        "city": "Kruševac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.197Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/maja-radunovic-vracar-288.htm",
+    "name": "Maja Radunović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dental Studio Maja",
+    "city": "Belgrade",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dental Studio Maja",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.201Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/milica-trickovic-nis-729.htm",
+    "name": "Milica Tričković",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dental - Art",
+    "city": "Niš",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dental - Art",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.202Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/milica-mihajilovic-zvezdara-90.htm",
+    "name": "Milica Mihajilović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "DR MIMI",
+    "city": "Belgrade",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "DR MIMI",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.202Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/milos-potic-novi-beograd-42.htm",
+    "name": "Miloš Potić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija Mea:Dent",
+    "city": "Belgrade",
+    "recommendationsCount": 5,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija Mea:Dent",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.205Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/miodrag-stanojevic-kraljevo-577.htm",
+    "name": "Miodrag Stanojević",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stanojević",
+    "city": "Kraljevo",
+    "recommendationsCount": 11,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stanojević",
+        "city": "Kraljevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.212Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/miljana-dzunic-marjanovic-nis-723.htm",
+    "name": "Miljana Džunić Marjanović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Nis Dental",
+    "city": "Niš",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Nis Dental",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.242Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/marina-grkinic-savski-venac-250.htm",
+    "name": "Marina Grkinić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija dr. Dašić",
+    "city": "Venac",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija dr. Dašić",
+        "city": "Venac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.254Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/marijana-nedeljkovic-novi-beograd-257.htm",
+    "name": "Marijana Nedeljković",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Amfora dent",
+    "city": "Belgrade",
+    "recommendationsCount": 5,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Amfora dent",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.272Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/marina-janic-stari-grad-224.htm",
+    "name": "Marina Janić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija Gentle touch",
+    "city": "Grad",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija Gentle touch",
+        "city": "Grad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.286Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/marko-dimitrijevic-vozdovac-260.htm",
+    "name": "Marko Dimitrijević",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Bodent stomatološka ordinacija",
+    "city": "Belgrade",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Bodent stomatološka ordinacija",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.293Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/mirjana-milutinovic-vracar-244.htm",
+    "name": "Mirjana Milutinović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Gala Dent",
+    "city": "Belgrade",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Gala Dent",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.298Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/neda-bulic-milankovic-novi-beograd-263.htm",
+    "name": "Neda Bulić Milanković",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Branislava Smiljković stomatološka ordinacija",
+    "city": "Belgrade",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Branislava Smiljković stomatološka ordinacija",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.367Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/momcilo-hristic-stari-grad-230.htm",
+    "name": "Momčilo Hristić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dental studio dr. Hristić",
+    "city": "Grad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dental studio dr. Hristić",
+        "city": "Grad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.370Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/nemanja-vranic-stari-grad-54.htm",
+    "name": "Nemanja Vranić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dr Vranić",
+    "city": "Grad",
+    "recommendationsCount": 7,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Vranić",
+        "city": "Grad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.824Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/nikola-milanovic-kraljevo-564.htm",
+    "name": "Nikola Milanović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dr Milanović",
+    "city": "Kraljevo",
+    "recommendationsCount": 7,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Milanović",
+        "city": "Kraljevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.824Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/predrag-miletic-vracar-71.htm",
+    "name": "Predrag Miletić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "ITALOMEDIC",
+    "city": "Belgrade",
+    "recommendationsCount": 5,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "ITALOMEDIC",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.826Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/olgica-ruzic-smederevo-503.htm",
+    "name": "Olgica Ružić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dental",
+    "city": "Smederevo",
+    "recommendationsCount": 37,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dental",
+        "city": "Smederevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.827Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/olja-kalem-novi-sad-633.htm",
+    "name": "Olja Kalem",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dr Olja Kalem",
+    "city": "Novi Sad",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Olja Kalem",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.827Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/petar-ilic-pancevo-516.htm",
+    "name": "Petar Ilić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dr Petar Ilić",
+    "city": "Pančevo",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Petar Ilić",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.828Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/predrag-vesic-vracar-86.htm",
+    "name": "Predrag Vešić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija Vešić",
+    "city": "Belgrade",
+    "recommendationsCount": 6,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija Vešić",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.828Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/petar-bede-novi-sad-618.htm",
+    "name": "Petar Bede",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "DR BEDE",
+    "city": "Novi Sad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "DR BEDE",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.828Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/olivera-cucic-nis-702.htm",
+    "name": "Olivera Cucić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Cucic dr Olivera",
+    "city": "Niš",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Cucic dr Olivera",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.828Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/nikola-mladenovic-lajkovac-48.htm",
+    "name": "Nikola Mladenović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija",
+    "city": "Lajkovac",
+    "recommendationsCount": 59,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija",
+        "city": "Lajkovac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.828Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/olivera-kosanovic-novi-beograd-118.htm",
+    "name": "Olivera Kosanović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija Kosanović",
+    "city": "Belgrade",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija Kosanović",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.829Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/mirjana-filipovic-vracar-61.htm",
+    "name": "Mirjana Filipović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "ZUBELIOR",
+    "city": "Belgrade",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "ZUBELIOR",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.831Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/sandra-pilcevic-kraljevo-573.htm",
+    "name": "Sandra Pilčević",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Radosavljević",
+    "city": "Kraljevo",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Radosavljević",
+        "city": "Kraljevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.868Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/sanja--nikolic-leskovac-739.htm",
+    "name": "Sanja  Nikolić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Sensa",
+    "city": "Leskovac",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Sensa",
+        "city": "Leskovac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.877Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/ranko-milenkovic-pancevo-557.htm",
+    "name": "Ranko Milenković",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Milenkovic",
+    "city": "Pančevo",
+    "recommendationsCount": 8,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Milenkovic",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.877Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/sanja-radojkovic-jagodina-555.htm",
+    "name": "Sanja Radojković",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Miličić",
+    "city": "Jagodina",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Miličić",
+        "city": "Jagodina"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.878Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/slobodan-antic-krusevac-70.htm",
+    "name": "Slobodan Antić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dentoelit",
+    "city": "Kruševac",
+    "recommendationsCount": 6,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dentoelit",
+        "city": "Kruševac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.878Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/slavica--radenovic-raicevic-smederevo-501.htm",
+    "name": "Slavica  Radenović Raičević",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomadent",
+    "city": "Smederevo",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomadent",
+        "city": "Smederevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.878Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/stepan-stepanovic-novi-beograd-498.htm",
+    "name": "Stepan Stepanović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dental Step",
+    "city": "Belgrade",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dental Step",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.882Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/slavoljub-tosic-nis-697.htm",
+    "name": "Slavoljub Tošić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Tosic Dent",
+    "city": "Niš",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Tosic Dent",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.882Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/tanja-zugic-vracar-57.htm",
+    "name": "Tanja Žugić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija Žugić",
+    "city": "Belgrade",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija Žugić",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.883Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/nikola--bakis-vracar-267.htm",
+    "name": "Nikola  Bakiš",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dental Corner Esthetics",
+    "city": "Belgrade",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dental Corner Esthetics",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.910Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/tijana-vasiljevic-nis-688.htm",
+    "name": "Tijana Vasiljević",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Timident",
+    "city": "Niš",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Timident",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.932Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/ortodont/aleksandra-djordjevic-nis-692.htm",
+    "name": "Aleksandra Đorđević",
+    "specialtyRaw": "Ortodont",
+    "clinic": "Dumident",
+    "city": "Niš",
+    "recommendationsCount": 4,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dumident",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.941Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/filip-djordjevic-krusevac-665.htm",
+    "name": "Filip Đorđević",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Radix",
+    "city": "Kruševac",
+    "recommendationsCount": 4,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Radix",
+        "city": "Kruševac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.943Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/uros-borisev-novi-sad-604.htm",
+    "name": "Uroš Borišev",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Repić",
+    "city": "Novi Sad",
+    "recommendationsCount": 4,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Repić",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.943Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/uros-simonovic-jagodina-747.htm",
+    "name": "Uroš Simonović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija PS dent",
+    "city": "Jagodina",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija PS dent",
+        "city": "Jagodina"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.944Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/ortodont/dusan-paripovic-pancevo-526.htm",
+    "name": "Dušan Paripović",
+    "specialtyRaw": "Ortodont",
+    "clinic": "Sanident",
+    "city": "Pančevo",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Sanident",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.944Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/radovan-vuceljic-novi-beograd-226.htm",
+    "name": "Radovan Vučeljić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dental One",
+    "city": "Belgrade",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dental One",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.995Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/nikola-backovic-cukarica-266.htm",
+    "name": "Nikola Bačković",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dental B dr. Bačković",
+    "city": "Belgrade",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dental B dr. Bačković",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:03.999Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/ortodont/eleonora-bede-novi-sad-625.htm",
+    "name": "Eleonora Bede",
+    "specialtyRaw": "Ortodont",
+    "clinic": "DR BEDE",
+    "city": "Novi Sad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "DR BEDE",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.001Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/suzana-dasic-savski-venac-249.htm",
+    "name": "Suzana Dašić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija dr. Dašić",
+    "city": "Venac",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija dr. Dašić",
+        "city": "Venac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.011Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/smiljana--mitic-novi-beograd-264.htm",
+    "name": "Smiljana  Mitić",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Branislava Smiljković stomatološka ordinacija",
+    "city": "Belgrade",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Branislava Smiljković stomatološka ordinacija",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.025Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/ortodont/milica-antic-radenkovic-nis-720.htm",
+    "name": "Milica Antić Radenković",
+    "specialtyRaw": "Ortodont",
+    "clinic": "Nis Dental",
+    "city": "Niš",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Nis Dental",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.028Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/ortodont/mila-milicic-jagodina-510.htm",
+    "name": "Mila Miličić",
+    "specialtyRaw": "Ortodont",
+    "clinic": "Miličić",
+    "city": "Jagodina",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Miličić",
+        "city": "Jagodina"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.031Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/ortodont/katarina-mackovic-kraljevo-572.htm",
+    "name": "Katarina Mačković",
+    "specialtyRaw": "Ortodont",
+    "clinic": "Radosavljević",
+    "city": "Kraljevo",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Radosavljević",
+        "city": "Kraljevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.046Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/ortodont/igor-repic-novi-sad-596.htm",
+    "name": "Igor Repić",
+    "specialtyRaw": "Ortodont",
+    "clinic": "Repić",
+    "city": "Novi Sad",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Repić",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.046Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/ortodont/petar-bede-novi-sad-623.htm",
+    "name": "Petar Bede",
+    "specialtyRaw": "Ortodont",
+    "clinic": "DR BEDE",
+    "city": "Novi Sad",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "DR BEDE",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.055Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/ortodont/olja-kalem-novi-sad-634.htm",
+    "name": "Olja Kalem",
+    "specialtyRaw": "Ortodont",
+    "clinic": "Dr Olja Kalem",
+    "city": "Novi Sad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Olja Kalem",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.056Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/toma-jovanovic-stari-grad-251.htm",
+    "name": "Toma Jovanović",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Stomatološka ordinacija dr.Toma M. Jovanović",
+    "city": "Grad",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija dr.Toma M. Jovanović",
+        "city": "Grad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.066Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/implantolog/vladan-mancic-smederevska-palanka-544.htm",
+    "name": "Vladan Mančić",
+    "specialtyRaw": "Implantolog",
+    "clinic": "Moj Zubar",
+    "city": "Palanka",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Moj Zubar",
+        "city": "Palanka"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.081Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/implantolog/damir-taso-pancevo-538.htm",
+    "name": "Damir Taso",
+    "specialtyRaw": "Implantolog",
+    "clinic": "Dr Taso",
+    "city": "Pančevo",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Taso",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.086Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/implantolog/dejan-donfrid-vozdovac-98.htm",
+    "name": "Dejan Donfrid",
+    "specialtyRaw": "Implantolog",
+    "clinic": "Stomatološka ordinacija ORTO",
+    "city": "Belgrade",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija ORTO",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.095Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/ortodont/tijana-vasiljevic-nis-689.htm",
+    "name": "Tijana Vasiljević",
+    "specialtyRaw": "Ortodont",
+    "clinic": "Timident",
+    "city": "Niš",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Timident",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.095Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/ortodont/svetislav-stankovic-vranje-33.htm",
+    "name": "Svetislav Stanković",
+    "specialtyRaw": "Ortodont",
+    "clinic": "Stomatološka ordinacija Svetislav Stanković",
+    "city": "Vranje",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija Svetislav Stanković",
+        "city": "Vranje"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.096Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/implantolog/igor-repic-novi-sad-597.htm",
+    "name": "Igor Repić",
+    "specialtyRaw": "Implantolog",
+    "clinic": "Repić",
+    "city": "Novi Sad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Repić",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.109Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/ortodont/veljko-drecun-stari-grad-322.htm",
+    "name": "Veljko Drecun",
+    "specialtyRaw": "Ortodont",
+    "clinic": "Morita centar za dentalni rendgen",
+    "city": "Grad",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Morita centar za dentalni rendgen",
+        "city": "Grad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.112Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/implantolog/marko-milenkovic-cukarica-51.htm",
+    "name": "Marko Milenković",
+    "specialtyRaw": "Implantolog",
+    "clinic": "Eurodent",
+    "city": "Belgrade",
+    "recommendationsCount": 10,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Eurodent",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.115Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/ortodont/djurdjica-mrkelja-stari-grad-324.htm",
+    "name": "Đurđica Mrkelja",
+    "specialtyRaw": "Ortodont",
+    "clinic": "Morita centar za dentalni rendgen",
+    "city": "Grad",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Morita centar za dentalni rendgen",
+        "city": "Grad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.125Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/implantolog/dusan-paripovic-pancevo-522.htm",
+    "name": "Dušan Paripović",
+    "specialtyRaw": "Implantolog",
+    "clinic": "Sanident",
+    "city": "Pančevo",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Sanident",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.126Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/implantolog/dragan--stojanovic-nis-713.htm",
+    "name": "Dragan  Stojanović",
+    "specialtyRaw": "Implantolog",
+    "clinic": "Nis Dental",
+    "city": "Niš",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Nis Dental",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.126Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/parodontolog/valeri--besu-zrenjanin-561.htm",
+    "name": "Valeri  Besu",
+    "specialtyRaw": "Parodontolog",
+    "clinic": "Dr Besu",
+    "city": "Zrenjanin",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Besu",
+        "city": "Zrenjanin"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.128Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/ortodont/natasa-blazic-stari-grad-323.htm",
+    "name": "Nataša Blažić",
+    "specialtyRaw": "Ortodont",
+    "clinic": "Morita centar za dentalni rendgen",
+    "city": "Grad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Morita centar za dentalni rendgen",
+        "city": "Grad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.131Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/snjezana--kozulj-stari-grad-227.htm",
+    "name": "Snježana  Kožulj",
+    "specialtyRaw": "Opšti stomatolog",
+    "clinic": "Dental One",
+    "city": "Grad",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dental One",
+        "city": "Grad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.140Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/parodontolog/gordana-delic-novi-sad-589.htm",
+    "name": "Gordana Delić",
+    "specialtyRaw": "Parodontolog",
+    "clinic": "Delić",
+    "city": "Novi Sad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Delić",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.148Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/ortodont/ivona-bjenjas-stari-grad-321.htm",
+    "name": "Ivona Bjenjaš",
+    "specialtyRaw": "Ortodont",
+    "clinic": "Morita centar za dentalni rendgen",
+    "city": "Grad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Morita centar za dentalni rendgen",
+        "city": "Grad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.153Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/implantolog/kristian-gerga-pancevo-120.htm",
+    "name": "Kristian Gerga",
+    "specialtyRaw": "Implantolog",
+    "clinic": "Dr Gerga",
+    "city": "Pančevo",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Gerga",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.206Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/maksilofacijalni-hirurg/milovan-dimitrijevic-novi-beograd-296.htm",
+    "name": "Milovan Dimitrijević",
+    "specialtyRaw": "Maksilofacijalni hirurg",
+    "clinic": "MKM specijalistička ordinacija",
+    "city": "Belgrade",
+    "recommendationsCount": 20,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "MKM specijalistička ordinacija",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.243Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/maksilofacijalni-hirurg/slobodanka-markovic-cukarica-491.htm",
+    "name": "Slobodanka Marković",
+    "specialtyRaw": "Maksilofacijalni hirurg",
+    "clinic": "Nada",
+    "city": "Belgrade",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Nada",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.248Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/oralni-hirurg/danijela-prascevic-jagodina-546.htm",
+    "name": "Danijela Praščević",
+    "specialtyRaw": "Oralni hirurg",
+    "clinic": "Extra dent",
+    "city": "Jagodina",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Extra dent",
+        "city": "Jagodina"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.824Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/parodontolog/eleonora-bede-novi-sad-626.htm",
+    "name": "Eleonora Bede",
+    "specialtyRaw": "Parodontolog",
+    "clinic": "DR BEDE",
+    "city": "Novi Sad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "DR BEDE",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.824Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/parodontolog/dusan-dimitrijevic-nis-730.htm",
+    "name": "Dušan Dimitrijević",
+    "specialtyRaw": "Parodontolog",
+    "clinic": "Dental - Art",
+    "city": "Niš",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dental - Art",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.825Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/parodontolog/veroljub--bogdanovic-sabac-638.htm",
+    "name": "Veroljub  Bogdanović",
+    "specialtyRaw": "Parodontolog",
+    "clinic": "Dr Veroljub Bogdanović",
+    "city": "Sabac",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Veroljub Bogdanović",
+        "city": "Sabac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.826Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/parodontolog/marijana-santrac-pancevo-530.htm",
+    "name": "Marijana Santrač",
+    "specialtyRaw": "Parodontolog",
+    "clinic": "Biodent",
+    "city": "Pančevo",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Biodent",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.826Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/oralni-hirurg/damir-taso-pancevo-537.htm",
+    "name": "Damir Taso",
+    "specialtyRaw": "Oralni hirurg",
+    "clinic": "Dr Taso",
+    "city": "Pančevo",
+    "recommendationsCount": 12,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Taso",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.826Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/parodontolog/igor-repic-novi-sad-598.htm",
+    "name": "Igor Repić",
+    "specialtyRaw": "Parodontolog",
+    "clinic": "Repić",
+    "city": "Novi Sad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Repić",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.828Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/oralni-hirurg/gordana-delic-novi-sad-591.htm",
+    "name": "Gordana Delić",
+    "specialtyRaw": "Oralni hirurg",
+    "clinic": "Delić",
+    "city": "Novi Sad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Delić",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.828Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/parodontolog/petar-bede-novi-sad-620.htm",
+    "name": "Petar Bede",
+    "specialtyRaw": "Parodontolog",
+    "clinic": "DR BEDE",
+    "city": "Novi Sad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "DR BEDE",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.832Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/oralni-hirurg/veroljub--bogdanovic-sabac-639.htm",
+    "name": "Veroljub  Bogdanović",
+    "specialtyRaw": "Oralni hirurg",
+    "clinic": "Dr Veroljub Bogdanović",
+    "city": "Sabac",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Veroljub Bogdanović",
+        "city": "Sabac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.832Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/oralni-hirurg/igor-repic-novi-sad-599.htm",
+    "name": "Igor Repić",
+    "specialtyRaw": "Oralni hirurg",
+    "clinic": "Repić",
+    "city": "Novi Sad",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Repić",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.833Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/oralni-hirurg/dusan-paripovic-pancevo-524.htm",
+    "name": "Dušan Paripović",
+    "specialtyRaw": "Oralni hirurg",
+    "clinic": "Sanident",
+    "city": "Pančevo",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Sanident",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.835Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/parodontolog/danijela-prascevic-jagodina-545.htm",
+    "name": "Danijela Praščević",
+    "specialtyRaw": "Parodontolog",
+    "clinic": "Extra dent",
+    "city": "Jagodina",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Extra dent",
+        "city": "Jagodina"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.836Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/parodontolog/dusan-paripovic-pancevo-523.htm",
+    "name": "Dušan Paripović",
+    "specialtyRaw": "Parodontolog",
+    "clinic": "Sanident",
+    "city": "Pančevo",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Sanident",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.836Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/oralni-hirurg/dragan--stojanovic-nis-712.htm",
+    "name": "Dragan  Stojanović",
+    "specialtyRaw": "Oralni hirurg",
+    "clinic": "Nis Dental",
+    "city": "Niš",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Nis Dental",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.836Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/oralni-hirurg/marijana-santrac-pancevo-532.htm",
+    "name": "Marijana Santrač",
+    "specialtyRaw": "Oralni hirurg",
+    "clinic": "Biodent",
+    "city": "Pančevo",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Biodent",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.863Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/oralni-hirurg/igor-repic-novi-sad-594.htm",
+    "name": "Igor Repić",
+    "specialtyRaw": "Oralni hirurg",
+    "clinic": "Repić",
+    "city": "Novi Sad",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Repić",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.865Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/oralni-hirurg/marko-buric-nis-717.htm",
+    "name": "Marko Burić",
+    "specialtyRaw": "Oralni hirurg",
+    "clinic": "Stomatoloski centar Nis",
+    "city": "Niš",
+    "recommendationsCount": 135,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatoloski centar Nis",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.865Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/oralni-hirurg/petar-bede-novi-sad-619.htm",
+    "name": "Petar Bede",
+    "specialtyRaw": "Oralni hirurg",
+    "clinic": "DR BEDE",
+    "city": "Novi Sad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "DR BEDE",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.868Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/oralni-hirurg/uros-borisev-novi-sad-602.htm",
+    "name": "Uroš Borišev",
+    "specialtyRaw": "Oralni hirurg",
+    "clinic": "Repić",
+    "city": "Novi Sad",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Repić",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.869Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/aleksandar-grkovic-novi-sad-606.htm",
+    "name": "Aleksandar Grković",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Repić",
+    "city": "Novi Sad",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Repić",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.873Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/oralni-hirurg/olja-kalem-novi-sad-636.htm",
+    "name": "Olja Kalem",
+    "specialtyRaw": "Oralni hirurg",
+    "clinic": "Dr Olja Kalem",
+    "city": "Novi Sad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Olja Kalem",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.873Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/oralni-hirurg/mirjana-milacic-bajic-vracar-211.htm",
+    "name": "Mirjana Milačić Bajić",
+    "specialtyRaw": "Oralni hirurg",
+    "clinic": "mmb centar",
+    "city": "Belgrade",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "mmb centar",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.873Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/valeri--besu-zrenjanin-562.htm",
+    "name": "Valeri  Besu",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Dr Besu",
+    "city": "Zrenjanin",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Besu",
+        "city": "Zrenjanin"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.876Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/natasa-vukovic-kraljevo-576.htm",
+    "name": "Nataša Vuković",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Dr Vuković",
+    "city": "Kraljevo",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Vuković",
+        "city": "Kraljevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.876Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/aleksandra-misovic-topola-203.htm",
+    "name": "Aleksandra Misović",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Specijalistička stomatološka ordinacija",
+    "city": "Topola",
+    "recommendationsCount": 8,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Specijalistička stomatološka ordinacija",
+        "city": "Topola"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.879Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/veroljub--bogdanovic-sabac-640.htm",
+    "name": "Veroljub  Bogdanović",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Dr Veroljub Bogdanović",
+    "city": "Sabac",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Veroljub Bogdanović",
+        "city": "Sabac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.880Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/vesna-spakovski-nis-711.htm",
+    "name": "Vesna Špakovski",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Whitedent",
+    "city": "Niš",
+    "recommendationsCount": 5,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Whitedent",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.880Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/borivoje-petrovic-nis-701.htm",
+    "name": "Borivoje Petrović",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Petrovic Dent",
+    "city": "Niš",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Petrovic Dent",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.882Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/aleksandar-radicevic-krusevac-667.htm",
+    "name": "Aleksandar Radičević",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Radix",
+    "city": "Kruševac",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Radix",
+        "city": "Kruševac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.884Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/vladislav-vasiljevic-nis-691.htm",
+    "name": "Vladislav Vasiljević",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Timident",
+    "city": "Niš",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Timident",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.906Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/gordana-delic-novi-sad-588.htm",
+    "name": "Gordana Delić",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Delić",
+    "city": "Novi Sad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Delić",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.910Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/danijela-prascevic-jagodina-514.htm",
+    "name": "Danijela Praščević",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Extra dent",
+    "city": "Jagodina",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Extra dent",
+        "city": "Jagodina"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.910Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/dragoljub-paunovic-smederevo-541.htm",
+    "name": "Dragoljub Paunović",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Dentino",
+    "city": "Smederevo",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dentino",
+        "city": "Smederevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.912Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/dusan-paripovic-pancevo-525.htm",
+    "name": "Dušan Paripović",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Sanident",
+    "city": "Pančevo",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Sanident",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.914Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/dusko-jovsic-rakovica-94.htm",
+    "name": "Duško Jovšić",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Stomatološki centar Jovšić",
+    "city": "Rakovica",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološki centar Jovšić",
+        "city": "Rakovica"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.914Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/dubravka-pujic-pancevo-550.htm",
+    "name": "Dubravka Pujić",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Stomatološka ordinacija Dubravka Pujić",
+    "city": "Pančevo",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija Dubravka Pujić",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.915Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/igor-repic-novi-sad-600.htm",
+    "name": "Igor Repić",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Repić",
+    "city": "Novi Sad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Repić",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.917Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/eleonora-bede-novi-sad-627.htm",
+    "name": "Eleonora Bede",
+    "specialtyRaw": "Protetičar",
+    "clinic": "DR BEDE",
+    "city": "Novi Sad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "DR BEDE",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.919Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/marijana-santrac-pancevo-533.htm",
+    "name": "Marijana Santrač",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Biodent",
+    "city": "Pančevo",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Biodent",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.924Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/milan-knezevic-novi-beograd-58.htm",
+    "name": "Milan Knežević",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Stomatološka ordinacija Mea:Dent",
+    "city": "Belgrade",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija Mea:Dent",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.925Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/jasna-uljarevic-novi-sad-630.htm",
+    "name": "Jasna Uljarević",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Dr Jasna Uljarević",
+    "city": "Novi Sad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Jasna Uljarević",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.925Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/lidija-mitic-nis-716.htm",
+    "name": "Lidija Mitić",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Nis Dental",
+    "city": "Niš",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Nis Dental",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.926Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/maja--trajic-novi-beograd-745.htm",
+    "name": "Maja  Trajić",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Stomatoloska ordinacija Trajić",
+    "city": "Belgrade",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatoloska ordinacija Trajić",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.927Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/milivoje-stojanovic-novi-beograd-75.htm",
+    "name": "Milivoje Stojanović",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Ordinacija opšte stomatologije dr Milivoje Stojanović",
+    "city": "Belgrade",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Ordinacija opšte stomatologije dr Milivoje Stojanović",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.947Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/milijan-bondzulic-uzice-585.htm",
+    "name": "Milijan Bondžulić",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Bondžulić",
+    "city": "Uzice",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Bondžulić",
+        "city": "Uzice"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.949Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/olja-kalem-novi-sad-635.htm",
+    "name": "Olja Kalem",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Dr Olja Kalem",
+    "city": "Novi Sad",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Olja Kalem",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.950Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/milos-mancic-zrenjanin-59.htm",
+    "name": "Miloš Mančić",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Miloš Mančić",
+    "city": "Zrenjanin",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Miloš Mančić",
+        "city": "Zrenjanin"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.955Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/olgica-ruzic-smederevo-542.htm",
+    "name": "Olgica Ružić",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Dental",
+    "city": "Smederevo",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dental",
+        "city": "Smederevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.958Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/miroslava--bosnjak-vracar-92.htm",
+    "name": "Miroslava  Bošnjak",
+    "specialtyRaw": "Protetičar",
+    "clinic": "MODENT",
+    "city": "Belgrade",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "MODENT",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.958Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/petar-bede-novi-sad-621.htm",
+    "name": "Petar Bede",
+    "specialtyRaw": "Protetičar",
+    "clinic": "DR BEDE",
+    "city": "Novi Sad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "DR BEDE",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.960Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/slavoljub-tosic-nis-698.htm",
+    "name": "Slavoljub Tošić",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Tosic Dent",
+    "city": "Niš",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Tosic Dent",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.962Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/petar-ilic-pancevo-548.htm",
+    "name": "Petar Ilić",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Dr Petar Ilić",
+    "city": "Pančevo",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Petar Ilić",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.966Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/radivoje-radosavljevic-vracar-93.htm",
+    "name": "Radivoje Radosavljević",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Dentalplus22",
+    "city": "Belgrade",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dentalplus22",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.967Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/ranko-milenkovic-pancevo-556.htm",
+    "name": "Ranko Milenković",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Milenkovic",
+    "city": "Pančevo",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Milenkovic",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.969Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/uros-borisev-novi-sad-603.htm",
+    "name": "Uroš Borišev",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Repić",
+    "city": "Novi Sad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Repić",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.973Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/slavica--radenovic-raicevic-smederevo-540.htm",
+    "name": "Slavica  Radenović Raičević",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Stomadent",
+    "city": "Smederevo",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomadent",
+        "city": "Smederevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.973Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/filip-djordjevic-krusevac-666.htm",
+    "name": "Filip Đorđević",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Radix",
+    "city": "Kruševac",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Radix",
+        "city": "Kruševac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:04.974Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/proteticar/lara-petrovic-zvezdara-72.htm",
+    "name": "Lara Petrović",
+    "specialtyRaw": "Protetičar",
+    "clinic": "Dental Petrović",
+    "city": "Belgrade",
+    "recommendationsCount": 3,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dental Petrović",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:05.010Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/cava-matic-vozdovac-235.htm",
+    "name": "Cava Matić",
+    "specialtyRaw": "Dečiji i preventivni stomatolog",
+    "clinic": "Dr. Boris Prokić stomatološka ordinacija",
+    "city": "Belgrade",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr. Boris Prokić stomatološka ordinacija",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:05.050Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/veroljub--bogdanovic-sabac-641.htm",
+    "name": "Veroljub  Bogdanović",
+    "specialtyRaw": "Dečiji i preventivni stomatolog",
+    "clinic": "Dr Veroljub Bogdanović",
+    "city": "Sabac",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Veroljub Bogdanović",
+        "city": "Sabac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:05.826Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/natasa-vukovic-kraljevo-575.htm",
+    "name": "Nataša Vuković",
+    "specialtyRaw": "Dečiji i preventivni stomatolog",
+    "clinic": "Dr Vuković",
+    "city": "Kraljevo",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Dr Vuković",
+        "city": "Kraljevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:05.828Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/dubravka-pujic-pancevo-551.htm",
+    "name": "Dubravka Pujić",
+    "specialtyRaw": "Dečiji i preventivni stomatolog",
+    "clinic": "Stomatološka ordinacija Dubravka Pujić",
+    "city": "Pančevo",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija Dubravka Pujić",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:05.829Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/eleonora-bede-novi-sad-628.htm",
+    "name": "Eleonora Bede",
+    "specialtyRaw": "Dečiji i preventivni stomatolog",
+    "clinic": "DR BEDE",
+    "city": "Novi Sad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "DR BEDE",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:05.831Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/vladan-mancic-smederevska-palanka-543.htm",
+    "name": "Vladan Mančić",
+    "specialtyRaw": "Dečiji i preventivni stomatolog",
+    "clinic": "Moj Zubar",
+    "city": "Palanka",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Moj Zubar",
+        "city": "Palanka"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:05.831Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/marijana-santrac-pancevo-534.htm",
+    "name": "Marijana Santrač",
+    "specialtyRaw": "Dečiji i preventivni stomatolog",
+    "clinic": "Biodent",
+    "city": "Pančevo",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Biodent",
+        "city": "Pančevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:05.831Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/petar-bede-novi-sad-622.htm",
+    "name": "Petar Bede",
+    "specialtyRaw": "Dečiji i preventivni stomatolog",
+    "clinic": "DR BEDE",
+    "city": "Novi Sad",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "DR BEDE",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:05.832Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/mila-milicic-jagodina-553.htm",
+    "name": "Mila Miličić",
+    "specialtyRaw": "Dečiji i preventivni stomatolog",
+    "clinic": "Miličić",
+    "city": "Jagodina",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Miličić",
+        "city": "Jagodina"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:05.832Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/gordana-delic-novi-sad-590.htm",
+    "name": "Gordana Delić",
+    "specialtyRaw": "Dečiji i preventivni stomatolog",
+    "clinic": "Delić",
+    "city": "Novi Sad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Delić",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:05.832Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/dragana-milosavljevic-vranje-37.htm",
+    "name": "Dragana Milosavljević",
+    "specialtyRaw": "Dečiji i preventivni stomatolog",
+    "clinic": "Stomatološka ordinacija Dr Dragane Milosavljevic",
+    "city": "Vranje",
+    "recommendationsCount": 10,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Stomatološka ordinacija Dr Dragane Milosavljevic",
+        "city": "Vranje"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:05.833Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/nina-markovic-vracar-117.htm",
+    "name": "Nina Marković",
+    "specialtyRaw": "Dečiji i preventivni stomatolog",
+    "clinic": "SSO MARKOVIC NINA",
+    "city": "Belgrade",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "SSO MARKOVIC NINA",
+        "city": "Belgrade"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:05.833Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/aleksandar-grkovic-novi-sad-607.htm",
+    "name": "Aleksandar Grković",
+    "specialtyRaw": "Dečiji i preventivni stomatolog",
+    "clinic": "Repić",
+    "city": "Novi Sad",
+    "recommendationsCount": 2,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Repić",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:05.833Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/milica-radosavljevic-kraljevo-571.htm",
+    "name": "Milica Radosavljević",
+    "specialtyRaw": "Dečiji i preventivni stomatolog",
+    "clinic": "Radosavljević",
+    "city": "Kraljevo",
+    "recommendationsCount": 1,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Radosavljević",
+        "city": "Kraljevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:05.834Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/igor-repic-novi-sad-601.htm",
+    "name": "Igor Repić",
+    "specialtyRaw": "Dečiji i preventivni stomatolog",
+    "clinic": "Repić",
+    "city": "Novi Sad",
+    "recommendationsCount": 0,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Repić",
+        "city": "Novi Sad"
+      }
+    ],
+    "scrapedAt": "2026-11-21T16:26:05.835Z"
   }
 ]

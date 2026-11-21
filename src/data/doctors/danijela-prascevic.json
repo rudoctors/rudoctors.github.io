@@ -1,0 +1,34 @@
+{
+  "slug": "danijela-prascevic",
+  "name": "Danijela Praščević",
+  "nameRu": "Данийела Прашчевич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Jagodina",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Extra dent",
+      "city": "Jagodina"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/proteticar/danijela-prascevic-jagodina-514.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

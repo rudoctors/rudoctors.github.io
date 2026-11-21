@@ -1,0 +1,34 @@
+{
+  "slug": "gordana-delic",
+  "name": "Gordana Delić",
+  "nameRu": "Гордана Делич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Novi Sad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Delić",
+      "city": "Novi Sad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/deciji-i-preventivni-stomatolog/gordana-delic-novi-sad-590.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

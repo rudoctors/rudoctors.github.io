@@ -1,0 +1,38 @@
+{
+  "slug": "prof-dr-sci-med-mirjana-bogavac",
+  "name": "Prof dr sci med Mirjana Bogavac",
+  "nameRu": "Проф др сци мед Мирйана Богавац",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Novi Sad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Rasena MAB",
+      "city": "Novi Sad",
+      "address": "Avgusta Cesarca 18, Novi Sad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381637775916"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/mirjana-bogavac"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/559e2a26fbab73a50189e09a051b71a597cc783f-900x1600.jpg?w=520&h=520&fit=crop&auto=format&q=75"
+}

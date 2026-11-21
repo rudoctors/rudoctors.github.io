@@ -1,0 +1,40 @@
+{
+  "slug": "nikola-mladenovic",
+  "name": "Nikola Mladenović",
+  "nameRu": "Никола Младенович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Lajkovac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka ordinacija",
+      "city": "Lajkovac"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/nikola-mladenovic-lajkovac-48.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "209305",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

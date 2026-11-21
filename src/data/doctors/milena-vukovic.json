@@ -1,0 +1,40 @@
+{
+  "slug": "milena-vukovic",
+  "name": "Milena Vuković",
+  "nameRu": "Милена Вукович",
+  "origin": "rs",
+  "specializations": [
+    "pediatrician"
+  ],
+  "city": "Kruševac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Privatna ordinacija",
+      "city": "Kruševac"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/pedijatrija/opsti-pedijatar/milena-vukovic-krusevac-49.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "303057",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

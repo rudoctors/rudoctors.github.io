@@ -1,0 +1,34 @@
+{
+  "slug": "davor-viskovic",
+  "name": "Davor Višković",
+  "nameRu": "Давор Вишкович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Venac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dental-V",
+      "city": "Venac"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/davor-viskovic-savski-venac-52.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "lazar-dimitrijevic",
+  "name": "Lazar  Dimitrijević",
+  "nameRu": "Лазар  Димитрийевич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Niš",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dental Art",
+      "city": "Niš"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/lazar--dimitrijevic-nis-221.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

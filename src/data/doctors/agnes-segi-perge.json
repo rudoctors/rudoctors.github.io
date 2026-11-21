@@ -1,0 +1,38 @@
+{
+  "slug": "agnes-segi-perge",
+  "name": "Agneš Šegi Perge",
+  "nameRu": "Агнеш Шеги Перге",
+  "origin": "rs",
+  "specializations": [
+    "dermatologist"
+  ],
+  "city": "Bačka Topola",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Eumed",
+      "city": "Bačka Topola",
+      "address": "Svetosavska 5, Bačka Topola"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38124715900"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/agnes-segi-perge"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/8ef96b786efb543e0fb63eb45545248361cb7a59-1080x1080.png?w=520&h=520&fit=crop&auto=format&q=75"
+}

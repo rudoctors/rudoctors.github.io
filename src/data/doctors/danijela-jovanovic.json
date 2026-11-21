@@ -1,0 +1,40 @@
+{
+  "slug": "danijela-jovanovic",
+  "name": "Danijela  Jovanović",
+  "nameRu": "Данийела  Йованович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Leskovac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Sensa",
+      "city": "Leskovac"
+    },
+    {
+      "clinic": "Life Impuls",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/danijela--jovanovic-leskovac-740.htm",
+    "https://stetoskop.info/doktor/danijela-jovanovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/2304/danijela-jovanovic.png"
+}

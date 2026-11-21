@@ -1,0 +1,34 @@
+{
+  "slug": "milos-opacic",
+  "name": "Miloš Opačić",
+  "nameRu": "Милош Опачич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Kruševac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "DENTAS",
+      "city": "Kruševac"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/milos-opacic-krusevac-53.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

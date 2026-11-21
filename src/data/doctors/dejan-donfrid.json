@@ -1,0 +1,34 @@
+{
+  "slug": "dejan-donfrid",
+  "name": "Dejan Donfrid",
+  "nameRu": "Дейан Донфрид",
+  "origin": "rs",
+  "specializations": [
+    "dental_implantologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka ordinacija ORTO",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/implantolog/dejan-donfrid-vozdovac-98.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "marija-markovic",
+  "name": "Marija Marković",
+  "nameRu": "Марийа Маркович",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Novi Sad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Porodični Lekar Slavica",
+      "city": "Novi Sad",
+      "address": "Bulevar Evrope 20, Novi Sad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381649393113"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/marija-markovic",
+    "https://stetoskop.info/doktor/marija-markovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/75dddaab4a5427189b0c6ffa0328455228959df0-3665x3665.jpg?w=520&h=520&fit=crop&auto=format&q=75"
+}

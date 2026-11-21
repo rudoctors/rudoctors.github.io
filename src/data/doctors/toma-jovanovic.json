@@ -1,0 +1,34 @@
+{
+  "slug": "toma-jovanovic",
+  "name": "Toma Jovanović",
+  "nameRu": "Тома Йованович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Grad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka ordinacija dr.Toma M. Jovanović",
+      "city": "Grad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/toma-jovanovic-stari-grad-251.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

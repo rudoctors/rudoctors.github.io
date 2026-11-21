@@ -1,0 +1,37 @@
+{
+  "slug": "vladan-djordjevic",
+  "name": "Vladan Đorđević",
+  "nameRu": "Владан Джорджевич",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/vladan-djordjevic"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "409662",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

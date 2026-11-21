@@ -1,0 +1,34 @@
+{
+  "slug": "asko-stankovic",
+  "name": "aško Stanković",
+  "nameRu": "ашко Станкович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dr Ognjen Stankov",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/drasko-stankovic-palilula-325.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

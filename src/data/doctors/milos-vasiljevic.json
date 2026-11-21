@@ -1,0 +1,49 @@
+{
+  "slug": "milos-vasiljevic",
+  "name": "Miloš Vasiljević",
+  "nameRu": "Милош Васильевич",
+  "origin": "rs",
+  "specializations": [
+    "urologist"
+  ],
+  "city": "Subotica",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Poliklinika Sente",
+      "city": "Subotica",
+      "address": "Lajoša Joa 4A, Subotica"
+    },
+    {
+      "clinic": "Megaclinic",
+      "city": "Subotica",
+      "address": "Aleja Maršala Tita 33, Subotica"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38124520698"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/milos-vasiljevic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/60ff1a811e4bea7ab7f5b9bff9d57fc7f60cccdd-3472x3268.jpg?w=520&h=520&fit=crop&auto=format&q=75",
+  "license": {
+    "number": "207344",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

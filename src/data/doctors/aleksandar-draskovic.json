@@ -1,0 +1,41 @@
+{
+  "slug": "aleksandar-draskovic",
+  "name": "Aleksandar Drašković",
+  "nameRu": "Александар Драшкович",
+  "origin": "rs",
+  "specializations": [
+    "urologist"
+  ],
+  "city": "Venac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Intrnistička ordinacija UltraMedik",
+      "city": "Venac"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/hirurgija/urolog/aleksandar-draskovic-savski-venac-401.htm",
+    "https://stetoskop.info/doktor/aleksandar-draskovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "103376",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

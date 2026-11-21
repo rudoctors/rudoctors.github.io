@@ -1,0 +1,31 @@
+{
+  "slug": "zoran-tacic",
+  "name": "Zoran Tačić",
+  "nameRu": "Зоран Тачич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "063/687-460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/zoran-tacic"
+  ],
+  "updatedAt": "2026-11-21"
+}

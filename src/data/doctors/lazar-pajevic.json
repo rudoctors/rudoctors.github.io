@@ -1,0 +1,37 @@
+{
+  "slug": "lazar-pajevic",
+  "name": "Lazar Pajević",
+  "nameRu": "Лазар Пайевич",
+  "origin": "rs",
+  "specializations": [
+    "plastic_surgeon"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Opšta bolnica Atlas",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381600687461"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/lazar-pajevic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/2529/lazar-pajevic.png"
+}

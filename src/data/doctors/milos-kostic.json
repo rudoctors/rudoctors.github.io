@@ -1,0 +1,40 @@
+{
+  "slug": "milos-kostic",
+  "name": "Miloš Kostić",
+  "nameRu": "Милош Костич",
+  "origin": "rs",
+  "specializations": [
+    "physiotherapist"
+  ],
+  "city": "Novi Sad",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Therasuit Novi Sad",
+      "city": "Novi Sad"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/ostale-grane/fizioterapeut/milos-kostic-novi-sad-77.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "307042",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

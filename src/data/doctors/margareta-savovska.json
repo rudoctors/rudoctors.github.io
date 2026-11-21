@@ -1,0 +1,34 @@
+{
+  "slug": "margareta-savovska",
+  "name": "Margareta Savovska",
+  "nameRu": "Маргарета Савовска",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Kladovo",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka ordinacija ,,dr Milica''",
+      "city": "Kladovo"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/margareta-savovska-kladovo-47.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

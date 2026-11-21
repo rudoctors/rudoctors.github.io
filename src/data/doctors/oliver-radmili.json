@@ -1,0 +1,63 @@
+{
+  "slug": "oliver-radmili",
+  "name": "Oliver Radmili",
+  "nameRu": "Оливер Радмили",
+  "origin": "rs",
+  "specializations": [
+    "radiologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Family Medica 7 - Slavija",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Poliklinika Astra medica",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Poliklinika Equilibrium",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Profesional Medic Vinča",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Sirius Medical",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Specijalistička ordinacija Vesel",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+381600687461"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/oliver-radmili"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/374/oliver-radmili.jpg",
+  "license": {
+    "number": "109907",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

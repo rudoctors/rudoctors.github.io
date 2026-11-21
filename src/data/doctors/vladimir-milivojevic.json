@@ -1,0 +1,48 @@
+{
+  "slug": "vladimir-milivojevic",
+  "name": "Vladimir Milivojević",
+  "nameRu": "Владимир Миливойевич",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Kragujevac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Stomatološka ordinacija",
+      "city": "Kragujevac"
+    },
+    {
+      "clinic": "Internistička-kardiološka ordinacija Medisin",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Medicinski sistem Beograd - MSB",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Tesla Medical Group",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/vladimir-milivojevic-kragujevac-85.htm",
+    "https://stetoskop.info/doktor/vladimir-milivojevic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/3051/vladimir-milivojevic.webp"
+}

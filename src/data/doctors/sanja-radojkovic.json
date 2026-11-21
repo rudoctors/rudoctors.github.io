@@ -1,0 +1,34 @@
+{
+  "slug": "sanja-radojkovic",
+  "name": "Sanja Radojković",
+  "nameRu": "Саньа Радойкович",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Jagodina",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Miličić",
+      "city": "Jagodina"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/sanja-radojkovic-jagodina-555.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

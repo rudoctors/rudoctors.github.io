@@ -1,0 +1,34 @@
+{
+  "slug": "nikola-bakis",
+  "name": "Nikola  Bakiš",
+  "nameRu": "Никола  Бакиш",
+  "origin": "rs",
+  "specializations": [
+    "dentist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Dental Corner Esthetics",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/stomatologija/opsti-stomatolog/nikola--bakis-vracar-267.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

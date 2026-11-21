@@ -1,0 +1,55 @@
+{
+  "slug": "stanko-petrovic",
+  "name": "Stanko Petrović",
+  "nameRu": "Станко Петрович",
+  "origin": "rs",
+  "specializations": [
+    "gastroenterologist"
+  ],
+  "city": "Belgrade",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Family Medica 7 - Slavija",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Specijalna hirurška bolnica Trifunović",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Tesla Medical Group",
+      "city": "Belgrade"
+    },
+    {
+      "clinic": "Vaša kuća zdravlja",
+      "city": "Belgrade"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38163687460"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://stetoskop.info/doktor/stanko-petrovic"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://fls-a2f0e3d7-a47a-4784-8a0d-92868838f699.laravel.cloud/1773/stanko-petrovic.jpg",
+  "license": {
+    "number": "103056",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}
