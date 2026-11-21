@@ -14,6 +14,12 @@ export default defineConfig({
     "/doctors/yanik-elena": "/doctors/elena-ianik/",
     "/doctors/pozharickaya-elena": "/doctors/elena-pozharickaya/",
     "/doctors/shtuchnyy-igor": "/doctors/igor-shtuchnyy/",
+    "/cities/belgrade/uzi": "/cities/belgrade/ultrasound_diagnostics/",
+    "/cities/novi-sad/uzi": "/cities/novi-sad/ultrasound_diagnostics/",
+    "/cities/belgrade/stomatolog": "/cities/belgrade/dentist/",
+    "/cities/novi-sad/stomatolog": "/cities/novi-sad/dentist/",
+    "/cities/belgrade/pediatr": "/cities/belgrade/pediatrician/",
+    "/cities/novi-sad/pediatr": "/cities/novi-sad/pediatrician/",
   },
   integrations: [
     sitemap({
