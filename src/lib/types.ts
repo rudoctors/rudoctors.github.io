@@ -47,14 +47,28 @@ export interface ClinicCoordinates {
 
 export interface ClinicLocation {
   id: string;
+  name?: string;
+  district?: string;
   address: ClinicAddress;
   coordinates: ClinicCoordinates;
 }
 
+export type ClinicCategory =
+  | "medical-center"
+  | "dental"
+  | "laboratory"
+  | "ordination"
+  | "hospital";
+
 export interface Clinic {
   id: string;
   name: string;
+  category?: ClinicCategory;
   city: string;
+  district?: string;
+  phone?: string;
+  website?: string;
+  is24h?: boolean;
   aliases: string[];
   sources: string[];
   locations: ClinicLocation[];
@@ -88,10 +102,14 @@ export interface LicenseInfo {
   url?: string;
 }
 
+export type DoctorOrigin = "ru" | "rs" | "intl";
+
 export interface Doctor {
   slug: string;
   name: string;
+  nameRu?: string;
   nameEn?: string;
+  origin?: DoctorOrigin;
   specializations: string[];
   specializationText?: string;
   photo?: string;

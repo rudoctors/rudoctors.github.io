@@ -1,0 +1,105 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import DoctorCard from "../../../components/DoctorCard.astro";
+import Banner from "../../../components/Banner.astro";
+import { serbianDoctors } from "../../../lib/doctors";
+import { computeRating } from "../../../lib/rating";
+import { SITE, plural } from "../../../lib/site";
+
+const doctors = serbianDoctors().sort((a, b) => {
+  if (a.featured !== b.featured) return a.featured ? -1 : 1;
+  const ra = computeRating(a);
+  const rb = computeRating(b);
+  if (rb.count !== ra.count) return rb.count - ra.count;
+  return rb.average - ra.average;
+});
+
+const total = doctors.length;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Сербские врачи: каталог и отзывы на русском",
+  url: `${SITE.url}/doctors/serbian/`,
+  description:
+    "Каталог национальных сербских врачей и клиник в Сербии (Белград, Нови-Сад, Ниш). Отзывы пациентов на русском языке, специальности, ординации и прямые контакты.",
+};
+---
+
+<Layout
+  title="Сербские врачи: каталог, отзывы на русском и рейтинг специалистов | RuDoctors"
+  description="Каталог национальных сербских врачей и ординаций в Сербии (Белград, Нови-Сад, Ниш). Проверенные отзывы пациентов на русском языке, специальности, клиники и прямые контакты."
+  jsonLd={jsonLd}
+  breadcrumbs={[
+    { name: "Главная", path: "/" },
+    { name: "Врачи", path: "/doctors/" },
+    { name: "Сербские врачи", path: "/doctors/serbian/" },
+  ]}
+>
+  <div class="mx-auto max-w-6xl px-4 py-10">
+    <nav class="text-sm text-slate-500 mb-6">
+      <a href="/" class="hover:text-brand-700">Главная</a>
+      <span class="mx-2">/</span>
+      <a href="/doctors/" class="hover:text-brand-700">Врачи</a>
+      <span class="mx-2">/</span>
+      <span class="text-slate-800">Сербские врачи</span>
+    </nav>
+
+    <div class="mb-8">
+      <div class="flex items-center gap-3">
+        <span class="text-3xl" aria-hidden="true">🇷🇸</span>
+        <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900">Сербские врачи</h1>
+      </div>
+      <p class="mt-3 text-slate-600 max-w-3xl leading-relaxed">
+        Специализированный раздел национальных врачей Сербии для русскоязычных пациентов. Имена специалистов сохранены
+        в оригинальном сербском написании (латиница), а медицинские специальности, квалификация и отзывы пациентов
+        переведены на русский язык с возможностью просмотра сербского первоисточника.
+      </p>
+      <div class="mt-4 flex flex-wrap gap-2 text-xs">
+        <a href="/doctors/" class="chip hover:bg-slate-200">← Все врачи каталога</a>
+        <a href="/doctors/?origin=ru" class="chip hover:bg-slate-200">Русскоязычные врачи</a>
+        <span class="chip bg-rose-50 text-rose-700 ring-1 ring-rose-600/10 font-semibold">🇷🇸 Сербские врачи ({total})</span>
+      </div>
+    </div>
+
+    <Banner placement="catalog-top" class="mb-8" />
+
+    {
+      total === 0 ? (
+        <div class="card p-10 text-center text-slate-500">
+          <p class="text-base font-medium">База сербских специалистов находится в процессе синхронизации.</p>
+          <p class="text-sm mt-2 text-slate-400">
+            Перейдите в <a href="/doctors/" class="text-brand-700 hover:underline">общий каталог</a> для поиска врачей.
+          </p>
+        </div>
+      ) : (
+        <div class="space-y-6">
+          <div class="text-sm text-slate-500">
+            Найдено специалистов: {total} {plural(total, "сербский врач", "сербских врача", "сербских врачей")}
+          </div>
+
+          <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {doctors.map((doctor, index) => (
+              <div class="doctor-item" data-slug={doctor.slug}>
+                <DoctorCard doctor={doctor} priority={index < 3} />
+              </div>
+            ))}
+          </div>
+        </div>
+      )
+    }
+
+    <div class="mt-12 card p-6 bg-slate-50 border-slate-200 text-sm text-slate-600 space-y-3">
+      <h2 class="font-bold text-slate-900 text-base">Как устроена база сербских врачей на RuDoctors</h2>
+      <p>
+        Данные синхронизируются из официальных и публичных сербских источников: национального медицинского портала
+        <strong>Stetoskop.info</strong>, независимой платформы отзывов <strong>Hipokratija.rs</strong> и сервиса оценок
+        <strong>OceniLekara.com</strong>.
+      </p>
+      <p>
+        Все отзывы сопровождаются оригиналом на сербском языке. Если вы посещали сербского доктора — вы можете
+        <a href="/leave-review/" class="text-brand-700 hover:underline font-medium">оставить отзыв на русском языке</a>, чтобы помочь другим экспатам.
+      </p>
+    </div>
+  </div>
+</Layout>

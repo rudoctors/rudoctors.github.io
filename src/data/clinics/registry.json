@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-04",
+  "updatedAt": "2026-11-21",
   "notes": "Auto-derived draft registry from existing doctor workplace strings. Names, addresses and coordinates are unverified and are not canonical until human review; no coordinates are asserted. Similar names are only reported by scripts/clinics-audit.mjs and are never merged automatically.",
   "clinics": [
     {
@@ -18,32 +18,44 @@
         {
           "id": "klinika-medigroup-belgrade-loc-1",
           "address": {
-            "value": "",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Milutina Milankovića 3, Novi Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/filipovi-aleksandar.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/vyazovetskaya-nina.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.81462,
+              "lng": 20.42151
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Нови Београд"
         }
-      ]
+      ],
+      "category": "medical-center",
+      "district": "Нови Београд",
+      "phone": "+381 11 4040 100",
+      "website": "https://medigroup.rs/",
+      "is24h": true
     },
     {
       "id": "klinika-medigroup-nis",
@@ -59,27 +71,43 @@
         {
           "id": "klinika-medigroup-nis-loc-1",
           "address": {
-            "value": "",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Vizantijski bulevar 14, Niš",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/tkalich-oksana.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 43.31952,
+              "lng": 21.92811
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Медијана"
         }
-      ]
+      ],
+      "category": "medical-center",
+      "district": "Медијана",
+      "phone": "+381 18 415 5555",
+      "website": "https://medigroup.rs/"
     },
     {
       "id": "klinika-medigroup-novi-sad",
@@ -95,27 +123,43 @@
         {
           "id": "klinika-medigroup-novi-sad-loc-1",
           "address": {
-            "value": "",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Cara Dušana 26, Novi Sad",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/smolenceva-lyudmila.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 45.24271,
+              "lng": 19.82972
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Грбавица"
         }
-      ]
+      ],
+      "category": "medical-center",
+      "district": "Грбавица",
+      "phone": "+381 21 487 7777",
+      "website": "https://medigroup.rs/"
     },
     {
       "id": "poliklinika-citilab-belgrade",
@@ -134,30 +178,37 @@
         {
           "id": "poliklinika-citilab-belgrade-loc-1",
           "address": {
-            "value": "Dubljanska 41, Belgrade",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Dubljanska 41, Vračar, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/gudovannaya-lyudmila-nikolaevna.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/skrypnik-irina-anatolevna.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://citilab.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.79644,
+              "lng": 20.47271
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://citilab.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Врачар"
         },
         {
           "id": "poliklinika-citilab-belgrade-loc-2",
@@ -182,7 +233,11 @@
             "provenance": []
           }
         }
-      ]
+      ],
+      "category": "laboratory",
+      "district": "Врачар",
+      "phone": "+381 11 244 3222",
+      "website": "https://citilab.rs/"
     },
     {
       "id": "poliklinika-citilab-novi-sad",
@@ -198,27 +253,43 @@
         {
           "id": "poliklinika-citilab-novi-sad-loc-1",
           "address": {
-            "value": "",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Futoška 10, Novi Sad",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/goncharuk-anastasiya.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://citilab.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 45.25081,
+              "lng": 19.83612
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://citilab.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Центар"
         }
-      ]
+      ],
+      "category": "laboratory",
+      "district": "Центар",
+      "phone": "+381 21 661 5566",
+      "website": "https://citilab.rs/"
     },
     {
       "id": "alfamedstar-belgrade",
@@ -256,90 +327,37 @@
         {
           "id": "alfamedstar-belgrade-loc-1",
           "address": {
-            "value": "Milentija Popovića 5v, Beograd 11000",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Milentija Popovića 5v, Novi Beograd, 11000 Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/aleksandra-yudina.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/diana-gorbunova.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/elizaveta-gracheva.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/igor-shtuchnyy.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/inga-sakeyan.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/kirill-kozyrev.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/kristina-tokmakova.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/nadezhda-bakuleva.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/pavel-borisov.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/polina-sokolova.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/timur-mukaev.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/vera-golysheva.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/yuliya-avakyanc.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/yuliya-ostanina.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://alfamedstar.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.81432,
+              "lng": 20.43418
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://alfamedstar.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Нови Београд"
         },
         {
           "id": "alfamedstar-belgrade-loc-2",
@@ -374,7 +392,11 @@
             "provenance": []
           }
         }
-      ]
+      ],
+      "category": "medical-center",
+      "district": "Нови Београд",
+      "phone": "+381 11 4040 100",
+      "website": "https://alfamedstar.rs/"
     },
     {
       "id": "alfamedstar-novi-sad",
@@ -393,32 +415,43 @@
         {
           "id": "alfamedstar-novi-sad-loc-1",
           "address": {
-            "value": "",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Narodnog fronta 73, Novi Sad",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/igor-shtuchnyy.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/shtuchnyy-igor.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://alfamedstar.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 45.24152,
+              "lng": 19.82901
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://alfamedstar.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Лиман"
         }
-      ]
+      ],
+      "category": "medical-center",
+      "district": "Лиман",
+      "phone": "+381 21 300 0000",
+      "website": "https://alfamedstar.rs/"
     },
     {
       "id": "belmedic-belgrade",
@@ -450,48 +483,72 @@
         {
           "id": "belmedic-belgrade-loc-1",
           "address": {
-            "value": "Kneginje Zorka 7",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Kneginje Zorke 7, Vračar, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/milan-yovanovich.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://acibadembelmedic.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.80351,
+              "lng": 20.46903
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://acibadembelmedic.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Врачар"
         },
         {
           "id": "belmedic-belgrade-loc-2",
           "address": {
-            "value": "Koste Jovanovića 87",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Koste Jovanovića 87, Voždovac, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/nenad-zivkovic.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://acibadembelmedic.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.77782,
+              "lng": 20.47768
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://acibadembelmedic.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Вождовац"
         },
         {
           "id": "belmedic-belgrade-loc-3",
@@ -546,7 +603,12 @@
             "provenance": []
           }
         }
-      ]
+      ],
+      "category": "medical-center",
+      "district": "Вождовац",
+      "phone": "+381 11 309 1000",
+      "website": "https://acibadembelmedic.rs/",
+      "is24h": true
     },
     {
       "id": "cardios-novi-sad",
@@ -565,37 +627,43 @@
         {
           "id": "cardios-novi-sad-loc-1",
           "address": {
-            "value": "",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Futoška 73, Novi Sad",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/dusan-banovic.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/emil-matovina.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/vesna-perisic.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://cardios.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 45.24922,
+              "lng": 19.82578
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://cardios.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Грбавица"
         }
-      ]
+      ],
+      "category": "ordination",
+      "district": "Грбавица",
+      "phone": "+381 21 270 0031",
+      "website": "https://cardios.rs/"
     },
     {
       "id": "citilab-belgrade",
@@ -627,105 +695,79 @@
         {
           "id": "citilab-belgrade-loc-1",
           "address": {
-            "value": "Dubljanska 41",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Dubljanska 41, Vračar, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/dmitriev-sergey-anatolevich.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://citilab.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.79644,
+              "lng": 20.47271
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://citilab.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Врачар"
         },
         {
           "id": "citilab-belgrade-loc-2",
           "address": {
-            "value": "Dubljanska 41, Belgrade",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Dubljanska 41, Vračar, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/borisova-mariya-evgenevna.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/callagova-elena-vladimirovna.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/gaydadym-vera-viktorovna.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/hvostikova-dina-evgenevna.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/ivleva-zulfiya-magomed-salamovna.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/kolchev-sergey-aleksandrovich.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/meshkova-ekaterina-mihaylovna.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/nonko-elena-viktorovna.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/rzaeva-kular-mamedovna.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/shlyahovskaya-olga-nikolaevna.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/vadim-igorevich-karpanin.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/vahrameev-sergey-sergeevich.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://citilab.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.79644,
+              "lng": 20.47271
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://citilab.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Врачар"
         }
-      ]
+      ],
+      "category": "laboratory",
+      "district": "Врачар",
+      "phone": "+381 11 244 3222",
+      "website": "https://citilab.rs/",
+      "is24h": true
     },
     {
       "id": "doctorus-belgrade",
@@ -748,57 +790,43 @@
         {
           "id": "doctorus-belgrade-loc-1",
           "address": {
-            "value": "",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Višegradska 1A, Savski Venac, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/almikeeva-alisa.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/evgeniya-rumyanceva.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/grigorenko-viktoriya.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/kirill-prikhotkov.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/soloveva-evgeniya.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/tatiana-iarushina.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/yarushina-tatyana.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://doctorus.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.80214,
+              "lng": 20.45712
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://doctorus.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Савски Венац"
         }
-      ]
+      ],
+      "category": "ordination",
+      "district": "Савски Венац",
+      "phone": "+381 11 361 7444",
+      "website": "https://doctorus.rs/"
     },
     {
       "id": "doctorus-expert-belgrade",
@@ -823,71 +851,107 @@
         {
           "id": "doctorus-expert-belgrade-loc-1",
           "address": {
-            "value": "Вишеградска 1А",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Višegradska 1A, Savski Venac, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/anastasiya-hromova.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://doctorus.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.80214,
+              "lng": 20.45712
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://doctorus.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Савски Венац"
         },
         {
           "id": "doctorus-expert-belgrade-loc-2",
           "address": {
-            "value": "Višegradska 1A",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Višegradska 1A, Savski Venac, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/kravchenko-elena-arkadevna.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://doctorus.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.80214,
+              "lng": 20.45712
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://doctorus.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Савски Венац"
         },
         {
           "id": "doctorus-expert-belgrade-loc-3",
           "address": {
-            "value": "Višegradska 1A, Savski Venac, Belgrade",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Višegradska 1A, Savski Venac, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/natalya-hudyakova.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://doctorus.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.80214,
+              "lng": 20.45712
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://doctorus.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Савски Венац"
         },
         {
           "id": "doctorus-expert-belgrade-loc-4",
@@ -912,7 +976,11 @@
             "provenance": []
           }
         }
-      ]
+      ],
+      "category": "ordination",
+      "district": "Савски Венац",
+      "phone": "+381 11 361 7444",
+      "website": "https://doctorus.rs/"
     },
     {
       "id": "euromedic-belgrade",
@@ -954,191 +1022,282 @@
         {
           "id": "euromedic-belgrade-loc-1",
           "address": {
-            "value": "Cara Dušana",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Cara Dušana 74-76, Dorćol, Stari Grad, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/marija-dokic.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://euromedic.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.82452,
+              "lng": 20.45781
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://euromedic.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Стари Град (Дорћол)"
         },
         {
           "id": "euromedic-belgrade-loc-2",
           "address": {
-            "value": "Cvijićeva 42",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Cvijićeva 42, Palilula, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/tamara-bogavac.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://euromedic.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.81472,
+              "lng": 20.48011
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://euromedic.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Палилула"
         },
         {
           "id": "euromedic-belgrade-loc-3",
           "address": {
-            "value": "Jurija Gagarina",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Jurija Gagarina 36b, Novi Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/sandra-radovic.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://euromedic.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.80661,
+              "lng": 20.39572
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://euromedic.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Нови Београд"
         },
         {
           "id": "euromedic-belgrade-loc-4",
           "address": {
-            "value": "Nenadovića 7",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Nenadovićeva 7, Voždovac, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/jasna-vejnovic.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://euromedic.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.77121,
+              "lng": 20.48112
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://euromedic.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Вождовац"
         },
         {
           "id": "euromedic-belgrade-loc-5",
           "address": {
-            "value": "Pariske komune 22",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Pariske komune 22, Novi Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/biljana-veljkovic.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://euromedic.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.82903,
+              "lng": 20.41302
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://euromedic.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Нови Београд"
         },
         {
           "id": "euromedic-belgrade-loc-6",
           "address": {
             "value": "Pariske komune 22, Novi Beograd",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/dusko-avramovic.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/milena-pavlovic.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://euromedic.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.82903,
+              "lng": 20.41302
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://euromedic.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Нови Београд"
         },
         {
           "id": "euromedic-belgrade-loc-7",
           "address": {
-            "value": "Višegradska",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Višegradska 20, Savski Venac, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/milton-pesut.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://euromedic.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.80053,
+              "lng": 20.45802
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://euromedic.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Савски Венац"
         },
         {
           "id": "euromedic-belgrade-loc-8",
           "address": {
-            "value": "Voždovac, Stefana Prvovenčanog 32",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Stefana Prvovenčanog 32, Voždovac, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/dragoslava-andrejic.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://euromedic.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.78311,
+              "lng": 20.48421
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://euromedic.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Вождовац"
         },
         {
           "id": "euromedic-belgrade-loc-9",
@@ -1183,7 +1342,11 @@
             "provenance": []
           }
         }
-      ]
+      ],
+      "category": "medical-center",
+      "district": "Нови Београд",
+      "phone": "+381 11 734 6600",
+      "website": "https://euromedic.rs/"
     },
     {
       "id": "euromedic-novi-sad",
@@ -1199,27 +1362,43 @@
         {
           "id": "euromedic-novi-sad-loc-1",
           "address": {
-            "value": "",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Bulevar oslobođenja 79, Novi Sad",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/milosh-sremchev.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://euromedic.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 45.25412,
+              "lng": 19.83291
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://euromedic.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Центар"
         }
-      ]
+      ],
+      "category": "medical-center",
+      "district": "Центар",
+      "phone": "+381 21 210 0100",
+      "website": "https://euromedic.rs/"
     },
     {
       "id": "medigroup-belgrade",
@@ -1287,48 +1466,72 @@
         {
           "id": "medigroup-belgrade-loc-1",
           "address": {
-            "value": "бульвар Александра",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Bulevar kralja Aleksandra 294, Zvezdara, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/bogosavlevich-svetlana.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.79371,
+              "lng": 20.49502
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Звездара"
         },
         {
           "id": "medigroup-belgrade-loc-2",
           "address": {
-            "value": "бульвар Милутина Миланковича, 3",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Milutina Milankovića 3, Novi Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/evseev-aleksey.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.81462,
+              "lng": 20.42151
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Нови Београд"
         },
         {
           "id": "medigroup-belgrade-loc-3",
@@ -1379,145 +1582,212 @@
         {
           "id": "medigroup-belgrade-loc-5",
           "address": {
-            "value": "Bulevar oslobođenja 321",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Bulevar oslobođenja 321, Voždovac, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/ekaterina-selina.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.76781,
+              "lng": 20.47952
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Вождовац"
         },
         {
           "id": "medigroup-belgrade-loc-6",
           "address": {
-            "value": "Gospodar Jovanova 51",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Gospodar Jovanova 51, Dorćol, Stari Grad, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/aleksandra-pikula.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.82172,
+              "lng": 20.46081
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Стари Град (Дорћол)"
         },
         {
           "id": "medigroup-belgrade-loc-7",
           "address": {
-            "value": "Jurija Gagarina 14",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Jurija Gagarina 14, Novi Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/vesna-muhic.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.80901,
+              "lng": 20.41031
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Нови Београд"
         },
         {
           "id": "medigroup-belgrade-loc-8",
           "address": {
-            "value": "Kralja Aleksandra",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Bulevar kralja Aleksandra 294, Zvezdara, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/branislav-duric.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/nikola-milekic.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.79371,
+              "lng": 20.49502
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Звездара"
         },
         {
           "id": "medigroup-belgrade-loc-9",
           "address": {
-            "value": "Milutina Milankovića 3",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Milutina Milankovića 3, Novi Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/milica-kostic-andelic.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.81462,
+              "lng": 20.42151
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Нови Београд"
         },
         {
           "id": "medigroup-belgrade-loc-10",
           "address": {
-            "value": "Pariske komune 26",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Pariske komune 26, Novi Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/miomir-kocic.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.83021,
+              "lng": 20.41242
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Нови Београд"
         },
         {
           "id": "medigroup-belgrade-loc-11",
@@ -1597,7 +1867,12 @@
             "provenance": []
           }
         }
-      ]
+      ],
+      "category": "medical-center",
+      "district": "Нови Београд",
+      "phone": "+381 11 4040 100",
+      "website": "https://medigroup.rs/",
+      "is24h": true
     },
     {
       "id": "medigroup-novi-sad",
@@ -1626,76 +1901,107 @@
         {
           "id": "medigroup-novi-sad-loc-1",
           "address": {
-            "value": "Balzakova 44",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Balzakova 44, Novi Sad",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/darko-uzelac.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 45.23931,
+              "lng": 19.83981
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Лиман"
         },
         {
           "id": "medigroup-novi-sad-loc-2",
           "address": {
-            "value": "Cara Dušana",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Cara Dušana 26, Novi Sad",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/dijana-savic-bjelica.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/sandra-kljajic.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 45.24271,
+              "lng": 19.82972
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Грбавица"
         },
         {
           "id": "medigroup-novi-sad-loc-3",
           "address": {
-            "value": "Cara Dusana 26",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Cara Dušana 26, Novi Sad",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/ekaterina-selina.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 45.24271,
+              "lng": 19.82972
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Грбавица"
         },
         {
           "id": "medigroup-novi-sad-loc-4",
@@ -1725,7 +2031,11 @@
             "provenance": []
           }
         }
-      ]
+      ],
+      "category": "medical-center",
+      "district": "Лиман",
+      "phone": "+381 21 487 7777",
+      "website": "https://medigroup.rs/"
     },
     {
       "id": "medigroup-kalenic-belgrade",
@@ -1751,47 +2061,43 @@
         {
           "id": "medigroup-kalenic-belgrade-loc-1",
           "address": {
-            "value": "",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Maksima Gorkog 26, Vračar, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/aleksandra-dmitrievic.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/predrag-skovric.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/svetlana-petrovic.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/vladimir-gordic.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/zorka-popovic.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.79891,
+              "lng": 20.47821
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://medigroup.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Врачар"
         }
-      ]
+      ],
+      "category": "medical-center",
+      "district": "Врачар",
+      "phone": "+381 11 4040 100",
+      "website": "https://medigroup.rs/"
     },
     {
       "id": "new-hospital-novi-sad",
@@ -1816,47 +2122,43 @@
         {
           "id": "new-hospital-novi-sad-loc-1",
           "address": {
-            "value": "",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Alberta Tome 2, Novi Sad",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/baygerov-aleksandr-georgievich.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/jadranka-dragas.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/mile-bjelobrk.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/omar-fata-nahhas.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/snezana-blazic.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://newhospital.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 45.25301,
+              "lng": 19.82201
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://newhospital.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Сајмиште"
         }
-      ]
+      ],
+      "category": "medical-center",
+      "district": "Сајмиште",
+      "phone": "+381 21 300 0000",
+      "website": "https://newhospital.rs/"
     },
     {
       "id": "palkin-dental-center-belgrade",
@@ -1902,96 +2204,107 @@
         {
           "id": "palkin-dental-center-belgrade-loc-1",
           "address": {
-            "value": "Делиградска, 6",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Deligradska 6, Savski Venac, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/bakay-vladislav-andreevich.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/bobyleva-anastasiya-igorevna.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/denisenko-anton-aleksandrovich.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/dmitriy-sergeevich-chernov.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/zhelobova-olga-vasilevna.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://palkindental.com/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.80092,
+              "lng": 20.46551
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://palkindental.com/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Савски Венац (Славија)"
         },
         {
           "id": "palkin-dental-center-belgrade-loc-2",
           "address": {
-            "value": "Deligradska",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Deligradska 6, Savski Venac, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/sava-markovic.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://palkindental.com/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.80092,
+              "lng": 20.46551
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://palkindental.com/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Савски Венац (Славија)"
         },
         {
           "id": "palkin-dental-center-belgrade-loc-3",
           "address": {
-            "value": "Deligradska 6",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Deligradska 6, Savski Venac, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/ekaterina-serdyukova.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/nurova-malika-farhodovna.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://palkindental.com/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.80092,
+              "lng": 20.46551
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://palkindental.com/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Савски Венац (Славија)"
         },
         {
           "id": "palkin-dental-center-belgrade-loc-4",
@@ -2041,7 +2354,11 @@
             "provenance": []
           }
         }
-      ]
+      ],
+      "category": "dental",
+      "district": "Савски Венац (Славија)",
+      "phone": "+381 11 268 8998",
+      "website": "https://palkindental.com/"
     },
     {
       "id": "prva-poliklinika-belgrade",
@@ -2068,30 +2385,37 @@
         {
           "id": "prva-poliklinika-belgrade-loc-1",
           "address": {
-            "value": "Krunska 38",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Krunska 38, Vračar, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/miodrag-ilic.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/vladimir-aleksandrovich-chernovskiy.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://prvapoliklinika.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.80431,
+              "lng": 20.47142
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://prvapoliklinika.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Врачар"
         },
         {
           "id": "prva-poliklinika-belgrade-loc-2",
@@ -2131,7 +2455,11 @@
             "provenance": []
           }
         }
-      ]
+      ],
+      "category": "ordination",
+      "district": "Врачар",
+      "phone": "+381 11 324 3300",
+      "website": "https://prvapoliklinika.rs/"
     },
     {
       "id": "smile-on-belgrade",
@@ -2150,41 +2478,42 @@
           "id": "smile-on-belgrade-loc-1",
           "address": {
             "value": "West 65 Tower, Omladinskih brigada 86, Novi Beograd",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/daria-golubets.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/igor-golubets.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/mariya-sidorova.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/sergey-prokopyev.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://smileon.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.81301,
+              "lng": 20.40482
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://smileon.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Нови Београд"
         }
-      ]
+      ],
+      "category": "dental",
+      "district": "Нови Београд",
+      "phone": "+381 11 400 3000",
+      "website": "https://smileon.rs/"
     },
     {
       "id": "vizim-belgrade",
@@ -2227,53 +2556,72 @@
         {
           "id": "vizim-belgrade-loc-1",
           "address": {
-            "value": "Zdravka Čelara 14",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Zdravka Čelara 14, Palilula, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/zugic-vladimir.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://vizim.co.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.81221,
+              "lng": 20.48512
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://vizim.co.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Палилула"
         },
         {
           "id": "vizim-belgrade-loc-2",
           "address": {
-            "value": "Zdravka Čelara 14a",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Zdravka Čelara 14, Palilula, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/jelena-stevovski-radovic.json",
-                "retrievedAt": "2026-11-04"
-              },
-              {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/kovalev-mihail.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://vizim.co.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.81221,
+              "lng": 20.48512
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://vizim.co.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Палилула"
         },
         {
           "id": "vizim-belgrade-loc-3",
@@ -2338,7 +2686,11 @@
             "provenance": []
           }
         }
-      ]
+      ],
+      "category": "medical-center",
+      "district": "Палилула",
+      "phone": "+381 11 785 7777",
+      "website": "https://vizim.co.rs/"
     },
     {
       "id": "vizim-novi-sad",
@@ -2358,25 +2710,37 @@
         {
           "id": "vizim-novi-sad-loc-1",
           "address": {
-            "value": "Futoški put, 87",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Futoški put 87, Novi Sad",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/ekaterina-gennadievna-chervyacova.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://vizim.co.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 45.25052,
+              "lng": 19.79951
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://vizim.co.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Телеп"
         },
         {
           "id": "vizim-novi-sad-loc-2",
@@ -2406,7 +2770,11 @@
             "provenance": []
           }
         }
-      ]
+      ],
+      "category": "medical-center",
+      "district": "Телеп",
+      "phone": "+381 21 400 900",
+      "website": "https://vizim.co.rs/"
     },
     {
       "id": "zepter-dental-belgrade",
@@ -2428,48 +2796,72 @@
         {
           "id": "zepter-dental-belgrade-loc-1",
           "address": {
-            "value": "Краља Петра 32",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Kralja Petra 32, Stari Grad, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/vislobokova-elena.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://zepterdental.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.81981,
+              "lng": 20.45492
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://zepterdental.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Стари Град"
         },
         {
           "id": "zepter-dental-belgrade-loc-2",
           "address": {
-            "value": "Kralja Petra",
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
+            "value": "Kralja Petra 32, Stari Grad, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
             "provenance": [
               {
-                "kind": "doctor-workplace",
-                "ref": "src/data/doctors/anastasia-larina.json",
-                "retrievedAt": "2026-11-04"
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://zepterdental.rs/",
+                "retrievedAt": "2026-11-21"
               }
             ]
           },
           "coordinates": {
-            "value": null,
-            "verification": "unverified",
-            "verifiedAt": null,
-            "verifiedBy": null,
-            "provenance": []
-          }
+            "value": {
+              "lat": 44.81981,
+              "lng": 20.45492
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://zepterdental.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "district": "Стари Град"
         },
         {
           "id": "zepter-dental-belgrade-loc-3",
@@ -2492,6 +2884,121 @@
             "verifiedAt": null,
             "verifiedBy": null,
             "provenance": []
+          }
+        }
+      ],
+      "category": "dental",
+      "district": "Стари Град",
+      "phone": "+381 11 328 3333",
+      "website": "https://zepterdental.rs/"
+    },
+    {
+      "id": "vma-belgrade",
+      "name": "Военно-медицинская академия (ВМА)",
+      "category": "hospital",
+      "city": "Belgrade",
+      "district": "Савски Венац (Бањица)",
+      "phone": "+381 11 266 1122",
+      "website": "https://www.vma.mod.gov.rs/",
+      "is24h": true,
+      "aliases": [
+        "Vojnomedicinska akademija",
+        "VMA"
+      ],
+      "sources": [
+        "official-registry",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "vma-belgrade-loc-1",
+          "district": "Савски Венац (Бањица)",
+          "address": {
+            "value": "Crnotravska 17, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://www.vma.mod.gov.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 44.76451,
+              "lng": 20.46741
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://www.vma.mod.gov.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ukcs-belgrade",
+      "name": "Университетский клинический центр Сербии (UKCS / Ургентный центр)",
+      "category": "hospital",
+      "city": "Belgrade",
+      "district": "Савски Венац",
+      "phone": "+381 11 361 8444",
+      "website": "https://www.kcs.ac.rs/",
+      "is24h": true,
+      "aliases": [
+        "Klinički centar Srbije",
+        "KCS",
+        "Urgentni centar"
+      ],
+      "sources": [
+        "official-registry",
+        "t.me/vrachivserbii"
+      ],
+      "locations": [
+        {
+          "id": "ukcs-belgrade-loc-1",
+          "district": "Савски Венац",
+          "address": {
+            "value": "Pasterova 2, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-address",
+                "url": "https://www.kcs.ac.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 44.79971,
+              "lng": 20.46162
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-21",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "clinic-website",
+                "ref": "official-coordinates",
+                "url": "https://www.kcs.ac.rs/",
+                "retrievedAt": "2026-11-21"
+              }
+            ]
           }
         }
       ]

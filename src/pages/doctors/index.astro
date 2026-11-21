@@ -60,6 +60,8 @@ interface CatalogRecord {
   rv: number;
   cn: number;
   ra: number;
+  og?: string;
+  nr?: string;
   e?: number;
   ne?: string;
   d?: string;
@@ -81,6 +83,8 @@ const records: CatalogRecord[] = ranked.map(({ doctor, rating }) => {
     cn: rating.count,
     ra: rating.average,
   };
+  if (doctor.origin) rec.og = doctor.origin;
+  if (doctor.nameRu) rec.nr = doctor.nameRu;
   if (doctor.experienceYears) rec.e = doctor.experienceYears;
   if (doctor.nameEn) rec.ne = doctor.nameEn;
   if (doctor.district) rec.d = doctor.district;
@@ -165,7 +169,7 @@ const jsonLd = {
         <button type="submit" class="btn-primary w-full">OK</button>
       </div>
 
-      <div class="md:col-span-12 flex flex-wrap gap-3 pt-1">
+      <div class="md:col-span-12 flex flex-wrap items-center gap-3 pt-1">
         <label class="inline-flex items-center gap-2 text-sm text-slate-600">
           <input type="checkbox" name="online" value="1" class="rounded border-slate-300 text-brand-600 focus:ring-brand-500" />
           Онлайн-приём
@@ -174,6 +178,14 @@ const jsonLd = {
           <input type="checkbox" name="withReviews" value="1" class="rounded border-slate-300 text-brand-600 focus:ring-brand-500" />
           Есть отзывы
         </label>
+        <div class="inline-flex items-center gap-1.5 text-sm text-slate-600 ml-0 sm:ml-2">
+          <label class="text-xs font-semibold text-slate-500" for="origin">Категория:</label>
+          <select id="origin" name="origin" class="input !py-1 !px-2 !text-xs !w-auto">
+            <option value="">Все специалисты</option>
+            <option value="rs">🇷🇸 Сербские врачи</option>
+            <option value="ru">Русскоязычные врачи</option>
+          </select>
+        </div>
         <button type="button" id="reset-filters" class="text-sm text-slate-500 hover:text-slate-800 underline-offset-2 hover:underline ml-auto">
           Сбросить
         </button>
@@ -247,6 +259,8 @@ const jsonLd = {
       rv: number;
       cn: number;
       ra: number;
+      og?: string;
+      nr?: string;
       e?: number;
       ne?: string;
       d?: string;
@@ -306,6 +320,7 @@ const jsonLd = {
       for (const r of records) {
         r.hay = [
           r.n,
+          r.nr || "",
           r.ne || "",
           r.st || "",
           r.c,
@@ -411,8 +426,15 @@ const jsonLd = {
           (r.f.includes("offline")
             ? `<span class="px-2 py-0.5 rounded-md bg-slate-100">Очно</span>`
             : "");
+        const serbianBadge =
+          r.og === "rs"
+            ? `<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-semibold bg-rose-50 text-rose-700 ring-1 ring-rose-600/10 shrink-0"><span aria-hidden="true">🇷🇸</span><span>Сербский врач</span></span>`
+            : "";
+        const nameRuHtml = r.nr
+          ? `<div class="text-xs text-slate-500 font-medium">${esc(r.nr)}</div>`
+          : "";
         const href = `/doctors/${esc(r.s)}/`;
-        return `<div class="doctor-item" data-slug="${esc(r.s)}"><article class="card p-5 flex flex-col gap-3.5"><div class="flex gap-4 items-start"><div class="shrink-0">${media}</div><div class="min-w-0 flex-1"><div class="flex flex-col gap-0.5"><div class="flex items-center gap-2 flex-wrap"><a href="${href}" class="font-bold text-lg text-navy-900 hover:text-brand-700 leading-snug line-clamp-2">${esc(r.n)}</a></div><div class="text-xs text-slate-500">${esc(placeLine)}</div></div><div class="mt-2 flex flex-wrap gap-1.5">${chips}</div></div></div><div class="flex items-center justify-between text-xs text-slate-500">${starsHtml(r)}</div>${bio}<div class="mt-auto flex items-center justify-between gap-3 pt-2.5 border-t border-slate-100"><div class="flex flex-wrap gap-1.5 text-xs text-slate-500 min-w-0">${langs}${formats}</div><a href="${href}" class="btn-secondary !py-1.5 !px-3 text-xs whitespace-nowrap shrink-0" aria-label="Профиль: ${esc(r.n)}">Профиль →</a></div></article></div>`;
+        return `<div class="doctor-item" data-slug="${esc(r.s)}"><article class="card p-5 flex flex-col gap-3.5"><div class="flex gap-4 items-start"><div class="shrink-0">${media}</div><div class="min-w-0 flex-1"><div class="flex flex-col gap-0.5"><div class="flex items-center gap-2 flex-wrap"><a href="${href}" class="font-bold text-lg text-navy-900 hover:text-brand-700 leading-snug line-clamp-2">${esc(r.n)}</a>${serbianBadge}</div>${nameRuHtml}<div class="text-xs text-slate-500">${esc(placeLine)}</div></div><div class="mt-2 flex flex-wrap gap-1.5">${chips}</div></div></div><div class="flex items-center justify-between text-xs text-slate-500">${starsHtml(r)}</div>${bio}<div class="mt-auto flex items-center justify-between gap-3 pt-2.5 border-t border-slate-100"><div class="flex flex-wrap gap-1.5 text-xs text-slate-500 min-w-0">${langs}${formats}</div><a href="${href}" class="btn-secondary !py-1.5 !px-3 text-xs whitespace-nowrap shrink-0" aria-label="Профиль: ${esc(r.n)}">Профиль →</a></div></article></div>`;
       }
 
       function hasActiveFilter(fd: FormData): boolean {
@@ -420,6 +442,7 @@ const jsonLd = {
           String(fd.get("q") || "").trim() ||
             String(fd.get("spec") || "") ||
             String(fd.get("city") || "") ||
+            String(fd.get("origin") || "") ||
             fd.get("online") === "1" ||
             fd.get("withReviews") === "1"
         );
@@ -438,6 +461,7 @@ const jsonLd = {
         const q = String(fd.get("q") || "").trim().toLowerCase();
         const spec = String(fd.get("spec") || "");
         const city = String(fd.get("city") || "");
+        const origin = String(fd.get("origin") || "");
         const sort = String(fd.get("sort") || "rating");
         const onlineChecked = form.querySelector<HTMLInputElement>('[name="online"]')?.checked;
         const reviewsChecked = form.querySelector<HTMLInputElement>('[name="withReviews"]')?.checked;
@@ -450,6 +474,8 @@ const jsonLd = {
           if (q && !(r.hay || "").includes(q)) return false;
           if (spec && !r.sp.includes(spec)) return false;
           if (city && r.c !== city) return false;
+          if (origin === "rs" && r.og !== "rs") return false;
+          if (origin === "ru" && r.og === "rs") return false;
           if (online && !r.f.includes("online")) return false;
           if (withReviews && r.rv < 1) return false;
           return true;
@@ -482,6 +508,7 @@ const jsonLd = {
           String(fd.get("q") || "").trim(),
           spec,
           city,
+          origin,
           online ? "1" : "",
           withReviews ? "1" : "",
         ].join("|");

@@ -115,6 +115,14 @@ export function publicDoctors(): Doctor[] {
   return loadDoctors().filter((d) => !d.hidden);
 }
 
+export function serbianDoctors(): Doctor[] {
+  return publicDoctors().filter((d) => d.origin === "rs");
+}
+
+export function russianDoctors(): Doctor[] {
+  return publicDoctors().filter((d) => d.origin !== "rs");
+}
+
 export function getDoctor(slug: string): Doctor | undefined {
   return loadDoctors().find((d) => d.slug === slug);
 }
@@ -147,8 +155,11 @@ export function siteStats() {
   const specs = allSpecializationKeys();
   const cities = allCities();
   const reviews = docs.reduce((n, d) => n + (d.reviews?.length || 0), 0);
+  const serbianCount = docs.filter((d) => d.origin === "rs").length;
   return {
     doctors: docs.length,
+    serbianDoctors: serbianCount,
+    russianDoctors: docs.length - serbianCount,
     specializations: specs.length,
     cities: cities.length,
     reviews,
