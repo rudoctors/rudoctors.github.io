@@ -32,7 +32,13 @@
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/73495"
   ],
-  "updatedAt": "2026-09-24",
+  "updatedAt": "2026-11-21",
   "origin": "rs",
-  "nameRu": "Периса Симонович"
+  "nameRu": "Периса Симонович",
+  "license": {
+    "number": "103918",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
 }

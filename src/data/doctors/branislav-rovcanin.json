@@ -36,7 +36,13 @@
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/191260"
   ],
-  "updatedAt": "2026-09-24",
+  "updatedAt": "2026-11-21",
   "origin": "rs",
-  "nameRu": "Бранислав Ровчанин"
+  "nameRu": "Бранислав Ровчанин",
+  "license": {
+    "number": "112809",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
 }

@@ -1,0 +1,87 @@
+[
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/interna-medicina/pulmolog/slobodan-petrovic-nis-112.htm",
+    "name": "Slobodan Petrović",
+    "specialtyRaw": "Pulmolog",
+    "clinic": "Poliklinika HUMAN",
+    "city": "Niš",
+    "recommendationsCount": 170,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Poliklinika HUMAN",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T15:49:16.265Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/ostale-grane/fizioterapeut/goran-blagojevic-smederevo-60.htm",
+    "name": "Goran Blagojević",
+    "specialtyRaw": "Fizioterapeut",
+    "clinic": "Ambulanta za rehabilitaciju",
+    "city": "Smederevo",
+    "recommendationsCount": 324,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Ambulanta za rehabilitaciju",
+        "city": "Smederevo"
+      }
+    ],
+    "scrapedAt": "2026-11-21T15:49:16.303Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/hirurgija/neurohirurg/ivan-stefanovic-nis-182.htm",
+    "name": "Ivan Stefanović",
+    "specialtyRaw": "Neurohirurg",
+    "clinic": "Poliklinika Magna Plus",
+    "city": "Niš",
+    "recommendationsCount": 381,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Poliklinika Magna Plus",
+        "city": "Niš"
+      }
+    ],
+    "scrapedAt": "2026-11-21T15:49:16.402Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/hirurgija/opsti-hirurg/stevan-jokic-savski-venac-152.htm",
+    "name": "Stevan Jokić",
+    "specialtyRaw": "Opšti hirurg",
+    "clinic": "Clinicanova",
+    "city": "Venac",
+    "recommendationsCount": 202,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Clinicanova",
+        "city": "Venac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T15:49:16.497Z"
+  },
+  {
+    "source": "nadjidoktora",
+    "url": "http://www.nadjidoktora.rs/pedijatrija/deciji-kardiolog/vladislav-vukomanovic-savski-venac-148.htm",
+    "name": "Vladislav Vukomanović",
+    "specialtyRaw": "Dečiji kardiolog",
+    "clinic": "Clinicanova",
+    "city": "Venac",
+    "recommendationsCount": 89,
+    "services": [],
+    "workplaces": [
+      {
+        "clinic": "Clinicanova",
+        "city": "Venac"
+      }
+    ],
+    "scrapedAt": "2026-11-21T15:49:16.593Z"
+  }
+]

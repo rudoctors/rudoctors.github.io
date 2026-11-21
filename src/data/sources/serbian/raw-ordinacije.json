@@ -1,0 +1,299 @@
+[
+  {
+    "source": "ordinacije.rs",
+    "url": "https://ordinacije.rs/ordinacija/french-vanilla-ginekologija-beograd",
+    "name": "Specijalistička ginekološka ordinacija French Vanilla",
+    "description": "Savremena ginekologija, trudnoća i lečenje steriliteta — dr Petar Simić",
+    "leadDoctor": "dr Petar Simić",
+    "category": "ordination",
+    "specialties": [
+      "Ginekologija"
+    ],
+    "city": "Beograd",
+    "address": "Tamnavska 1, Vračar",
+    "phone": "067 750 5025",
+    "coordinates": {
+      "lat": 44.798,
+      "lng": 20.471
+    },
+    "images": [
+      "https://uyuekuotmjqjxoxqnahr.supabase.co/storage/v1/object/public/clinics/4c315093-35c6-42f7-a307-9446fe8a7652/cover-c3e623cb-c550-4f27-9813-bdc0c0ab08f9.jpg",
+      "https://uyuekuotmjqjxoxqnahr.supabase.co/storage/v1/object/public/clinics/4c315093-35c6-42f7-a307-9446fe8a7652/logo-bd820b86-a300-499b-aa01-6633cccfc8c2.jpg"
+    ],
+    "sameAs": [
+      "https://www.tiktok.com/@frenchvanilla.rs",
+      "https://www.facebook.com/petar.simic.92",
+      "https://www.instagram.com/frenchvanilla.rs/"
+    ],
+    "openingHours": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Monday",
+        "opens": "15:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Tuesday",
+        "opens": "15:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Wednesday",
+        "opens": "15:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Thursday",
+        "opens": "15:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Friday",
+        "opens": "15:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "10:00",
+        "closes": "14:00"
+      }
+    ],
+    "scrapedAt": "2026-11-21T15:50:51.833Z"
+  },
+  {
+    "source": "ordinacije.rs",
+    "url": "https://ordinacije.rs/ordinacija/specijalisticka-stomatoloska-ordinacija-dr-crnogorac",
+    "name": "Specijalistička stomatološka ordinacija dr Crnogorac",
+    "description": "Kompletna stomatologija uz specijalističku ortodonciju",
+    "leadDoctor": null,
+    "category": "ordination",
+    "specialties": [
+      "Stomatologija",
+      "Ortodoncija"
+    ],
+    "city": "Beograd",
+    "address": "Golubačka 2a, Beograd 11000, Serbia",
+    "phone": "+381613003764",
+    "coordinates": {
+      "lat": 44.797538,
+      "lng": 20.488345
+    },
+    "images": [
+      "https://uyuekuotmjqjxoxqnahr.supabase.co/storage/v1/object/public/clinics/11190bb0-9ccc-4362-a580-e85a235943a1/cover-205da5cb-fd1a-43b5-817b-6095ce6c4a1e.jpg",
+      "https://uyuekuotmjqjxoxqnahr.supabase.co/storage/v1/object/public/clinics/11190bb0-9ccc-4362-a580-e85a235943a1/logo-7bc60f3f-4764-4f87-b117-025004acc137.jpg"
+    ],
+    "sameAs": [
+      "https://www.instagram.com/dr.crnogorac"
+    ],
+    "openingHours": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Monday",
+        "opens": "11:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Tuesday",
+        "opens": "11:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Wednesday",
+        "opens": "11:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Thursday",
+        "opens": "11:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Friday",
+        "opens": "11:00",
+        "closes": "19:00"
+      }
+    ],
+    "scrapedAt": "2026-11-21T15:50:51.941Z"
+  },
+  {
+    "source": "ordinacije.rs",
+    "url": "https://ordinacije.rs/ordinacija/my-dent",
+    "name": "MY DENT",
+    "description": "Kompletna dijagnostika i terapija na jednom mestu.",
+    "leadDoctor": null,
+    "category": "ordination",
+    "specialties": [
+      "Stomatologija",
+      "Ortodoncija"
+    ],
+    "city": "Beograd",
+    "address": "Bulevar Zorana Đinđića 56, Beograd 11070, Serbia",
+    "phone": "0638410710",
+    "coordinates": {
+      "lat": 44.814907,
+      "lng": 20.427599
+    },
+    "images": [
+      "https://uyuekuotmjqjxoxqnahr.supabase.co/storage/v1/object/public/clinics/e4e3a4a8-8e28-4601-b9c9-c8ae70e3a585/cover-4d95f294-c582-4c49-849b-ffede735f9d5.jpg",
+      "https://uyuekuotmjqjxoxqnahr.supabase.co/storage/v1/object/public/clinics/e4e3a4a8-8e28-4601-b9c9-c8ae70e3a585/logo-5bb2dbb0-2075-4c07-b0af-a9706f5358c9.jpg"
+    ],
+    "sameAs": [],
+    "openingHours": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Monday",
+        "opens": "11:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Tuesday",
+        "opens": "11:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Wednesday",
+        "opens": "11:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Thursday",
+        "opens": "11:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Friday",
+        "opens": "11:00",
+        "closes": "19:00"
+      }
+    ],
+    "scrapedAt": "2026-11-21T15:50:52.116Z"
+  },
+  {
+    "source": "ordinacije.rs",
+    "url": "https://ordinacije.rs/ordinacija/aemilius-dental-studio",
+    "name": "Aemilius Dental Studio",
+    "description": "Precizno. Pažljivo. Profesionalno.",
+    "leadDoctor": null,
+    "category": "ordination",
+    "specialties": [
+      "Stomatologija"
+    ],
+    "city": "Beograd",
+    "address": "Vojvode Stepe 312 1. sprat, stan 8",
+    "phone": "+381642452509",
+    "coordinates": {
+      "lat": 44.765669,
+      "lng": 20.481894
+    },
+    "images": [
+      "https://uyuekuotmjqjxoxqnahr.supabase.co/storage/v1/object/public/clinics/3f235f03-69ae-41d5-8d41-10a8a0a3b703/cover-45574d14-4394-4d63-97db-f77407f51bf4.jpg",
+      "https://uyuekuotmjqjxoxqnahr.supabase.co/storage/v1/object/public/clinics/3f235f03-69ae-41d5-8d41-10a8a0a3b703/logo-db8501f3-9569-4610-85fb-42d5d6966865.jpg"
+    ],
+    "sameAs": [],
+    "openingHours": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Monday",
+        "opens": "11:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Tuesday",
+        "opens": "11:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Wednesday",
+        "opens": "11:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Thursday",
+        "opens": "11:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Friday",
+        "opens": "11:00",
+        "closes": "19:00"
+      }
+    ],
+    "scrapedAt": "2026-11-21T15:50:52.278Z"
+  },
+  {
+    "source": "ordinacije.rs",
+    "url": "https://ordinacije.rs/ordinacija/brilliant-smile-vozdovac",
+    "name": "Stomatološka ordinacija Brilliant Smile",
+    "description": "Stomatološka ordinacija na Voždovcu — pregledi, lečenje, protetika, implanti i ortodoncija na jednom mestu.",
+    "leadDoctor": null,
+    "category": "ordination",
+    "specialties": [
+      "Stomatologija"
+    ],
+    "city": "Beograd",
+    "address": "Strumička 7, 11010 Voždovac",
+    "phone": "+381 60 331 3450",
+    "coordinates": {
+      "lat": 44.789284,
+      "lng": 20.481282
+    },
+    "images": [
+      "https://uyuekuotmjqjxoxqnahr.supabase.co/storage/v1/object/public/clinics/1257cfcf-d1c6-40b7-acfb-e66955c218ce/cover-e6da6687-dd41-4f2e-a836-e9580da52342.jpg",
+      "https://uyuekuotmjqjxoxqnahr.supabase.co/storage/v1/object/public/clinics/1257cfcf-d1c6-40b7-acfb-e66955c218ce/logo-ac458757-69a8-469f-bdf4-717aa40d0d65.jpg"
+    ],
+    "sameAs": [
+      "https://www.facebook.com/p/Brilliant-smile-61573114800201/",
+      "https://www.instagram.com/drslobodanjovanovic/"
+    ],
+    "openingHours": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Monday",
+        "opens": "11:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Tuesday",
+        "opens": "11:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Wednesday",
+        "opens": "11:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Thursday",
+        "opens": "11:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Friday",
+        "opens": "11:00",
+        "closes": "19:00"
+      }
+    ],
+    "scrapedAt": "2026-11-21T15:50:52.379Z"
+  }
+]

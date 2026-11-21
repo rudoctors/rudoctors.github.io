@@ -36,7 +36,13 @@
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/76975"
   ],
-  "updatedAt": "2026-09-24",
+  "updatedAt": "2026-11-21",
   "origin": "rs",
-  "nameRu": "Миодраг Илич"
+  "nameRu": "Миодраг Илич",
+  "license": {
+    "number": "400529",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
 }

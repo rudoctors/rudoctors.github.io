@@ -35,7 +35,13 @@
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/151812"
   ],
-  "updatedAt": "2026-09-24",
+  "updatedAt": "2026-11-21",
   "origin": "rs",
-  "nameRu": "Александар Стаменкович"
+  "nameRu": "Александар Стаменкович",
+  "license": {
+    "number": "110583",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
 }

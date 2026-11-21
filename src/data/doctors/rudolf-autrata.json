@@ -45,5 +45,11 @@
     "https://t.me/vrachivserbii/151887",
     "https://t.me/vrachivserbii/152185"
   ],
-  "updatedAt": "2026-10-31"
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "110273",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
 }

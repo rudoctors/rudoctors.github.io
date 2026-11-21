@@ -35,7 +35,13 @@
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/35412"
   ],
-  "updatedAt": "2026-09-24",
+  "updatedAt": "2026-11-21",
   "origin": "rs",
-  "nameRu": "Славица Обрадович"
+  "nameRu": "Славица Обрадович",
+  "license": {
+    "number": "100845",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
 }

@@ -36,7 +36,13 @@
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/126636"
   ],
-  "updatedAt": "2026-09-24",
+  "updatedAt": "2026-11-21",
   "origin": "rs",
-  "nameRu": "Бильана Велькович"
+  "nameRu": "Бильана Велькович",
+  "license": {
+    "number": "405317",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
 }

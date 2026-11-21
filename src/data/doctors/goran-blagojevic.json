@@ -1,0 +1,34 @@
+{
+  "slug": "goran-blagojevic",
+  "name": "Goran Blagojević",
+  "nameRu": "Горан Благойевич",
+  "origin": "rs",
+  "specializations": [
+    "physiotherapist"
+  ],
+  "city": "Smederevo",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Ambulanta za rehabilitaciju",
+      "city": "Smederevo"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/ostale-grane/fizioterapeut/goran-blagojevic-smederevo-60.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

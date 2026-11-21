@@ -44,7 +44,13 @@
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/71262"
   ],
-  "updatedAt": "2026-10-31",
+  "updatedAt": "2026-11-21",
   "origin": "rs",
-  "nameRu": "Александра Секулич"
+  "nameRu": "Александра Секулич",
+  "license": {
+    "number": "209311",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
 }

@@ -36,7 +36,13 @@
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/153597"
   ],
-  "updatedAt": "2026-09-24",
+  "updatedAt": "2026-11-21",
   "origin": "rs",
-  "nameRu": "Милена Павловиц"
+  "nameRu": "Милена Павловиц",
+  "license": {
+    "number": "402974",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
 }

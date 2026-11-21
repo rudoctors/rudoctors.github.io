@@ -1,0 +1,40 @@
+{
+  "slug": "vladislav-vukomanovic",
+  "name": "Vladislav Vukomanović",
+  "nameRu": "Владислав Вукоманович",
+  "origin": "rs",
+  "specializations": [
+    "cardiologist"
+  ],
+  "city": "Venac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Clinicanova",
+      "city": "Venac"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/pedijatrija/deciji-kardiolog/vladislav-vukomanovic-savski-venac-148.htm"
+  ],
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "106662",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

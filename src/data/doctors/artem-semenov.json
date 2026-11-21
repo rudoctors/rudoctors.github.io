@@ -363,5 +363,11 @@
     "google-sheets",
     "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-11-20"
+  "updatedAt": "2026-11-21",
+  "license": {
+    "number": "118813",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
 }

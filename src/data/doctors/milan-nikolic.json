@@ -35,7 +35,13 @@
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/71328"
   ],
-  "updatedAt": "2026-09-24",
+  "updatedAt": "2026-11-21",
   "origin": "rs",
-  "nameRu": "Милан Николич"
+  "nameRu": "Милан Николич",
+  "license": {
+    "number": "403718",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
 }

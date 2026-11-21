@@ -29,7 +29,13 @@
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/58195"
   ],
-  "updatedAt": "2026-09-24",
+  "updatedAt": "2026-11-21",
   "origin": "rs",
-  "nameRu": "Неманьа Стаменкович"
+  "nameRu": "Неманьа Стаменкович",
+  "license": {
+    "number": "209300",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
 }

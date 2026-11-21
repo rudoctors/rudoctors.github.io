@@ -36,7 +36,13 @@
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/117289"
   ],
-  "updatedAt": "2026-10-31",
+  "updatedAt": "2026-11-21",
   "origin": "rs",
-  "nameRu": "Александра Пикула"
+  "nameRu": "Александра Пикула",
+  "license": {
+    "number": "100318",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
 }

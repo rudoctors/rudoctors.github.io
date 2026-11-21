@@ -36,7 +36,13 @@
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/71258"
   ],
-  "updatedAt": "2026-10-31",
+  "updatedAt": "2026-11-21",
   "origin": "rs",
-  "nameRu": "Весна Мухич"
+  "nameRu": "Весна Мухич",
+  "license": {
+    "number": "109273",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
 }

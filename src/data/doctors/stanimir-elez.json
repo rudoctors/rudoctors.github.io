@@ -1,0 +1,44 @@
+{
+  "slug": "stanimir-elez",
+  "name": "Stanimir Elez",
+  "nameRu": "Станимир Елез",
+  "origin": "rs",
+  "specializations": [
+    "therapist"
+  ],
+  "city": "Novi Beograd",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Miokardio",
+      "city": "Novi Beograd",
+      "address": "Gandijeva 176/1, Novi Beograd"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {
+    "phone": "+38166224959"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "https://biramdoktora.rs/doktori/stanimir-elez"
+  ],
+  "updatedAt": "2026-11-21",
+  "photo": "https://cdn.sanity.io/images/lvy58kla/production/710e7b2063126b1b69d9c9e91c0388e4ddc5ec1e-1080x1350.png?w=520&h=520&fit=crop&auto=format&q=75",
+  "license": {
+    "number": "109586",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
+}

@@ -26,7 +26,13 @@
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/55950"
   ],
-  "updatedAt": "2026-09-24",
+  "updatedAt": "2026-11-21",
   "origin": "rs",
-  "nameRu": "Смильана Мандич"
+  "nameRu": "Смильана Мандич",
+  "license": {
+    "number": "113986",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
 }

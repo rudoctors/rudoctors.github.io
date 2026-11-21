@@ -35,7 +35,13 @@
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/71328"
   ],
-  "updatedAt": "2026-09-24",
+  "updatedAt": "2026-11-21",
   "origin": "rs",
-  "nameRu": "Драгана Маткович"
+  "nameRu": "Драгана Маткович",
+  "license": {
+    "number": "208247",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
 }

@@ -1,0 +1,118 @@
+[
+  {
+    "source": "biramdoktora",
+    "url": "https://biramdoktora.rs/doktori/natasa-turanov",
+    "name": "Nataša Turanov",
+    "fullNameWithTitle": "dr Nataša Turanov",
+    "specialties": [
+      "https://schema.org/Obstetric",
+      "https://schema.org/Gynecologic"
+    ],
+    "city": "Subotica",
+    "address": "Lajoša Joa 4A, Subotica",
+    "phone": "+38124520698",
+    "photo": "https://cdn.sanity.io/images/lvy58kla/production/bd3c45004b8ac5de1c1b38264d2547955132537a-1080x1080.png?w=520&h=520&fit=crop&auto=format&q=75",
+    "workplaces": [
+      {
+        "clinic": "Poliklinika Sente",
+        "address": "Lajoša Joa 4A, Subotica",
+        "city": "Subotica",
+        "phone": "+38124520698"
+      }
+    ],
+    "insurances": [],
+    "scrapedAt": "2026-11-21T15:48:09.348Z"
+  },
+  {
+    "source": "biramdoktora",
+    "url": "https://biramdoktora.rs/doktori/lidija-segedincev",
+    "name": "Lidija Segedinčev",
+    "fullNameWithTitle": "dr Lidija Segedinčev",
+    "specialties": [
+      "https://schema.org/Radiography"
+    ],
+    "city": "Subotica",
+    "address": "Aleja Maršala Tita 33, Subotica",
+    "phone": "+38124557789",
+    "photo": "https://cdn.sanity.io/images/lvy58kla/production/bded545a931ba6c66f42035aa35882e54a66d627-1200x1444.png?w=520&h=520&fit=crop&auto=format&q=75",
+    "workplaces": [
+      {
+        "clinic": "Megaclinic",
+        "address": "Aleja Maršala Tita 33, Subotica",
+        "city": "Subotica",
+        "phone": "+38124557789"
+      }
+    ],
+    "insurances": [],
+    "scrapedAt": "2026-11-21T15:48:09.471Z"
+  },
+  {
+    "source": "biramdoktora",
+    "url": "https://biramdoktora.rs/doktori/milenko-rosic",
+    "name": "dr med. sc. Milenko Rosić",
+    "fullNameWithTitle": "Prof. dr med. sc. Milenko Rosić",
+    "specialties": [
+      "https://schema.org/Surgical"
+    ],
+    "city": "Novi Sad",
+    "address": "Mičurinova 28, Novi Sad",
+    "phone": "+38121510555",
+    "photo": "https://cdn.sanity.io/images/lvy58kla/production/99cca67cc8d5523bc36593a0e3215b8904802a26-1080x1080.png?w=520&h=520&fit=crop&auto=format&q=75",
+    "workplaces": [
+      {
+        "clinic": "Poliklinika Dr Brana Kovačević",
+        "address": "Mičurinova 28, Novi Sad",
+        "city": "Novi Sad",
+        "phone": "+38121510555"
+      }
+    ],
+    "insurances": [],
+    "scrapedAt": "2026-11-21T15:48:09.602Z"
+  },
+  {
+    "source": "biramdoktora",
+    "url": "https://biramdoktora.rs/doktori/marko-sente",
+    "name": "dr Marko Sente",
+    "fullNameWithTitle": "Prim. dr Marko Sente",
+    "specialties": [
+      "https://schema.org/Otolaryngologic"
+    ],
+    "city": "Subotica",
+    "address": "Lajoša Joa 4A, Subotica",
+    "phone": "+38124520698",
+    "photo": "https://cdn.sanity.io/images/lvy58kla/production/22c8c32713add5976cc8b3d773bdff79891d9944-1080x1350.png?w=520&h=520&fit=crop&auto=format&q=75",
+    "workplaces": [
+      {
+        "clinic": "Poliklinika Sente",
+        "address": "Lajoša Joa 4A, Subotica",
+        "city": "Subotica",
+        "phone": "+38124520698"
+      }
+    ],
+    "insurances": [],
+    "scrapedAt": "2026-11-21T15:48:09.715Z"
+  },
+  {
+    "source": "biramdoktora",
+    "url": "https://biramdoktora.rs/doktori/stanimir-elez",
+    "name": "Stanimir Elez",
+    "fullNameWithTitle": "dr Stanimir Elez",
+    "specialties": [
+      "https://schema.org/Cardiovascular"
+    ],
+    "city": "Novi Beograd",
+    "address": "Gandijeva 176/1, Novi Beograd",
+    "phone": "+38166224959",
+    "photo": "https://cdn.sanity.io/images/lvy58kla/production/710e7b2063126b1b69d9c9e91c0388e4ddc5ec1e-1080x1350.png?w=520&h=520&fit=crop&auto=format&q=75",
+    "workplaces": [
+      {
+        "clinic": "Miokardio",
+        "address": "Gandijeva 176/1, Novi Beograd",
+        "city": "Novi Beograd",
+        "phone": "+38166224959"
+      }
+    ],
+    "insurances": [],
+    "scrapedAt": "2026-11-21T15:48:09.847Z"
+  }
+]

@@ -72,6 +72,7 @@ export interface Clinic {
   is24h?: boolean;
   aliases: string[];
   sources: string[];
+  acceptedInsurance?: string[];
   locations: ClinicLocation[];
 }
 
@@ -101,6 +102,8 @@ export interface LicenseInfo {
   country?: string;
   registry?: string;
   url?: string;
+  verified?: boolean;
+  authority?: string;
 }
 
 export type DoctorOrigin = "ru" | "rs" | "intl";
@@ -122,6 +125,7 @@ export interface Doctor {
   bio?: string;
   education: EducationItem[];
   workplaces: Workplace[];
+  acceptedInsurance?: string[];
   contacts: {
     phone?: string;
     email?: string;

@@ -26,7 +26,13 @@
     "t.me/vrachivserbii",
     "https://t.me/vrachivserbii/68566"
   ],
-  "updatedAt": "2026-09-24",
+  "updatedAt": "2026-11-21",
   "origin": "rs",
-  "nameRu": "Снежана Блазич"
+  "nameRu": "Снежана Блазич",
+  "license": {
+    "number": "201056",
+    "authority": "Lekarska komora Srbije",
+    "verified": true
+  },
+  "verificationStatus": "verified"
 }

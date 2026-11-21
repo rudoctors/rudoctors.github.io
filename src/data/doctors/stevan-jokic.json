@@ -1,0 +1,34 @@
+{
+  "slug": "stevan-jokic",
+  "name": "Stevan Jokić",
+  "nameRu": "Стеван Йокич",
+  "origin": "rs",
+  "specializations": [
+    "surgeon"
+  ],
+  "city": "Venac",
+  "languages": [
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline"
+  ],
+  "bio": "",
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "Clinicanova",
+      "city": "Venac"
+    }
+  ],
+  "acceptedInsurance": [],
+  "contacts": {},
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "http://www.nadjidoktora.rs/hirurgija/opsti-hirurg/stevan-jokic-savski-venac-152.htm"
+  ],
+  "updatedAt": "2026-11-21"
+}

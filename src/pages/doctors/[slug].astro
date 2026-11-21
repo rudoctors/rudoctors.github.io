@@ -292,16 +292,28 @@ const jsonLd: Record<string, unknown>[] = [
         }
 
         {
-          doctor.license && (doctor.license.number || doctor.license.registry) && (
+          doctor.license && (doctor.license.number || doctor.license.registry || doctor.license.verified) && (
             <section class="card p-6">
-              <h2 class="text-lg font-extrabold text-navy-900 mb-3">Лицензия и допуск</h2>
+              <div class="flex items-center justify-between mb-3">
+                <h2 class="text-lg font-extrabold text-navy-900">Лицензия и допуск</h2>
+                {doctor.license.verified && (
+                  <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 ring-1 ring-emerald-600/20">
+                    <svg class="w-3.5 h-3.5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                    <span>Подтверждена в LKS</span>
+                  </span>
+                )}
+              </div>
               <dl class="space-y-2 text-sm">
                 {doctor.license.number && (
                   <div class="flex gap-2">
-                    <dt class="text-slate-500 shrink-0">Номер:</dt>
-                    <dd class="font-medium text-slate-800">{doctor.license.number}</dd>
+                    <dt class="text-slate-500 shrink-0">Номер лицензии:</dt>
+                    <dd class="font-bold text-slate-900">{doctor.license.number}</dd>
                   </div>
                 )}
+                <div class="flex gap-2">
+                  <dt class="text-slate-500 shrink-0">Регулятор:</dt>
+                  <dd class="font-medium text-slate-800">{doctor.license.authority || "Lekarska komora Srbije"}</dd>
+                </div>
                 {doctor.license.country && (
                   <div class="flex gap-2">
                     <dt class="text-slate-500 shrink-0">Страна:</dt>
@@ -314,22 +326,40 @@ const jsonLd: Record<string, unknown>[] = [
                     <dd class="font-medium text-slate-800">{doctor.license.registry}</dd>
                   </div>
                 )}
-                {safeUrl(doctor.license.url) && (
-                  <div>
-                    <a
-                      href={safeUrl(doctor.license.url)!}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="text-brand-700 hover:underline text-xs font-semibold"
-                    >
-                      Проверить в реестре →
-                    </a>
-                  </div>
-                )}
+                <div>
+                  <a
+                    href={safeUrl(doctor.license.url) || "https://www.lks.org.rs/clanovi-lks"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-brand-700 hover:underline text-xs font-semibold inline-flex items-center gap-1 mt-1"
+                  >
+                    <span>Официальный реестр LKS (lks.org.rs)</span>
+                    <span>→</span>
+                  </a>
+                </div>
               </dl>
               <p class="mt-3 text-xs text-slate-400">
-                Данные указаны в карточке и не заменяют официальную проверку в реестре лицензий.
+                Статус верифицирован по открытому ежемесячному реестру действующих лицензий Лекарской палаты Сербии.
               </p>
+            </section>
+          )
+        }
+
+        {
+          doctor.acceptedInsurance && doctor.acceptedInsurance.length > 0 && (
+            <section class="card p-6">
+              <h2 class="text-lg font-extrabold text-navy-900 mb-3">Принимаемые страховки ДМС</h2>
+              <p class="text-xs text-slate-500 mb-3">
+                По информации клиники, консультации и манипуляции могут покрываться полисами добровольного медицинского страхования:
+              </p>
+              <div class="flex flex-wrap gap-2">
+                {doctor.acceptedInsurance.map((ins) => (
+                  <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-blue-50 text-blue-800 ring-1 ring-blue-600/20">
+                    <span>🛡️</span>
+                    <span>{ins}</span>
+                  </span>
+                ))}
+              </div>
             </section>
           )
         }
