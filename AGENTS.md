@@ -7,8 +7,9 @@
 1. **Быстрая доставка и публикация в Git:**
    - Все проверенные изменения сразу пушить в ветку `main` (`git push origin main`). GitHub Actions автоматически собирает проект и деплоит на GitHub Pages (`rudoctors.com`).
    - Локально в фоне (`astro dev --background`) проверять только сырые гипотезы и сложные правки компонентов.
-2. **SEO и Гео-оптимизация (Сербия):**
-   - Все города обязательно сопровождаются русской локализацией в `site/src/lib/site.ts` (`CITY_LABELS_RU`) и `site/src/pages/doctors/index.astro` (`CITY_LABELS`). Запрещено выводить города в сыром виде или оставлять без русского названия.
+2. **SEO, GEO (Generative Engine Optimization) и Local SEO (Сербия):**
+   - **GEO (Generative Engine Optimization):** открытость для AI-поисковиков (`GPTBot`, `OAI-SearchBot`, `PerplexityBot`, `ClaudeBot`, `Google-Extended`). Поддержка `llms.txt` и `llms-full.txt` с актуальной структурой разделов (национальные сербские врачи с лицензиями LKS, медицинские гайды, правила цитирования).
+   - **Local SEO (гео-привязка):** все города обязательно сопровождаются русской локализацией в `site/src/lib/site.ts` (`CITY_LABELS_RU`) и `site/src/pages/doctors/index.astro` (`CITY_LABELS`). Запрещено выводить города в сыром виде или оставлять без русского названия.
    - Мета-тег `<title>` форматируется через `Layout.astro` без задвоения бренда `RuDoctors` (запрещено `... | RuDoctors · Rudoctors`).
    - Микроразметка Schema.org: обязательна на всех типовых страницах (`CollectionPage`, `ItemList`, `Physician`, `MedicalWebPage`, `FAQPage`, `BreadcrumbList`).
 3. **Аналитика, верификация и безопасность (CSP):**
