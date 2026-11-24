@@ -38,6 +38,14 @@
   },
   "reviews": [
     {
+      "id": "tg-220197",
+      "author": "Radmila M.",
+      "date": "2026-11-23",
+      "rating": 0,
+      "text": "#психиатр #белград Была у Козырева в Альфамедстар второй раз. Каждый раз проходит отлично, внимательный и бережный. Рекомендую.",
+      "source": "https://t.me/vrachivserbii/220197"
+    },
+    {
       "id": "tg-217419",
       "author": "Diana",
       "date": "2026-11-05",
@@ -210,5 +218,5 @@
     "google-sheets",
     "t.me/vrachivserbii"
   ],
-  "updatedAt": "2026-11-23"
+  "updatedAt": "2026-11-24"
 }
