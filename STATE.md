@@ -63,7 +63,7 @@ Legacy: `https://rudoctors.github.io` (настроен перенос адре�
 | `848c5fa` | **Клиники (AlfaMedStar, MediGroup, Doctorus, Citilab):** 5 новых врачей, 58 новых отзывов AlfaMedStar, скраперы клиник, 440 врачей / 2110 отзывов / 45 специальностей / 5 городов (515 страниц) |
 | `1a546a8` | **Платформа отзывов и Cloudflare Turnstile (18.11.2026):** фикс CSP для Google Apps Script, интеграция Cloudflare Turnstile anti-bot капчи, спам-фильтр ссылок в GAS, переменная `PUBLIC_TURNSTILE_SITEKEY`, деплой run `44393185707` |
 | `3eee5aa` | **feat(data): weekly catalog sync - Telegram + clinics update (20.11.2026):** 5 новых отзывов, 1 новый врач (Елена Мостицкая, Doctorus Expert), слияние дубликатов (Датиенко→Нонко, Ковалёва→Ковалёв), 439 врачей / 2113 отзывов / 45 специальностей / 5 городов (514 страниц) — CI run `44795020272` success |
-| **`pending`** | **feat(data): weekly catalog sync - Telegram + clinics update (24.11.2026):** 15 новых отзывов в 13 профилей врачей, дедупликация dr-marko-sente→marko-sente (301-редирект), 1521 врач / 2128 отзывов / 45 специальностей / 26 городов (1766 страниц) |
+| `e48ea49` | **feat(data): weekly catalog sync - Telegram + clinics update (24.11.2026):** 15 новых отзывов в 13 профилей врачей, дедупликация dr-marko-sente→marko-sente (301-редирект), 1521 врач / 2128 отзывов / 45 специальностей / 26 городов (1766 страниц) — CI run `45437651439` success |
 
 ---
 
