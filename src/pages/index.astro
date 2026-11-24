@@ -21,6 +21,56 @@ const fresh = publicDoctors()
   .sort((a, b) => (b.updatedAt || "").localeCompare(a.updatedAt || ""))
   .slice(0, 6);
 
+const allDocs = publicDoctors();
+const belgradeDocs = allDocs.filter((d) => d.city === "Belgrade");
+const noviSadDocs = allDocs.filter((d) => d.city === "Novi Sad");
+
+const BELGRADE_TOP_SPECS = [
+  "pediatrician",
+  "dentist",
+  "gynecologist",
+  "psychiatrist",
+  "therapist",
+  "cardiologist",
+  "dermatologist",
+  "neurologist",
+  "ultrasound_diagnostics",
+  "surgeon",
+  "gastroenterologist",
+  "otorhinolaryngologist",
+  "endocrinologist",
+  "psychologist",
+  "traumatologist_orthopedist",
+  "urologist",
+];
+
+const NOVI_SAD_TOP_SPECS = [
+  "dentist",
+  "pediatrician",
+  "ultrasound_diagnostics",
+  "gynecologist",
+  "therapist",
+  "psychiatrist",
+  "dermatologist",
+  "cardiologist",
+  "neurologist",
+  "surgeon",
+  "gastroenterologist",
+  "ophthalmologist",
+];
+
+const belgradeClusters = BELGRADE_TOP_SPECS.map((s) => ({
+  key: s,
+  label: specLabel(s),
+  count: belgradeDocs.filter((d) => d.specializations.includes(s)).length,
+})).filter((c) => c.count > 0);
+
+const noviSadClusters = NOVI_SAD_TOP_SPECS.map((s) => ({
+  key: s,
+  label: specLabel(s),
+  count: noviSadDocs.filter((d) => d.specializations.includes(s)).length,
+})).filter((c) => c.count > 0);
+
 const jsonLd = [
   {
     "@context": "https://schema.org",
@@ -159,6 +209,95 @@ const jsonLd = [
           </div>
         )
       }
+    </div>
+  </section>
+
+  <!-- SEO Matrix: Clusters Belgrade & Novi Sad -->
+  <section class="mx-auto max-w-6xl px-4 mt-6" aria-labelledby="clusters-heading">
+    <div class="card p-5 md:p-6 bg-gradient-to-br from-white via-slate-50/50 to-brand-50/30">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6">
+        <div>
+          <h2 id="clusters-heading" class="text-lg md:text-xl font-extrabold text-navy-900 flex items-center gap-2">
+            <span>🗺️</span>
+            <span>Врачи по городам и направлениям</span>
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-1">
+            Прямой переход к проверенным специалистам, прейскурантам и дежурным клиникам в крупнейших городах Сербии
+          </p>
+        </div>
+      </div>
+
+      <div class="grid gap-6 lg:grid-cols-2">
+        <!-- Belgrade Column -->
+        <div class="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-2xs">
+          <div class="flex items-center justify-between mb-3 pb-2 border-b border-slate-100">
+            <div class="flex items-center gap-2">
+              <span class="text-xl">🏛️</span>
+              <div>
+                <h3 class="font-bold text-navy-900 text-base">Врачи в Белграде</h3>
+                <p class="text-[11px] text-slate-500">{belgradeDocs.length} специалистов в столице</p>
+              </div>
+            </div>
+            <a href="/cities/belgrade/" class="text-xs font-semibold text-brand-700 hover:underline">
+              Все в Белграде →
+            </a>
+          </div>
+
+          <div class="flex flex-wrap gap-1.5">
+            {belgradeClusters.map((c) => (
+              <a
+                href={`/cities/belgrade/${c.key}/`}
+                class="chip hover:bg-brand-50 hover:text-brand-700 hover:border-brand-300 transition text-xs py-1"
+                title={`${c.label} в Белграде — ${c.count} ${plural(c.count, "врач", "врача", "врачей")}`}
+              >
+                <span>{c.label}</span>
+                <span class="text-slate-400 text-[10px]">({c.count})</span>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <!-- Novi Sad Column -->
+        <div class="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-2xs">
+          <div class="flex items-center justify-between mb-3 pb-2 border-b border-slate-100">
+            <div class="flex items-center gap-2">
+              <span class="text-xl">🏰</span>
+              <div>
+                <h3 class="font-bold text-navy-900 text-base">Врачи в Нови-Саде</h3>
+                <p class="text-[11px] text-slate-500">{noviSadDocs.length} специалистов в Воеводине</p>
+              </div>
+            </div>
+            <a href="/cities/novi-sad/" class="text-xs font-semibold text-brand-700 hover:underline">
+              Все в Нови-Саде →
+            </a>
+          </div>
+
+          <div class="flex flex-wrap gap-1.5">
+            {noviSadClusters.map((c) => (
+              <a
+                href={`/cities/novi-sad/${c.key}/`}
+                class="chip hover:bg-brand-50 hover:text-brand-700 hover:border-brand-300 transition text-xs py-1"
+                title={`${c.label} в Нови-Саде — ${c.count} ${plural(c.count, "врач", "врача", "врачей")}`}
+              >
+                <span>{c.label}</span>
+                <span class="text-slate-400 text-[10px]">({c.count})</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <!-- Regional Centers -->
+      <div class="mt-5 pt-4 border-t border-slate-200/80 flex flex-wrap gap-2 items-center text-xs">
+        <span class="font-bold text-slate-500 uppercase tracking-wider text-[11px] mr-1">Другие регионы:</span>
+        <a href="/cities/subotica/" class="chip hover:bg-slate-100">Суботица ({allDocs.filter(d => d.city === "Subotica").length})</a>
+        <a href="/cities/nis/" class="chip hover:bg-slate-100">Ниш ({allDocs.filter(d => d.city === "Niš").length})</a>
+        <a href="/cities/vrbas/" class="chip hover:bg-slate-100">Врбас ({allDocs.filter(d => d.city === "Vrbas").length})</a>
+        <a href="/cities/pancevo/" class="chip hover:bg-slate-100">Панчево ({allDocs.filter(d => d.city === "Pančevo").length})</a>
+        <a href="/cities/sombor/" class="chip hover:bg-slate-100">Сомбор ({allDocs.filter(d => d.city === "Sombor").length})</a>
+        <a href="/cities/kragujevac/" class="chip hover:bg-slate-100">Крагуевац ({allDocs.filter(d => d.city === "Kragujevac").length})</a>
+        <a href="/cities/" class="text-brand-700 font-semibold hover:underline ml-auto">Все города Сербии (26) →</a>
+      </div>
     </div>
   </section>
 

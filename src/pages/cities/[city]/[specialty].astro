@@ -47,6 +47,10 @@ const doctors = allCityDocs.filter((d) => d.specializations.includes(specialty))
 const serbianCount = doctors.filter((d) => d.origin === "rs").length;
 const russianCount = doctors.filter((d) => d.origin !== "rs").length;
 
+const PAGE_SIZE = 24;
+const visibleDoctors = doctors.slice(0, PAGE_SIZE);
+const hasMore = doctors.length > PAGE_SIZE;
+
 const cluster = getClusterData(cSlug, specialty);
 
 // Другие популярные специальности в этом городе
@@ -352,12 +356,29 @@ if (cluster?.faq && cluster.faq.length > 0) {
       </div>
 
       <!-- Doctors Grid -->
-      {doctors.length > 0 ? (
-        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {doctors.map((d, index) => (
-            <DoctorCard doctor={d} priority={index < 3} />
-          ))}
-        </div>
+      {visibleDoctors.length > 0 ? (
+        <>
+          <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {visibleDoctors.map((d, index) => (
+              <DoctorCard doctor={d} priority={index < 3} />
+            ))}
+          </div>
+
+          {hasMore && (
+            <div class="mt-8 p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center">
+              <p class="text-sm text-slate-600 mb-3">
+                Показаны первые {PAGE_SIZE} специалистов из {doctors.length} в г. {cityRu}.
+              </p>
+              <a
+                href={`/doctors/?city=${city}&spec=${specialty}`}
+                class="btn-primary inline-flex items-center gap-2"
+              >
+                <span>Смотреть всех специалистов ({doctors.length}) в каталоге с фильтрами</span>
+                <span>→</span>
+              </a>
+            </div>
+          )}
+        </>
       ) : (
         <div class="card p-10 text-center text-slate-500">
           <p class="text-base font-medium">В этой специальности в г. {cityRu} пока нет активных карточек врачей.</p>

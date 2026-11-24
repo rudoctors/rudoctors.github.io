@@ -1,3 +1,5 @@
+import { getSpecialtyBlueprint } from "./specialty-blueprints";
+
 export interface EmergencyFacility {
   name: string;
   nameSr?: string;
@@ -446,5 +448,8 @@ export function getClusterData(city: string, specialty: string): ClusterData | u
   const normCity = city.toLowerCase().replace(/[^a-z0-9]+/g, "-");
   const normSpec = specialty.toLowerCase().trim();
   const key = `${normCity}:${normSpec}`;
-  return HOT_CLUSTERS[key];
+  if (HOT_CLUSTERS[key]) {
+    return HOT_CLUSTERS[key];
+  }
+  return getSpecialtyBlueprint(normCity, normSpec);
 }

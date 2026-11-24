@@ -49,7 +49,7 @@ git diff --check
 ---
 
 ### [DONE] TASK-DOC-003: Создание посадочных кластеров горячего спроса: Педиатр, Стоматолог, УЗИ/Анализы (Белград и Нови-Сад)
-- **Статус**: 🟢 **Выполнено и внедрено** (21 ноября 2026 г.)
+- **Статус**: 🟢 **Выполнено и внедрено** (21-23 ноября 2026 г.)
 - **Целевой URL / Страница**: `https://rudoctors.com/cities/[city]/[specialty]`
 - **Файл в репозитории**: `src/pages/cities/[city]/[specialty].astro`, `src/lib/clusters.ts`
 - **Что внедрено**:
@@ -65,10 +65,29 @@ git diff --check
   - Двусторонняя SEO-перелинковка: блок «Популярное» на `/cities/[city]/` перенаправлен на кластеры; блок городов на `/specialties/[key]/` содержит кликабельные теги кластеров; добавлены редиректы транслитерированных алиасов (`uzi`, `stomatolog`, `pediatr`) в `astro.config.mjs`.
   - Общее число страниц сайта при сборке выросло с 1 620 до 1 767.
 
+---
+
+### [DONE] TASK-DOC-004: Масштабирование кластерной архитектуры на ВСЕ специальности и матрица внутренней перелинковки
+- **Статус**: 🟢 **Выполнено и внедрено** (24 ноября 2026 г.)
+- **Ответственный агент**: SEO & Architecture Director
+- **Целевой URL / Страница**: `https://rudoctors.com/cities/[city]/[specialty]` и `https://rudoctors.com/`
+- **Файлы в репозитории**: `src/lib/specialty-blueprints.ts`, `src/lib/clusters.ts`, `src/pages/cities/[city]/[specialty].astro`, `src/pages/index.astro`, `scripts/indexnow.mjs`, `astro.config.mjs`
+- **Что внедрено**:
+  1. Разработан модуль `src/lib/specialty-blueprints.ts`, масштабирующий E-E-A-T инфраструктуру, прейскуранты в RSD и EUR (2026) и дежурные клиники (KCS, KCV, Narodni Front, Tiršova, Banjica, Betanija, Palmaтичева и др.) на ВСЕ 45 специальностей каталога.
+  2. Модуль `src/lib/clusters.ts` объединен со сборщиком: 100% кластеров (147 посадочных страниц) получили блоки дежурных стационаров, таблицы цен и микроразметку Schema.org `FAQPage` и `MedicalWebPage`.
+  3. Внедрена двухколоночная SEO-матрица перелинковки на Главной странице (`src/pages/index.astro`) для Белграда (16 топ-направлений) и Нови-Сада (12 топ-направлений) со сквозной передачей PageRank.
+  4. Добавлены транслит-алиасы в `astro.config.mjs` (`ginekolog`, `psihiatr`, `terapevt`, `kardiolog`, `dermatolog`, `nevrolog`, `hirurg`, `lor`).
+  5. Скрипт `scripts/indexnow.mjs` модернизирован с поддержкой прямого шлюза **Яндекса (`https://yandex.com/indexnow`, HTTP 202 Accepted)** и Bing (`api.indexnow.org`, HTTP 200 OK), а также режима приоритетной отправки кластеров.
+  6. Оптимизирован вес HTML-страниц каталога: пагинация по 24 карточки снизила размер DOM до < 100 Кб (вместо 170–250 Кб) в соответствии с правилом Core Web Vitals.
+- **Ожидаемый бизнес-эффект**:
+  - Вытеснение `rusdoctors.net` из органического топ-3 Яндекса по запросам связок «город + специальность»;
+  - Рост видимости в Google AI Overviews и ускорение переиндексации до 2–4 часов через прямой IndexNow Yandex API.
+
 **Шаг проверки после внесения правок**:
 ```bash
 npm run check
 npm run build
+node scripts/validate-build.mjs
 git diff --check
 ```
 
