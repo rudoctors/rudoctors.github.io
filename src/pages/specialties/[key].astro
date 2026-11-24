@@ -2,7 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import DoctorCard from "../../components/DoctorCard.astro";
 import { allSpecializationKeys, publicDoctors, specLabel } from "../../lib/doctors";
-import { cityLabel, citySlug } from "../../lib/site";
+import { cityLabel, citySlug, SITE } from "../../lib/site";
 import intros from "../../data/specialty-intros.json";
 
 export function getStaticPaths() {
@@ -19,6 +19,10 @@ interface Props {
 const { key } = Astro.props;
 const label = specLabel(key);
 const doctors = publicDoctors().filter((d) => d.specializations.includes(key));
+const PAGE_SIZE = 24;
+const visibleDoctors = doctors.slice(0, PAGE_SIZE);
+const hasMore = doctors.length > PAGE_SIZE;
+
 const map = intros as Record<string, string>;
 const intro =
   map[key] ||
@@ -28,11 +32,32 @@ const faqLine =
   citiesPresent.length > 0
     ? `Консультации специалистов по направлению «${label}» доступны в городах: ${citiesPresent.map(cityLabel).join(", ")}.`
     : `Карточки специалистов «${label}» появляются в каталоге по мере проверки данных.`;
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: `${label} в Сербии`,
+    url: `${SITE.url}/specialties/${key}/`,
+    description: `Русскоязычные врачи и специалисты «${label.toLowerCase()}» в Сербии: проверенные клиники, рейтинг, отзывы пациентов и прямые контакты.`,
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: doctors.length,
+      itemListElement: visibleDoctors.map((d, idx) => ({
+        "@type": "ListItem",
+        position: idx + 1,
+        url: `${SITE.url}/doctors/${d.slug}/`,
+        name: d.name,
+      })),
+    },
+  },
+];
 ---
 
 <Layout
   title={`${label} в Сербии (Белград, Нови-Сад) — русскоязычные врачи, отзывы`}
   description={`Русскоязычные врачи и специалисты «${label.toLowerCase()}» в Сербии: проверенные клиники, рейтинг, отзывы пациентов и прямые контакты для связи. Карточки врачей в Белграде и Нови-Саде.`}
+  jsonLd={jsonLd}
   breadcrumbs={[
     { name: "Главная", path: "/" },
     { name: "Специальности", path: "/specialties/" },
@@ -89,8 +114,25 @@ const faqLine =
     </div>
 
     <div class="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-      {doctors.map((d) => <DoctorCard doctor={d} />)}
+      {visibleDoctors.map((d, index) => <DoctorCard doctor={d} priority={index < 3} />)}
     </div>
+
+    {
+      hasMore && (
+        <div class="mt-8 p-6 rounded-2xl bg-gradient-to-r from-brand-50/50 via-slate-50 to-brand-50/30 border border-brand-200/80 text-center">
+          <p class="text-sm font-medium text-slate-700 mb-3">
+            Показаны первые {PAGE_SIZE} специалистов из {doctors.length} по направлению «{label}».
+          </p>
+          <a
+            href={`/doctors/?spec=${key}`}
+            class="btn-primary inline-flex items-center gap-2 !py-2.5 !px-5 text-sm shadow-sm"
+          >
+            <span>Смотреть всех врачей ({doctors.length}) в каталоге с фильтрами</span>
+            <span>→</span>
+          </a>
+        </div>
+      )
+    }
 
     {
       doctors.length === 0 && (

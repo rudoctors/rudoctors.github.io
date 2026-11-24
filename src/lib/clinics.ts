@@ -23,7 +23,7 @@ export interface MapClinicPoint {
   name: string;
   category: ClinicCategory;
   categoryLabel: string;
-  categoryColor: "blue" | "green" | "orange" | "purple" | "red" | "cyan";
+  categoryColor: "blue" | "green" | "orange" | "purple" | "red" | "cyan" | "amber";
   city: string;
   cityRu: string;
   district?: string;
@@ -42,7 +42,7 @@ export const CLINIC_CATEGORY_META: Record<
   {
     label: string;
     pluralLabel: string;
-    color: "blue" | "green" | "orange" | "purple" | "red" | "cyan";
+    color: "blue" | "green" | "orange" | "purple" | "red" | "cyan" | "amber";
     hex: string;
     bgClass: string;
     textClass: string;
@@ -109,6 +109,16 @@ export const CLINIC_CATEGORY_META: Record<
     textClass: "text-rose-700",
     borderClass: "border-rose-200",
     iconSvg: `<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>`,
+  },
+  pharmacy: {
+    label: "Дежурная аптека 24/7",
+    pluralLabel: "Дежурные аптеки 24/7",
+    color: "amber",
+    hex: "#ca8a04",
+    bgClass: "bg-amber-50",
+    textClass: "text-amber-800",
+    borderClass: "border-amber-200",
+    iconSvg: `<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg>`,
   },
 };
 
@@ -233,4 +243,102 @@ export function getBelgradeDistricts(): string[] {
     "Савски Венац (Славија)",
     "Савски Венац (Бањица)",
   ];
+}
+
+export interface DoctorMapLocation {
+  clinicId: string;
+  locationId: string;
+  clinicName: string;
+  category: ClinicCategory;
+  categoryColor: "blue" | "green" | "orange" | "purple" | "red" | "cyan" | "amber";
+  categoryLabel: string;
+  categoryHex: string;
+  address: string;
+  city: string;
+  cityRu: string;
+  district?: string;
+  lat: number;
+  lng: number;
+  phone?: string;
+  website?: string;
+  is24h?: boolean;
+}
+
+export function getDoctorClinicLocations(doctor: Doctor): DoctorMapLocation[] {
+  const registry = loadClinicRegistry();
+  const results: DoctorMapLocation[] = [];
+  const seenGeoKeys = new Set<string>();
+
+  const workplaces = doctor.workplaces || [];
+  for (const wp of workplaces) {
+    const wpNorm = normalize(wp.clinic);
+    if (!wpNorm && !wp.clinicId) continue;
+
+    // Find clinic in registry
+    const matchedClinic = registry.clinics.find((c) => {
+      if (wp.clinicId && wp.clinicId === c.id) return true;
+      const cNames = [normalize(c.name), ...(c.aliases || []).map(normalize)].filter(Boolean);
+      if (wpNorm && cNames.includes(wpNorm)) return true;
+      if (wpNorm && wpNorm.length > 5 && cNames.some((cn) => cn.includes(wpNorm) || wpNorm.includes(cn))) return true;
+      return false;
+    });
+
+    if (!matchedClinic) continue;
+
+    const category: ClinicCategory = matchedClinic.category || "medical-center";
+    const meta = CLINIC_CATEGORY_META[category] || CLINIC_CATEGORY_META["medical-center"];
+
+    // Find best location within matched clinic
+    let targetLocation = matchedClinic.locations.find((loc) => {
+      const coords = loc.coordinates?.value;
+      if (!coords || typeof coords.lat !== "number" || typeof coords.lng !== "number") return false;
+      if (wp.address && loc.address?.value && normalize(loc.address.value).includes(normalize(wp.address))) return true;
+      if (wp.district && loc.district && normalize(loc.district) === normalize(wp.district)) return true;
+      return false;
+    });
+
+    // Fallback to first valid location of this clinic
+    if (!targetLocation) {
+      targetLocation = matchedClinic.locations.find((loc) => {
+        const coords = loc.coordinates?.value;
+        return coords && typeof coords.lat === "number" && typeof coords.lng === "number";
+      });
+    }
+
+    if (!targetLocation || !targetLocation.coordinates?.value) continue;
+
+    const coords = targetLocation.coordinates.value;
+    const geoKey = `${coords.lat.toFixed(4)}|${coords.lng.toFixed(4)}`;
+    if (seenGeoKeys.has(geoKey)) continue;
+    seenGeoKeys.add(geoKey);
+
+    const address = targetLocation.address?.value || wp.address || "";
+    const district = targetLocation.district || matchedClinic.district || wp.district;
+
+    results.push({
+      clinicId: matchedClinic.id,
+      locationId: targetLocation.id,
+      clinicName: matchedClinic.name,
+      category,
+      categoryColor: meta.color,
+      categoryLabel: meta.label,
+      categoryHex: meta.hex,
+      address,
+      city: matchedClinic.city || wp.city || doctor.city,
+      cityRu: cityLabel(matchedClinic.city || wp.city || doctor.city),
+      district,
+      lat: coords.lat,
+      lng: coords.lng,
+      phone: matchedClinic.phone,
+      website: matchedClinic.website || wp.url,
+      is24h: Boolean(matchedClinic.is24h),
+    });
+  }
+
+  return results;
+}
+
+export function getDoctorClinicLocation(doctor: Doctor): DoctorMapLocation | null {
+  const locs = getDoctorClinicLocations(doctor);
+  return locs.length > 0 ? locs[0] : null;
 }
