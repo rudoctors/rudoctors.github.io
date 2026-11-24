@@ -74,3 +74,29 @@ git diff --check
 
 ---
 
+### [PRIORITY] TASK-DOC-005: Комплексный сквозной аудит сайта RuDoctors (технический, визуальный через BrowserOS Neo, SEO и формы)
+- **Ответственный агент**: QA & Visual Audit Agent / SEO Director
+- **Целевой URL / Страница**: Весь сайт (`https://rudoctors.com/`, `/doctors/`, `/cities/*`, `/map/`, `/guides/*`, `/leave-review/`, `/add-doctor/`)
+- **Статус**: 🟡 **К выполнению**
+- **Что входит в аудит**:
+  1. **Визуальный контроль в реальном браузере (MCP `browseros-neo`)**:
+     - Десктопный и мобильный вид: проверка верстки, шрифтов, бейджей LKS 🇷🇸, карточек врачей, отсутствия сдвигов (CLS) и битых картинок.
+     - Проверка интерактивности: поиск врачей, фильтрация (города, специальности, форматы), пагинация.
+     - Проверка новой SEO-матрицы перелинковки на главной и кластерных страниц (`/cities/[city]/[specialty]/`).
+  2. **Аудит форм и интерактивных сценариев**:
+     - Форма `/leave-review/`: валидация полей, отправка через GAS Webhook, аварийный фоллбэк в Telegram.
+     - Форма `/add-doctor/`: корректность полей, защита от спама.
+  3. **Технический и SEO-контроль (Web Production Standard)**:
+     - Проверка веса всех ключевых страниц (< 150 Кб).
+     - Микроразметка Schema.org (`Organization`, `WebSite`, `BreadcrumbList`, `MedicalWebPage`, `Physician`, `FAQPage`, `ItemList`).
+     - Проверка консоли браузера на ошибки CSP, скриптов аналитики (Яндекс.Метрика, GA4, Turnstile) и Leaflet-карт.
+     - Проверка robots.txt, llms.txt, llms-full.txt, sitemap-index.xml.
+
+**Шаг проверки**:
+```bash
+npm run check
+npm run build
+```
+
+---
+
