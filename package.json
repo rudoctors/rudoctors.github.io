@@ -46,7 +46,8 @@
     "audit:clinics": "node scripts/clinics-audit.mjs",
     "photos:webp": "node scripts/convert-photos-webp.mjs",
     "refresh": "node scripts/fetch-sheet.mjs && node scripts/fetch-citilab.mjs && node scripts/seed.mjs && node scripts/tag-en-reviews.mjs && npm run check",
-    "indexnow": "node scripts/indexnow.mjs"
+    "indexnow": "node scripts/indexnow.mjs",
+    "test:audit": "node scripts/validate-build.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
