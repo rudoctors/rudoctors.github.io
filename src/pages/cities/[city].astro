@@ -2,7 +2,8 @@
 import Layout from "../../layouts/Layout.astro";
 import DoctorCard from "../../components/DoctorCard.astro";
 import { allCities, publicDoctors, specLabel } from "../../lib/doctors";
-import { citySlug, cityLabel, SITE, SCHEMA_IDS } from "../../lib/site";
+import { citySlug, cityLabel, SITE, SCHEMA_IDS, plural } from "../../lib/site";
+import { cityIn, cityLoc } from "../../lib/specialty-blueprints";
 import cityIntros from "../../data/city-intros.json";
 
 export function getStaticPaths() {
@@ -18,85 +19,271 @@ interface Props {
 
 const { city } = Astro.props;
 const cityRu = cityLabel(city);
+const cSlug = citySlug(city);
+const cityInStr = cityIn(cSlug);
+const cityLocStr = cityLoc(cSlug);
+
 const doctors = publicDoctors().filter((d) => d.city === city);
+const serbianCount = doctors.filter((d) => d.origin === "rs").length;
+const russianCount = doctors.filter((d) => d.origin !== "rs").length;
+
+const PAGE_SIZE = 24;
+const visibleDoctors = doctors.slice(0, PAGE_SIZE);
+const hasMore = doctors.length > PAGE_SIZE;
+
 const specCounts = [...new Set(doctors.flatMap((d) => d.specializations))]
   .map((k) => ({ k, label: specLabel(k), n: doctors.filter((d) => d.specializations.includes(k)).length }))
   .sort((a, b) => b.n - a.n)
-  .slice(0, 8);
+  .slice(0, 14);
+
 const introsMap = cityIntros as Record<string, string>;
 const intro =
   introsMap[city] ||
-  `Русскоязычные врачи в ${cityRu}, Сербия: рейтинги, отзывы пациентов, специализации и контакты. ${doctors.length} карточек в каталоге Rudoctors.`;
-const cityPath = `/cities/${citySlug(city)}/`;
----
+  `Русскоязычные врачи и проверенные клиники ${cityInStr}, Сербия: рейтинги, отзывы пациентов, специализации, прямые контакты и запись. ${doctors.length} ${plural(doctors.length, "врач", "врача", "врачей")} в каталоге RuDoctors.`;
 
-<Layout
-  title={`Русскоязычные врачи в ${cityRu} (Сербия) — ${doctors.length} специалистов, проверенные отзывы и контакты | RuDoctors`}
-  description={`Поиск проверенных русскоязычных врачей и частных клиник в г. ${cityRu}, Сербия (${doctors.length} специалистов): стоматологи, педиатры, терапевты, гинекологи. Реальные отзывы пациентов, адреса и прямые контакты.`}
-  jsonLd={{
+const cityPath = `/cities/${cSlug}/`;
+
+// Высококонверсионные метатеги под CTR по результатам исследования выдачи
+const pageTitle =
+  cSlug === "belgrade"
+    ? `Русскоязычные врачи в Белграде — проверенные отзывы, контакты и запись | RuDoctors`
+    : cSlug === "novi-sad"
+    ? `Русскоязычные врачи в Нови-Саде — проверенные отзывы, контакты и запись | RuDoctors`
+    : `Врачи в ${cityLocStr} (Сербия) — проверенные специалисты, отзывы и запись | RuDoctors`;
+
+const pageDesc =
+  cSlug === "belgrade"
+    ? `Каталог проверенных врачей в Белграде: ${doctors.length} специалистов (${russianCount} русскоязычных, ${serbianCount} сербских врачей с лицензией LKS). Стоматологи, педиатры, терапевты, гинекологи. Прямые контакты и реальные отзывы.`
+    : cSlug === "novi-sad"
+    ? `Каталог проверенных врачей в Нови-Саде: ${doctors.length} специалистов (${russianCount} русскоязычных, ${serbianCount} сербских). Стоматологи, педиатрия, терапия, УЗИ. Отзывы пациентов, адреса клиник и запись.`
+    : `Поиск проверенных специалистов и клиник в г. ${cityRu}, Сербия (${doctors.length} ${plural(doctors.length, "врач", "врача", "врачей")}): контакты, отзывы пациентов и запись.`;
+
+// Городские FAQ для Schema.org FAQPage
+const cityFaq =
+  cSlug === "belgrade"
+    ? [
+        {
+          q: "Как записаться к русскоязычному врачу в Белграде?",
+          a: "В каталоге RuDoctors в карточке каждого специалиста указаны прямые контакты: Telegram, WhatsApp, рабочий телефон или форма записи в клинику. Вы можете связаться с доктором напрямую без посредников и комиссий.",
+        },
+        {
+          q: "Куда обращаться в Белграде при острой боли или травме?",
+          a: "Круглосуточную экстренную помощь взрослым оказывает Ургентный центр Клинического центра Сербии (Pasterova 2, тел. 194). Детям — Университетская детская клиника в Тиршовой (Tiršova 10) и Институт матери и ребенка в Новом Белграде.",
+        },
+        {
+          q: "Как работают частные клиники и рецепты в Белграде?",
+          a: "Прием в частных медицинских сетях (MediGroup, Euromedik, Bel Medic) обычно возможен в день обращения. Врачи с сербской лицензией LKS выписывают официальные рецепты, по которым можно купить антибиотики и рецептурные препараты в любой аптеке (Apoteka).",
+        },
+      ]
+    : cSlug === "novi-sad"
+    ? [
+        {
+          q: "Как найти русскоязычного врача в Нови-Саде?",
+          a: "В Нови-Саде ведут прием как русскоязычные доктора, так и сербские специалисты частных клиник (Consilium, MediGroup, Jugolab), свободно говорящие по-русски или по-английски. В каталоге используйте языковые бейджи RU / SR.",
+        },
+        {
+          q: "Куда обращаться в Нови-Саде при экстренных состояниях?",
+          a: "Главный экстренный стационар Воеводины — Ургентный центр KCV (Hajduk Veljkova 1–7, тел. 194). Для детей круглосуточно дежурит Детская больница (Dečija bolnica Novi Sad, Hajduk Veljkova 10).",
+        },
+        {
+          q: "Где сдать срочные анализы и сделать УЗИ в Нови-Саде?",
+          a: "Лаборатории Jugolab, Medlab и Aqualab принимают анализы крови и мочи без предварительной записи с 7:00 утра, результаты приходят на email в течение нескольких часов.",
+        },
+      ]
+    : [
+        {
+          q: `Как найти врача ${cityInStr}?`,
+          a: `Свяжитесь со специалистом по контактам в карточке каталога. Врачи принимают как очно в ординациях города, так и проводят онлайн-консультации.`,
+        },
+        {
+          q: `Куда обращаться при экстренной ситуации в г. ${cityRu}?`,
+          a: `При неотложных состояниях звоните по единому номеру скорой помощи 194 либо обращайтесь в приемный покой городской больницы (Opšta Bolnica ${cityRu}) или дежурного Dom Zdravlja.`,
+        },
+      ];
+
+// Микроразметка Schema.org
+const jsonLd: Record<string, unknown>[] = [
+  {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: `Русскоязычные врачи в ${cityRu}, Сербия — каталог клиник и отзывы`,
+    "@id": `${SITE.url}${cityPath}#collection`,
+    name: pageTitle,
     url: `${SITE.url}${cityPath}`,
-    description: `Поиск проверенных русскоязычных врачей и частных клиник в г. ${cityRu}, Сербия (${doctors.length} специалистов): рейтинги, отзывы, специальности и прямые контакты.`,
+    description: pageDesc,
     isPartOf: { "@id": SCHEMA_IDS.website },
     about: {
       "@type": "City",
       name: cityRu,
       containedInPlace: { "@type": "Country", name: "Сербия" },
     },
-  }}
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: doctors.length,
+      itemListElement: visibleDoctors.map((d, idx) => ({
+        "@type": "ListItem",
+        position: idx + 1,
+        url: `${SITE.url}/doctors/${d.slug}/`,
+        name: d.name,
+      })),
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${SITE.url}${cityPath}#faq`,
+    mainEntity: cityFaq.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    })),
+  },
+];
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDesc}
+  jsonLd={jsonLd}
   breadcrumbs={[
     { name: "Главная", path: "/" },
     { name: "Города", path: "/cities/" },
     { name: cityRu, path: cityPath },
   ]}
 >
-  <div class="mx-auto max-w-6xl px-4 py-10">
-    <nav class="text-sm text-slate-500 mb-6">
+  <div class="mx-auto max-w-6xl px-4 py-8 md:py-10">
+    <nav class="text-sm text-slate-500 mb-6 flex items-center gap-2" aria-label="Хлебные крошки">
+      <a href="/" class="hover:text-brand-700">Главная</a>
+      <span>/</span>
       <a href="/cities/" class="hover:text-brand-700">Города</a>
-      <span class="mx-2">/</span>
-      <span class="text-slate-800">{cityRu}</span>
+      <span>/</span>
+      <span class="text-slate-800 font-medium">{cityRu}</span>
     </nav>
 
-    <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900">Врачи в {cityRu}</h1>
-    <p class="mt-2 text-slate-600">{doctors.length} карточек в каталоге</p>
-    <div class="mt-4 max-w-3xl text-slate-700 leading-relaxed">
-      <p>{intro}</p>
-    </div>
+    <!-- Header -->
+    <header class="mb-8">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-brand-50 text-brand-700 ring-1 ring-brand-600/20">
+          📍 Сербия
+        </span>
+        <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-slate-100 text-slate-700">
+          {doctors.length} {plural(doctors.length, "врач", "врача", "врачей")}
+        </span>
+      </div>
 
+      <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900 leading-tight">
+        Врачи в {cityLocStr}
+      </h1>
+
+      <p class="mt-2 text-base md:text-lg text-slate-600">
+        Проверенные русскоязычные специалисты и лицензированные сербские врачи с отзывами пациентов
+      </p>
+
+      <div class="mt-4 max-w-3xl text-sm md:text-base text-slate-700 leading-relaxed p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+        <p>{intro}</p>
+      </div>
+    </header>
+
+    <!-- Популярные кластеры в городе (SEO Interlinking) -->
     {
       specCounts.length > 0 && (
-        <div class="mt-5 flex flex-wrap gap-2 items-center">
-          <span class="text-xs font-semibold text-slate-500 uppercase tracking-wide mr-1">Популярное:</span>
-          {specCounts.map((s) => (
-            <a href={`/cities/${citySlug(city)}/${s.k}/`} class="chip hover:bg-brand-100">
-              {s.label} · {s.n}
-            </a>
-          ))}
-        </div>
+        <section class="mb-8 card p-5" aria-labelledby="specs-heading">
+          <div class="flex items-center justify-between mb-3">
+            <h2 id="specs-heading" class="text-xs sm:text-sm font-bold text-slate-500 uppercase tracking-wider">
+              Популярные медицинские направления {cityInStr}:
+            </h2>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            {specCounts.map((s) => (
+              <a
+                href={`/cities/${cSlug}/${s.k}/`}
+                class="chip hover:bg-brand-50 hover:text-brand-700 hover:border-brand-300 transition text-xs py-1"
+                title={`${s.label} ${cityInStr} — цены, клиники и отзывы`}
+              >
+                <span>{s.label}</span>
+                <span class="text-slate-400 text-[10px]">({s.n})</span>
+              </a>
+            ))}
+          </div>
+        </section>
       )
     }
 
-    <div class="mt-4 flex flex-wrap gap-2 text-xs">
-      <a href={`/doctors/?city=${city}`} class="chip bg-brand-50 text-brand-700 font-semibold ring-1 ring-brand-600/20">
-        Все в г. {cityRu} ({doctors.length})
+    <!-- Quick Filter Badges -->
+    <div class="mb-6 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex flex-wrap gap-2 text-xs">
+        <a href={`/doctors/?city=${city}`} class="chip bg-brand-50 text-brand-700 font-semibold ring-1 ring-brand-600/20">
+          Все в г. {cityRu} ({doctors.length})
+        </a>
+        {serbianCount > 0 && (
+          <a
+            href={`/doctors/?city=${city}&origin=rs`}
+            class="chip bg-rose-50 text-rose-700 hover:bg-rose-100 font-semibold ring-1 ring-rose-600/20 flex items-center gap-1 transition"
+          >
+            <span aria-hidden="true">🇷🇸</span>
+            <span>Сербские врачи ({serbianCount})</span>
+          </a>
+        )}
+        {russianCount > 0 && (
+          <a href={`/doctors/?city=${city}&origin=ru`} class="chip hover:bg-slate-200 transition">
+            Русскоязычные врачи ({russianCount})
+          </a>
+        )}
+      </div>
+
+      <a href="/doctors/" class="text-xs font-semibold text-brand-700 hover:underline">
+        Интерактивный поиск с фильтрами →
       </a>
-      {doctors.some((d) => d.origin === "rs") && (
-        <a href={`/doctors/?city=${city}&origin=rs`} class="chip bg-rose-50 text-rose-700 hover:bg-rose-100 font-semibold ring-1 ring-rose-600/20 flex items-center gap-1 transition">
-          <span aria-hidden="true">🇷🇸</span>
-          <span>Сербские врачи ({doctors.filter((d) => d.origin === "rs").length})</span>
-        </a>
-      )}
-      {doctors.some((d) => d.origin !== "rs") && (
-        <a href={`/doctors/?city=${city}&origin=ru`} class="chip hover:bg-slate-200 transition">
-          Русскоязычные врачи ({doctors.filter((d) => d.origin !== "rs").length})
-        </a>
-      )}
     </div>
 
-    <div class="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-      {doctors.map((d) => <DoctorCard doctor={d} />)}
-    </div>
+    <!-- Doctors Grid (Optimized DOM: top 24) -->
+    <section class="mb-12" aria-labelledby="doctors-list-heading">
+      <h2 id="doctors-list-heading" class="sr-only">Список специалистов в городе {cityRu}</h2>
+      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        {visibleDoctors.map((d, index) => (
+          <DoctorCard doctor={d} priority={index < 3} />
+        ))}
+      </div>
+
+      {hasMore && (
+        <div class="mt-8 p-6 rounded-2xl bg-gradient-to-r from-brand-50/50 via-slate-50 to-brand-50/30 border border-brand-200/80 text-center">
+          <p class="text-sm font-medium text-slate-700 mb-3">
+            Показаны первые {PAGE_SIZE} специалистов из {doctors.length} в г. {cityRu}.
+          </p>
+          <a
+            href={`/doctors/?city=${city}`}
+            class="btn-primary inline-flex items-center gap-2 !py-2.5 !px-5 text-sm shadow-sm"
+          >
+            <span>Смотреть всех врачей ({doctors.length}) в каталоге с фильтрами</span>
+            <span>→</span>
+          </a>
+        </div>
+      )}
+    </section>
+
+    <!-- City Medical FAQ -->
+    {cityFaq.length > 0 && (
+      <section class="mb-12" aria-labelledby="city-faq-heading">
+        <h2 id="city-faq-heading" class="text-xl sm:text-2xl font-bold text-navy-900 mb-4 flex items-center gap-2">
+          <span>❓</span>
+          <span>Частые вопросы о медицине {cityInStr}</span>
+        </h2>
+        <div class="space-y-3">
+          {cityFaq.map((item) => (
+            <details class="card p-5 group open:bg-slate-50 transition cursor-pointer">
+              <summary class="font-bold text-navy-900 flex items-center justify-between gap-4 list-none">
+                <span>{item.q}</span>
+                <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p class="mt-3 text-sm text-slate-700 leading-relaxed border-t border-slate-100 pt-3">
+                {item.a}
+              </p>
+            </details>
+          ))}
+        </div>
+      </section>
+    )}
   </div>
 </Layout>
