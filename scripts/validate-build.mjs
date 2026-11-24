@@ -130,14 +130,11 @@ if (fs.existsSync(sitemapPath)) {
 console.log("\n⚡ 4. HTML Page Weight Audit (< 150 KB standard):");
 const MAX_HTML_SIZE = 153_600; // 150 KB
 // Documented known exceptions:
-// 1. /doctors/index.html (carries full client search index JSON of 1,200 doctors for zero-latency client search)
+// 1. /doctors/index.html (carries complete internal link matrix of 1,521 doctors in details)
 // 2. /map/index.html (carries 86 clinic locations and coordinates)
-// 3. 2 doctors with unusually high volume of patient reviews (100+ reviews each)
 const KNOWN_SIZE_EXCEPTIONS = new Set([
   path.join(DIST_DIR, "doctors", "index.html"),
   path.join(DIST_DIR, "map", "index.html"),
-  path.join(DIST_DIR, "doctors", "aleksei-lebedev", "index.html"),
-  path.join(DIST_DIR, "doctors", "aleksej-pravov", "index.html"),
 ]);
 
 function walkHtmlFiles(dir) {

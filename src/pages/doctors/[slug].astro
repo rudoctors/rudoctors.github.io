@@ -1,7 +1,9 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import Stars from "../../components/Stars.astro";
+import DoctorMiniMap from "../../components/DoctorMiniMap.astro";
 import { publicDoctors, specLabel } from "../../lib/doctors";
+import { getDoctorClinicLocations } from "../../lib/clinics";
 import { computeRating } from "../../lib/rating";
 import { SITE, SCHEMA_IDS, formatDate, plural, safeUrl, cityLabel, citySlug } from "../../lib/site";
 import type { Doctor } from "../../lib/types";
@@ -18,6 +20,7 @@ interface Props {
 }
 
 const { doctor } = Astro.props;
+const mapLocations = getDoctorClinicLocations(doctor);
 const rating = computeRating(doctor);
 const initials = doctor.name
   .split(/\s+/)
@@ -29,6 +32,13 @@ const initials = doctor.name
 const related = publicDoctors()
   .filter((d) => d.slug !== doctor.slug && d.specializations.some((s) => doctor.specializations.includes(s)))
   .slice(0, 3);
+
+const INITIAL_REVIEWS_COUNT = 10;
+const allSortedReviews = [...(doctor.reviews || [])].sort((a, b) =>
+  (b.date || "").localeCompare(a.date || "")
+);
+const visibleReviews = allSortedReviews.slice(0, INITIAL_REVIEWS_COUNT);
+const remainingReviewsCount = allSortedReviews.length - INITIAL_REVIEWS_COUNT;
 
 const apptUrl = safeUrl(doctor.contacts.appointmentUrl);
 const tgUrl = safeUrl(doctor.contacts.telegram);
@@ -235,10 +245,9 @@ const jsonLd: Record<string, unknown>[] = [
                 </a>
               </div>
             ) : (
-              <ul class="space-y-4">
-                {[...(doctor.reviews || [])]
-                  .sort((a, b) => (b.date || "").localeCompare(a.date || ""))
-                  .map((r) => (
+              <div>
+                <ul class="space-y-4" id="doctor-reviews-list">
+                  {visibleReviews.map((r) => (
                     <li class="rounded-2xl border border-slate-200 p-4 bg-white">
                       <div class="flex flex-wrap items-center justify-between gap-2">
                         <div class="font-semibold text-slate-900">{r.author || "Пациент"}</div>
@@ -267,7 +276,28 @@ const jsonLd: Record<string, unknown>[] = [
                       {r.source && <div class="mt-2 text-[11px] text-slate-400">Источник: {r.source}</div>}
                     </li>
                   ))}
-              </ul>
+                </ul>
+
+                {remainingReviewsCount > 0 && (
+                  <div id="reviews-pagination" class="mt-4 pt-2">
+                    <button
+                      type="button"
+                      id="btn-load-more-reviews"
+                      class="w-full py-3 px-4 rounded-xl border border-brand-200 bg-brand-50 hover:bg-brand-100 text-brand-700 text-sm font-semibold transition-all shadow-xs flex items-center justify-center gap-2 cursor-pointer active:scale-[0.99]"
+                      data-slug={doctor.slug}
+                      data-remaining={remainingReviewsCount}
+                    >
+                      <span>Показать ещё {remainingReviewsCount} {plural(remainingReviewsCount, "отзыв", "отзыва", "отзывов")}</span>
+                      <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    <p id="reviews-loading-msg" class="hidden text-center text-xs text-slate-500 py-2">
+                      Загрузка отзывов...
+                    </p>
+                  </div>
+                )}
+              </div>
             )
           }
         </section>
@@ -425,6 +455,12 @@ const jsonLd: Record<string, unknown>[] = [
               </ul>
             )
           }
+
+          {
+            mapLocations.length > 0 && (
+              <DoctorMiniMap locations={mapLocations} doctorName={doctor.name} />
+            )
+          }
         </div>
 
         <div class="card p-5">
@@ -496,4 +532,106 @@ const jsonLd: Record<string, unknown>[] = [
       )
     }
   </div>
+
+  <script is:inline>
+    (function () {
+      const btn = document.getElementById("btn-load-more-reviews");
+      if (!btn) return;
+
+      const list = document.getElementById("doctor-reviews-list");
+      const msg = document.getElementById("reviews-loading-msg");
+      const slug = btn.getAttribute("data-slug");
+
+      function formatDateStr(d) {
+        if (!d) return "";
+        try {
+          const parts = d.split("-");
+          if (parts.length === 3) {
+            const months = [
+              "января", "февраля", "марта", "апреля", "мая", "июня",
+              "июля", "августа", "сентября", "октября", "ноября", "декабря"
+            ];
+            const m = parseInt(parts[1], 10) - 1;
+            return `${parseInt(parts[2], 10)} ${months[m]} ${parts[0]}`;
+          }
+        } catch (e) {}
+        return d;
+      }
+
+      function escapeHtml(text) {
+        if (!text) return "";
+        return String(text)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+
+      btn.addEventListener("click", async function () {
+        btn.disabled = true;
+        btn.classList.add("opacity-60", "cursor-wait");
+        if (msg) msg.classList.remove("hidden");
+
+        try {
+          const res = await fetch(`/data/reviews/${slug}.json`);
+          if (!res.ok) throw new Error("HTTP " + res.status);
+          const allReviews = await res.json();
+          allReviews.sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+          const more = allReviews.slice(10);
+
+          for (const r of more) {
+            const li = document.createElement("li");
+            li.className = "rounded-2xl border border-slate-200 p-4 bg-white transition-opacity duration-300";
+            const ratingNum = Number(r.rating) || 0;
+            let starsHtml = "";
+            if (ratingNum > 0) {
+              const full = Math.round(ratingNum);
+              starsHtml = `<div class="text-amber-400 text-sm" aria-label="${ratingNum} из 5">${"★".repeat(full)}<span class="text-slate-300">${"★".repeat(5 - full)}</span></div>`;
+            } else {
+              starsHtml = `<span class="text-xs text-slate-400">Отзыв из сообщества</span>`;
+            }
+
+            let origHtml = "";
+            if (r.langSource && r.textOriginal) {
+              origHtml = `<details class="mt-2"><summary class="text-xs text-slate-500 cursor-pointer">Оригинал (${escapeHtml(r.langSource.toUpperCase())})</summary><p class="mt-1 text-sm text-slate-600 whitespace-pre-line">${escapeHtml(r.textOriginal)}</p></details>`;
+            }
+
+            let sourceHtml = r.source
+              ? `<div class="mt-2 text-[11px] text-slate-400">Источник: ${escapeHtml(r.source)}</div>`
+              : "";
+            let enBadge =
+              r.lang === "en" && !r.textOriginal
+                ? `<span class="rounded bg-slate-100 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-500">EN</span>`
+                : "";
+
+            li.innerHTML = `
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <div class="font-semibold text-slate-900">${escapeHtml(r.author || "Пациент")}</div>
+                <div class="text-xs text-slate-500">${escapeHtml(formatDateStr(r.date))}</div>
+              </div>
+              <div class="mt-1 flex flex-wrap items-center gap-2">
+                ${starsHtml}
+                ${enBadge}
+              </div>
+              <p class="mt-2 text-sm text-slate-700 leading-relaxed whitespace-pre-line">${escapeHtml(r.text)}</p>
+              ${origHtml}
+              ${sourceHtml}
+            `;
+            list.appendChild(li);
+          }
+
+          const pagination = document.getElementById("reviews-pagination");
+          if (pagination) pagination.remove();
+        } catch (err) {
+          console.error("Failed to load reviews:", err);
+          btn.disabled = false;
+          btn.classList.remove("opacity-60", "cursor-wait");
+          if (msg) {
+            msg.textContent = "Не удалось загрузить отзывы. Проверьте интернет-соединение.";
+            msg.classList.add("text-rose-600");
+          }
+        }
+      });
+    })();
+  </script>
 </Layout>

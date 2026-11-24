@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-21",
+  "updatedAt": "2026-11-24",
   "notes": "Auto-derived draft registry from existing doctor workplace strings. Names, addresses and coordinates are unverified and are not canonical until human review; no coordinates are asserted. Similar names are only reported by scripts/clinics-audit.mjs and are never merged automatically.",
   "clinics": [
     {
@@ -4134,6 +4134,438 @@
                 "kind": "clinic-website",
                 "url": "https://kcnis.rs/",
                 "retrievedAt": "2026-11-21"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "apoteka-beograd-prvi-maj",
+      "name": "Аптека «Prvi Maj» (Apoteka Beograd)",
+      "city": "Belgrade",
+      "district": "Стари Град (Дорћол)",
+      "category": "pharmacy",
+      "phone": "+381 11 3241 349",
+      "website": "https://www.apotekabeograd.co.rs/",
+      "is24h": true,
+      "aliases": [
+        "Apoteka Prvi Maj",
+        "Дежурна апотека Први мај",
+        "Apoteka Beograd Prvi Maj"
+      ],
+      "sources": [
+        "official-registry",
+        "src/pages/guides/apteki-retsepty-serbia.astro"
+      ],
+      "locations": [
+        {
+          "id": "apoteka-beograd-prvi-maj-loc-1",
+          "district": "Стари Град (Дорћол)",
+          "address": {
+            "value": "Kralja Milana 9, Stari Grad, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-24",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "official-registry",
+                "ref": "apotekabeograd.co.rs",
+                "retrievedAt": "2026-11-24"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 44.81052,
+              "lng": 20.46182
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-24",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "official-registry",
+                "ref": "gps-coordinates",
+                "retrievedAt": "2026-11-24"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "apoteka-beograd-sveti-sava",
+      "name": "Аптека «Sveti Sava» (Apoteka Beograd)",
+      "city": "Belgrade",
+      "district": "Савски Венац (Славија)",
+      "category": "pharmacy",
+      "phone": "+381 11 2643 170",
+      "website": "https://www.apotekabeograd.co.rs/",
+      "is24h": true,
+      "aliases": [
+        "Apoteka Sveti Sava",
+        "Дежурна апотека Свети Сава",
+        "Apoteka Nemanjina 2"
+      ],
+      "sources": [
+        "official-registry",
+        "src/pages/guides/apteki-retsepty-serbia.astro"
+      ],
+      "locations": [
+        {
+          "id": "apoteka-beograd-sveti-sava-loc-1",
+          "district": "Савски Венац (Славија)",
+          "address": {
+            "value": "Nemanjina 2, Savski Venac, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-24",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "official-registry",
+                "ref": "apotekabeograd.co.rs",
+                "retrievedAt": "2026-11-24"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 44.80821,
+              "lng": 20.45784
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-24",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "official-registry",
+                "ref": "gps-coordinates",
+                "retrievedAt": "2026-11-24"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "apoteka-beograd-bogdan-vujosevic",
+      "name": "Аптека «Bogdan Vujošević» (Apoteka Beograd)",
+      "city": "Belgrade",
+      "district": "Нови Београд",
+      "category": "pharmacy",
+      "phone": "+381 11 2601 887",
+      "website": "https://www.apotekabeograd.co.rs/",
+      "is24h": true,
+      "aliases": [
+        "Apoteka Bogdan Vujosevic",
+        "Дежурна апотека Богдан Вујошевић",
+        "Apoteka Goce Delceva"
+      ],
+      "sources": [
+        "official-registry",
+        "src/pages/guides/apteki-retsepty-serbia.astro"
+      ],
+      "locations": [
+        {
+          "id": "apoteka-beograd-bogdan-vujosevic-loc-1",
+          "district": "Нови Београд",
+          "address": {
+            "value": "Bulevar Maršala Tolbuhina 30, Novi Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-24",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "official-registry",
+                "ref": "apotekabeograd.co.rs",
+                "retrievedAt": "2026-11-24"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 44.83155,
+              "lng": 20.41322
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-24",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "official-registry",
+                "ref": "gps-coordinates",
+                "retrievedAt": "2026-11-24"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "apoteka-beograd-zemun",
+      "name": "Аптека «Zemun» (Apoteka Beograd)",
+      "city": "Belgrade",
+      "district": "Земун",
+      "category": "pharmacy",
+      "phone": "+381 11 2618 582",
+      "website": "https://www.apotekabeograd.co.rs/",
+      "is24h": true,
+      "aliases": [
+        "Apoteka Glavna Zemun",
+        "Дежурна апотека Земун",
+        "Apoteka Beograd Glavna 34"
+      ],
+      "sources": [
+        "official-registry",
+        "src/pages/guides/apteki-retsepty-serbia.astro"
+      ],
+      "locations": [
+        {
+          "id": "apoteka-beograd-zemun-loc-1",
+          "district": "Земун",
+          "address": {
+            "value": "Glavna 34, Zemun, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-24",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "official-registry",
+                "ref": "apotekabeograd.co.rs",
+                "retrievedAt": "2026-11-24"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 44.84362,
+              "lng": 20.41285
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-24",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "official-registry",
+                "ref": "gps-coordinates",
+                "retrievedAt": "2026-11-24"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "apoteka-beograd-miroslav-trajkovic",
+      "name": "Аптека «Miroslav Trajković» (Apoteka Beograd)",
+      "city": "Belgrade",
+      "district": "Чукарица",
+      "category": "pharmacy",
+      "phone": "+381 11 2542 355",
+      "website": "https://www.apotekabeograd.co.rs/",
+      "is24h": true,
+      "aliases": [
+        "Apoteka Miroslav Trajkovic",
+        "Дежурна апотека Баново Брдо",
+        "Apoteka Pozeska 87"
+      ],
+      "sources": [
+        "official-registry",
+        "src/pages/guides/apteki-retsepty-serbia.astro"
+      ],
+      "locations": [
+        {
+          "id": "apoteka-beograd-miroslav-trajkovic-loc-1",
+          "district": "Чукарица",
+          "address": {
+            "value": "Požeška 87, Čukarica, Beograd",
+            "verification": "verified",
+            "verifiedAt": "2026-11-24",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "official-registry",
+                "ref": "apotekabeograd.co.rs",
+                "retrievedAt": "2026-11-24"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 44.77884,
+              "lng": 20.41721
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-24",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "official-registry",
+                "ref": "gps-coordinates",
+                "retrievedAt": "2026-11-24"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "apoteka-novi-sad-bulevar",
+      "name": "Аптека «Novi Sad — Bulevar» (Apoteka Novi Sad)",
+      "city": "Novi Sad",
+      "district": "Stari Grad",
+      "category": "pharmacy",
+      "phone": "+381 21 422 755",
+      "website": "http://www.apotekanovisad.rs/",
+      "is24h": true,
+      "aliases": [
+        "Apoteka Novi Sad Bulevar",
+        "Дежурна апотека Нови Сад",
+        "Apoteka Bulevar Mihajla Pupina"
+      ],
+      "sources": [
+        "official-registry",
+        "src/pages/guides/apteki-retsepty-serbia.astro"
+      ],
+      "locations": [
+        {
+          "id": "apoteka-novi-sad-bulevar-loc-1",
+          "district": "Stari Grad",
+          "address": {
+            "value": "Bulevar Mihajla Pupina 7, Novi Sad",
+            "verification": "verified",
+            "verifiedAt": "2026-11-24",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "official-registry",
+                "ref": "apotekanovisad.rs",
+                "retrievedAt": "2026-11-24"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 45.25361,
+              "lng": 19.84583
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-24",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "official-registry",
+                "ref": "gps-coordinates",
+                "retrievedAt": "2026-11-24"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "apoteka-jankovic-novi-sad-24h",
+      "name": "Аптека «Janković 24/7» (Apoteka Janković)",
+      "city": "Novi Sad",
+      "district": "Liman / Grbavica",
+      "category": "pharmacy",
+      "phone": "+381 21 6614 111",
+      "website": "https://apotekajankovic.rs/",
+      "is24h": true,
+      "aliases": [
+        "Apoteka Jankovic 24/7",
+        "Дежурна апотека Јанковић Нови Сад",
+        "Apoteka Jankovic Bulevar oslobodjenja"
+      ],
+      "sources": [
+        "official-registry",
+        "src/pages/guides/apteki-retsepty-serbia.astro"
+      ],
+      "locations": [
+        {
+          "id": "apoteka-jankovic-novi-sad-24h-loc-1",
+          "district": "Liman / Grbavica",
+          "address": {
+            "value": "Bulevar oslobođenja 47, Novi Sad",
+            "verification": "verified",
+            "verifiedAt": "2026-11-24",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "official-registry",
+                "ref": "apotekajankovic.rs",
+                "retrievedAt": "2026-11-24"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 45.25582,
+              "lng": 19.83224
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-24",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "official-registry",
+                "ref": "gps-coordinates",
+                "retrievedAt": "2026-11-24"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "apoteka-nis-cele-kula",
+      "name": "Аптека «Ćele Kula» (Apoteka Niš)",
+      "city": "Niš",
+      "district": "Медијана",
+      "category": "pharmacy",
+      "phone": "+381 18 233 466",
+      "website": "https://www.apotekanic.co.rs/",
+      "is24h": true,
+      "aliases": [
+        "Apoteka Cele Kula",
+        "Дежурна апотека Ћеле Кула Ниш",
+        "Apoteka Nis Higijenski zavod"
+      ],
+      "sources": [
+        "official-registry",
+        "src/pages/guides/apteki-retsepty-serbia.astro"
+      ],
+      "locations": [
+        {
+          "id": "apoteka-nis-cele-kula-loc-1",
+          "district": "Медијана",
+          "address": {
+            "value": "Bulevar dr Zorana Đinđića 50, Niš",
+            "verification": "verified",
+            "verifiedAt": "2026-11-24",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "official-registry",
+                "ref": "apotekanic.co.rs",
+                "retrievedAt": "2026-11-24"
+              }
+            ]
+          },
+          "coordinates": {
+            "value": {
+              "lat": 43.31885,
+              "lng": 21.89852
+            },
+            "verification": "verified",
+            "verifiedAt": "2026-11-24",
+            "verifiedBy": "editor",
+            "provenance": [
+              {
+                "kind": "official-registry",
+                "ref": "gps-coordinates",
+                "retrievedAt": "2026-11-24"
               }
             ]
           }

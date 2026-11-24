@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import type { ClinicCategory, ClinicRegistry } from "./types";
+import type { ClinicCategory, ClinicRegistry, Doctor } from "./types";
 import { publicDoctors } from "./doctors";
 import { computeRating } from "./rating";
 import { cityLabel } from "./site";

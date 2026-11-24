@@ -161,7 +161,53 @@ import { SITE } from "../lib/site";
   const successTitle = document.getElementById("add-success-title");
   const successCopy = document.getElementById("add-success-copy");
   const KEY = "add-doctor";
+  const DRAFT_KEY = "add_doctor_draft_v1";
   const DOCTOR_WEBHOOK_URL = import.meta.env.PUBLIC_DOCTOR_WEBHOOK_URL?.trim() || "";
+
+  // Restore draft if available
+  try {
+    const rawDraft = localStorage.getItem(DRAFT_KEY);
+    if (rawDraft && form) {
+      const draft = JSON.parse(rawDraft);
+      const nameInput = document.getElementById("name") as HTMLInputElement | null;
+      const specInput = document.getElementById("spec") as HTMLInputElement | null;
+      const cityInput = document.getElementById("city") as HTMLInputElement | null;
+      const expInput = document.getElementById("exp") as HTMLInputElement | null;
+      const clinicInput = document.getElementById("clinic") as HTMLInputElement | null;
+      const contactInput = document.getElementById("contact") as HTMLInputElement | null;
+      const aboutInput = document.getElementById("about") as HTMLTextAreaElement | null;
+
+      if (draft.name && nameInput && !nameInput.value) nameInput.value = draft.name;
+      if (draft.spec && specInput && !specInput.value) specInput.value = draft.spec;
+      if (draft.city && cityInput && !cityInput.value) cityInput.value = draft.city;
+      if (draft.exp && expInput && !expInput.value) expInput.value = draft.exp;
+      if (draft.clinic && clinicInput && !clinicInput.value) clinicInput.value = draft.clinic;
+      if (draft.contact && contactInput && !contactInput.value) contactInput.value = draft.contact;
+      if (draft.about && aboutInput && !aboutInput.value) aboutInput.value = draft.about;
+    }
+  } catch {}
+
+  // Auto-save draft on input
+  const persistDraft = () => {
+    try {
+      if (!form) return;
+      const fd = new FormData(form);
+      localStorage.setItem(
+        DRAFT_KEY,
+        JSON.stringify({
+          name: String(fd.get("name") || ""),
+          spec: String(fd.get("spec") || ""),
+          city: String(fd.get("city") || ""),
+          exp: String(fd.get("exp") || ""),
+          clinic: String(fd.get("clinic") || ""),
+          contact: String(fd.get("contact") || ""),
+          about: String(fd.get("about") || ""),
+        })
+      );
+    } catch {}
+  };
+
+  form?.addEventListener("input", persistDraft);
 
   form?.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -282,6 +328,7 @@ import { SITE } from "../lib/site";
       }
 
       markSubmitted(KEY);
+      try { localStorage.removeItem(DRAFT_KEY); } catch {}
       form.reset();
       if (status) status.classList.add("hidden");
       if (successTitle) successTitle.textContent = "Запрос отправлен!";

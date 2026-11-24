@@ -22,6 +22,7 @@ const categoryKeys: ClinicCategory[] = [
   "medical-center",
   "dom-zdravlja",
   "hospital",
+  "pharmacy",
   "dental",
   "laboratory",
   "ordination",
@@ -30,7 +31,8 @@ const categoryKeys: ClinicCategory[] = [
 // Stats
 const totalLocations = allPoints.length;
 const totalDoctors = allPoints.reduce((acc, p) => acc + p.doctorsCount, 0);
-const emergencyCount = allPoints.filter((p) => p.is24h).length;
+const emergencyCount = allPoints.filter((p) => p.is24h && p.category !== "pharmacy").length;
+const pharmacyCount = allPoints.filter((p) => p.category === "pharmacy").length;
 ---
 
 <div class="clinics-map-root w-full my-6">
@@ -42,26 +44,48 @@ const emergencyCount = allPoints.filter((p) => p.is24h).length;
   <!-- Top Filter and Stats Bar -->
   <div class="bg-white rounded-2xl border border-slate-200 p-4 sm:p-5 shadow-sm mb-6">
     <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 border-b border-slate-100">
-      <!-- Search Input -->
-      <div class="relative flex-1 max-w-lg">
-        <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="11" cy="11" r="8"></circle>
-            <path d="m21 21-4.35-4.35"></path>
-          </svg>
-        </span>
-        <input
-          type="text"
-          id="map-search-input"
-          placeholder="Поиск по клинике, адресу, району или врачу..."
-          class="input pl-10 pr-10 text-sm w-full"
-          autocomplete="off"
-        />
+      <!-- Search Input & Geolocation Button -->
+      <div class="flex items-center gap-2 flex-1 max-w-xl">
+        <div class="relative flex-1">
+          <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.35-4.35"></path>
+            </svg>
+          </span>
+          <input
+            type="text"
+            id="map-search-input"
+            placeholder="Поиск по клинике, аптеке, адресу или врачу..."
+            class="input pl-10 pr-10 text-sm w-full"
+            autocomplete="off"
+          />
+          <button
+            type="button"
+            id="map-search-clear"
+            class="hidden absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-slate-600"
+            title="Очистить"
+          >
+            ✕
+          </button>
+        </div>
+
+        <!-- Geolocation Button: "Где я" -->
         <button
           type="button"
-          id="map-search-clear"
-          class="hidden absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-slate-600"
-          title="Очистить"
+          id="btn-geolocation"
+          class="inline-flex items-center justify-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs font-bold bg-brand-50 hover:bg-brand-100 text-brand-700 border border-brand-200 transition-all cursor-pointer shadow-xs whitespace-nowrap active:scale-95 shrink-0"
+          title="Найти ближайшие клиники и дежурные аптеки по моей геопозиции"
+        >
+          <span id="geo-btn-icon" class="text-sm">📍</span>
+          <span id="geo-btn-label">Где я</span>
+        </button>
+
+        <button
+          type="button"
+          id="btn-geo-reset"
+          class="hidden inline-flex items-center justify-center px-2.5 py-2.5 rounded-xl text-xs font-semibold bg-slate-100 hover:bg-slate-200 text-slate-600 border border-slate-200 transition-colors shrink-0 cursor-pointer"
+          title="Сбросить моё местоположение"
         >
           ✕
         </button>
@@ -81,7 +105,26 @@ const emergencyCount = allPoints.filter((p) => p.is24h).length;
           <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
           <span>{emergencyCount} стационара 24/7</span>
         </span>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-50 text-amber-800 font-medium border border-amber-200">
+          <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+          <span>{pharmacyCount} дежурных аптек 24/7</span>
+        </span>
       </div>
+    </div>
+
+    <!-- Geolocation Notification Toast / Banner -->
+    <div
+      id="geo-status-banner"
+      class="hidden mt-3 px-3.5 py-2 rounded-xl text-xs flex items-center justify-between gap-2 border transition-all"
+    >
+      <div class="flex items-center gap-2" id="geo-status-message"></div>
+      <button
+        type="button"
+        id="geo-status-close"
+        class="text-slate-400 hover:text-slate-700 font-bold ml-2 text-sm"
+      >
+        ✕
+      </button>
     </div>
 
     <!-- Filters Row: City & Belgrade District -->
@@ -121,6 +164,11 @@ const emergencyCount = allPoints.filter((p) => p.is24h).length;
             <option value={d}>{d}</option>
           ))}
         </select>
+      </div>
+
+      <!-- Sorting indicator when Geolocation is active -->
+      <div id="geo-sort-indicator" class="hidden text-xs text-brand-700 font-semibold bg-brand-50 px-2.5 py-1 rounded-lg border border-brand-200">
+        📍 Сортировка: по удалённости от вас
       </div>
     </div>
 
@@ -257,10 +305,17 @@ const emergencyCount = allPoints.filter((p) => p.is24h).length;
     let currentCategory = "all";
     let searchQuery = "";
 
+    // Geolocation state
+    let userLocation = null; // { lat, lng, accuracy }
+    let userMarker = null;
+    let userCircle = null;
+    let isLocating = false;
+
     const CATEGORY_COLORS = {
       "medical-center": "#2563eb",
       "dom-zdravlja": "#0891b2",
       hospital: "#dc2626",
+      pharmacy: "#ca8a04",
       dental: "#16a34a",
       laboratory: "#ea580c",
       ordination: "#9333ea",
@@ -270,9 +325,16 @@ const emergencyCount = allPoints.filter((p) => p.is24h).length;
       "medical-center": "Медцентр",
       "dom-zdravlja": "Дом здравља",
       hospital: "Стационар 24/7",
+      pharmacy: "Дежурная аптека 24/7",
       dental: "Стоматология",
       laboratory: "Лаборатория 24/7",
       ordination: "Ординация",
+    };
+
+    const CITY_CENTERS = {
+      "Белград": { lat: 44.8125, lng: 20.4612 },
+      "Нови-Сад": { lat: 45.2558, lng: 19.8458 },
+      "Ниш": { lat: 43.3209, lng: 21.8958 },
     };
 
     function initMapData() {
@@ -286,11 +348,71 @@ const emergencyCount = allPoints.filter((p) => p.is24h).length;
       }
     }
 
+    function calculateDistanceKm(lat1, lon1, lat2, lon2) {
+      const R = 6371; // km
+      const dLat = ((lat2 - lat1) * Math.PI) / 180;
+      const dLon = ((lon2 - lon1) * Math.PI) / 180;
+      const a =
+        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+        Math.cos((lat1 * Math.PI) / 180) *
+          Math.cos((lat2 * Math.PI) / 180) *
+          Math.sin(dLon / 2) *
+          Math.sin(dLon / 2);
+      const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+      return R * c;
+    }
+
+    function formatDistance(distKm) {
+      if (typeof distKm !== "number" || isNaN(distKm)) return "";
+      if (distKm < 1) {
+        return `${Math.round(distKm * 1000)} м`;
+      }
+      return `${distKm.toFixed(1)} км`;
+    }
+
+    function findClosestSerbianCity(lat, lng) {
+      let closest = "Белград";
+      let minDist = Infinity;
+      for (const [cityName, center] of Object.entries(CITY_CENTERS)) {
+        const d = calculateDistanceKm(lat, lng, center.lat, center.lng);
+        if (d < minDist) {
+          minDist = d;
+          closest = cityName;
+        }
+      }
+      return { city: closest, distanceToCityKm: minDist };
+    }
+
+    function showGeoBanner(message, type = "info") {
+      const banner = document.getElementById("geo-status-banner");
+      const msgEl = document.getElementById("geo-status-message");
+      if (!banner || !msgEl) return;
+
+      banner.classList.remove("hidden", "bg-rose-50", "border-rose-200", "text-rose-900", "bg-blue-50", "border-blue-200", "text-blue-900", "bg-amber-50", "border-amber-200", "text-amber-900");
+
+      if (type === "error") {
+        banner.classList.add("bg-rose-50", "border-rose-200", "text-rose-900");
+      } else if (type === "warning") {
+        banner.classList.add("bg-amber-50", "border-amber-200", "text-amber-900");
+      } else {
+        banner.classList.add("bg-blue-50", "border-blue-200", "text-blue-900");
+      }
+
+      msgEl.innerHTML = message;
+      banner.classList.remove("hidden");
+    }
+
+    function hideGeoBanner() {
+      const banner = document.getElementById("geo-status-banner");
+      if (banner) banner.classList.add("hidden");
+    }
+
     function createMarkerIcon(point) {
       const color = CATEGORY_COLORS[point.category] || "#2563eb";
-      const isHospital = point.category === "hospital" || point.is24h;
-      const size = isHospital ? 40 : 32;
-      const iconSize = isHospital ? [size, size + 8] : [size, size + 6];
+      const isHospital = point.category === "hospital" || (point.is24h && point.category !== "pharmacy");
+      const isPharmacy = point.category === "pharmacy";
+      const size = isHospital || isPharmacy ? 40 : 32;
+      const iconSize = isHospital || isPharmacy ? [size, size + 8] : [size, size + 6];
 
       // Custom SVG Marker Pin
       let symbolSvg = "";
@@ -302,6 +424,9 @@ const emergencyCount = allPoints.filter((p) => p.is24h).length;
         symbolSvg = '<rect x="10" y="5" width="4" height="14" fill="#fff" rx="1"/><rect x="5" y="10" width="14" height="4" fill="#fff" rx="1"/>';
       } else if (point.category === "dom-zdravlja") {
         symbolSvg = '<path d="M3 21h18M4 21V9l8-6 8 6v12h-6v-7h-4v7H4zM9 9h2v2H9V9zm4 0h2v2h-2V9zm-4 4h2v2H9v-2zm4 0h2v2h-2v-2z" fill="#fff"/>';
+      } else if (point.category === "pharmacy") {
+        // Mortar / capsule pharmacy symbol
+        symbolSvg = '<path d="M6 9h12a1 1 0 0 1 1 1v2a6 6 0 0 1-6 6 6 6 0 0 1-6-6v-2a1 1 0 0 1 1-1z" fill="#fff"/><path d="M9 19h6v2H9zM10 5h4v4h-4z" fill="#fff"/>';
       } else {
         // Medical center / ordination cross
         symbolSvg = '<path d="M10 6h4v4h4v4h-4v4h-4v-4H6v-4h4V6z" fill="#fff"/>';
@@ -309,7 +434,9 @@ const emergencyCount = allPoints.filter((p) => p.is24h).length;
 
       const pulseHtml = isHospital
         ? `<span class="absolute -inset-1 rounded-full bg-rose-500/30 animate-ping"></span>`
-        : "";
+        : isPharmacy
+          ? `<span class="absolute -inset-1 rounded-full bg-amber-500/30 animate-ping"></span>`
+          : "";
 
       const html = `
         <div class="relative flex items-center justify-center cursor-pointer transition-transform duration-200 hover:scale-115" style="width:${size}px; height:${size}px;">
@@ -338,8 +465,14 @@ const emergencyCount = allPoints.filter((p) => p.is24h).length;
       const catLabel = CATEGORY_LABELS[point.category] || "Клиника";
       const routeUrl = `https://www.google.com/maps/dir/?api=1&destination=${point.lat},${point.lng}`;
 
-      const emergencyBadge = point.is24h
-        ? `<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-rose-100 text-rose-800 border border-rose-300">🚨 24/7 Экстренная помощь</span>`
+      const emergencyBadge = point.category === "pharmacy"
+        ? `<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 text-amber-900 border border-amber-300">💊 Дежурная 24/7 (00–24)</span>`
+        : point.is24h
+          ? `<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-rose-100 text-rose-800 border border-rose-300">🚨 24/7 Экстренная помощь</span>`
+          : "";
+
+      const distanceBadge = point._distKm != null
+        ? `<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-blue-100 text-blue-800 border border-blue-200">📍 ${formatDistance(point._distKm)} от вас</span>`
         : "";
 
       let doctorsHtml = "";
@@ -407,6 +540,17 @@ const emergencyCount = allPoints.filter((p) => p.is24h).length;
            </div>`
         : "";
 
+      const pharmacyNotice = point.category === "pharmacy"
+        ? `<div class="mt-2.5 text-[11px] bg-amber-50 border border-amber-200 text-amber-950 rounded-lg p-2 leading-relaxed">
+            💊 <strong>Круглосуточный дежурный пункт (00–24):</strong> Отпуск рецептурных медикаментов (включая государственные рецепты фонда RFZO и рецепты частных клиник), базовая аптечка, жаропонижающие и экстренные средства.
+            <div class="mt-1 pt-1 border-t border-amber-200/60">
+              <a href="/guides/apteki-retsepty-serbia/" target="_blank" class="text-amber-800 hover:text-amber-950 font-semibold underline inline-flex items-center gap-0.5">
+                Гид по сербским аналогам лекарств ↗
+              </a>
+            </div>
+           </div>`
+        : "";
+
       return `
         <div class="clinic-popup p-1 text-slate-800 min-w-[260px] max-w-[320px]">
           <div class="flex items-center gap-2 mb-1 flex-wrap">
@@ -414,6 +558,7 @@ const emergencyCount = allPoints.filter((p) => p.is24h).length;
               ${catLabel}
             </span>
             ${emergencyBadge}
+            ${distanceBadge}
           </div>
 
           <h3 class="text-sm font-bold text-slate-900 leading-snug mt-1">${point.name}</h3>
@@ -424,6 +569,7 @@ const emergencyCount = allPoints.filter((p) => p.is24h).length;
           </div>
 
           ${domZdravljaNotice}
+          ${pharmacyNotice}
 
           <div class="mt-3 flex items-center gap-2 flex-wrap">
             <a href="${routeUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg bg-brand-600 hover:bg-brand-700 text-white text-xs font-semibold shadow-xs">
@@ -461,8 +607,16 @@ const emergencyCount = allPoints.filter((p) => p.is24h).length;
         .map((p) => {
           const color = CATEGORY_COLORS[p.category] || "#2563eb";
           const catLabel = CATEGORY_LABELS[p.category] || "Клиника";
-          const emergencyBadge = p.is24h
-            ? `<span class="inline-block px-2 py-0.5 rounded-full text-[10px] font-bold bg-rose-100 text-rose-800 border border-rose-200">24/7</span>`
+          const emergencyBadge = p.category === "pharmacy"
+            ? `<span class="inline-block px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 text-amber-900 border border-amber-300">24/7</span>`
+            : p.is24h
+              ? `<span class="inline-block px-2 py-0.5 rounded-full text-[10px] font-bold bg-rose-100 text-rose-800 border border-rose-200">24/7</span>`
+              : "";
+
+          const distanceBadge = p._distKm != null
+            ? `<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-blue-50 text-blue-700 text-[11px] font-bold border border-blue-200">
+                📍 ${formatDistance(p._distKm)}
+              </span>`
             : "";
 
           const doctorsBadge =
@@ -483,6 +637,7 @@ const emergencyCount = allPoints.filter((p) => p.is24h).length;
                     ${catLabel}
                   </span>
                   ${emergencyBadge}
+                  ${distanceBadge}
                 </div>
                 ${doctorsBadge}
               </div>
@@ -522,10 +677,21 @@ const emergencyCount = allPoints.filter((p) => p.is24h).length;
       const marker = markersMap.get(id);
       if (!marker || !map) return;
 
+      // On mobile viewports, switch view to map tab and scroll up smoothly
+      if (window.innerWidth < 1024) {
+        const btnToggleMap = document.getElementById("btn-toggle-map");
+        if (btnToggleMap && !btnToggleMap.classList.contains("shadow-xs")) {
+          btnToggleMap.click();
+        }
+        const mapContainer = document.getElementById("map-col");
+        if (mapContainer) {
+          mapContainer.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+
       const latLng = marker.getLatLng();
       if (clusterGroup && clusterGroup.hasLayer(marker)) {
-        clusterGroup.zoomToShowLayer(marker, () => {
-          map.setView(latLng, 16, { animate: true });
+        clusterGroup.zoomToShowLayer(marker, function () {
           marker.openPopup();
         });
       } else {
@@ -547,7 +713,19 @@ const emergencyCount = allPoints.filter((p) => p.is24h).length;
     function filterPoints() {
       const q = searchQuery.toLowerCase().trim();
 
-      return allPoints.filter((point) => {
+      const filtered = allPoints.filter((point) => {
+        // Calculate distance if user location is active
+        if (userLocation) {
+          point._distKm = calculateDistanceKm(
+            userLocation.lat,
+            userLocation.lng,
+            point.lat,
+            point.lng
+          );
+        } else {
+          point._distKm = null;
+        }
+
         // City match
         if (currentCity !== "Все города") {
           const pointCity = point.cityRu || point.city;
@@ -589,6 +767,13 @@ const emergencyCount = allPoints.filter((p) => p.is24h).length;
 
         return true;
       });
+
+      // Sort: if userLocation is active, sort by distance ascending
+      if (userLocation) {
+        filtered.sort((a, b) => (a._distKm ?? Infinity) - (b._distKm ?? Infinity));
+      }
+
+      return filtered;
     }
 
     function updateMapAndList(shouldFitBounds) {
@@ -632,6 +817,174 @@ const emergencyCount = allPoints.filter((p) => p.is24h).length;
       }
     }
 
+    function handleGeolocation() {
+      const btnGeo = document.getElementById("btn-geolocation");
+      const btnReset = document.getElementById("btn-geo-reset");
+      const iconSpan = document.getElementById("geo-btn-icon");
+      const labelSpan = document.getElementById("geo-btn-label");
+      const sortIndicator = document.getElementById("geo-sort-indicator");
+
+      if (!navigator.geolocation) {
+        showGeoBanner("Геолокация не поддерживается вашим браузером.", "error");
+        return;
+      }
+
+      if (isLocating) return;
+      isLocating = true;
+
+      if (iconSpan) iconSpan.innerHTML = `<span class="inline-block w-3.5 h-3.5 border-2 border-brand-600 border-t-transparent rounded-full animate-spin"></span>`;
+      if (labelSpan) labelSpan.textContent = "Поиск...";
+
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          isLocating = false;
+          if (iconSpan) iconSpan.textContent = "📍";
+          if (labelSpan) labelSpan.textContent = "Моя позиция";
+
+          if (btnGeo) {
+            btnGeo.classList.remove("bg-brand-50", "text-brand-700");
+            btnGeo.classList.add("bg-brand-600", "text-white", "shadow-sm");
+          }
+          if (btnReset) btnReset.classList.remove("hidden");
+          if (sortIndicator) sortIndicator.classList.remove("hidden");
+
+          const lat = position.coords.latitude;
+          const lng = position.coords.longitude;
+          const accuracy = position.coords.accuracy || 50;
+
+          userLocation = { lat, lng, accuracy };
+
+          // Add / update Leaflet marker for user
+          if (userMarker) {
+            userMarker.setLatLng([lat, lng]);
+          } else {
+            const userIcon = L.divIcon({
+              className: "custom-user-marker",
+              html: `
+                <div class="user-location-marker-container">
+                  <span class="user-location-pulse"></span>
+                  <span class="user-location-dot"></span>
+                </div>
+              `,
+              iconSize: [24, 24],
+              iconAnchor: [12, 12],
+            });
+
+            userMarker = L.marker([lat, lng], {
+              icon: userIcon,
+              zIndexOffset: 1000,
+            }).addTo(map);
+
+            userMarker.bindPopup(`
+              <div class="text-xs p-1">
+                <strong>📍 Ваше местоположение</strong><br/>
+                <span class="text-slate-500">Точность: ~${Math.round(accuracy)} м</span>
+              </div>
+            `);
+          }
+
+          if (userCircle) {
+            userCircle.setLatLng([lat, lng]);
+            userCircle.setRadius(accuracy);
+          } else {
+            userCircle = L.circle([lat, lng], {
+              radius: accuracy,
+              color: "#3b82f6",
+              fillColor: "#3b82f6",
+              fillOpacity: 0.12,
+              weight: 1.5,
+            }).addTo(map);
+          }
+
+          // Check if user is inside or outside Serbia
+          const closest = findClosestSerbianCity(lat, lng);
+
+          if (closest.distanceToCityKm > 200) {
+            // User is far from Serbia (>200 km)
+            showGeoBanner(
+              `📍 Вы находитесь вне Сербии (~${Math.round(closest.distanceToCityKm)} км). Карта центрирована на <strong>${closest.city}</strong>, клиники отсортированы по удалённости от вашей позиции.`,
+              "warning"
+            );
+            // Center on closest Serbian city
+            const center = CITY_CENTERS[closest.city] || CITY_CENTERS["Белград"];
+            map.setView([center.lat, center.lng], 13, { animate: true });
+          } else {
+            // User is in Serbia! Automatically switch city
+            showGeoBanner(
+              `📍 Ваша геопозиция определена (точность ~${Math.round(accuracy)} м). Ближайшие учреждения отсортированы сверху.`,
+              "info"
+            );
+
+            // Automatically switch city to closest
+            currentCity = closest.city;
+            document.querySelectorAll(".btn-city-filter").forEach((b) => {
+              if (b.getAttribute("data-city") === closest.city) {
+                b.classList.remove("bg-slate-100", "text-slate-700");
+                b.classList.add("bg-brand-600", "text-white", "shadow-xs");
+              } else {
+                b.classList.remove("bg-brand-600", "text-white", "shadow-xs");
+                b.classList.add("bg-slate-100", "text-slate-700");
+              }
+            });
+
+            map.setView([lat, lng], 14, { animate: true });
+          }
+
+          updateMapAndList(false);
+        },
+        (error) => {
+          isLocating = false;
+          if (iconSpan) iconSpan.textContent = "📍";
+          if (labelSpan) labelSpan.textContent = "Где я";
+
+          let msg = "Не удалось определить геопозицию.";
+          if (error.code === 1) {
+            msg = "Доступ к геопозиции заблокирован. Разрешите доступ к местоположению в настройках браузера.";
+          } else if (error.code === 2) {
+            msg = "Координаты местоположения недоступны.";
+          } else if (error.code === 3) {
+            msg = "Время ожидания ответа геопозиции истекло.";
+          }
+          showGeoBanner(msg, "error");
+        },
+        {
+          enableHighAccuracy: true,
+          timeout: 10000,
+          maximumAge: 60000,
+        }
+      );
+    }
+
+    function resetGeolocation() {
+      userLocation = null;
+      if (userMarker && map) {
+        map.removeLayer(userMarker);
+        userMarker = null;
+      }
+      if (userCircle && map) {
+        map.removeLayer(userCircle);
+        userCircle = null;
+      }
+
+      const btnGeo = document.getElementById("btn-geolocation");
+      const btnReset = document.getElementById("btn-geo-reset");
+      const iconSpan = document.getElementById("geo-btn-icon");
+      const labelSpan = document.getElementById("geo-btn-label");
+      const sortIndicator = document.getElementById("geo-sort-indicator");
+
+      if (btnGeo) {
+        btnGeo.classList.add("bg-brand-50", "text-brand-700");
+        btnGeo.classList.remove("bg-brand-600", "text-white", "shadow-sm");
+      }
+      if (btnReset) btnReset.classList.add("hidden");
+      if (iconSpan) iconSpan.textContent = "📍";
+      if (labelSpan) labelSpan.textContent = "Где я";
+      if (sortIndicator) sortIndicator.classList.add("hidden");
+
+      hideGeoBanner();
+      updateMapAndList(true);
+    }
+
     function initLeaflet() {
       const container = document.getElementById("clinics-leaflet-map");
       const loadingOverlay = document.getElementById("map-loading");
@@ -669,16 +1022,120 @@ const emergencyCount = allPoints.filter((p) => p.is24h).length;
 
       map.addLayer(clusterGroup);
 
+      // Add a custom Leaflet locate control on the map
+      const locateControl = L.Control.extend({
+        options: { position: "bottomright" },
+        onAdd: function () {
+          const div = L.DomUtil.create(
+            "div",
+            "leaflet-bar leaflet-control leaflet-control-custom cursor-pointer"
+          );
+          div.style.backgroundColor = "white";
+          div.style.width = "34px";
+          div.style.height = "34px";
+          div.style.display = "flex";
+          div.style.alignItems = "center";
+          div.style.justifyContent = "center";
+          div.style.fontSize = "16px";
+          div.style.borderRadius = "8px";
+          div.style.boxShadow = "0 2px 6px rgba(0,0,0,0.15)";
+          div.title = "Определить моё местоположение (Где я)";
+          div.innerHTML = "📍";
+          div.onclick = function (e) {
+            L.DomEvent.stopPropagation(e);
+            handleGeolocation();
+          };
+          return div;
+        },
+      });
+      map.addControl(new locateControl());
+
       // Hide loading
       if (loadingOverlay) {
         loadingOverlay.style.opacity = "0";
         setTimeout(() => loadingOverlay.remove(), 300);
       }
 
+      // Check URL parameters for direct linking
+      const params = new URLSearchParams(window.location.search);
+      const clinicParam = params.get("clinic") || params.get("id");
+      const searchParam = params.get("search");
+      const cityParam = params.get("city");
+      const catParam = params.get("category");
+      const latParam = parseFloat(params.get("lat") || "");
+      const lngParam = parseFloat(params.get("lng") || "");
+
+      if (cityParam && ["Белград", "Нови-Сад", "Ниш"].includes(cityParam)) {
+        currentCity = cityParam;
+        document.querySelectorAll(".btn-city-filter").forEach((b) => {
+          if (b.getAttribute("data-city") === cityParam) {
+            b.classList.remove("bg-slate-100", "text-slate-700");
+            b.classList.add("bg-brand-600", "text-white", "shadow-xs");
+          } else {
+            b.classList.remove("bg-brand-600", "text-white", "shadow-xs");
+            b.classList.add("bg-slate-100", "text-slate-700");
+          }
+        });
+      }
+
+      if (catParam) {
+        currentCategory = catParam;
+        document.querySelectorAll(".btn-category-filter").forEach((b) => {
+          if (b.getAttribute("data-category") === catParam) {
+            b.classList.add("ring-2", "ring-offset-1", "ring-brand-500", "font-semibold", "shadow-xs");
+          } else {
+            b.classList.remove("ring-2", "ring-brand-500", "font-semibold");
+          }
+        });
+      }
+
+      if (searchParam) {
+        searchQuery = searchParam;
+        const searchInput = document.getElementById("map-search-input");
+        const searchClear = document.getElementById("map-search-clear");
+        if (searchInput) searchInput.value = searchParam;
+        if (searchClear) searchClear.classList.remove("hidden");
+      }
+
       updateMapAndList(false);
+
+      // Deep link to specific clinic / coordinate
+      if (clinicParam || (!isNaN(latParam) && !isNaN(lngParam))) {
+        setTimeout(() => {
+          let targetPoint = null;
+          if (clinicParam) {
+            targetPoint = allPoints.find((p) => p.clinicId === clinicParam || p.id === clinicParam);
+          }
+          if (!targetPoint && !isNaN(latParam) && !isNaN(lngParam)) {
+            targetPoint = allPoints.find(
+              (p) => Math.abs(p.lat - latParam) < 0.001 && Math.abs(p.lng - lngParam) < 0.001
+            );
+          }
+
+          if (targetPoint) {
+            focusMarker(targetPoint.id);
+          }
+        }, 400);
+      }
     }
 
     function setupEventListeners() {
+      // Geolocation button
+      const btnGeo = document.getElementById("btn-geolocation");
+      if (btnGeo) {
+        btnGeo.addEventListener("click", handleGeolocation);
+      }
+
+      const btnResetGeo = document.getElementById("btn-geo-reset");
+      if (btnResetGeo) {
+        btnResetGeo.addEventListener("click", resetGeolocation);
+      }
+
+      const closeBannerBtn = document.getElementById("geo-status-close");
+      if (closeBannerBtn) {
+        closeBannerBtn.addEventListener("click", hideGeoBanner);
+      }
+
       // City buttons
       document.querySelectorAll(".btn-city-filter").forEach((btn) => {
         btn.addEventListener("click", () => {
@@ -856,6 +1313,46 @@ const emergencyCount = allPoints.filter((p) => p.is24h).length;
   .custom-clinic-marker {
     background: transparent !important;
     border: none !important;
+  }
+  .custom-user-marker {
+    background: transparent !important;
+    border: none !important;
+  }
+  .user-location-marker-container {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .user-location-dot {
+    width: 14px;
+    height: 14px;
+    background-color: #2563eb;
+    border: 2.5px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    z-index: 2;
+  }
+  .user-location-pulse {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(37, 99, 235, 0.4);
+    animation: user-loc-ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+    z-index: 1;
+  }
+  @keyframes user-loc-ping {
+    0% {
+      transform: scale(0.8);
+      opacity: 0.9;
+    }
+    100% {
+      transform: scale(2.4);
+      opacity: 0;
+    }
   }
   .leaflet-popup-content-wrapper {
     border-radius: 1rem !important;
