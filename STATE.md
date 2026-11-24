@@ -92,6 +92,7 @@ Legacy: `https://rudoctors.github.io` (настроен перенос адре�
 - `npm run build` — **1766 pages**, sitemap-index; **1521 публичный профиль** врача + 5 архивных redirect; **2128 отзывов**.
 - `npm run detect:dups` — total 1526 (1521 visible + 5 admin/archived), 0 visible dup groups.
 - Live счётчик главной: `1521 врач 2128 отзывов 45 специальностей 26 городов`.
+- **Гео и карты (TSK-RD-16, 17, 18):** кнопка геолокации «Где я» на `/map/` с расчетом расстояний Haversine, 8 верифицированных дежурных аптек 24/7 в `registry.json` с отдельным фильтром/слоем, компонент `DoctorMiniMap.astro` в карточках врачей с табами филиалов и deep-link на `/map/?clinic=...` — внедрены и проверены.
 - dist: packages noindex, sitemap без `/packages`, 0 «Рекомендуем» в HTML.
 - Live smoke: `/`, `/doctors/` (+`?page=2` client), `/cities/nis/`, `/llms.txt`, `/404`, forms, doctor profile — **200**; data-bio=0; www.t.me=0; pager present; honeypot present.
 - CI `3050da7` → run `36020752013` — **success** (build 21s + deploy 2m13s); IndexNow ping OK.
