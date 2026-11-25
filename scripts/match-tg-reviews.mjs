@@ -54,21 +54,13 @@ const clinicHandles = new Set([
   "search",
 ]);
 
+import { sanitizeAuthor } from "./sanitize-review-authors.mjs";
+
 function maskAuthor(author, isSensitive) {
   if (!author || author.trim() === "" || author === "undefined") {
     return "Пациент из сообщества";
   }
-  const clean = author.trim();
-  if (!isSensitive) return clean;
-
-  const parts = clean.split(/\s+/);
-  if (parts.length >= 2) {
-    return `${parts[0]} ${parts[1][0]}.`;
-  }
-  if (clean.length > 8 && /[a-z]/i.test(clean)) {
-    return clean.slice(0, 4) + "...";
-  }
-  return clean;
+  return sanitizeAuthor(author);
 }
 
 function cleanReviewText(text) {

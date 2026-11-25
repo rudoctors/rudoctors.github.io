@@ -165,3 +165,89 @@ export function siteStats() {
     reviews,
   };
 }
+
+export function cleanAuthorName(raw?: string | null): string {
+  if (!raw || typeof raw !== "string") return "Пациент";
+  let str = raw.trim();
+  if (!str) return "Пациент";
+  if (
+    /^пациент/i.test(str) ||
+    /^участник чата/i.test(str) ||
+    /^pacijent/i.test(str) ||
+    /^anonymous/i.test(str)
+  ) {
+    return str;
+  }
+  if (str.includes("|")) str = str.split("|")[0].trim();
+  if (str.includes(" — ")) str = str.split(" — ")[0].trim();
+  if (str.includes(" - ")) str = str.split(" - ")[0].trim();
+  if (/^(доктор|врач|dr\.?)\s+/i.test(str)) return "Пациент";
+  str = str.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/gu, " ").trim();
+  const parts = str.split(/\s+/).filter(Boolean);
+  if (parts.length === 0) return "Пациент";
+  if (parts.length === 1) {
+    const single = parts[0].replace(/[\.\|\,\?\!\_\-]+$/g, "").trim();
+    return single.replace(/[^\p{L}\p{N}]+$/u, "") || "Пациент";
+  }
+  if (/массаж|ногти|брови|ресницы|аренда|перевод|репетитор|фотограф|виза|туры/i.test(parts[0])) {
+    const validNames = parts.filter(
+      (p) => /^[А-ЯЁ][а-яё]+$/.test(p) || /^[A-Z][a-z]+$/.test(p)
+    );
+    if (validNames.length > 0) return validNames[validNames.length - 1];
+    return "Пациент";
+  }
+  const p0 = parts[0];
+  const p1 = parts[1];
+  const isP0Surname = /(?:ова|ева|ина|ская|ов|ев|ин|ский|ova|eva|ina|skaya|sky|skiy)$/i.test(p0);
+  const isP1Name =
+    /^[А-ЯЁA-Z][а-яёa-z]+$/.test(p1) &&
+    p1.length > 2 &&
+    !/(?:ова|ева|ина|ская|ов|ев|ин|ский|ova|eva|ina|skaya|sky|skiy)$/i.test(p1);
+  if (isP0Surname && isP1Name) {
+    return p1.replace(/[\.\|\,\?\!\_\-]+$/g, "").trim().replace(/[^\p{L}\p{N}]+$/u, "");
+  }
+  let name = parts[0].replace(/[\.\|\,\?\!\_\-]+$/g, "").trim();
+  name = name.replace(/[^\p{L}\p{N}]+$/u, "");
+  return name || "Пациент";
+}
+
+export function isChildDoctor(doc: Doctor): boolean {
+  const specs = doc.specializations || [];
+  if (
+    specs.some(
+      (s) =>
+        s === "pediatrician" ||
+        s === "child_psychiatrist" ||
+        s === "psychiatrist_child" ||
+        s === "child_endocrinologist"
+    )
+  ) {
+    return true;
+  }
+  const text = `${doc.specializationText || ""} ${doc.bio || ""}`.toLowerCase();
+  return (
+    text.includes("детск") ||
+    text.includes("педиатр") ||
+    text.includes("детей") ||
+    text.includes("ребенк") ||
+    text.includes("дети") ||
+    text.includes("приём детей") ||
+    text.includes("прием детей") ||
+    text.includes("дец")
+  );
+}
+
+export function isAdultDoctor(doc: Doctor): boolean {
+  const specs = doc.specializations || [];
+  const onlyChildSpecs =
+    specs.length > 0 &&
+    specs.every(
+      (s) =>
+        s === "pediatrician" ||
+        s === "child_psychiatrist" ||
+        s === "psychiatrist_child" ||
+        s === "child_endocrinologist"
+    );
+  if (onlyChildSpecs) return false;
+  return true;
+}

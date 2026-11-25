@@ -33,6 +33,7 @@ export interface MapClinicPoint {
   phone?: string;
   website?: string;
   is24h: boolean;
+  isPediatricEmergency?: boolean;
   doctorsCount: number;
   doctors: MapDoctorPreview[];
 }
@@ -213,6 +214,11 @@ export function getMapClinicPoints(): MapClinicPoint[] {
         phone: clinic.phone,
         website: clinic.website,
         is24h: Boolean(clinic.is24h),
+        isPediatricEmergency: Boolean(
+          (clinic as any).isPediatricEmergency ||
+            clinic.id === "tirsova-belgrade" ||
+            clinic.id === "institut-majka-dete-belgrade"
+        ),
         doctorsCount: doctorPreviews.length,
         doctors: doctorPreviews,
       });

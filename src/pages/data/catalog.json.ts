@@ -1,5 +1,5 @@
 import type { APIRoute } from "astro";
-import { publicDoctors, specLabel } from "../../lib/doctors";
+import { publicDoctors, specLabel, isChildDoctor, isAdultDoctor } from "../../lib/doctors";
 import { computeRating } from "../../lib/rating";
 
 const PAGE_SIZE = 24;
@@ -62,6 +62,8 @@ export const GET: APIRoute = async () => {
     if (doctor.photo) rec.p = doctor.photo;
     if (doctor.featured) rec.ft = true;
     if (doctor.license?.verified && doctor.license.number) rec.lk = doctor.license.number;
+    if (isChildDoctor(doctor)) rec.ch = 1;
+    if (isAdultDoctor(doctor)) rec.ad = 1;
     const bio = doctor.bio ? truncateText(decodeHtml(doctor.bio), 160) : "";
     if (bio) rec.b = bio;
     return rec;

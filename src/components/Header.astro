@@ -1,5 +1,4 @@
 ---
-import { SITE } from "../lib/site";
 
 const nav = [
   { href: "/doctors/", label: "Врачи" },
@@ -51,16 +50,8 @@ function isNavActive(itemHref: string, currentPath: string): boolean {
     </nav>
 
     <div class="flex items-center gap-2">
+      <a href="/doctors/?origin=ru" class="btn-ghost hidden sm:inline-flex text-xs font-semibold text-slate-700 hover:text-brand-700">Русскоязычные врачи</a>
       <a href="/doctors/" class="btn-primary hidden sm:inline-flex">Найти врача</a>
-      <a
-        href={SITE.telegram}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn-ghost"
-        title="Чат «Медицина в Сербии»"
-      >
-        TG
-      </a>
       <button
         type="button"
         id="mobile-menu-btn"
@@ -91,6 +82,7 @@ function isNavActive(itemHref: string, currentPath: string): boolean {
           </a>
         ))
       }
+      <a href="/doctors/?origin=ru" class="btn-ghost text-left px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50">Русскоязычные врачи</a>
       <a href="/doctors/" class="btn-primary mt-1">Найти врача</a>
     </nav>
   </div>

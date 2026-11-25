@@ -1,7 +1,7 @@
 ---
 import type { Doctor } from "../lib/types";
 import { computeRating } from "../lib/rating";
-import { specLabel } from "../lib/doctors";
+import { specLabel, isChildDoctor } from "../lib/doctors";
 import { cityLabel } from "../lib/site";
 import Stars from "./Stars.astro";
 
@@ -11,6 +11,7 @@ interface Props {
 }
 const { doctor, priority = false } = Astro.props;
 const rating = computeRating(doctor);
+const isChild = isChildDoctor(doctor);
 const initials = doctor.name
   .split(/\s+/)
   .slice(0, 2)
@@ -76,6 +77,12 @@ const cleanBio = doctor.bio ? decodeHtml(doctor.bio) : "";
             <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-medium bg-emerald-50 text-emerald-800 ring-1 ring-emerald-600/20 shrink-0" title="Официальная лицензия Лекарской палаты Сербии (LKS) подтверждена">
               <svg class="w-3 h-3 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
               <span>Лицензия LKS №{doctor.license.number}</span>
+            </span>
+          )}
+          {isChild && (
+            <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-medium bg-amber-50 text-amber-800 ring-1 ring-amber-600/20 shrink-0" title="Принимает детей / Педиатрический приём">
+              <span>👶</span>
+              <span>Дети</span>
             </span>
           )}
         </div>

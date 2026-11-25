@@ -52,18 +52,18 @@ const jsonLd = {
     <div class="mb-8">
       <h1 class="text-3xl md:text-4xl font-extrabold text-navy-900">Врачи</h1>
       <p class="mt-2 text-slate-600">
-        Фильтруйте по специальности, городу, категории специалистов и формату приёма. Без фильтров — страницы по 24 карточки.
+        Фильтруйте по специальности, городу, категории специалистов и формату приёма.
       </p>
 
       <div class="mt-4 flex flex-wrap gap-2 text-xs">
         <a href="/doctors/" class="chip bg-brand-50 text-brand-700 font-semibold ring-1 ring-brand-600/20">
           Все врачи ({total})
         </a>
-        <a href="/doctors/serbian/" class="chip bg-rose-50 text-rose-700 hover:bg-rose-100 font-semibold ring-1 ring-rose-600/20 flex items-center gap-1 transition">
-          <span aria-hidden="true">🇷🇸</span> <span>Сербские врачи</span>
-        </a>
         <a href="/doctors/?origin=ru" class="chip hover:bg-slate-200 transition">
           Русскоязычные врачи
+        </a>
+        <a href="/doctors/serbian/" class="chip hover:bg-slate-200 transition flex items-center gap-1">
+          <span aria-hidden="true">🇷🇸</span> <span>Сербские врачи</span>
         </a>
       </div>
     </div>
@@ -93,6 +93,7 @@ const jsonLd = {
         <select id="sort" name="sort" class="input">
           <option value="rating">По рейтингу</option>
           <option value="reviews">По числу отзывов</option>
+          <option value="children">Сначала детские</option>
           <option value="name">По имени</option>
           <option value="exp">По стажу</option>
         </select>
@@ -114,8 +115,16 @@ const jsonLd = {
           <label class="text-xs font-semibold text-slate-500" for="origin">Категория:</label>
           <select id="origin" name="origin" class="input !py-1 !px-2 !text-xs !w-auto">
             <option value="">Все специалисты</option>
-            <option value="rs">🇷🇸 Сербские врачи</option>
             <option value="ru">Русскоязычные врачи</option>
+            <option value="rs">🇷🇸 Сербские врачи</option>
+          </select>
+        </div>
+        <div class="inline-flex items-center gap-1.5 text-sm text-slate-600 ml-0 sm:ml-2">
+          <label class="text-xs font-semibold text-slate-500" for="audience">Пациенты:</label>
+          <select id="audience" name="audience" class="input !py-1 !px-2 !text-xs !w-auto">
+            <option value="">Все возрасты</option>
+            <option value="child">👶 Детские врачи</option>
+            <option value="adult">Взрослые врачи</option>
           </select>
         </div>
         <button type="button" id="reset-filters" class="text-sm text-slate-500 hover:text-slate-800 underline-offset-2 hover:underline ml-auto">
@@ -199,6 +208,8 @@ const jsonLd = {
       b?: string;
       ft?: boolean;
       lk?: string;
+      ch?: number;
+      ad?: number;
       hay?: string;
     }
 
@@ -317,7 +328,7 @@ const jsonLd = {
       const baseDocTitle = "Каталог врачей · Rudoctors";
       let page = 1;
       // State currently reflected by the DOM (the static first page matches this default).
-      let renderedState = ["", "", "", "", ""].join("|") + "|1|rating";
+      let renderedState = ["", "", "", "", "", "", ""].join("|") + "|1|rating";
 
       const params = new URLSearchParams(location.search);
       const setFromParams = () => {
@@ -386,11 +397,15 @@ const jsonLd = {
           r.lk
             ? `<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-medium bg-emerald-50 text-emerald-800 ring-1 ring-emerald-600/20 shrink-0" title="Официальная лицензия Лекарской палаты Сербии (LKS) подтверждена"><svg class="w-3 h-3 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg><span>Лицензия LKS №${esc(r.lk)}</span></span>`
             : "";
+        const childBadge =
+          r.ch
+            ? `<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-medium bg-amber-50 text-amber-800 ring-1 ring-amber-600/20 shrink-0" title="Принимает детей / Педиатрический приём"><span>👶</span><span>Дети</span></span>`
+            : "";
         const nameRuHtml = r.nr
           ? `<div class="text-xs text-slate-500 font-medium">${esc(r.nr)}</div>`
           : "";
         const href = `/doctors/${esc(r.s)}/`;
-        return `<div class="doctor-item" data-slug="${esc(r.s)}"><article class="card p-5 flex flex-col gap-3.5"><div class="flex gap-4 items-start"><div class="shrink-0">${media}</div><div class="min-w-0 flex-1"><div class="flex flex-col gap-0.5"><div class="flex items-center gap-2 flex-wrap"><a href="${href}" class="font-bold text-lg text-navy-900 hover:text-brand-700 leading-snug line-clamp-2">${esc(r.n)}</a>${serbianBadge}${licenseBadge}</div>${nameRuHtml}<div class="text-xs text-slate-500">${esc(placeLine)}</div></div><div class="mt-2 flex flex-wrap gap-1.5">${chips}</div></div></div><div class="flex items-center justify-between text-xs text-slate-500">${starsHtml(r)}</div>${bio}<div class="mt-auto flex items-center justify-between gap-3 pt-2.5 border-t border-slate-100"><div class="flex flex-wrap gap-1.5 text-xs text-slate-500 min-w-0">${langs}${formats}</div><a href="${href}" class="btn-secondary !py-1.5 !px-3 text-xs whitespace-nowrap shrink-0" aria-label="Профиль: ${esc(r.n)}">Профиль →</a></div></article></div>`;
+        return `<div class="doctor-item" data-slug="${esc(r.s)}"><article class="card p-5 flex flex-col gap-3.5"><div class="flex gap-4 items-start"><div class="shrink-0">${media}</div><div class="min-w-0 flex-1"><div class="flex flex-col gap-0.5"><div class="flex items-center gap-2 flex-wrap"><a href="${href}" class="font-bold text-lg text-navy-900 hover:text-brand-700 leading-snug line-clamp-2">${esc(r.n)}</a>${serbianBadge}${licenseBadge}${childBadge}</div>${nameRuHtml}<div class="text-xs text-slate-500">${esc(placeLine)}</div></div><div class="mt-2 flex flex-wrap gap-1.5">${chips}</div></div></div><div class="flex items-center justify-between text-xs text-slate-500">${starsHtml(r)}</div>${bio}<div class="mt-auto flex items-center justify-between gap-3 pt-2.5 border-t border-slate-100"><div class="flex flex-wrap gap-1.5 text-xs text-slate-500 min-w-0">${langs}${formats}</div><a href="${href}" class="btn-secondary !py-1.5 !px-3 text-xs whitespace-nowrap shrink-0" aria-label="Профиль: ${esc(r.n)}">Профиль →</a></div></article></div>`;
       }
 
       function hasActiveFilter(fd: FormData): boolean {
@@ -399,6 +414,7 @@ const jsonLd = {
             String(fd.get("spec") || "") ||
             String(fd.get("city") || "") ||
             String(fd.get("origin") || "") ||
+            String(fd.get("audience") || "") ||
             fd.get("online") === "1" ||
             fd.get("withReviews") === "1"
         );
@@ -418,6 +434,7 @@ const jsonLd = {
         const spec = String(fd.get("spec") || "");
         const city = String(fd.get("city") || "");
         const origin = String(fd.get("origin") || "");
+        const audience = String(fd.get("audience") || "");
         const sort = String(fd.get("sort") || "rating");
         const onlineChecked = form.querySelector<HTMLInputElement>('[name="online"]')?.checked;
         const reviewsChecked = form.querySelector<HTMLInputElement>('[name="withReviews"]')?.checked;
@@ -432,12 +449,18 @@ const jsonLd = {
           if (city && r.c !== city) return false;
           if (origin === "rs" && r.og !== "rs") return false;
           if (origin === "ru" && r.og === "rs") return false;
+          if (audience === "child" && !r.ch) return false;
+          if (audience === "adult" && r.ad === 0) return false;
           if (online && !r.f.includes("online")) return false;
           if (withReviews && r.rv < 1) return false;
           return true;
         });
 
         matched.sort((a, b) => {
+          if (sort === "children") {
+            const chDiff = (b.ch || 0) - (a.ch || 0);
+            if (chDiff !== 0) return chDiff;
+          }
           if (sort === "name") return a.n.toLowerCase().localeCompare(b.n.toLowerCase(), "ru");
           if (sort === "exp") return (b.e || 0) - (a.e || 0);
           if (sort === "reviews") return b.rv - a.rv;
@@ -465,6 +488,7 @@ const jsonLd = {
           spec,
           city,
           origin,
+          audience,
           online ? "1" : "",
           withReviews ? "1" : "",
         ].join("|");

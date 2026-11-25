@@ -2,7 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import Stars from "../../components/Stars.astro";
 import DoctorMiniMap from "../../components/DoctorMiniMap.astro";
-import { publicDoctors, specLabel } from "../../lib/doctors";
+import { publicDoctors, specLabel, cleanAuthorName } from "../../lib/doctors";
 import { getDoctorClinicLocations } from "../../lib/clinics";
 import { computeRating } from "../../lib/rating";
 import { SITE, SCHEMA_IDS, formatDate, plural, safeUrl, cityLabel, citySlug } from "../../lib/site";
@@ -250,7 +250,7 @@ const jsonLd: Record<string, unknown>[] = [
                   {visibleReviews.map((r) => (
                     <li class="rounded-2xl border border-slate-200 p-4 bg-white">
                       <div class="flex flex-wrap items-center justify-between gap-2">
-                        <div class="font-semibold text-slate-900">{r.author || "Пациент"}</div>
+                        <div class="font-semibold text-slate-900">{cleanAuthorName(r.author)}</div>
                         <div class="text-xs text-slate-500">{r.date ? formatDate(r.date) : ""}</div>
                       </div>
                       <div class="mt-1 flex flex-wrap items-center gap-2">

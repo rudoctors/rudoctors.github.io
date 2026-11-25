@@ -3881,6 +3881,7 @@
       "phone": "+381 11 2060 600",
       "website": "https://tirsova.rs/",
       "is24h": true,
+      "isPediatricEmergency": true,
       "aliases": [
         "UDK Tiršova",
         "Tiršova",
@@ -3935,6 +3936,7 @@
       "phone": "+381 11 3108 108",
       "website": "https://imd.org.rs/",
       "is24h": true,
+      "isPediatricEmergency": true,
       "aliases": [
         "Institut za majku i dete",
         "Institut za zdravstvenu zaštitu majke i deteta"
