@@ -242,7 +242,7 @@ const proposedReviews = [];
 for (const msg of rawReviews) {
   if (existingReviewIds.has(String(msg.id))) continue;
   const rawText = (msg.text || "").trim();
-  if (rawText.length < 50 || rawText.length > 2000) continue;
+  if (rawText.length < 50 || rawText.length > 4000) continue;
   if (/^\*{0,2}(РЕКЛАМА|реклама\b)/i.test(rawText)) continue;
   const tLower = rawText.toLowerCase().replace(/\s+/g, " ");
 

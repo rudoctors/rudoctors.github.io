@@ -34,7 +34,7 @@
 - **Контакты и обратная связь:** `https://rudoctors.com/contacts/`
 - **Добавить врача (заявка для ординаций):** `https://rudoctors.com/add-doctor/`
 - **Оставить отзыв о враче:** `https://rudoctors.com/leave-review/`
-- **Сообщество Telegram «Врачи в Сербии»:** `https://t.me/vrachivserbii`
+- **Независимый чат Telegram «Медицина в Сербии»:** `https://t.me/vrachivserbii`
 
 ---
 

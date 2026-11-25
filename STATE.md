@@ -1,6 +1,6 @@
 # Rudoctors — состояние проекта (state)
 
-Обновлено: 2026-11-24  
+Обновлено: 2026-11-25  
 Репозиторий: `https://github.com/rudoctors/rudoctors.github.io` (орг `rudoctors` под аккаунтом `Myusername-isnotavailable`, ветка `main`)
 Локальная папка: `D:\Projects\rudoctors\site`  
 Live (Основной): `https://rudoctors.com`  
@@ -64,6 +64,7 @@ Legacy: `https://rudoctors.github.io` (настроен перенос адре�
 | `1a546a8` | **Платформа отзывов и Cloudflare Turnstile (18.11.2026):** фикс CSP для Google Apps Script, интеграция Cloudflare Turnstile anti-bot капчи, спам-фильтр ссылок в GAS, переменная `PUBLIC_TURNSTILE_SITEKEY`, деплой run `44393185707` |
 | `3eee5aa` | **feat(data): weekly catalog sync - Telegram + clinics update (20.11.2026):** 5 новых отзывов, 1 новый врач (Елена Мостицкая, Doctorus Expert), слияние дубликатов (Датиенко→Нонко, Ковалёва→Ковалёв), 439 врачей / 2113 отзывов / 45 специальностей / 5 городов (514 страниц) — CI run `44795020272` success |
 | `e48ea49` | **feat(data): weekly catalog sync - Telegram + clinics update (24.11.2026):** 15 новых отзывов в 13 профилей врачей, дедупликация dr-marko-sente→marko-sente (301-редирект), 1521 врач / 2128 отзывов / 45 специальностей / 26 городов (1766 страниц) — CI run `45437651439` success |
+| *(pending)* | **feat(data): weekly catalog sync - Telegram + clinics update (25.11.2026):** 4 новых проверенных отзыва в 4 профиля (Грачева, Саркисова, Андреева, Шафиков), 1 новый врач (Оксана Черкашина, педиатр/неонатолог, Citilab), 1522 врача / 2132 отзыва / 45 специальностей / 26 городов (1767 страниц) |
 
 ---
 
@@ -87,11 +88,11 @@ Legacy: `https://rudoctors.github.io` (настроен перенос адре�
 
 ## Текущее состояние (спринты A→F, 24.09.2026)
 
-### Верификация (24.11.2026)
-- `npm run check` — 0 errors / 0 warnings / 25 hints.
-- `npm run build` — **1766 pages**, sitemap-index; **1521 публичный профиль** врача + 5 архивных redirect; **2128 отзывов**.
-- `npm run detect:dups` — total 1526 (1521 visible + 5 admin/archived), 0 visible dup groups.
-- Live счётчик главной: `1521 врач 2128 отзывов 45 специальностей 26 городов`.
+### Верификация (25.11.2026)
+- `npm run check` — 0 errors / 0 warnings / 26 hints.
+- `npm run build` — **1767 pages**, sitemap-index; **1522 публичных профиля** врача + 5 архивных redirect; **2132 отзыва**.
+- `npm run detect:dups` — total 1527 (1522 visible + 5 admin/archived), 0 visible dup groups.
+- Live счётчик главной: `1522 врача 2132 отзыва 45 специальностей 26 городов`.
 - **Гео и карты (TSK-RD-16, 17, 18):** кнопка геолокации «Где я» на `/map/` с расчетом расстояний Haversine, 8 верифицированных дежурных аптек 24/7 в `registry.json` с отдельным фильтром/слоем, компонент `DoctorMiniMap.astro` в карточках врачей с табами филиалов и deep-link на `/map/?clinic=...` — внедрены и проверены.
 - dist: packages noindex, sitemap без `/packages`, 0 «Рекомендуем» в HTML.
 - Live smoke: `/`, `/doctors/` (+`?page=2` client), `/cities/nis/`, `/llms.txt`, `/404`, forms, doctor profile — **200**; data-bio=0; www.t.me=0; pager present; honeypot present.

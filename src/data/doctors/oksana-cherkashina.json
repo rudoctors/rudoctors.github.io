@@ -1,0 +1,44 @@
+{
+  "slug": "oksana-cherkashina",
+  "name": "Оксана Черкашина",
+  "specializations": [
+    "pediatrician"
+  ],
+  "specializationText": "Врач-педиатр, неонатолог",
+  "experienceYears": 18,
+  "city": "Belgrade",
+  "languages": [
+    "ru",
+    "sr",
+    "en"
+  ],
+  "formats": [
+    "offline",
+    "online"
+  ],
+  "education": [],
+  "workplaces": [
+    {
+      "clinic": "CITILAB",
+      "address": "Dubljanska 41, Belgrade",
+      "city": "Belgrade",
+      "url": "https://citilab.rs/ru"
+    }
+  ],
+  "contacts": {
+    "phone": "+381 65 573 7777",
+    "email": null,
+    "telegram": "https://t.me/dr_Oksana_pediatr",
+    "website": "https://citilab.rs/ru",
+    "appointmentUrl": "https://n1317608.alteg.io/company/1167832/personal/select-services?o=m3140892"
+  },
+  "reviews": [],
+  "hidden": false,
+  "featured": false,
+  "sources": [
+    "citilab.rs",
+    "t.me/vrachivserbii",
+    "google-sheets"
+  ],
+  "updatedAt": "2026-11-25"
+}

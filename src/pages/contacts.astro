@@ -14,7 +14,7 @@ const jsonLd = {
     name: SITE.name,
     url: SITE.url,
     email: SITE.email,
-    sameAs: [SITE.telegram, `https://github.com/rudoctors/rudoctors.github.io`],
+    sameAs: [`https://github.com/rudoctors/rudoctors.github.io`],
   },
 };
 ---
@@ -48,16 +48,7 @@ const jsonLd = {
         </a>
       </div>
 
-      <div class="card p-6">
-        <div class="text-xs font-bold uppercase tracking-widest text-brand-700">Сообщество</div>
-        <h2 class="mt-2 font-extrabold text-navy-900">Telegram-чат</h2>
-        <p class="mt-2 text-sm text-slate-600">
-          Чат «Медицина в Сербии» — {SITE.telegramLabel}: рекомендации врачей, записи, опыт сообщества.
-        </p>
-        <a href={SITE.telegram} target="_blank" rel="noopener noreferrer" class="btn-secondary mt-4 inline-flex">
-          Открыть Telegram
-        </a>
-      </div>
+
 
       <div class="card p-6">
         <div class="text-xs font-bold uppercase tracking-widest text-brand-700">Разработка</div>
