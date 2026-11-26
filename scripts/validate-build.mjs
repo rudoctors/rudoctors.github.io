@@ -70,7 +70,7 @@ if (fs.existsSync(robotsPath)) {
     }
   }
 
-  const disallowed = ["/admin/", "/leave-review/", "/add-doctor/"];
+  const disallowed = ["/admin/", "/data/"];
   for (const d of disallowed) {
     if (robots.includes(`Disallow: ${d}`)) {
       console.log(`  ✓ Correctly disallowed: ${d}`);

@@ -1,9 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /admin/
-Disallow: /leave-review/
-Disallow: /add-doctor/
-Disallow: /packages/
+Disallow: /data/
 Allow: /guides/
 
 # AI answer engines — allow indexing of public pages for citations
